@@ -19,17 +19,17 @@ LOCAL_STORAGE_FILE = "/tmp/lucas_progress.json"
 
 # Initialize Firestore Client (Google Cloud Native)
 db = None
+DATABASE_NAME = os.getenv("FIRESTORE_DATABASE", "lexile-growth-db")
 try:
     from google.cloud import firestore
-    # Reads GCP Project ID automatically when deployed on Cloud Run
     project_id = os.getenv("GOOGLE_CLOUD_PROJECT") or os.getenv("GCP_PROJECT")
+    kwargs = {}
     if project_id:
-        db = firestore.Client(project=project_id)
-        logger.info(f"Connected to Firestore for project: {project_id}")
-    else:
-        # Try default credentials initialization
-        db = firestore.Client()
-        logger.info("Connected to Firestore using default project context.")
+        kwargs["project"] = project_id
+    if DATABASE_NAME:
+        kwargs["database"] = DATABASE_NAME
+    db = firestore.Client(**kwargs)
+    logger.info(f"Connected to Firestore database '{DATABASE_NAME}' in project context.")
 except Exception as e:
     logger.warning(f"Firestore initialization fallback: {e}. Local fallback file will be used.")
     db = None
