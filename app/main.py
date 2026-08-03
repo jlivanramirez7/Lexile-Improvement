@@ -35,9 +35,10 @@ except Exception as e:
     db = None
 
 COLLECTION_NAME = "student_progress"
-DOC_ID = "lucas"
 
 DEFAULT_PROGRESS = {
+    "studentId": "lucas",
+    "studentName": "Lucas",
     "xp": 450,
     "level": "Rising 5th (Advanced)",
     "completedMissions": [],
@@ -65,6 +66,8 @@ DEFAULT_PROGRESS = {
 }
 
 class ProgressModel(BaseModel):
+    studentId: Optional[str] = "lucas"
+    studentName: Optional[str] = "Lucas"
     xp: Optional[int] = 450
     level: Optional[str] = "Rising 5th (Advanced)"
     completedMissions: Optional[List[str]] = []
@@ -72,73 +75,96 @@ class ProgressModel(BaseModel):
     analytics: Optional[Dict[str, Any]] = {}
 
 
-def read_local_fallback() -> dict:
-    if os.path.exists(LOCAL_STORAGE_FILE):
+def get_local_filename(student_id: str) -> str:
+    clean_id = student_id.lower().replace(" ", "_")
+    return f"/tmp/{clean_id}_progress.json"
+
+
+def read_local_fallback(student_id: str) -> dict:
+    file_path = get_local_filename(student_id)
+    if os.path.exists(file_path):
         try:
-            with open(LOCAL_STORAGE_FILE, "r") as f:
+            with open(file_path, "r") as f:
                 return json.load(f)
         except Exception as e:
             logger.error(f"Error reading local storage file: {e}")
-    return DEFAULT_PROGRESS
+    
+    # Custom defaults for Evelyn vs Lucas
+    prog = json.loads(json.dumps(DEFAULT_PROGRESS))
+    prog["studentId"] = student_id
+    prog["studentName"] = "Evelyn Mietling" if "evelyn" in student_id.lower() else "Lucas"
+    return prog
 
 
-def write_local_fallback(data: dict):
+def write_local_fallback(student_id: str, data: dict):
+    file_path = get_local_filename(student_id)
     try:
-        with open(LOCAL_STORAGE_FILE, "w") as f:
+        with open(file_path, "w") as f:
             json.dump(data, f, indent=2)
     except Exception as e:
         logger.error(f"Error writing to local storage file: {e}")
 
 
 @app.get("/api/progress")
-def get_progress():
-    """Retrieve student progress from Firestore or fallback storage."""
+def get_progress(student_id: str = "lucas"):
+    """Retrieve student progress for a specific student from Firestore or fallback storage."""
+    clean_id = student_id.lower().replace(" ", "_")
     if db:
         try:
-            doc_ref = db.collection(COLLECTION_NAME).document(DOC_ID)
+            doc_ref = db.collection(COLLECTION_NAME).document(clean_id)
             doc = doc_ref.get()
             if doc.exists:
                 return doc.to_dict()
             else:
-                # Document doesn't exist yet, save and return default
-                doc_ref.set(DEFAULT_PROGRESS)
-                return DEFAULT_PROGRESS
+                default_data = json.loads(json.dumps(DEFAULT_PROGRESS))
+                default_data["studentId"] = clean_id
+                default_data["studentName"] = "Evelyn Mietling" if "evelyn" in clean_id else "Lucas"
+                doc_ref.set(default_data)
+                return default_data
         except Exception as e:
             logger.error(f"Firestore read error: {e}. Falling back to local storage.")
-            return read_local_fallback()
+            return read_local_fallback(clean_id)
     else:
-        return read_local_fallback()
+        return read_local_fallback(clean_id)
 
 
 @app.post("/api/progress")
 def save_progress(progress: ProgressModel):
     """Save updated student progress to Firestore or fallback storage."""
     data = progress.model_dump()
+    clean_id = (progress.studentId or "lucas").lower().replace(" ", "_")
+    data["studentId"] = clean_id
+    
     if db:
         try:
-            doc_ref = db.collection(COLLECTION_NAME).document(DOC_ID)
+            doc_ref = db.collection(COLLECTION_NAME).document(clean_id)
             doc_ref.set(data, merge=True)
-            logger.info("Progress saved to Firestore.")
+            logger.info(f"Progress saved to Firestore for student: {clean_id}")
         except Exception as e:
             logger.error(f"Firestore write error: {e}. Saving locally.")
-            write_local_fallback(data)
+            write_local_fallback(clean_id, data)
     else:
-        write_local_fallback(data)
+        write_local_fallback(clean_id, data)
     return {"status": "success", "data": data}
 
 
 @app.post("/api/reset")
-def reset_progress():
-    """Reset progress back to default baseline."""
+def reset_progress(student_id: str = "lucas"):
+    """Reset progress back to default baseline for a given student."""
+    clean_id = student_id.lower().replace(" ", "_")
+    default_data = json.loads(json.dumps(DEFAULT_PROGRESS))
+    default_data["studentId"] = clean_id
+    default_data["studentName"] = "Evelyn Mietling" if "evelyn" in clean_id else "Lucas"
+
     if db:
         try:
-            doc_ref = db.collection(COLLECTION_NAME).document(DOC_ID)
-            doc_ref.set(DEFAULT_PROGRESS)
-            logger.info("Firestore progress reset.")
+            doc_ref = db.collection(COLLECTION_NAME).document(clean_id)
+            doc_ref.set(default_data)
+            logger.info(f"Firestore progress reset for student: {clean_id}")
         except Exception as e:
             logger.error(f"Firestore reset error: {e}")
-    write_local_fallback(DEFAULT_PROGRESS)
-    return {"status": "reset", "data": DEFAULT_PROGRESS}
+    write_local_fallback(clean_id, default_data)
+    return {"status": "reset", "data": default_data}
 
 
 # Mount static files

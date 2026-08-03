@@ -103,14 +103,24 @@
         </div>
       </div>
 
-      <!-- VIEW MODE SWITCHER & PARENT TOGGLE -->
-      <div class="flex items-center gap-2">
-        <button id="btn-lucas-mode" onclick="switchView('student')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow hover:bg-blue-500 transition flex items-center gap-1">
-          <span>🎮 Lucas Simulator</span>
-        </button>
-        <button id="btn-parent-mode" onclick="switchView('parent')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1">
-          <span>📊 Parent Review Dashboard</span>
-        </button>
+      <!-- VIEW MODE & STUDENT SWITCHER -->
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 bg-slate-800/90 border border-indigo-500/40 rounded-xl px-3 py-1 shadow-sm">
+          <span class="text-xs font-semibold text-indigo-300">👤 Active Student:</span>
+          <select id="student-selector" onchange="switchStudent(this.value)" class="bg-slate-900 text-white font-bold text-xs rounded-lg px-2.5 py-1 border border-slate-700 focus:outline-none focus:border-indigo-500 cursor-pointer">
+            <option value="lucas">Lucas</option>
+            <option value="evelyn_mietling">Evelyn Mietling</option>
+          </select>
+        </div>
+
+        <div class="flex items-center gap-1">
+          <button id="btn-lucas-mode" onclick="switchView('student')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow hover:bg-blue-500 transition flex items-center gap-1">
+            <span>🎮 Simulator</span>
+          </button>
+          <button id="btn-parent-mode" onclick="switchView('parent')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1">
+            <span>📊 Parent Review Dashboard</span>
+          </button>
+        </div>
       </div>
 
     </div>
@@ -132,7 +142,7 @@
             <span>✨ Target: Dickerson Middle School Advanced Content Rigor</span>
           </div>
           <h2 class="text-2xl md:text-3xl font-extrabold text-white">
-            Welcome back, Lucas! Ready to unlock today's simulator challenge?
+            Welcome back, <span id="welcome-student-name">Lucas</span>! Ready to unlock today's simulator challenge?
           </h2>
           <p class="text-slate-300 text-sm max-w-3xl leading-relaxed">
             Select a thematic mission below. Paragraphs are clearly labeled so you can locate explicit line evidence quickly!
@@ -293,7 +303,7 @@
           🏆
         </div>
         <div class="space-y-2">
-          <h3 class="text-2xl font-extrabold text-white">Mission Complete! Outstanding Job, Lucas!</h3>
+          <h3 class="text-2xl font-extrabold text-white">Mission Complete! Outstanding Job, <span id="modal-student-name">Lucas</span>!</h3>
           <p class="text-slate-300 text-sm">Your answers have been saved to the Parent Review Archive.</p>
         </div>
 
@@ -337,7 +347,7 @@
           <div class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full border border-indigo-500/30">
             <span>📊 Executive Psychometric Evaluation • Cobb County ELA Track</span>
           </div>
-          <h2 class="text-2xl font-extrabold text-white">Diagnostic Parent Dashboard: Lucas</h2>
+          <h2 class="text-2xl font-extrabold text-white">Diagnostic Parent Dashboard: <span id="parent-dashboard-name">Lucas</span></h2>
           <p class="text-xs text-slate-400">Historical Metric Context: 3rd Grade (650L → 835L) | Current Evaluation Target: 1000L+ Advanced Benchmark</p>
         </div>
         <div class="flex items-center gap-2">
@@ -1051,6 +1061,8 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
 
     let STATE = {
       viewMode: "student", // "student" or "parent"
+      activeStudent: "lucas", // "lucas" or "evelyn_mietling"
+      studentName: "Lucas",
       xp: 450,
       level: "Rising 5th (Advanced)",
       completedMissions: [],
@@ -1086,15 +1098,80 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
     };
 
     /* =========================================================================
-       API BACKEND SYNC FUNCTIONS (FIRESTORE / CLOUD RUN PERSISTENCE)
+       API BACKEND SYNC & MULTI-STUDENT SWITCHER
        ========================================================================= */
+
+    function updateStudentNameUI() {
+      const name = STATE.studentName || (STATE.activeStudent === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas");
+      
+      const welcomeEl = document.getElementById("welcome-student-name");
+      if (welcomeEl) welcomeEl.innerText = name;
+
+      const parentDashName = document.getElementById("parent-dashboard-name");
+      if (parentDashName) parentDashName.innerText = name;
+
+      const modalName = document.getElementById("modal-student-name");
+      if (modalName) modalName.innerText = name;
+
+      const p1Diag = document.getElementById("p1-diagnostic-text");
+      if (p1Diag) {
+        p1Diag.innerText = `Measures ${name}'s capability to isolate core subject-verb relationships inside complex, multi-clause, or inverted passive sentence structures without getting derailed by prepositions or adjectival phrases.`;
+      }
+
+      document.querySelectorAll(".active-student-name").forEach(el => {
+        el.innerText = name;
+      });
+
+      const selector = document.getElementById("student-selector");
+      if (selector && selector.value !== STATE.activeStudent) {
+        selector.value = STATE.activeStudent;
+      }
+    }
+
+    async function switchStudent(studentId) {
+      // Auto-save progress of currently active student
+      await saveServerProgress();
+
+      STATE.activeStudent = studentId;
+      STATE.studentName = studentId === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas";
+
+      // Clear local memory buffers
+      STATE.completedMissions = [];
+      STATE.missionSubmissions = {};
+      STATE.xp = 450;
+      STATE.analytics = {
+        totalAttempted: 0,
+        totalCorrect: 0,
+        p1Attempted: 0,
+        p1Correct: 0,
+        p2Attempted: 0,
+        p2Correct: 0,
+        p3Attempted: 0,
+        p3Correct: 0,
+        distractorsCount: {
+          passive_subject_confusion: 0,
+          outside_knowledge: 0,
+          vocabulary_misinterpretation: 0,
+          unsupported_inference: 0
+        },
+        informationalAttempted: 0,
+        informationalCorrect: 0,
+        fictionAttempted: 0,
+        fictionCorrect: 0
+      };
+
+      updateStudentNameUI();
+      await loadServerProgress();
+    }
 
     async function loadServerProgress() {
       try {
-        const res = await fetch('/api/progress');
+        const studentId = STATE.activeStudent || "lucas";
+        const res = await fetch(`/api/progress?student_id=${studentId}`);
         if (res.ok) {
           const data = await res.json();
           if (data) {
+            if (data.studentName) STATE.studentName = data.studentName;
             if (data.xp !== undefined) STATE.xp = data.xp;
             if (data.level) STATE.level = data.level;
             if (data.completedMissions) STATE.completedMissions = data.completedMissions;
@@ -1102,6 +1179,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
             if (data.analytics) {
               STATE.analytics = { ...STATE.analytics, ...data.analytics };
             }
+            updateStudentNameUI();
             updateHeaderStats();
             updateParentDashboard();
             renderMissionsGrid();
@@ -1114,10 +1192,13 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
 
     async function saveServerProgress() {
       try {
+        const studentId = STATE.activeStudent || "lucas";
         await fetch('/api/progress', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
+            studentId: studentId,
+            studentName: STATE.studentName,
             xp: STATE.xp,
             level: STATE.level,
             completedMissions: STATE.completedMissions,
@@ -1132,7 +1213,8 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
 
     async function resetServerProgress() {
       try {
-        await fetch('/api/reset', { method: 'POST' });
+        const studentId = STATE.activeStudent || "lucas";
+        await fetch(`/api/reset?student_id=${studentId}`, { method: 'POST' });
       } catch (err) {
         console.warn("Error resetting server progress:", err);
       }
@@ -1700,7 +1782,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs pt-1">
               <div class="p-2 rounded ${ans.isCorrect ? 'bg-emerald-950/40 border border-emerald-500/40 text-emerald-200' : 'bg-red-950/40 border border-red-500/40 text-red-200'}">
-                <strong>Lucas's Choice (${ans.selectedOptionLetter}):</strong> ${ans.selectedOptionText}
+                <strong>${STATE.studentName}'s Choice (${ans.selectedOptionLetter}):</strong> ${ans.selectedOptionText}
               </div>
               <div class="p-2 rounded bg-slate-900 border border-slate-700 text-slate-300">
                 <strong>Correct Answer (${ans.correctOptionLetter}):</strong> ${ans.correctOptionText}
