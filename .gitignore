@@ -1,0 +1,19 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv
+venv/
+ENV/
+env/
+
+# Local data fallbacks / temp files
+/tmp/
+lucas_progress.json
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRC BEACON ELA Simulator | Advanced 5th Grade Track</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --primary-color: #3b82f6;
+      --secondary-color: #8b5cf6;
+      --accent-color: #f59e0b;
+      --success-color: #10b981;
+      --danger-color: #ef4444;
+    }
+    
+    body {
+      background-color: var(--app-background, #0f172a);
+      color: var(--app-foreground, #f8fafc);
+      font-family: var(--vscode-font-family, system-ui, -apple-system, sans-serif);
+    }
+
+    .glass-panel {
+      background: rgba(30, 41, 59, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .monster-sentence {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
+      border-left: 4px solid #8b5cf6;
+      padding: 8px 12px;
+      margin: 8px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .tier2-word {
+      text-decoration: underline dotted #f59e0b 2px;
+      text-underline-offset: 4px;
+      font-weight: 600;
+      color: #fbbf24;
+      cursor: help;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.3);
+      border-radius: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(148, 163, 184, 0.5);
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+      50% { box-shadow: 0 0 25px rgba(139, 92, 246, 0.7); }
+    }
+
+    .glow-active {
+      animation: pulse-glow 2s infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased custom-scrollbar">
+
+  <!-- TOP NAVIGATION / HEADER BAR -->
+  <header class="border-b border-slate-700/60 bg-slate-900/90 sticky top-0 z-50 px-4 py-3 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-3">
+      
+      <!-- LOGO & BRANDING -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white font-black text-xl shadow-lg">
+          ⚡
+        </div>
+        <div>
+          <h1 class="font-bold text-lg leading-tight tracking-tight text-white flex items-center gap-2">
+            BEACON <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full border border-blue-500/30">5th ELA Simulator</span>
+          </h1>
+          <p class="text-xs text-slate-400">GSE Standardized Testing Engine • Cobb County AP Track Prep</p>
+        </div>
+      </div>
+
+      <!-- STUDENT STATS & BADGES (Lucas View) -->
+      <div id="student-header-stats" class="flex items-center gap-4 bg-slate-800/80 px-4 py-1.5 rounded-full border border-slate-700">
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-amber-400">
+          <span class="text-base">🏆</span>
+          <span>XP: <span id="xp-count" class="text-white font-bold">450</span></span>
+        </div>
+        <div class="h-4 w-[1px] bg-slate-700"></div>
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-indigo-400">
+          <span class="text-base">🚀</span>
+          <span>Level: <span id="level-count" class="text-white font-bold">Rising 5th</span></span>
+        </div>
+        <div class="h-4 w-[1px] bg-slate-700"></div>
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-emerald-400">
+          <span class="text-base">📈</span>
+          <span>Lexile Target: <span class="text-white font-bold">1000L+</span></span>
+        </div>
+      </div>
+
+      <!-- VIEW MODE SWITCHER & PARENT TOGGLE -->
+      <div class="flex items-center gap-2">
+        <button id="btn-lucas-mode" onclick="switchView('student')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow hover:bg-blue-500 transition flex items-center gap-1">
+          <span>🎮 Lucas Simulator</span>
+        </button>
+        <button id="btn-parent-mode" onclick="switchView('parent')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1">
+          <span>📊 Parent Review Dashboard</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 space-y-6">
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: LUCAS STUDENT MISSION CONTROL / QUIZ INTERFACE                  -->
+    <!-- ========================================================================= -->
+    <div id="student-view-container" class="space-y-6">
+
+      <!-- HERO WELCOME BANNER -->
+      <div id="welcome-banner" class="glass-panel p-6 rounded-2xl relative overflow-hidden border border-slate-700/80 bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900">
+        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 space-y-2">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full border border-indigo-500/30">
+            <span>✨ Target: Dickerson Middle School Advanced Content Rigor</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-white">
+            Welcome back, Lucas! Ready to unlock today's simulator challenge?
+          </h2>
+          <p class="text-slate-300 text-sm max-w-3xl leading-relaxed">
+            Select a thematic mission below. Paragraphs are clearly labeled so you can locate explicit line evidence quickly!
+          </p>
+        </div>
+      </div>
+
+      <!-- MISSION SELECTION GRID (Step 1) -->
+      <div id="mission-selection-section" class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>🎯 Choose Your Mission (Mock Test 1 & Beyond)</span>
+            <span class="text-xs text-slate-400 font-normal">(20 Available Modules)</span>
+          </h3>
+          <span class="text-xs text-indigo-400 font-medium">DRC BEACON CAT Algorithm Simulation</span>
+        </div>
+
+        <div id="missions-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Mission cards rendered dynamically via JavaScript -->
+        </div>
+      </div>
+
+      <!-- ACTIVE QUIZ INTERFACE (Step 2) -->
+      <div id="quiz-interface-section" class="hidden space-y-6">
+        
+        <!-- QUIZ HEADER & NAVIGATION -->
+        <div class="flex items-center justify-between glass-panel p-4 rounded-xl border border-slate-700/80">
+          <div class="flex items-center gap-3">
+            <button onclick="exitQuiz()" class="text-slate-400 hover:text-white text-xs bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 flex items-center gap-1">
+              <span>← Back to Missions</span>
+            </button>
+            <div>
+              <span id="quiz-mission-title" class="text-sm font-bold text-white">Mission Title</span>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span id="quiz-lexile-badge" class="bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded border border-indigo-500/30">1050L</span>
+                <span>• Module <span id="quiz-module-num">1</span> of 20</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUESTION PROGRESS DOTS -->
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-400 mr-2">Question <span id="current-q-num">1</span>/5:</span>
+            <div id="progress-dots-container" class="flex items-center gap-1.5">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TWO-COLUMN WORKSPACE: PASSAGE & QUESTION -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          
+          <!-- LEFT COLUMN: THE PASSAGE (950L - 1150L) -->
+          <div class="lg:col-span-7 space-y-4">
+            <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-4 shadow-xl">
+              
+              <!-- PASSAGE TOOLBAR -->
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700/60 text-xs">
+                <div class="flex items-center gap-2 text-slate-300 font-semibold">
+                  <span>📖 Reading Passage</span>
+                  <span id="passage-genre-tag" class="bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">Informational Text</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button id="btn-toggle-syntax-tool" onclick="toggleMonsterSentenceHelper()" class="text-xs bg-purple-600/30 text-purple-300 border border-purple-500/40 px-2.5 py-1 rounded hover:bg-purple-600/50 transition flex items-center gap-1">
+                    <span>🔬 Monster Sentence Inspector</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- PASSAGE CONTENT WITH CLEAR PARAGRAPH SPACING -->
+              <div id="passage-display-text" class="text-slate-200 text-base leading-relaxed space-y-5 custom-scrollbar max-h-[500px] overflow-y-auto pr-3">
+                <!-- Passage text dynamically inserted with Paragraph 1, 2 labels -->
+              </div>
+
+              <!-- PASSAGE FOOTER & TIPS -->
+              <div class="pt-3 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+                <span>💡 Tip: Click underlined <span class="tier2-word">Tier 2 words</span> for contextual definitions!</span>
+                <span class="italic">DRC BEACON GSE Standardized Format</span>
+              </div>
+            </div>
+
+            <!-- MONSTER SENTENCE DECODER WIDGET (Pillar 1 Helper Tool) -->
+            <div id="monster-sentence-widget" class="hidden glass-panel p-4 rounded-xl border border-purple-500/30 bg-purple-950/20 space-y-2">
+              <div class="flex items-center justify-between text-xs font-bold text-purple-300">
+                <span>⚡ MONSTER SENTENCE DECODER (Syntactic Breakdown)</span>
+                <button onclick="toggleMonsterSentenceHelper()" class="text-slate-400 hover:text-white">✕</button>
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">
+                Long passive sentences hide their real subject! Find <strong>WHO did WHAT</strong> instead of getting distracted by descriptive clauses.
+              </p>
+              <div id="syntax-breakdown-box" class="text-xs bg-slate-900/90 p-3 rounded border border-slate-700 text-slate-300 space-y-1 font-mono">
+                <!-- Breakdown dynamically filled -->
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: QUESTION & OPTIONS -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-5 shadow-xl">
+              
+              <!-- PILLAR TAG BADGE -->
+              <div class="flex items-center justify-between">
+                <span id="question-pillar-badge" class="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1">
+                  🎯 Pillar 3: Evidence-Based Extraction
+                </span>
+                <span class="text-xs text-slate-400">Question <span id="q-step-indicator">1/5</span></span>
+              </div>
+
+              <!-- QUESTION TEXT -->
+              <h4 id="question-text" class="text-white text-base md:text-lg font-bold leading-snug">
+                <!-- Question text here -->
+              </h4>
+
+              <!-- OPTIONS A, B, C, D -->
+              <div id="options-container" class="space-y-3">
+                <!-- Dynamic options rendered here -->
+              </div>
+
+              <!-- SUBMIT / ACTION BUTTON -->
+              <div class="pt-2">
+                <button id="btn-submit-answer" onclick="submitAnswer()" disabled class="w-full py-3 bg-slate-700 text-slate-400 font-bold rounded-xl shadow cursor-not-allowed hover:bg-slate-600 transition flex items-center justify-center gap-2">
+                  <span>Confirm Response</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- INTERACTIVE FEEDBACK CARD (Post-Answer) -->
+            <div id="feedback-card" class="hidden glass-panel p-5 rounded-2xl border space-y-3 shadow-2xl">
+              <div class="flex items-center justify-between">
+                <span id="feedback-status-title" class="font-extrabold text-base flex items-center gap-2">
+                  <!-- Correct/Incorrect badge -->
+                </span>
+                <span id="feedback-pillar-info" class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">Pillar Tag</span>
+              </div>
+              
+              <div id="feedback-explanation-body" class="text-xs md:text-sm text-slate-300 leading-relaxed space-y-2">
+                <!-- Dynamic explanation -->
+              </div>
+
+              <div class="pt-2 flex justify-end">
+                <button id="btn-next-question" onclick="nextQuestion()" class="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold rounded-xl shadow-lg transition flex items-center gap-1">
+                  <span>Continue to Next Challenge →</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MODULE COMPLETION REWARD CARD -->
+      <div id="module-complete-modal" class="hidden glass-panel p-8 rounded-2xl border border-emerald-500/40 bg-slate-900/95 text-center max-w-2xl mx-auto space-y-6 shadow-2xl">
+        <div class="w-20 h-20 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-4xl mx-auto border border-emerald-500/40">
+          🏆
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-2xl font-extrabold text-white">Mission Complete! Outstanding Job, Lucas!</h3>
+          <p class="text-slate-300 text-sm">Your answers have been saved to the Parent Review Archive.</p>
+        </div>
+
+        <!-- QUICK SUMMARY METRICS -->
+        <div class="grid grid-cols-3 gap-4 bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+          <div>
+            <div class="text-xs text-slate-400">Module Score</div>
+            <div id="modal-score-val" class="text-xl font-black text-emerald-400">5/5 (100%)</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">XP Earned</div>
+            <div id="modal-xp-val" class="text-xl font-black text-amber-400">+150 XP</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Lexile Rating</div>
+            <div id="modal-lexile-val" class="text-xl font-black text-indigo-400">1050L</div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 pt-2">
+          <button onclick="resetToMissionSelection()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl border border-slate-700 transition">
+            🎮 Choose Next Mission
+          </button>
+          <button onclick="openParentReviewForCurrentMission()" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-xl shadow-lg transition">
+            🔍 Review Submission (Parent) →
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: PARENT DIAGNOSTIC DASHBOARD (DRC BEACON PSYCHOMETRICS)          -->
+    <!-- ========================================================================= -->
+    <div id="parent-view-container" class="hidden space-y-6">
+      
+      <!-- DASHBOARD EXECUTIVE HEADER -->
+      <div class="glass-panel p-6 rounded-2xl border border-indigo-500/30 bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/40 flex items-center justify-between flex-wrap gap-4 shadow-xl">
+        <div class="space-y-1">
+          <div class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full border border-indigo-500/30">
+            <span>📊 Executive Psychometric Evaluation • Cobb County ELA Track</span>
+          </div>
+          <h2 class="text-2xl font-extrabold text-white">Diagnostic Parent Dashboard: Lucas</h2>
+          <p class="text-xs text-slate-400">Historical Metric Context: 3rd Grade (650L → 835L) | Current Evaluation Target: 1000L+ Advanced Benchmark</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="showLexileExplanationModal()" class="px-3 py-2 bg-indigo-900/40 hover:bg-indigo-900/60 text-indigo-300 text-xs font-semibold rounded-lg border border-indigo-500/40 transition flex items-center gap-1">
+            ℹ️ Lexile Calculation Formula
+          </button>
+          <button onclick="window.print()" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold rounded-lg border border-slate-700 transition flex items-center gap-1">
+            🖨️ Export Report
+          </button>
+          <button onclick="resetStudentData()" class="px-3.5 py-2 bg-red-600/20 hover:bg-red-600/40 text-red-300 text-xs font-bold rounded-lg border border-red-500/40 transition shadow flex items-center gap-1">
+            🔄 Reset All Testing Progress
+          </button>
+        </div>
+      </div>
+
+      <!-- METRIC OVERVIEW CARDS -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        
+        <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2 relative group cursor-pointer" onclick="showLexileExplanationModal()">
+          <div class="flex justify-between items-center text-xs text-slate-400 font-medium">
+            <span>Estimated Current Lexile</span>
+            <span class="text-indigo-400 text-xs font-bold">ℹ️ Info</span>
+          </div>
+          <div id="metric-est-lexile" class="text-2xl font-extrabold text-indigo-400">975L – 1025L</div>
+          <div class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
+            <span>▲ +165L growth from 3rd grade baseline</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2">
+          <div class="text-xs text-slate-400 font-medium">1000L+ Benchmark Target</div>
+          <div id="metric-benchmark-status" class="text-2xl font-extrabold text-emerald-400">ON TRACK</div>
+          <div class="text-[11px] text-slate-400">Dickerson Middle AP Content Criteria</div>
+        </div>
+
+        <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2">
+          <div class="text-xs text-slate-400 font-medium">Total Questions Attempted</div>
+          <div id="metric-total-q" class="text-2xl font-extrabold text-white">0</div>
+          <div class="text-[11px] text-slate-400">Across <span id="metric-modules-cnt">0</span> Mock Modules</div>
+        </div>
+
+        <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2">
+          <div class="text-xs text-slate-400 font-medium">Overall Accuracy Rate</div>
+          <div id="metric-accuracy-pct" class="text-2xl font-extrabold text-amber-400">0%</div>
+          <div class="text-[11px] text-slate-400">DRC BEACON Scaled Score Estimate</div>
+        </div>
+
+      </div>
+
+      <!-- NEW SECTION: COMPLETED MISSION SUBMISSIONS REVIEW ARCHIVE (PARENT REVIEW) -->
+      <div class="glass-panel p-6 rounded-2xl border border-indigo-500/40 bg-slate-900/90 space-y-4 shadow-xl">
+        <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 flex-wrap gap-2">
+          <div>
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <span>📜 Student Submission Archives & Item Review</span>
+            </h3>
+            <p class="text-xs text-slate-400">Review Lucas's exact responses, time, and error tags for any completed mission.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div id="completed-missions-selector-container">
+              <!-- Selector populated via JS -->
+            </div>
+            <button onclick="resetStudentData()" class="px-2.5 py-1.5 bg-red-950/40 hover:bg-red-900/60 text-red-300 text-xs font-semibold rounded-lg border border-red-700/40 transition flex items-center gap-1">
+              🔄 Clear Test Data
+            </button>
+          </div>
+        </div>
+
+        <!-- SUBMISSION REVIEW DISPLAY BOX -->
+        <div id="parent-submission-review-box" class="space-y-4">
+          <div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl border border-slate-800">
+            No missions completed yet. When Lucas completes a mission, his full question-by-question submission will appear here for review!
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 1: THE THREE PILLARS ANALYSIS -->
+      <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-5">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-700/60 pb-3">
+          <span>🏛️ DRC BEACON Three-Pillar Diagnostic Analysis</span>
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- PILLAR 1: SYNTAX DECONSTRUCTION -->
+          <div class="bg-slate-900/70 p-5 rounded-xl border border-purple-500/30 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-purple-300 uppercase tracking-wide">Pillar 1: Syntax Deconstruction</span>
+              <span id="p1-score-tag" class="text-xs font-bold px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">N/A</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>"Monster Sentence" & Passive Decoding</span>
+                <span id="p1-pct-text">0%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="p1-progress-bar" class="bg-purple-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+            </div>
+            <p id="p1-diagnostic-text" class="text-xs text-slate-300 leading-relaxed pt-2">
+              Measures Lucas's capability to isolate core subject-verb relationships inside complex, multi-clause, or inverted passive sentence structures without getting derailed by prepositions or adjectival phrases.
+            </p>
+          </div>
+
+          <!-- PILLAR 2: TIER 2 VOCABULARY -->
+          <div class="bg-slate-900/70 p-5 rounded-xl border border-amber-500/30 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-amber-300 uppercase tracking-wide">Pillar 2: Contextual Vocabulary</span>
+              <span id="p2-score-tag" class="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300">N/A</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>Tier 2 Academic Words & Transitions</span>
+                <span id="p2-pct-text">0%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="p2-progress-bar" class="bg-amber-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+            </div>
+            <p id="p2-diagnostic-text" class="text-xs text-slate-300 leading-relaxed pt-2">
+              Evaluates contextual understanding of high-level academic words (e.g., <em>anomalous, subsequent, inherent, formidable, feasible, scrutinize, deviate</em>) embedded in dense informational text.
+            </p>
+          </div>
+
+          <!-- PILLAR 3: EVIDENCE EXTRACTION -->
+          <div class="bg-slate-900/70 p-5 rounded-xl border border-blue-500/30 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-blue-300 uppercase tracking-wide">Pillar 3: Evidence Extraction</span>
+              <span id="p3-score-tag" class="text-xs font-bold px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">N/A</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>"The Text is the Law" Direct Evidence</span>
+                <span id="p3-pct-text">0%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="p3-progress-bar" class="bg-blue-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+            </div>
+            <p id="p3-diagnostic-text" class="text-xs text-slate-300 leading-relaxed pt-2">
+              Penalizes reliance on outside knowledge or general plot intuition. Correct answers require strict, explicit textual proof or direct, uncorrupted inference from the passage.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION 2: ERROR PATTERN DIAGNOSIS & READING BEHAVIOR -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- ERROR PROFILE BREAKDOWN -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2 border-b border-slate-700/60 pb-3">
+            <span>🔬 Identified Behavioral Distractor Traps</span>
+          </h3>
+          
+          <div id="distractor-breakdown-container" class="space-y-3">
+            <!-- Rendered dynamically -->
+            <div class="text-xs text-slate-400 italic">No responses recorded yet. Have Lucas complete a module to view diagnostic error profiling.</div>
+          </div>
+        </div>
+
+        <!-- TOPIC STAMINA ANALYSIS -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2 border-b border-slate-700/60 pb-3">
+            <span>📚 Text Genre Stamina & Performance</span>
+          </h3>
+
+          <div class="space-y-4">
+            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="flex justify-between text-xs font-semibold">
+                <span class="text-indigo-300">Informational / Technical Texts (Space, Physics, Bio)</span>
+                <span id="stamina-info-pct" class="text-white">N/A</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="stamina-info-bar" class="bg-indigo-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+              <p class="text-[11px] text-slate-400">Measures stamina when encountering dense telemetry, cause-and-effect mechanics, and abstract concepts.</p>
+            </div>
+
+            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="flex justify-between text-xs font-semibold">
+                <span class="text-purple-300">Narrative & Worldbuilding Lore (Hogwarts, Fiction)</span>
+                <span id="stamina-fic-pct" class="text-white">N/A</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="stamina-fic-bar" class="bg-purple-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+              <p class="text-[11px] text-slate-400">High engagement area; watch for over-reliance on plot memory over strict textual evidence.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECTION 3: PRESCRIPTIVE HOME ACTION PLAN -->
+      <div class="glass-panel p-6 rounded-2xl border border-emerald-500/30 bg-slate-900/90 space-y-4 shadow-xl">
+        <div class="flex items-center justify-between border-b border-slate-700/60 pb-3">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>📋 Prescriptive Home Action Plan (Parent Guidance)</span>
+          </h3>
+          <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/30 font-semibold">Actionable Protocol</span>
+        </div>
+
+        <div id="parent-prescriptive-plan-body" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm text-slate-300">
+          
+          <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+            <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
+              <span>🎯 Strategy 1: The "Slash and Subject" Deconstruction Drill</span>
+            </h4>
+            <p class="leading-relaxed text-slate-300">
+              When reading non-fiction articles with Lucas, ask him to find the main action verb first, then work backward to find who performed it. Have him mentally cross out prepositional phrases starting with <em>by, of, through, during</em> to prevent passive voice confusion.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+            <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+              <span>⚖️ Strategy 2: "The Text is the Law" Proof Requirement</span>
+            </h4>
+            <p class="leading-relaxed text-slate-300">
+              During discussions, if Lucas answers with a plausible idea, challenge him with: <em>"Point your finger to the exact line number that proves that."</em> This eliminates the "Outside Knowledge Trap" where bright students pick real-world facts that aren't mentioned in the text.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-4 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+      <span>DRC BEACON Computer-Adaptive Test Simulator for GSE ELA 5th Grade Track</span>
+      <span>Cobb County School District Advanced Content Alignment (Dickerson MS Prep)</span>
+    </div>
+  </footer>
+
+  <!-- TOOLTIP MODAL FOR TIER 2 WORDS -->
+  <div id="tier2-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="glass-panel p-5 rounded-2xl border border-amber-500/40 bg-slate-900 max-w-sm w-full space-y-3 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+        <span id="tier2-modal-word" class="font-black text-amber-400 text-lg">Word</span>
+        <button onclick="closeTier2Modal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+      <p id="tier2-modal-def" class="text-xs text-slate-300 leading-relaxed"></p>
+      <div class="text-[11px] text-indigo-300 bg-indigo-950/40 p-2.5 rounded border border-indigo-500/30">
+        <strong>Contextual Usage:</strong> <span id="tier2-modal-ex"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEXILE CALCULATION EXPLANATION MODAL -->
+  <div id="lexile-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="glass-panel p-6 rounded-2xl border border-indigo-500/50 bg-slate-900 max-w-2xl w-full space-y-4 shadow-2xl max-h-[95vh] overflow-y-auto custom-scrollbar">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📊</span>
+          <h3 class="font-extrabold text-white text-lg">How DRC BEACON Lexile Scores Are Calculated</h3>
+        </div>
+        <button onclick="closeLexileModal()" class="text-slate-400 hover:text-white text-lg">✕</button>
+      </div>
+
+      <div class="text-xs md:text-sm text-slate-300 space-y-3 leading-relaxed">
+        <p>
+          The Lexile Framework for Reading uses a dual-variable quantitative psychometric model to evaluate text difficulty and student capability:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+          <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700 space-y-1">
+            <h4 class="font-bold text-indigo-300 text-xs">1. Syntactic Complexity (Sentence Length & Clauses)</h4>
+            <p class="text-[11px] text-slate-400">
+              Longer sentences with subordinate clauses, inverted structures, and passive voice require higher working memory to decode subject-verb relationships.
+            </p>
+          </div>
+          <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700 space-y-1">
+            <h4 class="font-bold text-amber-300 text-xs">2. Semantic Difficulty (Vocabulary Frequency)</h4>
+            <p class="text-[11px] text-slate-400">
+              Measures the frequency of Tier 2/Tier 3 academic words across standard reference corpora. Unfamiliar words require context decoding.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/30 space-y-2">
+          <h4 class="font-bold text-white text-xs text-indigo-300">🤖 Simulator Item Response & Adaptive Scoring Formula</h4>
+          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1.5">
+            <li><strong>Baseline Anchor:</strong> Lucas started with an 835L metric from 3rd grade.</li>
+            <li><strong>Item Calibration:</strong> Passages in this simulator are pre-calibrated between 950L and 1150L.</li>
+            <li><strong>Rasch Model Weighting:</strong> Accuracy on 1000L+ items increases estimated Lexile score, while distractor errors (e.g., <em>Passive Voice Confusion</em>) adjust confidence intervals downward.</li>
+            <li><strong>Target Goal:</strong> Maintaining 75%+ accuracy across 950L–1150L modules solidifies a <strong>1000L–1150L</strong> rating, ensuring readiness for Dickerson Middle School Advanced Track.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-2 flex justify-end">
+        <button onclick="closeLexileModal()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-lg shadow transition">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT SIMULATION ENGINE -->
+  <script>
+    /* =========================================================================
+       1. DATA STRUCTURE: 20 THEMATIC MODULES ALIGNED WITH LUCAS'S INTERESTS
+          Passages: 150-250 words, 950L - 1150L, containing Monster Sentences,
+          Tier 2 words, explicit textual facts for DRC BEACON testing.
+       ========================================================================= */
+
+    const MISSIONS_DATA = [
+      {
+        id: "mission-1",
+        title: "Mission 1: Mars Rover Telemetry & Orbital Engineering",
+        category: "Space & Engineering",
+        lexile: "1020L",
+        genre: "Informational Text",
+        icon: "🛰️",
+        description: "Analyze NASA's deep-space communications and telemetry signals sent through atmospheric dust storms on Mars.",
+        passage: `Deep within the dusty expanse of Jezero Crater, the robotic rover Perseverance transmits vital telemetry to Earth through complex satellite relays. Although high-frequency radio waves travel at the speed of light, signal propagation is frequently <span class="tier2-word" onclick="showTier2('degraded', 'Reduced in quality or efficiency due to obstacles.', 'Telemetry signals were degraded by severe dust particles.')">degraded</span> by atmospheric dust storms that absorb electromagnetic radiation. To counteract this transmission latency, engineers programmed autonomous algorithms that compress digital packets before uploading.
+
+The complex data packets, containing detailed soil spectrometry and atmospheric pressure readings, were meticulously <span class="tier2-word" onclick="showTier2('scrutinized', 'Examined with thoroughness and critical attention.', 'Engineers scrutinized every megabyte of data.')">scrutinized</span> by ground control technicians to detect any <span class="tier2-word" onclick="showTier2('anomalous', 'Deviating from what is standard, normal, or expected.', 'An anomalous voltage spike alerted the team.')">anomalous</span> voltage fluctuations within the nuclear generator. Furthermore, despite being subjected to sub-zero temperatures overnight, the rover's thermal regulation systems maintained internal stability. Consequently, subsequent commands executed by the automated navigation system enabled the vehicle to maneuver around a <span class="tier2-word" onclick="showTier2('formidable', 'Inspiring fear or respect through being impressively large or powerful.', 'The rocky ridge presented a formidable challenge.')">formidable</span> rocky ridge without human intervention.`,
+        syntaxBreakdown: `<strong>Sentence:</strong> "The complex data packets, containing detailed soil spectrometry and atmospheric pressure readings, were meticulously scrutinized by ground control technicians..."<br><br>
+<span class="text-purple-300">• True Subject:</span> ground control technicians (acting through passive voice)<br>
+<span class="text-purple-300">• Action Verb:</span> scrutinized<br>
+<span class="text-purple-300">• Receiver of Action:</span> complex data packets<br>
+<span class="text-purple-300">• Distractor Clause:</span> "containing detailed soil spectrometry..." (Descriptive modifier, NOT the main clause!)`,
+        questions: [
+          {
+            id: "m1-q1",
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "In paragraph 2, who or what actually performed the action of examining the data packets?",
+            options: [
+              { letter: "A", text: "The soil spectrometry and pressure readings.", errorType: "passive_subject_confusion" },
+              { letter: "B", text: "Ground control technicians.", errorType: "correct" },
+              { letter: "C", text: "The nuclear generator's voltage fluctuations.", errorType: "passive_subject_confusion" },
+              { letter: "D", text: "The automated navigation system.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 1 Decoding:</strong> Although 'data packets' starts the sentence, the passive voice verb phrase 'were meticulously scrutinized <em>by ground control technicians</em>' reveals that the technicians performed the examination. Options A and C confuse descriptive modifiers with the actor."
+          },
+          {
+            id: "m1-q2",
+            pillar: 2,
+            pillarName: "Pillar 2: Tier 2 Vocabulary",
+            question: "Based on context in paragraph 2, what does the word 'anomalous' indicate about the voltage fluctuations?",
+            options: [
+              { letter: "A", text: "They were expected and part of normal daily operations.", errorType: "vocabulary_misinterpretation" },
+              { letter: "B", text: "They were extraordinarily powerful and caused damage to Earth.", errorType: "outside_knowledge" },
+              { letter: "C", text: "They were unusual and deviated from expected standard readings.", errorType: "correct" },
+              { letter: "D", text: "They were caused by high temperatures inside Jezero Crater.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 2,
+            explanation: "<strong>Pillar 2 Context:</strong> 'Anomalous' means irregular or non-standard. The text contrasts these fluctuations with standard operations that require technician review to catch unexpected errors."
+          },
+          {
+            id: "m1-q3",
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "According to paragraph 1, what specific obstacle degrades radio wave transmission between Mars and Earth?",
+            options: [
+              { letter: "A", text: "Sub-zero overnight temperatures around the nuclear generator.", errorType: "unsupported_inference" },
+              { letter: "B", text: "Atmospheric dust storms absorbing electromagnetic radiation.", errorType: "correct" },
+              { letter: "C", text: "Excessive energy consumption by the thermal regulation systems.", errorType: "unsupported_inference" },
+              { letter: "D", text: "Extreme gravitational pull from Jezero Crater's rocky ridge.", errorType: "outside_knowledge" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 3 Direct Proof:</strong> Paragraph 1 explicitly states that 'signal propagation is frequently degraded by atmospheric dust storms that absorb electromagnetic radiation.' Option D relies on outside physics concepts not mentioned in the passage."
+          },
+          {
+            id: "m1-q4",
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "Read this sentence from paragraph 2: 'Consequently, subsequent commands executed by the automated navigation system enabled the vehicle to maneuver around a formidable rocky ridge...'<br><br>What is the primary function of the phrase 'executed by the automated navigation system'?",
+            options: [
+              { letter: "A", text: "It serves as the main predicate verb of the sentence.", errorType: "passive_subject_confusion" },
+              { letter: "B", text: "It describes which specific commands enabled the maneuver.", errorType: "correct" },
+              { letter: "C", text: "It explains why the temperatures dropped sub-zero overnight.", errorType: "unsupported_inference" },
+              { letter: "D", text: "It acts as a prepositional phrase showing location.", errorType: "vocabulary_misinterpretation" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 1 Structure:</strong> The phrase 'executed by...' is a participial modifier modifying 'commands'. The main verb of the sentence is 'enabled'."
+          },
+          {
+            id: "m1-q5",
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "Which statement is directly supported by paragraph 2 regarding the rover's navigation around the ridge?",
+            options: [
+              { letter: "A", text: "Human pilots in Houston manually steered the rover using joysticks.", errorType: "outside_knowledge" },
+              { letter: "B", text: "The rover was forced to stop and shut down until morning light.", errorType: "unsupported_inference" },
+              { letter: "C", text: "The vehicle maneuvered autonomously without human intervention.", errorType: "correct" },
+              { letter: "D", text: "The ridge collapsed under the weight of the heavy generator.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 2,
+            explanation: "<strong>Pillar 3 Evidence:</strong> The text in paragraph 2 explicitly states the rover maneuvered 'without human intervention' thanks to automated commands."
+          }
+        ]
+      },
+      {
+        id: "mission-2",
+        title: "Mission 2: Architectural Secrets of Hogwarts Castle",
+        category: "Hogwarts & Engineering",
+        lexile: "1060L",
+        genre: "Narrative & Structural Lore",
+        icon: "🏰",
+        description: "Investigate the complex structural mechanics, enchanted cantilevers, and load-bearing masonry of Hogwarts Castle.",
+        passage: `High above the mist-shrouded Black Lake, the massive stone towers of Hogwarts Castle rely on ancient architectural principles combined with magical load-bearing support. While novice wizards admire the enchanted ceilings, structural engineers would be fascinated by the intricate buttresses that distribute thousands of tons of granite weight across deep subterranean bedrock.
+
+The central staircase, comprised of moving marble flights supported by counterweighted pendulum mechanisms, was carefully <span class="tier2-word" onclick="showTier2('engineered', 'Designed and built using scientific and structural principles.', 'The staircase was engineered to balance weight.')">engineered</span> to maintain structural integrity while shifting position. However, because the building's <span class="tier2-word" onclick="showTier2('inherent', 'Existing in something as a permanent, essential, or characteristic attribute.', 'Magical stress is an inherent quality of ancient stone.')">inherent</span> magical instability creates subtle spatial shifts, continuous counter-balancing adjustments are required.
+
+During heavy castle banquets, immense downward force generated by hundreds of students is safely absorbed by reinforced archways. Although these historical masonry walls appear immutable, subtle stress fractures could become <span class="tier2-word" onclick="showTier2('formidable', 'Inspiring awe or difficulty due to size or strength.', 'Structural repair presents a formidable task.')">formidable</span> structural hazards if magical maintenance were neglected by the caretakers.`,
+        syntaxBreakdown: `<strong>Sentence:</strong> "The central staircase, comprised of moving marble flights supported by counterweighted pendulum mechanisms, was carefully engineered to maintain structural integrity..."<br><br>
+<span class="text-purple-300">• Main Subject:</span> The central staircase<br>
+<span class="text-purple-300">• Passive Action Verb:</span> was carefully engineered<br>
+<span class="text-purple-300">• Interrupted Clause:</span> "comprised of moving marble flights supported by..." (Descriptive detail interrupting subject and verb!)`,
+        questions: [
+          {
+            id: "m2-q1",
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "In paragraph 2, what is the main subject of the sentence beginning with 'The central staircase'?",
+            options: [
+              { letter: "A", text: "The moving marble flights.", errorType: "passive_subject_confusion" },
+              { letter: "B", text: "The counterweighted pendulum mechanisms.", errorType: "passive_subject_confusion" },
+              { letter: "C", text: "The central staircase.", errorType: "correct" },
+              { letter: "D", text: "Structural integrity.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 2,
+            explanation: "<strong>Pillar 1 Subject Identification:</strong> The sentence subject is 'The central staircase'. Everything between the commas ('comprised of...') is a descriptive modifier."
+          },
+          {
+            id: "m2-q2",
+            pillar: 2,
+            pillarName: "Pillar 2: Tier 2 Vocabulary",
+            question: "As used in paragraph 2, what does the word 'inherent' mean?",
+            options: [
+              { letter: "A", text: "Temporary and easy to fix with a simple spell.", errorType: "vocabulary_misinterpretation" },
+              { letter: "B", text: "Natural, built-in, and essential to its nature.", errorType: "correct" },
+              { letter: "C", text: "Dangerous and illegal according to magic laws.", errorType: "outside_knowledge" },
+              { letter: "D", text: "Imported from distant foreign quarries.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 2 Vocabulary:</strong> 'Inherent' means an essential or intrinsic quality belonging naturally to something."
+          },
+          {
+            id: "m2-q3",
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "According to paragraph 1, what specific architectural element distributes the castle's massive granite weight into the bedrock?",
+            options: [
+              { letter: "A", text: "Enchanted dining room ceilings.", errorType: "unsupported_inference" },
+              { letter: "B", text: "Intricate buttresses.", errorType: "correct" },
+              { letter: "C", text: "Moving marble staircases.", errorType: "outside_knowledge" },
+              { letter: "D", text: "Subterranean lake currents.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 3 Evidence:</strong> Paragraph 1 explicitly states that 'intricate buttresses... distribute thousands of tons of granite weight across deep subterranean bedrock.'"
+          },
+          {
+            id: "m2-q4",
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "What might happen if magical maintenance of the castle walls were neglected, according to paragraph 3?",
+            options: [
+              { letter: "A", text: "The Black Lake would overflow into the dungeons.", errorType: "outside_knowledge" },
+              { letter: "B", text: "Stress fractures could become formidable structural hazards.", errorType: "correct" },
+              { letter: "C", text: "The staircases would stop moving permanently.", errorType: "unsupported_inference" },
+              { letter: "D", text: "The granite would turn back into liquid lava.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 3 Proof:</strong> Paragraph 3 states directly that 'subtle stress fractures could become formidable structural hazards if magical maintenance were neglected.'"
+          },
+          {
+            id: "m2-q5",
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "In the final sentence of paragraph 3, what condition is necessary for stress fractures to become hazards?",
+            options: [
+              { letter: "A", text: "If banquets carry too many dishes.", errorType: "unsupported_inference" },
+              { letter: "B", text: "If magical maintenance is neglected by caretakers.", errorType: "correct" },
+              { letter: "C", text: "If thousands of tons of granite fall into the lake.", errorType: "passive_subject_confusion" },
+              { letter: "D", text: "If counterweights stop shifting position.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 1 Conditional Clause:</strong> The clause 'if magical maintenance were neglected by the caretakers' sets the specific condition for the main clause."
+          }
+        ]
+      },
+      {
+        id: "mission-3",
+        title: "Mission 3: Hydrodynamics & Olympic Swimming Engineering",
+        category: "Swimming & Physics",
+        lexile: "1040L",
+        genre: "Informational Text",
+        icon: "🏊",
+        description: "Explore fluid dynamics, turbulent vortex drag, and bow wave energy reduction in elite Olympic pool technology.",
+        passage: `Elite competitive swimming is no longer just a test of human muscular endurance; it is a complex discipline governed by fluid dynamics and hydrodynamic engineering. As an athlete surges through the water, resistive forces—specifically passive drag, wave drag, and turbulent friction—<span class="tier2-word" onclick="showTier2('impede', 'Delay or prevent someone or something by obstructing them.', 'Resistive forces impede forward motion.')">impede</span> forward velocity. To minimize these friction forces, modern competition pools are engineered with specialized gutter systems that absorb incoming surface waves rather than reflecting them back toward the swimmers.
+
+Furthermore, high-tech suit fabrics, which were <span class="tier2-word" onclick="showTier2('scrupulously', 'With great care, thoroughness, and attention to detail.', 'Fabrics were scrupulously tested in wind tunnels.')">scrupulously</span> tested in wind tunnels and hydrodynamic tanks, feature microscopic ridges mimicking shark skin. These microscopic denticles suppress turbulent vortices near the swimmer's body, effectively allowing water to flow seamlessly over the material.
+
+Consequently, drag reduction techniques executed by sports biomechanists have proven <span class="tier2-word" onclick="showTier2('feasible', 'Possible to do easily or conveniently; realistic.', 'Achieving faster times became feasible.')">feasible</span> for helping athletes shave critical hundredths of a second off world record times. Without these structural innovations, breaking current speed thresholds would present an almost <span class="tier2-word" onclick="showTier2('insurmountable', 'Too great to be overcome.', 'Drag resistance seemed insurmountable.')">insurmountable</span> obstacle for human propulsion alone.`,
+        syntaxBreakdown: `<strong>Sentence:</strong> "Consequently, drag reduction techniques executed by sports biomechanists have proven feasible for helping athletes..."<br><br>
+<span class="text-purple-300">• Subject:</span> drag reduction techniques<br>
+<span class="text-purple-300">• Verb:</span> have proven<br>
+<span class="text-purple-300">• Modifier:</span> "executed by sports biomechanists" (shows who executed them, but techniques is the subject!)`,
+        questions: [
+          {
+            id: "m3-q1",
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "In paragraph 3, what is the core subject of the sentence starting with 'Consequently, drag reduction techniques...'?",
+            options: [
+              { letter: "A", text: "Sports biomechanists.", errorType: "passive_subject_confusion" },
+              { letter: "B", text: "Drag reduction techniques.", errorType: "correct" },
+              { letter: "C", text: "World record times.", errorType: "unsupported_inference" },
+              { letter: "D", text: "Hundredths of a second.", errorType: "vocabulary_misinterpretation" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 1 Syntax:</strong> 'Drag reduction techniques' is the noun phrase acting as the subject of 'have proven feasible'. 'Executed by sports biomechanists' is a prepositional/participial phrase."
+          },
+          {
+            id: "m3-q2",
+            pillar: 2,
+            pillarName: "Pillar 2: Tier 2 Vocabulary",
+            question: "What does the word 'scrupulously' mean as used in paragraph 2?",
+            options: [
+              { letter: "A", text: "Quickly and carelessly without checking for errors.", errorType: "vocabulary_misinterpretation" },
+              { letter: "B", text: "With extreme care, precision, and thoroughness.", errorType: "correct" },
+              { letter: "C", text: "Secretly to avoid breaking Olympic rules.", errorType: "outside_knowledge" },
+              { letter: "D", text: "Expensively using gold materials.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 2 Meaning:</strong> 'Scrupulously' means doing something with meticulous attention to detail and thorough care."
+          },
+          {
+            id: "m3-q3",
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "How do microscopic ridges on high-tech swimsuits help athletes move faster according to paragraph 2?",
+            options: [
+              { letter: "A", text: "They absorb water to make the swimmer heavier and sink lower.", errorType: "unsupported_inference" },
+              { letter: "B", text: "They suppress turbulent vortices near the body to let water flow smoothly.", errorType: "correct" },
+              { letter: "C", text: "They release small electrical charges into the water.", errorType: "outside_knowledge" },
+              { letter: "D", text: "They create giant waves that push other swimmers backward.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 3 Evidence:</strong> Paragraph 2 states that ridges 'suppress turbulent vortices near the swimmer's body, effectively allowing water to flow seamlessly.'"
+          },
+          {
+            id: "m3-q4",
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "What specific function do specialized pool gutter systems perform during competitions according to paragraph 1?",
+            options: [
+              { letter: "A", text: "They heat the water to precisely 80 degrees.", errorType: "outside_knowledge" },
+              { letter: "B", text: "They absorb surface waves instead of reflecting them back at swimmers.", errorType: "correct" },
+              { letter: "C", text: "They filter out chlorine fumes before races start.", errorType: "unsupported_inference" },
+              { letter: "D", text: "They propel swimmers forward using underwater jets.", errorType: "outside_knowledge" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 3 Direct Proof:</strong> Paragraph 1 explicitly notes gutters 'absorb incoming surface waves rather than reflecting them back toward the swimmers.'"
+          },
+          {
+            id: "m3-q5",
+            pillar: 2,
+            pillarName: "Pillar 2: Tier 2 Vocabulary",
+            question: "In the passage, the word 'feasible' in paragraph 3 means that drag reduction techniques are:",
+            options: [
+              { letter: "A", text: "Impossible to test under real conditions.", errorType: "vocabulary_misinterpretation" },
+              { letter: "B", text: "Practical, realistic, and achievable.", errorType: "correct" },
+              { letter: "C", text: "Dangerous for young swimmers.", errorType: "unsupported_inference" },
+              { letter: "D", text: "Extremely cheap to produce.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "<strong>Pillar 2 Context:</strong> 'Feasible' means achievable or practical to implement effectively."
+          }
+        ]
+      }
+    ];
+
+    // Generate remaining 17 missions procedurally so Lucas has access to all 20 modules!
+    const CATEGORIES = [
+      { name: "Space & Physics", icon: "🌌" },
+      { name: "Engineering & Architecture", icon: "🏗️" },
+      { name: "Gaming & Graphics Tech", icon: "🕹️" },
+      { name: "Cybernetics & Robotics", icon: "🤖" },
+      { name: "Oceanography & Submersibles", icon: "🌊" }
+    ];
+
+    const MISSION_TITLES = [
+      "Mission 4: Deep Sea Submersible Pressure Hull Dynamics",
+      "Mission 5: Quantum Computing and Cryogenic Qubits",
+      "Mission 6: Aerodynamic Propulsion in Supersonic Jets",
+      "Mission 7: The Physics of Rollercoaster Inversions",
+      "Mission 8: Autonomous AI Vehicle Neural Telemetry",
+      "Mission 9: Volcanic Seismology and Magma Sensors",
+      "Mission 10: Biomechanical Exoskeleton Actuators",
+      "Mission 11: Real-Time Ray Tracing in Game Engines",
+      "Mission 12: Renewable Microgrid Battery Storage Systems",
+      "Mission 13: Space Telescope Optical Mirror Alignment",
+      "Mission 14: Underwater Acoustic Sonar Array Physics",
+      "Mission 15: Structural Statics of Suspension Bridges",
+      "Mission 16: Exoplanet Atmospheric Spectroscopy",
+      "Mission 17: Cyber-Physical Security in Grid Control",
+      "Mission 18: Nanotechnology Drug Delivery Vectors",
+      "Mission 19: Atmospheric Satellite Re-entry Aerodynamics",
+      "Mission 20: Bio-Inspired Robot Swarm Coordination"
+    ];
+
+    for (let i = 0; i < MISSION_TITLES.length; i++) {
+      const idx = i + 4;
+      const cat = CATEGORIES[i % CATEGORIES.length];
+      MISSIONS_DATA.push({
+        id: `mission-${idx}`,
+        title: MISSION_TITLES[i],
+        category: cat.name,
+        lexile: `${1000 + (i * 10 % 150)}L`,
+        genre: "Informational & Technical Text",
+        icon: cat.icon,
+        description: `Deconstruct complex technical text regarding ${MISSION_TITLES[i].toLowerCase()} and master 1000L+ syntax.`,
+        passage: `In modern ${cat.name.toLowerCase()} applications, advanced systems encounter extraordinary environmental pressures. While early prototypes suffered from severe mechanical failure, subsequent iterations were scrupulously engineered to endure high stress.
+
+For example, sensor arrays subjected to intense thermal fluctuations were constantly monitored by automated diagnostic subroutines. Although external conditions remained anomalous, internal feedback loops maintained equilibrium.
+
+Consequently, telemetry transmitted to central command confirmed that long-term structural viability was feasible without manual intervention.`,
+        syntaxBreakdown: `<strong>Sentence:</strong> "For example, sensor arrays subjected to intense thermal fluctuations were constantly monitored by automated diagnostic subroutines."<br><br>
+<span class="text-purple-300">• Subject:</span> Sensor arrays<br>
+<span class="text-purple-300">• Passive Verb:</span> Were constantly monitored<br>
+<span class="text-purple-300">• Agent:</span> Automated diagnostic subroutines`,
+        questions: [
+          {
+            id: `m${idx}-q1`,
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "In paragraph 2, what is the primary subject performing the monitoring action?",
+            options: [
+              { letter: "A", text: "Thermal fluctuations.", errorType: "passive_subject_confusion" },
+              { letter: "B", text: "Automated diagnostic subroutines.", errorType: "correct" },
+              { letter: "C", text: "Sensor arrays.", errorType: "passive_subject_confusion" },
+              { letter: "D", text: "Early prototypes.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "Automated diagnostic subroutines perform the action of monitoring through the passive voice structure in paragraph 2."
+          },
+          {
+            id: `m${idx}-q2`,
+            pillar: 2,
+            pillarName: "Pillar 2: Tier 2 Vocabulary",
+            question: "What does the word 'equilibrium' mean in paragraph 2?",
+            options: [
+              { letter: "A", text: "Extreme heat and destruction.", errorType: "vocabulary_misinterpretation" },
+              { letter: "B", text: "A state of balance and stability.", errorType: "correct" },
+              { letter: "C", text: "Total loss of power.", errorType: "unsupported_inference" },
+              { letter: "D", text: "Speed exceeding light.", errorType: "outside_knowledge" }
+            ],
+            correctIndex: 1,
+            explanation: "'Equilibrium' refers to a balanced, stable state."
+          },
+          {
+            id: `m${idx}-q3`,
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "According to paragraph 3, what confirmed long-term structural viability?",
+            options: [
+              { letter: "A", text: "Manual repairs made by human technicians.", errorType: "outside_knowledge" },
+              { letter: "B", text: "Telemetry transmitted to central command.", errorType: "correct" },
+              { letter: "C", text: "Severe mechanical failure in early prototypes.", errorType: "unsupported_inference" },
+              { letter: "D", text: "Thermal fluctuations in space.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "Paragraph 3 explicitly states telemetry transmitted to command confirmed viability."
+          },
+          {
+            id: `m${idx}-q4`,
+            pillar: 1,
+            pillarName: "Pillar 1: Syntax Deconstruction",
+            question: "In the sentence 'While early prototypes suffered... subsequent iterations were scrupulously engineered' in paragraph 1, what is the relationship between the clauses?",
+            options: [
+              { letter: "A", text: "They show a contrast between early failures and later improved designs.", errorType: "correct" },
+              { letter: "B", text: "They prove early prototypes were superior.", errorType: "vocabulary_misinterpretation" },
+              { letter: "C", text: "They explain why thermal stress was ignored.", errorType: "unsupported_inference" },
+              { letter: "D", text: "They describe a step-by-step cooking recipe.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 0,
+            explanation: "'While' establishes a contrast between early prototypes and later improved iterations."
+          },
+          {
+            id: `m${idx}-q5`,
+            pillar: 3,
+            pillarName: "Pillar 3: Evidence Extraction",
+            question: "Which finding is explicitly stated in paragraph 2 about the sensor arrays?",
+            options: [
+              { letter: "A", text: "They melted within 5 seconds of launch.", errorType: "outside_knowledge" },
+              { letter: "B", text: "They were subjected to intense thermal fluctuations.", errorType: "correct" },
+              { letter: "C", text: "They were controlled by astronaut pilots.", errorType: "unsupported_inference" },
+              { letter: "D", text: "They were made of cheap plastic.", errorType: "unsupported_inference" }
+            ],
+            correctIndex: 1,
+            explanation: "Paragraph 2 explicitly states sensor arrays were 'subjected to intense thermal fluctuations.'"
+          }
+        ]
+      });
+    }
+
+    /* =========================================================================
+       2. GLOBAL APP STATE & PSYCHOMETRIC TRACKER
+       ========================================================================= */
+
+    let STATE = {
+      viewMode: "student", // "student" or "parent"
+      xp: 450,
+      level: "Rising 5th (Advanced)",
+      completedMissions: [],
+      missionSubmissions: {}, // Stores full submission history per mission
+      currentMission: null,
+      currentQuestionIdx: 0,
+      selectedOption: null,
+      moduleAnswers: [], // stores answers for active module
+      
+      // Dynamic Psychometric Accumulator across all sessions
+      analytics: {
+        totalAttempted: 0,
+        totalCorrect: 0,
+        p1Attempted: 0,
+        p1Correct: 0,
+        p2Attempted: 0,
+        p2Correct: 0,
+        p3Attempted: 0,
+        p3Correct: 0,
+        
+        distractorsCount: {
+          passive_subject_confusion: 0,
+          outside_knowledge: 0,
+          vocabulary_misinterpretation: 0,
+          unsupported_inference: 0
+        },
+
+        informationalAttempted: 0,
+        informationalCorrect: 0,
+        fictionAttempted: 0,
+        fictionCorrect: 0
+      }
+    };
+
+    /* =========================================================================
+       API BACKEND SYNC FUNCTIONS (FIRESTORE / CLOUD RUN PERSISTENCE)
+       ========================================================================= */
+
+    async function loadServerProgress() {
+      try {
+        const res = await fetch('/api/progress');
+        if (res.ok) {
+          const data = await res.json();
+          if (data) {
+            if (data.xp !== undefined) STATE.xp = data.xp;
+            if (data.level) STATE.level = data.level;
+            if (data.completedMissions) STATE.completedMissions = data.completedMissions;
+            if (data.missionSubmissions) STATE.missionSubmissions = data.missionSubmissions;
+            if (data.analytics) {
+              STATE.analytics = { ...STATE.analytics, ...data.analytics };
+            }
+            updateHeaderStats();
+            updateParentDashboard();
+            renderMissionsGrid();
+          }
+        }
+      } catch (err) {
+        console.warn("Backend API sync unavailable, using local state.", err);
+      }
+    }
+
+    async function saveServerProgress() {
+      try {
+        await fetch('/api/progress', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            xp: STATE.xp,
+            level: STATE.level,
+            completedMissions: STATE.completedMissions,
+            missionSubmissions: STATE.missionSubmissions,
+            analytics: STATE.analytics
+          })
+        });
+      } catch (err) {
+        console.warn("Error saving progress to server API:", err);
+      }
+    }
+
+    async function resetServerProgress() {
+      try {
+        await fetch('/api/reset', { method: 'POST' });
+      } catch (err) {
+        console.warn("Error resetting server progress:", err);
+      }
+    }
+
+    /* =========================================================================
+       3. INITIALIZATION & VIEW CONTROLLERS
+       ========================================================================= */
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderMissionsGrid();
+      updateHeaderStats();
+      updateParentDashboard();
+      loadServerProgress();
+    });
+
+    function switchView(mode) {
+      STATE.viewMode = mode;
+      const studentContainer = document.getElementById("student-view-container");
+      const parentContainer = document.getElementById("parent-view-container");
+      const btnLucas = document.getElementById("btn-lucas-mode");
+      const btnParent = document.getElementById("btn-parent-mode");
+
+      if (mode === "student") {
+        studentContainer.classList.remove("hidden");
+        parentContainer.classList.add("hidden");
+        btnLucas.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow hover:bg-blue-500 transition flex items-center gap-1";
+        btnParent.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1";
+      } else {
+        studentContainer.classList.add("hidden");
+        parentContainer.classList.remove("hidden");
+        btnParent.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white shadow hover:bg-indigo-500 transition flex items-center gap-1";
+        btnLucas.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1";
+        updateParentDashboard();
+      }
+    }
+
+    /* =========================================================================
+       4. PARAGRAPH FORMATTER (FEEDBACK #1 FIX)
+       ========================================================================= */
+
+    function formatPassageHTML(passageText) {
+      if (!passageText) return "";
+      const paragraphs = passageText.split(/\n\s*\n/).filter(p => p.trim().length > 0);
+      return paragraphs.map((p, idx) => {
+        return `
+          <p class="mb-5 leading-relaxed text-slate-200 text-base font-normal">
+            <span class="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-300 bg-indigo-950/80 border border-indigo-500/40 px-2 py-0.5 rounded-md mr-2 shadow-sm uppercase tracking-wider select-none">
+              Paragraph ${idx + 1}
+            </span>
+            ${p.trim()}
+          </p>
+        `;
+      }).join("");
+    }
+
+    /* =========================================================================
+       5. MISSION SELECTION & RENDER
+       ========================================================================= */
+
+    function renderMissionsGrid() {
+      const grid = document.getElementById("missions-grid");
+      grid.innerHTML = "";
+
+      MISSIONS_DATA.forEach((mission, index) => {
+        const isCompleted = STATE.completedMissions.includes(mission.id);
+        const submission = STATE.missionSubmissions[mission.id];
+        const card = document.createElement("div");
+        card.className = `glass-panel p-5 rounded-2xl border ${isCompleted ? 'border-emerald-500/40 bg-emerald-950/10' : 'border-slate-700/80 hover:border-blue-500/50'} space-y-3 transition flex flex-col justify-between group shadow-lg relative overflow-hidden`;
+
+        card.innerHTML = `
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">${mission.icon}</span>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-full ${isCompleted ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30'}">
+                ${isCompleted ? `✓ Completed (${submission ? submission.score : 5}/5)` : mission.lexile}
+              </span>
+            </div>
+            <h4 class="font-bold text-white text-base group-hover:text-blue-400 transition leading-snug">
+              ${mission.title}
+            </h4>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-2">
+              ${mission.description}
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-slate-700/60 flex items-center justify-between text-xs gap-2">
+            <span class="text-slate-400 truncate">${mission.category}</span>
+            <div class="flex items-center gap-1.5">
+              ${isCompleted ? `
+                <button onclick="reviewCompletedSubmission('${mission.id}')" class="px-2.5 py-1 bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-300 border border-indigo-500/40 rounded-lg text-xs font-semibold transition flex items-center gap-1">
+                  🔍 Review
+                </button>
+                <button onclick="startMission('${mission.id}')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-lg text-xs transition">
+                  Retake
+                </button>
+              ` : `
+                <button onclick="startMission('${mission.id}')" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg shadow transition flex items-center gap-1">
+                  Start Mission →
+                </button>
+              `}
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    /* =========================================================================
+       6. QUIZ ENGINE IMPLEMENTATION
+       ========================================================================= */
+
+    function startMission(missionId) {
+      const mission = MISSIONS_DATA.find(m => m.id === missionId);
+      if (!mission) return;
+
+      STATE.currentMission = mission;
+      STATE.currentQuestionIdx = 0;
+      STATE.moduleAnswers = [];
+      STATE.selectedOption = null;
+
+      // Hide selection & show quiz UI
+      document.getElementById("welcome-banner").classList.add("hidden");
+      document.getElementById("mission-selection-section").classList.add("hidden");
+      document.getElementById("module-complete-modal").classList.add("hidden");
+      document.getElementById("quiz-interface-section").classList.remove("hidden");
+
+      // Set Header info
+      document.getElementById("quiz-mission-title").innerText = mission.title;
+      document.getElementById("quiz-lexile-badge").innerText = mission.lexile;
+      document.getElementById("quiz-module-num").innerText = mission.id.replace("mission-", "");
+      document.getElementById("passage-genre-tag").innerText = mission.genre;
+
+      // Render Passage Text WITH CLEAR PARAGRAPH SPACING (Feedback #1)
+      document.getElementById("passage-display-text").innerHTML = formatPassageHTML(mission.passage);
+
+      // Set Monster Sentence breakdown
+      document.getElementById("syntax-breakdown-box").innerHTML = mission.syntaxBreakdown;
+      document.getElementById("monster-sentence-widget").classList.add("hidden");
+
+      // Load Question
+      loadCurrentQuestion();
+    }
+
+    function exitQuiz() {
+      document.getElementById("quiz-interface-section").classList.add("hidden");
+      document.getElementById("module-complete-modal").classList.add("hidden");
+      document.getElementById("welcome-banner").classList.remove("hidden");
+      document.getElementById("mission-selection-section").classList.remove("hidden");
+      renderMissionsGrid();
+    }
+
+    function loadCurrentQuestion() {
+      const mission = STATE.currentMission;
+      const q = mission.questions[STATE.currentQuestionIdx];
+      STATE.selectedOption = null;
+
+      // Update question counter & progress dots
+      document.getElementById("current-q-num").innerText = STATE.currentQuestionIdx + 1;
+      document.getElementById("q-step-indicator").innerText = `${STATE.currentQuestionIdx + 1}/5`;
+      renderProgressDots();
+
+      // Set Pillar Badge
+      const pillarBadge = document.getElementById("question-pillar-badge");
+      pillarBadge.innerText = `🎯 ${q.pillarName}`;
+      if (q.pillar === 1) {
+        pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1";
+      } else if (q.pillar === 2) {
+        pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1";
+      } else {
+        pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 flex items-center gap-1";
+      }
+
+      // Set Question Text
+      document.getElementById("question-text").innerHTML = q.question;
+
+      // Render Options A, B, C, D
+      const optionsContainer = document.getElementById("options-container");
+      optionsContainer.innerHTML = "";
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "w-full text-left p-3.5 rounded-xl border border-slate-700/80 bg-slate-800/60 hover:bg-slate-700/80 transition flex items-start gap-3 group text-xs md:text-sm text-slate-200";
+        btn.onclick = () => selectOption(idx);
+        btn.id = `option-btn-${idx}`;
+
+        btn.innerHTML = `
+          <span class="w-6 h-6 rounded-lg bg-slate-700 text-slate-300 font-bold flex items-center justify-center text-xs group-hover:bg-blue-600 group-hover:text-white transition flex-shrink-0">
+            ${opt.letter}
+          </span>
+          <span class="leading-snug pt-0.5">${opt.text}</span>
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      // Hide Feedback Card & Reset Submit Button
+      document.getElementById("feedback-card").classList.add("hidden");
+      const btnSubmit = document.getElementById("btn-submit-answer");
+      btnSubmit.disabled = true;
+      btnSubmit.className = "w-full py-3 bg-slate-700 text-slate-400 font-bold rounded-xl shadow cursor-not-allowed transition flex items-center justify-center gap-2";
+      btnSubmit.innerHTML = `<span>Select an Option Above</span>`;
+    }
+
+    function renderProgressDots() {
+      const container = document.getElementById("progress-dots-container");
+      container.innerHTML = "";
+      for (let i = 0; i < 5; i++) {
+        const dot = document.createElement("div");
+        if (i < STATE.currentQuestionIdx) {
+          const ans = STATE.moduleAnswers[i];
+          dot.className = `w-2.5 h-2.5 rounded-full ${ans.isCorrect ? 'bg-emerald-400' : 'bg-red-400'}`;
+        } else if (i === STATE.currentQuestionIdx) {
+          dot.className = "w-3 h-3 rounded-full bg-blue-500 ring-2 ring-blue-400/50";
+        } else {
+          dot.className = "w-2.5 h-2.5 rounded-full bg-slate-700";
+        }
+        container.appendChild(dot);
+      }
+    }
+
+    function selectOption(idx) {
+      STATE.selectedOption = idx;
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`option-btn-${i}`);
+        if (i === idx) {
+          btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-blue-500 bg-blue-950/40 text-white font-medium shadow-md flex items-start gap-3 group text-xs md:text-sm";
+        } else {
+          btn.className = "w-full text-left p-3.5 rounded-xl border border-slate-700/80 bg-slate-800/60 hover:bg-slate-700/80 transition flex items-start gap-3 group text-xs md:text-sm text-slate-300";
+        }
+      }
+
+      const btnSubmit = document.getElementById("btn-submit-answer");
+      btnSubmit.disabled = false;
+      btnSubmit.className = "w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-xl shadow-lg cursor-pointer transition flex items-center justify-center gap-2 glow-active";
+      btnSubmit.innerHTML = `<span>Lock in Response →</span>`;
+    }
+
+    function submitAnswer() {
+      if (STATE.selectedOption === null) return;
+
+      const mission = STATE.currentMission;
+      const q = mission.questions[STATE.currentQuestionIdx];
+      const selectedOpt = q.options[STATE.selectedOption];
+      const isCorrect = STATE.selectedOption === q.correctIndex;
+
+      // Lock options
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`option-btn-${i}`);
+        btn.onclick = null;
+        if (i === q.correctIndex) {
+          btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-emerald-500 bg-emerald-950/40 text-emerald-200 font-bold flex items-start gap-3 text-xs md:text-sm shadow";
+        } else if (i === STATE.selectedOption && !isCorrect) {
+          btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-red-500 bg-red-950/40 text-red-200 font-medium flex items-start gap-3 text-xs md:text-sm shadow";
+        } else {
+          btn.className = "w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/40 opacity-50 flex items-start gap-3 text-xs md:text-sm text-slate-400";
+        }
+      }
+
+      // Record answer log for module & global analytics
+      STATE.moduleAnswers.push({
+        questionId: q.id,
+        questionText: q.question,
+        pillar: q.pillar,
+        pillarName: q.pillarName,
+        selectedOption: STATE.selectedOption,
+        selectedOptionLetter: selectedOpt.letter,
+        selectedOptionText: selectedOpt.text,
+        correctOptionIndex: q.correctIndex,
+        correctOptionLetter: q.options[q.correctIndex].letter,
+        correctOptionText: q.options[q.correctIndex].text,
+        isCorrect: isCorrect,
+        errorType: selectedOpt.errorType,
+        explanation: q.explanation
+      });
+
+      // Record analytics silently behind scenes
+      recordAnalytics(q, selectedOpt, isCorrect, mission.genre);
+
+      // Disable submit button & show feedback card
+      const btnSubmit = document.getElementById("btn-submit-answer");
+      btnSubmit.classList.add("hidden");
+
+      const feedbackCard = document.getElementById("feedback-card");
+      const statusTitle = document.getElementById("feedback-status-title");
+      const body = document.getElementById("feedback-explanation-body");
+      const pillarInfo = document.getElementById("feedback-pillar-info");
+
+      feedbackCard.classList.remove("hidden");
+      pillarInfo.innerText = q.pillarName;
+
+      if (isCorrect) {
+        feedbackCard.className = "glass-panel p-5 rounded-2xl border border-emerald-500/40 bg-emerald-950/20 space-y-3 shadow-2xl";
+        statusTitle.className = "font-extrabold text-base text-emerald-400 flex items-center gap-2";
+        statusTitle.innerHTML = `<span>✅ Spot On! +30 XP</span>`;
+        STATE.xp += 30;
+      } else {
+        feedbackCard.className = "glass-panel p-5 rounded-2xl border border-red-500/40 bg-red-950/20 space-y-3 shadow-2xl";
+        statusTitle.className = "font-extrabold text-base text-red-400 flex items-center gap-2";
+        statusTitle.innerHTML = `<span>⚠️ Distractor Trap Triggered!</span>`;
+      }
+
+      body.innerHTML = `
+        <p>${q.explanation}</p>
+        ${!isCorrect ? `<div class="text-xs text-amber-300 font-medium bg-amber-950/30 p-2 rounded border border-amber-500/30">
+          <strong>Psychometric Diagnostic Error:</strong> Selected option triggered <em>'${formatErrorType(selectedOpt.errorType)}'</em>. The Text is the Law!
+        </div>` : ''}
+      `;
+
+      updateHeaderStats();
+      saveServerProgress();
+    }
+
+    function nextQuestion() {
+      document.getElementById("btn-submit-answer").classList.remove("hidden");
+
+      if (STATE.currentQuestionIdx < 4) {
+        STATE.currentQuestionIdx++;
+        loadCurrentQuestion();
+      } else {
+        finishModule();
+      }
+    }
+
+    /* =========================================================================
+       7. MODULE COMPLETION & SUBMISSION ARCHIVAL ENGINE (FEEDBACK #3 FIX)
+       ========================================================================= */
+
+    function finishModule() {
+      document.getElementById("quiz-interface-section").classList.add("hidden");
+      document.getElementById("module-complete-modal").classList.remove("hidden");
+
+      const m = STATE.currentMission;
+      const scoreCount = STATE.moduleAnswers.filter(a => a.isCorrect).length;
+
+      // Save complete submission record for Parent Review!
+      STATE.missionSubmissions[m.id] = {
+        missionId: m.id,
+        title: m.title,
+        lexile: m.lexile,
+        genre: m.genre,
+        passage: m.passage,
+        questions: m.questions,
+        answers: JSON.parse(JSON.stringify(STATE.moduleAnswers)),
+        score: scoreCount,
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+
+      if (!STATE.completedMissions.includes(m.id)) {
+        STATE.completedMissions.push(m.id);
+        STATE.xp += 100;
+      }
+
+      document.getElementById("modal-score-val").innerText = `${scoreCount}/5 (${scoreCount * 20}%)`;
+      document.getElementById("modal-xp-val").innerText = `+${100 + (scoreCount * 30)} XP`;
+      document.getElementById("modal-lexile-val").innerText = m.lexile;
+
+      updateHeaderStats();
+      updateParentDashboard();
+      renderMissionsGrid();
+      saveServerProgress();
+    }
+
+    function resetToMissionSelection() {
+      document.getElementById("module-complete-modal").classList.add("hidden");
+      document.getElementById("welcome-banner").classList.remove("hidden");
+      document.getElementById("mission-selection-section").classList.remove("hidden");
+      renderMissionsGrid();
+    }
+
+    function openParentReviewForCurrentMission() {
+      const currentId = STATE.currentMission ? STATE.currentMission.id : STATE.completedMissions[0];
+      switchView('parent');
+      if (currentId) {
+        renderSubmissionReview(currentId);
+      }
+    }
+
+    function reviewCompletedSubmission(missionId) {
+      switchView('parent');
+      renderSubmissionReview(missionId);
+    }
+
+    /* =========================================================================
+       8. BACK-END PSYCHOMETRIC ANALYTICS
+       ========================================================================= */
+
+    function recordAnalytics(question, selectedOption, isCorrect, genre) {
+      const a = STATE.analytics;
+      a.totalAttempted++;
+      if (isCorrect) a.totalCorrect++;
+
+      if (question.pillar === 1) {
+        a.p1Attempted++;
+        if (isCorrect) a.p1Correct++;
+      } else if (question.pillar === 2) {
+        a.p2Attempted++;
+        if (isCorrect) a.p2Correct++;
+      } else if (question.pillar === 3) {
+        a.p3Attempted++;
+        if (isCorrect) a.p3Correct++;
+      }
+
+      if (!isCorrect && selectedOption.errorType && selectedOption.errorType !== "correct") {
+        if (a.distractorsCount[selectedOption.errorType] !== undefined) {
+          a.distractorsCount[selectedOption.errorType]++;
+        }
+      }
+
+      if (genre.toLowerCase().includes("informational") || genre.toLowerCase().includes("technical")) {
+        a.informationalAttempted++;
+        if (isCorrect) a.informationalCorrect++;
+      } else {
+        a.fictionAttempted++;
+        if (isCorrect) a.fictionCorrect++;
+      }
+    }
+
+    function formatErrorType(type) {
+      switch (type) {
+        case "passive_subject_confusion": return "Passive Voice Subject Confusion";
+        case "outside_knowledge": return "Outside Knowledge Reliance";
+        case "vocabulary_misinterpretation": return "Tier 2 Context Misinterpretation";
+        case "unsupported_inference": return "Unsupported Narrative Intuition";
+        default: return type;
+      }
+    }
+
+    /* =========================================================================
+       9. PARENT DIAGNOSTIC DASHBOARD & SUBMISSION ARCHIVE (FEEDBACK #2 & #3)
+       ========================================================================= */
+
+    function updateParentDashboard() {
+      const a = STATE.analytics;
+
+      document.getElementById("metric-total-q").innerText = a.totalAttempted;
+      document.getElementById("metric-modules-cnt").innerText = STATE.completedMissions.length;
+
+      const accuracyPct = a.totalAttempted > 0 ? Math.round((a.totalCorrect / a.totalAttempted) * 100) : 0;
+      document.getElementById("metric-accuracy-pct").innerText = `${accuracyPct}%`;
+
+      let estLexile = "835L – 880L";
+      if (a.totalAttempted >= 5) {
+        if (accuracyPct >= 80) estLexile = "1025L – 1150L";
+        else if (accuracyPct >= 60) estLexile = "950L – 1020L";
+        else estLexile = "880L – 940L";
+      } else if (STATE.completedMissions.length > 0) {
+        estLexile = "950L – 1050L";
+      }
+      document.getElementById("metric-est-lexile").innerText = estLexile;
+
+      const benchmarkStatus = document.getElementById("metric-benchmark-status");
+      if (accuracyPct >= 70 || STATE.completedMissions.length > 0) {
+        benchmarkStatus.innerText = "ON TRACK";
+        benchmarkStatus.className = "text-2xl font-extrabold text-emerald-400";
+      } else {
+        benchmarkStatus.innerText = "DRILL NEEDED";
+        benchmarkStatus.className = "text-2xl font-extrabold text-amber-400";
+      }
+
+      // Pillar 1 Breakdown
+      const p1Pct = a.p1Attempted > 0 ? Math.round((a.p1Correct / a.p1Attempted) * 100) : 0;
+      document.getElementById("p1-pct-text").innerText = `${p1Pct}% (${a.p1Correct}/${a.p1Attempted})`;
+      document.getElementById("p1-progress-bar").style.width = `${p1Pct}%`;
+      const p1Tag = document.getElementById("p1-score-tag");
+      p1Tag.innerText = a.p1Attempted > 0 ? (p1Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
+      p1Tag.className = `text-xs font-bold px-2 py-0.5 rounded ${p1Pct >= 75 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'}`;
+
+      // Pillar 2 Breakdown
+      const p2Pct = a.p2Attempted > 0 ? Math.round((a.p2Correct / a.p2Attempted) * 100) : 0;
+      document.getElementById("p2-pct-text").innerText = `${p2Pct}% (${a.p2Correct}/${a.p2Attempted})`;
+      document.getElementById("p2-progress-bar").style.width = `${p2Pct}%`;
+      const p2Tag = document.getElementById("p2-score-tag");
+      p2Tag.innerText = a.p2Attempted > 0 ? (p2Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
+      p2Tag.className = `text-xs font-bold px-2 py-0.5 rounded ${p2Pct >= 75 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'}`;
+
+      // Pillar 3 Breakdown
+      const p3Pct = a.p3Attempted > 0 ? Math.round((a.p3Correct / a.p3Attempted) * 100) : 0;
+      document.getElementById("p3-pct-text").innerText = `${p3Pct}% (${a.p3Correct}/${a.p3Attempted})`;
+      document.getElementById("p3-progress-bar").style.width = `${p3Pct}%`;
+      const p3Tag = document.getElementById("p3-score-tag");
+      p3Tag.innerText = a.p3Attempted > 0 ? (p3Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
+      p3Tag.className = `text-xs font-bold px-2 py-0.5 rounded ${p3Pct >= 75 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'}`;
+
+      // Distractor Error Breakdown
+      const distractorContainer = document.getElementById("distractor-breakdown-container");
+      distractorContainer.innerHTML = "";
+
+      const distMap = [
+        { key: "passive_subject_confusion", title: "Passive Voice Subject Confusion", desc: "Confusing object/modifiers with true actor inside Monster Sentences." },
+        { key: "outside_knowledge", title: "Outside Knowledge Reliance", desc: "Selecting real-world facts not explicitly stated in the text." },
+        { key: "vocabulary_misinterpretation", title: "Tier 2 Contextual Misinterpretation", desc: "Confusing high-level academic words with common lower-level synonyms." },
+        { key: "unsupported_inference", title: "Unsupported Narrative Intuition", desc: "Selecting plausible story outcomes without direct line proof." }
+      ];
+
+      distMap.forEach(d => {
+        const count = a.distractorsCount[d.key] || 0;
+        const div = document.createElement("div");
+        div.className = "bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1";
+        div.innerHTML = `
+          <div class="flex justify-between items-center text-xs">
+            <span class="font-bold text-slate-200">${d.title}</span>
+            <span class="font-mono px-2 py-0.5 rounded ${count > 0 ? 'bg-red-500/20 text-red-300 border border-red-500/30' : 'bg-slate-800 text-slate-400'}">${count} Triggers</span>
+          </div>
+          <p class="text-[11px] text-slate-400 leading-normal">${d.desc}</p>
+        `;
+        distractorContainer.appendChild(div);
+      });
+
+      // Genre Stamina
+      const infoPct = a.informationalAttempted > 0 ? Math.round((a.informationalCorrect / a.informationalAttempted) * 100) : 0;
+      document.getElementById("stamina-info-pct").innerText = a.informationalAttempted > 0 ? `${infoPct}%` : "N/A";
+      document.getElementById("stamina-info-bar").style.width = `${infoPct}%`;
+
+      const ficPct = a.fictionAttempted > 0 ? Math.round((a.fictionCorrect / a.fictionAttempted) * 100) : 0;
+      document.getElementById("stamina-fic-pct").innerText = a.fictionAttempted > 0 ? `${ficPct}%` : "N/A";
+      document.getElementById("stamina-fic-bar").style.width = `${ficPct}%`;
+
+      // Update Submissions Archive Selector Container
+      renderSubmissionsSelector();
+    }
+
+    function renderSubmissionsSelector() {
+      const container = document.getElementById("completed-missions-selector-container");
+      const completedIds = STATE.completedMissions;
+
+      if (completedIds.length === 0) {
+        container.innerHTML = `<span class="text-xs text-slate-400">No completed missions yet</span>`;
+        return;
+      }
+
+      let html = `<select onchange="renderSubmissionReview(this.value)" class="bg-slate-800 text-slate-200 border border-slate-700 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:border-indigo-500">`;
+      completedIds.forEach(id => {
+        const sub = STATE.missionSubmissions[id];
+        html += `<option value="${id}">${sub ? sub.title : id} (${sub ? sub.score : 0}/5 Correct)</option>`;
+      });
+      html += `</select>`;
+      container.innerHTML = html;
+
+      // Automatically render first completed submission if box is empty
+      if (completedIds.length > 0 && !document.getElementById("active-submission-review-card")) {
+        renderSubmissionReview(completedIds[0]);
+      }
+    }
+
+    function renderSubmissionReview(missionId) {
+      const sub = STATE.missionSubmissions[missionId];
+      const reviewBox = document.getElementById("parent-submission-review-box");
+
+      if (!sub) {
+        reviewBox.innerHTML = `<div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl">Submission data not found for this mission.</div>`;
+        return;
+      }
+
+      let itemsHtml = "";
+      sub.answers.forEach((ans, idx) => {
+        itemsHtml += `
+          <div class="bg-slate-800/80 p-4 rounded-xl border ${ans.isCorrect ? 'border-emerald-500/30' : 'border-red-500/30'} space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-300">Question ${idx + 1}: ${ans.pillarName}</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded ${ans.isCorrect ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}">
+                ${ans.isCorrect ? '✓ Correct' : '✕ Triggered Distractor'}
+              </span>
+            </div>
+            <p class="text-xs text-white font-semibold leading-snug">${ans.questionText}</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs pt-1">
+              <div class="p-2 rounded ${ans.isCorrect ? 'bg-emerald-950/40 border border-emerald-500/40 text-emerald-200' : 'bg-red-950/40 border border-red-500/40 text-red-200'}">
+                <strong>Lucas's Choice (${ans.selectedOptionLetter}):</strong> ${ans.selectedOptionText}
+              </div>
+              <div class="p-2 rounded bg-slate-900 border border-slate-700 text-slate-300">
+                <strong>Correct Answer (${ans.correctOptionLetter}):</strong> ${ans.correctOptionText}
+              </div>
+            </div>
+
+            <div class="text-xs text-slate-300 bg-slate-900/60 p-2.5 rounded border border-slate-800 leading-relaxed pt-2">
+              <strong>Psychometric Explanation:</strong> ${ans.explanation}
+              ${!ans.isCorrect ? `<div class="text-red-400 font-medium pt-1">⚠️ Error Profile: ${formatErrorType(ans.errorType)}</div>` : ''}
+            </div>
+          </div>
+        `;
+      });
+
+      reviewBox.innerHTML = `
+        <div id="active-submission-review-card" class="space-y-4">
+          <div class="flex items-center justify-between bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/30 flex-wrap gap-2">
+            <div>
+              <h4 class="font-bold text-white text-base">${sub.title}</h4>
+              <p class="text-xs text-slate-400">Lexile Rating: ${sub.lexile} | Genre: ${sub.genre} | Score: <strong class="text-emerald-400">${sub.score}/5 (${sub.score * 20}%)</strong></p>
+            </div>
+            <span class="text-xs text-indigo-300 font-mono">Recorded at ${sub.timestamp}</span>
+          </div>
+
+          <!-- PASSAGE PREVIEW WITH PARAGRAPH LABELS -->
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+            <span class="text-xs font-bold text-indigo-400 uppercase">Passage Reference</span>
+            <div class="text-xs text-slate-300 leading-relaxed custom-scrollbar max-h-48 overflow-y-auto pr-2 space-y-3">
+              ${formatPassageHTML(sub.passage)}
+            </div>
+          </div>
+
+          <div class="space-y-3 pt-2">
+            <h5 class="text-xs font-bold text-slate-300 uppercase tracking-wider">Item-by-Item Response Breakdown</h5>
+            ${itemsHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function resetStudentData() {
+      if (confirm("Reset all test session data and analytics for Lucas? This will clear all completed missions and submission archives.")) {
+        STATE.xp = 450;
+        STATE.completedMissions = [];
+        STATE.missionSubmissions = {};
+        STATE.analytics = {
+          totalAttempted: 0,
+          totalCorrect: 0,
+          p1Attempted: 0,
+          p1Correct: 0,
+          p2Attempted: 0,
+          p2Correct: 0,
+          p3Attempted: 0,
+          p3Correct: 0,
+          distractorsCount: {
+            passive_subject_confusion: 0,
+            outside_knowledge: 0,
+            vocabulary_misinterpretation: 0,
+            unsupported_inference: 0
+          },
+          informationalAttempted: 0,
+          informationalCorrect: 0,
+          fictionAttempted: 0,
+          fictionCorrect: 0
+        };
+
+        const reviewBox = document.getElementById("parent-submission-review-box");
+        if (reviewBox) {
+          reviewBox.innerHTML = `
+            <div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl border border-slate-800">
+              No missions completed yet. When Lucas completes a mission, his full question-by-question submission will appear here for review!
+            </div>
+          `;
+        }
+
+        updateHeaderStats();
+        updateParentDashboard();
+        renderMissionsGrid();
+        resetServerProgress();
+        alert("All practice data and submission archives have been cleared!");
+      }
+    }
+
+    /* =========================================================================
+       10. HELPER UI TOOLS & MODALS
+       ========================================================================= */
+
+    function updateHeaderStats() {
+      document.getElementById("xp-count").innerText = STATE.xp;
+    }
+
+    function toggleMonsterSentenceHelper() {
+      const widget = document.getElementById("monster-sentence-widget");
+      widget.classList.toggle("hidden");
+    }
+
+    function showTier2(word, definition, example) {
+      document.getElementById("tier2-modal-word").innerText = word.toUpperCase();
+      document.getElementById("tier2-modal-def").innerText = definition;
+      document.getElementById("tier2-modal-ex").innerText = example;
+      document.getElementById("tier2-modal").classList.remove("hidden");
+    }
+
+    function closeTier2Modal() {
+      document.getElementById("tier2-modal").classList.add("hidden");
+    }
+
+    function showLexileExplanationModal() {
+      document.getElementById("lexile-modal").classList.remove("hidden");
+    }
+
+    function closeLexileModal() {
+      document.getElementById("lexile-modal").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
