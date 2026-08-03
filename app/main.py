@@ -38,7 +38,7 @@ COLLECTION_NAME = "student_progress"
 
 DEFAULT_PROGRESS = {
     "studentId": "lucas",
-    "studentName": "Lucas",
+    "studentName": "Lucas Ramirez",
     "xp": 450,
     "level": "Rising 5th (Advanced)",
     "completedMissions": [],
@@ -67,7 +67,7 @@ DEFAULT_PROGRESS = {
 
 class ProgressModel(BaseModel):
     studentId: Optional[str] = "lucas"
-    studentName: Optional[str] = "Lucas"
+    studentName: Optional[str] = "Lucas Ramirez"
     xp: Optional[int] = 450
     level: Optional[str] = "Rising 5th (Advanced)"
     completedMissions: Optional[List[str]] = []
@@ -92,7 +92,7 @@ def read_local_fallback(student_id: str) -> dict:
     # Custom defaults for Evelyn vs Lucas
     prog = json.loads(json.dumps(DEFAULT_PROGRESS))
     prog["studentId"] = student_id
-    prog["studentName"] = "Evelyn Mietling" if "evelyn" in student_id.lower() else "Lucas"
+    prog["studentName"] = "Evelyn Mietling" if "evelyn" in student_id.lower() else "Lucas Ramirez"
     return prog
 
 
@@ -118,7 +118,7 @@ def get_progress(student_id: str = "lucas"):
             else:
                 default_data = json.loads(json.dumps(DEFAULT_PROGRESS))
                 default_data["studentId"] = clean_id
-                default_data["studentName"] = "Evelyn Mietling" if "evelyn" in clean_id else "Lucas"
+                default_data["studentName"] = "Evelyn Mietling" if "evelyn" in clean_id else "Lucas Ramirez"
                 doc_ref.set(default_data)
                 return default_data
         except Exception as e:
@@ -154,7 +154,7 @@ def reset_progress(student_id: str = "lucas"):
     clean_id = student_id.lower().replace(" ", "_")
     default_data = json.loads(json.dumps(DEFAULT_PROGRESS))
     default_data["studentId"] = clean_id
-    default_data["studentName"] = "Evelyn Mietling" if "evelyn" in clean_id else "Lucas"
+    default_data["studentName"] = "Evelyn Mietling" if "evelyn" in clean_id else "Lucas Ramirez"
 
     if db:
         try:

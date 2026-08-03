@@ -108,7 +108,7 @@
         <div class="flex items-center gap-1.5 bg-slate-800/90 border border-indigo-500/40 rounded-xl px-3 py-1 shadow-sm">
           <span class="text-xs font-semibold text-indigo-300">👤 Active Student:</span>
           <select id="student-selector" onchange="switchStudent(this.value)" class="bg-slate-900 text-white font-bold text-xs rounded-lg px-2.5 py-1 border border-slate-700 focus:outline-none focus:border-indigo-500 cursor-pointer">
-            <option value="lucas">Lucas</option>
+            <option value="lucas">Lucas Ramirez</option>
             <option value="evelyn_mietling">Evelyn Mietling</option>
           </select>
         </div>
@@ -1062,7 +1062,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
     let STATE = {
       viewMode: "student", // "student" or "parent"
       activeStudent: "lucas", // "lucas" or "evelyn_mietling"
-      studentName: "Lucas",
+      studentName: "Lucas Ramirez",
       xp: 450,
       level: "Rising 5th (Advanced)",
       completedMissions: [],
@@ -1102,7 +1102,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
        ========================================================================= */
 
     function updateStudentNameUI() {
-      const name = STATE.studentName || (STATE.activeStudent === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas");
+      const name = STATE.studentName || (STATE.activeStudent === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas Ramirez");
       
       const welcomeEl = document.getElementById("welcome-student-name");
       if (welcomeEl) welcomeEl.innerText = name;
@@ -1133,7 +1133,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       await saveServerProgress();
 
       STATE.activeStudent = studentId;
-      STATE.studentName = studentId === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas";
+      STATE.studentName = studentId === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas Ramirez";
 
       // Clear local memory buffers
       STATE.completedMissions = [];
