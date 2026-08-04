@@ -495,6 +495,89 @@
         </div>
       </div>
 
+      <!-- SECTION 1B: DOK COGNITIVE LEVELS & EBSR PAIRED PROOF ANALYSIS -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- DOK LEVEL BREAKDOWN -->
+        <div class="glass-panel p-6 rounded-2xl border border-indigo-500/30 bg-slate-900/80 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-700/60 pb-3">
+            <h3 class="text-base font-bold text-white flex items-center gap-2">
+              <span>🧠 Webb's Depth of Knowledge (DOK) Cognitive Matrix</span>
+            </h3>
+            <span class="text-xs text-indigo-300 font-semibold bg-indigo-500/20 px-2 py-0.5 rounded">CAT Calibrated</span>
+          </div>
+
+          <div class="space-y-3">
+            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+              <div class="flex justify-between text-xs font-semibold">
+                <span class="text-slate-200">DOK 1: Direct Recall & Facts</span>
+                <span id="dok1-score-text" class="text-emerald-400 font-mono">0% (0/0)</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="dok1-bar" class="bg-emerald-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+              <div class="flex justify-between text-xs font-semibold">
+                <span class="text-slate-200">DOK 2: Syntax Decoding & Vocab</span>
+                <span id="dok2-score-text" class="text-amber-400 font-mono">0% (0/0)</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="dok2-bar" class="bg-amber-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+              <div class="flex justify-between text-xs font-semibold">
+                <span class="text-slate-200">DOK 3: Strategic Inference & Synthesis</span>
+                <span id="dok3-score-text" class="text-indigo-400 font-mono">0% (0/0)</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="dok3-bar" class="bg-indigo-500 h-full w-0 transition-all duration-500"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EBSR PAIRED PROOF & PACING DIAGNOSTIC -->
+        <div class="glass-panel p-6 rounded-2xl border border-indigo-500/30 bg-slate-900/80 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-700/60 pb-3">
+            <h3 class="text-base font-bold text-white flex items-center gap-2">
+              <span>🧩 EBSR Two-Part Evidence & Pacing Diagnostics</span>
+            </h3>
+            <span class="text-xs text-emerald-300 font-semibold bg-emerald-500/20 px-2 py-0.5 rounded">Proof Verification</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1">
+              <span class="text-slate-400 font-medium">Paired Proof Accuracy</span>
+              <div id="ebsr-paired-text" class="text-lg font-extrabold text-emerald-400">0% (0)</div>
+              <p class="text-[10px] text-slate-400 leading-tight">Got both Part A (Inference) and Part B (Proof) correct.</p>
+            </div>
+
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1">
+              <span class="text-slate-400 font-medium">"Intuition Without Proof"</span>
+              <div id="ebsr-intuition-text" class="text-lg font-extrabold text-amber-400">0 Times</div>
+              <p class="text-[10px] text-slate-400 leading-tight">Got Part A right but picked wrong line quote in Part B.</p>
+            </div>
+
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1">
+              <span class="text-slate-400 font-medium">Average Time Per Item</span>
+              <div id="pacing-avg-text" class="text-lg font-extrabold text-indigo-400">-- sec</div>
+              <p class="text-[10px] text-slate-400 leading-tight">Average deliberation speed across test items.</p>
+            </div>
+
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1">
+              <span class="text-slate-400 font-medium">Impulsive / Hesitation Warnings</span>
+              <div id="pacing-warning-text" class="text-lg font-extrabold text-red-400">0 Flags</div>
+              <p class="text-[10px] text-slate-400 leading-tight">Items rushed in &lt;12s or stalled &gt;3min.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <!-- SECTION 2: ERROR PATTERN DIAGNOSIS & READING BEHAVIOR -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         
@@ -1093,7 +1176,39 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
         informationalAttempted: 0,
         informationalCorrect: 0,
         fictionAttempted: 0,
-        fictionCorrect: 0
+        fictionCorrect: 0,
+
+        dokBreakdown: {
+          dok1Attempted: 0,
+          dok1Correct: 0,
+          dok2Attempted: 0,
+          dok2Correct: 0,
+          dok3Attempted: 0,
+          dok3Correct: 0
+        },
+
+        ebsrMetrics: {
+          pairedBothCorrect: 0,
+          partAOnlyCorrect: 0,
+          partBOnlyCorrect: 0,
+          bothWrong: 0
+        },
+
+        syntacticMetrics: {
+          attempted: 0,
+          correct: 0
+        },
+
+        semanticMetrics: {
+          attempted: 0,
+          correct: 0
+        },
+
+        pacingMetrics: {
+          totalSecondsSpent: 0,
+          impulsiveCount: 0,
+          hesitationCount: 0
+        }
       }
     };
 
@@ -1157,7 +1272,12 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
         informationalAttempted: 0,
         informationalCorrect: 0,
         fictionAttempted: 0,
-        fictionCorrect: 0
+        fictionCorrect: 0,
+        dokBreakdown: { dok1Attempted: 0, dok1Correct: 0, dok2Attempted: 0, dok2Correct: 0, dok3Attempted: 0, dok3Correct: 0 },
+        ebsrMetrics: { pairedBothCorrect: 0, partAOnlyCorrect: 0, partBOnlyCorrect: 0, bothWrong: 0 },
+        syntacticMetrics: { attempted: 0, correct: 0 },
+        semanticMetrics: { attempted: 0, correct: 0 },
+        pacingMetrics: { totalSecondsSpent: 0, impulsiveCount: 0, hesitationCount: 0 }
       };
 
       updateStudentNameUI();
@@ -1371,22 +1491,35 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       const mission = STATE.currentMission;
       const q = mission.questions[STATE.currentQuestionIdx];
       STATE.selectedOption = null;
+      STATE.questionStartTime = Date.now();
 
       // Update question counter & progress dots
       document.getElementById("current-q-num").innerText = STATE.currentQuestionIdx + 1;
       document.getElementById("q-step-indicator").innerText = `${STATE.currentQuestionIdx + 1}/5`;
       renderProgressDots();
 
-      // Set Pillar Badge
+      // Set Pillar / DOK / EBSR Badge
       const pillarBadge = document.getElementById("question-pillar-badge");
-      pillarBadge.innerText = `🎯 ${q.pillarName}`;
-      if (q.pillar === 1) {
+      let badgeHtml = `🎯 ${q.pillarName}`;
+      if (q.isEbsrPartA || STATE.currentQuestionIdx === 3) {
+        badgeHtml = `🧩 Part A (DOK 3 Inference): Strategic Claim`;
+        pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 flex items-center gap-1";
+      } else if (q.isEbsrPartB || STATE.currentQuestionIdx === 4) {
+        badgeHtml = `🔍 Part B (DOK 3 Proof): Paired Line Evidence`;
+        pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1";
+      } else if (q.dokLevel === 1 || STATE.currentQuestionIdx === 0) {
+        badgeHtml = `📌 DOK 1: Direct Textual Recall`;
+        pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 flex items-center gap-1";
+      } else if (q.pillar === 1) {
+        badgeHtml = `🔬 DOK 2: Syntax Deconstruction`;
         pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1";
       } else if (q.pillar === 2) {
+        badgeHtml = `📖 DOK 2: Tier 2 Academic Vocabulary`;
         pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1";
       } else {
         pillarBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 flex items-center gap-1";
       }
+      pillarBadge.innerHTML = badgeHtml;
 
       // Set Question Text
       document.getElementById("question-text").innerHTML = q.question;
@@ -1459,6 +1592,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       const q = mission.questions[STATE.currentQuestionIdx];
       const selectedOpt = q.options[STATE.selectedOption];
       const isCorrect = STATE.selectedOption === q.correctIndex;
+      const elapsedSeconds = Math.round((Date.now() - (STATE.questionStartTime || Date.now())) / 1000);
 
       // Lock options
       for (let i = 0; i < 4; i++) {
@@ -1487,11 +1621,12 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
         correctOptionText: q.options[q.correctIndex].text,
         isCorrect: isCorrect,
         errorType: selectedOpt.errorType,
-        explanation: q.explanation
+        explanation: q.explanation,
+        elapsedSeconds: elapsedSeconds
       });
 
       // Record analytics silently behind scenes
-      recordAnalytics(q, selectedOpt, isCorrect, mission.genre);
+      recordAnalytics(q, selectedOpt, isCorrect, mission.genre, elapsedSeconds);
 
       // Disable submit button & show feedback card
       const btnSubmit = document.getElementById("btn-submit-answer");
@@ -1601,7 +1736,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
        8. BACK-END PSYCHOMETRIC ANALYTICS
        ========================================================================= */
 
-    function recordAnalytics(question, selectedOption, isCorrect, genre) {
+    function recordAnalytics(question, selectedOption, isCorrect, genre, elapsedSeconds = 0) {
       const a = STATE.analytics;
       a.totalAttempted++;
       if (isCorrect) a.totalCorrect++;
@@ -1615,6 +1750,59 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       } else if (question.pillar === 3) {
         a.p3Attempted++;
         if (isCorrect) a.p3Correct++;
+      }
+
+      // DOK Breakdown
+      if (!a.dokBreakdown) {
+        a.dokBreakdown = { dok1Attempted: 0, dok1Correct: 0, dok2Attempted: 0, dok2Correct: 0, dok3Attempted: 0, dok3Correct: 0 };
+      }
+      const dok = question.dokLevel || (question.pillar === 3 ? 3 : (question.pillar === 1 ? 2 : 2));
+      if (dok === 1) {
+        a.dokBreakdown.dok1Attempted++;
+        if (isCorrect) a.dokBreakdown.dok1Correct++;
+      } else if (dok === 2) {
+        a.dokBreakdown.dok2Attempted++;
+        if (isCorrect) a.dokBreakdown.dok2Correct++;
+      } else if (dok === 3) {
+        a.dokBreakdown.dok3Attempted++;
+        if (isCorrect) a.dokBreakdown.dok3Correct++;
+      }
+
+      // Syntactic vs Semantic metrics
+      if (!a.syntacticMetrics) a.syntacticMetrics = { attempted: 0, correct: 0 };
+      if (!a.semanticMetrics) a.semanticMetrics = { attempted: 0, correct: 0 };
+      if (question.isSyntactic || question.pillar === 1) {
+        a.syntacticMetrics.attempted++;
+        if (isCorrect) a.syntacticMetrics.correct++;
+      }
+      if (question.isSemantic || question.pillar === 2) {
+        a.semanticMetrics.attempted++;
+        if (isCorrect) a.semanticMetrics.correct++;
+      }
+
+      // EBSR Paired Evidence Metrics
+      if (!a.ebsrMetrics) a.ebsrMetrics = { pairedBothCorrect: 0, partAOnlyCorrect: 0, partBOnlyCorrect: 0, bothWrong: 0 };
+      if (question.isEbsrPartB) {
+        const q4Ans = STATE.moduleAnswers[3]; // Q4 Part A answer
+        const q4Correct = q4Ans ? q4Ans.isCorrect : false;
+        if (q4Correct && isCorrect) {
+          a.ebsrMetrics.pairedBothCorrect++;
+        } else if (q4Correct && !isCorrect) {
+          a.ebsrMetrics.partAOnlyCorrect++; // Intuition without Proof!
+        } else if (!q4Correct && isCorrect) {
+          a.ebsrMetrics.partBOnlyCorrect++;
+        } else {
+          a.ebsrMetrics.bothWrong++;
+        }
+      }
+
+      // Pacing & Time-on-Task
+      if (!a.pacingMetrics) a.pacingMetrics = { totalSecondsSpent: 0, impulsiveCount: 0, hesitationCount: 0 };
+      a.pacingMetrics.totalSecondsSpent += elapsedSeconds;
+      if (elapsedSeconds > 0 && elapsedSeconds < 12) {
+        a.pacingMetrics.impulsiveCount++;
+      } else if (elapsedSeconds > 180) {
+        a.pacingMetrics.hesitationCount++;
       }
 
       if (!isCorrect && selectedOption.errorType && selectedOption.errorType !== "correct") {
@@ -1698,6 +1886,34 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       p3Tag.innerText = a.p3Attempted > 0 ? (p3Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
       p3Tag.className = `text-xs font-bold px-2 py-0.5 rounded ${p3Pct >= 75 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'}`;
 
+      // DOK Level 1 Breakdown
+      const dok = a.dokBreakdown || { dok1Attempted: 0, dok1Correct: 0, dok2Attempted: 0, dok2Correct: 0, dok3Attempted: 0, dok3Correct: 0 };
+      const dok1Pct = dok.dok1Attempted > 0 ? Math.round((dok.dok1Correct / dok.dok1Attempted) * 100) : 0;
+      document.getElementById("dok1-score-text").innerText = `${dok1Pct}% (${dok.dok1Correct}/${dok.dok1Attempted})`;
+      document.getElementById("dok1-bar").style.width = `${dok1Pct}%`;
+
+      // DOK Level 2 Breakdown
+      const dok2Pct = dok.dok2Attempted > 0 ? Math.round((dok.dok2Correct / dok.dok2Attempted) * 100) : 0;
+      document.getElementById("dok2-score-text").innerText = `${dok2Pct}% (${dok.dok2Correct}/${dok.dok2Attempted})`;
+      document.getElementById("dok2-bar").style.width = `${dok2Pct}%`;
+
+      // DOK Level 3 Breakdown
+      const dok3Pct = dok.dok3Attempted > 0 ? Math.round((dok.dok3Correct / dok.dok3Attempted) * 100) : 0;
+      document.getElementById("dok3-score-text").innerText = `${dok3Pct}% (${dok.dok3Correct}/${dok.dok3Attempted})`;
+      document.getElementById("dok3-bar").style.width = `${dok3Pct}%`;
+
+      // EBSR Paired Metrics & Pacing Diagnostics
+      const ebsr = a.ebsrMetrics || { pairedBothCorrect: 0, partAOnlyCorrect: 0, partBOnlyCorrect: 0, bothWrong: 0 };
+      const totalEbsr = ebsr.pairedBothCorrect + ebsr.partAOnlyCorrect + ebsr.partBOnlyCorrect + ebsr.bothWrong;
+      const ebsrPct = totalEbsr > 0 ? Math.round((ebsr.pairedBothCorrect / totalEbsr) * 100) : 0;
+      document.getElementById("ebsr-paired-text").innerText = `${ebsrPct}% (${ebsr.pairedBothCorrect})`;
+      document.getElementById("ebsr-intuition-text").innerText = `${ebsr.partAOnlyCorrect} Time(s)`;
+
+      const pacing = a.pacingMetrics || { totalSecondsSpent: 0, impulsiveCount: 0, hesitationCount: 0 };
+      const avgSec = a.totalAttempted > 0 ? Math.round(pacing.totalSecondsSpent / a.totalAttempted) : 0;
+      document.getElementById("pacing-avg-text").innerText = a.totalAttempted > 0 ? `${avgSec} sec` : "-- sec";
+      document.getElementById("pacing-warning-text").innerText = `${pacing.impulsiveCount + pacing.hesitationCount} Flags`;
+
       // Distractor Error Breakdown
       const distractorContainer = document.getElementById("distractor-breakdown-container");
       distractorContainer.innerHTML = "";
@@ -1731,6 +1947,66 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       const ficPct = a.fictionAttempted > 0 ? Math.round((a.fictionCorrect / a.fictionAttempted) * 100) : 0;
       document.getElementById("stamina-fic-pct").innerText = a.fictionAttempted > 0 ? `${ficPct}%` : "N/A";
       document.getElementById("stamina-fic-bar").style.width = `${ficPct}%`;
+
+      // Dynamic Prescriptive Home Action Plan Micro-Drills
+      const planContainer = document.getElementById("parent-prescriptive-plan-body");
+      if (planContainer) {
+        const studentName = STATE.studentName || "Lucas Ramirez";
+        let drillsHtml = "";
+
+        const passiveCount = a.distractorsCount.passive_subject_confusion || 0;
+        const intuitionCount = ebsr.partAOnlyCorrect || 0;
+
+        if (passiveCount > 0) {
+          drillsHtml += `
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30 space-y-2">
+              <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
+                <span>🗣️ Dinner Micro-Drill 1: Active Actor Isolation</span>
+              </h4>
+              <p class="leading-relaxed text-slate-300">
+                Read a complex passive sentence to <strong>${studentName}</strong> (e.g., <em>"The telemetry packets were transmitted by ground stations..."</em>) and ask: <strong>"Who performed the action of transmitting?"</strong> Have them cross out prepositional phrases starting with <em>by, of, through</em>.
+              </p>
+            </div>
+          `;
+        } else {
+          drillsHtml += `
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+              <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
+                <span>🎯 Strategy 1: The "Slash and Subject" Deconstruction Drill</span>
+              </h4>
+              <p class="leading-relaxed text-slate-300">
+                When reading non-fiction articles with <strong>${studentName}</strong>, ask them to find the main action verb first, then work backward to find who performed it.
+              </p>
+            </div>
+          `;
+        }
+
+        if (intuitionCount > 0 || (a.distractorsCount.outside_knowledge || 0) > 0) {
+          drillsHtml += `
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30 space-y-2">
+              <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+                <span>🗣️ Dinner Micro-Drill 2: Line Proof Elimination</span>
+              </h4>
+              <p class="leading-relaxed text-slate-300">
+                <strong>${studentName}</strong> triggered "Intuition Without Proof" ${intuitionCount} time(s). During home reading, when ${studentName} states an inference, challenge them: <strong>"Point your index finger to the exact line number on the page that proves that!"</strong>
+              </p>
+            </div>
+          `;
+        } else {
+          drillsHtml += `
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+              <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+                <span>⚖️ Strategy 2: "The Text is the Law" Proof Requirement</span>
+              </h4>
+              <p class="leading-relaxed text-slate-300">
+                During discussions, if <strong>${studentName}</strong> answers with a plausible idea, challenge them with: <em>"Point your finger to the exact line number that proves that."</em> This eliminates real-world outside knowledge traps.
+              </p>
+            </div>
+          `;
+        }
+
+        planContainer.innerHTML = drillsHtml;
+      }
 
       // Update Submissions Archive Selector Container
       renderSubmissionsSelector();

@@ -61,7 +61,34 @@ DEFAULT_PROGRESS = {
         "informationalAttempted": 0,
         "informationalCorrect": 0,
         "fictionAttempted": 0,
-        "fictionCorrect": 0
+        "fictionCorrect": 0,
+        "dokBreakdown": {
+            "dok1Attempted": 0,
+            "dok1Correct": 0,
+            "dok2Attempted": 0,
+            "dok2Correct": 0,
+            "dok3Attempted": 0,
+            "dok3Correct": 0
+        },
+        "ebsrMetrics": {
+            "pairedBothCorrect": 0,
+            "partAOnlyCorrect": 0,
+            "partBOnlyCorrect": 0,
+            "bothWrong": 0
+        },
+        "syntacticMetrics": {
+            "attempted": 0,
+            "correct": 0
+        },
+        "semanticMetrics": {
+            "attempted": 0,
+            "correct": 0
+        },
+        "pacingMetrics": {
+            "totalSecondsSpent": 0,
+            "impulsiveCount": 0,
+            "hesitationCount": 0
+        }
     }
 }
 
