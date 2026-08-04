@@ -404,7 +404,7 @@
             <h3 class="text-lg font-bold text-white flex items-center gap-2">
               <span>📜 Student Submission Archives & Item Review</span>
             </h3>
-            <p class="text-xs text-slate-400">Review Lucas's exact responses, time, and error tags for any completed mission.</p>
+            <p class="text-xs text-slate-400">Review <span class="active-student-name">Lucas Ramirez</span>'s exact responses, time, and error tags for any completed mission.</p>
           </div>
           <div class="flex items-center gap-2">
             <div id="completed-missions-selector-container">
@@ -419,7 +419,7 @@
         <!-- SUBMISSION REVIEW DISPLAY BOX -->
         <div id="parent-submission-review-box" class="space-y-4">
           <div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl border border-slate-800">
-            No missions completed yet. When Lucas completes a mission, his full question-by-question submission will appear here for review!
+            No missions completed yet. When <span class="active-student-name">Lucas Ramirez</span> completes a mission, their full question-by-question submission will appear here for review!
           </div>
         </div>
       </div>
@@ -506,7 +506,7 @@
           
           <div id="distractor-breakdown-container" class="space-y-3">
             <!-- Rendered dynamically -->
-            <div class="text-xs text-slate-400 italic">No responses recorded yet. Have Lucas complete a module to view diagnostic error profiling.</div>
+            <div class="text-xs text-slate-400 italic">No responses recorded yet. Have <span class="active-student-name">Lucas Ramirez</span> complete a module to view diagnostic error profiling.</div>
           </div>
         </div>
 
@@ -559,7 +559,7 @@
               <span>🎯 Strategy 1: The "Slash and Subject" Deconstruction Drill</span>
             </h4>
             <p class="leading-relaxed text-slate-300">
-              When reading non-fiction articles with Lucas, ask him to find the main action verb first, then work backward to find who performed it. Have him mentally cross out prepositional phrases starting with <em>by, of, through, during</em> to prevent passive voice confusion.
+              When reading non-fiction articles with <span class="active-student-name">Lucas Ramirez</span>, ask them to find the main action verb first, then work backward to find who performed it. Have them mentally cross out prepositional phrases starting with <em>by, of, through, during</em> to prevent passive voice confusion.
             </p>
           </div>
 
@@ -568,7 +568,7 @@
               <span>⚖️ Strategy 2: "The Text is the Law" Proof Requirement</span>
             </h4>
             <p class="leading-relaxed text-slate-300">
-              During discussions, if Lucas answers with a plausible idea, challenge him with: <em>"Point your finger to the exact line number that proves that."</em> This eliminates the "Outside Knowledge Trap" where bright students pick real-world facts that aren't mentioned in the text.
+              During discussions, if <span class="active-student-name">Lucas Ramirez</span> answers with a plausible idea, challenge them with: <em>"Point your finger to the exact line number that proves that."</em> This eliminates the "Outside Knowledge Trap" where bright students pick real-world facts that aren't mentioned in the text.
             </p>
           </div>
 
@@ -635,7 +635,7 @@
         <div class="bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/30 space-y-2">
           <h4 class="font-bold text-white text-xs text-indigo-300">🤖 Simulator Item Response & Adaptive Scoring Formula</h4>
           <ul class="list-disc list-inside text-xs text-slate-300 space-y-1.5">
-            <li><strong>Baseline Anchor:</strong> Lucas started with an 835L metric from 3rd grade.</li>
+            <li><strong>Baseline Anchor:</strong> <span class="active-student-name">Lucas Ramirez</span> started with an 835L metric from 3rd grade.</li>
             <li><strong>Item Calibration:</strong> Passages in this simulator are pre-calibrated between 950L and 1150L.</li>
             <li><strong>Rasch Model Weighting:</strong> Accuracy on 1000L+ items increases estimated Lexile score, while distractor errors (e.g., <em>Passive Voice Confusion</em>) adjust confidence intervals downward.</li>
             <li><strong>Target Goal:</strong> Maintaining 75%+ accuracy across 950L–1150L modules solidifies a <strong>1000L–1150L</strong> rating, ensuring readiness for Dickerson Middle School Advanced Track.</li>
@@ -1739,13 +1739,21 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
     function renderSubmissionsSelector() {
       const container = document.getElementById("completed-missions-selector-container");
       const completedIds = STATE.completedMissions;
+      const reviewBox = document.getElementById("parent-submission-review-box");
 
       if (completedIds.length === 0) {
         container.innerHTML = `<span class="text-xs text-slate-400">No completed missions yet</span>`;
+        if (reviewBox) {
+          reviewBox.innerHTML = `
+            <div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl border border-slate-800">
+              No missions completed yet. When <span class="active-student-name">${STATE.studentName}</span> completes a mission, their full question-by-question submission will appear here for review!
+            </div>
+          `;
+        }
         return;
       }
 
-      let html = `<select onchange="renderSubmissionReview(this.value)" class="bg-slate-800 text-slate-200 border border-slate-700 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:border-indigo-500">`;
+      let html = `<select id="submission-mission-select" onchange="renderSubmissionReview(this.value)" class="bg-slate-800 text-slate-200 border border-slate-700 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:border-indigo-500">`;
       completedIds.forEach(id => {
         const sub = STATE.missionSubmissions[id];
         html += `<option value="${id}">${sub ? sub.title : id} (${sub ? sub.score : 0}/5 Correct)</option>`;
@@ -1753,10 +1761,8 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
       html += `</select>`;
       container.innerHTML = html;
 
-      // Automatically render first completed submission if box is empty
-      if (completedIds.length > 0 && !document.getElementById("active-submission-review-card")) {
-        renderSubmissionReview(completedIds[0]);
-      }
+      // Always render submission review for the selected or first completed mission of active student
+      renderSubmissionReview(completedIds[0]);
     }
 
     function renderSubmissionReview(missionId) {
@@ -1824,7 +1830,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
     }
 
     function resetStudentData() {
-      if (confirm("Reset all test session data and analytics for Lucas? This will clear all completed missions and submission archives.")) {
+      if (confirm(`Reset all test session data and analytics for ${STATE.studentName}? This will clear all completed missions and submission archives.`)) {
         STATE.xp = 450;
         STATE.completedMissions = [];
         STATE.missionSubmissions = {};
@@ -1853,7 +1859,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
         if (reviewBox) {
           reviewBox.innerHTML = `
             <div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl border border-slate-800">
-              No missions completed yet. When Lucas completes a mission, his full question-by-question submission will appear here for review!
+              No missions completed yet. When <span class="active-student-name">${STATE.studentName}</span> completes a mission, their full question-by-question submission will appear here for review!
             </div>
           `;
         }
@@ -1862,7 +1868,7 @@ Consequently, telemetry transmitted to central command confirmed that long-term 
         updateParentDashboard();
         renderMissionsGrid();
         resetServerProgress();
-        alert("All practice data and submission archives have been cleared!");
+        alert(`All practice data and submission archives for ${STATE.studentName} have been cleared!`);
       }
     }
 
