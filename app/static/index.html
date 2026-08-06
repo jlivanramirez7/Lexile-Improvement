@@ -173,7 +173,7 @@
         <div id="targeted-workouts-container" class="space-y-3 hidden mb-6">
           <div class="flex items-center justify-between border-b border-amber-500/30 pb-2">
             <h3 class="text-base font-extrabold text-amber-300 flex items-center gap-2">
-              <span>🎯 Lucas Ramirez Diagnostic Focus Workouts (Official Test Targets)</span>
+              <span>🎯 Diagnostic Focus Workouts</span>
             </h3>
             <span class="text-xs font-bold text-amber-400 bg-amber-500/20 px-2.5 py-0.5 rounded-full border border-amber-500/30">
               Nickajack ES Test Diagnostics
@@ -7389,7 +7389,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
             "category": "Fractions & Decimals (Milestones Priority #1)",
             "gradeLevel": "GSE 4.NF.6 & 4.NF.7",
             "icon": "\ud83c\udf09",
-            "priorityBadge": "\ud83d\udd34 Milestones Below Target Focus",
+            "priorityBadge": "Focus",
             "description": "Master converting between tenths/hundredths, decimal notation, and comparing fractions to decimals.",
             "strategyTip": "Remember: 0.7 is 7/10 (or 70/100). To compare 0.65 and 3/5, convert 3/5 to 6/10 = 0.60, so 0.65 > 0.60!",
             "questions": [
@@ -7556,7 +7556,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
             "category": "Fraction Operations (Milestones Priority #2)",
             "gradeLevel": "GSE 4.NF.3 & 4.NF.5",
             "icon": "\u2795",
-            "priorityBadge": "\ud83d\udfe1 Milestones Approaching Target Focus",
+            "priorityBadge": "Focus",
             "description": "Eliminate denominator addition traps, add/subtract mixed numbers, and solve multi-step fraction word problems.",
             "strategyTip": "Golden Rule of Fractions: NEVER add or subtract denominators! When adding 3/8 + 2/8, add numerators (3+2=5) and keep denominator 8 -> 5/8.",
             "questions": [
@@ -7723,7 +7723,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
             "category": "Base Ten & Numerical Reasoning (BEACON Target)",
             "gradeLevel": "GSE 4.NBT.1 & 4.NBT.5",
             "icon": "\u26a1",
-            "priorityBadge": "\ud83d\udd35 BEACON Score Recovery Focus",
+            "priorityBadge": "Focus",
             "description": "Recover numerical reasoning skills with powers of 10, multi-digit place value shifts, and multi-digit multiplication.",
             "strategyTip": "When multiplying by powers of 10: 45 \u00d7 10 = 450; 45 \u00d7 100 = 4,500; 45 \u00d7 1,000 = 45,000. Each zero shifts the digits one place value to the left!",
             "questions": [
@@ -8284,11 +8284,12 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
     function renderMissionsGrid() {
       const grid = document.getElementById("missions-grid");
       const isMath = STATE.activeSubject === "math";
+      const isLucas = (STATE.activeStudent || "lucas") === "lucas";
       
-      // If Math mode, render Lucas Diagnostic Priority Workouts Banner above grid!
+      // Render Diagnostic Priority Workouts Banner ONLY in Math mode for Lucas!
       const targetedContainer = document.getElementById("targeted-workouts-container");
       if (targetedContainer) {
-        if (isMath) {
+        if (isMath && isLucas) {
           targetedContainer.classList.remove("hidden");
           renderTargetedWorkoutsUI();
         } else {
