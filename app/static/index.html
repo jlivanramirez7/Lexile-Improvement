@@ -8283,6 +8283,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
 
     function renderMissionsGrid() {
       const grid = document.getElementById("missions-grid");
+      const isMath = STATE.activeSubject === "math";
       
       // If Math mode, render Lucas Diagnostic Priority Workouts Banner above grid!
       const targetedContainer = document.getElementById("targeted-workouts-container");
@@ -8296,7 +8297,6 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       }
       grid.innerHTML = "";
 
-      const isMath = STATE.activeSubject === "math";
       const dataSet = isMath ? MATH_MISSIONS_DATA : MISSIONS_DATA;
       const completedList = isMath ? (STATE.completedMathMissions || []) : STATE.completedMissions;
       const submissionsDict = isMath ? (STATE.mathMissionSubmissions || {}) : STATE.missionSubmissions;
