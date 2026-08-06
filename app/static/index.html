@@ -169,6 +169,19 @@
           <span class="text-xs text-indigo-400 font-medium">DRC BEACON CAT Algorithm Simulation</span>
         </div>
 
+        <!-- LUCAS DIAGNOSTIC FOCUS WORKOUTS BANNER (MATH MODE ONLY) -->
+        <div id="targeted-workouts-container" class="space-y-3 hidden mb-6">
+          <div class="flex items-center justify-between border-b border-amber-500/30 pb-2">
+            <h3 class="text-base font-extrabold text-amber-300 flex items-center gap-2">
+              <span>🎯 Lucas Ramirez Diagnostic Focus Workouts (Official Test Targets)</span>
+            </h3>
+            <span class="text-xs font-bold text-amber-400 bg-amber-500/20 px-2.5 py-0.5 rounded-full border border-amber-500/30">
+              Nickajack ES Test Diagnostics
+            </span>
+          </div>
+          <div id="targeted-workouts-list" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+        </div>
+
         <div id="missions-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- Mission cards rendered dynamically via JavaScript -->
         </div>
@@ -7369,6 +7382,510 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       }
 ];
 
+    const LUCAS_TARGETED_WORKOUTS = [
+      {
+            "id": "workout-decimals-fractions",
+            "title": "\ud83c\udfaf Diagnostic Focus Workout 1: Decimals & Fractions Bridge",
+            "category": "Fractions & Decimals (Milestones Priority #1)",
+            "gradeLevel": "GSE 4.NF.6 & 4.NF.7",
+            "icon": "\ud83c\udf09",
+            "priorityBadge": "\ud83d\udd34 Milestones Below Target Focus",
+            "description": "Master converting between tenths/hundredths, decimal notation, and comparing fractions to decimals.",
+            "strategyTip": "Remember: 0.7 is 7/10 (or 70/100). To compare 0.65 and 3/5, convert 3/5 to 6/10 = 0.60, so 0.65 > 0.60!",
+            "questions": [
+                  {
+                        "id": "w1-q1",
+                        "domain": "NF",
+                        "domainName": "Decimals & Fractions Equivalence",
+                        "dokLevel": 2,
+                        "question": "Which fraction is equivalent to the decimal number 0.45?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "45/100 (or 9/20)",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "4/5",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "45/10",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "4/50",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "0.45 has two decimal places (tenths and hundredths). 0.45 = 45/100. Dividing numerator and denominator by 5 gives 9/20."
+                  },
+                  {
+                        "id": "w2-q2",
+                        "domain": "NF",
+                        "domainName": "Decimals & Fractions Equivalence",
+                        "dokLevel": 2,
+                        "question": "Which comparison statement is TRUE?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "0.7 > 68/100",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "0.7 < 68/100",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "0.7 = 7/100",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "68/100 = 0.6",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "Convert 0.7 to hundredths: 0.7 = 70/100. Comparing: 70/100 > 68/100. Thus 0.7 > 68/100 is TRUE."
+                  },
+                  {
+                        "id": "w1-q3",
+                        "domain": "NF",
+                        "domainName": "Decimals & Fractions Equivalence",
+                        "dokLevel": 2,
+                        "question": "Lucas ran 6/10 of a mile on Monday and 25/100 of a mile on Tuesday. What was his total distance expressed as a DECIMAL?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "0.85 miles",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "0.31 miles",
+                                    "errorType": "denominator_addition_misconception"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "8.5 miles",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "0.625 miles",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "Convert 6/10 to hundredths: 60/100. Sum = 60/100 + 25/100 = 85/100 = 0.85 miles."
+                  },
+                  {
+                        "id": "w1-q4",
+                        "domain": "NF",
+                        "domainName": "Decimals & Fractions Equivalence",
+                        "dokLevel": 2,
+                        "question": "Which point on a number line represents the number 1.40?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "The point located exactly at 1 4/10 (or 1 40/100)",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "The point located at 1 4/100",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "The point located halfway between 0 and 1",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "The point located at 14/100",
+                                    "errorType": "place_value_shift"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "1.40 = 1 whole + 40/100 = 1 4/10."
+                  },
+                  {
+                        "id": "w1-q5",
+                        "domain": "NF",
+                        "domainName": "Decimals & Fractions Equivalence",
+                        "dokLevel": 3,
+                        "question": "A pitcher contains 8/10 liter of juice. Evelyn drinks 0.35 liters of juice. How many liters of juice remain in the pitcher expressed as a FRACTION?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "45/100 (or 9/20) liter",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "5/10 liter",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "27/100 liter",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "45/10 liter",
+                                    "errorType": "place_value_shift"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "8/10 = 80/100 = 0.80. 0.80 - 0.35 = 0.45 liters = 45/100 liter."
+                  }
+            ]
+      },
+      {
+            "id": "workout-fraction-operations",
+            "title": "\ud83c\udfaf Diagnostic Focus Workout 2: Fraction Addition & Subtraction Mastery",
+            "category": "Fraction Operations (Milestones Priority #2)",
+            "gradeLevel": "GSE 4.NF.3 & 4.NF.5",
+            "icon": "\u2795",
+            "priorityBadge": "\ud83d\udfe1 Milestones Approaching Target Focus",
+            "description": "Eliminate denominator addition traps, add/subtract mixed numbers, and solve multi-step fraction word problems.",
+            "strategyTip": "Golden Rule of Fractions: NEVER add or subtract denominators! When adding 3/8 + 2/8, add numerators (3+2=5) and keep denominator 8 -> 5/8.",
+            "questions": [
+                  {
+                        "id": "w2-q1",
+                        "domain": "NF",
+                        "domainName": "Fraction Addition & Subtraction",
+                        "dokLevel": 2,
+                        "question": "What is 3/10 + 45/100?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "75/100",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "48/110",
+                                    "errorType": "denominator_addition_misconception"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "48/100",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "75/10",
+                                    "errorType": "place_value_shift"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "3/10 = 30/100. 30/100 + 45/100 = 75/100. Option B adds 3+45 and 10+100 (denominator addition trap)."
+                  },
+                  {
+                        "id": "w2-q2",
+                        "domain": "NF",
+                        "domainName": "Fraction Addition & Subtraction",
+                        "dokLevel": 2,
+                        "question": "Find the sum of 2 3/8 + 4 7/8.",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "7 2/8 (or 7 1/4)",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "6 10/16",
+                                    "errorType": "denominator_addition_misconception"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "6 10/8",
+                                    "errorType": "partial_step_completion"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "7 5/8",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "(2+4) + (3/8+7/8) = 6 + 10/8 = 6 + 1 2/8 = 7 2/8. Option C forgets to convert improper fraction 10/8."
+                  },
+                  {
+                        "id": "w2-q3",
+                        "domain": "NF",
+                        "domainName": "Fraction Addition & Subtraction",
+                        "dokLevel": 2,
+                        "question": "Subtract: 5 1/6 - 2 4/6.",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "2 3/6 (or 2 1/2)",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "3 3/6",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "3 1/6",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "2 5/6",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "Convert to improper fractions: 31/6 - 16/6 = 15/6 = 2 3/6."
+                  },
+                  {
+                        "id": "w2-q4",
+                        "domain": "NF",
+                        "domainName": "Fraction Addition & Subtraction",
+                        "dokLevel": 3,
+                        "question": "A recipe requires 7/8 cup of flour. Lucas has 3/8 cup of wheat flour and 2/8 cup of white flour. How much more flour does he need?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "2/8 cup",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "5/8 cup",
+                                    "errorType": "partial_step_completion"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "2/16 cup",
+                                    "errorType": "denominator_addition_misconception"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "4/8 cup",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "Total flour on hand = 3/8 + 2/8 = 5/8 cup. Additional needed = 7/8 - 5/8 = 2/8 cup."
+                  },
+                  {
+                        "id": "w2-q5",
+                        "domain": "NF",
+                        "domainName": "Fraction Addition & Subtraction",
+                        "dokLevel": 2,
+                        "question": "Decompose the fraction 6/8 into a sum of unit fractions.",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "1/8 + 1/8 + 1/8 + 1/8 + 1/8 + 1/8",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "3/8 + 3/8",
+                                    "errorType": "misreading_operation"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "1/6 + 1/6 + 1/6 + 1/6 + 1/6 + 1/6",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "2/8 + 4/8",
+                                    "errorType": "misreading_operation"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "A unit fraction has a numerator of 1. 6/8 decomposed into unit fractions is six 1/8 fractions added together."
+                  }
+            ]
+      },
+      {
+            "id": "workout-numerical-reasoning",
+            "title": "\ud83c\udfaf Diagnostic Focus Workout 3: Numerical Reasoning & Base Ten Power-Up",
+            "category": "Base Ten & Numerical Reasoning (BEACON Target)",
+            "gradeLevel": "GSE 4.NBT.1 & 4.NBT.5",
+            "icon": "\u26a1",
+            "priorityBadge": "\ud83d\udd35 BEACON Score Recovery Focus",
+            "description": "Recover numerical reasoning skills with powers of 10, multi-digit place value shifts, and multi-digit multiplication.",
+            "strategyTip": "When multiplying by powers of 10: 45 \u00d7 10 = 450; 45 \u00d7 100 = 4,500; 45 \u00d7 1,000 = 45,000. Each zero shifts the digits one place value to the left!",
+            "questions": [
+                  {
+                        "id": "w3-q1",
+                        "domain": "NBT",
+                        "domainName": "Base Ten & Numerical Reasoning",
+                        "dokLevel": 2,
+                        "question": "How does the value of the digit 5 in 520,000 compare to the value of the digit 5 in 5,200?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "It is 100 times greater.",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "It is 10 times greater.",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "It is equal in value.",
+                                    "errorType": "misreading_operation"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "It is 1,000 times greater.",
+                                    "errorType": "place_value_shift"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "In 520,000, 5 is in the hundred-thousands place (500,000). In 5,200, 5 is in the thousands place (5,000). 500,000 \u00f7 5,000 = 100."
+                  },
+                  {
+                        "id": "w3-q2",
+                        "domain": "NBT",
+                        "domainName": "Base Ten & Numerical Reasoning",
+                        "dokLevel": 2,
+                        "question": "Calculate 64 \u00d7 35.",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "2,240",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "1,920",
+                                    "errorType": "partial_step_completion"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "320",
+                                    "errorType": "partial_step_completion"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "22,400",
+                                    "errorType": "place_value_shift"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "64 \u00d7 30 = 1,920 and 64 \u00d7 5 = 320. Sum = 1,920 + 320 = 2,240. Option B is 64 \u00d7 30 only; Option C is 64 \u00d7 5 only."
+                  },
+                  {
+                        "id": "w3-q3",
+                        "domain": "NBT",
+                        "domainName": "Base Ten & Numerical Reasoning",
+                        "dokLevel": 2,
+                        "question": "What is 738,492 rounded to the nearest TEN THOUSAND?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "740,000",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "738,000",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "730,000",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "700,000",
+                                    "errorType": "place_value_shift"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "Ten-thousands digit is 3. Look at thousands digit (8). Since 8 \u2265 5, round up 3 to 4 -> 740,000."
+                  },
+                  {
+                        "id": "w3-q4",
+                        "domain": "NBT",
+                        "domainName": "Base Ten & Numerical Reasoning",
+                        "dokLevel": 2,
+                        "question": "A warehouse receives 2,800 boxes. The boxes are divided equally among 7 trucks. How many boxes are loaded onto each truck?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "400 boxes",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "40 boxes",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "4,000 boxes",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "700 boxes",
+                                    "errorType": "computational_error"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "28 \u00f7 7 = 4, so 2,800 \u00f7 7 = 400 boxes per truck."
+                  },
+                  {
+                        "id": "w3-q5",
+                        "domain": "NBT",
+                        "domainName": "Base Ten & Numerical Reasoning",
+                        "dokLevel": 3,
+                        "question": "An estimation strategy rounds 48 \u00d7 29 by rounding 48 to 50 and 29 to 30. What is the estimated product, and how does it compare to the exact product (1,392)?",
+                        "options": [
+                              {
+                                    "letter": "A",
+                                    "text": "Estimated product = 1,500; it is an overestimate of the exact product.",
+                                    "errorType": "correct"
+                              },
+                              {
+                                    "letter": "B",
+                                    "text": "Estimated product = 1,200; it is an underestimate of the exact product.",
+                                    "errorType": "computational_error"
+                              },
+                              {
+                                    "letter": "C",
+                                    "text": "Estimated product = 15,000; it is an overestimate of the exact product.",
+                                    "errorType": "place_value_shift"
+                              },
+                              {
+                                    "letter": "D",
+                                    "text": "Estimated product = 1,500; it is equal to the exact product.",
+                                    "errorType": "misreading_operation"
+                              }
+                        ],
+                        "correctIndex": 0,
+                        "explanation": "50 \u00d7 30 = 1,500. Since both factors were rounded UP (48->50, 29->30), 1,500 is an overestimate compared to 1,392."
+                  }
+            ]
+      }
+];
+
     /* =========================================================================
        2. GLOBAL APP STATE & PSYCHOMETRIC TRACKER
        ========================================================================= */
@@ -7686,8 +8203,97 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       }
     }
 
+    
+    function renderTargetedWorkoutsUI() {
+      const list = document.getElementById("targeted-workouts-list");
+      if (!list) return;
+      list.innerHTML = "";
+
+      LUCAS_TARGETED_WORKOUTS.forEach((w) => {
+        const isCompleted = (STATE.completedMathMissions || []).includes(w.id);
+        const card = document.createElement("div");
+        card.className = "bg-slate-900/90 p-5 rounded-2xl border border-amber-500/40 hover:border-amber-400 transition space-y-3 shadow-xl relative overflow-hidden flex flex-col justify-between";
+        card.innerHTML = `
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded-full bg-red-500/20 text-red-300 border border-red-500/40">
+                ${w.priorityBadge}
+              </span>
+              <span class="text-xs font-mono text-slate-400">${w.gradeLevel}</span>
+            </div>
+            <h4 class="font-bold text-white text-base text-amber-300 leading-snug">
+              ${w.title}
+            </h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              ${w.description}
+            </p>
+            <div class="p-2.5 rounded-lg bg-amber-950/30 border border-amber-500/20 text-[11px] text-amber-200 italic">
+              <strong>Strategy Tip:</strong> ${w.strategyTip}
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-400 font-semibold">${w.category}</span>
+            <button onclick="startTargetedWorkout('${w.id}')" class="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 font-extrabold rounded-lg text-xs shadow-lg transition flex items-center gap-1">
+              <span>Start Focus Drill →</span>
+            </button>
+          </div>
+        `;
+        list.appendChild(card);
+      });
+    }
+
+    function startTargetedWorkout(workoutId) {
+      const workout = LUCAS_TARGETED_WORKOUTS.find(w => w.id === workoutId);
+      if (!workout) return;
+
+      STATE.currentMission = {
+        id: workout.id,
+        title: workout.title,
+        gradeLevel: workout.gradeLevel,
+        category: workout.category,
+        scenario: `DIAGNOSTIC FOCUS DRILL: ${workout.description} \n\n Strategy: ${workout.strategyTip}`,
+        questions: workout.questions
+      };
+
+      STATE.currentQuestionIdx = 0;
+      STATE.moduleAnswers = [];
+      STATE.selectedOption = null;
+
+      document.getElementById("welcome-banner").classList.add("hidden");
+      document.getElementById("mission-selection-section").classList.add("hidden");
+      document.getElementById("module-complete-modal").classList.add("hidden");
+      document.getElementById("quiz-interface-section").classList.remove("hidden");
+
+      document.getElementById("quiz-mission-title").innerText = workout.title;
+      document.getElementById("quiz-lexile-badge").innerText = workout.gradeLevel;
+      document.getElementById("quiz-module-num").innerText = "DRILL";
+      document.getElementById("passage-genre-tag").innerText = workout.category;
+
+      document.getElementById("passage-display-text").innerHTML = `
+        <div class="space-y-4">
+          <div class="p-4 rounded-xl bg-amber-950/40 border border-amber-500/40 text-amber-200 text-xs md:text-sm">
+            <span class="font-bold text-amber-300 block mb-1">🎯 Lucas Diagnostic Focus Strategy</span>
+            <p class="leading-relaxed text-slate-200">${workout.strategyTip}</p>
+          </div>
+        </div>
+      `;
+
+      loadCurrentQuestion();
+    }
+
     function renderMissionsGrid() {
       const grid = document.getElementById("missions-grid");
+      
+      // If Math mode, render Lucas Diagnostic Priority Workouts Banner above grid!
+      const targetedContainer = document.getElementById("targeted-workouts-container");
+      if (targetedContainer) {
+        if (isMath) {
+          targetedContainer.classList.remove("hidden");
+          renderTargetedWorkoutsUI();
+        } else {
+          targetedContainer.classList.add("hidden");
+        }
+      }
       grid.innerHTML = "";
 
       const isMath = STATE.activeSubject === "math";
