@@ -43,6 +43,8 @@ DEFAULT_PROGRESS = {
     "level": "Rising 5th (Advanced)",
     "completedMissions": [],
     "missionSubmissions": {},
+    "completedMathMissions": [],
+    "mathMissionSubmissions": {},
     "analytics": {
         "totalAttempted": 0,
         "totalCorrect": 0,
@@ -89,6 +91,40 @@ DEFAULT_PROGRESS = {
             "impulsiveCount": 0,
             "hesitationCount": 0
         }
+    },
+    "mathAnalytics": {
+        "totalAttempted": 0,
+        "totalCorrect": 0,
+        "oaAttempted": 0,
+        "oaCorrect": 0,
+        "nbtAttempted": 0,
+        "nbtCorrect": 0,
+        "nfAttempted": 0,
+        "nfCorrect": 0,
+        "mdAttempted": 0,
+        "mdCorrect": 0,
+        "gAttempted": 0,
+        "gCorrect": 0,
+        "mathDistractorsCount": {
+            "computational_error": 0,
+            "misreading_operation": 0,
+            "place_value_shift": 0,
+            "denominator_addition_misconception": 0,
+            "partial_step_completion": 0
+        },
+        "dokBreakdown": {
+            "dok1Attempted": 0,
+            "dok1Correct": 0,
+            "dok2Attempted": 0,
+            "dok2Correct": 0,
+            "dok3Attempted": 0,
+            "dok3Correct": 0
+        },
+        "pacingMetrics": {
+            "totalSecondsSpent": 0,
+            "impulsiveCount": 0,
+            "hesitationCount": 0
+        }
     }
 }
 
@@ -99,7 +135,10 @@ class ProgressModel(BaseModel):
     level: Optional[str] = "Rising 5th (Advanced)"
     completedMissions: Optional[List[str]] = []
     missionSubmissions: Optional[Dict[str, Any]] = {}
+    completedMathMissions: Optional[List[str]] = []
+    mathMissionSubmissions: Optional[Dict[str, Any]] = {}
     analytics: Optional[Dict[str, Any]] = {}
+    mathAnalytics: Optional[Dict[str, Any]] = {}
 
 
 def get_local_filename(student_id: str) -> str:
