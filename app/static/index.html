@@ -7890,7 +7890,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
        2. GLOBAL APP STATE & PSYCHOMETRIC TRACKER
        ========================================================================= */
 
-    let STATE = {
+    var STATE = {
       activeSubject: "ela", // "ela" or "math"
       viewMode: "student", // "student" or "parent"
       completedMathMissions: [],
@@ -7996,16 +7996,160 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         }
       }
     };
+    window.STATE = STATE;
 
     /* =========================================================================
-       API BACKEND SYNC & MULTI-STUDENT SWITCHER
+       API BACKEND SYNC & MULTI-STUDENT SWITCHER (PERSISTENT CLIENT & SERVER SYNC)
        ========================================================================= */
+
+    var STUDENT_LOCAL_CACHE = {};
+
+    function getDefaultStudentState(studentId) {
+      const isEvelyn = studentId === "evelyn_mietling";
+      return {
+        studentId: studentId,
+        studentName: isEvelyn ? "Evelyn Mietling" : "Lucas Ramirez",
+        xp: 450,
+        level: "Rising 5th (Advanced)",
+        completedMissions: [],
+        missionSubmissions: {},
+        completedMathMissions: [],
+        mathMissionSubmissions: {},
+        analytics: {
+          totalAttempted: 0,
+          totalCorrect: 0,
+          p1Attempted: 0,
+          p1Correct: 0,
+          p2Attempted: 0,
+          p2Correct: 0,
+          p3Attempted: 0,
+          p3Correct: 0,
+          distractorsCount: {
+            passive_subject_confusion: 0,
+            outside_knowledge: 0,
+            vocabulary_misinterpretation: 0,
+            unsupported_inference: 0
+          },
+          informationalAttempted: 0,
+          informationalCorrect: 0,
+          fictionAttempted: 0,
+          fictionCorrect: 0,
+          dokBreakdown: { dok1Attempted: 0, dok1Correct: 0, dok2Attempted: 0, dok2Correct: 0, dok3Attempted: 0, dok3Correct: 0 },
+          ebsrMetrics: { pairedBothCorrect: 0, partAOnlyCorrect: 0, partBOnlyCorrect: 0, bothWrong: 0 },
+          syntacticMetrics: { attempted: 0, correct: 0 },
+          semanticMetrics: { attempted: 0, correct: 0 },
+          pacingMetrics: { totalSecondsSpent: 0, impulsiveCount: 0, hesitationCount: 0 }
+        },
+        mathAnalytics: {
+          totalAttempted: 0,
+          totalCorrect: 0,
+          oaAttempted: 0,
+          oaCorrect: 0,
+          nbtAttempted: 0,
+          nbtCorrect: 0,
+          nfAttempted: 0,
+          nfCorrect: 0,
+          mdAttempted: 0,
+          mdCorrect: 0,
+          gAttempted: 0,
+          gCorrect: 0,
+          mathDistractorsCount: {
+            computational_error: 0,
+            misreading_operation: 0,
+            place_value_shift: 0,
+            denominator_addition_misconception: 0,
+            partial_step_completion: 0
+          },
+          dokBreakdown: { dok1Attempted: 0, dok1Correct: 0, dok2Attempted: 0, dok2Correct: 0, dok3Attempted: 0, dok3Correct: 0 },
+          pacingMetrics: { totalSecondsSpent: 0, impulsiveCount: 0, hesitationCount: 0 }
+        }
+      };
+    }
+
+    function getLocalStudentProgress(studentId) {
+      const key = `drc_student_progress_${studentId}`;
+      if (typeof localStorage !== "undefined") {
+        try {
+          const stored = localStorage.getItem(key);
+          if (stored) {
+            const parsed = JSON.parse(stored);
+            if (parsed && parsed.studentId) {
+              STUDENT_LOCAL_CACHE[studentId] = parsed;
+              return parsed;
+            }
+          }
+        } catch (e) {
+          console.warn("localStorage read failed:", e);
+        }
+      }
+      if (STUDENT_LOCAL_CACHE[studentId]) {
+        return STUDENT_LOCAL_CACHE[studentId];
+      }
+      const defaultState = getDefaultStudentState(studentId);
+      STUDENT_LOCAL_CACHE[studentId] = defaultState;
+      return defaultState;
+    }
+
+    function setLocalStudentProgress(studentId, data) {
+      STUDENT_LOCAL_CACHE[studentId] = data;
+      const key = `drc_student_progress_${studentId}`;
+      if (typeof localStorage !== "undefined") {
+        try {
+          localStorage.setItem(key, JSON.stringify(data));
+        } catch (e) {
+          console.warn("localStorage write failed:", e);
+        }
+      }
+    }
+
+    function applyStudentDataToState(data) {
+      if (!data) return;
+      STATE.activeStudent = data.studentId || STATE.activeStudent || "lucas";
+      STATE.studentName = data.studentName || (STATE.activeStudent === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas Ramirez");
+      STATE.xp = data.xp !== undefined ? data.xp : 450;
+      STATE.level = data.level || "Rising 5th (Advanced)";
+      STATE.completedMissions = Array.isArray(data.completedMissions) ? data.completedMissions : [];
+      STATE.missionSubmissions = data.missionSubmissions || {};
+      STATE.completedMathMissions = Array.isArray(data.completedMathMissions) ? data.completedMathMissions : [];
+      STATE.mathMissionSubmissions = data.mathMissionSubmissions || {};
+      
+      const def = getDefaultStudentState(STATE.activeStudent);
+      STATE.analytics = { ...def.analytics, ...(data.analytics || {}) };
+      STATE.analytics.distractorsCount = { ...def.analytics.distractorsCount, ...(data.analytics?.distractorsCount || {}) };
+      STATE.analytics.dokBreakdown = { ...def.analytics.dokBreakdown, ...(data.analytics?.dokBreakdown || {}) };
+      STATE.analytics.ebsrMetrics = { ...def.analytics.ebsrMetrics, ...(data.analytics?.ebsrMetrics || {}) };
+      STATE.analytics.syntacticMetrics = { ...def.analytics.syntacticMetrics, ...(data.analytics?.syntacticMetrics || {}) };
+      STATE.analytics.semanticMetrics = { ...def.analytics.semanticMetrics, ...(data.analytics?.semanticMetrics || {}) };
+      STATE.analytics.pacingMetrics = { ...def.analytics.pacingMetrics, ...(data.analytics?.pacingMetrics || {}) };
+
+      STATE.mathAnalytics = { ...def.mathAnalytics, ...(data.mathAnalytics || {}) };
+      STATE.mathAnalytics.mathDistractorsCount = { ...def.mathAnalytics.mathDistractorsCount, ...(data.mathAnalytics?.mathDistractorsCount || {}) };
+      STATE.mathAnalytics.dokBreakdown = { ...def.mathAnalytics.dokBreakdown, ...(data.mathAnalytics?.dokBreakdown || {}) };
+      STATE.mathAnalytics.pacingMetrics = { ...def.mathAnalytics.pacingMetrics, ...(data.mathAnalytics?.pacingMetrics || {}) };
+    }
+
+    function exportCurrentStateAsData() {
+      return {
+        studentId: STATE.activeStudent || "lucas",
+        studentName: STATE.studentName,
+        xp: STATE.xp,
+        level: STATE.level,
+        completedMissions: STATE.completedMissions || [],
+        missionSubmissions: STATE.missionSubmissions || {},
+        completedMathMissions: STATE.completedMathMissions || [],
+        mathMissionSubmissions: STATE.mathMissionSubmissions || {},
+        analytics: STATE.analytics,
+        mathAnalytics: STATE.mathAnalytics
+      };
+    }
 
     function updateStudentNameUI() {
       const name = STATE.studentName || (STATE.activeStudent === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas Ramirez");
       
       const welcomeEl = document.getElementById("welcome-student-name");
-      if (welcomeEl) welcomeEl.innerText = name;
+      if (welcomeEl) {
+        welcomeEl.innerText = STATE.activeSubject === "math" ? `${name} (Cobb Math Track)` : name;
+      }
 
       const parentDashName = document.getElementById("parent-dashboard-name");
       if (parentDashName) parentDashName.innerText = name;
@@ -8029,61 +8173,43 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
     }
 
     async function switchStudent(studentId) {
-      // Auto-save progress of currently active student
+      // 1. Auto-save progress of currently active student first
       await saveServerProgress();
 
+      // 2. Switch active student ID and load their local cached state immediately
       STATE.activeStudent = studentId;
-      STATE.studentName = studentId === "evelyn_mietling" ? "Evelyn Mietling" : "Lucas Ramirez";
+      const targetData = getLocalStudentProgress(studentId);
+      applyStudentDataToState(targetData);
 
-      // Clear local memory buffers
-      STATE.completedMissions = [];
-      STATE.missionSubmissions = {};
-      STATE.xp = 450;
-      STATE.analytics = {
-        totalAttempted: 0,
-        totalCorrect: 0,
-        p1Attempted: 0,
-        p1Correct: 0,
-        p2Attempted: 0,
-        p2Correct: 0,
-        p3Attempted: 0,
-        p3Correct: 0,
-        distractorsCount: {
-          passive_subject_confusion: 0,
-          outside_knowledge: 0,
-          vocabulary_misinterpretation: 0,
-          unsupported_inference: 0
-        },
-        informationalAttempted: 0,
-        informationalCorrect: 0,
-        fictionAttempted: 0,
-        fictionCorrect: 0,
-        dokBreakdown: { dok1Attempted: 0, dok1Correct: 0, dok2Attempted: 0, dok2Correct: 0, dok3Attempted: 0, dok3Correct: 0 },
-        ebsrMetrics: { pairedBothCorrect: 0, partAOnlyCorrect: 0, partBOnlyCorrect: 0, bothWrong: 0 },
-        syntacticMetrics: { attempted: 0, correct: 0 },
-        semanticMetrics: { attempted: 0, correct: 0 },
-        pacingMetrics: { totalSecondsSpent: 0, impulsiveCount: 0, hesitationCount: 0 }
-      };
-
+      // 3. Immediately refresh UI
       updateStudentNameUI();
+      updateHeaderStats();
+      updateParentDashboard();
+      renderMissionsGrid();
+
+      // 4. Background fetch from server
       await loadServerProgress();
     }
 
     async function loadServerProgress() {
+      const studentId = STATE.activeStudent || "lucas";
+      
+      // 1. Instantly load from local storage cache
+      const localData = getLocalStudentProgress(studentId);
+      applyStudentDataToState(localData);
+      updateStudentNameUI();
+      updateHeaderStats();
+      updateParentDashboard();
+      renderMissionsGrid();
+
+      // 2. Try fetching from server in the background and merge
       try {
-        const studentId = STATE.activeStudent || "lucas";
         const res = await fetch(`/api/progress?student_id=${studentId}`);
         if (res.ok) {
-          const data = await res.json();
-          if (data) {
-            if (data.studentName) STATE.studentName = data.studentName;
-            if (data.xp !== undefined) STATE.xp = data.xp;
-            if (data.level) STATE.level = data.level;
-            if (data.completedMissions) STATE.completedMissions = data.completedMissions;
-            if (data.missionSubmissions) STATE.missionSubmissions = data.missionSubmissions;
-            if (data.analytics) {
-              STATE.analytics = { ...STATE.analytics, ...data.analytics };
-            }
+          const serverData = await res.json();
+          if (serverData && serverData.studentId) {
+            applyStudentDataToState(serverData);
+            setLocalStudentProgress(studentId, exportCurrentStateAsData());
             updateStudentNameUI();
             updateHeaderStats();
             updateParentDashboard();
@@ -8091,28 +8217,26 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
           }
         }
       } catch (err) {
-        console.warn("Backend API sync unavailable, using local state.", err);
+        console.warn("Backend API sync unavailable, using local cache.", err);
       }
     }
 
     async function saveServerProgress() {
+      const currentData = exportCurrentStateAsData();
+      const studentId = currentData.studentId;
+      
+      // 1. Immediately persist to localStorage and in-memory cache
+      setLocalStudentProgress(studentId, currentData);
+
+      // 2. Synchronize to FastAPI backend / Firestore if available
       try {
-        const studentId = STATE.activeStudent || "lucas";
         await fetch('/api/progress', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            studentId: studentId,
-            studentName: STATE.studentName,
-            xp: STATE.xp,
-            level: STATE.level,
-            completedMissions: STATE.completedMissions,
-            missionSubmissions: STATE.missionSubmissions,
-            analytics: STATE.analytics
-          })
+          body: JSON.stringify(currentData)
         });
       } catch (err) {
-        console.warn("Error saving progress to server API:", err);
+        console.warn("Backend API sync unavailable, progress safely saved in local storage.", err);
       }
     }
 
@@ -9121,29 +9245,10 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
 
     function resetStudentData() {
       if (confirm(`Reset all test session data and analytics for ${STATE.studentName}? This will clear all completed missions and submission archives.`)) {
-        STATE.xp = 450;
-        STATE.completedMissions = [];
-        STATE.missionSubmissions = {};
-        STATE.analytics = {
-          totalAttempted: 0,
-          totalCorrect: 0,
-          p1Attempted: 0,
-          p1Correct: 0,
-          p2Attempted: 0,
-          p2Correct: 0,
-          p3Attempted: 0,
-          p3Correct: 0,
-          distractorsCount: {
-            passive_subject_confusion: 0,
-            outside_knowledge: 0,
-            vocabulary_misinterpretation: 0,
-            unsupported_inference: 0
-          },
-          informationalAttempted: 0,
-          informationalCorrect: 0,
-          fictionAttempted: 0,
-          fictionCorrect: 0
-        };
+        const studentId = STATE.activeStudent || "lucas";
+        const freshDefault = getDefaultStudentState(studentId);
+        setLocalStudentProgress(studentId, freshDefault);
+        applyStudentDataToState(freshDefault);
 
         const reviewBox = document.getElementById("parent-submission-review-box");
         if (reviewBox) {
