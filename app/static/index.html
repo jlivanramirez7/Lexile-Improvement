@@ -402,16 +402,29 @@
       
       <!-- DASHBOARD EXECUTIVE HEADER -->
       <div class="glass-panel p-6 rounded-2xl border border-indigo-500/30 bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/40 flex items-center justify-between flex-wrap gap-4 shadow-xl">
-        <div class="space-y-1">
-          <div class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full border border-indigo-500/30">
-            <span>📊 Executive Psychometric Evaluation • Cobb County ELA Track</span>
+        <div class="space-y-2">
+          <div class="flex items-center gap-3 flex-wrap">
+            <div id="parent-subject-badge" class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full border border-indigo-500/30">
+              <span>📊 Executive Psychometric Evaluation • Cobb County Reading & Lexile Track</span>
+            </div>
+            <!-- IN-DASHBOARD SUBJECT TOGGLE -->
+            <div class="flex items-center bg-slate-950 p-1 rounded-xl border border-slate-700">
+              <button id="btn-parent-tab-ela" onclick="switchParentDashboardSubject('ela')" class="px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-indigo-600 text-white shadow">
+                <span>📖</span>
+                <span>Reading & Lexile</span>
+              </button>
+              <button id="btn-parent-tab-math" onclick="switchParentDashboardSubject('math')" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition flex items-center gap-1.5">
+                <span>📐</span>
+                <span>Math & Quantile</span>
+              </button>
+            </div>
           </div>
           <h2 class="text-2xl font-extrabold text-white">Diagnostic Parent Dashboard: <span id="parent-dashboard-name">Lucas</span></h2>
-          <p class="text-xs text-slate-400">Historical Metric Context: 3rd Grade (650L → 835L) | Current Evaluation Target: 1000L+ Advanced Benchmark</p>
+          <p id="parent-header-context-text" class="text-xs text-slate-400">Historical Metric Context: Grade 4 Baseline → Current Evaluation Target: 1075L+ Dickerson AC Benchmark</p>
         </div>
         <div class="flex items-center gap-2">
-          <button onclick="showLexileExplanationModal()" class="px-3 py-2 bg-indigo-900/40 hover:bg-indigo-900/60 text-indigo-300 text-xs font-semibold rounded-lg border border-indigo-500/40 transition flex items-center gap-1">
-            ℹ️ Lexile Calculation Formula
+          <button onclick="showLexileExplanationModal()" id="btn-formula-info" class="px-3 py-2 bg-indigo-900/40 hover:bg-indigo-900/60 text-indigo-300 text-xs font-semibold rounded-lg border border-indigo-500/40 transition flex items-center gap-1">
+            ℹ️ Scoring Formula
           </button>
           <button onclick="window.print()" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold rounded-lg border border-slate-700 transition flex items-center gap-1">
             🖨️ Export Report
@@ -469,31 +482,31 @@
         
         <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2 relative group cursor-pointer" onclick="showLexileExplanationModal()">
           <div class="flex justify-between items-center text-xs text-slate-400 font-medium">
-            <span>Estimated Current Lexile</span>
+            <span id="metric-card-1-title">Estimated Current Lexile</span>
             <span class="text-indigo-400 text-xs font-bold">ℹ️ Info</span>
           </div>
           <div id="metric-est-lexile" class="text-2xl font-extrabold text-indigo-400">975L – 1025L</div>
-          <div class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
-            <span>▲ +165L growth from 3rd grade baseline</span>
+          <div id="metric-card-1-sub" class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
+            <span>▲ +165L growth from Grade 4 baseline</span>
           </div>
         </div>
 
         <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2">
-          <div class="text-xs text-slate-400 font-medium">1000L+ Benchmark Target</div>
+          <div id="metric-card-2-title" class="text-xs text-slate-400 font-medium">1075L+ Dickerson AC Target</div>
           <div id="metric-benchmark-status" class="text-2xl font-extrabold text-emerald-400">ON TRACK</div>
-          <div class="text-[11px] text-slate-400">Dickerson Middle AP Content Criteria</div>
+          <div id="metric-card-2-sub" class="text-[11px] text-slate-400">Dickerson Middle AC Content Criteria</div>
         </div>
 
         <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2">
-          <div class="text-xs text-slate-400 font-medium">Total Questions Attempted</div>
+          <div id="metric-card-3-title" class="text-xs text-slate-400 font-medium">Total Questions Attempted</div>
           <div id="metric-total-q" class="text-2xl font-extrabold text-white">0</div>
-          <div class="text-[11px] text-slate-400">Across <span id="metric-modules-cnt">0</span> Mock Modules</div>
+          <div id="metric-card-3-sub" class="text-[11px] text-slate-400">Across <span id="metric-modules-cnt">0</span> Mock Modules & Tests</div>
         </div>
 
         <div class="glass-panel p-4 rounded-xl border border-slate-700 space-y-2">
-          <div class="text-xs text-slate-400 font-medium">Overall Accuracy Rate</div>
+          <div id="metric-card-4-title" class="text-xs text-slate-400 font-medium">Overall Accuracy Rate</div>
           <div id="metric-accuracy-pct" class="text-2xl font-extrabold text-amber-400">0%</div>
-          <div class="text-[11px] text-slate-400">DRC BEACON Scaled Score Estimate</div>
+          <div id="metric-card-4-sub" class="text-[11px] text-slate-400">DRC BEACON Scaled Score Estimate (~1180)</div>
         </div>
 
       </div>
@@ -525,10 +538,10 @@
         </div>
       </div>
 
-      <!-- SECTION 1: THE THREE PILLARS ANALYSIS -->
-      <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-5">
+      <!-- SECTION 1A: ELA THREE-PILLARS ANALYSIS (Shown in Reading Mode) -->
+      <div id="parent-ela-pillars-section" class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-5">
         <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-700/60 pb-3">
-          <span>🏛️ DRC BEACON Three-Pillar Diagnostic Analysis</span>
+          <span>🏛️ DRC BEACON ELA Three-Pillar Diagnostic Analysis</span>
         </h3>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -569,7 +582,7 @@
               </div>
             </div>
             <p id="p2-diagnostic-text" class="text-xs text-slate-300 leading-relaxed pt-2">
-              Evaluates contextual understanding of high-level academic words (e.g., <em>anomalous, subsequent, inherent, formidable, feasible, scrutinize, deviate</em>) embedded in dense informational text.
+              Evaluates contextual understanding of high-level academic words embedded in dense informational text.
             </p>
           </div>
 
@@ -589,8 +602,124 @@
               </div>
             </div>
             <p id="p3-diagnostic-text" class="text-xs text-slate-300 leading-relaxed pt-2">
-              Penalizes reliance on outside knowledge or general plot intuition. Correct answers require strict, explicit textual proof or direct, uncorrupted inference from the passage.
+              Penalizes reliance on outside knowledge. Correct answers require strict, explicit textual proof.
             </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION 1B: MATH 5 GSE DOMAINS ANALYSIS (Shown in Math Mode) -->
+      <div id="parent-math-domains-section" class="glass-panel p-6 rounded-2xl border border-slate-700/80 space-y-5 hidden">
+        <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 flex-wrap gap-2">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>📐 DRC BEACON Math: 5 GSE Curriculum Domains Mastery</span>
+          </h3>
+          <span class="text-xs font-bold text-indigo-300 bg-indigo-950/60 px-3 py-1 rounded-full border border-indigo-500/30">
+            Target: 950Q+ (Math 6/7A Hyper-Accelerated)
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          
+          <!-- DOMAIN 1: 5.OA -->
+          <div class="bg-slate-900/70 p-4 rounded-xl border border-purple-500/30 space-y-2 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] font-bold text-purple-300 uppercase">5.OA: Algebraic</span>
+                <span id="math-oa-score-tag" class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300">N/A</span>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>Order of Operations & Expressions</span>
+                  <span id="math-oa-pct-text">0%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div id="math-oa-bar" class="bg-purple-500 h-full w-0 transition-all duration-500"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[10.5px] text-slate-400 leading-tight pt-1">Order of operations with brackets, numerical expressions, and rules.</p>
+          </div>
+
+          <!-- DOMAIN 2: 5.NBT -->
+          <div class="bg-slate-900/70 p-4 rounded-xl border border-blue-500/30 space-y-2 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] font-bold text-blue-300 uppercase">5.NBT: Base Ten</span>
+                <span id="math-nbt-score-tag" class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300">N/A</span>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>Decimals & Powers of 10</span>
+                  <span id="math-nbt-pct-text">0%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div id="math-nbt-bar" class="bg-blue-500 h-full w-0 transition-all duration-500"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[10.5px] text-slate-400 leading-tight pt-1">Decimals to thousandths, multiplication/division of multi-digit decimals.</p>
+          </div>
+
+          <!-- DOMAIN 3: 5.NF -->
+          <div class="bg-slate-900/70 p-4 rounded-xl border border-amber-500/30 space-y-2 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] font-bold text-amber-300 uppercase">5.NF: Fractions</span>
+                <span id="math-nf-score-tag" class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300">N/A</span>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>Unlike Denom. & Division</span>
+                  <span id="math-nf-pct-text">0%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div id="math-nf-bar" class="bg-amber-500 h-full w-0 transition-all duration-500"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[10.5px] text-slate-400 leading-tight pt-1">Adding/subtracting unlike denominators, multiplying, and unit fraction division.</p>
+          </div>
+
+          <!-- DOMAIN 4: 5.MD -->
+          <div class="bg-slate-900/70 p-4 rounded-xl border border-emerald-500/30 space-y-2 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] font-bold text-emerald-300 uppercase">5.MD: Measurement</span>
+                <span id="math-md-score-tag" class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300">N/A</span>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>Prism Volume & Conversions</span>
+                  <span id="math-md-pct-text">0%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div id="math-md-bar" class="bg-emerald-500 h-full w-0 transition-all duration-500"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[10.5px] text-slate-400 leading-tight pt-1">Volume of rectangular prisms (V = l × w × h), composite volume, and conversions.</p>
+          </div>
+
+          <!-- DOMAIN 5: 5.G -->
+          <div class="bg-slate-900/70 p-4 rounded-xl border border-indigo-500/30 space-y-2 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] font-bold text-indigo-300 uppercase">5.G: Geometry</span>
+                <span id="math-g-score-tag" class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300">N/A</span>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px] text-slate-400">
+                  <span>Coordinate Graph & Hierarchy</span>
+                  <span id="math-g-pct-text">0%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div id="math-g-bar" class="bg-indigo-500 h-full w-0 transition-all duration-500"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[10.5px] text-slate-400 leading-tight pt-1">Plotting points (x, y) and classifying 2D geometric shapes hierarchically.</p>
           </div>
 
         </div>
@@ -21881,39 +22010,215 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       container.innerHTML = cardsHtml;
     }
 
-    function updateParentDashboard() {
-      const a = STATE.analytics;
+    function switchParentDashboardSubject(subject) {
+      STATE.parentDashboardSubject = subject;
+      
+      const btnEla = document.getElementById("btn-parent-tab-ela");
+      const btnMath = document.getElementById("btn-parent-tab-math");
+      
+      if (subject === "math") {
+        if (btnMath) btnMath.className = "px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-emerald-600 text-white shadow";
+        if (btnEla) btnEla.className = "px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition flex items-center gap-1.5";
+      } else {
+        if (btnEla) btnEla.className = "px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-indigo-600 text-white shadow";
+        if (btnMath) btnMath.className = "px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition flex items-center gap-1.5";
+      }
+      
+      updateParentDashboard();
+    }
 
-      document.getElementById("metric-total-q").innerText = a.totalAttempted;
-      document.getElementById("metric-modules-cnt").innerText = STATE.completedMissions.length;
+    function updateParentDashboard() {
+      const isMath = (STATE.parentDashboardSubject || STATE.activeSubject) === "math";
+      const a = isMath ? (STATE.mathAnalytics || { totalAttempted: 0, totalCorrect: 0, oaAttempted: 0, oaCorrect: 0, nbtAttempted: 0, nbtCorrect: 0, nfAttempted: 0, nfCorrect: 0, mdAttempted: 0, mdCorrect: 0, gAttempted: 0, gCorrect: 0, mathDistractorsCount: {}, dokBreakdown: {}, pacingMetrics: {} }) : STATE.analytics;
+      const completedMissions = isMath ? (STATE.completedMathMissions || []) : (STATE.completedMissions || []);
+
+      // Toggle Header Context
+      const subjectBadge = document.getElementById("parent-subject-badge");
+      const headerContext = document.getElementById("parent-header-context-text");
+      const btnEla = document.getElementById("btn-parent-tab-ela");
+      const btnMath = document.getElementById("btn-parent-tab-math");
+
+      if (isMath) {
+        if (subjectBadge) subjectBadge.innerHTML = "<span>📊 Executive Psychometric Evaluation • Cobb County Math & Quantile Track</span>";
+        if (headerContext) headerContext.innerText = "Historical Metric Context: Grade 4 Math Baseline → Current Evaluation Target: 950Q+ Hyper-Accelerated Math 6/7A Benchmark";
+        if (btnMath) btnMath.className = "px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-emerald-600 text-white shadow";
+        if (btnEla) btnEla.className = "px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition flex items-center gap-1.5";
+      } else {
+        if (subjectBadge) subjectBadge.innerHTML = "<span>📊 Executive Psychometric Evaluation • Cobb County Reading & Lexile Track</span>";
+        if (headerContext) headerContext.innerText = "Historical Metric Context: Grade 4 Baseline → Current Evaluation Target: 1075L+ Dickerson AC Benchmark";
+        if (btnEla) btnEla.className = "px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-indigo-600 text-white shadow";
+        if (btnMath) btnMath.className = "px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition flex items-center gap-1.5";
+      }
+
+      // Update 4 Metric Overview Cards
+      const card1Title = document.getElementById("metric-card-1-title");
+      const card1Sub = document.getElementById("metric-card-1-sub");
+      const card2Title = document.getElementById("metric-card-2-title");
+      const card2Sub = document.getElementById("metric-card-2-sub");
+      const card3Title = document.getElementById("metric-card-3-title");
+      const card3Sub = document.getElementById("metric-card-3-sub");
+      const card4Title = document.getElementById("metric-card-4-title");
+      const card4Sub = document.getElementById("metric-card-4-sub");
 
       const accuracyPct = a.totalAttempted > 0 ? Math.round((a.totalCorrect / a.totalAttempted) * 100) : 0;
       document.getElementById("metric-accuracy-pct").innerText = `${accuracyPct}%`;
+      document.getElementById("metric-total-q").innerText = a.totalAttempted;
+      document.getElementById("metric-modules-cnt").innerText = completedMissions.length;
 
-      // Check if full length ELA simulations exist for higher psychometric precision
-      const elaMetrics = getSubjectFullLengthMetrics(false);
-      let estLexile = "835L – 880L";
-
-      if (elaMetrics && elaMetrics.hasData && elaMetrics.count >= 1) {
-        // High-precision composite estimate from 15-item multi-passage simulation tests
-        const num = elaMetrics.avgMetricNum || elaMetrics.latestMetricNum;
-        estLexile = `${num - 25}L – ${num + 25}L`;
-      } else if (a.totalAttempted >= 5) {
-        if (accuracyPct >= 80) estLexile = "1025L – 1150L";
-        else if (accuracyPct >= 60) estLexile = "950L – 1020L";
-        else estLexile = "880L – 940L";
-      } else if (STATE.completedMissions.length > 0) {
-        estLexile = "950L – 1050L";
-      }
-      document.getElementById("metric-est-lexile").innerText = estLexile;
-
+      const subMetrics = getSubjectFullLengthMetrics(isMath);
+      const estBox = document.getElementById("metric-est-lexile");
       const benchmarkStatus = document.getElementById("metric-benchmark-status");
-      if (accuracyPct >= 70 || STATE.completedMissions.length > 0) {
-        benchmarkStatus.innerText = "ON TRACK";
-        benchmarkStatus.className = "text-2xl font-extrabold text-emerald-400";
+
+      if (isMath) {
+        if (card1Title) card1Title.innerText = "Estimated Current Quantile";
+        if (card1Sub) card1Sub.innerHTML = "<span>▲ Cobb County Grade 5 Quantile Growth</span>";
+        if (card2Title) card2Title.innerText = "950Q+ Math 6/7A Target";
+        if (card2Sub) card2Sub.innerText = "Dickerson Middle Accelerated Criteria";
+        if (card3Title) card3Title.innerText = "Total Math Questions Attempted";
+        if (card3Sub) card3Sub.innerHTML = `Across <span id="metric-modules-cnt">${completedMissions.length}</span> Math Missions & Tests`;
+        if (card4Title) card4Title.innerText = "Overall Math Accuracy Rate";
+        if (card4Sub) card4Sub.innerText = "DRC BEACON Math Scaled Score Estimate (~1180)";
+
+        let estQuantile = "750Q – 840Q";
+        if (subMetrics && subMetrics.hasData && subMetrics.count >= 1) {
+          const num = subMetrics.avgMetricNum || subMetrics.latestMetricNum;
+          estQuantile = `${num - 25}Q – ${num + 25}Q`;
+        } else if (a.totalAttempted >= 5) {
+          if (accuracyPct >= 80) estQuantile = "950Q – 1050Q";
+          else if (accuracyPct >= 60) estQuantile = "850Q – 940Q";
+          else estQuantile = "750Q – 840Q";
+        } else if (completedMissions.length > 0) {
+          estQuantile = "850Q – 950Q";
+        }
+        if (estBox) {
+          estBox.innerText = estQuantile;
+          estBox.className = "text-2xl font-extrabold text-emerald-400";
+        }
+
+        if (accuracyPct >= 85 || (subMetrics && subMetrics.avgMetricNum >= 950)) {
+          benchmarkStatus.innerText = "QUALIFIED (Math 6/7A)";
+          benchmarkStatus.className = "text-xl font-extrabold text-emerald-400";
+        } else if (accuracyPct >= 70 || (subMetrics && subMetrics.avgMetricNum >= 850)) {
+          benchmarkStatus.innerText = "ON TRACK (Adv Math 6)";
+          benchmarkStatus.className = "text-xl font-extrabold text-indigo-400";
+        } else {
+          benchmarkStatus.innerText = "FOCUS NEEDED";
+          benchmarkStatus.className = "text-xl font-extrabold text-amber-400";
+        }
       } else {
-        benchmarkStatus.innerText = "DRILL NEEDED";
-        benchmarkStatus.className = "text-2xl font-extrabold text-amber-400";
+        if (card1Title) card1Title.innerText = "Estimated Current Lexile";
+        if (card1Sub) card1Sub.innerHTML = "<span>▲ +165L growth from Grade 4 baseline</span>";
+        if (card2Title) card2Title.innerText = "1075L+ Dickerson AC Target";
+        if (card2Sub) card2Sub.innerText = "Dickerson Middle AC Content Criteria";
+        if (card3Title) card3Title.innerText = "Total Reading Questions Attempted";
+        if (card3Sub) card3Sub.innerHTML = `Across <span id="metric-modules-cnt">${completedMissions.length}</span> Reading Missions & Tests`;
+        if (card4Title) card4Title.innerText = "Overall Reading Accuracy Rate";
+        if (card4Sub) card4Sub.innerText = "DRC BEACON Scaled Score Estimate (~1180)";
+
+        let estLexile = "835L – 880L";
+        if (subMetrics && subMetrics.hasData && subMetrics.count >= 1) {
+          const num = subMetrics.avgMetricNum || subMetrics.latestMetricNum;
+          estLexile = `${num - 25}L – ${num + 25}L`;
+        } else if (a.totalAttempted >= 5) {
+          if (accuracyPct >= 80) estLexile = "1075L – 1180L";
+          else if (accuracyPct >= 60) estLexile = "950L – 1020L";
+          else estLexile = "880L – 940L";
+        } else if (completedMissions.length > 0) {
+          estLexile = "950L – 1050L";
+        }
+        if (estBox) {
+          estBox.innerText = estLexile;
+          estBox.className = "text-2xl font-extrabold text-indigo-400";
+        }
+
+        if (accuracyPct >= 85 || (subMetrics && subMetrics.avgMetricNum >= 1075)) {
+          benchmarkStatus.innerText = "QUALIFIED (Beacon ≥ 1075L)";
+          benchmarkStatus.className = "text-xl font-extrabold text-emerald-400";
+        } else if (accuracyPct >= 70) {
+          benchmarkStatus.innerText = "ON TRACK";
+          benchmarkStatus.className = "text-xl font-extrabold text-indigo-400";
+        } else {
+          benchmarkStatus.innerText = "FOCUS NEEDED";
+          benchmarkStatus.className = "text-xl font-extrabold text-amber-400";
+        }
+      }
+
+      // Toggle ELA Pillars vs Math Domains
+      const elaPillarsSection = document.getElementById("parent-ela-pillars-section");
+      const mathDomainsSection = document.getElementById("parent-math-domains-section");
+
+      if (isMath) {
+        if (elaPillarsSection) elaPillarsSection.classList.add("hidden");
+        if (mathDomainsSection) mathDomainsSection.classList.remove("hidden");
+
+        // 5.OA
+        const oaPct = a.oaAttempted > 0 ? Math.round((a.oaCorrect / a.oaAttempted) * 100) : 0;
+        const oaTxt = document.getElementById("math-oa-pct-text");
+        const oaBar = document.getElementById("math-oa-bar");
+        if (oaTxt) oaTxt.innerText = `${oaPct}% (${a.oaCorrect || 0}/${a.oaAttempted || 0})`;
+        if (oaBar) oaBar.style.width = `${oaPct}%`;
+        const oaTag = document.getElementById("math-oa-score-tag");
+        if (oaTag) oaTag.innerText = a.oaAttempted > 0 ? (oaPct >= 80 ? "MASTERY" : "DEVELOPING") : "N/A";
+
+        // 5.NBT
+        const nbtPct = a.nbtAttempted > 0 ? Math.round((a.nbtCorrect / a.nbtAttempted) * 100) : 0;
+        const nbtTxt = document.getElementById("math-nbt-pct-text");
+        const nbtBar = document.getElementById("math-nbt-bar");
+        if (nbtTxt) nbtTxt.innerText = `${nbtPct}% (${a.nbtCorrect || 0}/${a.nbtAttempted || 0})`;
+        if (nbtBar) nbtBar.style.width = `${nbtPct}%`;
+        const nbtTag = document.getElementById("math-nbt-score-tag");
+        if (nbtTag) nbtTag.innerText = a.nbtAttempted > 0 ? (nbtPct >= 80 ? "MASTERY" : "DEVELOPING") : "N/A";
+
+        // 5.NF
+        const nfPct = a.nfAttempted > 0 ? Math.round((a.nfCorrect / a.nfAttempted) * 100) : 0;
+        const nfTxt = document.getElementById("math-nf-pct-text");
+        const nfBar = document.getElementById("math-nf-bar");
+        if (nfTxt) nfTxt.innerText = `${nfPct}% (${a.nfCorrect || 0}/${a.nfAttempted || 0})`;
+        if (nfBar) nfBar.style.width = `${nfPct}%`;
+        const nfTag = document.getElementById("math-nf-score-tag");
+        if (nfTag) nfTag.innerText = a.nfAttempted > 0 ? (nfPct >= 80 ? "MASTERY" : "DEVELOPING") : "N/A";
+
+        // 5.MD
+        const mdPct = a.mdAttempted > 0 ? Math.round((a.mdCorrect / a.mdAttempted) * 100) : 0;
+        const mdTxt = document.getElementById("math-md-pct-text");
+        const mdBar = document.getElementById("math-md-bar");
+        if (mdTxt) mdTxt.innerText = `${mdPct}% (${a.mdCorrect || 0}/${a.mdAttempted || 0})`;
+        if (mdBar) mdBar.style.width = `${mdPct}%`;
+        const mdTag = document.getElementById("math-md-score-tag");
+        if (mdTag) mdTag.innerText = a.mdAttempted > 0 ? (mdPct >= 80 ? "MASTERY" : "DEVELOPING") : "N/A";
+
+        // 5.G
+        const gPct = a.gAttempted > 0 ? Math.round((a.gCorrect / a.gAttempted) * 100) : 0;
+        const gTxt = document.getElementById("math-g-pct-text");
+        const gBar = document.getElementById("math-g-bar");
+        if (gTxt) gTxt.innerText = `${gPct}% (${a.gCorrect || 0}/${a.gAttempted || 0})`;
+        if (gBar) gBar.style.width = `${gPct}%`;
+        const gTag = document.getElementById("math-g-score-tag");
+        if (gTag) gTag.innerText = a.gAttempted > 0 ? (gPct >= 80 ? "MASTERY" : "DEVELOPING") : "N/A";
+      } else {
+        if (elaPillarsSection) elaPillarsSection.classList.remove("hidden");
+        if (mathDomainsSection) mathDomainsSection.classList.add("hidden");
+
+        // Pillar 1
+        const p1Pct = a.p1Attempted > 0 ? Math.round((a.p1Correct / a.p1Attempted) * 100) : 0;
+        document.getElementById("p1-pct-text").innerText = `${p1Pct}% (${a.p1Correct || 0}/${a.p1Attempted || 0})`;
+        document.getElementById("p1-progress-bar").style.width = `${p1Pct}%`;
+        const p1Tag = document.getElementById("p1-score-tag");
+        if (p1Tag) p1Tag.innerText = a.p1Attempted > 0 ? (p1Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
+
+        // Pillar 2
+        const p2Pct = a.p2Attempted > 0 ? Math.round((a.p2Correct / a.p2Attempted) * 100) : 0;
+        document.getElementById("p2-pct-text").innerText = `${p2Pct}% (${a.p2Correct || 0}/${a.p2Attempted || 0})`;
+        document.getElementById("p2-progress-bar").style.width = `${p2Pct}%`;
+        const p2Tag = document.getElementById("p2-score-tag");
+        if (p2Tag) p2Tag.innerText = a.p2Attempted > 0 ? (p2Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
+
+        // Pillar 3
+        const p3Pct = a.p3Attempted > 0 ? Math.round((a.p3Correct / a.p3Attempted) * 100) : 0;
+        document.getElementById("p3-pct-text").innerText = `${p3Pct}% (${a.p3Correct || 0}/${a.p3Attempted || 0})`;
+        document.getElementById("p3-progress-bar").style.width = `${p3Pct}%`;
+        const p3Tag = document.getElementById("p3-score-tag");
+        if (p3Tag) p3Tag.innerText = a.p3Attempted > 0 ? (p3Pct >= 75 ? "MASTERY" : "DEVELOPING") : "N/A";
       }
 
       // Pillar 1 Breakdown
@@ -21971,39 +22276,56 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       // Render Dickerson Middle School Advanced Placement Tracker
       renderDickersonPlacementTracker();
 
-      // Distractor Error Breakdown
+      // Distractor / Misconception Error Breakdown
       const distractorContainer = document.getElementById("distractor-breakdown-container");
-      distractorContainer.innerHTML = "";
+      if (distractorContainer) {
+        distractorContainer.innerHTML = "";
 
-      const distMap = [
-        { key: "passive_subject_confusion", title: "Passive Voice Subject Confusion", desc: "Confusing object/modifiers with true actor inside Monster Sentences." },
-        { key: "outside_knowledge", title: "Outside Knowledge Reliance", desc: "Selecting real-world facts not explicitly stated in the text." },
-        { key: "vocabulary_misinterpretation", title: "Tier 2 Contextual Misinterpretation", desc: "Confusing high-level academic words with common lower-level synonyms." },
-        { key: "unsupported_inference", title: "Unsupported Narrative Intuition", desc: "Selecting plausible story outcomes without direct line proof." }
-      ];
+        const mathDistMap = [
+          { key: "place_value_shift", title: "Place Value & Decimal Powers of 10 Shift", desc: "Shifting decimal point incorrectly during multiplication/division (e.g., 6.84 × 100)." },
+          { key: "denominator_addition_misconception", title: "Fraction Denominator Addition Error", desc: "Adding denominators directly without finding common LCD (e.g., 3/10 + 4/10 = 7/20)." },
+          { key: "partial_step_completion", title: "Partial Step Completion (Multi-step Dropped)", desc: "Solving the first sub-calculation but stopping before completing final problem constraint." },
+          { key: "misreading_operation", title: "Operation Sign / Direction Inversion", desc: "Inverting coordinate axes (x, y) or substituting addition for multiplication in brackets." },
+          { key: "computational_error", title: "Arithmetic Calculation Slip", desc: "Standard multi-digit multiplication or subtraction borrowing error." }
+        ];
 
-      distMap.forEach(d => {
-        const count = a.distractorsCount[d.key] || 0;
-        const div = document.createElement("div");
-        div.className = "bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1";
-        div.innerHTML = `
-          <div class="flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-200">${d.title}</span>
-            <span class="font-mono px-2 py-0.5 rounded ${count > 0 ? 'bg-red-500/20 text-red-300 border border-red-500/30' : 'bg-slate-800 text-slate-400'}">${count} Triggers</span>
-          </div>
-          <p class="text-[11px] text-slate-400 leading-normal">${d.desc}</p>
-        `;
-        distractorContainer.appendChild(div);
-      });
+        const elaDistMap = [
+          { key: "passive_subject_confusion", title: "Passive Voice Subject Confusion", desc: "Confusing object/modifiers with true actor inside Monster Sentences." },
+          { key: "outside_knowledge", title: "Outside Knowledge Reliance", desc: "Selecting real-world facts not explicitly stated in the text." },
+          { key: "vocabulary_misinterpretation", title: "Tier 2 Contextual Misinterpretation", desc: "Confusing high-level academic words with common lower-level synonyms." },
+          { key: "unsupported_inference", title: "Unsupported Narrative Intuition", desc: "Selecting plausible story outcomes without direct line proof." }
+        ];
 
-      // Genre Stamina
+        const activeDistMap = isMath ? mathDistMap : elaDistMap;
+        const distDict = isMath ? (a.mathDistractorsCount || {}) : (a.distractorsCount || {});
+
+        activeDistMap.forEach(d => {
+          const count = distDict[d.key] || 0;
+          const div = document.createElement("div");
+          div.className = "bg-slate-900/60 p-3 rounded-xl border border-slate-800 space-y-1";
+          div.innerHTML = `
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-slate-200">${d.title}</span>
+              <span class="font-mono px-2 py-0.5 rounded ${count > 0 ? 'bg-red-500/20 text-red-300 border border-red-500/30' : 'bg-slate-800 text-slate-400'}">${count} Triggers</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-normal">${d.desc}</p>
+          `;
+          distractorContainer.appendChild(div);
+        });
+      }
+
+      // Genre / Domain Stamina
       const infoPct = a.informationalAttempted > 0 ? Math.round((a.informationalCorrect / a.informationalAttempted) * 100) : 0;
-      document.getElementById("stamina-info-pct").innerText = a.informationalAttempted > 0 ? `${infoPct}%` : "N/A";
-      document.getElementById("stamina-info-bar").style.width = `${infoPct}%`;
+      const infoEl = document.getElementById("stamina-info-pct");
+      const infoBar = document.getElementById("stamina-info-bar");
+      if (infoEl) infoEl.innerText = a.informationalAttempted > 0 ? `${infoPct}%` : (isMath ? `${accuracyPct}%` : "N/A");
+      if (infoBar) infoBar.style.width = `${a.informationalAttempted > 0 ? infoPct : (isMath ? accuracyPct : 0)}%`;
 
       const ficPct = a.fictionAttempted > 0 ? Math.round((a.fictionCorrect / a.fictionAttempted) * 100) : 0;
-      document.getElementById("stamina-fic-pct").innerText = a.fictionAttempted > 0 ? `${ficPct}%` : "N/A";
-      document.getElementById("stamina-fic-bar").style.width = `${ficPct}%`;
+      const ficEl = document.getElementById("stamina-fic-pct");
+      const ficBar = document.getElementById("stamina-fic-bar");
+      if (ficEl) ficEl.innerText = a.fictionAttempted > 0 ? `${ficPct}%` : (isMath ? `${accuracyPct}%` : "N/A");
+      if (ficBar) ficBar.style.width = `${a.fictionAttempted > 0 ? ficPct : (isMath ? accuracyPct : 0)}%`;
 
       // Dynamic Prescriptive Home Action Plan Micro-Drills
       const planContainer = document.getElementById("parent-prescriptive-plan-body");
@@ -22011,55 +22333,110 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         const studentName = STATE.studentName || "Lucas Ramirez";
         let drillsHtml = "";
 
-        const passiveCount = a.distractorsCount.passive_subject_confusion || 0;
-        const intuitionCount = ebsr.partAOnlyCorrect || 0;
+        const distDict = isMath ? (a.mathDistractorsCount || {}) : (a.distractorsCount || {});
 
-        if (passiveCount > 0) {
-          drillsHtml += `
-            <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30 space-y-2">
-              <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
-                <span>🗣️ Dinner Micro-Drill 1: Active Actor Isolation</span>
-              </h4>
-              <p class="leading-relaxed text-slate-300">
-                Read a complex passive sentence to <strong>${studentName}</strong> (e.g., <em>"The telemetry packets were transmitted by ground stations..."</em>) and ask: <strong>"Who performed the action of transmitting?"</strong> Have them cross out prepositional phrases starting with <em>by, of, through</em>.
-              </p>
-            </div>
-          `;
-        } else {
-          drillsHtml += `
-            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
-              <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
-                <span>🎯 Strategy 1: The "Slash and Subject" Deconstruction Drill</span>
-              </h4>
-              <p class="leading-relaxed text-slate-300">
-                When reading non-fiction articles with <strong>${studentName}</strong>, ask them to find the main action verb first, then work backward to find who performed it.
-              </p>
-            </div>
-          `;
-        }
+        if (isMath) {
+          const placeValueCount = distDict.place_value_shift || 0;
+          const denomCount = distDict.denominator_addition_misconception || 0;
 
-        if (intuitionCount > 0 || (a.distractorsCount.outside_knowledge || 0) > 0) {
-          drillsHtml += `
-            <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30 space-y-2">
-              <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
-                <span>🗣️ Dinner Micro-Drill 2: Line Proof Elimination</span>
-              </h4>
-              <p class="leading-relaxed text-slate-300">
-                <strong>${studentName}</strong> triggered "Intuition Without Proof" ${intuitionCount} time(s). During home reading, when ${studentName} states an inference, challenge them: <strong>"Point your index finger to the exact line number on the page that proves that!"</strong>
-              </p>
-            </div>
-          `;
+          if (placeValueCount > 0) {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30 space-y-2">
+                <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
+                  <span>🔢 Math Micro-Drill 1: Powers of 10 Decimal Shift</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  <strong>${studentName}</strong> had ${placeValueCount} place value slip(s). Practice multiplying/dividing by 10, 100, 1000 by physically counting the zeros and sliding the decimal point right for multiplication and left for division.
+                </p>
+              </div>
+            `;
+          } else {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+                <h4 class="font-bold text-emerald-300 flex items-center gap-1.5">
+                  <span>📐 Strategy 1: Operations with Brackets & Order of Operations</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  Encourage <strong>${studentName}</strong> to underline nested operations inside parentheses first, re-writing the simplified expression line-by-line before multiplying.
+                </p>
+              </div>
+            `;
+          }
+
+          if (denomCount > 0) {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30 space-y-2">
+                <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+                  <span>🍰 Math Micro-Drill 2: Like Denominators Rule</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  <strong>${studentName}</strong> triggered ${denomCount} denominator addition slip(s). Reinforce: <em>"When adding slices of pizza, never add the denominators (the size of the slices); only add the numerators (how many slices you have)!"</em>
+                </p>
+              </div>
+            `;
+          } else {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+                <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+                  <span>📦 Strategy 2: Volume Decomposition for Prisms</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  When solving composite 3D figures, have <strong>${studentName}</strong> draw a dotted line to split into two distinct rectangular boxes (Box A and Box B) and write \( V = l \times w \times h \) for each.
+                </p>
+              </div>
+            `;
+          }
         } else {
-          drillsHtml += `
-            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
-              <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
-                <span>⚖️ Strategy 2: "The Text is the Law" Proof Requirement</span>
-              </h4>
-              <p class="leading-relaxed text-slate-300">
-                During discussions, if <strong>${studentName}</strong> answers with a plausible idea, challenge them with: <em>"Point your finger to the exact line number that proves that."</em> This eliminates real-world outside knowledge traps.
-              </p>
-            </div>
-          `;
+          const passiveCount = distDict.passive_subject_confusion || 0;
+          const intuitionCount = ebsr.partAOnlyCorrect || (distDict.outside_knowledge || 0);
+
+          if (passiveCount > 0) {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30 space-y-2">
+                <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
+                  <span>🗣️ Dinner Micro-Drill 1: Active Actor Isolation</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  Read a complex passive sentence to <strong>${studentName}</strong> (e.g., <em>"The telemetry packets were transmitted by ground stations..."</em>) and ask: <strong>"Who performed the action of transmitting?"</strong> Have them cross out prepositional phrases starting with <em>by, of, through</em>.
+                </p>
+              </div>
+            `;
+          } else {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+                <h4 class="font-bold text-amber-300 flex items-center gap-1.5">
+                  <span>🎯 Strategy 1: The "Slash and Subject" Deconstruction Drill</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  When reading non-fiction articles with <strong>${studentName}</strong>, ask them to find the main action verb first, then work backward to find who performed it.
+                </p>
+              </div>
+            `;
+          }
+
+          if (intuitionCount > 0) {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30 space-y-2">
+                <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+                  <span>🗣️ Dinner Micro-Drill 2: Line Proof Elimination</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  <strong>${studentName}</strong> triggered "Intuition Without Proof" ${intuitionCount} time(s). During home reading, when ${studentName} states an inference, challenge them: <strong>"Point your index finger to the exact line number on the page that proves that!"</strong>
+                </p>
+              </div>
+            `;
+          } else {
+            drillsHtml += `
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 space-y-2">
+                <h4 class="font-bold text-indigo-300 flex items-center gap-1.5">
+                  <span>⚖️ Strategy 2: "The Text is the Law" Proof Requirement</span>
+                </h4>
+                <p class="leading-relaxed text-slate-300">
+                  During discussions, if <strong>${studentName}</strong> answers with a plausible idea, challenge them with: <em>"Point your finger to the exact line number that proves that."</em> This eliminates real-world outside knowledge traps.
+                </p>
+              </div>
+            `;
+          }
         }
 
         planContainer.innerHTML = drillsHtml;
