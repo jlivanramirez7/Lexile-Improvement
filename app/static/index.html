@@ -319,6 +319,43 @@
 
       </div>
 
+      <!-- ADAPTIVE CAT STAGE ROUTING NOTIFICATION MODAL -->
+      <div id="cat-routing-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden transition-opacity duration-300">
+        <div class="glass-panel p-8 rounded-3xl border border-indigo-500/50 bg-gradient-to-b from-slate-900 via-indigo-950/90 to-slate-900 max-w-lg w-full text-center space-y-5 shadow-2xl animate-fade-in">
+          <div class="w-16 h-16 rounded-2xl bg-indigo-500/20 border border-indigo-500/40 text-3xl flex items-center justify-center mx-auto shadow-inner">
+            🧬
+          </div>
+          <div class="space-y-2">
+            <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-widest bg-indigo-500/30 text-indigo-300 border border-indigo-500/40">
+              DRC BEACON Real-Time Adaptive Engine
+            </span>
+            <h3 id="cat-routing-title" class="text-xl font-black text-white">Stage Routing in Progress...</h3>
+            <p id="cat-routing-desc" class="text-xs text-slate-300 leading-relaxed max-w-sm mx-auto">
+              Analyzing student Depth of Knowledge and accuracy to branch into the optimal Lexile/Quantile pathway.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2 text-left text-xs">
+            <div class="flex justify-between items-center text-slate-400">
+              <span>Stage Accuracy:</span>
+              <span id="cat-routing-score" class="font-bold text-emerald-400 font-mono">5/5 (100%)</span>
+            </div>
+            <div class="flex justify-between items-center text-slate-400">
+              <span>Adaptive Branch Unlocked:</span>
+              <span id="cat-routing-branch" class="font-bold text-amber-300">Advanced AC (1075L - 1180L+)</span>
+            </div>
+            <div class="flex justify-between items-center text-slate-400">
+              <span>Standard Error (SEM):</span>
+              <span id="cat-routing-sem" class="font-bold text-indigo-300">Narrowing to ±15L</span>
+            </div>
+          </div>
+
+          <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden border border-slate-700">
+            <div class="bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-400 h-2 rounded-full animate-pulse w-full"></div>
+          </div>
+        </div>
+      </div>
+
       <!-- MODULE COMPLETION REWARD CARD -->
       <div id="module-complete-modal" class="hidden glass-panel p-8 rounded-2xl border border-emerald-500/40 bg-slate-900/95 text-center max-w-2xl mx-auto space-y-6 shadow-2xl">
         <div class="w-20 h-20 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-4xl mx-auto border border-emerald-500/40">
@@ -7926,6 +7963,2064 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
                   }
             ]
       }
+];
+
+    /* =========================================================================
+       1.4 COMPUTER-ADAPTIVE TESTING (CAT / MULTI-STAGE DECISION TREES)
+       ========================================================================= */
+
+    var ADAPTIVE_CAT_ELA_ASSESSMENTS = [
+  {
+    "id": "cat-ela-1",
+    "title": "DRC BEACON CAT Simulation 1: Aerospace & Ecosystem Dynamics",
+    "badge": "\ud83e\uddec Computer-Adaptive (Multi-Stage Tree)",
+    "isAdaptive": true,
+    "description": "Dynamic multi-stage adaptive simulation with real-time passage Lexile routing (720L to 1180L+) and DOK 1-3 EBSR branching.",
+    "targetLexile": "Adaptive (650L - 1186L+)",
+    "stages": {
+      "stage1": {
+        "stageName": "Stage 1: Router Module",
+        "level": "router",
+        "targetLexile": "920L (On-Grade 5)",
+        "passage": {
+          "title": "The Flight of the Artemis: Returning to the Moon",
+          "genre": "Informational Science",
+          "lexile": "920L",
+          "text": "[1] In November 2022, NASA\u2019s Artemis I mission roared into the night sky from Kennedy Space Center, marking humanity's first step in over fifty years toward sustained lunar exploration. Unlike the historic Apollo missions of the 1960s and 1970s, which focused primarily on brief exploration, the Artemis program was engineered with the long-term goal of establishing a permanent research station on the lunar South Pole.\n\n[2] The primary objective of Artemis I was not to carry humans, but rather to rigorously test the Space Launch System (SLS)\u2014the most powerful rocket ever built\u2014along with the Orion spacecraft's heat shield during atmospheric re-entry. Traveling at nearly 25,000 miles per hour, Orion experienced temperatures approaching 5,000 degrees Fahrenheit as it slammed into Earth's upper atmosphere, relying on its advanced thermal protection tiles to keep internal instruments safe.\n\n[3] In addition to rocket performance, scientists placed three instrumented mannequins inside Orion to measure cosmic radiation exposure. By gathering millions of sensor readings throughout the 25-day journey around the Moon, mission engineers confirmed that radiation shielding could adequately protect astronauts on future crewed voyages.\n\n[4] Establishing a lunar outpost requires overcoming formidable environmental challenges, notably the extreme temperatures in shadowed polar craters where water ice remains frozen. If this ice can be extracted and chemically split into hydrogen and oxygen, it will provide essential drinking water, breathable air, and rocket propellant for deep-space journeys to Mars.\n\n[5] Consequently, the success of Artemis I represents far more than an engineering triumph; it constitutes the foundational proving ground for humanity\u2019s eventual journey to the Martian frontier."
+        },
+        "questions": [
+          {
+            "id": "cat-ela-1-s1-q1",
+            "dokLevel": 1,
+            "pillar": 0,
+            "pillarName": "Direct Textual Recall",
+            "question": "According to paragraph 2, what was the primary objective of the uncrewed Artemis I mission?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "To extract water ice from shadowed polar craters on the Moon",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "B",
+                "text": "To rigorously test the Space Launch System and Orion's thermal heat shield during re-entry",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "To construct a permanent research base on the lunar South Pole",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "To transport the first crew of astronauts directly to Mars",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 2 directly states that the primary objective was to rigorously test the SLS rocket and the Orion heat shield during re-entry at 25,000 mph."
+          },
+          {
+            "id": "cat-ela-1-s1-q2",
+            "dokLevel": 2,
+            "pillar": 1,
+            "pillarName": "Syntax Deconstruction",
+            "question": "In paragraph 2, what is the primary grammatical subject performing the action of 'relying on its advanced thermal protection tiles'?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Earth's upper atmosphere",
+                "errorType": "passive_subject_confusion"
+              },
+              {
+                "letter": "B",
+                "text": "The Space Launch System (SLS)",
+                "errorType": "passive_subject_confusion"
+              },
+              {
+                "letter": "C",
+                "text": "The Orion spacecraft",
+                "errorType": "correct"
+              },
+              {
+                "letter": "D",
+                "text": "The instrumented mannequins",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 2,
+            "explanation": "In the multi-clause sentence in paragraph 2, 'Orion' is the subject that experienced extreme temperatures while relying on its thermal protection tiles."
+          },
+          {
+            "id": "cat-ela-1-s1-q3",
+            "dokLevel": 2,
+            "pillar": 2,
+            "pillarName": "Tier 2 Context Vocabulary",
+            "question": "As used in paragraph 4, what is the meaning of the word 'formidable'?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Intensely challenging and demanding great effort to overcome",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Easily resolved with existing standard tools",
+                "errorType": "vocabulary_misinterpretation"
+              },
+              {
+                "letter": "C",
+                "text": "Temporarily inconvenient but harmless",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "Completely impossible to ever understand",
+                "errorType": "vocabulary_misinterpretation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "'Formidable' describes severe obstacles like extreme polar crater temperatures that require extraordinary engineering solutions."
+          },
+          {
+            "id": "cat-ela-1-s1-q4",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part A (Strategic Inference)",
+            "isEbsrPartA": true,
+            "question": "Part A: Which statement best expresses the author's central claim regarding the broader significance of the Artemis program?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "The program is primarily designed to replicate the scientific achievements of the Apollo era.",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "B",
+                "text": "Lunar exploration serves as a crucial technological stepping stone for long-duration interplanetary missions.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "Robotic mannequins will permanently replace human astronauts on deep-space journeys.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "D",
+                "text": "Harvesting lunar water is too expensive to justify future space missions.",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explains that establishing a permanent lunar base and extracting resources provides the testing ground and fuel for deep-space voyages to Mars."
+          },
+          {
+            "id": "cat-ela-1-s1-q5",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part B (Quoted Proof)",
+            "isEbsrPartB": true,
+            "question": "Part B: Which quotation from the passage best supports the claim selected in Part A?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\"In November 2022, NASA\u2019s Artemis I mission roared into the night sky from Kennedy Space Center...\" (Paragraph 1)",
+                "errorType": "passive_subject_confusion"
+              },
+              {
+                "letter": "B",
+                "text": "\"...it constitutes the foundational proving ground for humanity\u2019s eventual journey to the Martian frontier.\" (Paragraph 5)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "\"Traveling at nearly 25,000 miles per hour, Orion experienced temperatures approaching 5,000 degrees...\" (Paragraph 2)",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "\"By gathering millions of sensor readings throughout the 25-day journey...\" (Paragraph 3)",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 5 explicitly confirms Part A by stating that the mission is the foundational proving ground for reaching the Martian frontier."
+          }
+        ]
+      },
+      "stage2_hard": {
+        "stageName": "Stage 2: Advanced AC Placement Branch",
+        "level": "hard",
+        "targetLexile": "1110L (Dickerson AC Qualifier)",
+        "passage": {
+          "title": "Bioluminescence in the Abyssal Zone: Cold Light in the Deep",
+          "genre": "Informational Science (High Rigor)",
+          "lexile": "1110L",
+          "text": "[1] In the perpetually sunless depths of the ocean's bathypelagic and abyssal zones, where hydrostatic pressure exceeds eight hundred atmospheres and temperatures hover just above freezing, living organisms have evolved extraordinary biochemical adaptations to navigate their lightless domain. Foremost among these physiological phenomena is bioluminescence\u2014the enzymatic oxidation of a light-emitting substrate known as luciferin catalyzed by the enzyme luciferase.\n\n[2] Unlike incandescent light generated through thermal radiation, which dissipates the vast majority of its energy as wasted heat, bioluminescent production is characterized by near-perfect chemical efficiency, with approximately ninety-eight percent of the chemical energy converted directly into visible photons of blue-green light.\n\n[3] The prevalence of blue-green wavelengths in abyssal organisms is by no means coincidental; rather, it is a direct consequence of optical physics. In pure seawater, shorter wavelengths of blue and green light penetrate farthest and scatter least, whereas longer red wavelengths are rapidly attenuated within the epipelagic zone. Consequently, deep-sea fauna have developed photoreceptors that are exquisitely attuned to detect these specific blue-green frequencies across vast distances of open water.\n\n[4] Beyond basic illumination, abyssal creatures deploy bioluminescence with remarkable strategic diversity. The anglerfish utilizes a symbiotic bacterial lure suspended above its jaws to attract unwary prey, while certain species of deep-sea squid execute counterillumination\u2014emitting light from ventral photophores that matches the intensity of downwelling light from the surface, effectively rendering themselves invisible to predators lurking beneath.\n\n[5] Understanding these intricate biochemical adaptations provides oceanographers and molecular biologists with profound insights into how life thrives under extreme environmental constraints."
+        },
+        "questions": [
+          {
+            "id": "cat-ela-1-s2h-q1",
+            "dokLevel": 2,
+            "pillar": 1,
+            "pillarName": "Syntax Deconstruction",
+            "question": "In the complex sentence in paragraph 2, what primary distinction is established between bioluminescent light and incandescent light?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Incandescent light relies on biological enzymes, whereas bioluminescence requires solar radiation.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "B",
+                "text": "Bioluminescence converts almost all energy into light, whereas incandescent light loses most energy as heat.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "Bioluminescence is restricted to warm shallow waters, whereas incandescent light functions under high pressure.",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "Bioluminescent light generates excessive heat that damages deep-sea photoreceptors.",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 2 emphasizes that bioluminescence has near-perfect chemical efficiency (98% converted to photons) compared to incandescent light which dissipates energy as heat."
+          },
+          {
+            "id": "cat-ela-1-s2h-q2",
+            "dokLevel": 2,
+            "pillar": 2,
+            "pillarName": "Tier 2/3 Academic Vocabulary",
+            "question": "As used in paragraph 3, what does the word 'attenuated' most nearly mean?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Weakened and absorbed until extinguished",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Amplified and made noticeably brighter",
+                "errorType": "vocabulary_misinterpretation"
+              },
+              {
+                "letter": "C",
+                "text": "Preserved indefinitely across cold water",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "Reflected sharply off oceanic minerals",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "In optics, 'attenuated' means weakened in intensity as waves travel through a medium (red light is absorbed quickly in shallow water)."
+          },
+          {
+            "id": "cat-ela-1-s2h-q3",
+            "dokLevel": 3,
+            "pillar": 0,
+            "pillarName": "Scientific Synthesis",
+            "question": "Based on paragraph 4, how does counterillumination protect deep-sea squid from predators?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "It blinds approaching predators with sudden intense flashes of incandescent light.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "B",
+                "text": "It matches the brightness of light from above to erase the squid's silhouette when viewed from below.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "It lures smaller fish toward the squid's tentacles to serve as physical shields.",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "It warms the surrounding water to repel cold-water carnivores.",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 4 explains that emitting ventral light matching downwelling surface light camouflages the organism's shadow from predators looking upward."
+          },
+          {
+            "id": "cat-ela-1-s2h-q4",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part A (DOK 3 Inference)",
+            "isEbsrPartA": true,
+            "question": "Part A: Which inference regarding evolutionary adaptation in the abyssal zone is best supported by the passage?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Organisms in the deep ocean develop sensory organs that specifically exploit the physical properties of light in water.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Deep-sea creatures primarily rely on thermal heat rather than chemical energy to survive.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "Bioluminescence evolved primarily as an accidental byproduct of digestive processes.",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "Photoreceptors in abyssal fauna are most sensitive to red wavelengths because red light travels farthest.",
+                "errorType": "passive_subject_confusion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Paragraph 3 explains that abyssal photoreceptors evolved to detect blue-green light because those wavelengths travel farthest through water."
+          },
+          {
+            "id": "cat-ela-1-s2h-q5",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part B (DOK 3 Quoted Proof)",
+            "isEbsrPartB": true,
+            "question": "Part B: Which sentence from the passage provides the best evidence for the answer to Part A?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\"Foremost among these physiological phenomena is bioluminescence...\" (Paragraph 1)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "B",
+                "text": "\"Consequently, deep-sea fauna have developed photoreceptors that are exquisitely attuned to detect these specific blue-green frequencies...\" (Paragraph 3)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "\"The anglerfish utilizes a symbiotic bacterial lure suspended above its jaws...\" (Paragraph 4)",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "\"Unlike incandescent light generated through thermal radiation...\" (Paragraph 2)",
+                "errorType": "passive_subject_confusion"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 3 directly supports Part A by stating deep-sea fauna developed photoreceptors attuned to blue-green frequencies."
+          }
+        ]
+      },
+      "stage2_medium": {
+        "stageName": "Stage 2: On-Grade Standard Benchmark Branch",
+        "level": "medium",
+        "targetLexile": "920L (Standard Grade 5)",
+        "passage": {
+          "title": "The Secrets of the Redwood Canopy",
+          "genre": "Informational Ecology",
+          "lexile": "920L",
+          "text": "[1] Towering over three hundred feet above the misty northern California coast, the coast redwood (Sequoia sempervirens) is the tallest living organism on planet Earth. For centuries, naturalists viewed the forest floor and tree trunks as the primary habitats of the redwood ecosystem. However, recent scientific expeditions using modern climbing gear have revealed an astonishing, hidden world thriving hundreds of feet in the air: the canopy ecosystem.\n\n[2] In the upper branches of these ancient giants, falling needles, twigs, and dust accumulate over centuries, decomposing into rich, spongy arboreal soil that can reach depths of up to three feet. This aerial soil supports entire hanging gardens of ferns, mosses, and flowering shrubs rooted directly in the treetops.\n\n[3] Incredibly, these canopy mats store vast quantities of water absorbed from coastal fog, creating a lush microclimate that sustains salamanders, insects, and small mammals that spend their entire lives without ever touching the ground.\n\n[4] Protecting these ancient canopies is vital because redwoods absorb more atmospheric carbon dioxide per acre than almost any other forest on Earth, serving as a powerful natural defense against global climate change."
+        },
+        "questions": [
+          {
+            "id": "cat-ela-1-s2m-q1",
+            "dokLevel": 1,
+            "pillar": 0,
+            "pillarName": "Direct Recall",
+            "question": "According to paragraph 2, what creates the arboreal soil found in the upper redwood canopy?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Soil carried up by climbing mammals",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "B",
+                "text": "Accumulated needles, twigs, and dust decomposing over centuries",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "Volcanic ash blown from mountain ranges",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "Artificial fertilizer spread by forest researchers",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 2 states that falling needles, twigs, and dust accumulate over centuries and decompose into arboreal soil."
+          },
+          {
+            "id": "cat-ela-1-s2m-q2",
+            "dokLevel": 2,
+            "pillar": 2,
+            "pillarName": "Tier 2 Vocabulary",
+            "question": "As used in paragraph 2, what does the word 'arboreal' mean?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Living or situated in trees",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Submerged deep underwater",
+                "errorType": "vocabulary_misinterpretation"
+              },
+              {
+                "letter": "C",
+                "text": "Artificial and human-made",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "Extremely dry and sandy",
+                "errorType": "vocabulary_misinterpretation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "'Arboreal' refers to things inhabiting or existing within trees."
+          },
+          {
+            "id": "cat-ela-1-s2m-q3",
+            "dokLevel": 2,
+            "pillar": 1,
+            "pillarName": "Text Structure",
+            "question": "How does paragraph 3 connect coastal fog to the survival of canopy creatures?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "By showing that fog prevents predators from seeing prey",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "B",
+                "text": "By explaining that canopy soil mats absorb fog moisture to create a livable habitat",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "By proving that fog makes the tree trunks too slippery for climbers",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "By demonstrating that fog lowers tree temperatures below freezing",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 3 explains that the soil mats absorb moisture from coastal fog, providing the water needed for canopy wildlife."
+          },
+          {
+            "id": "cat-ela-1-s2m-q4",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part A",
+            "isEbsrPartA": true,
+            "question": "Part A: Which statement best describes the central idea of the passage?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Redwood trees are too tall for modern scientists to safely study.",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "B",
+                "text": "The canopy of ancient redwood forests contains a complex, self-sustaining ecosystem essential for global climate health.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "Coastal fog is dangerous to the long-term health of California forests.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "D",
+                "text": "Salamanders in the redwood canopy are an invasive species.",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "The passage details the rich aerial ecosystem in the redwood canopy and highlights its importance in absorbing carbon."
+          },
+          {
+            "id": "cat-ela-1-s2m-q5",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part B",
+            "isEbsrPartB": true,
+            "question": "Part B: Which detail from the passage best supports the central idea in Part A?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\"Towering over three hundred feet above the misty northern California coast...\" (Paragraph 1)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "B",
+                "text": "\"Protecting these ancient canopies is vital because redwoods absorb more atmospheric carbon dioxide per acre than almost any other forest...\" (Paragraph 4)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "\"For centuries, naturalists viewed the forest floor and tree trunks as the primary habitats...\" (Paragraph 1)",
+                "errorType": "passive_subject_confusion"
+              },
+              {
+                "letter": "D",
+                "text": "\"...canopy mats store vast quantities of water...\" (Paragraph 3)",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 4 emphasizes the global ecological significance and importance of protecting the canopy."
+          }
+        ]
+      },
+      "stage2_easy": {
+        "stageName": "Stage 2: Foundational Scaffold Branch",
+        "level": "scaffold",
+        "targetLexile": "760L (Foundational Grade 4/5)",
+        "passage": {
+          "title": "The Busy Life of Honeybees",
+          "genre": "Informational Life Science",
+          "lexile": "760L",
+          "text": "[1] Honeybees are some of the hardest working insects in the animal kingdom. Inside a single hive, tens of thousands of worker bees live and work together in an organized community.\n\n[2] Every bee in the colony has a special job. Younger worker bees stay inside the hive to clean cells, nurse baby bees, and guard the entrance from intruders. Older worker bees fly out into fields to gather sweet nectar and yellow pollen from blooming flowers.\n\n[3] When a foraging bee discovers a rich patch of flowers, it flies back to the hive and performs a special movement called the 'waggle dance.' By shaking its body at specific angles, the bee tells its hive mates the exact direction and distance to the flower patch.\n\n[4] In addition to producing honey, bees are essential pollinators. As they collect nectar, pollen grains stick to their fuzzy bodies and brush off onto other blossoms, helping farmers grow apples, berries, and vegetables."
+        },
+        "questions": [
+          {
+            "id": "cat-ela-1-s2e-q1",
+            "dokLevel": 1,
+            "pillar": 0,
+            "pillarName": "Direct Recall",
+            "question": "According to paragraph 2, what is the job of younger worker bees?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Flying far away to find flowers",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "B",
+                "text": "Cleaning cells, nursing baby bees, and guarding the hive",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "Laying thousands of eggs each day",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "Harvesting crops for farmers",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 2 directly states that younger worker bees stay inside the hive to clean, nurse, and guard."
+          },
+          {
+            "id": "cat-ela-1-s2e-q2",
+            "dokLevel": 2,
+            "pillar": 1,
+            "pillarName": "Cause and Effect",
+            "question": "Why does a honeybee perform the 'waggle dance' inside the hive?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "To warn other bees of an approaching storm",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "B",
+                "text": "To communicate the direction and distance of a food source",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "To celebrate the arrival of spring",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "To keep the hive warm in winter",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 3 explains that the waggle dance shares the direction and distance to flowers."
+          },
+          {
+            "id": "cat-ela-1-s2e-q3",
+            "dokLevel": 2,
+            "pillar": 2,
+            "pillarName": "Context Vocabulary",
+            "question": "As used in paragraph 4, what is the meaning of 'pollinators'?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Creatures that transfer pollen from flower to flower to help plants reproduce",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Insects that eat and destroy farm vegetables",
+                "errorType": "vocabulary_misinterpretation"
+              },
+              {
+                "letter": "C",
+                "text": "Farmers who plant seeds in spring",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "Birds that build nests in tree branches",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Paragraph 4 explains that pollinators carry pollen grains between blossoms to help plants grow fruit."
+          },
+          {
+            "id": "cat-ela-1-s2e-q4",
+            "dokLevel": 2,
+            "pillar": 3,
+            "pillarName": "EBSR Part A",
+            "isEbsrPartA": true,
+            "question": "Part A: Which statement best states the main idea of the passage?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Honeybees work together in organized colonies to survive and play a critical role in pollinating food crops.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "All bees in a colony do the exact same job every single day.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "Honeybees are dangerous pests that harm local agriculture.",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "Bees only dance when they are threatened by predators.",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "The text explains the organized roles within the colony and their crucial contribution to plant pollination."
+          },
+          {
+            "id": "cat-ela-1-s2e-q5",
+            "dokLevel": 2,
+            "pillar": 3,
+            "pillarName": "EBSR Part B",
+            "isEbsrPartB": true,
+            "question": "Part B: Which sentence from the passage best supports the main idea in Part A?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\"Inside a single hive, tens of thousands of worker bees live and work together in an organized community.\" (Paragraph 1)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\"Younger worker bees stay inside the hive...\" (Paragraph 2)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "\"When a foraging bee discovers a rich patch of flowers...\" (Paragraph 3)",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "\"Every bee in the colony has a special job.\" (Paragraph 2)",
+                "errorType": "passive_subject_confusion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Paragraph 1 sets up the central premise of an organized community working together."
+          }
+        ]
+      },
+      "stage3_elite": {
+        "stageName": "Stage 3: Distinguished 6th/7th Grade Lexile Tier",
+        "level": "elite",
+        "targetLexile": "1180L+ (Distinguished Ceiling)",
+        "passage": {
+          "title": "The Decipherment of the Rosetta Stone: Unlocking Hieroglyphs",
+          "genre": "Historical & Linguistic Analysis",
+          "lexile": "1180L",
+          "text": "[1] For over a millennium following the collapse of the Roman Empire, the sacred hieroglyphic inscriptions carved into Egyptian obelisks and tomb walls remained an impenetrable enigma to Western scholars. The prevailing consensus among Renaissance linguists was that hieroglyphs functioned purely as mystical, symbolic ideograms representing metaphysical concepts rather than phonetic speech.\n\n[2] This enduring intellectual impasse was shattered in 1799 when French soldiers unearthed a granodiorite slab near the port city of Rashid\u2014the Rosetta Stone. The artifact bore a royal decree issued in 196 BCE by King Ptolemy V Epiphanes, inscribed in three distinct scripts: Egyptian Hieroglyphs for the priesthood, Demotic script for administrative governance, and Ancient Greek for secular administration.\n\n[3] The presence of the Greek inscription provided an invaluable conceptual decipherment cipher. By meticulously cross-referencing the Greek text with the hieroglyphic cartouches\u2014oval loops enclosing royal names\u2014French polymath Jean-Fran\u00e7ois Champollion made a groundbreaking discovery: hieroglyphs operated as a complex hybrid system, functioning simultaneously as ideograms, determinatives, and phonetic phonograms.\n\n[4] Champollion\u2019s linguistic breakthrough demonstrated that ancient Egyptian script recorded the phonetic sounds of spoken language, thereby inaugurating the modern academic discipline of Egyptology and restoring an entire ancient civilization's voice to recorded world history."
+        },
+        "questions": [
+          {
+            "id": "cat-ela-1-s3e-q1",
+            "dokLevel": 3,
+            "pillar": 1,
+            "pillarName": "Syntax Deconstruction",
+            "question": "In paragraph 1, how does the author characterize the Renaissance scholars' perspective on hieroglyphic script?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "They correctly identified hieroglyphs as an alphabet recording phonetic consonant sounds.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "B",
+                "text": "They mistakenly assumed hieroglyphs represented abstract metaphysical symbols rather than spoken sounds.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "They believed the script was invented by Greek military commanders in Ptolemaic Egypt.",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "They viewed hieroglyphs as an exclusively agricultural bookkeeping code.",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 1 states Renaissance linguists believed hieroglyphs were purely symbolic ideograms for metaphysical concepts rather than phonetic speech."
+          },
+          {
+            "id": "cat-ela-1-s3e-q2",
+            "dokLevel": 3,
+            "pillar": 2,
+            "pillarName": "Tier 3 Vocabulary",
+            "question": "As used in paragraph 2, what is the meaning of the phrase 'intellectual impasse'?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "A prolonged deadlock where scholarly progress has completely halted",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "A sudden burst of rapid archaeological discoveries",
+                "errorType": "vocabulary_misinterpretation"
+              },
+              {
+                "letter": "C",
+                "text": "A formal debate held between rival universities",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "A military ceasefire between opposing nations",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "An 'intellectual impasse' refers to a stalemate or roadblock where scholars could make no progress in deciphering the language."
+          },
+          {
+            "id": "cat-ela-1-s3e-q3",
+            "dokLevel": 3,
+            "pillar": 0,
+            "pillarName": "Author's Technique",
+            "question": "How does the author structure the progression of ideas between paragraph 1 and paragraph 4?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "From a centuries-long misconception to the technological discovery that unlocked phonetic understanding",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "From a list of Egyptian military victories to the eventual decline of the Ptolemaic dynasty",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "From an explanation of Greek grammar to a comparison of ancient granodiorite carving techniques",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "From the birth of King Ptolemy V to the collapse of the Roman Empire",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "The passage traces the trajectory from centuries of scholarly confusion to the breakthrough that founded Egyptology."
+          },
+          {
+            "id": "cat-ela-1-s3e-q4",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part A (DOK 3 Claim)",
+            "isEbsrPartA": true,
+            "question": "Part A: Which claim best articulates Champollion's primary contribution to historical linguistics?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "He proved that Egyptian scribes only used phonetic writing when recording the names of foreign kings.",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "B",
+                "text": "He demonstrated that hieroglyphs were a versatile hybrid system combining phonetic sounds and symbolic meaning.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "He revealed that Demotic script had no grammatical connection to Ancient Greek.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "D",
+                "text": "He translated all known Egyptian obelisks within a single year of the stone's discovery.",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 3 notes Champollion discovered hieroglyphs operated as a complex hybrid system of ideograms and phonetic phonograms."
+          },
+          {
+            "id": "cat-ela-1-s3e-q5",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part B (DOK 3 Proof)",
+            "isEbsrPartB": true,
+            "question": "Part B: Which quotation from the passage best supports the claim in Part A?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\"This enduring intellectual impasse was shattered in 1799...\" (Paragraph 2)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "B",
+                "text": "\"...hieroglyphs operated as a complex hybrid system, functioning simultaneously as ideograms, determinatives, and phonetic phonograms.\" (Paragraph 3)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "\"The artifact bore a royal decree issued in 196 BCE by King Ptolemy V...\" (Paragraph 2)",
+                "errorType": "passive_subject_confusion"
+              },
+              {
+                "letter": "D",
+                "text": "\"For over a millennium following the collapse of the Roman Empire...\" (Paragraph 1)",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 3 provides the exact linguistic definition supporting Champollion's hybrid discovery."
+          }
+        ]
+      },
+      "stage3_adv": {
+        "stageName": "Stage 3: Strong AC Placement Tier",
+        "level": "adv",
+        "targetLexile": "1080L (Dickerson AC Qualifier)",
+        "passage": {
+          "title": "Ocean Acidification and Coral Calcification",
+          "genre": "Environmental Science",
+          "lexile": "1080L",
+          "text": "[1] Coral reefs are among the most biodiverse marine ecosystems on Earth, providing habitat for roughly twenty-five percent of all ocean species. At the structural core of these marine citadels are hermatypic corals, colonial invertebrates that construct massive calcium carbonate skeletons through the biological precipitation of calcium and carbonate ions.\n\n[2] Over the past century, increased atmospheric emissions of carbon dioxide from industrial activities have triggered fundamental shifts in ocean chemistry. The ocean absorbs approximately thirty percent of global carbon emissions, where it undergoes chemical reactions that form carbonic acid, lowering the ocean's pH in a process known as ocean acidification.\n\n[3] When seawater acidifies, the concentration of free carbonate ions diminishes rapidly. Consequently, juvenile corals must expend vastly more metabolic energy to extract the building blocks necessary to secrete their protective stony structures.\n\n[4] Without proactive global efforts to curb atmospheric emissions and stabilize ocean chemistry, marine biologists project that reef accretion will fall behind natural erosion rates, threatening the structural integrity of coral barriers worldwide."
+        },
+        "questions": [
+          {
+            "id": "cat-ela-1-s3a-q1",
+            "dokLevel": 2,
+            "pillar": 1,
+            "pillarName": "Chemical Syntax",
+            "question": "According to paragraph 2, how does excess atmospheric carbon dioxide cause ocean acidification?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "It reacts chemically in seawater to produce carbonic acid, which lowers ocean pH",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "It prevents sunlight from warming shallow coral lagoons",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "It directly increases the concentration of carbonate ions",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "It cools deep ocean currents below freezing",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Paragraph 2 states that absorbed CO2 forms carbonic acid, lowering ocean pH in the process of acidification."
+          },
+          {
+            "id": "cat-ela-1-s3a-q2",
+            "dokLevel": 2,
+            "pillar": 2,
+            "pillarName": "Vocabulary",
+            "question": "As used in paragraph 4, what is the meaning of 'accretion'?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "The gradual buildup and growth of coral skeleton layers",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "The rapid migration of fish away from warmer waters",
+                "errorType": "vocabulary_misinterpretation"
+              },
+              {
+                "letter": "C",
+                "text": "The sudden chemical bleaching of algae",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "The industrial harvesting of ocean minerals",
+                "errorType": "outside_knowledge"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "'Accretion' means growth or buildup through the accumulation of layers (building the reef skeleton)."
+          },
+          {
+            "id": "cat-ela-1-s3a-q3",
+            "dokLevel": 3,
+            "pillar": 0,
+            "pillarName": "Biological Inference",
+            "question": "Based on paragraph 3, what is the biological consequence when free carbonate ions diminish in seawater?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Young corals must redirect vital metabolic energy toward building skeletons rather than growth and reproduction",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Corals stop eating and rely solely on deep-sea thermal vents",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "Marine predators lose their eyesight in darker water",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "D",
+                "text": "Corals dissolve instantly upon contact with fish scales",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Paragraph 3 notes juvenile corals must expend vastly more metabolic energy to extract building blocks for skeletons."
+          },
+          {
+            "id": "cat-ela-1-s3a-q4",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part A",
+            "isEbsrPartA": true,
+            "question": "Part A: Which statement best describes the primary threat facing coral reefs outlined in the passage?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Shifting ocean chemistry prevents corals from building skeletons faster than the reefs naturally erode.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Overfishing has removed the primary grazers that clean coral surfaces.",
+                "errorType": "outside_knowledge"
+              },
+              {
+                "letter": "C",
+                "text": "Corals are producing too much calcium carbonate for the surrounding fish.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "D",
+                "text": "Ocean water is becoming too basic for marine plants to photosynthesize.",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "The text warns that ocean acidification reduces calcification, causing reef accretion to fall behind natural erosion."
+          },
+          {
+            "id": "cat-ela-1-s3a-q5",
+            "dokLevel": 3,
+            "pillar": 3,
+            "pillarName": "EBSR Part B",
+            "isEbsrPartB": true,
+            "question": "Part B: Which sentence from the text provides the best evidence for Part A?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\"At the structural core of these marine citadels are hermatypic corals...\" (Paragraph 1)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "B",
+                "text": "\"Without proactive global efforts... marine biologists project that reef accretion will fall behind natural erosion rates...\" (Paragraph 4)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "C",
+                "text": "\"The ocean absorbs approximately thirty percent of global carbon emissions...\" (Paragraph 2)",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "\"Coral reefs are among the most biodiverse marine ecosystems on Earth...\" (Paragraph 1)",
+                "errorType": "passive_subject_confusion"
+              }
+            ],
+            "correctIndex": 1,
+            "explanation": "Paragraph 4 directly supports Part A by projecting that accretion will fall behind erosion rates."
+          }
+        ]
+      }
+    }
+  }
+];
+
+    var ADAPTIVE_CAT_MATH_ASSESSMENTS = [
+  {
+    "id": "cat-math-1",
+    "title": "DRC BEACON CAT Math Simulation 1: Aerospace Operations & Geometry",
+    "badge": "\ud83e\uddec Computer-Adaptive (Multi-Stage Tree)",
+    "isAdaptive": true,
+    "description": "Multi-stage adaptive math simulation dynamically routing across all 5 GSE domains from Foundational (650Q) to Hyper-Accelerated Math 6/7A (1050Q+).",
+    "targetQuantile": "Adaptive (620Q - 1115Q+)",
+    "stages": {
+      "stage1": {
+        "stageName": "Stage 1: Math Router Module",
+        "level": "router",
+        "targetQuantile": "840Q (On-Grade 5)",
+        "scenario": "A logistics team is preparing a satellite launch payload, requiring precise calculations in mass, fuel volume, trajectory coordinates, and orbital schedules.",
+        "questions": [
+          {
+            "id": "cat-math-1-s1-q1",
+            "domain": "OA",
+            "domainName": "Operations & Algebraic Thinking",
+            "standardCode": "MGSE5.OA.1",
+            "dokLevel": 2,
+            "question": "Evaluate the following numerical expression using the correct order of operations:\n\n\\[ 4 \\times [ (18 - 6) \\div 3 ] + (5^2 - 9) \\]",
+            "options": [
+              {
+                "letter": "A",
+                "text": "32",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "24",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "48",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "16",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Step 1: Inside bracket (18 - 6) = 12; 12 / 3 = 4. Step 2: 4 * 4 = 16. Step 3: (5^2 - 9) = (25 - 9) = 16. Step 4: 16 + 16 = 32."
+          },
+          {
+            "id": "cat-math-1-s1-q2",
+            "domain": "NBT",
+            "domainName": "Number & Operations in Base Ten",
+            "standardCode": "MGSE5.NBT.7",
+            "dokLevel": 2,
+            "question": "A fuel canister holds 14.85 liters of cryogenic coolant. If an engineer combines 6 identical canisters and then removes 12.45 liters for a secondary test, how many liters remain?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "76.65 liters",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "89.10 liters",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "74.25 liters",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "766.5 liters",
+                "errorType": "place_value_shift"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Step 1: 14.85 * 6 = 89.10 liters. Step 2: 89.10 - 12.45 = 76.65 liters."
+          },
+          {
+            "id": "cat-math-1-s1-q3",
+            "domain": "NF",
+            "domainName": "Number & Operations\u2014Fractions",
+            "standardCode": "MGSE5.NF.1",
+            "dokLevel": 2,
+            "question": "In the spacecraft's electrical array, circuit A draws \\( 3\\frac{3}{4} \\) amps and circuit B draws \\( 2\\frac{2}{3} \\) amps. What is the total current draw of both circuits combined?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\\( 6\\frac{5}{12} \\) amps",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( 5\\frac{5}{7} \\) amps",
+                "errorType": "denominator_addition_misconception"
+              },
+              {
+                "letter": "C",
+                "text": "\\( 6\\frac{1}{12} \\) amps",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "\\( 5\\frac{11}{12} \\) amps",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Common denominator is 12: 3 9/12 + 2 8/12 = 5 17/12 = 6 5/12 amps."
+          },
+          {
+            "id": "cat-math-1-s1-q4",
+            "domain": "MD",
+            "domainName": "Measurement & Data",
+            "standardCode": "MGSE5.MD.5",
+            "dokLevel": 3,
+            "question": "A rectangular equipment storage locker on the space station has a base measuring 12 feet long and 8 feet wide. If the locker's total volume is 672 cubic feet, what is its height?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "7 feet",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "9 feet",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "6 feet",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "D",
+                "text": "14 feet",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Base area = 12 * 8 = 96 sq ft. Height = Volume / Base Area = 672 / 96 = 7 feet."
+          },
+          {
+            "id": "cat-math-1-s1-q5",
+            "domain": "G",
+            "domainName": "Geometry",
+            "standardCode": "MGSE5.G.2",
+            "dokLevel": 2,
+            "question": "A flight simulator starts at point \\( A(2, 3) \\). The pilot moves 4 units to the right along the x-axis and 5 units up along the y-axis to reach point B. What are the coordinates of point B?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "(6, 8)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "(8, 6)",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "(7, 7)",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "(6, 7)",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "x = 2 + 4 = 6; y = 3 + 5 = 8. Point B = (6, 8)."
+          }
+        ]
+      },
+      "stage2_hard": {
+        "stageName": "Stage 2: Hyper-Accelerated Math 6/7A Branch",
+        "level": "hard",
+        "targetQuantile": "980Q (Math 6/7A Qualifier)",
+        "scenario": "Advanced orbital mechanics and propulsion engineering: complex multi-step fractional rate problems, composite solid volume decompositions, and algebraic expressions.",
+        "questions": [
+          {
+            "id": "cat-math-1-s2h-q1",
+            "domain": "OA",
+            "domainName": "Operations & Algebraic Thinking",
+            "standardCode": "MGSE5.OA.2",
+            "dokLevel": 3,
+            "question": "Which mathematical expression represents the statement: 'Four times the sum of a number \\( n \\) and 8, decreased by the quotient of 24 and 3'?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\\( 4(n + 8) - (24 \\div 3) \\)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( 4n + 8 - 24 \\div 3 \\)",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "\\( (4 \\times n) + (8 - 24) \\div 3 \\)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "\\( 4(n + 8) \\div (24 - 3) \\)",
+                "errorType": "computational_error"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "'Four times the sum of n and 8' is 4(n + 8). 'decreased by the quotient of 24 and 3' is - (24 / 3)."
+          },
+          {
+            "id": "cat-math-1-s2h-q2",
+            "domain": "NBT",
+            "domainName": "Number & Operations in Base Ten",
+            "standardCode": "MGSE5.NBT.7",
+            "dokLevel": 3,
+            "question": "A micro-thruster consumes 0.045 kg of argon propellant per minute. If the spacecraft fires the thruster continuously for 3.5 hours, how many total kilograms of argon are consumed?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "9.45 kg",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "0.1575 kg",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "94.5 kg",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "D",
+                "text": "15.75 kg",
+                "errorType": "computational_error"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Step 1: 3.5 hours = 3.5 * 60 = 210 minutes. Step 2: 210 * 0.045 = 9.45 kg."
+          },
+          {
+            "id": "cat-math-1-s2h-q3",
+            "domain": "NF",
+            "domainName": "Fractions Multiplication & Division",
+            "standardCode": "MGSE5.NF.7",
+            "dokLevel": 3,
+            "question": "A laboratory satellite has a \\( \\frac{1}{6} \\)-kilogram sample of experimental alloy. If the sample is divided equally into 4 micro-containers for simultaneous testing, what fraction of a kilogram is in each container?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\\( \\frac{1}{24} \\) kg",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( \\frac{2}{3} \\) kg",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "\\( \\frac{4}{6} \\) kg",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "\\( \\frac{1}{10} \\) kg",
+                "errorType": "denominator_addition_misconception"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "(1/6) / 4 = (1/6) * (1/4) = 1/24 kilogram."
+          },
+          {
+            "id": "cat-math-1-s2h-q4",
+            "domain": "MD",
+            "domainName": "Composite Volume Additivity",
+            "standardCode": "MGSE5.MD.5c",
+            "dokLevel": 3,
+            "question": "A composite robotic housing is formed by joining two rectangular prisms: Prism X measures 6 cm by 4 cm by 10 cm. Prism Y measures 8 cm by 5 cm by 4 cm. What is the total volume of the robotic housing?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "400 cubic cm",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "240 cubic cm",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "160 cubic cm",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "480 cubic cm",
+                "errorType": "computational_error"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Prism X = 6 * 4 * 10 = 240 cc. Prism Y = 8 * 5 * 4 = 160 cc. Total = 240 + 160 = 400 cc."
+          },
+          {
+            "id": "cat-math-1-s2h-q5",
+            "domain": "G",
+            "domainName": "Geometry Classifications",
+            "standardCode": "MGSE5.G.3",
+            "dokLevel": 3,
+            "question": "Which of the following geometric hierarchy statements is ALWAYS true for two-dimensional quadrilaterals?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "All squares are both rhombuses and rectangles, and every rhombus is a parallelogram.",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "All trapezoids are parallelograms because they have at least one pair of parallel sides.",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "All rectangles are squares because they have four right angles.",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "A parallelogram is only a quadrilateral if all four sides are congruent.",
+                "errorType": "computational_error"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "In 2D geometric classification, squares inherit all properties of rectangles (4 right angles) and rhombuses (4 congruent sides), all of which are parallelograms."
+          }
+        ]
+      },
+      "stage2_medium": {
+        "stageName": "Stage 2: On-Grade Standard Benchmark Branch",
+        "level": "medium",
+        "targetQuantile": "850Q (On-Grade 5)",
+        "scenario": "Standard 5th grade laboratory inventory, volume calculations, and decimal arithmetic.",
+        "questions": [
+          {
+            "id": "cat-math-1-s2m-q1",
+            "domain": "NBT",
+            "domainName": "Multi-digit Multiplication",
+            "standardCode": "MGSE5.NBT.5",
+            "dokLevel": 2,
+            "question": "A supply crate holds 348 microchips. If a tech firm orders 46 crates, how many microchips were ordered in total?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "16,008",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "15,908",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "16,080",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "D",
+                "text": "3,480",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "348 * 46 = 16,008."
+          },
+          {
+            "id": "cat-math-1-s2m-q2",
+            "domain": "NF",
+            "domainName": "Fractions Subtraction",
+            "standardCode": "MGSE5.NF.1",
+            "dokLevel": 2,
+            "question": "A chef had \\( 4\\frac{1}{2} \\) cups of olive oil. After preparing dinner, \\( 1\\frac{3}{8} \\) cups remained. How many cups of olive oil were used?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\\( 3\\frac{1}{8} \\) cups",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( 3\\frac{2}{6} \\) cups",
+                "errorType": "denominator_addition_misconception"
+              },
+              {
+                "letter": "C",
+                "text": "\\( 2\\frac{7}{8} \\) cups",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "\\( 3\\frac{1}{4} \\) cups",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "4 4/8 - 1 3/8 = 3 1/8 cups."
+          },
+          {
+            "id": "cat-math-1-s2m-q3",
+            "domain": "MD",
+            "domainName": "Measurement Conversion",
+            "standardCode": "MGSE5.MD.1",
+            "dokLevel": 2,
+            "question": "A student ran a total of 4.25 kilometers during track practice. How many meters did the student run?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "4,250 meters",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "425 meters",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "C",
+                "text": "42,500 meters",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "D",
+                "text": "4.25 meters",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "1 km = 1,000 meters. 4.25 * 1,000 = 4,250 meters."
+          },
+          {
+            "id": "cat-math-1-s2m-q4",
+            "domain": "OA",
+            "domainName": "Numerical Patterns",
+            "standardCode": "MGSE5.OA.3",
+            "dokLevel": 2,
+            "question": "Pattern X starts at 0 and adds 4. Pattern Y starts at 0 and adds 12. If the first ordered pair is (0, 0), what is the 5th ordered pair generated by corresponding terms?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "(16, 48)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "(20, 60)",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "(12, 36)",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "(48, 16)",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Terms: 1st=(0,0), 2nd=(4,12), 3rd=(8,24), 4th=(12,36), 5th=(16,48)."
+          },
+          {
+            "id": "cat-math-1-s2m-q5",
+            "domain": "G",
+            "domainName": "Coordinate Graphing",
+            "standardCode": "MGSE5.G.1",
+            "dokLevel": 2,
+            "question": "Which statement correctly describes how to locate the point \\( (5, 9) \\) on a coordinate plane starting from the origin \\( (0, 0) \\)?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Move 5 units right along the x-axis, then 9 units up along the y-axis",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Move 9 units right along the x-axis, then 5 units up along the y-axis",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "Move 5 units up along the y-axis, then 9 units left along the x-axis",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "Move diagonally 14 units from the origin",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "In (x, y), the first coordinate is horizontal movement (right), and the second coordinate is vertical movement (up)."
+          }
+        ]
+      },
+      "stage2_easy": {
+        "stageName": "Stage 2: Foundational Scaffold Branch",
+        "level": "scaffold",
+        "targetQuantile": "700Q (Foundational Skills)",
+        "scenario": "Foundational arithmetic, common denominator fractions, and basic perimeter and area.",
+        "questions": [
+          {
+            "id": "cat-math-1-s2e-q1",
+            "domain": "NBT",
+            "domainName": "Decimal Addition",
+            "standardCode": "MGSE5.NBT.7",
+            "dokLevel": 1,
+            "question": "What is the sum of \\( 24.6 + 8.75 \\)?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "33.35",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "32.81",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "333.5",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "D",
+                "text": "11.21",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "24.60 + 8.75 = 33.35."
+          },
+          {
+            "id": "cat-math-1-s2e-q2",
+            "domain": "NF",
+            "domainName": "Like Denominators",
+            "standardCode": "MGSE5.NF.1",
+            "dokLevel": 1,
+            "question": "Add the fractions: \\( \\frac{3}{10} + \\frac{4}{10} \\)",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\\( \\frac{7}{10} \\)",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( \\frac{7}{20} \\)",
+                "errorType": "denominator_addition_misconception"
+              },
+              {
+                "letter": "C",
+                "text": "\\( \\frac{12}{10} \\)",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "\\( \\frac{1}{10} \\)",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "When adding fractions with like denominators, keep the denominator: 3/10 + 4/10 = 7/10."
+          },
+          {
+            "id": "cat-math-1-s2e-q3",
+            "domain": "OA",
+            "domainName": "Basic Operations",
+            "standardCode": "MGSE5.OA.1",
+            "dokLevel": 1,
+            "question": "Evaluate: \\( (12 - 4) \\times 5 \\)",
+            "options": [
+              {
+                "letter": "A",
+                "text": "40",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "32",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "20",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "60",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "(12 - 4) = 8; 8 * 5 = 40."
+          },
+          {
+            "id": "cat-math-1-s2e-q4",
+            "domain": "MD",
+            "domainName": "Area of Rectangle",
+            "standardCode": "MGSE5.MD.5",
+            "dokLevel": 1,
+            "question": "A rectangular rug has a length of 9 feet and a width of 6 feet. What is the area of the rug?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "54 square feet",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "30 feet",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "45 square feet",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "15 square feet",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Area = length * width = 9 * 6 = 54 sq ft."
+          },
+          {
+            "id": "cat-math-1-s2e-q5",
+            "domain": "NBT",
+            "domainName": "Powers of 10",
+            "standardCode": "MGSE5.NBT.2",
+            "dokLevel": 1,
+            "question": "What happens to the decimal point when you multiply \\( 6.84 \\times 10^2 \\)?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "It moves 2 places to the right, resulting in 684",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "It moves 2 places to the left, resulting in 0.0684",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "It remains in the same position, resulting in 6.8400",
+                "errorType": "unsupported_inference"
+              },
+              {
+                "letter": "D",
+                "text": "It moves 1 place to the right, resulting in 68.4",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Multiplying by 10^2 (100) shifts the decimal 2 places to the right: 684."
+          }
+        ]
+      },
+      "stage3_elite": {
+        "stageName": "Stage 3: Distinguished 6th/7th Grade Math Tier",
+        "level": "elite",
+        "targetQuantile": "1100Q+ (Distinguished Ceiling)",
+        "scenario": "Multi-variable algebraic rate equations, three-dimensional geometry, and advanced proportional reasoning.",
+        "questions": [
+          {
+            "id": "cat-math-1-s3e-q1",
+            "domain": "OA",
+            "domainName": "Order of Operations with Exponents",
+            "standardCode": "MGSE5.OA.1",
+            "dokLevel": 3,
+            "question": "Calculate the exact value of the expression:\n\n\\[ 3 \\times [ 2^3 + (15 - 3) \\div 4 ] - (6.5 \\times 2) \\]",
+            "options": [
+              {
+                "letter": "A",
+                "text": "20",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "26",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "17",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "33",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Step 1: 2^3 = 8; (15-3)/4 = 3; 8 + 3 = 11. Step 2: 3 * 11 = 33. Step 3: (6.5 * 2) = 13. Step 4: 33 - 13 = 20."
+          },
+          {
+            "id": "cat-math-1-s3e-q2",
+            "domain": "NF",
+            "domainName": "Fraction Operations in Context",
+            "standardCode": "MGSE5.NF.4",
+            "dokLevel": 3,
+            "question": "A solar power inverter operates at \\( \\frac{4}{5} \\) of maximum efficiency. If the incoming solar radiation generates \\( 6\\frac{2}{3} \\) kilowatts, how many kilowatts of electrical power are delivered to the grid?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "\\( 5\\frac{1}{3} \\) kW",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( 6\\frac{8}{15} \\) kW",
+                "errorType": "denominator_addition_misconception"
+              },
+              {
+                "letter": "C",
+                "text": "\\( 4\\frac{4}{5} \\) kW",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "\\( 8\\frac{1}{3} \\) kW",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "4/5 * 20/3 = 80/15 = 16/3 = 5 1/3 kilowatts."
+          },
+          {
+            "id": "cat-math-1-s3e-q3",
+            "domain": "NBT",
+            "domainName": "Multi-digit Decimal Division",
+            "standardCode": "MGSE5.NBT.7",
+            "dokLevel": 3,
+            "question": "An ultra-precision CNC laser cuts sheets of titanium at a rate of 0.36 meters per minute. How many minutes will it take to complete a cut measuring 19.44 meters?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "54 minutes",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "5.4 minutes",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "C",
+                "text": "62 minutes",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "540 minutes",
+                "errorType": "place_value_shift"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "19.44 / 0.36 = 1944 / 36 = 54 minutes."
+          },
+          {
+            "id": "cat-math-1-s3e-q4",
+            "domain": "MD",
+            "domainName": "Volume with Fractional Edge Lengths",
+            "standardCode": "MGSE5.MD.5",
+            "dokLevel": 3,
+            "question": "A prism has a base area of \\( 18\\frac{3}{4} \\) square inches and a height of \\( 4\\frac{2}{5} \\) inches. What is the total volume of the prism in cubic inches?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "82.5 cubic inches",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "72.6 cubic inches",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "C",
+                "text": "75.2 cubic inches",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "85 cubic inches",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "(75/4) * (22/5) = (15 * 11) / 2 = 165 / 2 = 82.5 cubic inches."
+          },
+          {
+            "id": "cat-math-1-s3e-q5",
+            "domain": "G",
+            "domainName": "Coordinate Geometry & Area",
+            "standardCode": "MGSE5.G.2",
+            "dokLevel": 3,
+            "question": "A polygon has vertices at \\( (3, 2) \\), \\( (9, 2) \\), \\( (9, 7) \\), and \\( (3, 7) \\). What is the area of this figure in square units?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "30 square units",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "22 square units",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "63 square units",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "35 square units",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Length = 9 - 3 = 6 units. Width = 7 - 2 = 5 units. Area = 6 * 5 = 30 sq units."
+          }
+        ]
+      },
+      "stage3_adv": {
+        "stageName": "Stage 3: Strong Math 6/7A Placement Tier",
+        "level": "adv",
+        "targetQuantile": "960Q (Dickerson Math 6/7A Qualifier)",
+        "scenario": "Rigorous grade 5 word problems and multi-step fraction operations.",
+        "questions": [
+          {
+            "id": "cat-math-1-s3a-q1",
+            "domain": "NF",
+            "domainName": "Fractions Division",
+            "standardCode": "MGSE5.NF.7",
+            "dokLevel": 3,
+            "question": "A 5-pound bag of garden seeds is divided into portions of \\( \\frac{1}{3} \\) pound each. How many portions can be created?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "15 portions",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "\\( 1\\frac{2}{3} \\) portions",
+                "errorType": "misreading_operation"
+              },
+              {
+                "letter": "C",
+                "text": "8 portions",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "12 portions",
+                "errorType": "partial_step_completion"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "5 / (1/3) = 5 * 3 = 15 portions."
+          },
+          {
+            "id": "cat-math-1-s3a-q2",
+            "domain": "NBT",
+            "domainName": "Decimals Division",
+            "standardCode": "MGSE5.NBT.7",
+            "dokLevel": 2,
+            "question": "Divide \\( 45.6 \\div 1.2 \\):",
+            "options": [
+              {
+                "letter": "A",
+                "text": "38",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "3.8",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "C",
+                "text": "380",
+                "errorType": "place_value_shift"
+              },
+              {
+                "letter": "D",
+                "text": "42",
+                "errorType": "computational_error"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "45.6 / 1.2 = 456 / 12 = 38."
+          },
+          {
+            "id": "cat-math-1-s3a-q3",
+            "domain": "OA",
+            "domainName": "Order of Operations",
+            "standardCode": "MGSE5.OA.1",
+            "dokLevel": 2,
+            "question": "Evaluate: \\( [ (20 - 8) \\times 2 ] - (3^2 + 1) \\)",
+            "options": [
+              {
+                "letter": "A",
+                "text": "14",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "24",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "10",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "16",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "[(12) * 2] - (9 + 1) = 24 - 10 = 14."
+          },
+          {
+            "id": "cat-math-1-s3a-q4",
+            "domain": "MD",
+            "domainName": "Volume of Rectangular Prism",
+            "standardCode": "MGSE5.MD.5",
+            "dokLevel": 2,
+            "question": "What is the volume of a rectangular prism with length 15 cm, width 6 cm, and height 8 cm?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "720 cubic cm",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "90 cubic cm",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "780 cubic cm",
+                "errorType": "computational_error"
+              },
+              {
+                "letter": "D",
+                "text": "640 cubic cm",
+                "errorType": "unsupported_inference"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "Volume = 15 * 6 * 8 = 90 * 8 = 720 cc."
+          },
+          {
+            "id": "cat-math-1-s3a-q5",
+            "domain": "G",
+            "domainName": "Hierarchy of 2D Figures",
+            "standardCode": "MGSE5.G.4",
+            "dokLevel": 2,
+            "question": "Which polygon must have 4 congruent sides and 4 right angles?",
+            "options": [
+              {
+                "letter": "A",
+                "text": "Square",
+                "errorType": "correct"
+              },
+              {
+                "letter": "B",
+                "text": "Rhombus",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "C",
+                "text": "Rectangle",
+                "errorType": "partial_step_completion"
+              },
+              {
+                "letter": "D",
+                "text": "Parallelogram",
+                "errorType": "misreading_operation"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": "A square is the only quadrilateral with both 4 congruent sides (rhombus) and 4 right angles (rectangle)."
+          }
+        ]
+      }
+    }
+  }
 ];
 
     /* =========================================================================
@@ -18597,11 +20692,52 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       }
     }
 
+    function startAdaptiveCATAssessment(testId) {
+      const isMath = STATE.activeSubject === "math";
+      const catData = isMath ? ADAPTIVE_CAT_MATH_ASSESSMENTS : ADAPTIVE_CAT_ELA_ASSESSMENTS;
+      const test = catData.find(t => t.id === testId);
+      if (!test) return;
+
+      const stage1 = test.stages.stage1;
+
+      STATE.currentMission = {
+        ...test,
+        isFullLength: true,
+        isAdaptiveCAT: true,
+        currentStageKey: "stage1",
+        stageHistory: ["stage1"],
+        stageScores: {},
+        questions: stage1.questions,
+        passage: stage1.passage ? stage1.passage.text : (stage1.scenario || test.description),
+        lexile: stage1.targetLexile || stage1.targetQuantile || "Adaptive Router",
+        genre: isMath ? "DRC BEACON CAT Math (Multi-Stage Tree)" : "DRC BEACON CAT ELA (Multi-Stage Tree)"
+      };
+
+      STATE.currentQuestionIdx = 0;
+      STATE.selectedOption = null;
+      STATE.moduleAnswers = [];
+      STATE.startTime = Date.now();
+
+      document.getElementById("welcome-banner").classList.add("hidden");
+      document.getElementById("mission-selection-section").classList.add("hidden");
+      document.getElementById("module-complete-modal").classList.add("hidden");
+      document.getElementById("quiz-interface-section").classList.remove("hidden");
+
+      // Set Header info
+      document.getElementById("quiz-mission-title").innerText = test.title;
+      document.getElementById("quiz-lexile-badge").innerText = stage1.targetLexile || stage1.targetQuantile || "Stage 1 Router";
+      document.getElementById("quiz-module-num").innerText = "CAT 1";
+      document.getElementById("passage-genre-tag").innerText = stage1.stageName || "Adaptive Router (5 Items)";
+
+      loadCurrentQuestion();
+    }
+
     function renderFullLengthGrid() {
       const grid = document.getElementById("full-length-grid");
       if (!grid) return;
 
       const isMath = STATE.activeSubject === "math";
+      const catDataSet = isMath ? ADAPTIVE_CAT_MATH_ASSESSMENTS : ADAPTIVE_CAT_ELA_ASSESSMENTS;
       const dataSet = isMath ? FULL_LENGTH_MATH_ASSESSMENTS : FULL_LENGTH_ELA_ASSESSMENTS;
       const completedList = isMath ? (STATE.completedFullLengthMath || []) : (STATE.completedFullLengthELA || []);
       const subs = STATE.fullLengthSubmissions || {};
@@ -18615,6 +20751,48 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       if (targetBadge) targetBadge.innerText = isMath ? "Quantile Band: 750Q – 1000Q+" : "Lexile Band: 830L – 1010L+";
 
       let html = "";
+
+      // Render Flagship Computer-Adaptive Testing (CAT) Card First
+      catDataSet.forEach((catTest) => {
+        const isDone = completedList.includes(catTest.id);
+        const sub = subs[catTest.id];
+        const statusBadge = isDone 
+          ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">✓ Done (${sub ? sub.score + '/15' : 'Passed'})</span>`
+          : `<span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-purple-500/20 text-purple-300 border border-purple-500/40 animate-pulse">🧬 Computer-Adaptive</span>`;
+
+        let scoreDetails = "";
+        if (isDone && sub) {
+          const metricLabel = isMath ? `Quantile: ${sub.psychometric?.metricValue || '950Q'}` : `Lexile: ${sub.psychometric?.metricValue || '1080L'}`;
+          scoreDetails = `
+            <div class="mt-2 pt-2 border-t border-purple-500/30 text-[11px] flex items-center justify-between">
+              <span class="text-emerald-400 font-bold">${sub.score}/15 (${Math.round((sub.score/15)*100)}%)</span>
+              <span class="text-amber-300 font-mono font-bold">${metricLabel}</span>
+            </div>
+          `;
+        }
+
+        html += `
+          <div class="col-span-1 md:col-span-2 lg:col-span-5 bg-gradient-to-r from-purple-950/40 via-indigo-950/40 to-slate-900 p-5 rounded-2xl border-2 border-purple-500/50 shadow-xl mb-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="space-y-1.5 max-w-3xl">
+              <div class="flex items-center gap-2 flex-wrap">
+                ${statusBadge}
+                <span class="text-xs font-bold text-amber-300">Multi-Stage Adaptive Decision Tree (15 Items)</span>
+                <span class="text-[10px] text-slate-400">• Real-Time Lexile/Quantile Branching</span>
+              </div>
+              <h4 class="text-base font-extrabold text-white">${catTest.title}</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">${catTest.description}</p>
+              ${scoreDetails}
+            </div>
+
+            <div class="flex-shrink-0 w-full md:w-auto">
+              <button onclick="startAdaptiveCATAssessment('${catTest.id}')" class="w-full md:w-auto px-6 py-3 rounded-xl text-xs font-black transition flex items-center justify-center gap-2 ${isDone ? 'bg-indigo-900 hover:bg-indigo-800 text-indigo-200 border border-indigo-600' : 'bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white shadow-lg shadow-purple-600/30 glow-active'}">
+                <span>${isDone ? '🔄 Retake Adaptive Simulation' : '🧬 Start Adaptive CAT Simulation →'}</span>
+              </button>
+            </div>
+          </div>
+        `;
+      });
+
       dataSet.forEach((test, idx) => {
         const isDone = completedList.includes(test.id);
         const sub = subs[test.id];
@@ -19055,14 +21233,121 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       saveServerProgress();
     }
 
-    function nextQuestion() {
-      document.getElementById("btn-submit-answer").classList.remove("hidden");
+    function handleAdaptiveStageTransition() {
+      const m = STATE.currentMission;
+      const isMath = STATE.activeSubject === "math";
+      const catData = isMath ? ADAPTIVE_CAT_MATH_ASSESSMENTS : ADAPTIVE_CAT_ELA_ASSESSMENTS;
+      const rootTest = catData.find(t => t.id === m.id);
+      if (!rootTest) {
+        finishModule();
+        return;
+      }
 
-      if (STATE.currentQuestionIdx < 4) {
-        STATE.currentQuestionIdx++;
-        loadCurrentQuestion();
+      const stageAnswers = STATE.moduleAnswers.slice(-5);
+      const stageScore = stageAnswers.filter(a => a.isCorrect).length;
+      m.stageScores[m.currentStageKey] = stageScore;
+
+      let nextStageKey = null;
+      let modalTitle = "";
+      let modalBranch = "";
+      let modalSem = "";
+
+      if (m.currentStageKey === "stage1") {
+        // Stage 1 Router -> Stage 2 Branch
+        if (stageScore >= 4) {
+          nextStageKey = "stage2_hard";
+          modalTitle = "🚀 High Performance: Advanced AC Pathway Unlocked!";
+          modalBranch = isMath ? "Hyper-Accelerated Math 6/7A (950Q - 1100Q+)" : "Advanced AC Placement (1075L - 1180L+)";
+          modalSem = "Narrowing SEM to ±20L";
+        } else if (stageScore === 3) {
+          nextStageKey = "stage2_medium";
+          modalTitle = "🎯 Solid Mastery: On-Grade Standard Pathway";
+          modalBranch = isMath ? "On-Grade Math Standard (820Q - 900Q)" : "On-Grade Standard Mastery (920L)";
+          modalSem = "Narrowing SEM to ±25L";
+        } else {
+          nextStageKey = "stage2_easy";
+          modalTitle = "🌱 Foundational Scaffold Pathway";
+          modalBranch = isMath ? "Foundational Reinforcement (650Q - 750Q)" : "Foundational Scaffold (760L)";
+          modalSem = "Analyzing Prerequisite Gaps";
+        }
+      } else if (m.currentStageKey.startsWith("stage2")) {
+        // Stage 2 -> Stage 3 Final Calibration
+        if (m.currentStageKey === "stage2_hard") {
+          nextStageKey = stageScore >= 4 ? "stage3_elite" : "stage3_adv";
+        } else if (m.currentStageKey === "stage2_medium") {
+          nextStageKey = stageScore >= 4 ? "stage3_adv" : "stage3_solid";
+        } else {
+          nextStageKey = stageScore >= 4 ? "stage3_solid" : "stage3_remediation";
+        }
+
+        modalTitle = "🏆 Final Stage: Precision Ability Calibration";
+        modalBranch = nextStageKey.includes("elite") ? "Distinguished 6th/7th Grade Ceiling" : "Standardized Ability Pinpoint";
+        modalSem = "Finalizing Standard Error to ±15L";
+      }
+
+      if (nextStageKey && rootTest.stages[nextStageKey]) {
+        const nextStageObj = rootTest.stages[nextStageKey];
+        m.currentStageKey = nextStageKey;
+        m.stageHistory.push(nextStageKey);
+
+        // Show Adaptive Routing Modal
+        const modal = document.getElementById("cat-routing-modal");
+        const titleEl = document.getElementById("cat-routing-title");
+        const scoreEl = document.getElementById("cat-routing-score");
+        const branchEl = document.getElementById("cat-routing-branch");
+        const semEl = document.getElementById("cat-routing-sem");
+
+        if (titleEl) titleEl.innerText = modalTitle;
+        if (scoreEl) scoreEl.innerText = `${stageScore}/5 (${stageScore * 20}%)`;
+        if (branchEl) branchEl.innerText = modalBranch;
+        if (semEl) semEl.innerText = modalSem;
+
+        if (modal) modal.classList.remove("hidden");
+
+        setTimeout(() => {
+          if (modal) modal.classList.add("hidden");
+
+          // Load next stage questions and passage
+          m.questions = nextStageObj.questions;
+          m.passage = nextStageObj.passage ? nextStageObj.passage.text : (nextStageObj.scenario || m.passage);
+          m.lexile = nextStageObj.targetLexile || nextStageObj.targetQuantile || m.lexile;
+          STATE.currentQuestionIdx = 0;
+
+          // Update header
+          document.getElementById("quiz-lexile-badge").innerText = m.lexile;
+          document.getElementById("passage-genre-tag").innerText = nextStageObj.stageName;
+
+          loadCurrentQuestion();
+        }, 1600);
       } else {
         finishModule();
+      }
+    }
+
+    function nextQuestion() {
+      document.getElementById("btn-submit-answer").classList.remove("hidden");
+      const m = STATE.currentMission;
+
+      if (m && m.isAdaptiveCAT) {
+        if (STATE.currentQuestionIdx < 4) {
+          STATE.currentQuestionIdx++;
+          loadCurrentQuestion();
+        } else {
+          // Check if we need to branch to next stage (Stage 1 -> Stage 2, or Stage 2 -> Stage 3)
+          if (m.stageHistory.length < 3) {
+            handleAdaptiveStageTransition();
+          } else {
+            finishModule();
+          }
+        }
+      } else {
+        const totalQ = (m && m.questions) ? m.questions.length : 5;
+        if (STATE.currentQuestionIdx < (totalQ - 1)) {
+          STATE.currentQuestionIdx++;
+          loadCurrentQuestion();
+        } else {
+          finishModule();
+        }
       }
     }
 
@@ -19094,14 +21379,23 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
 
-      const totalQ = m.questions ? m.questions.length : 5;
+      const totalQ = (m.isAdaptiveCAT || (m.isFullLength && (!m.questions || m.questions.length === 5))) ? (STATE.moduleAnswers.length || 15) : (m.questions ? m.questions.length : 5);
       const pctScore = Math.round((scoreCount / totalQ) * 100);
 
-      if (m.isFullLength) {
+      if (m.isFullLength || m.isAdaptiveCAT) {
         const fullLengthList = isMath ? (STATE.completedFullLengthMath || (STATE.completedFullLengthMath = [])) : (STATE.completedFullLengthELA || (STATE.completedFullLengthELA = []));
         const fullLengthSubs = STATE.fullLengthSubmissions || (STATE.fullLengthSubmissions = {});
         const dok3Correct = STATE.moduleAnswers.filter(a => a.isCorrect && a.dokLevel >= 3).length;
-        const psych = calculatePsychometricScore(m, scoreCount, dok3Correct, STATE.moduleAnswers);
+        let psych = calculatePsychometricScore(m, scoreCount, dok3Correct, STATE.moduleAnswers);
+
+        // Enhance with Adaptive CAT Pathway calibration if adaptive test
+        if (m.isAdaptiveCAT && m.stageHistory) {
+          const reachedElite = m.stageHistory.includes("stage3_elite") || m.stageHistory.includes("stage2_hard");
+          if (reachedElite && scoreCount >= 13) {
+            psych.metricValue = isMath ? `${Math.min(1150, 960 + (scoreCount * 12))}Q` : `${Math.min(1250, 1085 + (scoreCount * 8))}L`;
+            psych.performanceLevel = isMath ? "Distinguished (Math 6/7A Qualified • SEM: ±15Q)" : "Distinguished (Dickerson AC Qualified • SEM: ±15L)";
+          }
+        }
 
         fullLengthSubs[m.id] = {
           missionId: m.id,
