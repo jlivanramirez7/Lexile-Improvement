@@ -19596,8 +19596,15 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       const accuracyPct = a.totalAttempted > 0 ? Math.round((a.totalCorrect / a.totalAttempted) * 100) : 0;
       document.getElementById("metric-accuracy-pct").innerText = `${accuracyPct}%`;
 
+      // Check if full length ELA simulations exist for higher psychometric precision
+      const elaMetrics = getSubjectFullLengthMetrics(false);
       let estLexile = "835L – 880L";
-      if (a.totalAttempted >= 5) {
+
+      if (elaMetrics && elaMetrics.hasData && elaMetrics.count >= 1) {
+        // High-precision composite estimate from 15-item multi-passage simulation tests
+        const num = elaMetrics.avgMetricNum || elaMetrics.latestMetricNum;
+        estLexile = `${num - 25}L – ${num + 25}L`;
+      } else if (a.totalAttempted >= 5) {
         if (accuracyPct >= 80) estLexile = "1025L – 1150L";
         else if (accuracyPct >= 60) estLexile = "950L – 1020L";
         else estLexile = "880L – 940L";
