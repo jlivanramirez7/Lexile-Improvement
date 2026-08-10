@@ -408,8 +408,8 @@
           </div>
         </div>
 
-        <!-- 5 ADVANCED CLASS CARDS GRID -->
-        <div id="dickerson-courses-grid" class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+        <!-- 6 ADVANCED CLASS CARDS GRID (AC ELA, AC Reading, AC SS, AC Science, Math 6/7A, Adv Math 6) -->
+        <div id="dickerson-courses-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- Dynamically populated via renderDickersonPlacementTracker() -->
         </div>
 
@@ -18557,34 +18557,42 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       const pct = Math.round((scoreCount / totalItems) * 100);
 
       if (isMath) {
-        // Grade 5 Quantile Mapping (750Q - 1000Q+)
-        const baseQuantile = 620 + (scoreCount * 22) + (correctDOK3Count * 5);
-        let status = "Approaching Target";
-        if (pct >= 90) status = "Exceeds Target (Advanced 5th)";
-        else if (pct >= 70) status = "Proficient Learner (On Grade 5)";
-        else if (pct >= 50) status = "Approaching Target (Focus Recommended)";
-        else status = "Needs Intensive Remediation";
+        // Calibrated DRC BEACON Grade 5 Quantile Range: 620Q - 1115Q
+        // Math 6/7A Hyper-Accelerated Cutoff: >= 950Q | Advanced Math 6: >= 850Q
+        const calculatedQuantile = Math.min(1150, Math.round(620 + (scoreCount * 30) + (correctDOK3Count * 9)));
+        const beaconScaleScore = Math.round(930 + (scoreCount * 23)); // Authentic DRC BEACON Scale (930 - 1275)
+
+        let status = "Developing Learner (Level 2)";
+        if (calculatedQuantile >= 950) status = "Distinguished / Math 6/7A Qualifier (Level 4)";
+        else if (calculatedQuantile >= 850) status = "Proficient / Advanced Math 6 Qualifier (Level 3)";
+        else if (calculatedQuantile >= 750) status = "On-Track Grade 5 (Proficient)";
+        else status = "Needs Focused Remediation";
 
         return {
           metricName: "Quantile",
-          metricValue: `${baseQuantile}Q`,
+          metricValue: `${calculatedQuantile}Q`,
           performanceLevel: status,
-          scaleScoreEst: Math.round(390 + (scoreCount * 12))
+          scaleScoreEst: beaconScaleScore,
+          milestonesScaleEst: Math.round(475 + (scoreCount * 9))
         };
       } else {
-        // Grade 5 Lexile Mapping (830L - 1020L+)
-        const baseLexile = 700 + (scoreCount * 20) + (correctDOK3Count * 6);
-        let status = "Approaching Target";
-        if (pct >= 90) status = "Exceeds Target (Advanced 5th)";
-        else if (pct >= 70) status = "Proficient Learner (On Grade 5)";
-        else if (pct >= 50) status = "Approaching Target (Focus Recommended)";
-        else status = "Needs Remediation";
+        // Calibrated DRC BEACON Grade 5 Lexile Range: 650L - 1186L
+        // Dickerson AC ELA / Science / Social Studies Cutoff: >= 1075L
+        const calculatedLexile = Math.min(1250, Math.round(650 + (scoreCount * 32) + (correctDOK3Count * 8)));
+        const beaconScaleScore = Math.round(950 + (scoreCount * 22)); // Authentic DRC BEACON Scale (950 - 1280)
+
+        let status = "Developing Learner (Level 2)";
+        if (calculatedLexile >= 1075) status = "Distinguished / Dickerson AC Qualifier (Level 4)";
+        else if (calculatedLexile >= 925) status = "Proficient Learner (Level 3 On-Track)";
+        else if (calculatedLexile >= 830) status = "Approaching Target (Developing)";
+        else status = "Needs Targeted Remediation";
 
         return {
           metricName: "Lexile",
-          metricValue: `${baseLexile}L`,
+          metricValue: `${calculatedLexile}L`,
           performanceLevel: status,
-          scaleScoreEst: Math.round(410 + (scoreCount * 11))
+          scaleScoreEst: beaconScaleScore,
+          milestonesScaleEst: Math.round(475 + (scoreCount * 9))
         };
       }
     }
@@ -19369,90 +19377,154 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       const elaMetrics = getSubjectFullLengthMetrics(false);
       const mathMetrics = getSubjectFullLengthMetrics(true);
 
+      // Official 2025-2026 Dickerson Middle School Placement Criteria Matrix
       const courses = [
         {
           id: "ac-ela",
-          name: "AC ELA 6",
-          badge: "Advanced Content",
+          name: "AC English Language Arts",
+          grade: "6th Grade",
           icon: "📖",
+          badge: "AC ELA 6",
           type: "ela",
-          targetCutoff: "Lexile ≥ 925L",
-          targetScorePct: "80%+",
-          criteria: "Reading Inventory ≥ 925L, Milestones Level 3/4 (Proficient+), 5th Grade ELA Avg ≥ 85%",
+          beaconRequirement: "Beacon Lexile ≥ 1075",
+          fullCriteria: [
+            "5th Grade IOWA ELA ≥ 85%",
+            "5th Grade IOWA Read ≥ 85%",
+            "Beacon Lexile ≥ 1075",
+            "Gifted Identified"
+          ],
+          twoOfRule: "TWO OF THE FOLLOWING",
+          targetScorePct: "87%+ (13/15)",
           metrics: elaMetrics,
           evaluateStatus: (m) => {
-            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
-            if (m.latestMetricNum >= 925 || m.avgMetricNum >= 910) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
-            if (m.latestMetricNum >= 860 || m.avgMetricNum >= 850) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
-            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+            if (!m.hasData) return { label: "Needs Test Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪", passBeacon: false };
+            const pass = m.latestMetricNum >= 1075 || m.avgMetricNum >= 1075;
+            if (pass) return { label: "QUALIFIED (Beacon ≥ 1075L)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢", passBeacon: true };
+            if (m.latestMetricNum >= 980 || m.avgMetricNum >= 960) return { label: "Approaching (Near 1075L)", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡", passBeacon: false };
+            return { label: "Focus Needed (< 1075L)", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴", passBeacon: false };
+          }
+        },
+        {
+          id: "ac-reading",
+          name: "AC Reading",
+          grade: "6th Grade",
+          icon: "📚",
+          badge: "AC Reading 6",
+          type: "ela",
+          beaconRequirement: "Must Qualify for AC ELA",
+          fullCriteria: [
+            "Must Qualify for AC ELA (Beacon Lexile ≥ 1075 + 1 other qualifier)",
+            "Automatic placement alongside AC ELA"
+          ],
+          twoOfRule: "QUALIFIES VIA AC ELA",
+          targetScorePct: "87%+ (13/15)",
+          metrics: elaMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Test Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪", passBeacon: false };
+            const pass = m.latestMetricNum >= 1075 || m.avgMetricNum >= 1075;
+            if (pass) return { label: "QUALIFIED (Via AC ELA)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢", passBeacon: true };
+            if (m.latestMetricNum >= 980 || m.avgMetricNum >= 960) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡", passBeacon: false };
+            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴", passBeacon: false };
+          }
+        },
+        {
+          id: "ac-social-studies",
+          name: "AC Social Studies",
+          grade: "6th Grade",
+          icon: "🗺️",
+          badge: "AC SS 6",
+          type: "ela",
+          beaconRequirement: "Beacon Lexile ≥ 1075",
+          fullCriteria: [
+            "5th Grade IOWA SS ≥ 85%",
+            "5th Grade IOWA Read ≥ 80%",
+            "Beacon Lexile ≥ 1075",
+            "Gifted Identified"
+          ],
+          twoOfRule: "TWO OF THE FOLLOWING",
+          targetScorePct: "87%+ (13/15)",
+          metrics: elaMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Test Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪", passBeacon: false };
+            const pass = m.latestMetricNum >= 1075 || m.avgMetricNum >= 1075;
+            if (pass) return { label: "QUALIFIED (Beacon ≥ 1075L)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢", passBeacon: true };
+            if (m.latestMetricNum >= 980 || m.avgMetricNum >= 960) return { label: "Approaching (Near 1075L)", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡", passBeacon: false };
+            return { label: "Focus Needed (< 1075L)", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴", passBeacon: false };
+          }
+        },
+        {
+          id: "ac-science",
+          name: "AC Science & HS Physical Science",
+          grade: "6th Grade",
+          icon: "🔬",
+          badge: "AC Science 6",
+          type: "ela",
+          beaconRequirement: "Beacon Lexile ≥ 1075",
+          fullCriteria: [
+            "5th Grade IOWA Science ≥ 85%",
+            "5th Grade IOWA Read ≥ 80%",
+            "Beacon Lexile ≥ 1075",
+            "Gifted Identified"
+          ],
+          twoOfRule: "TWO OF THE FOLLOWING",
+          targetScorePct: "87%+ (13/15)",
+          metrics: elaMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Test Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪", passBeacon: false };
+            const pass = m.latestMetricNum >= 1075 || m.avgMetricNum >= 1075;
+            if (pass) return { label: "QUALIFIED (Beacon ≥ 1075L)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢", passBeacon: true };
+            if (m.latestMetricNum >= 980 || m.avgMetricNum >= 960) return { label: "Approaching (Near 1075L)", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡", passBeacon: false };
+            return { label: "Focus Needed (< 1075L)", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴", passBeacon: false };
+          }
+        },
+        {
+          id: "hyper-math",
+          name: "Math 6/7A (Hyper-Accelerated)",
+          grade: "6th Grade",
+          icon: "🚀",
+          badge: "Math 6/7A",
+          type: "math",
+          beaconRequirement: "Beacon Quantile ≥ 950Q",
+          fullCriteria: [
+            "Compacts Grade 6 & 7 Math Standards",
+            "5th Grade IOWA Math ≥ 85% - 90%",
+            "Beacon Quantile ≥ 950Q",
+            "5th Grade Math Average ≥ 90%"
+          ],
+          twoOfRule: "TWO OF THE FOLLOWING",
+          targetScorePct: "87%+ (13/15)",
+          metrics: mathMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Test Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪", passBeacon: false };
+            const pass = m.latestMetricNum >= 950 || m.avgMetricNum >= 950;
+            if (pass) return { label: "QUALIFIED (Beacon ≥ 950Q)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢", passBeacon: true };
+            if (m.latestMetricNum >= 860 || m.avgMetricNum >= 850) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡", passBeacon: false };
+            return { label: "Focus Needed (< 950Q)", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴", passBeacon: false };
           }
         },
         {
           id: "adv-math",
           name: "Advanced Math 6",
-          badge: "Single-Accelerated",
+          grade: "6th Grade",
           icon: "📐",
+          badge: "Adv Math 6",
           type: "math",
-          targetCutoff: "Quantile ≥ 820Q",
-          targetScorePct: "75%+",
-          criteria: "Math Inventory ≥ 820Q, Milestones Level 3/4, IOWA Math Total ≥ 75th percentile, 5th Math Avg ≥ 85%",
+          beaconRequirement: "Beacon Quantile ≥ 850Q",
+          fullCriteria: [
+            "5th Grade IOWA Math ≥ 75% - 80%",
+            "Beacon Quantile ≥ 850Q",
+            "5th Grade Math Average ≥ 85%",
+            "Milestones Math Level 3+ Proficient"
+          ],
+          twoOfRule: "TWO OF THE FOLLOWING",
+          targetScorePct: "75%+ (11/15)",
           metrics: mathMetrics,
           evaluateStatus: (m) => {
-            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
-            if (m.latestMetricNum >= 820 || m.avgMetricNum >= 810) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
-            if (m.latestMetricNum >= 750 || m.avgMetricNum >= 740) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
-            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
-          }
-        },
-        {
-          id: "hyper-math",
-          name: "Math 6/7A",
-          badge: "Hyper-Accelerated",
-          icon: "🚀",
-          type: "math",
-          targetCutoff: "Quantile ≥ 890Q – 950Q",
-          targetScorePct: "90%+",
-          criteria: "Compacts 6th & 7th grade math. Milestones Level 4 (Distinguished), IOWA Math ≥ 85th%, Math Avg ≥ 90%",
-          metrics: mathMetrics,
-          evaluateStatus: (m) => {
-            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
-            if (m.latestMetricNum >= 890 || m.avgMetricNum >= 880) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
-            if (m.latestMetricNum >= 820 || m.avgMetricNum >= 810) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
-            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
-          }
-        },
-        {
-          id: "ac-science",
-          name: "AC Science 6",
-          badge: "Earth Science AC",
-          icon: "🌍",
-          type: "ela",
-          targetCutoff: "Lexile ≥ 900L",
-          targetScorePct: "80%+",
-          criteria: "High technical reading demand. Reading Lexile ≥ 900L, Milestones Proficient+, 5th Science Avg ≥ 85%",
-          metrics: elaMetrics,
-          evaluateStatus: (m) => {
-            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
-            if (m.latestMetricNum >= 900 || m.avgMetricNum >= 880) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
-            if (m.latestMetricNum >= 840 || m.avgMetricNum >= 830) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
-            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
-          }
-        },
-        {
-          id: "ac-ss",
-          name: "AC Social Studies 6",
-          badge: "World Studies AC",
-          icon: "🗺️",
-          type: "ela",
-          targetCutoff: "Lexile ≥ 925L",
-          targetScorePct: "80%+",
-          criteria: "Intense primary document analysis. Reading Lexile ≥ 925L, Milestones ELA Proficient+, 5th SS Avg ≥ 85%",
-          metrics: elaMetrics,
-          evaluateStatus: (m) => {
-            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
-            if (m.latestMetricNum >= 925 || m.avgMetricNum >= 910) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
-            if (m.latestMetricNum >= 860 || m.avgMetricNum >= 850) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
-            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+            if (!m.hasData) return { label: "Needs Test Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪", passBeacon: false };
+            const pass = m.latestMetricNum >= 850 || m.avgMetricNum >= 850;
+            if (pass) return { label: "QUALIFIED (Beacon ≥ 850Q)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢", passBeacon: true };
+            if (m.latestMetricNum >= 780 || m.avgMetricNum >= 770) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡", passBeacon: false };
+            return { label: "Focus Needed (< 850Q)", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴", passBeacon: false };
           }
         }
       ];
@@ -19461,35 +19533,40 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       courses.forEach(c => {
         const m = c.metrics;
         const status = c.evaluateStatus(m);
-        const subLabel = c.type === "math" ? "Math Simulation" : "Reading Simulation";
+
+        let criteriaListHtml = c.fullCriteria.map(cr => `
+          <li class="flex items-start gap-1.5 ${cr.includes('Beacon') ? 'text-amber-300 font-bold' : 'text-slate-300'}">
+            <span class="text-slate-500 text-[10px]">•</span>
+            <span>${cr}</span>
+          </li>
+        `).join("");
 
         cardsHtml += `
-          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition flex flex-col justify-between space-y-3 shadow-lg">
+          <div class="bg-slate-900/90 p-4 rounded-xl border ${status.passBeacon ? 'border-emerald-500/50 shadow-emerald-950/20' : 'border-slate-800 hover:border-indigo-500/50'} transition flex flex-col justify-between space-y-3 shadow-lg">
             <div>
               <div class="flex items-center justify-between gap-1 mb-1.5">
-                <span class="text-xs font-bold text-amber-400 flex items-center gap-1">${c.icon} ${c.name}</span>
-                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">${c.badge}</span>
+                <span class="text-xs font-bold text-amber-300 flex items-center gap-1">${c.icon} ${c.name}</span>
+                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">${c.badge}</span>
               </div>
 
-              <!-- QUALIFYING CRITERIA BOX -->
-              <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 space-y-1 text-[11px]">
-                <div class="flex justify-between items-center">
-                  <span class="text-slate-400">Dickerson Cutoff:</span>
-                  <span class="font-mono font-bold text-white">${c.targetCutoff}</span>
+              <!-- QUALIFYING CRITERIA BOX (FROM OFFICIAL 2025-2026 DOC) -->
+              <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 space-y-1.5 text-[11px]">
+                <div class="flex justify-between items-center pb-1 border-b border-slate-800/80">
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-400">${c.twoOfRule}:</span>
+                  <span class="font-mono font-bold text-amber-300 text-[10px]">${c.targetScorePct}</span>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-slate-400">Target Accuracy:</span>
-                  <span class="font-mono font-bold text-indigo-300">${c.targetScorePct}</span>
-                </div>
+                <ul class="space-y-1 text-[10.5px] leading-tight">
+                  ${criteriaListHtml}
+                </ul>
               </div>
 
-              <!-- STUDENT CURRENT STANDING -->
-              <div class="mt-3 space-y-2 text-[11px]">
-                <div class="flex justify-between items-center pb-1 border-b border-slate-800">
-                  <span class="text-slate-400">Latest Test Score:</span>
+              <!-- STUDENT CURRENT STANDING (LATEST & LAST 2 AVG) -->
+              <div class="mt-3 space-y-1.5 text-[11px] bg-slate-950/40 p-2 rounded-lg border border-slate-800/60">
+                <div class="flex justify-between items-center pb-1 border-b border-slate-800/80">
+                  <span class="text-slate-400">Latest Test:</span>
                   <span class="font-bold ${m.hasData ? 'text-emerald-400 font-mono' : 'text-slate-500'}">${m.latestScore} (${m.latestMetric})</span>
                 </div>
-                <div class="flex justify-between items-center pb-1 border-b border-slate-800">
+                <div class="flex justify-between items-center">
                   <span class="text-slate-400">Last 2-Test Avg:</span>
                   <span class="font-bold ${m.hasData ? 'text-indigo-300 font-mono' : 'text-slate-500'}">${m.avgScore} (${m.avgMetric})</span>
                 </div>
