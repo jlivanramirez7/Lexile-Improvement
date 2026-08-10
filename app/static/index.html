@@ -385,6 +385,48 @@
         </div>
       </div>
 
+      <!-- DICKERSON MIDDLE SCHOOL (COBB COUNTY) 6TH GRADE ADVANCED PLACEMENT TRACKER -->
+      <div class="glass-panel p-6 rounded-2xl border border-amber-500/40 bg-gradient-to-r from-slate-900 via-slate-900/95 to-amber-950/30 space-y-5 shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-700/80 pb-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40">Cobb County School District</span>
+              <span class="text-xs text-slate-400 font-medium">Rising 6th Grade Transition Matrix</span>
+            </div>
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+              <span>🏛️</span>
+              <span>Dickerson Middle School: 6th Grade Advanced Classes Placement Tracker</span>
+            </h3>
+            <p class="text-xs text-slate-300 mt-1 max-w-3xl">
+              Official placement criteria for 6th grade Advanced Content (AC) and Accelerated Math. Compares <strong class="text-white active-student-name">Lucas Ramirez</strong>'s latest and 2-test average full-length simulation scores directly against Dickerson qualifying benchmarks.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 flex-shrink-0">
+            <span class="text-[11px] px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 font-semibold">
+              Policy: <strong class="text-amber-400">Strict Criteria • No Waivers</strong>
+            </span>
+          </div>
+        </div>
+
+        <!-- 5 ADVANCED CLASS CARDS GRID -->
+        <div id="dickerson-courses-grid" class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <!-- Dynamically populated via renderDickersonPlacementTracker() -->
+        </div>
+
+        <!-- PLACEMENT POLICY SUMMARY FOOTER -->
+        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-400">
+          <div class="flex items-center gap-2">
+            <span>ℹ️</span>
+            <span>Screening is automatic prior to 6th grade. Students must maintain an average of <strong>80%+</strong> to remain in AC classes once placed.</span>
+          </div>
+          <div class="flex items-center gap-3 font-medium text-slate-300">
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span> On Track / Qualified</span>
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span> Approaching Target</span>
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-slate-500 inline-block"></span> Needs Diagnostic Data</span>
+          </div>
+        </div>
+      </div>
+
       <!-- METRIC OVERVIEW CARDS -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
         
@@ -19262,6 +19304,212 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
        9. PARENT DIAGNOSTIC DASHBOARD & SUBMISSION ARCHIVE (FEEDBACK #2 & #3)
        ========================================================================= */
 
+
+    /* =========================================================================
+       DICKERSON MIDDLE SCHOOL (COBB COUNTY) ADVANCED PLACEMENT TRACKER
+       ========================================================================= */
+
+    function getSubjectFullLengthMetrics(isMath) {
+      const completedList = isMath ? (STATE.completedFullLengthMath || []) : (STATE.completedFullLengthELA || []);
+      const subs = STATE.fullLengthSubmissions || {};
+      
+      const validSubs = completedList
+        .map(id => subs[id])
+        .filter(s => s && (isMath ? (s.genre && s.genre.includes("Math")) : (s.genre && s.genre.includes("ELA"))));
+
+      if (validSubs.length === 0) {
+        return {
+          hasData: false,
+          count: 0,
+          latestScore: "--/15",
+          latestPct: "--%",
+          latestMetric: isMath ? "-- Q" : "-- L",
+          latestMetricNum: 0,
+          avgScore: "--/15",
+          avgPct: "--%",
+          avgMetric: isMath ? "-- Q" : "-- L",
+          avgMetricNum: 0
+        };
+      }
+
+      const latest = validSubs[validSubs.length - 1];
+      const last2 = validSubs.slice(-2);
+
+      const latestScore = latest.score;
+      const latestTotal = latest.totalQuestions || 15;
+      const latestPct = Math.round((latestScore / latestTotal) * 100);
+      const latestMetricVal = latest.psychometric ? latest.psychometric.metricValue : (isMath ? "800Q" : "880L");
+      const latestMetricNum = parseInt(latestMetricVal.replace(/\D/g, ""), 10) || (isMath ? 800 : 880);
+
+      const avgScoreVal = (last2.reduce((acc, s) => acc + s.score, 0) / last2.length).toFixed(1);
+      const avgPctVal = Math.round((last2.reduce((acc, s) => acc + (s.score / (s.totalQuestions || 15)), 0) / last2.length) * 100);
+      const avgMetricNumVal = Math.round(last2.reduce((acc, s) => {
+        const num = parseInt((s.psychometric?.metricValue || (isMath ? "800Q" : "880L")).replace(/\D/g, ""), 10);
+        return acc + num;
+      }, 0) / last2.length);
+
+      return {
+        hasData: true,
+        count: validSubs.length,
+        latestScore: `${latestScore}/${latestTotal}`,
+        latestPct: `${latestPct}%`,
+        latestMetric: `${latestMetricNum}${isMath ? 'Q' : 'L'}`,
+        latestMetricNum: latestMetricNum,
+        avgScore: `${avgScoreVal}/15`,
+        avgPct: `${avgPctVal}%`,
+        avgMetric: `${avgMetricNumVal}${isMath ? 'Q' : 'L'}`,
+        avgMetricNum: avgMetricNumVal
+      };
+    }
+
+    function renderDickersonPlacementTracker() {
+      const container = document.getElementById("dickerson-courses-grid");
+      if (!container) return;
+
+      const elaMetrics = getSubjectFullLengthMetrics(false);
+      const mathMetrics = getSubjectFullLengthMetrics(true);
+
+      const courses = [
+        {
+          id: "ac-ela",
+          name: "AC ELA 6",
+          badge: "Advanced Content",
+          icon: "📖",
+          type: "ela",
+          targetCutoff: "Lexile ≥ 925L",
+          targetScorePct: "80%+",
+          criteria: "Reading Inventory ≥ 925L, Milestones Level 3/4 (Proficient+), 5th Grade ELA Avg ≥ 85%",
+          metrics: elaMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
+            if (m.latestMetricNum >= 925 || m.avgMetricNum >= 910) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
+            if (m.latestMetricNum >= 860 || m.avgMetricNum >= 850) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
+            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+          }
+        },
+        {
+          id: "adv-math",
+          name: "Advanced Math 6",
+          badge: "Single-Accelerated",
+          icon: "📐",
+          type: "math",
+          targetCutoff: "Quantile ≥ 820Q",
+          targetScorePct: "75%+",
+          criteria: "Math Inventory ≥ 820Q, Milestones Level 3/4, IOWA Math Total ≥ 75th percentile, 5th Math Avg ≥ 85%",
+          metrics: mathMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
+            if (m.latestMetricNum >= 820 || m.avgMetricNum >= 810) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
+            if (m.latestMetricNum >= 750 || m.avgMetricNum >= 740) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
+            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+          }
+        },
+        {
+          id: "hyper-math",
+          name: "Math 6/7A",
+          badge: "Hyper-Accelerated",
+          icon: "🚀",
+          type: "math",
+          targetCutoff: "Quantile ≥ 890Q – 950Q",
+          targetScorePct: "90%+",
+          criteria: "Compacts 6th & 7th grade math. Milestones Level 4 (Distinguished), IOWA Math ≥ 85th%, Math Avg ≥ 90%",
+          metrics: mathMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
+            if (m.latestMetricNum >= 890 || m.avgMetricNum >= 880) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
+            if (m.latestMetricNum >= 820 || m.avgMetricNum >= 810) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
+            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+          }
+        },
+        {
+          id: "ac-science",
+          name: "AC Science 6",
+          badge: "Earth Science AC",
+          icon: "🌍",
+          type: "ela",
+          targetCutoff: "Lexile ≥ 900L",
+          targetScorePct: "80%+",
+          criteria: "High technical reading demand. Reading Lexile ≥ 900L, Milestones Proficient+, 5th Science Avg ≥ 85%",
+          metrics: elaMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
+            if (m.latestMetricNum >= 900 || m.avgMetricNum >= 880) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
+            if (m.latestMetricNum >= 840 || m.avgMetricNum >= 830) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
+            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+          }
+        },
+        {
+          id: "ac-ss",
+          name: "AC Social Studies 6",
+          badge: "World Studies AC",
+          icon: "🗺️",
+          type: "ela",
+          targetCutoff: "Lexile ≥ 925L",
+          targetScorePct: "80%+",
+          criteria: "Intense primary document analysis. Reading Lexile ≥ 925L, Milestones ELA Proficient+, 5th SS Avg ≥ 85%",
+          metrics: elaMetrics,
+          evaluateStatus: (m) => {
+            if (!m.hasData) return { label: "Needs Data", color: "bg-slate-800 text-slate-400 border-slate-700", icon: "⚪" };
+            if (m.latestMetricNum >= 925 || m.avgMetricNum >= 910) return { label: "ON TRACK (Qualified)", color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40", icon: "🟢" };
+            if (m.latestMetricNum >= 860 || m.avgMetricNum >= 850) return { label: "Approaching Target", color: "bg-amber-500/20 text-amber-300 border-amber-500/40", icon: "🟡" };
+            return { label: "Focus Needed", color: "bg-red-500/20 text-red-300 border-red-500/40", icon: "🔴" };
+          }
+        }
+      ];
+
+      let cardsHtml = "";
+      courses.forEach(c => {
+        const m = c.metrics;
+        const status = c.evaluateStatus(m);
+        const subLabel = c.type === "math" ? "Math Simulation" : "Reading Simulation";
+
+        cardsHtml += `
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition flex flex-col justify-between space-y-3 shadow-lg">
+            <div>
+              <div class="flex items-center justify-between gap-1 mb-1.5">
+                <span class="text-xs font-bold text-amber-400 flex items-center gap-1">${c.icon} ${c.name}</span>
+                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">${c.badge}</span>
+              </div>
+
+              <!-- QUALIFYING CRITERIA BOX -->
+              <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 space-y-1 text-[11px]">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400">Dickerson Cutoff:</span>
+                  <span class="font-mono font-bold text-white">${c.targetCutoff}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400">Target Accuracy:</span>
+                  <span class="font-mono font-bold text-indigo-300">${c.targetScorePct}</span>
+                </div>
+              </div>
+
+              <!-- STUDENT CURRENT STANDING -->
+              <div class="mt-3 space-y-2 text-[11px]">
+                <div class="flex justify-between items-center pb-1 border-b border-slate-800">
+                  <span class="text-slate-400">Latest Test Score:</span>
+                  <span class="font-bold ${m.hasData ? 'text-emerald-400 font-mono' : 'text-slate-500'}">${m.latestScore} (${m.latestMetric})</span>
+                </div>
+                <div class="flex justify-between items-center pb-1 border-b border-slate-800">
+                  <span class="text-slate-400">Last 2-Test Avg:</span>
+                  <span class="font-bold ${m.hasData ? 'text-indigo-300 font-mono' : 'text-slate-500'}">${m.avgScore} (${m.avgMetric})</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STATUS PILL -->
+            <div class="pt-2">
+              <span class="w-full text-center px-2 py-1.5 rounded-lg text-[10px] font-extrabold border ${status.color} flex items-center justify-center gap-1">
+                <span>${status.icon}</span>
+                <span>${status.label}</span>
+              </span>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = cardsHtml;
+    }
+
     function updateParentDashboard() {
       const a = STATE.analytics;
 
@@ -19341,6 +19589,9 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       const avgSec = a.totalAttempted > 0 ? Math.round(pacing.totalSecondsSpent / a.totalAttempted) : 0;
       document.getElementById("pacing-avg-text").innerText = a.totalAttempted > 0 ? `${avgSec} sec` : "-- sec";
       document.getElementById("pacing-warning-text").innerText = `${pacing.impulsiveCount + pacing.hesitationCount} Flags`;
+
+      // Render Dickerson Middle School Advanced Placement Tracker
+      renderDickersonPlacementTracker();
 
       // Distractor Error Breakdown
       const distractorContainer = document.getElementById("distractor-breakdown-container");
