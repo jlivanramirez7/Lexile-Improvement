@@ -551,29 +551,48 @@
 
       </div>
 
-      <!-- NEW SECTION: COMPLETED MISSION SUBMISSIONS REVIEW ARCHIVE (PARENT REVIEW) -->
+      <!-- SECTION: COMPLETED FULL-LENGTH & CAT SIMULATION ATTEMPTS (WITH DELETE MANAGEMENT) -->
+      <div class="glass-panel p-6 rounded-2xl border border-purple-500/40 bg-slate-900/90 space-y-4 shadow-xl">
+        <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 flex-wrap gap-2">
+          <div>
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <span>🏆 Official Full-Length Practice Exams & CAT Simulation History</span>
+            </h3>
+            <p class="text-xs text-slate-400">Manage all full-length computer-adaptive and practice test attempts for <span class="active-student-name">Lucas Ramirez</span>.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="resetStudentData()" class="px-2.5 py-1.5 bg-red-950/40 hover:bg-red-900/60 text-red-300 text-xs font-semibold rounded-lg border border-red-700/40 transition flex items-center gap-1 shadow-sm">
+              🔄 Reset All Data
+            </button>
+          </div>
+        </div>
+
+        <!-- FULL-LENGTH ATTEMPTS TABLE CONTAINER -->
+        <div id="parent-fl-history-table-container" class="overflow-x-auto">
+          <!-- Dynamically populated via renderFullLengthHistoryTable() -->
+        </div>
+      </div>
+
+      <!-- SECTION: DETAILED ITEM-BY-ITEM SUBMISSION REVIEW ARCHIVE -->
       <div class="glass-panel p-6 rounded-2xl border border-indigo-500/40 bg-slate-900/90 space-y-4 shadow-xl">
         <div class="flex items-center justify-between border-b border-slate-700/60 pb-3 flex-wrap gap-2">
           <div>
             <h3 class="text-lg font-bold text-white flex items-center gap-2">
-              <span>📜 Student Submission Archives & Item Review</span>
+              <span>📜 Diagnostic Question-by-Question Response Breakdown</span>
             </h3>
-            <p class="text-xs text-slate-400">Review <span class="active-student-name">Lucas Ramirez</span>'s exact responses, time, and error tags for any completed mission.</p>
+            <p class="text-xs text-slate-400">Detailed item analysis, passage references, and error misconceptions for the selected assessment.</p>
           </div>
           <div class="flex items-center gap-2">
             <div id="completed-missions-selector-container">
               <!-- Selector populated via JS -->
             </div>
-            <button onclick="resetStudentData()" class="px-2.5 py-1.5 bg-red-950/40 hover:bg-red-900/60 text-red-300 text-xs font-semibold rounded-lg border border-red-700/40 transition flex items-center gap-1">
-              🔄 Clear Test Data
-            </button>
           </div>
         </div>
 
         <!-- SUBMISSION REVIEW DISPLAY BOX -->
         <div id="parent-submission-review-box" class="space-y-4">
           <div class="text-xs text-slate-400 italic p-4 text-center bg-slate-800/40 rounded-xl border border-slate-800">
-            No missions completed yet. When <span class="active-student-name">Lucas Ramirez</span> completes a mission, their full question-by-question submission will appear here for review!
+            No missions completed yet. When <span class="active-student-name">Lucas Ramirez</span> completes a mission or full-length simulation, their question-by-question submission will appear here for review!
           </div>
         </div>
       </div>
@@ -40878,16 +40897,138 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       renderSubmissionsSelector();
     }
 
+    function renderFullLengthHistoryTable() {
+      const tableContainer = document.getElementById("parent-fl-history-table-container");
+      if (!tableContainer) return;
+
+      const isMath = (STATE.parentDashboardSubject || STATE.activeSubject) === "math";
+      const flIds = isMath ? (STATE.completedFullLengthMath || []) : (STATE.completedFullLengthELA || []);
+      const flSubs = STATE.fullLengthSubmissions || {};
+
+      if (flIds.length === 0) {
+        tableContainer.innerHTML = `
+          <div class="text-xs text-slate-400 italic p-6 text-center bg-slate-800/40 rounded-xl border border-slate-800 space-y-1">
+            <p>No ${isMath ? 'Math Quantile' : 'Reading Lexile'} full-length simulations taken yet.</p>
+            <p class="text-[11px] text-slate-500">When tests are completed, each attempt will appear here with psychometric score estimates and one-click review/deletion tools.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let tableHtml = `
+        <table class="w-full text-left text-xs text-slate-300">
+          <thead>
+            <tr class="border-b border-slate-700/80 text-[11px] uppercase tracking-wider text-slate-400">
+              <th class="py-2.5 px-3">Simulation / Exam</th>
+              <th class="py-2.5 px-3">Completed</th>
+              <th class="py-2.5 px-3">Score & Accuracy</th>
+              <th class="py-2.5 px-3">Estimated Rating</th>
+              <th class="py-2.5 px-3 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800">
+      `;
+
+      flIds.forEach(id => {
+        const sub = flSubs[id];
+        if (!sub) return;
+        const totalQ = sub.totalQuestions || 15;
+        const pct = Math.round((sub.score / totalQ) * 100);
+        const metricName = isMath ? "Quantile" : "Lexile";
+        const metricVal = sub.psychometric ? sub.psychometric.metricValue : (isMath ? "800Q" : "920L");
+        const level = sub.psychometric ? sub.psychometric.performanceLevel : "Completed";
+
+        tableHtml += `
+          <tr class="hover:bg-slate-800/50 transition">
+            <td class="py-3 px-3">
+              <div class="font-bold text-white flex items-center gap-1.5">
+                <span class="text-amber-400">🏆</span>
+                <span>${sub.title}</span>
+              </div>
+              <div class="text-[10px] text-slate-400">${sub.genre || (isMath ? 'DRC BEACON Math' : 'DRC BEACON ELA')}</div>
+            </td>
+            <td class="py-3 px-3 font-mono text-slate-400 text-[11px]">
+              ${sub.timestamp || 'Recorded'}
+            </td>
+            <td class="py-3 px-3">
+              <span class="font-bold font-mono ${pct >= 80 ? 'text-emerald-400' : (pct >= 60 ? 'text-indigo-300' : 'text-amber-400')}">${sub.score}/${totalQ} (${pct}%)</span>
+            </td>
+            <td class="py-3 px-3">
+              <span class="font-bold font-mono px-2 py-0.5 rounded bg-indigo-950/80 border border-indigo-500/40 text-indigo-200">${metricVal}</span>
+              <div class="text-[10px] text-slate-400 truncate max-w-[180px]">${level}</div>
+            </td>
+            <td class="py-3 px-3 text-right">
+              <div class="flex items-center justify-end gap-2">
+                <button onclick="renderSubmissionReview('${id}')" class="px-2.5 py-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[11px] rounded-lg shadow transition flex items-center gap-1">
+                  <span>🔍 Review</span>
+                </button>
+                <button onclick="deleteAssessmentAttempt('${id}', true)" title="Delete this test attempt" class="px-2 py-1 bg-red-950/60 hover:bg-red-800/80 text-red-300 hover:text-white font-bold text-[11px] rounded-lg border border-red-700/50 transition flex items-center gap-1">
+                  <span>🗑️ Delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        `;
+      });
+
+      tableHtml += `
+          </tbody>
+        </table>
+      `;
+
+      tableContainer.innerHTML = tableHtml;
+    }
+
+    function deleteAssessmentAttempt(missionId, isFullLength) {
+      const isMath = (STATE.parentDashboardSubject || STATE.activeSubject) === "math";
+      const flSubs = STATE.fullLengthSubmissions || {};
+      const dailySubs = isMath ? (STATE.mathMissionSubmissions || {}) : (STATE.missionSubmissions || {});
+      const sub = flSubs[missionId] || dailySubs[missionId];
+      const title = sub ? sub.title : missionId;
+
+      if (!confirm(`Are you sure you want to delete the test attempt for:\n"${title}"?\n\nThis will remove this attempt from your history and update all placement metrics.`)) {
+        return;
+      }
+
+      // 1. Delete from full length collections
+      if (isFullLength || flSubs[missionId]) {
+        delete flSubs[missionId];
+        STATE.completedFullLengthELA = (STATE.completedFullLengthELA || []).filter(id => id !== missionId);
+        STATE.completedFullLengthMath = (STATE.completedFullLengthMath || []).filter(id => id !== missionId);
+      }
+
+      // 2. Delete from daily mission collections
+      if (isMath) {
+        if (STATE.mathMissionSubmissions) delete STATE.mathMissionSubmissions[missionId];
+        STATE.completedMathMissions = (STATE.completedMathMissions || []).filter(id => id !== missionId);
+      } else {
+        if (STATE.missionSubmissions) delete STATE.missionSubmissions[missionId];
+        STATE.completedMissions = (STATE.completedMissions || []).filter(id => id !== missionId);
+      }
+
+      // 3. Immediately persist state
+      saveServerProgress();
+
+      // 4. Update UI across all sections
+      updateHeaderStats();
+      updateParentDashboard();
+      renderMissionsGrid();
+      renderFullLengthGrid();
+    }
+
     function renderSubmissionsSelector() {
       const container = document.getElementById("completed-missions-selector-container");
       const reviewBox = document.getElementById("parent-submission-review-box");
       if (!container) return;
 
-      const isMath = STATE.activeSubject === "math";
+      const isMath = (STATE.parentDashboardSubject || STATE.activeSubject) === "math";
       const dailyIds = isMath ? (STATE.completedMathMissions || []) : (STATE.completedMissions || []);
       const flIds = isMath ? (STATE.completedFullLengthMath || []) : (STATE.completedFullLengthELA || []);
       const dailySubs = isMath ? (STATE.mathMissionSubmissions || {}) : (STATE.missionSubmissions || {});
       const flSubs = STATE.fullLengthSubmissions || {};
+
+      // Also render full length history table
+      renderFullLengthHistoryTable();
 
       const totalCount = dailyIds.length + flIds.length;
 
@@ -41028,7 +41169,12 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
               <h4 class="font-bold text-white text-base">${sub.title}</h4>
               <p class="text-xs text-slate-400">Target Rating: ${sub.lexile} | Genre/Domain: ${sub.genre} | Score: <strong class="text-emerald-400">${sub.score}/${totalQ} (${pct}%)</strong></p>
             </div>
-            <span class="text-xs text-indigo-300 font-mono">Recorded at ${sub.timestamp}</span>
+            <div class="flex items-center gap-3">
+              <span class="text-xs text-indigo-300 font-mono">Recorded: ${sub.timestamp}</span>
+              <button onclick="deleteAssessmentAttempt('${missionId}', ${isFL})" class="px-2.5 py-1 bg-red-950/60 hover:bg-red-800/80 text-red-300 hover:text-white font-bold text-xs rounded-lg border border-red-700/50 transition flex items-center gap-1 shadow-sm">
+                <span>🗑️ Delete Attempt</span>
+              </button>
+            </div>
           </div>
 
           ${psychHtml}
