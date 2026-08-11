@@ -38995,15 +38995,16 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
        ========================================================================= */
 
     function formatPassageHTML(passageText) {
-      if (!passageText) return "";
+      if (!passageText) return "<p class='text-slate-400 italic p-4 text-center'>No passage text available.</p>";
       const paragraphs = passageText.split(/\n\s*\n/).filter(p => p.trim().length > 0);
       return paragraphs.map((p, idx) => {
+        const cleanP = p.replace(/^\[?Paragraph\s+\d+\]?:?\s*/i, "").trim();
         return `
           <p class="mb-5 leading-relaxed text-slate-200 text-base font-normal">
             <span class="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-300 bg-indigo-950/80 border border-indigo-500/40 px-2 py-0.5 rounded-md mr-2 shadow-sm uppercase tracking-wider select-none">
               Paragraph ${idx + 1}
             </span>
-            ${p.trim()}
+            ${cleanP}
           </p>
         `;
       }).join("");
@@ -39440,20 +39441,77 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
 
     function loadCurrentQuestion() {
       const mission = STATE.currentMission;
-      const totalQ = mission.questions ? mission.questions.length : 5;
-      const q = mission.questions[STATE.currentQuestionIdx];
+      const isMath = STATE.activeSubject === "math";
+      const totalQ = (mission.isAdaptiveCAT) ? 5 : (mission.questions ? mission.questions.length : 5);
+      const q = mission.questions ? mission.questions[STATE.currentQuestionIdx] : null;
+      if (!q) return;
+
       STATE.selectedOption = null;
       STATE.questionStartTime = Date.now();
 
       // Update question counter & progress dots
-      document.getElementById("current-q-num").innerText = STATE.currentQuestionIdx + 1;
-      document.getElementById("q-step-indicator").innerText = `${STATE.currentQuestionIdx + 1}/${totalQ}`;
+      const displayQNum = mission.isAdaptiveCAT ? ((mission.stageHistory.length - 1) * 5 + STATE.currentQuestionIdx + 1) : (STATE.currentQuestionIdx + 1);
+      const displayTotalQ = mission.isAdaptiveCAT ? 15 : totalQ;
+      
+      document.getElementById("current-q-num").innerText = displayQNum;
+      document.getElementById("q-step-indicator").innerText = `${displayQNum}/${displayTotalQ}`;
       renderProgressDots();
 
-      // For multi-passage full-length ELA tests, dynamically update active passage pane
+      // Dynamically update active passage pane for CAT, Full-Length, and Standard modules
       const passageDisplay = document.getElementById("passage-display-text");
       if (passageDisplay) {
-        if (mission.isFullLength && mission.passages && mission.passages.length > 0) {
+        if (isMath) {
+          const catRoot = ADAPTIVE_CAT_MATH_ASSESSMENTS.find(t => t.id === mission.id) || mission;
+          const stageKey = mission.currentStageKey || "stage1";
+          const stageObj = (catRoot && catRoot.stages) ? catRoot.stages[stageKey] : null;
+          const scenarioText = (stageObj && stageObj.scenario) ? stageObj.scenario : (mission.scenario || mission.description || "Real-World Mathematical Problem Solving");
+          const stageName = stageObj ? stageObj.stageName : (mission.badge || "Math Simulation");
+          const targetQ = stageObj ? stageObj.targetQuantile : (mission.targetQuantile || "Grade 5 Quantile");
+
+          document.getElementById("passage-genre-tag").innerText = `${stageName} | ${targetQ}`;
+          passageDisplay.innerHTML = `
+            <div class="space-y-4">
+              <div class="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-emerald-200 text-xs md:text-sm shadow-md">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-extrabold text-emerald-300 uppercase tracking-wider flex items-center gap-1.5">
+                    <span>📐</span>
+                    <span>${stageName}</span>
+                  </span>
+                  <span class="text-[11px] font-bold text-emerald-300 bg-emerald-950 px-2.5 py-0.5 rounded-full border border-emerald-500/40">${targetQ}</span>
+                </div>
+                <p class="leading-relaxed text-slate-200 font-medium">${scenarioText}</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-900 border border-slate-700 space-y-2 shadow">
+                <span class="font-bold text-indigo-300 text-xs uppercase tracking-wider block">💡 Math Scratchpad & Formula Guide</span>
+                <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
+                  <li><strong class="text-white">Area:</strong> length × width (square units)</li>
+                  <li><strong class="text-white">Volume of Prism:</strong> length × width × height (cubic units)</li>
+                  <li><strong class="text-white">Order of Operations:</strong> Parentheses → Brackets → Exponents → Multiply/Divide → Add/Subtract</li>
+                  <li><strong class="text-white">Fractions:</strong> Common LCD for addition/subtraction; invert divisor for unit fraction division.</li>
+                </ul>
+              </div>
+            </div>
+          `;
+        } else if (mission.isAdaptiveCAT) {
+          const stageKey = mission.currentStageKey || "stage1";
+          const catRoot = ADAPTIVE_CAT_ELA_ASSESSMENTS.find(t => t.id === mission.id) || mission;
+          const stageObj = (catRoot && catRoot.stages) ? catRoot.stages[stageKey] : null;
+          const stagePassage = stageObj ? stageObj.passage : null;
+          const passTitle = stagePassage ? stagePassage.title : (mission.title || "Reading Passage");
+          const passLexile = stagePassage ? stagePassage.targetLexile || stagePassage.lexile : (mission.lexile || "920L");
+          const passText = stagePassage ? stagePassage.text : (mission.passage || "");
+          const stageName = stageObj ? stageObj.stageName : `Stage ${mission.stageHistory ? mission.stageHistory.length : 1}`;
+
+          document.getElementById("passage-genre-tag").innerText = `${stageName} | ${passLexile}`;
+          document.getElementById("quiz-lexile-badge").innerText = passLexile;
+          passageDisplay.innerHTML = `
+            <div class="mb-4 pb-3 border-b border-indigo-500/30 flex items-center justify-between flex-wrap gap-2">
+              <span class="font-extrabold text-amber-300 text-xs md:text-sm uppercase tracking-wider">📖 ${passTitle}</span>
+              <span class="text-[11px] font-bold text-slate-200 bg-indigo-950/90 px-3 py-1 rounded-full border border-indigo-500/40 shadow-sm">${passLexile}</span>
+            </div>
+            ${formatPassageHTML(passText)}
+          `;
+        } else if (mission.isFullLength && mission.passages && mission.passages.length > 0) {
           const pIdx = q.passageIdx !== undefined ? q.passageIdx : 0;
           const currentPass = mission.passages[pIdx] || mission.passages[0];
           document.getElementById("passage-genre-tag").innerText = `${currentPass.genre} | ${currentPass.lexile}`;
@@ -39464,6 +39522,8 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
             </div>
             ${formatPassageHTML(currentPass.text)}
           `;
+        } else {
+          passageDisplay.innerHTML = formatPassageHTML(mission.passage || "");
         }
       }
 
