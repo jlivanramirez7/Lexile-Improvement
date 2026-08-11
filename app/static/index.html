@@ -185,6 +185,38 @@
         <div id="missions-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- Mission cards rendered dynamically via JavaScript -->
         </div>
+
+        <!-- FULL-LENGTH ASSESSMENTS SECTION (10 Full-Length Assessments + Adaptive CAT) -->
+        <div id="full-length-section" class="space-y-4 pt-8 border-t border-slate-800/80">
+          <div class="flex items-center justify-between flex-wrap gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                  DRC BEACON Standardized Simulations
+                </span>
+                <span id="full-length-target-badge" class="text-xs text-indigo-400 font-bold bg-indigo-950/60 px-2.5 py-0.5 rounded-full border border-indigo-500/30">
+                  Lexile Band: 830L – 1010L+
+                </span>
+              </div>
+              <h3 id="full-length-section-title" class="text-xl font-black text-white flex items-center gap-2 mt-1.5">
+                <span>🏛️ Grade 5 DRC BEACON Full-Length ELA Assessments</span>
+              </h3>
+              <p id="full-length-section-desc" class="text-xs text-slate-300 mt-0.5 max-w-3xl leading-relaxed">
+                Authentic 15-item Grade 5 DRC BEACON simulations featuring 3 multi-paragraph reading passages with DOK 1–3 and paired EBSR evidence items.
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-300 bg-slate-900/90 px-3.5 py-2 rounded-xl border border-slate-700 font-bold flex items-center gap-1.5 shadow">
+                <span>📝</span>
+                <span>10 Full Practice Tests + Adaptive CAT</span>
+              </span>
+            </div>
+          </div>
+
+          <div id="full-length-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 pt-2">
+            <!-- Populated dynamically via renderFullLengthGrid() -->
+          </div>
+        </div>
       </div>
 
       <!-- ACTIVE QUIZ INTERFACE (Step 2) -->
