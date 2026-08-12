@@ -39456,8 +39456,17 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       renderMissionsGrid();
     }
 
+        function getActiveQuestionGlobalIndex() {
+      const m = STATE.currentMission;
+      if (m && m.isAdaptiveCAT && m.stageHistory) {
+        return (m.stageHistory.length - 1) * 5 + STATE.currentQuestionIdx;
+      }
+      return STATE.currentQuestionIdx;
+    }
+
     function loadCurrentQuestion() {
       const mission = STATE.currentMission;
+      if (!mission || !mission.questions) return;
       const isMath = STATE.activeSubject === "math";
       const totalQ = (mission.isAdaptiveCAT) ? 5 : (mission.questions ? mission.questions.length : 5);
       const q = mission.questions ? mission.questions[STATE.currentQuestionIdx] : null;
@@ -39467,7 +39476,8 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       STATE.questionStartTime = Date.now();
 
       // Update question counter & progress dots
-      const displayQNum = mission.isAdaptiveCAT ? ((mission.stageHistory.length - 1) * 5 + STATE.currentQuestionIdx + 1) : (STATE.currentQuestionIdx + 1);
+      const globalIdx = getActiveQuestionGlobalIndex();
+      const displayQNum = mission.isAdaptiveCAT ? (globalIdx + 1) : (STATE.currentQuestionIdx + 1);
       const displayTotalQ = mission.isAdaptiveCAT ? 15 : totalQ;
       
       document.getElementById("current-q-num").innerText = displayQNum;
@@ -39580,18 +39590,19 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         pillarBadge.innerHTML = badgeHtml;
       }
 
-      // Set Question Text
-      // Set Question Text with Part A claim quote for Question 5 (Part B)
+      // Set Question Text with Part A claim quote for Question 5 (Part B) from the ACTIVE stage!
       let qText = q.question;
-      if ((q.isEbsrPartB || STATE.currentQuestionIdx === 4) && STATE.moduleAnswers[3]) {
-        const q4Ans = STATE.moduleAnswers[3];
+      const stagePartAIndex = mission.isAdaptiveCAT ? ((mission.stageHistory ? mission.stageHistory.length - 1 : 0) * 5 + 3) : 3;
+      const partAAnswer = STATE.moduleAnswers[stagePartAIndex];
+
+      if ((q.isEbsrPartB || STATE.currentQuestionIdx === 4) && partAAnswer && partAAnswer.selectedOptionText) {
         qText = `
           <div class="mb-4 p-4 rounded-xl border border-indigo-500/40 bg-indigo-950/40 text-indigo-200 shadow-md space-y-1.5">
             <div class="text-xs font-bold text-indigo-300 uppercase tracking-wider flex items-center gap-1.5">
               <span>🧩 Part A Selected Claim (Question 4):</span>
             </div>
             <div class="text-xs md:text-sm italic font-medium text-slate-100 bg-slate-900/80 p-3 rounded-lg border border-indigo-500/20 leading-relaxed">
-              "${q4Ans.selectedOptionText}"
+              "${partAAnswer.selectedOptionText}"
             </div>
           </div>
           <div>${q.question}</div>
@@ -39620,7 +39631,8 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
 
       // Handle Bidirectional Question Navigation & Answer States
       const stageIdx = STATE.currentQuestionIdx;
-      const currentStageAnswer = STATE.moduleAnswers[stageIdx];
+      const globalAnsIdx = getActiveQuestionGlobalIndex();
+      const currentStageAnswer = STATE.moduleAnswers[globalAnsIdx];
       const btnPrev = document.getElementById("btn-prev-question");
       const btnSubmit = document.getElementById("btn-submit-answer");
       const btnNextNav = document.getElementById("btn-next-question-nav");
@@ -39632,8 +39644,22 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
 
       if (currentStageAnswer) {
         // Question was already answered in this stage: show selected option & feedback card
-        STATE.selectedOption = currentStageAnswer.selectedIdx;
-        selectOption(currentStageAnswer.selectedIdx);
+        STATE.selectedOption = currentStageAnswer.selectedOption;
+        
+        // Lock options visually according to answered state
+        for (let i = 0; i < 4; i++) {
+          const btn = document.getElementById(`option-btn-${i}`);
+          if (btn) {
+            btn.onclick = null;
+            if (i === q.correctIndex) {
+              btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-emerald-500 bg-emerald-950/40 text-emerald-200 font-bold flex items-start gap-3 text-xs md:text-sm shadow";
+            } else if (i === currentStageAnswer.selectedOption && !currentStageAnswer.isCorrect) {
+              btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-red-500 bg-red-950/40 text-red-200 font-medium flex items-start gap-3 text-xs md:text-sm shadow";
+            } else {
+              btn.className = "w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/40 opacity-50 flex items-start gap-3 text-xs md:text-sm text-slate-400";
+            }
+          }
+        }
         
         if (btnSubmit) btnSubmit.classList.add("hidden");
         if (btnNextNav) {
@@ -39668,7 +39694,8 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
           }
         }
       } else {
-        // Question is not yet answered: reset selection & hide feedback card
+        // Question is NOT yet answered: reset selection & ensure feedback card is strictly hidden
+        STATE.selectedOption = null;
         if (btnSubmit) {
           btnSubmit.classList.remove("hidden");
           btnSubmit.disabled = true;
@@ -39687,13 +39714,15 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       const totalQ = 5;
       const dotSize = "w-3 h-3";
       const activeSize = "w-3.5 h-3.5";
+      const mission = STATE.currentMission;
+      const stageOffset = (mission && mission.isAdaptiveCAT && mission.stageHistory) ? ((mission.stageHistory.length - 1) * 5) : 0;
 
       for (let i = 0; i < totalQ; i++) {
         const dot = document.createElement("button");
         dot.title = `Jump to Question ${i + 1}`;
         dot.onclick = () => jumpToQuestion(i);
         
-        const ans = STATE.moduleAnswers[i];
+        const ans = STATE.moduleAnswers[stageOffset + i];
         if (i === STATE.currentQuestionIdx) {
           dot.className = `${activeSize} rounded-full bg-blue-500 ring-2 ring-blue-400/60 cursor-pointer shadow-md transition transform scale-110`;
         } else if (ans) {
@@ -39731,9 +39760,11 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       }
 
       const btnSubmit = document.getElementById("btn-submit-answer");
-      btnSubmit.disabled = false;
-      btnSubmit.className = "w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-xl shadow-lg cursor-pointer transition flex items-center justify-center gap-2 glow-active";
-      btnSubmit.innerHTML = `<span>Lock in Response →</span>`;
+      if (btnSubmit) {
+        btnSubmit.disabled = false;
+        btnSubmit.className = "flex-1 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-xl shadow-lg cursor-pointer transition flex items-center justify-center gap-2 glow-active";
+        btnSubmit.innerHTML = `<span>Lock in Response →</span>`;
+      }
     }
 
     function submitAnswer() {
@@ -39745,25 +39776,29 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       const isCorrect = STATE.selectedOption === q.correctIndex;
       const elapsedSeconds = Math.round((Date.now() - (STATE.questionStartTime || Date.now())) / 1000);
 
-      // Lock options
+      // Lock options visually
       for (let i = 0; i < 4; i++) {
         const btn = document.getElementById(`option-btn-${i}`);
-        btn.onclick = null;
-        if (i === q.correctIndex) {
-          btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-emerald-500 bg-emerald-950/40 text-emerald-200 font-bold flex items-start gap-3 text-xs md:text-sm shadow";
-        } else if (i === STATE.selectedOption && !isCorrect) {
-          btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-red-500 bg-red-950/40 text-red-200 font-medium flex items-start gap-3 text-xs md:text-sm shadow";
-        } else {
-          btn.className = "w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/40 opacity-50 flex items-start gap-3 text-xs md:text-sm text-slate-400";
+        if (btn) {
+          btn.onclick = null;
+          if (i === q.correctIndex) {
+            btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-emerald-500 bg-emerald-950/40 text-emerald-200 font-bold flex items-start gap-3 text-xs md:text-sm shadow";
+          } else if (i === STATE.selectedOption && !isCorrect) {
+            btn.className = "w-full text-left p-3.5 rounded-xl border-2 border-red-500 bg-red-950/40 text-red-200 font-medium flex items-start gap-3 text-xs md:text-sm shadow";
+          } else {
+            btn.className = "w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/40 opacity-50 flex items-start gap-3 text-xs md:text-sm text-slate-400";
+          }
         }
       }
 
-      // Record answer log for module & global analytics
-      STATE.moduleAnswers.push({
+      // Record answer at active global question index
+      const globalIdx = getActiveQuestionGlobalIndex();
+      STATE.moduleAnswers[globalIdx] = {
         questionId: q.id,
         questionText: q.question,
         pillar: q.pillar,
         pillarName: q.pillarName,
+        dokLevel: q.dokLevel,
         selectedOption: STATE.selectedOption,
         selectedOptionLetter: selectedOpt.letter,
         selectedOptionText: selectedOpt.text,
@@ -39774,40 +39809,52 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         errorType: selectedOpt.errorType,
         explanation: q.explanation,
         elapsedSeconds: elapsedSeconds
-      });
+      };
 
       // Record analytics silently behind scenes
       recordAnalytics(q, selectedOpt, isCorrect, mission.genre, elapsedSeconds);
 
-      // Disable submit button & show feedback card
+      // Hide Submit button, show Next navigation button
       const btnSubmit = document.getElementById("btn-submit-answer");
-      btnSubmit.classList.add("hidden");
-
-      const feedbackCard = document.getElementById("feedback-card");
-      const statusTitle = document.getElementById("feedback-status-title");
-      const body = document.getElementById("feedback-explanation-body");
-      const pillarInfo = document.getElementById("feedback-pillar-info");
-
-      feedbackCard.classList.remove("hidden");
-      pillarInfo.innerText = q.pillarName;
-
-      if (isCorrect) {
-        feedbackCard.className = "glass-panel p-5 rounded-2xl border border-emerald-500/40 bg-emerald-950/20 space-y-3 shadow-2xl";
-        statusTitle.className = "font-extrabold text-base text-emerald-400 flex items-center gap-2";
-        statusTitle.innerHTML = `<span>✅ Spot On! +30 XP</span>`;
-        STATE.xp += 30;
-      } else {
-        feedbackCard.className = "glass-panel p-5 rounded-2xl border border-red-500/40 bg-red-950/20 space-y-3 shadow-2xl";
-        statusTitle.className = "font-extrabold text-base text-red-400 flex items-center gap-2";
-        statusTitle.innerHTML = `<span>⚠️ Distractor Trap Triggered!</span>`;
+      const btnNextNav = document.getElementById("btn-next-question-nav");
+      if (btnSubmit) btnSubmit.classList.add("hidden");
+      if (btnNextNav) {
+        btnNextNav.classList.remove("hidden");
+        const isLastInStage = (STATE.currentQuestionIdx === 4);
+        btnNextNav.innerText = isLastInStage ? (mission.isAdaptiveCAT && mission.stageHistory.length < 3 ? "Next Stage →" : "Complete Module →") : "Next →";
       }
 
-      body.innerHTML = `
-        <p>${q.explanation}</p>
-        ${!isCorrect ? `<div class="text-xs text-amber-300 font-medium bg-amber-950/30 p-2 rounded border border-amber-500/30">
-          <strong>Psychometric Diagnostic Error:</strong> Selected option triggered <em>'${formatErrorType(selectedOpt.errorType)}'</em>. The Text is the Law!
-        </div>` : ''}
-      `;
+      // Render feedback card
+      const feedbackCard = document.getElementById("feedback-card");
+      if (feedbackCard) {
+        feedbackCard.classList.remove("hidden");
+        const statusTitle = document.getElementById("feedback-status-title");
+        const body = document.getElementById("feedback-explanation-body");
+        const pillarInfo = document.getElementById("feedback-pillar-info");
+
+        if (pillarInfo) pillarInfo.innerText = q.pillarName;
+        if (statusTitle) {
+          if (isCorrect) {
+            statusTitle.className = "font-extrabold text-base text-emerald-400 flex items-center gap-2";
+            statusTitle.innerHTML = `<span>✅ Spot On! (${selectedOpt.errorType || 'Correct'})</span>`;
+          } else {
+            statusTitle.className = "font-extrabold text-base text-red-400 flex items-center gap-2";
+            statusTitle.innerHTML = `<span>⚠️ Distractor Trap Triggered!</span>`;
+          }
+        }
+
+        if (body) {
+          body.innerHTML = `
+            <p>${q.explanation}</p>
+            ${!isCorrect ? `<div class="text-xs text-amber-300 font-medium bg-amber-950/30 p-2 rounded border border-amber-500/30 mt-2">
+              <strong>Diagnostic Misconception:</strong> Selected option triggered <em>'${formatErrorType(selectedOpt.errorType)}'</em>.
+            </div>` : ''}
+          `;
+        }
+      }
+
+      // Re-render dots
+      renderProgressDots();
 
       updateHeaderStats();
       saveServerProgress();
@@ -39823,8 +39870,9 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         return;
       }
 
-      const stageAnswers = STATE.moduleAnswers.slice(-5);
-      const stageScore = stageAnswers.filter(a => a.isCorrect).length;
+      const stageOffset = (m.stageHistory.length - 1) * 5;
+      const stageAnswers = STATE.moduleAnswers.slice(stageOffset, stageOffset + 5);
+      const stageScore = stageAnswers.filter(a => a && a.isCorrect).length;
       m.stageScores[m.currentStageKey] = stageScore;
 
       let nextStageKey = null;
@@ -39892,11 +39940,13 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
           m.passage = nextStageObj.passage ? nextStageObj.passage.text : (nextStageObj.scenario || m.passage);
           m.lexile = nextStageObj.targetLexile || nextStageObj.targetQuantile || m.lexile;
           STATE.currentQuestionIdx = 0;
+          STATE.selectedOption = null;
 
           // Update header
           document.getElementById("quiz-lexile-badge").innerText = m.lexile;
           document.getElementById("passage-genre-tag").innerText = nextStageObj.stageName;
 
+          // Load first question of new stage
           loadCurrentQuestion();
         }, 1600);
       } else {
@@ -39905,7 +39955,6 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
     }
 
     function nextQuestion() {
-      document.getElementById("btn-submit-answer").classList.remove("hidden");
       const m = STATE.currentMission;
 
       if (m && m.isAdaptiveCAT) {
@@ -39940,7 +39989,8 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       document.getElementById("module-complete-modal").classList.remove("hidden");
 
       const m = STATE.currentMission;
-      const scoreCount = STATE.moduleAnswers.filter(a => a.isCorrect).length;
+      const validAnswers = (STATE.moduleAnswers || []).filter(Boolean);
+      const scoreCount = validAnswers.filter(a => a.isCorrect).length;
 
       const isMath = STATE.activeSubject === "math";
       const submissionsDict = isMath ? (STATE.mathMissionSubmissions || (STATE.mathMissionSubmissions = {})) : STATE.missionSubmissions;
@@ -39954,19 +40004,19 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
         genre: m.genre || m.category || "Cobb Math BEACON",
         passage: m.passage || m.scenario || m.description,
         questions: m.questions,
-        answers: JSON.parse(JSON.stringify(STATE.moduleAnswers)),
+        answers: JSON.parse(JSON.stringify(validAnswers)),
         score: scoreCount,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
 
-      const totalQ = (m.isAdaptiveCAT || (m.isFullLength && (!m.questions || m.questions.length === 5))) ? (STATE.moduleAnswers.length || 15) : (m.questions ? m.questions.length : 5);
+      const totalQ = (m.isAdaptiveCAT || (m.isFullLength && (!m.questions || m.questions.length === 5))) ? (validAnswers.length || 15) : (m.questions ? m.questions.length : 5);
       const pctScore = Math.round((scoreCount / totalQ) * 100);
 
       if (m.isFullLength || m.isAdaptiveCAT) {
         const fullLengthList = isMath ? (STATE.completedFullLengthMath || (STATE.completedFullLengthMath = [])) : (STATE.completedFullLengthELA || (STATE.completedFullLengthELA = []));
         const fullLengthSubs = STATE.fullLengthSubmissions || (STATE.fullLengthSubmissions = {});
-        const dok3Correct = STATE.moduleAnswers.filter(a => a.isCorrect && a.dokLevel >= 3).length;
-        let psych = calculatePsychometricScore(m, scoreCount, dok3Correct, STATE.moduleAnswers);
+        const dok3Correct = validAnswers.filter(a => a.isCorrect && a.dokLevel >= 3).length;
+        let psych = calculatePsychometricScore(m, scoreCount, dok3Correct, validAnswers);
 
         // Enhance with Adaptive CAT Pathway calibration if adaptive test
         if (m.isAdaptiveCAT && m.stageHistory) {
@@ -39984,7 +40034,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
           lexile: m.targetLexile || m.targetQuantile || "Grade 5 Target",
           genre: isMath ? "DRC BEACON Grade 5 Math" : "DRC BEACON Grade 5 ELA",
           questions: m.questions,
-          answers: JSON.parse(JSON.stringify(STATE.moduleAnswers)),
+          answers: JSON.parse(JSON.stringify(validAnswers)),
           score: scoreCount,
           totalQuestions: totalQ,
           percent: pctScore,
@@ -40129,8 +40179,9 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
 
       // EBSR Paired Evidence Metrics
       if (!a.ebsrMetrics) a.ebsrMetrics = { pairedBothCorrect: 0, partAOnlyCorrect: 0, partBOnlyCorrect: 0, bothWrong: 0 };
-      if (question.isEbsrPartB) {
-        const q4Ans = STATE.moduleAnswers[3]; // Q4 Part A answer
+      if (question.isEbsrPartB || STATE.currentQuestionIdx === 4) {
+        const stageOffset = (STATE.currentMission && STATE.currentMission.isAdaptiveCAT && STATE.currentMission.stageHistory) ? ((STATE.currentMission.stageHistory.length - 1) * 5) : 0;
+        const q4Ans = STATE.moduleAnswers[stageOffset + 3]; // Q4 Part A answer of active stage
         const q4Correct = q4Ans ? q4Ans.isCorrect : false;
         if (q4Correct && isCorrect) {
           a.ebsrMetrics.pairedBothCorrect++;
@@ -41115,7 +41166,7 @@ Consequently, drag reduction techniques executed by sports biomechanists have pr
       }
 
       let itemsHtml = "";
-      (sub.answers || []).forEach((ans, idx) => {
+      (sub.answers || []).filter(Boolean).forEach((ans, idx) => {
         const pillarLabel = ans.pillarName || (ans.domain ? `Domain: ${ans.domain}` : `Item ${idx + 1}`);
         itemsHtml += `
           <div class="bg-slate-800/80 p-4 rounded-xl border ${ans.isCorrect ? 'border-emerald-500/30' : 'border-red-500/30'} space-y-2">
