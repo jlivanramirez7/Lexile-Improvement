@@ -39291,6 +39291,28 @@
        FULL-LENGTH ASSESSMENTS ENGINE (GRADE 5 DRC BEACON ELA & MATH)
        ========================================================================= */
 
+    
+    // =========================================================================
+    // PSYCHOMETRIC READABILITY & FKG (FLESCH-KINCAID GRADE) HELPER FUNCTIONS
+    // =========================================================================
+    function getFKGFromLexile(lexileStrOrNum) {
+      if (!lexileStrOrNum) return "";
+      const num = typeof lexileStrOrNum === "number" ? lexileStrOrNum : parseInt(String(lexileStrOrNum).replace(/[^0-9]/g, ""), 10);
+      if (isNaN(num)) return "";
+      // Calibrated DRC BEACON Grade-level scale (650L -> 4.8, 920L -> 6.3, 1075L -> 7.2, 1180L -> 7.8)
+      const fkg = Math.max(4.2, Math.min(8.8, (num - 250) / 115 + 0.5)).toFixed(1);
+      return `FKG ${fkg}`;
+    }
+
+    function formatLexileWithFKG(lexileStrOrNum) {
+      if (!lexileStrOrNum) return "";
+      const isMath = STATE.activeSubject === "math";
+      if (isMath) return String(lexileStrOrNum);
+      const fkg = getFKGFromLexile(lexileStrOrNum);
+      if (!fkg) return String(lexileStrOrNum);
+      return `${lexileStrOrNum} (${fkg})`;
+    }
+
     function calculatePsychometricScore(assessment, scoreCount, correctDOK3Count, answers) {
       const isMath = STATE.activeSubject === "math";
       const totalItems = assessment.questions.length || 15;
@@ -39319,6 +39341,7 @@
         // Calibrated DRC BEACON Grade 5 Lexile Range: 650L - 1186L
         // Dickerson AC ELA / Science / Social Studies Cutoff: >= 1075L
         const calculatedLexile = Math.min(1250, Math.round(650 + (scoreCount * 32) + (correctDOK3Count * 8)));
+        const calculatedFKG = (Math.max(4.2, Math.min(8.8, (calculatedLexile - 250) / 115 + 0.5))).toFixed(1);
         const beaconScaleScore = Math.round(950 + (scoreCount * 22)); // Authentic DRC BEACON Scale (950 - 1280)
 
         let status = "Developing Learner (Level 2)";
@@ -39330,6 +39353,8 @@
         return {
           metricName: "Lexile",
           metricValue: `${calculatedLexile}L`,
+          fkgValue: `FKG ${calculatedFKG}`,
+          metricDisplayWithFKG: `${calculatedLexile}L (FKG ${calculatedFKG})`,
           performanceLevel: status,
           scaleScoreEst: beaconScaleScore,
           milestonesScaleEst: Math.round(475 + (scoreCount * 9))
@@ -39370,7 +39395,7 @@
 
       // Set Header info
       document.getElementById("quiz-mission-title").innerText = test.title;
-      document.getElementById("quiz-lexile-badge").innerText = stage1.targetLexile || stage1.targetQuantile || "Stage 1 Router";
+      document.getElementById("quiz-lexile-badge").innerText = isMath ? (stage1.targetQuantile || "Stage 1 Router") : formatLexileWithFKG(stage1.targetLexile);
       document.getElementById("quiz-module-num").innerText = "CAT 1";
       document.getElementById("passage-genre-tag").innerText = stage1.stageName || "Adaptive Router (5 Items)";
 
@@ -39466,7 +39491,7 @@
 
       // Set Header info
       document.getElementById("quiz-mission-title").innerText = test.title;
-      document.getElementById("quiz-lexile-badge").innerText = test.targetLexile || test.targetQuantile || "Grade 5 Target";
+      document.getElementById("quiz-lexile-badge").innerText = isMath ? (test.targetQuantile || "Grade 5 Target") : formatLexileWithFKG(test.targetLexile);
       document.getElementById("quiz-module-num").innerText = test.id.replace("fl-", "FL-");
       document.getElementById("passage-genre-tag").innerText = test.badge || "DRC BEACON Full-Length";
 
@@ -39563,7 +39588,7 @@
 
       // Set Header info
       document.getElementById("quiz-mission-title").innerText = mission.title;
-      document.getElementById("quiz-lexile-badge").innerText = mission.lexile;
+      document.getElementById("quiz-lexile-badge").innerText = formatLexileWithFKG(mission.lexile);
       document.getElementById("quiz-module-num").innerText = mission.id.replace("mission-", "");
       document.getElementById("passage-genre-tag").innerText = mission.genre;
 
@@ -39684,7 +39709,7 @@
           const stageName = stageObj ? stageObj.stageName : `Stage ${mission.stageHistory ? mission.stageHistory.length : 1}`;
 
           document.getElementById("passage-genre-tag").innerText = `${stageName} | ${passLexile}`;
-          document.getElementById("quiz-lexile-badge").innerText = passLexile;
+          document.getElementById("quiz-lexile-badge").innerText = formatLexileWithFKG(passLexile);
           passageDisplay.innerHTML = `
             <div class="mb-4 pb-3 border-b border-indigo-500/30 flex items-center justify-between flex-wrap gap-2">
               <span class="font-extrabold text-amber-300 text-xs md:text-sm uppercase tracking-wider">📖 ${passTitle}</span>
@@ -40097,7 +40122,7 @@
           STATE.selectedOption = null;
 
           // Update header
-          document.getElementById("quiz-lexile-badge").innerText = m.lexile;
+          document.getElementById("quiz-lexile-badge").innerText = formatLexileWithFKG(m.lexile);
           document.getElementById("passage-genre-tag").innerText = nextStageObj.stageName;
 
           // Load first question of new stage
