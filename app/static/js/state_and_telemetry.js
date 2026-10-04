@@ -286,6 +286,49 @@
   }
 
   /**
+   * Deduplicates trialHistory by trialId/sessionId AND collapses accidental double-click
+   * twin submissions (identical workoutId, duration, and scores within 120 seconds).
+   */
+  function deduplicateTrialHistory(trials) {
+    if (!Array.isArray(trials)) return [];
+    const seenIds = new Set();
+    const result = [];
+    for (let i = 0; i < trials.length; i++) {
+      const t = trials[i];
+      if (!t || typeof t !== "object") continue;
+      const tid = t.trialId || t.sessionId || "";
+      if (tid && seenIds.has(tid)) {
+        continue;
+      }
+      const wId = t.workoutId || "";
+      const dur = Number(t.totalDurationSeconds || t.timeSpentSeconds || 0);
+      const fScore = Number(t.firstTryCorrectCount !== undefined ? t.firstTryCorrectCount : (t.firstTryScore || 0));
+      const rScore = Number(t.retryCorrectCount !== undefined ? t.retryCorrectCount : (t.finalCorrectCount || fScore));
+      const tsMs = Date.parse(t.timestampISO || t.completedAt || "") || 0;
+
+      const isTwin = result.some(function (prev) {
+        const prevWId = prev.workoutId || "";
+        const prevDur = Number(prev.totalDurationSeconds || prev.timeSpentSeconds || 0);
+        const prevFScore = Number(prev.firstTryCorrectCount !== undefined ? prev.firstTryCorrectCount : (prev.firstTryScore || 0));
+        const prevRScore = Number(prev.retryCorrectCount !== undefined ? prev.retryCorrectCount : (prev.finalCorrectCount || prevFScore));
+        const prevTsMs = Date.parse(prev.timestampISO || prev.completedAt || "") || 0;
+        if (wId && wId === prevWId && Math.abs(dur - prevDur) < 0.2 && fScore === prevFScore && rScore === prevRScore) {
+          if (tsMs > 0 && prevTsMs > 0 && Math.abs(tsMs - prevTsMs) <= 120000) {
+            return true;
+          }
+        }
+        return false;
+      });
+      if (isTwin) {
+        continue;
+      }
+      if (tid) seenIds.add(tid);
+      result.push(t);
+    }
+    return result;
+  }
+
+  /**
    * Core Recalculation Engine:
    * Anchors at Lucas's 5-test official DRC BEACON history (835L -> 840L -> 830L -> 800L -> 940L on 09/01/2026),
    * seeds all 5 domains with 4-item priors (78%, 72%, 68%, 62%, 64%), and blends in all recorded itemAttempts
@@ -320,6 +363,8 @@
 
     if (!Array.isArray(prog.trialHistory)) {
       prog.trialHistory = [];
+    } else {
+      prog.trialHistory = deduplicateTrialHistory(prog.trialHistory);
     }
 
     const domainAttempts = {
@@ -742,12 +787,19 @@
     let recWorkoutId = "w01_tier1_info";
     let recWorkoutTitle = "Targeted Precision Workout";
     if (workouts && workouts.length > 0) {
+      const targetLex = estimatedLexile + 25;
+      const sortByLexDist = function (a, b) {
+        const distA = Math.abs((Number(a.targetLexile) || 960) - targetLex);
+        const distB = Math.abs((Number(b.targetLexile) || 960) - targetLex);
+        if (distA !== distB) return distA - distB;
+        return (Number(a.workoutNumber) || 0) - (Number(b.workoutNumber) || 0);
+      };
       const uncompletedInDom = workouts.filter(function (w) {
         return w.focusDomain === topDId && !completedWorkoutIds.includes(w.workoutId);
-      });
+      }).sort(sortByLexDist);
       const anyInDom = workouts.filter(function (w) {
         return w.focusDomain === topDId;
-      });
+      }).sort(sortByLexDist);
       const chosenW = (uncompletedInDom[0] || anyInDom[0] || workouts[0]);
       if (chosenW) {
         recWorkoutId = chosenW.workoutId;
@@ -1102,6 +1154,12 @@
       };
 
       const used = new Set();
+      // Reserve Today's Hero Card workout so the 3 Adventure Cards below are always distinct quests
+      const todayW = this.getRecommendedTodayWorkout();
+      if (todayW && todayW.workoutId) {
+        used.add(todayW.workoutId);
+      }
+
       const storyW = pickBest(function (w) { return w.genre === "Literary"; }, used);
       if (storyW) used.add(storyW.workoutId);
 
@@ -1270,8 +1328,18 @@
       };
 
       if (!Array.isArray(prog.trialHistory)) prog.trialHistory = [];
-      prog.trialHistory.push(trialRecord);
-      prog.xp = (Number(prog.xp) || 450) + xpEarned;
+      const existingIdx = prog.trialHistory.findIndex(function (t) {
+        return t && (t.trialId === trialId || t.sessionId === trialId);
+      });
+      if (existingIdx !== -1) {
+        prog.trialHistory[existingIdx] = trialRecord;
+      } else {
+        const beforeLen = prog.trialHistory.length;
+        prog.trialHistory = deduplicateTrialHistory(prog.trialHistory.concat([trialRecord]));
+        if (prog.trialHistory.length > beforeLen) {
+          prog.xp = (Number(prog.xp) || 450) + xpEarned;
+        }
+      }
 
       const todayStr = nowIso.slice(0, 10);
       if (prog.lastPracticeDate !== todayStr) {
@@ -1325,10 +1393,17 @@
       if (DOMAIN_BASELINE_PRIORS[target]) {
         prog.queuedDomainId = target;
         const completed = Array.isArray(prog.completedWorkoutIds) ? prog.completedWorkoutIds : [];
+        const targetLex = (Number(prog.estimatedLexile) || 940) + 25;
+        const sortByLex = function (a, b) {
+          const distA = Math.abs((Number(a.targetLexile) || 960) - targetLex);
+          const distB = Math.abs((Number(b.targetLexile) || 960) - targetLex);
+          if (distA !== distB) return distA - distB;
+          return (Number(a.workoutNumber) || 0) - (Number(b.workoutNumber) || 0);
+        };
         const uncompleted = workouts.filter(function (w) {
           return w.focusDomain === target && !completed.includes(w.workoutId);
-        });
-        const anyInDomain = workouts.filter(function (w) { return w.focusDomain === target; });
+        }).sort(sortByLex);
+        const anyInDomain = workouts.filter(function (w) { return w.focusDomain === target; }).sort(sortByLex);
         chosenWorkout = uncompleted[0] || anyInDomain[0] || null;
         prog.queuedWorkoutId = chosenWorkout ? chosenWorkout.workoutId : null;
       } else {
@@ -1373,8 +1448,13 @@
       const studentId = window.V2State.studentId || "lucas";
       const prog = window.V2State.progress || buildDefaultProgress(studentId);
       if (Array.isArray(prog.trialHistory)) {
+        let removedOne = false;
         prog.trialHistory = prog.trialHistory.filter(function (t) {
-          return t.trialId !== trialId && t.sessionId !== trialId;
+          if (!removedOne && (t.trialId === trialId || t.sessionId === trialId)) {
+            removedOne = true;
+            return false;
+          }
+          return true;
         });
       }
 

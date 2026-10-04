@@ -335,6 +335,56 @@ def normalize_trap_code(raw_trap: Optional[str]) -> Optional[str]:
     return LEGACY_TRAP_MAP.get(raw_trap, raw_trap)
 
 
+def _parse_iso_epoch(ts_str: Optional[str]) -> float:
+    if not ts_str or not isinstance(ts_str, str):
+        return 0.0
+    try:
+        clean = ts_str.replace("Z", "+00:00")
+        return datetime.fromisoformat(clean).timestamp()
+    except Exception:
+        return 0.0
+
+
+def deduplicate_trial_history(trials: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Deduplicates trialHistory by trialId/sessionId AND collapses accidental double-click
+    twin submissions (identical workoutId, duration, and scores within 120 seconds).
+    """
+    if not isinstance(trials, list):
+        return []
+    seen_ids = set()
+    result: List[Dict[str, Any]] = []
+    for t in trials:
+        if not isinstance(t, dict):
+            continue
+        tid = str(t.get("trialId") or t.get("sessionId") or "")
+        if tid and tid in seen_ids:
+            continue
+        w_id = str(t.get("workoutId") or "")
+        dur = float(t.get("totalDurationSeconds") or t.get("timeSpentSeconds") or 0.0)
+        f_score = int(t.get("firstTryCorrectCount", t.get("firstTryScore", 0)) or 0)
+        r_score = int(t.get("retryCorrectCount", t.get("finalCorrectCount", f_score)) or f_score)
+        ts_sec = _parse_iso_epoch(t.get("timestampISO") or t.get("completedAt"))
+
+        is_twin = False
+        for prev in result:
+            prev_wid = str(prev.get("workoutId") or "")
+            prev_dur = float(prev.get("totalDurationSeconds") or prev.get("timeSpentSeconds") or 0.0)
+            prev_f = int(prev.get("firstTryCorrectCount", prev.get("firstTryScore", 0)) or 0)
+            prev_r = int(prev.get("retryCorrectCount", prev.get("finalCorrectCount", prev_f)) or prev_f)
+            prev_ts = _parse_iso_epoch(prev.get("timestampISO") or prev.get("completedAt"))
+            if w_id and w_id == prev_wid and abs(dur - prev_dur) < 0.2 and f_score == prev_f and r_score == prev_r:
+                if ts_sec > 0 and prev_ts > 0 and abs(ts_sec - prev_ts) <= 120.0:
+                    is_twin = True
+                    break
+        if is_twin:
+            continue
+        if tid:
+            seen_ids.add(tid)
+        result.append(t)
+    return result
+
+
 def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """
     Deterministic server-side recalculation of V2 progress state from official BEACON baseline
@@ -372,6 +422,8 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
     trial_history: List[Dict[str, Any]] = progress.get("trialHistory")
     if not isinstance(trial_history, list):
         trial_history = []
+    else:
+        trial_history = deduplicate_trial_history(trial_history)
     progress["trialHistory"] = trial_history
 
     # Domain attempts collection
@@ -762,12 +814,20 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
         "remediation": "Confuses the cause and effect or swaps the subject and receiver in a long sentence.",
     })
 
-    # Find recommended workout for topWeakness
+    # Find recommended workout for topWeakness calibrated to estimated_lexile + 25L
     rec_workout_id = "w01_tier1_info"
     rec_workout_title = "Targeted Precision Workout"
     if workouts:
-        uncompleted_in_dom = [w for w in workouts if w.get("focusDomain") == top_d_id and w.get("workoutId") not in completed_workout_ids]
-        any_in_dom = [w for w in workouts if w.get("focusDomain") == top_d_id]
+        target_lex = estimated_lexile + 25
+        sort_key = lambda w: (abs(int(w.get("targetLexile") or 960) - target_lex), int(w.get("workoutNumber") or 999))
+        uncompleted_in_dom = sorted(
+            [w for w in workouts if w.get("focusDomain") == top_d_id and w.get("workoutId") not in completed_workout_ids],
+            key=sort_key,
+        )
+        any_in_dom = sorted(
+            [w for w in workouts if w.get("focusDomain") == top_d_id],
+            key=sort_key,
+        )
         chosen_w = (uncompleted_in_dom or any_in_dom or workouts)[0]
         rec_workout_id = chosen_w.get("workoutId", rec_workout_id)
         rec_workout_title = chosen_w.get("title", rec_workout_title)
@@ -1083,16 +1143,18 @@ def record_v2_trial(payload: Dict[str, Any] = Body(...), student_id: Optional[st
     trial_obj["totalDurationSeconds"] = round(total_dur, 1)
     trial_obj["avgSecondsPerItem"] = round(total_dur / q_count, 1) if q_count > 0 else 0.0
 
-    # Replace if trialId already exists, else append
+    # Replace if trialId already exists, else append with twin-trial deduplication
     history: List[Dict[str, Any]] = current_prog.get("trialHistory", [])
     existing_idx = next((i for i, t in enumerate(history) if (t.get("trialId") == trial_id or t.get("sessionId") == trial_id)), None)
     if existing_idx is not None:
         history[existing_idx] = trial_obj
     else:
-        history.append(trial_obj)
-        # Award XP for new trial
-        xp_gain = int(trial_obj.get("xpEarned", (first_correct * 15) + max(0, retry_correct - first_correct) * 8 + 20))
-        current_prog["xp"] = int(current_prog.get("xp", 450)) + xp_gain
+        before_len = len(history)
+        history = deduplicate_trial_history(history + [trial_obj])
+        if len(history) > before_len:
+            # Award XP for new non-duplicate trial
+            xp_gain = int(trial_obj.get("xpEarned", (first_correct * 15) + max(0, retry_correct - first_correct) * 8 + 20))
+            current_prog["xp"] = int(current_prog.get("xp", 450)) + xp_gain
 
     current_prog["trialHistory"] = history
     current_prog["lastPracticeDate"] = trial_obj["timestampISO"][:10]
@@ -1114,7 +1176,13 @@ def delete_v2_trial(trial_id: str, student_id: str = "lucas"):
     clean_id = student_id.lower().replace(" ", "_")
     current_prog = load_v2_progress_store(clean_id)
     history: List[Dict[str, Any]] = current_prog.get("trialHistory", [])
-    new_history = [t for t in history if t.get("trialId") != trial_id and t.get("sessionId") != trial_id]
+    removed_one = False
+    new_history: List[Dict[str, Any]] = []
+    for t in history:
+        if not removed_one and (t.get("trialId") == trial_id or t.get("sessionId") == trial_id):
+            removed_one = True
+            continue
+        new_history.append(t)
     current_prog["trialHistory"] = new_history
     saved = save_v2_progress_store(clean_id, current_prog)
     return {"status": "deleted", "trialId": trial_id, "data": saved}
@@ -1139,8 +1207,16 @@ def queue_v2_workout(payload: Dict[str, Any] = Body(...), student_id: Optional[s
     elif explicit_did or target in DOMAIN_BASELINE_SEEDS:
         d_target = explicit_did or target
         current_prog["queuedDomainId"] = d_target
-        uncomp = [w for w in workouts if w.get("focusDomain") == d_target and w.get("workoutId") not in completed]
-        any_dom = [w for w in workouts if w.get("focusDomain") == d_target]
+        target_lex = int(current_prog.get("estimatedLexile") or 940) + 25
+        sort_key = lambda w: (abs(int(w.get("targetLexile") or 960) - target_lex), int(w.get("workoutNumber") or 999))
+        uncomp = sorted(
+            [w for w in workouts if w.get("focusDomain") == d_target and w.get("workoutId") not in completed],
+            key=sort_key,
+        )
+        any_dom = sorted(
+            [w for w in workouts if w.get("focusDomain") == d_target],
+            key=sort_key,
+        )
         chosen = (uncomp or any_dom or [None])[0]
         current_prog["queuedWorkoutId"] = chosen.get("workoutId") if chosen else None
     elif target:

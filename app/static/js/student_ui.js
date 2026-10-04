@@ -538,7 +538,11 @@
       const q1 = questions[0] || {};
       this.tools.surgery = !workout.isMath && q1.itemType === 'SENTENCE_SURGERY';
 
+      const studentId = (window.V2State && window.V2State.progress && window.V2State.progress.studentId) || (window.V2State && window.V2State.studentId) || 'lucas';
+
       this.session = {
+        sessionId: `trial_${now}_${studentId}`,
+        isSubmitting: false,
         workout: workout,
         startedAtMs: now,
         questionStartedAtMs: now,
@@ -1513,7 +1517,8 @@
      * and show Screen 3 (Celebration Card)
      */
     finishWorkout() {
-      if (!this.session) return;
+      if (!this.session || this.session.isSubmitting) return;
+      this.session.isSubmitting = true;
       this.recordActiveQuestionTime();
 
       const { workout, itemStates, startedAtMs } = this.session;
@@ -1545,7 +1550,7 @@
       const finalCorrectCount = itemStates.filter((s) => s.finalCorrect).length;
       const totalDurationSeconds = Math.max(
         6,
-        Math.round(itemStates.reduce((acc, s) => acc + (s.timeSpentSeconds || 12), 0)) ||
+        Math.round(itemStates.reduce((acc, s) => acc + (s.timeSpentSeconds || 12), 0) * 10) / 10 ||
           Math.round((Date.now() - startedAtMs) / 1000)
       );
 
@@ -1619,9 +1624,12 @@
         };
       });
 
+      const fixedTrialId = this.session.sessionId || `trial_${startedAtMs}_${studentId}`;
+      const completedIso = new Date().toISOString();
+
       const trialPayload = {
-        trialId: `trial_${Date.now()}_${studentId}`,
-        sessionId: `sess_${Date.now()}_${studentId}`,
+        trialId: fixedTrialId,
+        sessionId: fixedTrialId,
         studentId: studentId,
         subject: workout.isMath ? 'math' : 'reading',
         workoutId: workout.workoutId,
@@ -1636,8 +1644,8 @@
         fkgl: workout.fkgl || 6.2,
         focusDomain: workout.focusDomain || 'D1_KEY_IDEAS',
         focusStandard: workout.focusStandard || 'ELAGSE5RL1',
-        timestampISO: new Date().toISOString(),
-        completedAt: new Date().toISOString(),
+        timestampISO: completedIso,
+        completedAt: completedIso,
         questionsAttempted: totalQuestions,
         totalQuestions: totalQuestions,
         firstTryCorrectCount: firstTryCorrectCount,
@@ -1666,13 +1674,14 @@
       };
 
       this.lastTrialResult = trialPayload;
+      this.renderCelebration(trialPayload);
 
       if (window.V2Engine && typeof window.V2Engine.recordCompletedTrial === 'function') {
         Promise.resolve(window.V2Engine.recordCompletedTrial(trialPayload)).finally(() => {
-          this.renderCelebration(trialPayload);
+          if (this.currentScreen === 'celebration') {
+            this.renderCelebration(trialPayload);
+          }
         });
-      } else {
-        this.renderCelebration(trialPayload);
       }
     },
 
