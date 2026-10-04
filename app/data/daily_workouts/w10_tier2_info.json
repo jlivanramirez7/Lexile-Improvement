@@ -1,0 +1,309 @@
+{
+  "workoutId": "w10_tier2_info",
+  "workoutNumber": 10,
+  "title": "The Bird That Silenced a Bullet Train",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1015,
+  "fkgl": 6.49,
+  "genre": "Informational",
+  "subGenre": "Biology & Biomimicry",
+  "focusDomain": "D3_INTEGRATION",
+  "focusStandard": "ELAGSE5RI8",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Bird That Silenced a Bullet Train",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the 1990s, rail engineers in Japan faced a loud problem as their bullet trains grew faster. These sleek trains glided between cities at nearly two hundred miles per hour. On open tracks, the ride was smooth and quiet. However, Japan is a land of steep hills. Its tracks pass through hundreds of narrow concrete tunnels. Every time a speeding train plunged into a tunnel mouth, a thunderous boom echoed out the far end.\n\nThe noise was so loud that it woke families living a quarter mile away from the tracks. The trouble came from physics inside the tight tube. Unlike air in an open field, the air trapped in a tunnel cannot slip past a blunt train nose. Pushed ahead like a solid wall at two hundred miles per hour, this trapped air was violently compressed by the flat front of the speeding train. When that squeezed wave of air burst out the exit, it cracked like a clap of thunder.\n\nFortunately, the chief engineer on the project, Eiji Nakatsu, was also an avid birdwatcher. He saw that the train was moving fast from thin open air into dense tunnel air. He asked himself what creature in nature dives smoothly from a thin medium into a much denser one. The answer was the kingfisher, a small river bird. It plunges from the air into water to catch fish and barely makes a ripple.\n\nNakatsu and his team tested the bird's shape in a wind tunnel. They saw that the kingfisher's beak is long, wedge-shaped, and tapered from a wide base to a sharp tip. Instead of shoving water forward, the bill parts the water evenly. It flows smoothly around the bird's head. The team reshaped the train's steel nose into a fifty-foot wedge modeled on that beak. During the next test run, the pressure wave dispersed harmlessly along the sides of the train, and the tunnel boom vanished.\n\nThe team also studied the silent wings of the owl to quiet the metal frames that collect power from wires above. An owl's wing feathers have tiny serrated edges, like the teeth on a comb, which break up noisy air swirls into soft micro-currents. By adding similar tiny grooves to the train's roof struts, engineers cut wind noise even more. Plus, the new train used fifteen percent less power while traveling even faster than before.",
+    "wordCount": 394,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Pushed ahead like a solid wall at two hundred miles per hour, this trapped air was violently compressed by the flat front of the speeding train.",
+      "actorChunk": "the flat front of the speeding train",
+      "actionChunk": "violently compressed",
+      "receiverChunk": "this trapped air",
+      "distractorChunks": [
+        "Pushed ahead like a solid wall",
+        "at two hundred miles per hour"
+      ],
+      "activeRewrite": "The flat front of the speeding train violently compressed this trapped air."
+    },
+    "tier2Words": [
+      {
+        "word": "compressed",
+        "definition": "pressed or squeezed together into a smaller space",
+        "rootHint": "Latin 'com-' (together) + 'pressare' (to press tightly)",
+        "contextClue": "When that squeezed wave of air burst out the tunnel exit, it cracked like thunder."
+      },
+      {
+        "word": "tapered",
+        "definition": "gradually narrowed toward one end",
+        "rootHint": "Old English 'tapor' (a candle that narrows toward the wick)",
+        "contextClue": "The kingfisher's beak narrows from a wide base to a sharp tip."
+      },
+      {
+        "word": "dispersed",
+        "definition": "spread out or scattered over a wide area",
+        "rootHint": "Latin 'dis-' (widely apart) + 'spargere' (to scatter)",
+        "contextClue": "Instead of building into a solid wall, the pressure wave spread out harmlessly along the sides of the train."
+      },
+      {
+        "word": "serrated",
+        "definition": "having a jagged edge like the teeth of a saw or comb",
+        "rootHint": "Latin 'serra' (a saw)",
+        "contextClue": "An owl's wing feathers have tiny notched edges, like the teeth on a comb."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w10_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Pushed ahead like a solid wall at two hundred miles per hour, this trapped air was violently compressed by the flat front of the speeding train.\"\n\nBased on the structure of this sentence, what is performing the action of compressing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The flat front of the speeding train",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The trapped air inside the narrow tunnel",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "A solid brick wall built across the tunnel exit",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Families living a quarter mile away from the tracks",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Pushed ahead like a solid wall at two hundred miles per hour, this trapped air was violently compressed by the flat front of the speeding train.",
+      "childTip": "Find 'was violently compressed' and check the 'by' phrase right after it to spot what squeezed the air.",
+      "parentExplanation": "In this passive-voice Monster Sentence, 'this trapped air' is the receiver of the action. The true actor squeezing the air is found in the prepositional agent phrase at the end: 'by the flat front of the speeding train' (Option A)."
+    },
+    {
+      "questionId": "w10_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"During the next test run, the pressure wave dispersed harmlessly along the sides of the train, and the tunnel boom vanished.\"\n\nWhat does the word \"dispersed\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spread out evenly instead of building up in one spot",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Exploded with a louder boom at the mouth of the tunnel",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Froze into solid ice along the steel nose of the train",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Pushed the train backward to the previous city station",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "During the next test run, the pressure wave dispersed harmlessly along the sides of the train, and the tunnel boom vanished.",
+      "childTip": "Notice how the previous sentence says the beak parts water so it flows smoothly around the head.",
+      "parentExplanation": "In Paragraph 4, instead of packing into a compressed wall ahead of the train, the air parts around the wedge nose and spreads out ('dispersed harmlessly along the sides'), causing the boom to vanish (Option A)."
+    },
+    {
+      "questionId": "w10_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Why did engineer Eiji Nakatsu study the kingfisher in Paragraph 3 to solve the bullet train's tunnel problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both the diving bird and the train entering a tunnel must move smoothly from thin air into a much denser space.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Kingfishers often build their nests inside concrete train tunnels in the Japanese mountains.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The kingfisher is the only bird on Earth that can fly at two hundred miles per hour.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The bird's wing feathers have serrated edges that collect electricity from overhead wires.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "He asked himself what creature in nature dives smoothly from a thin medium into a much denser one.",
+      "childTip": "Click the sentence in Paragraph 3 where Nakatsu asks himself what creature dives from a thin medium into a denser one.",
+      "parentExplanation": "Paragraph 3 explains the analogy behind Nakatsu's insight: a train entering a tight tunnel shifts from thin open air to dense tunnel air, just as a kingfisher dives from thin air into dense water without making a splash (Option A)."
+    },
+    {
+      "questionId": "w10_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Which evidence from Paragraph 5 best supports the author's claim that copying bird designs improved more than just the train's noise level?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The redesigned bullet train used fifteen percent less electrical power while traveling even faster than before.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The redesigned bullet train needed fifteen percent more electrical power and traveled slower than the older model.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Eiji Nakatsu enjoyed watching river birds during his free time away from the rail yard.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Japanese tracks pass through hundreds of narrow concrete tunnels carved into steep mountains.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Plus, the new train used fifteen percent less power while traveling even faster than before.",
+      "childTip": "Look at the very last sentence of Paragraph 5 to see what extra benefits the new train gained besides being quiet.",
+      "parentExplanation": "Aligned to ELAGSE5RI8 (explaining how an author uses reasons and evidence to support particular points), the final sentence of Paragraph 5 proves that the biomimicry redesign also boosted energy efficiency ('fifteen percent less power') and speed (Option A)."
+    },
+    {
+      "questionId": "w10_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w10_q6",
+      "prompt": "PART A: How did the features copied from the kingfisher and the owl solve different parts of the bullet train's noise problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The kingfisher's wedge beak stopped air from piling up at the train's nose, while the owl's notched feather edges broke up wind swirls on the roof struts.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The kingfisher's feathers quieted the train's wheels, while the owl's curved beak helped the train see inside dark mountain tunnels.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Both birds taught engineers how to build wider concrete tunnels so air waves would never touch the sides of the train.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The kingfisher design made the train slower in tunnels, while the owl design turned off the overhead power wires completely.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "An owl's wing feathers have tiny serrated edges, like the teeth on a comb, which break up noisy air swirls into soft micro-currents.",
+      "childTip": "Check Paragraph 4 for what the kingfisher's beak fixed and Paragraph 5 for what the owl's feathers fixed.",
+      "parentExplanation": "Synthesizing Paragraphs 4 and 5 shows that the kingfisher's wedge-shaped beak parted tunnel air at the nose (Paragraph 4), whereas the owl's serrated feather edges inspired grooves on the roof struts to break up noisy wind swirls (Paragraph 5, Option A). Option B swaps the two birds' traits."
+    },
+    {
+      "questionId": "w10_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w10_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Every time a speeding train plunged into a tunnel mouth, a thunderous boom echoed out the far end.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Fortunately, the chief engineer on the project, Eiji Nakatsu, was also an avid birdwatcher.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"An owl's wing feathers have tiny serrated edges, like the teeth on a comb, which break up noisy air swirls into soft micro-currents.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"The noise was so loud that it woke families living a quarter mile away from the tracks.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "An owl's wing feathers have tiny serrated edges, like the teeth on a comb, which break up noisy air swirls into soft micro-currents.",
+      "childTip": "Select the quote that explains how the owl's serrated feather edges quieted the air swirls.",
+      "parentExplanation": "Option C directly proves the mechanism described in Part A by quoting how the owl's serrated edges break noisy air swirls into soft micro-currents."
+    }
+  ]
+}

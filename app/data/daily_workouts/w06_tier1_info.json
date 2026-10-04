@@ -1,0 +1,309 @@
+{
+  "workoutId": "w06_tier1_info",
+  "workoutNumber": 6,
+  "title": "Hoofbeats and Copper Wire",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 980,
+  "fkgl": 6.63,
+  "genre": "Informational",
+  "subGenre": "US History / Social Studies",
+  "focusDomain": "D3_INTEGRATION",
+  "focusStandard": "ELAGSE5RI8",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Hoofbeats and Copper Wire",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the spring of 1860, two thousand miles of wild land lay between Missouri and the West Coast. Wide plains, dry deserts, and high peaks blocked the way. Mail carried by stagecoach or steamship took almost a month to reach families on the Pacific coast. People in growing western towns felt cut off from news in the eastern states. To close that gap, a bold firm launched the Pony Express in April 1860. Its founders promised to carry letters across the frontier in just ten days.\n\nThe Pony Express worked like a giant relay race from Missouri to the west coast. Along the rough trail, workers built nearly two hundred stations spaced ten miles apart. Young riders, chosen for their light weight and courage in rough weather, galloped at top speed from one station to the next. Leather mail pouches, strapped tightly onto a special saddle frame called a mochila, were swiftly transferred by each rider to a fresh horse in under two minutes. The riders rode day and night through snow and heat. That non-stop relay cut mail time in half.\n\nDespite its fame, the Pony Express faced money troubles from the very start. Keeping hundreds of fast horses fed and guarded across remote trails cost far more money than postage stamps brought in. In addition, a single rider could carry only twenty pounds of letters written on thin tissue paper. Even at five dollars per letter, the firm lost thousands of dollars each month. A faster and cheaper tool was already marching across the plains right beside the horse trail.\n\nWhile horses galloped west, work crews planted tall wood poles. They strung iron telegraph wire from both coasts toward the middle. Instead of sending a horse across high peaks, the wire sent coded clicks of electric current at top speed. On October 24, 1861, two crews joined the last link of wire in Salt Lake City, Utah. For the first time in history, a message flashed from San Francisco to Washington, D.C., in a few minutes rather than ten days.\n\nTwo days after the transcontinental telegraph wire opened, the Pony Express announced that its work was finished. Although the horse relay lasted only eighteen months, it proved that the western trail could be crossed in every season. Yet no live horse could outrun an electric spark racing through metal wire. Together, the brave riders and the wire poles joined a vast land and started the age of instant news.",
+    "wordCount": 412,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Leather mail pouches, strapped tightly onto a special saddle frame called a mochila, were swiftly transferred by each rider to a fresh horse in under two minutes.",
+      "actorChunk": "each rider",
+      "actionChunk": "swiftly transferred",
+      "receiverChunk": "Leather mail pouches",
+      "distractorChunks": [
+        "strapped tightly onto a special saddle frame called a mochila",
+        "to a fresh horse in under two minutes"
+      ],
+      "activeRewrite": "Each rider swiftly transferred leather mail pouches to a fresh horse in under two minutes."
+    },
+    "tier2Words": [
+      {
+        "word": "frontier",
+        "definition": "the outer edge of settled land where few towns or roads exist",
+        "rootHint": "From Old French frontiere ('borderland')",
+        "contextClue": "Two thousand miles of open prairies, deserts, and mountains separated Missouri from California."
+      },
+      {
+        "word": "transferred",
+        "definition": "moved or passed from one place, person, or horse to another",
+        "rootHint": "Latin root ferre ('to carry') + prefix trans- ('across')",
+        "contextClue": "At each relay station, the rider moved the leather mail pouches from a tired horse to a fresh horse."
+      },
+      {
+        "word": "remote",
+        "definition": "far away from cities, towns, and easy supplies",
+        "rootHint": "Latin root movere ('to move') + prefix re- ('far back')",
+        "contextClue": "Relay stations were built far out across lonely deserts and mountains where feeding and guarding horses was expensive."
+      },
+      {
+        "word": "transcontinental",
+        "definition": "stretching all the way across a continent from one coast to the other",
+        "rootHint": "Prefix trans- ('across') + root continent ('mainland')",
+        "contextClue": "Work crews strung wire from both coasts and connected the final link in Utah so messages could cross the whole country."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w06_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Leather mail pouches, strapped tightly onto a special saddle frame called a mochila, were swiftly transferred by each rider to a fresh horse in under two minutes.\"\n\nWho or what performed the action of transferring the leather mail pouches?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A special saddle frame called a mochila transferred the rider onto a stagecoach.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Each rider transferred the leather mail pouches to a fresh horse.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A fresh horse transferred the rider into the leather mail pouches.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Telegraph crews transferred the mail pouches along an iron wire.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Leather mail pouches, strapped tightly onto a special saddle frame called a mochila, were swiftly transferred by each rider to a fresh horse in under two minutes.",
+      "childTip": "Skip the comma phrase about the mochila saddle! Look right after 'were swiftly transferred by' to find the actor.",
+      "parentExplanation": "In this 27-word passive sentence, 'Leather mail pouches' is the grammatical subject (receiver), separated from the passive verb by a participial phrase ('strapped tightly...'). 'Each rider' (after 'by') is the actor."
+    },
+    {
+      "questionId": "w06_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraphs 4 and 5:\n\n\"They strung iron telegraph wire from both coasts toward the middle... Two days after the transcontinental telegraph wire opened, the Pony Express announced that its work was finished.\"\n\nUsing the prefix trans- (meaning \"across\"), what does the word transcontinental mean in Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stretching across the entire continent from coast to coast",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Operating only inside a single small town in Missouri",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Written on thin tissue paper that weighs less than twenty pounds",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Buried deep beneath the ocean floor between America and Europe",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Two days after the transcontinental telegraph wire opened, the Pony Express announced that its work was finished.",
+      "childTip": "Combine 'trans-' (across) + 'continent' with the clue in Paragraph 4 about stringing wire 'from both coasts'.",
+      "parentExplanation": "Combines morphological analysis (trans- + continent) with the cross-sentence context clue in Paragraph 4 ('They strung iron telegraph wire from both coasts toward the middle')."
+    },
+    {
+      "questionId": "w06_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why did the Pony Express build relay stations every ten miles instead of having one horse run the whole trip?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Swapping to a fresh horse every ten miles allowed the mail to travel at top speed day and night without stopping.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Horses in the 1860s were only allowed to walk for two minutes each day.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Every relay station had a telegraph machine that printed out the letters on tissue paper.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Stagecoach drivers blocked the trail whenever a horse ran farther than ten miles.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Young riders, chosen for their light weight and courage in rough weather, galloped at top speed from one station to the next.",
+      "childTip": "Click the sentence in Paragraph 2 that explains how riders traveled from one station to the next.",
+      "parentExplanation": "Paragraph 2 explains that riders galloped at top speed from one station to the next and switched the mail pouch to a fresh horse in under two minutes so the mail could keep moving at full gallop day and night."
+    },
+    {
+      "questionId": "w06_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "In Paragraph 3, the author claims that the Pony Express \"faced money troubles from the very start.\" Which evidence from Paragraph 3 best supports this claim?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feeding and guarding hundreds of horses on remote trails cost far more than the postage money collected from twenty-pound mail loads.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Riders switched the leather mochila saddle from one horse to another in less than two minutes.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "Work crews connected the final link of iron telegraph wire in Salt Lake City on October 24, 1861.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Nobody in California ever wanted to read letters or news from the eastern states.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Keeping hundreds of fast horses fed and guarded across remote trails cost far more money than postage stamps brought in.",
+      "childTip": "Match the author's claim about money problems in Paragraph 3 to the reason why the company lost money.",
+      "parentExplanation": "Targets Focus Standard ELAGSE5RI8 (explaining how an author uses reasons and evidence to support particular points). Paragraph 3 supports the claim of financial trouble by citing high horse upkeep costs versus the tiny 20-pound mail capacity."
+    },
+    {
+      "questionId": "w06_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w06_q6",
+      "prompt": "Part A: Why did the Pony Express shut down just two days after the transcontinental telegraph was completed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The telegraph could send messages across the country in minutes using electricity, making a ten-day horse relay unnecessary.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "All two hundred relay stations were washed away by a single autumn flood in Missouri.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Steamships and stagecoaches suddenly became faster than both horses and electric wires.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The United States government passed a law banning horses from carrying leather mail pouches.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "For the first time in history, a message flashed from San Francisco to Washington, D.C., in a few minutes rather than ten days.",
+      "childTip": "Compare how long a Pony Express rider took (ten days) with how fast the new telegraph sent a message.",
+      "parentExplanation": "Across Paragraphs 4 and 5, the author shows that once electric telegraph signals could flash coast-to-coast in minutes, even the fastest ten-day horse relay could no longer compete."
+    },
+    {
+      "questionId": "w06_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w06_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Mail carried by stagecoach or steamship took almost a month to reach families on the Pacific coast.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"In addition, a single rider could carry only twenty pounds of letters written on thin tissue paper.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"For the first time in history, a message flashed from San Francisco to Washington, D.C., in a few minutes rather than ten days.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"Although the horse relay lasted only eighteen months, it proved that the western trail could be crossed in every season.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "For the first time in history, a message flashed from San Francisco to Washington, D.C., in a few minutes rather than ten days.",
+      "childTip": "Pick the quote in Paragraph 4 that compares 'a few minutes' on the telegraph to 'ten days' by horse.",
+      "parentExplanation": "Option C directly proves why the telegraph replaced the Pony Express by contrasting the telegraph's speed ('a few minutes') against the Pony Express ('ten days')."
+    }
+  ]
+}

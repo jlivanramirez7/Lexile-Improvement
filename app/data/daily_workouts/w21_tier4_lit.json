@@ -1,0 +1,304 @@
+{
+  "workoutId": "w21_tier4_lit",
+  "workoutNumber": 21,
+  "title": "The Fortress on File Seven",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1130,
+  "fkgl": 7.48,
+  "genre": "Literary",
+  "subGenre": "Contemporary Realistic Fiction",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL6",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "The Fortress on File Seven",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 431,
+    "paragraphCount": 5,
+    "text": "Only one board remained active in the state exhibition hall, and thirty students pressed against the velvet rope to watch. As captain of the middle school chess team, Priya had lasted forty moves against Grandmaster Volkov. Most players lost their queens before move twenty when facing his sharp opening traps. Yet Priya had steered the match into a quiet endgame. She held a full rook and two pawns against Volkov's lone bishop and three locked pawns.\n\nTo her teammates whispering behind the rope, the scoreboard victory looked almost certain because a rook outranked a bishop. Across the silent gym, the wall of black pawns built by the visiting master was studied by Priya while her own clock ticked down. Volkov had arranged his dark pawns on light squares while his bishop guarded every dark square between them. It was a classic chess fortress, a rigid barrier where no white piece could cross the board without being captured. If fifty moves passed without a pawn push or a capture, the match would end in a dull draw.\n\nPriya's younger brother Dev tugged his sleeve near the front row, silently urging her to slide her rook back and guard her extra pawn. Most club players were reluctant to risk a powerful major piece when they already led in points. However, Priya saw that keeping her rook safe on the back rank would only help Volkov hold his stone wall forever. Point totals meant nothing if her pieces lacked an open lane to reach the black king.\n\nHer eyes traced a hidden path through the center of the board that required a bold exchange. She could drive her white rook straight into the middle of Volkov's pawn chain. Then the grandmaster would be forced to take it with his bishop. Giving up that rook would forfeit her point lead in a single heartbeat, making the crowd gasp in shock. Yet that capture would pull Volkov's bishop off the dark diagonal. At the same time, it would crack open a narrow gate for her king.\n\nWith four minutes left on her digital clock, Priya lifted the heavy wooden rook and set it down squarely in the jaws of the black bishop. A sharp murmur rippled through her teammates, who thought their captain had just blundered under time pressure. Across the table, however, Grandmaster Volkov stopped spinning his pen and looked up with a slow, genuine smile. Before touching his bishop, he saw that Priya's decisive sacrifice had left his fortress without a lock, allowing her two united pawns to march straight to the eighth rank.",
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Across the silent gym, the wall of black pawns built by the visiting master was studied by Priya while her own clock ticked down.",
+      "actorChunk": "Priya",
+      "actionChunk": "was studied",
+      "receiverChunk": "the wall of black pawns",
+      "distractorChunks": [
+        "Across the silent gym",
+        "built by the visiting master",
+        "while her own clock ticked down"
+      ],
+      "activeRewrite": "Across the silent gym, Priya studied the wall of black pawns built by the visiting master while her own clock ticked down."
+    },
+    "tier2Words": [
+      {
+        "word": "rigid",
+        "definition": "Stiff, unyielding, and unable to be bent or shifted easily",
+        "rootHint": "From Latin 'rigidus' meaning stiff or inflexible",
+        "contextClue": "Volkov's chess fortress formed a tight barrier where no white piece could cross the board."
+      },
+      {
+        "word": "reluctant",
+        "definition": "Hesitant and unwilling to do something risky",
+        "rootHint": "From Latin 'reluctari' meaning to struggle against",
+        "contextClue": "Most club players hesitated to risk a powerful major piece when they were already ahead in points."
+      },
+      {
+        "word": "forfeit",
+        "definition": "To give up or lose something as part of a choice or rule",
+        "rootHint": "From Old French 'forfait' meaning to surrender or lose",
+        "contextClue": "Giving up her white rook meant surrendering her point lead in a single heartbeat."
+      },
+      {
+        "word": "decisive",
+        "definition": "Settling an issue clearly and producing a definite result",
+        "rootHint": "From Latin 'decidere' meaning to cut off or determine",
+        "contextClue": "Priya's bold sacrifice broke the fortress lock and allowed her pawns to march to victory."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w21_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Across the silent gym, the wall of black pawns built by the visiting master was studied by Priya while her own clock ticked down.\"\n\nWho performed the action of studying the wall of black pawns in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The visiting master who built the wall of black pawns",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Priya, who examined the board as her clock ticked down",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The thirty students watching across the silent gym",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The digital clock that ticked down beside the board",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Across the silent gym, the wall of black pawns built by the visiting master was studied by Priya while her own clock ticked down.",
+      "childTip": "Don't be fooled by 'built by the visiting master'—look at the main verb 'was studied by Priya.'",
+      "parentExplanation": "This sentence contains two 'by' phrases: a participial modifier ('built by the visiting master') and the main passive verb ('was studied by Priya'). Option A is a syntactic reversal trap; Priya is the one who studied the wall of pawns."
+    },
+    {
+      "questionId": "w21_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Most club players were reluctant to risk a powerful major piece when they already led in points.\"\n\nWhat does the word \"reluctant\" most nearly mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eager and excited",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Hesitant and unwilling",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Forbidden by tournament rules",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Trained by a grandmaster",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Most club players were reluctant to risk a powerful major piece when they already led in points.",
+      "childTip": "Notice how Dev wanted Priya to slide her rook back to safety—most players hesitate to risk a strong piece.",
+      "parentExplanation": "In Paragraph 3, Dev urges Priya to guard her extra pawn rather than take a risk. 'Reluctant' means hesitant or unwilling to do something risky."
+    },
+    {
+      "questionId": "w21_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why was Priya's extra rook not enough to guarantee a win if she played safely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grandmaster Volkov still had two queens hidden on the back rank of the board.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Volkov's pawns and bishop guarded every square across the board, threatening a fifty-move draw if no piece broke through.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Tournament rules state that a lone bishop is worth more points than a rook and two pawns.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Priya had already run completely out of time on her digital clock before move forty.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "It was a classic chess fortress, a rigid barrier where no white piece could cross the board without being captured.",
+      "childTip": "Click the sentence in Paragraph 2 that defines the 'chess fortress' blocking every white piece from crossing.",
+      "parentExplanation": "Paragraph 2 explains that Volkov's pawns on light squares and bishop guarding dark squares created a 'classic chess fortress' where no white piece could cross without being captured, which would force a draw."
+    },
+    {
+      "questionId": "w21_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2D_POV_PURPOSE",
+      "standard": "ELAGSE5RL6",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does telling the story from a third-person point of view focused on Priya's thoughts affect how the reader experiences Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It keeps the reason for Priya's move a mystery until her brother Dev explains it to the crowd.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "It allows the reader to know that Priya's rook move is a winning trap even while her teammates think she made a mistake.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It shows the reader every match Grandmaster Volkov played earlier in his career.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "It proves that Priya's teammates did not care whether their school team won or drew the match.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "A sharp murmur rippled through her teammates, who thought their captain had just blundered under time pressure.",
+      "childTip": "Compare what the crowd thinks in Paragraph 5 with what you already learned inside Priya's mind in Paragraph 4.",
+      "parentExplanation": "Because Paragraph 4 shares Priya's internal calculation, the reader knows the rook move is an intentional breakthrough sacrifice, creating dramatic contrast in Paragraph 5 when her teammates think she blundered."
+    },
+    {
+      "questionId": "w21_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w21_q6",
+      "prompt": "Part A: Why does Grandmaster Volkov smile when Priya places her rook in front of his bishop?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He is relieved that Priya has gifted him an easy victory by losing her strongest piece.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "He recognizes that Priya found the one bold sacrifice capable of unlocking his defensive barrier.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "He notices that Priya's four-minute clock has just expired before she pressed the button.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "He is amused by the noisy advice Dev is shouting from behind the velvet rope.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Before touching his bishop, he saw that Priya's decisive sacrifice had left his fortress without a lock, allowing her two united pawns to march straight to the eighth rank.",
+      "childTip": "Read the final sentence of Paragraph 5 to see what Volkov immediately realized before touching his bishop.",
+      "parentExplanation": "Unlike the spectators who thought Priya blundered, Grandmaster Volkov smiles in appreciation because he immediately sees that her rook sacrifice destroys his fortress lock and lets her pawns march to the eighth rank."
+    },
+    {
+      "questionId": "w21_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w21_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Most players lost their queens before move twenty when facing his sharp opening traps.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"To her teammates whispering behind the rope, the scoreboard victory looked almost certain because a rook outranked a bishop.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Priya's younger brother Dev tugged his sleeve near the front row, silently urging her to slide her rook back and guard her extra pawn.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Before touching his bishop, he saw that Priya's decisive sacrifice had left his fortress without a lock, allowing her two united pawns to march straight to the eighth rank.\"",
+          "isCorrect": true
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Before touching his bishop, he saw that Priya's decisive sacrifice had left his fortress without a lock, allowing her two united pawns to march straight to the eighth rank.",
+      "childTip": "Pick the quote from Paragraph 5 that shows what Volkov saw right after Priya moved her rook.",
+      "parentExplanation": "Option D directly proves Part A by showing Volkov's realization that Priya's sacrifice unlocked his fortress and cleared the path for her two united pawns."
+    }
+  ]
+}

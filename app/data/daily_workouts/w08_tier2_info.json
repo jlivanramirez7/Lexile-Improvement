@@ -1,0 +1,309 @@
+{
+  "workoutId": "w08_tier2_info",
+  "workoutNumber": 8,
+  "title": "Oases of Fire in the Dark Sea",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 995,
+  "fkgl": 6.34,
+  "genre": "Informational",
+  "subGenre": "Earth & Space Science",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RI2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Oases of Fire in the Dark Sea",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Two miles beneath the ocean waves, the last trace of sunlight fades into pitch blackness. Down on the sea floor, the water hovers near freezing. The weight of the sea above crushes almost everything in its path. For decades, scientists assumed this deep zone was a barren desert where food was too scarce to support large groups of animals. Without sun rays to power green plants, only a thin rain of dead scraps from the surface could feed the bottom. Yet in 1977, a sub diving near the Galapagos Islands found a rich world around tall rock chimneys.\n\nThese chimneys, known as hydrothermal vents, form along cracks where great plates of Earth's crust pull apart. Cold seawater continues to seep down through tiny fractures in the ocean floor. There it nears hot melted rock. Heated past the boiling point and loaded with dissolved minerals, the dark plumes of water are blasted upward into the icy sea by immense underground pressure. When this scalding fluid hits the frigid ocean, the minerals cool fast and harden into towers called black smokers. Some of these jagged rock spires rise as high as a ten-story building.\n\nTo a human, the water pouring from a black smoker would be a deadly poison full of sulfur gas. However, billions of tiny bacteria live inside the warm clouds. They coat the rocks like thick white mats. Because no sunlight reaches the seabed, these hardy microbes perform a process called chemosynthesis instead of using light. They capture energy from the sulfur in the vent water and use it to build sugars. In this dark realm, tiny bacteria replace green plants as the base of the food web.\n\nBecause the microbes make so much food, strange and vivid creatures thrive right beside the steaming chimneys. Giant tube worms as tall as a person anchor themselves to the rock walls. These worms have no mouth and no stomach at all. Instead, they pack their red plumes and inner tissues with billions of sulfur-eating bacteria that make food for them from the inside. Pale blind shrimp, ghost-white crabs, and pink vent fish weave between the tubes to graze on the mats.\n\nA single vent field does not last forever on the shifting ocean floor. If an earthquake seals the rock cracks below, the hot mineral flow stops. The chimney grows cold within months. Even so, young tube worm larvae drift on deep currents until they sense the chemical trail of a new vent miles away. These hidden oases prove that life does not always need the sun to flourish on Earth.",
+    "wordCount": 430,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Heated past the boiling point and loaded with dissolved minerals, the dark plumes of water are blasted upward into the icy sea by immense underground pressure.",
+      "actorChunk": "immense underground pressure",
+      "actionChunk": "blasts upward",
+      "receiverChunk": "the dark plumes of water",
+      "distractorChunks": [
+        "Heated past the boiling point",
+        "loaded with dissolved minerals"
+      ],
+      "activeRewrite": "Immense underground pressure blasts the dark plumes of water upward into the icy sea."
+    },
+    "tier2Words": [
+      {
+        "word": "scarce",
+        "definition": "insufficient for the demand; very hard to find in large amounts",
+        "rootHint": "Old French 'eschars' (restricted or limited in supply)",
+        "contextClue": "Scientists assumed the deep sea was a barren desert where only a thin rain of scraps fell."
+      },
+      {
+        "word": "seep",
+        "definition": "to flow or leak slowly through small openings or porous material",
+        "rootHint": "Old English 'sipian' (to soak or trickle slowly)",
+        "contextClue": "Cold seawater trickles down through tiny fractures in the ocean floor."
+      },
+      {
+        "word": "immense",
+        "definition": "extremely large or great in scale or force",
+        "rootHint": "Latin 'in-' (not) + 'mensus' (measured; beyond measure)",
+        "contextClue": "Underground pressure is strong enough to blast scalding water up into the icy sea."
+      },
+      {
+        "word": "thrive",
+        "definition": "to grow, develop, and prosper vigorously",
+        "rootHint": "Old Norse 'thrifask' (to grasp for oneself, flourish)",
+        "contextClue": "Strange and vivid creatures grow in large numbers right beside the steaming chimneys because microbes produce so much food."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w08_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Heated past the boiling point and loaded with dissolved minerals, the dark plumes of water are blasted upward into the icy sea by immense underground pressure.\"\n\nIn this sentence, what force actually pushes the dark plumes of water upward?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The icy sea pushing down on the dissolved minerals",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Immense underground pressure beneath the ocean floor",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The dissolved minerals floating toward the sunlight",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Propellers from the research submarine near the Galapagos Islands",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Heated past the boiling point and loaded with dissolved minerals, the dark plumes of water are blasted upward into the icy sea by immense underground pressure.",
+      "childTip": "Skip the opening description and look right after 'are blasted upward into the icy sea by' to find the real actor.",
+      "parentExplanation": "This sentence begins with two participial phrases ('Heated past...' and 'loaded with...') followed by a passive verb ('are blasted upward'). The true grammatical agent performing the action appears after the preposition 'by': 'immense underground pressure' (Option B)."
+    },
+    {
+      "questionId": "w08_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 1:\n\n\"For decades, scientists assumed this deep zone was a barren desert where food was too scarce to support large groups of animals.\"\n\nWhat does the word \"scarce\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hard to find and in very short supply",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Frightening to the animals swimming nearby",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Heated to a dangerous temperature by melted rock",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Completely impossible for any living cell to digest",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "For decades, scientists assumed this deep zone was a barren desert where food was too scarce to support large groups of animals.",
+      "childTip": "Use the clue 'barren desert' in the same sentence to figure out how much food scientists expected to find.",
+      "parentExplanation": "The context clues 'barren desert' and 'only a thin rain of dead scraps' in Paragraph 1 confirm that 'scarce' means in very short supply (Option A). Option B confuses 'scarce' with 'scary'."
+    },
+    {
+      "questionId": "w08_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, how are giant tube worms able to survive near hydrothermal vents without a mouth or a stomach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They rely on billions of bacteria living inside their bodies to turn sulfur chemicals into food.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "They absorb warm sunlight through their red plumes and turn it into sugar.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "They use their sharp outer tubes to trap blind shrimp and ghost-white crabs.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "They swim up to the ocean surface each night to feed on green plants.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Instead, they pack their red plumes and inner tissues with billions of sulfur-eating bacteria that make food for them from the inside.",
+      "childTip": "Click the sentence in Paragraph 4 that begins with 'Instead' to see how tube worms get their food.",
+      "parentExplanation": "Paragraph 4 explicitly explains the symbiotic relationship: because tube worms lack a mouth and stomach, 'they pack their red plumes and inner tissues with billions of sulfur-eating bacteria that make food for them from the inside' (Option A)."
+    },
+    {
+      "questionId": "w08_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How is the information in Paragraph 2 mainly organized?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By tracing the step-by-step cause-and-effect process that creates black smoker chimneys on the seabed",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By comparing the size of the Galapagos Islands to the size of a ten-story building",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "By listing ways that human divers can stop underground pressure from cracking the ocean floor",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "By arguing that cold seawater is more dangerous to submarines than boiling mineral plumes",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "When this scalding fluid hits the frigid ocean, the minerals cool fast and harden into towers called black smokers.",
+      "childTip": "Follow the chain of events in Paragraph 2: cold water seeps down, heats up, blasts out, and hardens into chimneys.",
+      "parentExplanation": "Paragraph 2 uses a sequential cause-and-effect structure: seawater seeps into crust fractures, gets superheated and loaded with minerals, blasts upward into cold water, and cools into mineral towers called black smokers (Option A)."
+    },
+    {
+      "questionId": "w08_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w08_q6",
+      "prompt": "PART A: Which statement best expresses the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deep-sea hydrothermal vents support thriving communities of life in total darkness because bacteria turn mineral chemicals into food.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Black smoker chimneys often collapse after a few months when earthquakes seal the cracks in the ocean floor.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "Every animal in the deep ocean must grow red plumes and lose its stomach in order to survive the freezing water.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Research submarines discovered the Galapagos Islands in 1977 while searching for sunken ships on the seabed.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because no sunlight reaches the seabed, these hardy microbes perform a process called chemosynthesis instead of using light.",
+      "childTip": "Choose the big idea that connects the hot mineral vents, the sulfur-eating bacteria, and the animals across the whole passage.",
+      "parentExplanation": "Aligned to ELAGSE5RI2, the overarching central idea spanning Paragraphs 1–5 is that hydrothermal vents sustain rich ecosystems without sunlight because chemosynthetic bacteria convert sulfur chemicals into food at the base of the food web (Option A). Option B is a Tiny Detail Trap from Paragraph 5."
+    },
+    {
+      "questionId": "w08_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w08_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Two miles beneath the ocean waves, the last trace of sunlight fades into pitch blackness.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Some of these jagged rock spires rise as high as a ten-story building.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Because no sunlight reaches the seabed, these hardy microbes perform a process called chemosynthesis instead of using light.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"A single vent field does not last forever on the shifting ocean floor.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because no sunlight reaches the seabed, these hardy microbes perform a process called chemosynthesis instead of using light.",
+      "childTip": "Find the quote that explains how microbes make food in the dark without using light.",
+      "parentExplanation": "Option C directly proves the central claim in Part A by explaining the mechanism—chemosynthesis by hardy microbes in the absence of sunlight—that powers the entire hydrothermal vent ecosystem."
+    }
+  ]
+}

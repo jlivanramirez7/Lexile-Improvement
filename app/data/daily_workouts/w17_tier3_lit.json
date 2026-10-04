@@ -1,0 +1,333 @@
+{
+  "workoutId": "w17_tier3_lit",
+  "workoutNumber": 17,
+  "title": "The Unpainted Archway",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1080,
+  "fkgl": 6.97,
+  "genre": "Literary",
+  "subGenre": "Literary Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Unpainted Archway",
+    "author": "BEACON Assessment Lab",
+    "text": "High on the wood scaffold outside the brick hall, young Mateo held his soft brush. He dipped the tip into a jar of warm gold paint. Forty years ago, the town's famous muralist, Elena Soto, had painted a grand fresco across three walls of the courtyard. The artwork showed the history of the valley, from early cedar canoes to busy train depots. Over the decades, summer sun and winter rain had dulled the once vibrant colors beneath a layer of gray street dust. Now Mateo was helping the town art guild restore the mural before the autumn festival.\n\nMateo worked slowly along the west wall so he would not scratch the dry lime plaster. The faded cobalt river, bordered by rows of brick mill houses, was gently cleaned by Mateo with a damp sponge and warm chalk water. As the gray soot washed away, rich blue waves and bright copper roofs gleamed in the morning light once more. Yet whenever Mateo glanced toward the fourth wall on the east side of the arch, a puzzle bothered him. That wide plaster panel was completely blank, save for a painted stone archway at the very edge.\n\nAt first, Mateo assumed that Elena Soto had run out of grant money or fallen ill before she could finish the east panel. During his lunch break, he opened a crate of Soto's old sketchbooks stored in the library basement. To his surprise, the books held finished charcoal plans for the first three walls. Yet not a single page showed a sketch for the fourth. Instead, taped inside the back cover, he found a short letter Soto had written to the town council in 1984.\n\nSquinting in the dim basement light, Mateo read her neat script closely to discern her true purpose. In the letter, Soto explained that the blank east wall was a deliberate choice, not an accident. She wrote that a neighborhood's story never ends with its past, so she had painted an open stone archway leading onto bare white plaster. She wanted future young artists of the valley to paint their own chapter when their time came.\n\nClimbing back up the scaffold that afternoon, Mateo looked at the empty white wall with fresh eyes. He realized that restoring the old fresco was only half of the task Elena Soto had left behind. He called down to the guild leader below. Then he held up the 1984 letter and pointed to the bare arch. The blank plaster was not a flaw to hide, but a living legacy waiting for his generation's brush.",
+    "wordCount": 428,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The faded cobalt river, bordered by rows of brick mill houses, was gently cleaned by Mateo with a damp sponge and warm chalk water.",
+      "actorChunk": "by Mateo",
+      "actionChunk": "was gently cleaned",
+      "receiverChunk": "The faded cobalt river",
+      "distractorChunks": [
+        "bordered by rows of brick mill houses",
+        "with a damp sponge and warm chalk water"
+      ],
+      "activeRewrite": "Mateo gently cleaned the faded cobalt river with a damp sponge and warm chalk water."
+    },
+    "tier2Words": [
+      {
+        "word": "vibrant",
+        "definition": "Bright, rich, and full of lively energy or color",
+        "rootHint": "vibr- (Latin root meaning 'to shake' or 'pulse with life')",
+        "contextClue": "Contrasted with how sun and rain 'had dulled' the colors beneath gray street dust."
+      },
+      {
+        "word": "discern",
+        "definition": "To recognize, make out, or understand something clearly",
+        "rootHint": "dis- + cern (Latin root meaning 'to sift' or 'separate')",
+        "contextClue": "Mateo 'read her neat script closely to discern her true purpose.'"
+      },
+      {
+        "word": "deliberate",
+        "definition": "Done intentionally and on purpose after careful thought",
+        "rootHint": "de- + libr (Latin root meaning 'to weigh in a balance')",
+        "contextClue": "Directly contrasted with 'not an accident' in the same sentence."
+      },
+      {
+        "word": "legacy",
+        "definition": "Something meaningful handed down from an earlier generation",
+        "rootHint": "leg- (Latin root meaning 'to send as a gift or bequest')",
+        "contextClue": "Soto left the open archway 'waiting for his generation's brush.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w17_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The faded cobalt river, bordered by rows of brick mill houses, was gently cleaned by Mateo with a damp sponge and warm chalk water.\"\n\nWho or what performed the action of cleaning in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The rows of brick mill houses along the border",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the first 'by' phrase inside the participial modifier ('bordered by rows of brick mill houses') with the actor of the main verb."
+        },
+        {
+          "id": "B",
+          "text": "Mateo, using a damp sponge and warm chalk water",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies 'by Mateo' as the agent performing the passive verb 'was gently cleaned'."
+        },
+        {
+          "id": "C",
+          "text": "The faded cobalt river painted on the west wall",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the cleaning ('The faded cobalt river') with the actor."
+        },
+        {
+          "id": "D",
+          "text": "Elena Soto, the town's famous muralist from forty years ago",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Imports Elena Soto from Paragraph 1 even though she is not mentioned in this sentence."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The faded cobalt river, bordered by rows of brick mill houses, was gently cleaned by Mateo with a damp sponge and warm chalk water.",
+      "childTip": "Don't get fooled by 'bordered by rows of brick mill houses'! Look for who comes after 'was gently cleaned by.'",
+      "parentExplanation": "Sentence Surgery item (ELAGSE5L1). Like many 1080L sentences, this sentence contains a distractor 'by' phrase inside an embedded modifier ('bordered by rows of brick mill houses') before the main passive verb ('was gently cleaned by Mateo')."
+    },
+    {
+      "questionId": "w17_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5L4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"In the letter, Soto explained that the blank east wall was a deliberate choice, not an accident.\"\n\nWhat does the word deliberate most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careless and forgotten during a busy project",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Selects an antonym that contradicts the contrast clue 'not an accident.'"
+        },
+        {
+          "id": "B",
+          "text": "Planned on purpose with a clear goal in mind",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the direct contrast clue ('not an accident') and Paragraph 4's explanation of her goal for future artists."
+        },
+        {
+          "id": "C",
+          "text": "Covered in thick layers of gray street dust",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows descriptive language from Paragraph 1 unrelated to the meaning of 'deliberate.'"
+        },
+        {
+          "id": "D",
+          "text": "Too expensive for the town council to afford",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Repeats Mateo's mistaken first guess from Paragraph 3 ('run out of grant money') which the letter disproves."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "In the letter, Soto explained that the blank east wall was a deliberate choice, not an accident.",
+      "childTip": "Look right after the comma: the sentence says 'not an accident.' What is the opposite of an accident?",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). The author provides an explicit contrast clue ('a deliberate choice, not an accident'), proving that 'deliberate' means intentional or planned on purpose."
+    },
+    {
+      "questionId": "w17_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraphs 3 and 4, how did Mateo's understanding of the blank east wall change after he searched the library basement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He realized that the town council had painted white plaster over Elena Soto's original charcoal drawings.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Misinterprets the text; Soto never drew a plan for the fourth wall and left it bare herself."
+        },
+        {
+          "id": "B",
+          "text": "He discovered that Elena Soto had intentionally left the wall blank as an invitation for future young artists to paint their own chapter.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately contrasts his initial assumption (illness or lack of money) with the truth revealed in the 1984 letter."
+        },
+        {
+          "id": "C",
+          "text": "He learned that the lime plaster on the east wall was too cracked and damp to hold gold or cobalt paint.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents a structural flaw in the east wall plaster not supported by the passage."
+        },
+        {
+          "id": "D",
+          "text": "He decided that no artist should ever touch the east wall so it would stay completely white forever.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme words ('no artist should ever', 'forever') that reverse Soto's wish for young artists to paint it."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "She wanted future young artists of the valley to paint their own chapter when their time came.",
+      "childTip": "First click the sentence in Paragraph 4 that explains what Elena Soto wanted future young artists to do.",
+      "parentExplanation": "Click-to-Prove Inference item (ELAGSE5RL1). In Paragraph 3, Mateo initially assumes Soto ran out of funds or fell ill; in Paragraph 4, her 1984 letter reveals she left the wall open so future young artists could add their own chapter."
+    },
+    {
+      "questionId": "w17_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Why does the author include the symbol of the 'painted stone archway at the very edge' of the blank wall in Paragraphs 2 and 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To show that Elena Soto only knew how to paint stone buildings and could not paint trees or rivers",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses 'only' and contradicts Paragraphs 1 and 2, which describe her painting cedar canoes and a cobalt river."
+        },
+        {
+          "id": "B",
+          "text": "To visually connect the valley's past on the first three walls with an open doorway leading into the community's future",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Captures the symbolic structural role of the archway as a bridge from the historical scenes into the unfinished future."
+        },
+        {
+          "id": "C",
+          "text": "To mark the exact spot where builders planned to knock down the brick library wall to add a new door",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Takes the painted archway literally as a construction blueprint rather than part of the mural."
+        },
+        {
+          "id": "D",
+          "text": "To prove that the art guild had already finished painting the fourth wall before Mateo arrived",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts the passage, which states that the fourth wall was completely blank except for the archway edge."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "She wrote that a neighborhood's story never ends with its past, so she had painted an open stone archway leading onto bare white plaster.",
+      "childTip": "Read Paragraph 4 to see why Soto painted an open archway leading onto the bare plaster.",
+      "parentExplanation": "Craft & Structure item (ELAGSE5RL5). The painted stone archway functions both as the mystery hook in Paragraph 2 and the thematic bridge in Paragraph 4 connecting the valley's past to its unfinished future."
+    },
+    {
+      "questionId": "w17_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w17_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Honoring a community's heritage means not only preserving its past, but also adding new chapters for the future.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes Mateo's restoration of the old fresco (preserving the past) with his realization that his generation is meant to paint the fourth wall (adding the future)."
+        },
+        {
+          "id": "B",
+          "text": "Warm chalk water and soft sponges are the only safe supplies for cleaning forty-year-old outdoor murals.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on a minor restoration technique from Paragraph 2 and adds the extreme word 'only.'"
+        },
+        {
+          "id": "C",
+          "text": "Old sketchbooks should always be locked away in basements so young artists do not copy earlier styles.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts the story, where reading the old sketchbook letter inspires Mateo and reveals Soto's invitation."
+        },
+        {
+          "id": "D",
+          "text": "Artists who start large public projects rarely finish their work on time for autumn festivals.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Misinterprets the deliberate blank wall as procrastination."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "The blank plaster was not a flaw to hide, but a living legacy waiting for his generation's brush.",
+      "childTip": "Combine what Mateo is doing on the first three walls with what he realizes about the fourth wall in Paragraph 5.",
+      "parentExplanation": "Focus standard ELAGSE5RL2 (Theme). The passage builds to the insight in Paragraphs 4 and 5 that a community's story is an ongoing legacy: honoring the past includes contributing the next chapter."
+    },
+    {
+      "questionId": "w17_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w17_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Over the decades, summer sun and winter rain had dulled the once vibrant colors beneath a layer of gray street dust.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Explains why the mural needed cleaning in Paragraph 1, but does not capture the theme of adding new chapters."
+        },
+        {
+          "id": "B",
+          "text": "\"At first, Mateo assumed that Elena Soto had run out of grant money or fallen ill before she could finish the east panel.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Quotes Mateo's initial mistaken assumption before he discovers the true meaning of the blank wall."
+        },
+        {
+          "id": "C",
+          "text": "\"During his lunch break, he opened a crate of Soto's old sketchbooks stored in the library basement.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes a plot action in Paragraph 3 without stating the thematic message."
+        },
+        {
+          "id": "D",
+          "text": "\"The blank plaster was not a flaw to hide, but a living legacy waiting for his generation's brush.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the theme in Part A by framing the unfinished wall as a living legacy for the new generation to continue."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "The blank plaster was not a flaw to hide, but a living legacy waiting for his generation's brush.",
+      "childTip": "Pick the final sentence of the story that explains what the blank plaster truly meant for Mateo's generation.",
+      "parentExplanation": "Part B requires selecting the verbatim quote in Paragraph 5 that directly proves the theme of continuing a community's artistic legacy."
+    }
+  ]
+}

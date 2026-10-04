@@ -1,0 +1,304 @@
+{
+  "workoutId": "w23_tier0_lit",
+  "workoutNumber": 23,
+  "title": "Measure Twice, Cut Once",
+  "tier": 0,
+  "lexileBand": "850L-920L",
+  "targetLexile": 880,
+  "fkgl": 5.63,
+  "genre": "Literary",
+  "subGenre": "Realistic Adventure",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Measure Twice, Cut Once",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 390,
+    "paragraphCount": 5,
+    "text": "Fresh cedar shavings curled across the garage floor as Leo reached for the hand saw. He wanted to finish building a sturdy birdhouse before the bluebirds returned to the backyard oak tree. His uncle Mateo, a carpenter for twenty years, tapped his flat pencil against the steel tape measure. Mateo reminded his nephew that checking every mark twice was the real secret of clean woodwork. However, Leo was too eager to hear the buzz of the saw to check his ruler a second time.\n\nLeo eyeballed the top plank, drew a quick line by hand, and sawed straight through the red cedar. He lifted the two roof pieces to set them above the front wall, but a wide gap yawned at the peak. Cold rain would pour right through that crack and soak any nest inside. On the long wooden bench, the slanted roof board cut by Leo in a rush was checked by Uncle Mateo with a brass square. The metal tool showed that Leo's pencil line had drifted half an inch off the corner.\n\nLeo sighed and looked at the short scrap of wood, wishing he could glue the wood back together. Uncle Mateo did not scold him or take the tools away. Instead, he pulled a fresh cedar plank from the rack and handed Leo the sharp pencil again. He asked Leo to inspect the brass numbers on the ruler before making a single mark.\n\nThis time, Leo hooked the steel tape tight against the end of the board and marked six inches in two spots. Next, he laid the brass square across both dots to draw a crisp, straight line from edge to edge. Before picking up the saw, he measured the plank one more time to make sure his mark was precise. His arm moved in a slow, steady rhythm as the fine teeth sliced along the outside of the line.\n\nWhen Leo set the new roof piece onto the walls, the two cedar edges met at the peak without a gap. Even a thin sheet of paper could not slide between the tight joints. Uncle Mateo smiled and handed him four brass screws to lock the roof in place. As they hung the finished box on the oak branch, Leo knew that two extra minutes with a ruler had saved an afternoon of waste.",
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "On the long wooden bench, the slanted roof board cut by Leo in a rush was checked by Uncle Mateo with a brass square.",
+      "actorChunk": "Uncle Mateo",
+      "actionChunk": "was checked",
+      "receiverChunk": "the slanted roof board",
+      "distractorChunks": [
+        "On the long wooden bench",
+        "cut by Leo in a rush",
+        "with a brass square"
+      ],
+      "activeRewrite": "On the long wooden bench, Uncle Mateo checked the slanted roof board cut by Leo in a rush with a brass square."
+    },
+    "tier2Words": [
+      {
+        "word": "sturdy",
+        "definition": "Strong, solid, and built to last through rough weather",
+        "rootHint": "Related to standing firm without shaking",
+        "contextClue": "Leo wanted a strong cedar birdhouse that would protect bluebirds in the oak tree."
+      },
+      {
+        "word": "eager",
+        "definition": "Very excited and impatient to start doing something",
+        "rootHint": "From Latin 'acer' meaning sharp or keen",
+        "contextClue": "Leo was so excited to use the saw that he skipped checking his ruler a second time."
+      },
+      {
+        "word": "inspect",
+        "definition": "To look at something closely and carefully",
+        "rootHint": "From Latin 'in-' (into) + 'specere' (to look)",
+        "contextClue": "Uncle Mateo asked Leo to look closely at the brass numbers on the ruler before marking."
+      },
+      {
+        "word": "precise",
+        "definition": "Exact, accurate, and free from careless errors",
+        "rootHint": "From Latin 'praecisus' meaning cut off cleanly",
+        "contextClue": "Leo measured a second time with the steel tape and brass square to make sure his line was exact."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w23_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"On the long wooden bench, the slanted roof board cut by Leo in a rush was checked by Uncle Mateo with a brass square.\"\n\nWho performed the action of checking the slanted roof board in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Leo, who cut the slanted roof board in a rush",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Uncle Mateo, who tested the board with a brass square",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The long wooden bench inside the garage",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The bluebirds waiting in the backyard oak tree",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "On the long wooden bench, the slanted roof board cut by Leo in a rush was checked by Uncle Mateo with a brass square.",
+      "childTip": "Skip past 'cut by Leo in a rush' and look at the main verb 'was checked by Uncle Mateo.'",
+      "parentExplanation": "The phrase 'cut by Leo in a rush' describes the roof board, while the main passive verb 'was checked by Uncle Mateo' shows that Uncle Mateo performed the checking."
+    },
+    {
+      "questionId": "w23_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"Before picking up the saw, he measured the plank one more time to make sure his mark was precise.\"\n\nWhat does the word \"precise\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exact and accurate",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Quick and careless",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Hidden under sawdust",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Impossible to cut with a hand saw",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Before picking up the saw, he measured the plank one more time to make sure his mark was precise.",
+      "childTip": "Think about why Leo measured two spots and used the brass square—he wanted his pencil line to be exact.",
+      "parentExplanation": "In Paragraph 4, Leo measures six inches in two spots, uses a brass square, and checks his measurement a second time so his mark is 'precise' (exact and accurate)."
+    },
+    {
+      "questionId": "w23_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why would Leo's first roof board have been unsafe for a bluebird nest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The cedar wood had sharp brass screws sticking into the middle of the box.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "A wide gap at the roof peak would let cold rain pour inside and soak the nest.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The front wall of the birdhouse was too heavy to hang on the oak branch.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Bluebirds never build nests inside boxes made of red cedar wood.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Cold rain would pour right through that crack and soak any nest inside.",
+      "childTip": "Click the sentence in Paragraph 2 that explains what would happen when rain fell on the cracked roof.",
+      "parentExplanation": "Paragraph 2 states that Leo's crooked cut left a wide gap at the peak, and 'Cold rain would pour right through that crack and soak any nest inside.'"
+    },
+    {
+      "questionId": "w23_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How do Paragraphs 2 and 4 work together to show how Leo changes during the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Paragraph 2 shows Leo rushing without measuring, while Paragraph 4 shows him carefully double-checking his marks with the tape and square.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Paragraph 2 explains why cedar trees grow in the forest, while Paragraph 4 explains where to buy brass screws.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Paragraph 2 shows Uncle Mateo cutting the wood, while Paragraph 4 shows Leo watching from the backyard.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Both paragraphs show that hand saws always cut crooked lines through cedar planks.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "This time, Leo hooked the steel tape tight against the end of the board and marked six inches in two spots.",
+      "childTip": "Compare how Leo drew his line by hand in Paragraph 2 with how he used the tape and square in Paragraph 4.",
+      "parentExplanation": "Paragraphs 2 and 4 form a clear contrast: in Paragraph 2, Leo eyeballs the board in a rush and cuts a crooked edge; in Paragraph 4, he applies his uncle's advice by measuring twice and using the brass square."
+    },
+    {
+      "questionId": "w23_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w23_q6",
+      "prompt": "Part A: Which statement best expresses the central lesson Leo learns in the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Taking a little extra time to prepare carefully prevents wasted effort later.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Only someone who has worked for twenty years can build a birdhouse.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Brass screws hold wood together much better than glue or nails.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Sawing fast is the best way to keep cedar edges smooth and tight.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "As they hung the finished box on the oak branch, Leo knew that two extra minutes with a ruler had saved an afternoon of waste.",
+      "childTip": "Look at the last sentence of Paragraph 5 to see what Leo realized as they hung the birdhouse.",
+      "parentExplanation": "The central theme of the story is captured in Paragraph 5: taking two extra minutes to measure carefully saves hours of wasted materials and frustration."
+    },
+    {
+      "questionId": "w23_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w23_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Fresh cedar shavings curled across the garage floor as Leo reached for the hand saw.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Leo sighed and looked at the short scrap of wood, wishing he could glue the wood back together.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Uncle Mateo smiled and handed him four brass screws to lock the roof in place.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"As they hung the finished box on the oak branch, Leo knew that two extra minutes with a ruler had saved an afternoon of waste.\"",
+          "isCorrect": true
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "As they hung the finished box on the oak branch, Leo knew that two extra minutes with a ruler had saved an afternoon of waste.",
+      "childTip": "Pick the quote from Paragraph 5 that directly states how two extra minutes with a ruler saved an afternoon of waste.",
+      "parentExplanation": "Option D directly proves Part A by showing Leo's realization that careful measurement upfront prevented wasted time and wood."
+    }
+  ]
+}

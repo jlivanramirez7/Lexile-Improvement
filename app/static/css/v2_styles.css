@@ -1,0 +1,233 @@
+/* ============================================================================
+ * V2 DRC BEACON Reading Improvement Platform — Custom Styles (v2_styles.css)
+ * Enforces DRC INSIGHT split-screen ergonomics, interactive sentence proof
+ * highlighting, line guide focus bar, option strikethrough, and clean visuals.
+ * ============================================================================ */
+
+:root {
+  --drc-highlight-yellow: rgba(253, 224, 71, 0.55);
+  --drc-proof-green: rgba(16, 185, 129, 0.28);
+  --drc-proof-border: #059669;
+  --drc-monster-indigo: rgba(99, 102, 241, 0.16);
+}
+
+/* Smooth scrolling inside passage pane */
+.drc-passage-scroll {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f8fafc;
+}
+
+.drc-passage-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.drc-passage-scroll::-webkit-scrollbar-track {
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.drc-passage-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+  border: 2px solid #f8fafc;
+}
+
+/* Passage Font Scaling (A- / A+) */
+.passage-font-16 {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.passage-font-18 {
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.passage-font-20 {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+/* Numbered Paragraph Badge [1], [2], [3] */
+.drc-para-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #4338ca;
+  background-color: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 0.375rem;
+  padding: 0.05rem 0.42rem;
+  margin-right: 0.45rem;
+  vertical-align: baseline;
+  user-select: none;
+}
+
+/* Interactive Sentence Span */
+.passage-sentence {
+  border-radius: 0.25rem;
+  padding: 0.08rem 0.12rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: text;
+}
+
+/* When Highlight Tool or Click-to-Prove Mode is active */
+.highlighter-mode-active .passage-sentence,
+.click-to-prove-active .passage-sentence {
+  cursor: pointer;
+}
+
+.highlighter-mode-active .passage-sentence:hover {
+  background-color: rgba(254, 240, 138, 0.55);
+}
+
+.click-to-prove-active .passage-sentence:hover {
+  background-color: rgba(167, 243, 208, 0.5);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.35);
+}
+
+/* Student Yellow Highlighter State */
+.sentence-highlight-yellow {
+  background-color: var(--drc-highlight-yellow);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Monster Sentence Spotlight (when Sentence Surgery is open) */
+.sentence-monster-highlight {
+  background-color: var(--drc-monster-indigo);
+  border-bottom: 2px dashed #6366f1;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Automatic Proving Sentence Green Pulse (Post-Answer Micro-Feedback) */
+@keyframes proofPulseGlow {
+  0% {
+    background-color: rgba(16, 185, 129, 0.55);
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.35);
+  }
+  50% {
+    background-color: rgba(16, 185, 129, 0.24);
+    box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.15);
+  }
+  100% {
+    background-color: rgba(16, 185, 129, 0.38);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.28);
+  }
+}
+
+.sentence-proof-pulse {
+  background-color: rgba(16, 185, 129, 0.32) !important;
+  border-bottom: 2px solid #059669;
+  font-weight: 600;
+  color: #064e3b;
+  animation: proofPulseGlow 1.5s ease-in-out 3;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* First-Try Retry Paragraph Hint Spotlight */
+@keyframes paraHintPulse {
+  0%, 100% {
+    background-color: rgba(251, 191, 36, 0.12);
+  }
+  50% {
+    background-color: rgba(251, 191, 36, 0.28);
+  }
+}
+
+.paragraph-hint-pulse {
+  border-left: 4px solid #f59e0b;
+  padding-left: 0.75rem;
+  border-radius: 0.375rem;
+  animation: paraHintPulse 1.4s ease-in-out 2;
+}
+
+/* Tier 2 Interactive Vocabulary Word */
+.tier2-vocab-word {
+  border-bottom: 2px dotted #4f46e5;
+  color: #312e81;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 1px;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tier2-vocab-word:hover {
+  background-color: #e0e7ff;
+  color: #1e1b4b;
+}
+
+/* DRC INSIGHT Horizontal Reading Line Guide */
+.drc-line-guide-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 38px;
+  pointer-events: none;
+  z-index: 20;
+  background: rgba(254, 249, 195, 0.28);
+  border-top: 2px solid #6366f1;
+  border-bottom: 2px solid #6366f1;
+  box-shadow: 0 -120px 0 120px rgba(15, 23, 42, 0.04), 0 120px 0 120px rgba(15, 23, 42, 0.04);
+  transition: top 0.05s linear;
+}
+
+/* Option Card & Eliminator Strikethrough (DRC INSIGHT Striker Tool) */
+.drc-option-card {
+  transition: all 0.16s ease;
+}
+
+.drc-option-eliminated {
+  opacity: 0.44;
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+.drc-option-eliminated .drc-option-text {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ef4444;
+  color: #94a3b8;
+}
+
+/* Sentence Surgery Interactive Chunk Pills */
+.surgery-chunk-who {
+  background-color: #dcfce7;
+  color: #14532d;
+  border: 1px solid #86efac;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+}
+
+.surgery-chunk-action {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  border: 1px solid #93c5fd;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+}
+
+.surgery-chunk-what {
+  background-color: #f3e8ff;
+  color: #581c87;
+  border: 1px solid #d8b4fe;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+}
+
+.surgery-chunk-noise {
+  color: #94a3b8;
+  text-decoration: line-through;
+  text-decoration-color: #cbd5e1;
+  opacity: 0.72;
+}

@@ -1,0 +1,192 @@
+{
+  "studentProfile": {
+    "studentId": "lucas",
+    "studentName": "Lucas Ramirez",
+    "school": "Nickajack Elementary",
+    "district": "Cobb County School District",
+    "targetMiddleSchool": "Dickerson Middle School",
+    "currentGrade": 5,
+    "currentOfficialLexile": 940,
+    "currentOfficialQuantile": 700,
+    "targetACLexile": 1075,
+    "targetStretchLexile": 1150,
+    "targetACQuantile": 950,
+    "officialBeaconHistory": [
+      {
+        "date": "2025-03-19",
+        "displayDate": "03/19/2025",
+        "grade": 3,
+        "window": "Spring G3",
+        "lexile": 835,
+        "quantile": 500,
+        "bookRange": "750L-870L"
+      },
+      {
+        "date": "2025-09-04",
+        "displayDate": "09/04/2025",
+        "grade": 4,
+        "window": "Fall G4",
+        "lexile": 840,
+        "quantile": 515,
+        "bookRange": "760L-880L"
+      },
+      {
+        "date": "2025-12-17",
+        "displayDate": "12/17/2025",
+        "grade": 4,
+        "window": "Winter G4",
+        "lexile": 830,
+        "quantile": 760,
+        "bookRange": "750L-860L"
+      },
+      {
+        "date": "2026-03-18",
+        "displayDate": "03/18/2026",
+        "grade": 4,
+        "window": "Spring G4",
+        "lexile": 800,
+        "quantile": 700,
+        "bookRange": "710L-830L"
+      },
+      {
+        "date": "2026-09-01",
+        "displayDate": "09/01/2026",
+        "grade": 5,
+        "window": "Fall G5",
+        "lexile": 940,
+        "quantile": null,
+        "bookRange": "850L-990L"
+      }
+    ]
+  },
+  "tiers": [
+    {
+      "tier": 0,
+      "name": "Foundation Scaffold",
+      "lexileBand": "850L-920L",
+      "fkglBand": "5.2-6.0",
+      "description": "Targeted confidence & concept reinforcement when a domain score drops below 60%."
+    },
+    {
+      "tier": 1,
+      "name": "Fall 5th Consolidation",
+      "lexileBand": "940L-980L",
+      "fkglBand": "5.8-6.6",
+      "description": "Locks in Lucas's 940L Fall 5th-grade baseline across 350-500 word Literary & Informational texts."
+    },
+    {
+      "tier": 2,
+      "name": "Upper 5th Stretch Bridge",
+      "lexileBand": "980L-1030L",
+      "fkglBand": "6.2-7.0",
+      "description": "Crosses the 1000L threshold with denser Tier 2 vocabulary and multi-clause sentences."
+    },
+    {
+      "tier": 3,
+      "name": "Dickerson AC Qualification Gate",
+      "lexileBand": "1030L-1085L",
+      "fkglBand": "6.5-7.4",
+      "description": "Builds mastery at and above Cobb County's 1075L 6th Grade Advanced Content cutoff."
+    },
+    {
+      "tier": 4,
+      "name": "Advanced Mastery Buffer",
+      "lexileBand": "1085L-1150L",
+      "fkglBand": "6.8-7.8",
+      "description": "6th/7th-grade analytical rigor so a 1075L+ Spring BEACON score is achieved with safety margin."
+    }
+  ],
+  "domains": [
+    {
+      "id": "D1_KEY_IDEAS",
+      "shortName": "Key Ideas & Inference",
+      "parentLabel": "Key Ideas, Summary & Implicit Inference",
+      "weight": 1.25,
+      "standards": ["ELAGSE5RL1", "ELAGSE5RL2", "ELAGSE5RL3", "ELAGSE5RI1", "ELAGSE5RI2", "ELAGSE5RI3"],
+      "subSkills": [
+        { "id": "1A_CENTRAL_IDEA", "name": "Theme & Central Idea" },
+        { "id": "1B_SUMMARY", "name": "Objective Summary vs. Minor Detail" },
+        { "id": "1C_INFERENCE", "name": "Implicit Character & Event Inference" }
+      ]
+    },
+    {
+      "id": "D2_CRAFT_STRUCTURE",
+      "shortName": "Vocab & Text Structure",
+      "parentLabel": "Tier 2 Vocabulary, Morphology & Text Structure",
+      "weight": 1.30,
+      "standards": ["ELAGSE5RL4", "ELAGSE5RL5", "ELAGSE5RL6", "ELAGSE5RI4", "ELAGSE5RI5", "ELAGSE5RI6", "ELAGSE5L4"],
+      "subSkills": [
+        { "id": "2A_TIER2_VOCAB", "name": "Contextual Academic Vocab & Roots" },
+        { "id": "2B_FIGURATIVE", "name": "Figurative Language & Tone" },
+        { "id": "2C_TEXT_STRUCTURE", "name": "Chronology, Cause/Effect & Problem/Solution" },
+        { "id": "2D_POV_PURPOSE", "name": "Point of View & Author Purpose" }
+      ]
+    },
+    {
+      "id": "D3_INTEGRATION",
+      "shortName": "Claims & Synthesis",
+      "parentLabel": "Author's Claims, Reasons & Cross-Paragraph Synthesis",
+      "weight": 1.15,
+      "standards": ["ELAGSE5RL7", "ELAGSE5RL9", "ELAGSE5RI7", "ELAGSE5RI8", "ELAGSE5RI9"],
+      "subSkills": [
+        { "id": "3A_AUTHOR_CLAIM", "name": "Evaluating Author's Claims & Reasons" },
+        { "id": "3B_SYNTHESIS", "name": "Multi-Paragraph & Cause-Chain Synthesis" }
+      ]
+    },
+    {
+      "id": "D4_SYNTAX",
+      "shortName": "Sentence Surgery",
+      "parentLabel": "Syntactic Decoding (Monster Sentences & Passive Voice)",
+      "weight": 1.35,
+      "standards": ["ELAGSE5L1", "ELAGSE5L3"],
+      "subSkills": [
+        { "id": "4A_PASSIVE_ACTOR", "name": "Passive Voice Subject/Actor Tracking" },
+        { "id": "4B_NESTED_CLAUSE", "name": "Nested Clauses & Appositive Stripping" },
+        { "id": "4C_PRONOUN_REF", "name": "Distal Pronoun & Referent Tracking" }
+      ]
+    },
+    {
+      "id": "D5_EBSR",
+      "shortName": "Paired Proof (EBSR)",
+      "parentLabel": "Evidence-Based Selected Response (Part A + Part B Proof)",
+      "weight": 1.40,
+      "standards": ["ELAGSE5RL1", "ELAGSE5RI1"],
+      "subSkills": [
+        { "id": "5A_JOINT_PROOF", "name": "Linking Part A Claim to Part B Verbatim Quote" },
+        { "id": "5B_PROOF_DISCRIMINATION", "name": "Defeating Right-Quote / Wrong-Claim Traps" }
+      ]
+    }
+  ],
+  "trapArchetypes": {
+    "TRAP_WORD_MATCH": {
+      "code": "TRAP_WORD_MATCH",
+      "kidName": "Copy-Paste Trap",
+      "parentName": "Verbatim Word-Match Illusion",
+      "remediation": "Repeats exact words from the passage, but flips who did the action or changes the meaning."
+    },
+    "TRAP_TOO_NARROW": {
+      "code": "TRAP_TOO_NARROW",
+      "kidName": "Tiny Detail Trap",
+      "parentName": "True Detail / Too Narrow for Main Idea",
+      "remediation": "States a fact from one sentence that does not cover the whole passage or paragraph."
+    },
+    "TRAP_EXTREME": {
+      "code": "TRAP_EXTREME",
+      "kidName": "Danger Word Trap",
+      "parentName": "Extreme / Absolute Qualifier Trap",
+      "remediation": "Uses extreme words like 'always', 'never', 'completely', or 'only' that go beyond the text."
+    },
+    "TRAP_OUTSIDE_INFO": {
+      "code": "TRAP_OUTSIDE_INFO",
+      "kidName": "Outside Fact Trap",
+      "parentName": "Unsupported Outside-Knowledge Inference",
+      "remediation": "Sounds smart in real life, but there is zero sentence in the passage that proves it."
+    },
+    "TRAP_SYNTACTIC_REVERSAL": {
+      "code": "TRAP_SYNTACTIC_REVERSAL",
+      "kidName": "Flipped Action Trap",
+      "parentName": "Syntactic / Causal Reversal",
+      "remediation": "Confuses the cause and effect or swaps the subject and receiver in a long sentence."
+    }
+  }
+}

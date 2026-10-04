@@ -1,0 +1,333 @@
+{
+  "workoutId": "w18_tier3_info",
+  "workoutNumber": 18,
+  "title": "Time Machines in the Antarctic Ice",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1085,
+  "fkgl": 7.57,
+  "genre": "Informational",
+  "subGenre": "Earth Science & Climatology",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI6",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Time Machines in the Antarctic Ice",
+    "author": "BEACON Assessment Lab",
+    "text": "On the high white plain of East Antarctica, the air is so cold that winter snow never melts. Instead, each fresh snowfall settles on top of the last one like pages stacked in a giant book. As centuries pass, the heavy weight of new snow begins to compress the deeper layers into solid ice. Tiny pockets of ancient air get trapped between the ice crystals as the snow packs tight. Each sealed bubble holds a pristine sample of the sky from the exact year that snow fell.\n\nTo read this frozen archive, teams of ice scientists camp on the polar sheet for months. Using hollow steel drills, they bore straight down through two miles of solid ice toward the bedrock. Long cylinders of blue glacier ice, drilled from two miles beneath the polar plateau, are carefully sliced by lab researchers inside freezing work rooms. Just like tree rings, thin summer layers and thick winter layers mark each passing year. Teams count those rings downward from the top. That lets them date ice that formed eight hundred thousand years ago.\n\nInside a vacuum chamber, researchers crush small cubes of core ice to set the trapped air bubbles free. Sensitive lasers then measure the exact amount of carbon dioxide and methane gas inside each tiny puff of ancient air. These tests reveal that Earth's air temperatures and greenhouse gases have always risen and fallen together in close step. Whenever carbon levels rose in the past, polar temperatures climbed soon after.\n\nIce cores also capture dramatic events that occurred thousands of miles away from the South Pole. When a massive volcano erupts near the equator, high winds carry fine ash and acid droplets across the globe. Those dark specks settle onto the polar snow and leave a thin gray band inside the ice core. By matching these ash bands to known eruptions, historians can check the dates of ancient droughts and cold snaps.\n\nWhile some casual observers view Antarctica as an empty wasteland of wind and frost, climate scientists see it as Earth's greatest library. No human was alive to log the weather during the last Ice Age. Even so, the polar ice sheet kept a clear record of every storm. Studying how past climates used to fluctuate helps modern researchers understand how fast our air is changing today. Beneath the quiet snow, every trapped bubble still has a story to tell.",
+    "wordCount": 399,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Long cylinders of blue glacier ice, drilled from two miles beneath the polar plateau, are carefully sliced by lab researchers inside freezing work rooms.",
+      "actorChunk": "by lab researchers",
+      "actionChunk": "are carefully sliced",
+      "receiverChunk": "Long cylinders of blue glacier ice",
+      "distractorChunks": [
+        "drilled from two miles beneath the polar plateau",
+        "inside freezing work rooms"
+      ],
+      "activeRewrite": "Lab researchers carefully slice long cylinders of blue glacier ice inside freezing work rooms."
+    },
+    "tier2Words": [
+      {
+        "word": "compress",
+        "definition": "To press or squeeze together into a smaller, denser space",
+        "rootHint": "com- (together) + press (Latin root meaning 'to push or squeeze')",
+        "contextClue": "The heavy weight of new snow presses 'the deeper layers into solid ice.'"
+      },
+      {
+        "word": "pristine",
+        "definition": "Pure, unspoiled, and untouched in its original state",
+        "rootHint": "pristinus (Latin meaning 'original' or 'uncorrupted')",
+        "contextClue": "Each sealed bubble holds an untouched 'sample of the sky from the exact year that snow fell.'"
+      },
+      {
+        "word": "archive",
+        "definition": "A preserved collection of historical records or documents",
+        "rootHint": "arch- (Greek arkheion, meaning 'public record office')",
+        "contextClue": "Compared in Paragraph 1 to 'pages stacked in a giant book' and in Paragraph 5 to 'Earth's greatest library.'"
+      },
+      {
+        "word": "fluctuate",
+        "definition": "To rise and fall irregularly over time like waves",
+        "rootHint": "flu- / fluct- (Latin root meaning 'to flow' or 'wave')",
+        "contextClue": "Paragraph 3 explains that temperatures and gases 'have always risen and fallen together.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w18_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4B_NESTED_CLAUSE",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Long cylinders of blue glacier ice, drilled from two miles beneath the polar plateau, are carefully sliced by lab researchers inside freezing work rooms.\"\n\nIf you remove the descriptive phrase between the commas, what is the core subject and action of the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The polar plateau drills two miles of blue glacier ice.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Pulls 'polar plateau' and 'drilled' out of the middle modifier and treats them as the main subject and verb."
+        },
+        {
+          "id": "B",
+          "text": "Long cylinders of blue glacier ice are carefully sliced by lab researchers.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly strips the appositive/participial phrase between commas to link the subject ('Long cylinders of blue glacier ice') to the passive verb and actor ('are carefully sliced by lab researchers')."
+        },
+        {
+          "id": "C",
+          "text": "Freezing work rooms slice the lab researchers beneath the plateau.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Scrambles the location phrase ('inside freezing work rooms') into the actor performing the slicing."
+        },
+        {
+          "id": "D",
+          "text": "Two miles of blue glacier ice are drilled by freezing work rooms.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Combines words from the embedded modifier and the final prepositional phrase."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Long cylinders of blue glacier ice, drilled from two miles beneath the polar plateau, are carefully sliced by lab researchers inside freezing work rooms.",
+      "childTip": "Cover up the words between the two commas with your finger. Read what is left before and after!",
+      "parentExplanation": "This Sentence Surgery item targets Nested Clauses & Participial Stripping (ELAGSE5L1 / 4B_NESTED_CLAUSE). Removing ', drilled from two miles beneath the polar plateau,' reveals the core clause: 'Long cylinders of blue glacier ice... are carefully sliced by lab researchers.'"
+    },
+    {
+      "questionId": "w18_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 1:\n\n\"As centuries pass, the heavy weight of new snow begins to compress the deeper layers into solid ice.\"\n\nWhat does the word compress most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Melt frozen crystals into warm liquid water",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 1, which explicitly states that the winter snow never melts."
+        },
+        {
+          "id": "B",
+          "text": "Squeeze and pack tightly together under pressure",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the root 'press' and the context clues 'heavy weight of new snow' and 'as the snow packs tight.'"
+        },
+        {
+          "id": "C",
+          "text": "Scatter loose snowflakes across the windy plain",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Selects an opposite action (scattering loose snow instead of packing it into solid ice)."
+        },
+        {
+          "id": "D",
+          "text": "Measure the age of a glacier using a laser beam",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Imports laser measurement from Paragraph 3, which has nothing to do with how snow turns into solid ice."
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "As centuries pass, the heavy weight of new snow begins to compress the deeper layers into solid ice.",
+      "childTip": "Look at the root word 'press' inside 'compress,' and notice what 'the heavy weight of new snow' does to deeper layers.",
+      "parentExplanation": "Contextual & Morphological Vocabulary item (ELAGSE5RI4). Students combine the Latin root 'press' with the surrounding context ('heavy weight of new snow', 'as the snow packs tight') to determine that 'compress' means to squeeze and pack tightly together."
+    },
+    {
+      "questionId": "w18_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, how do volcanic eruptions near the equator help scientists study Antarctic ice cores?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Heat from tropical volcanoes melts the top layer of Antarctic snow so drills can reach the bottom faster.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Invents a false melting effect that contradicts Paragraph 1 ('winter snow never melts')."
+        },
+        {
+          "id": "B",
+          "text": "Volcanic ash settles on the polar snow and forms dated gray bands that help historians verify the exact years of ancient climate events.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately traces how windblown ash leaves visible gray bands that can be matched to known eruption dates."
+        },
+        {
+          "id": "C",
+          "text": "Volcanoes pump fresh oxygen into the underground bedrock beneath the South Pole.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Fabricates an unsupported geological claim."
+        },
+        {
+          "id": "D",
+          "text": "Ash bands prove that every single volcano on Earth is located underneath the East Antarctic ice sheet.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('every single volcano') and contradicts the text ('erupts near the equator')."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "By matching these ash bands to known eruptions, historians can check the dates of ancient droughts and cold snaps.",
+      "childTip": "First click the sentence in Paragraph 4 that explains how historians use the gray ash bands.",
+      "parentExplanation": "Click-to-Prove item (ELAGSE5RI3). Paragraph 4 explains that wind carries volcanic ash from the equator to the South Pole, leaving a thin gray band in the ice that serves as a time marker when matched to known eruptions."
+    },
+    {
+      "questionId": "w18_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI6",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "In Paragraph 5, how does the author contrast the perspective of 'casual observers' with the perspective of 'climate scientists'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Casual observers think Antarctica is warming rapidly, while climate scientists believe the ice sheet never changes.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the scientists' findings about climate change."
+        },
+        {
+          "id": "B",
+          "text": "Casual observers see Antarctica as a barren, empty landscape, whereas climate scientists view its ice layers as a rich library of Earth's history.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately captures the point-of-view contrast in the opening sentence of Paragraph 5 ('empty wasteland' vs. 'Earth's greatest library')."
+        },
+        {
+          "id": "C",
+          "text": "Casual observers want to build cities on the polar plateau, while climate scientists want to melt the ice for drinking water.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Introduces unsupported outside claims absent from the passage."
+        },
+        {
+          "id": "D",
+          "text": "Casual observers only care about volcanic ash, while climate scientists only study summer tree rings.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses 'only' and misattributes details from earlier paragraphs."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "While some casual observers view Antarctica as an empty wasteland of wind and frost, climate scientists see it as Earth's greatest library.",
+      "childTip": "Read the first sentence of Paragraph 5 and compare the two ways people look at Antarctica.",
+      "parentExplanation": "Focus standard ELAGSE5RI6 (Point of View / Perspective). Paragraph 5 explicitly contrasts how casual observers perceive the continent ('an empty wasteland of wind and frost') with how glaciologists view it ('Earth's greatest library')."
+    },
+    {
+      "questionId": "w18_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w18_q6",
+      "prompt": "PART A: Which statement best summarizes why Antarctic ice cores are valuable to modern scientists?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Preserved air bubbles and ash layers inside deep ice cores provide an unbroken record of ancient atmospheres that helps scientists understand modern climate shifts.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the mechanism (trapped bubbles and ash layers) with the overarching scientific purpose in Paragraph 5."
+        },
+        {
+          "id": "B",
+          "text": "Hollow steel drills can bore through two miles of solid glacier ice without ever needing to be repaired.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on a minor tool detail from Paragraph 2 and adds an unsupported extreme claim ('without ever needing')."
+        },
+        {
+          "id": "C",
+          "text": "Crushing ice cubes inside a vacuum chamber produces enough methane gas to heat freezing work rooms.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Scrambles terms from Paragraphs 2 and 3 into a false statement."
+        },
+        {
+          "id": "D",
+          "text": "Antarctic snow melts every summer and refreezes every winter to create new volcanic ash bands.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 1 ('winter snow never melts') and Paragraph 4 (ash comes from equatorial volcanoes)."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Studying how past climates used to fluctuate helps modern researchers understand how fast our air is changing today.",
+      "childTip": "Look for the choice that explains both WHAT is trapped in the ice and HOW it helps scientists today.",
+      "parentExplanation": "Part A of the EBSR pair tests central idea synthesis (ELAGSE5RI2). Option A integrates the physical evidence trapped in the cores (air bubbles and ash) with why scientists study them today (Paragraph 5)."
+    },
+    {
+      "questionId": "w18_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w18_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"On the high white plain of East Antarctica, the air is so cold that winter snow never melts.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Explains why snow accumulates in Paragraph 1, but does not explain how ice cores help modern researchers understand climate change."
+        },
+        {
+          "id": "B",
+          "text": "\"Using hollow steel drills, they bore straight down through two miles of solid ice toward the bedrock.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the drilling process in Paragraph 2 without stating the scientific value of the climate record."
+        },
+        {
+          "id": "C",
+          "text": "\"Inside a vacuum chamber, researchers crush small cubes of core ice to set the trapped air bubbles free.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Describes a laboratory step in Paragraph 3 rather than the overarching value to modern climate science."
+        },
+        {
+          "id": "D",
+          "text": "\"Studying how past climates used to fluctuate helps modern researchers understand how fast our air is changing today.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves Part A by connecting the ancient record of climate fluctuations to understanding modern atmospheric changes."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Studying how past climates used to fluctuate helps modern researchers understand how fast our air is changing today.",
+      "childTip": "Pick the exact quote from Paragraph 5 that links past climates to how our air is changing today.",
+      "parentExplanation": "Part B requires selecting the verbatim quote in Paragraph 5 that proves why studying ancient ice cores matters for modern climate science."
+    }
+  ]
+}

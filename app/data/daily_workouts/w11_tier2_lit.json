@@ -1,0 +1,309 @@
+{
+  "workoutId": "w11_tier2_lit",
+  "workoutNumber": 11,
+  "title": "Moonlight on the Cumberland Dunes",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1020,
+  "fkgl": 6.12,
+  "genre": "Literary",
+  "subGenre": "Adventure / Mystery",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Moonlight on the Cumberland Dunes",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Elena clicked on her red flashlight as she followed Aunt Rosa across the wind-swept dunes of Cumberland Island. On this wild Georgia barrier island, loggerhead sea turtles crawled ashore every summer to bury their eggs in the warm sand. Tonight, Nest 14 was finally ready to hatch under a sky shrouded in thick coastal fog. Elena knew they had to use red light instead of white beams. That way, they would not startle the baby turtles. By nature's ancient instinct, newborn hatchlings always scramble toward the brightest low horizon. On most nights, that is the moonlit ocean surf.\n\nWhen they reached the wire screen guarding Nest 14, dozens of tiny dark shells were already boiling up from the sand pit. Yet the hatchlings did not march down the wet slope toward the waves. Instead, they spun in confused circles. Emerging from the warm sand pit beneath the foggy sky, the tiny loggerhead hatchlings were strangely disoriented by a pale glow behind the sea oats. Nearly twenty of the babies began crawling uphill toward the dark woods. Aunt Rosa gasped and knelt to block their path with her canvas clipboard.\n\nAunt Rosa whispered that no houses or streetlamps stood within two miles of this north beach sector. Elena climbed to the top of the high dune. She scanned the dark tree line behind them. Through a gap in the live oaks, she spotted a bright white lantern on the stern of a shrimp boat in the back sound. Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea.\n\nEven worse, a puddle of rainwater in the low trough between the dunes acted like a mirror. It reflected the boat's white glare right into the eyes of the turtles at the nest. The hatchlings were being lured away from the surf by a trick of fog and water. Elena knew they could not reach the boat in time. The babies would dry out by dawn if they wandered into the woods.\n\nThinking fast, Elena unzipped her rain poncho and asked Aunt Rosa to hold the other two corners. Together, they stretched the dark nylon tarp along the top of the ridge like a wide curtain. As soon as the tarp blocked the boat's reflection, the dune trough fell dark again. Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.",
+    "wordCount": 413,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Emerging from the warm sand pit beneath the foggy sky, the tiny loggerhead hatchlings were strangely disoriented by a pale glow behind the sea oats.",
+      "actorChunk": "a pale glow behind the sea oats",
+      "actionChunk": "strangely disoriented",
+      "receiverChunk": "the tiny loggerhead hatchlings",
+      "distractorChunks": [
+        "Emerging from the warm sand pit",
+        "beneath the foggy sky"
+      ],
+      "activeRewrite": "A pale glow behind the sea oats strangely disoriented the tiny loggerhead hatchlings."
+    },
+    "tier2Words": [
+      {
+        "word": "shrouded",
+        "definition": "covered or hidden from view as if wrapped in a thick cloth",
+        "rootHint": "Old English 'scrud' (a garment or covering wrap)",
+        "contextClue": "The night sky was covered in thick coastal fog that blocked the moonlight."
+      },
+      {
+        "word": "instinct",
+        "definition": "an inborn pattern of behavior that animals follow naturally without being taught",
+        "rootHint": "Latin 'instinctus' (natural impulse)",
+        "contextClue": "Newborn hatchlings naturally scramble toward the brightest low horizon as soon as they hatch."
+      },
+      {
+        "word": "disoriented",
+        "definition": "having lost one's sense of direction and confused about which way to go",
+        "rootHint": "Prefix 'dis-' (away from) + 'orient' (to find direction)",
+        "contextClue": "Instead of marching toward the waves, the hatchlings spun in confused circles."
+      },
+      {
+        "word": "lured",
+        "definition": "drawn or tempted away toward something, often into danger",
+        "rootHint": "Old French 'loirre' (a bait or decoy used to call hawks)",
+        "contextClue": "The bright reflection drew the hatchlings uphill away from the safe surf."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w11_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Emerging from the warm sand pit beneath the foggy sky, the tiny loggerhead hatchlings were strangely disoriented by a pale glow behind the sea oats.\"\n\nBased on the structure of this sentence, what caused the confusion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A pale glow shining behind the sea oats",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The warm sand pit beneath the wire screen",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The tiny loggerhead hatchlings climbing the dune",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Elena's red-filtered flashlight beam on the beach",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Emerging from the warm sand pit beneath the foggy sky, the tiny loggerhead hatchlings were strangely disoriented by a pale glow behind the sea oats.",
+      "childTip": "Look right after 'were strangely disoriented by' to find what confused the baby turtles.",
+      "parentExplanation": "In this passive construction, 'the tiny loggerhead hatchlings' receive the action of being disoriented. The true cause/actor follows the preposition 'by': 'a pale glow behind the sea oats' (Option A)."
+    },
+    {
+      "questionId": "w11_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"The hatchlings were being lured away from the surf by a trick of fog and water.\"\n\nWhat does the word \"lured\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drawn or pulled toward something",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Washed out to sea by a high wave",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Protected from hungry birds by a wire screen",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Hidden permanently beneath the wet sand",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "The hatchlings were being lured away from the surf by a trick of fog and water.",
+      "childTip": "Think about how the bright puddle tricked the baby turtles into crawling toward the woods instead of the ocean.",
+      "parentExplanation": "In Paragraph 4, the reflected glare of the boat lantern acts as a false beacon that pulls ('lured') the hatchlings uphill away from the ocean surf (Option A)."
+    },
+    {
+      "questionId": "w11_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why did the shrimp boat's lantern look brighter to the turtles than the ocean horizon?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thick fog covered the ocean to the east, making the single white lamp in the western marsh stand out more brightly.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The shrimp boat had sailed right onto the dry sand of the primary dune near Nest 14.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Aunt Rosa pointed her white flashlight beam at the live oak trees to see the forest path.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The moon never rises over the Atlantic Ocean during the summer hatching season.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea.",
+      "childTip": "Click the last sentence in Paragraph 3 that explains why the boat lamp shone brighter than the sea.",
+      "parentExplanation": "Paragraph 3 directly explains the environmental cause: 'Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea' (Option A)."
+    },
+    {
+      "questionId": "w11_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How do Paragraphs 2 through 5 work together to form the main structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They present a sudden mystery when the hatchlings crawl the wrong way, uncover the hidden cause, and show Elena's quick solution.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "They compare the diet of loggerhead sea turtles with the diet of fish living in the western marsh.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "They explain why Cumberland Island should ban all visitors from walking on the beach at night.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "They list the tools Aunt Rosa packed inside her canvas clipboard before leaving home.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "As soon as the tarp blocked the boat's reflection, the dune trough fell dark again.",
+      "childTip": "Trace the story arc: the turtles go the wrong way (problem), Elena spots the lamp and puddle (cause), and she uses her poncho (solution).",
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraphs 2–5 follow a classic problem-investigation-resolution narrative structure: Paragraph 2 introduces the disoriented hatchlings, Paragraphs 3–4 uncover the lantern and puddle reflection, and Paragraph 5 resolves the crisis with the poncho barrier (Option A)."
+    },
+    {
+      "questionId": "w11_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w11_q6",
+      "prompt": "PART A: Why did stretching Elena's dark rain poncho along the dune ridge immediately cause the hatchlings to turn toward the ocean?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By blocking the artificial glare from the marsh, the poncho allowed the faint natural glow of the ocean foam to become the brightest horizon again.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The loud flapping sound of the nylon poncho scared the hatchlings down the slope into the water.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The poncho acted like a giant slide that carried the baby turtles over the sea oats into the waves.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The dark tarp made the coastal fog disappear completely from the sky above Cumberland Island.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.",
+      "childTip": "Connect the rule in Paragraph 1 (turtles follow the brightest horizon) with what happens when the poncho blocks the boat light in Paragraph 5.",
+      "parentExplanation": "Synthesizing Paragraph 1 (hatchlings instinctively head toward the brightest low horizon) with Paragraph 5 shows that once the poncho blocked the artificial boat reflection, the faint white foam of the ocean rollers became the brightest light source again (Option A)."
+    },
+    {
+      "questionId": "w11_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w11_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"On this wild Georgia barrier island, loggerhead sea turtles crawled ashore every summer to bury their eggs in the warm sand.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Aunt Rosa whispered that no houses or streetlamps stood within two miles of this north beach sector.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Even worse, a puddle of rainwater in the low trough between the dunes acted like a mirror.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.",
+      "childTip": "Choose the quote from Paragraph 5 that shows what the hatchlings spotted right after the tarp blocked the reflection.",
+      "parentExplanation": "Option D provides the exact verbatim proof from Paragraph 5 showing that once the false light was blocked, the hatchlings spotted the faint white foam of the ocean rollers and oriented toward the surf."
+    }
+  ]
+}

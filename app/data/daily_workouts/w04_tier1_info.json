@@ -1,0 +1,309 @@
+{
+  "workoutId": "w04_tier1_info",
+  "workoutNumber": 4,
+  "title": "Stone Arches and Steel Cables",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 965,
+  "fkgl": 6.25,
+  "genre": "Informational",
+  "subGenre": "Engineering & Technology",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI5",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Stone Arches and Steel Cables",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Every bridge on Earth faces the same unseen enemy every second of the day. Gravity pulls down on both the heavy bridge deck and the traffic crossing it. If a flat stone slab stretches too far across a canyon, its center will sag and snap. To span wide valleys, builders must redirect that downward pull safely into the ground. Across history, builders have solved this puzzle using two main shapes. They rely on the curved stone arch and the steel cable.\n\nMore than two thousand years ago, Roman builders used stone arches to carry fresh water across valleys. They stacked wedge-shaped blocks in a half-circle without needing glue or wet mortar to hold them together. At the top of the curve, a central wedge called the keystone locked the whole ring in place. Heavy downward loads, pressed against the curved stone ring by flowing water and carts, were smoothly guided by the arch into solid rock banks. Stone is very strong when squeezed. That tight compression kept the blocks from falling.\n\nAlthough stone arches last for ages, they have one big limit when crossing wide harbors. Each arch needs thick stone piers planted closely together in the riverbed. In deep ocean channels, building dozens of heavy piers blocks cargo ships and costs too much money. Modern builders needed a lighter design that could leap more than a mile in a single span. They turned from squeezing stone blocks to pulling on braided steel wires.\n\nIn a modern suspension bridge, two tall steel towers rise high above the water near each shore. Thick main cables drape between the tower tops in a smooth upward curve. Vertical suspender ropes hang down from these main cables to hold up the highway deck below. When heavy trucks roll across the road, their weight pulls down on the vertical ropes. That load stretches the main cables tight. This pulling force, known as tension, travels up the cables to the tall towers and into huge concrete anchor blocks on land.\n\nBoth old stone arches and modern steel bridges obey the same basic law of physics. Neither design tries to fight gravity with a stiff, flat beam alone. Instead, the Roman arch turns weight into an outward push, while the suspension bridge turns weight into an inward pull. By matching the shape of a bridge to the strength of its materials, engineers can cross almost any gap on the planet.",
+    "wordCount": 403,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Heavy downward loads, pressed against the curved stone ring by flowing water and carts, were smoothly guided by the arch into solid rock banks.",
+      "actorChunk": "the arch",
+      "actionChunk": "smoothly guided",
+      "receiverChunk": "Heavy downward loads",
+      "distractorChunks": [
+        "pressed against the curved stone ring by flowing water and carts",
+        "into solid rock banks"
+      ],
+      "activeRewrite": "The arch smoothly guided heavy downward loads into solid rock banks."
+    },
+    "tier2Words": [
+      {
+        "word": "redirect",
+        "definition": "to change the path or direction of a force or moving object",
+        "rootHint": "Latin root dirigere ('to guide or point') + prefix re- ('again/new way')",
+        "contextClue": "Instead of letting gravity pull straight down and snap the middle, builders guide that pull sideways into the ground."
+      },
+      {
+        "word": "compression",
+        "definition": "a squeezing force that presses materials tightly together",
+        "rootHint": "Latin root premere ('to press') + prefix com- ('together')",
+        "contextClue": "Because stone is strong when squeezed, the tight pressing force kept the wedge-shaped blocks locked in place."
+      },
+      {
+        "word": "piers",
+        "definition": "thick vertical columns or supports planted in the ground or water to hold up a bridge",
+        "rootHint": "From Medieval Latin pera ('stone support column')",
+        "contextClue": "Each arch needs thick stone columns planted closely together in the riverbed to hold up the spans."
+      },
+      {
+        "word": "tension",
+        "definition": "a pulling force that stretches a rope, wire, or cable tight",
+        "rootHint": "Latin root tendere ('to stretch')",
+        "contextClue": "When trucks roll across the deck, their weight stretches the cables tight with a strong pulling force."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w04_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Heavy downward loads, pressed against the curved stone ring by flowing water and carts, were smoothly guided by the arch into solid rock banks.\"\n\nBased on the sentence, what creates the downward load on the stone ring, and what guides that load into the rock banks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Solid rock banks press down on the carts, and flowing water guides the arch into the valley.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Flowing water and carts press the load against the stone ring, and the arch guides the load into the rock banks.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The arch presses flowing water upward so that heavy carts never touch the stone ring.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Braided steel cables pull the Roman keystone out of the solid rock banks.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Heavy downward loads, pressed against the curved stone ring by flowing water and carts, were smoothly guided by the arch into solid rock banks.",
+      "childTip": "Track both 'by' phrases: flowing water and carts press the load down, while the arch guides it into the banks.",
+      "parentExplanation": "The sentence contains an embedded participial phrase ('pressed... by flowing water and carts') and a passive main verb ('were smoothly guided by the arch'). Option B accurately separates the two agents."
+    },
+    {
+      "questionId": "w04_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"When heavy trucks roll across the road, their weight pulls down on the vertical ropes. That load stretches the main cables tight. This pulling force, known as tension, travels up the cables to the tall towers and into huge concrete anchor blocks on land.\"\n\nWhat does the word tension mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A pulling force that stretches a cable or rope tight",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "A squeezing force that presses stone blocks together",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "A nervous feeling shared by drivers crossing a high bridge",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "A type of waterproof glue used by ancient Roman builders",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "This pulling force, known as tension, travels up the cables to the tall towers and into huge concrete anchor blocks on land.",
+      "childTip": "Look right before 'known as tension': the sentence directly defines it as 'This pulling force'!",
+      "parentExplanation": "Paragraph 4 defines 'tension' directly via apposition ('This pulling force, known as tension...'). Note how Option C tests a common non-scientific meaning of 'tension' (nervousness) that does not fit the engineering context."
+    },
+    {
+      "questionId": "w04_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why are stone arch bridges poorly suited for crossing deep, busy ocean harbors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They require many thick stone piers in the water that block cargo ships and cost too much to build.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Salt water dissolves granite blocks within a few days of touching the harbor.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Stone arches can only support the weight of water and collapse if a cart rolls across them.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Roman builders refused to share the secret of the central keystone with modern engineers.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "In deep ocean channels, building dozens of heavy piers blocks cargo ships and costs too much money.",
+      "childTip": "Click the sentence in Paragraph 3 that explains what happens if you build dozens of heavy piers in deep channels.",
+      "parentExplanation": "Paragraph 3 explains that stone arches require closely spaced piers in the riverbed, which block shipping lanes and are too expensive to construct in deep ocean channels."
+    },
+    {
+      "questionId": "w04_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Which statement best describes the overall structure of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It introduces the problem of gravity on bridges and compares how stone arches and suspension cables redirect weight in opposite ways.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It gives a step-by-step biography of the Roman emperor who invented the first stone aqueduct.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It argues that all ancient stone bridges should be torn down and replaced with steel towers immediately.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "It lists the names of the ten longest highway bridges in the United States in order of length.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Instead, the Roman arch turns weight into an outward push, while the suspension bridge turns weight into an inward pull.",
+      "childTip": "Look at how the whole passage is built: Paragraph 1 states the gravity problem, and Paragraphs 2-5 compare arches and cables.",
+      "parentExplanation": "Targets Focus Standard ELAGSE5RI5 (overall text structure). The passage frames the engineering problem of gravity in Paragraph 1, examines Roman compression arches in Paragraphs 2-3, examines tension suspension bridges in Paragraph 4, and synthesizes their comparison in Paragraph 5."
+    },
+    {
+      "questionId": "w04_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w04_q6",
+      "prompt": "Part A: Which sentence best states the main idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Engineers overcome gravity across wide gaps by designing bridge shapes that channel weight through compression in stone or tension in steel.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Roman builders stacked wedge-shaped blocks without using glue or wet mortar.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "Flat stone slabs are the strongest and safest bridge design for crossing deep ocean harbors.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Concrete anchor blocks on land are heavier than all the cargo ships in an ocean harbor combined.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By matching the shape of a bridge to the strength of its materials, engineers can cross almost any gap on the planet.",
+      "childTip": "Don't pick a detail from just one paragraph! Choose the main idea that covers both Roman arches and modern steel bridges.",
+      "parentExplanation": "Option A synthesizes the overarching main idea across all five paragraphs. Option B is a classic TRAP_TOO_NARROW (true detail from Paragraph 2 only)."
+    },
+    {
+      "questionId": "w04_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w04_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"They stacked wedge-shaped blocks in a half-circle without needing glue or wet mortar to hold them together.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Each arch needs thick stone piers planted closely together in the riverbed.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Vertical suspender ropes hang down from these main cables to hold up the highway deck below.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"By matching the shape of a bridge to the strength of its materials, engineers can cross almost any gap on the planet.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By matching the shape of a bridge to the strength of its materials, engineers can cross almost any gap on the planet.",
+      "childTip": "Pick the concluding quote in Paragraph 5 that connects bridge shape and material strength to crossing wide gaps.",
+      "parentExplanation": "Option D directly supports the central claim in Part A by summarizing how shape and material properties work together to span gaps."
+    }
+  ]
+}

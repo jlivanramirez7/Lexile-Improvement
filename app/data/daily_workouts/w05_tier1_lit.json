@@ -1,0 +1,309 @@
+{
+  "workoutId": "w05_tier1_lit",
+  "workoutNumber": 5,
+  "title": "The Space Between the Notes",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 975,
+  "fkgl": 5.87,
+  "genre": "Literary",
+  "subGenre": "Contemporary Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Space Between the Notes",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Three days before the youth orchestra audition, Maya practiced in her band room until her fingers ached. She wanted to play the required cello solo faster than every other fifth grader in the county. Each time she reached the fast run, she pushed her bow harder across the steel strings. The notes tumbled out in a loud, frantic blur that echoed off the cinder-block walls. From the doorway, her teacher, Mr. Lin, watched with a frown.\n\nMr. Lin walked to the music stand. He tapped his pencil lightly against the second page of the score. He pointed to a word printed in small letters beneath the staff: dolce, meaning sweet and gentle. The delicate melody, written by the composer to sound like a quiet evening breeze, was completely buried by Maya under a rush of harsh bow strokes. Maya lowered her bow and stared at the floor in shame. She thought playing fast was the best way to prove her skill to the judges.\n\nInstead of scolding her, Mr. Lin asked Maya to set her cello down and walk to the window. Outside, a steady autumn rain fell onto the courtyard pond in slow, silver drops. When a single drop struck the water, a clear ring spread all the way to the stone edge. Then a gust of wind shook the oak branches. It dumped a hundred drops at once into the water. The surface turned into a choppy mess where no single ripple could be seen.\n\nMaya watched the pond and knew what her teacher wanted her to see. When she crammed every note together at top speed, her music sounded just like that choppy puddle. She returned to her chair, took a slow breath, and rested her thumb lightly on the bow frog. This time, she practiced restraint by letting each long note ring out before starting the next phrase. In the quiet pause before the last bar, the warm wooden body of the cello seemed to sing.\n\nOn Saturday morning, Maya walked onto the audition stage with steady hands and a calm heart. While other players raced through their pieces in the warmup hall, she remembered the single raindrop on the pond. She gave the fast parts crisp energy, but she slowed down to let the gentle melody breathe. Behind the long table, the three judges looked up from their clipboards and smiled in quiet agreement. Maya knew right then that true mastery meant controlling her power, not just showing her speed.",
+    "wordCount": 415,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The delicate melody, written by the composer to sound like a quiet evening breeze, was completely buried by Maya under a rush of harsh bow strokes.",
+      "actorChunk": "Maya",
+      "actionChunk": "completely buried",
+      "receiverChunk": "The delicate melody",
+      "distractorChunks": [
+        "written by the composer to sound like a quiet evening breeze",
+        "under a rush of harsh bow strokes"
+      ],
+      "activeRewrite": "Maya completely buried the delicate melody under a rush of harsh bow strokes."
+    },
+    "tier2Words": [
+      {
+        "word": "frantic",
+        "definition": "wildly hurried, rushed, and lacking calm control",
+        "rootHint": "From Greek phrenitikos ('frenzied or overly excited')",
+        "contextClue": "Maya pushed her bow harder and faster until the notes tumbled out in a loud, rushed blur."
+      },
+      {
+        "word": "delicate",
+        "definition": "soft, gentle, and requiring careful handling",
+        "rootHint": "Latin delicatus ('gentle or tender')",
+        "contextClue": "The composer marked the melody dolce (sweet and gentle) so it would sound like a quiet evening breeze."
+      },
+      {
+        "word": "restraint",
+        "definition": "calm self-control that holds back excess force or speed",
+        "rootHint": "Latin root stringere ('to draw tight or hold back') + prefix re- ('back')",
+        "contextClue": "Instead of rushing at top speed, Maya held back and let each long note ring out before starting the next phrase."
+      },
+      {
+        "word": "mastery",
+        "definition": "complete skill, command, and control over an art or activity",
+        "rootHint": "From Latin magister ('master or chief teacher')",
+        "contextClue": "Maya learned that real skill on the cello meant controlling her power and pacing rather than just playing fast."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w05_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The delicate melody, written by the composer to sound like a quiet evening breeze, was completely buried by Maya under a rush of harsh bow strokes.\"\n\nBased on the sentence, who created the delicate melody, and who buried it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maya wrote the delicate melody, and the composer buried it under harsh bow strokes.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The composer wrote the delicate melody, and Maya buried it under a rush of harsh bow strokes.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A quiet evening breeze buried both Maya and the composer during the rehearsal.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Mr. Lin erased the delicate melody from the second page of the sheet music.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The delicate melody, written by the composer to sound like a quiet evening breeze, was completely buried by Maya under a rush of harsh bow strokes.",
+      "childTip": "Separate the two 'by' phrases: 'written by the composer' tells who made it, and 'buried by Maya' tells who covered it up.",
+      "parentExplanation": "This passive sentence embeds a participial clause with its own 'by' agent ('written by the composer') before the main passive verb ('was completely buried by Maya'). Option B correctly distinguishes the two actors."
+    },
+    {
+      "questionId": "w05_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"She returned to her chair, took a slow breath, and rested her thumb lightly on the bow frog. This time, she practiced restraint by letting each long note ring out before starting the next phrase.\"\n\nWhat does the word restraint mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Calm self-control that holds back from rushing",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Wild speed that pushes the bow as fast as possible",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "A heavy metal lock attached to a cello case",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Complete silence caused by a broken steel string",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "This time, she practiced restraint by letting each long note ring out before starting the next phrase.",
+      "childTip": "Use the 'by' phrase right after the word: she practiced restraint 'by letting each long note ring out' instead of rushing.",
+      "parentExplanation": "In Paragraph 4, 'by letting each long note ring out before starting the next phrase' provides an explicit context clue showing that 'restraint' means holding back and using calm control."
+    },
+    {
+      "questionId": "w05_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraphs 3 and 4, why does Mr. Lin ask Maya to watch the raindrops falling into the courtyard pond?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To help her see how crowding too many notes together destroys the clarity of each individual sound",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To warn her that the audition will be canceled if the autumn rain turns into a thunderstorm",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "To show her that oak leaves make the same sound as a cello bow on steel strings",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "To prove that cellists should never play sixteenth-note runs during an audition",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When she crammed every note together at top speed, her music sounded just like that choppy puddle.",
+      "childTip": "Click the sentence in Paragraph 4 where Maya connects the choppy puddle to the way she was playing her notes.",
+      "parentExplanation": "In Paragraph 4, Maya draws the inference Mr. Lin intended: just as a hundred raindrops dumped at once turn clear ripples into a choppy mess, cramming notes at top speed ruins the melody's clarity."
+    },
+    {
+      "questionId": "w05_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 1 help set up the main conflict of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It shows Maya's mistaken belief that playing faster than everyone else is the key to winning the audition.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It explains how the three judges at the regional audition score each student's clipboard.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "It describes how Mr. Lin learned to play the cello when he was in fifth grade.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "It proves that the school band room has the best acoustics in the entire county.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "She wanted to play the required cello solo faster than every other fifth grader in the county.",
+      "childTip": "Look at what Maya is trying to do in Paragraph 1 that makes Mr. Lin frown from the doorway.",
+      "parentExplanation": "Paragraph 1 establishes the internal/artistic conflict: Maya is pushing for maximum speed ('faster than every other fifth grader'), producing a 'frantic blur' that prompts Mr. Lin's intervention."
+    },
+    {
+      "questionId": "w05_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w05_q6",
+      "prompt": "Part A: What can the reader infer about Maya's performance during the Saturday audition in Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Her balanced mix of crisp energy and gentle phrasing impressed the judges.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She forgot the second page of her music because she was watching the other players in the hall.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "She played every single note of the solo as slowly and quietly as possible.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The judges asked her to play the solo a second time because the stage was too noisy.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Behind the long table, the three judges looked up from their clipboards and smiled in quiet agreement.",
+      "childTip": "Check how the three judges react right after Maya balances fast energy with gentle breathing room.",
+      "parentExplanation": "Targets Focus Standard ELAGSE5RL1 (explicit & implicit textual evidence). After Maya gives the fast passages crisp energy and lets the gentle melody breathe, the judges look up and smile in quiet agreement."
+    },
+    {
+      "questionId": "w05_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w05_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"The notes tumbled out in a loud, frantic blur that echoed off the cinder-block walls.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "\"Outside, a steady autumn rain fell onto the courtyard pond in slow, silver drops.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"While other players raced through their pieces in the warmup hall, she remembered the single raindrop on the pond.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Behind the long table, the three judges looked up from their clipboards and smiled in quiet agreement.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Behind the long table, the three judges looked up from their clipboards and smiled in quiet agreement.",
+      "childTip": "Pick the quote in Paragraph 5 that shows the judges' positive reaction at the audition table.",
+      "parentExplanation": "Option D provides the direct behavioral evidence from Paragraph 5 proving that the judges were pleased and impressed by Maya's audition."
+    }
+  ]
+}

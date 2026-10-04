@@ -1,0 +1,309 @@
+{
+  "workoutId": "w09_tier2_lit",
+  "workoutNumber": 9,
+  "title": "Midnight Type at the Lantern Press",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1005,
+  "fkgl": 6.53,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RL3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Midnight Type at the Lantern Press",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Thomas pulled the heavy wool cloak across the narrow cellar window in the back of Master Edes's Boston print shop. Outside on Queen Street, the boots of British patrol soldiers clicked against the wet cobblestones in the April chill. It was past midnight in 1775, and a strict curfew required every apprentice to be asleep in the loft above. Yet Master Edes had sprained his wrist that afternoon when a crate of lead bars slipped from a cart. If the urgent town broadside was going to reach the morning riders by dawn, Thomas had to set the metal type himself.\n\nA single tallow candle flickered beside the wooden type case, casting long shadows over the tiny compartments of letters. Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick. Working with ink-stained thumbs beside the dim flame, the reversed lead letters for the warning headline were carefully scrutinized by the young apprentice. One swapped letter could turn a solemn notice about supply wagons into a confusing jumble. Thomas breathed slowly. He checked every capital letter with the tip of his fingernail.\n\nUpstairs, a loud knock rattled the oak street door and made the candle flame jump. Master Edes limped into the front room with his arm in a sling to speak with the sergeant. Down in the cellar, Thomas froze beside the iron press and tried to conceal the damp stack of blank paper beneath a canvas sack. Through the boards, he heard the soldier ask why a light still burned in the shop. Master Edes calmly replied that he was soaking his swollen wrist in warm salt water so he could print shipping forms at noon.\n\nFor ten tense seconds, the heavy boots paced right above Thomas's head near the cellar trapdoor. Thomas gripped the heavy iron lever of the press. He knew that a single creak of the wooden frame would give him away. At last, the street door latched shut and the patrol marched down the lane toward the harbor. Thomas let out his breath and wiped a bead of sweat from his chin.\n\nWorking twice as fast now, he locked the frame of lead type onto the flat bed of the press. He rolled the leather ink balls across the metal letters until they shone like black glass. Then he pulled the long wooden bar with all his weight. The press pushed the damp sheet against the inked type. When he peeled back the first crisp broadside, his quiet act of defiance stood bold and clear in wet black ink.",
+    "wordCount": 439,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Working with ink-stained thumbs beside the dim flame, the reversed lead letters for the warning headline were carefully scrutinized by the young apprentice.",
+      "actorChunk": "the young apprentice",
+      "actionChunk": "carefully scrutinized",
+      "receiverChunk": "the reversed lead letters for the warning headline",
+      "distractorChunks": [
+        "Working with ink-stained thumbs",
+        "beside the dim flame"
+      ],
+      "activeRewrite": "Working with ink-stained thumbs beside the dim flame, the young apprentice carefully scrutinized the reversed lead letters for the warning headline."
+    },
+    "tier2Words": [
+      {
+        "word": "urgent",
+        "definition": "requiring immediate action or attention",
+        "rootHint": "Latin 'urgere' (to press hard or drive forward)",
+        "contextClue": "The town broadside had to reach the morning riders before dawn."
+      },
+      {
+        "word": "scrutinized",
+        "definition": "examined or inspected closely and thoroughly for tiny errors",
+        "rootHint": "Latin 'scrutari' (to search closely or sort through)",
+        "contextClue": "Thomas checked every capital letter with the tip of his fingernail so no swapped letter would ruin the notice."
+      },
+      {
+        "word": "conceal",
+        "definition": "to hide or keep something out of sight",
+        "rootHint": "Latin 'con-' (completely) + 'celare' (to hide)",
+        "contextClue": "Thomas hid the damp stack of blank paper beneath a canvas sack when the soldiers knocked."
+      },
+      {
+        "word": "defiance",
+        "definition": "bold resistance or refusal to obey an unjust rule or authority",
+        "rootHint": "Old French 'defier' (to renounce allegiance or challenge)",
+        "contextClue": "Despite the strict British curfew and patrol outside, Thomas secretly printed the warning notice."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w09_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Working with ink-stained thumbs beside the dim flame, the reversed lead letters for the warning headline were carefully scrutinized by the young apprentice.\"\n\nBased on the structure of this sentence, who or what is performing the action of scrutinizing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The reversed lead letters for the warning headline",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The young apprentice working beside the candle",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The dim flame flickering next to the wooden type case",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The British patrol sergeant inspecting the shop",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Working with ink-stained thumbs beside the dim flame, the reversed lead letters for the warning headline were carefully scrutinized by the young apprentice.",
+      "childTip": "Look right after 'were carefully scrutinized' to the 'by' phrase at the end of the sentence to find the actor.",
+      "parentExplanation": "Because this sentence is written in passive voice ('were carefully scrutinized by the young apprentice'), the grammatical subject ('the reversed lead letters') receives the action. The true actor performing the inspection is 'the young apprentice' (Option B)."
+    },
+    {
+      "questionId": "w09_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Down in the cellar, Thomas froze beside the iron press and tried to conceal the damp stack of blank paper beneath a canvas sack.\"\n\nWhat does the word \"conceal\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To keep something hidden from view",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To dry wet sheets of paper near a candle",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "To fold a printed broadside into a neat square",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "To destroy all the paper in the print shop forever",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Down in the cellar, Thomas froze beside the iron press and tried to conceal the damp stack of blank paper beneath a canvas sack.",
+      "childTip": "Notice where Thomas puts the paper—'beneath a canvas sack'—when the soldier knocks upstairs.",
+      "parentExplanation": "The phrase 'beneath a canvas sack' while hiding in the cellar from the patrol sergeant provides a clear context clue that 'conceal' means to hide from view (Option A)."
+    },
+    {
+      "questionId": "w09_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "In Paragraph 3, how do Master Edes's actions upstairs help Thomas complete his task in the cellar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Master Edes gives a calm excuse about his injured wrist that convinces the sergeant to leave without searching the cellar.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Master Edes carries the heavy crate of lead bars down the cellar stairs so Thomas can work faster.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Master Edes asks the patrol sergeant to help print shipping forms for the harbor at noon.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Master Edes locks the patrol soldiers inside the front room until the morning riders arrive.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Master Edes calmly replied that he was soaking his swollen wrist in warm salt water so he could print shipping forms at noon.",
+      "childTip": "Click the sentence in Paragraph 3 that tells what Master Edes says to explain why the light is still on.",
+      "parentExplanation": "Aligned to ELAGSE5RL3 (how characters interact and respond to challenges), Master Edes protects Thomas's secret work below by using his real wrist injury as a believable excuse for why a light is burning past curfew (Option A)."
+    },
+    {
+      "questionId": "w09_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 4 contribute to the overall structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It builds the story's highest moment of suspense as the patrol boots pace right above Thomas's hiding spot before leaving.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It explains the historical rules for how apprentices were hired in colonial Boston.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It introduces the main conflict by showing how Master Edes sprained his wrist on the cart.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "It proves that Thomas was too frightened to ever touch the printing press again.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "For ten tense seconds, the heavy boots paced right above Thomas's head near the cellar trapdoor.",
+      "childTip": "Think about how Paragraph 4 makes the reader feel while the soldier walks right over the trapdoor.",
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 4 serves as the climax of tension between the sergeant's arrival in Paragraph 3 and the triumphant printing resolution in Paragraph 5 (Option A)."
+    },
+    {
+      "questionId": "w09_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w09_q6",
+      "prompt": "PART A: What can the reader infer about setting metal type on a colonial printing press from Paragraph 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It required intense focus and patience because letters had to be placed backward and checked one by one.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It could only be done in total darkness because candle heat melted the lead letters.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "It was the easiest job in the print shop and required no training to master.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "It used brass composing sticks that automatically corrected spelling mistakes.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick.",
+      "childTip": "Look at Paragraph 2 to see why Thomas had to build words upside down and check every letter.",
+      "parentExplanation": "Paragraph 2 describes how metal type prints in reverse, requiring the printer to assemble words upside down and right-to-left while checking every character so a swapped letter wouldn't garble the message (Option A)."
+    },
+    {
+      "questionId": "w09_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w09_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Outside on Queen Street, the boots of British patrol soldiers clicked against the wet cobblestones in the April chill.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"Upstairs, a loud knock rattled the oak street door and made the candle flame jump.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"He rolled the leather ink balls across the metal letters until they shone like black glass.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick.",
+      "childTip": "Pick the quote from Paragraph 2 that explains how each word had to be built in the brass composing stick.",
+      "parentExplanation": "Option B directly proves the inference in Part A by detailing the backward, upside-down, right-to-left precision required to set metal type."
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "workoutId": "w03_tier1_lit",
+  "workoutNumber": 3,
+  "title": "Through the Cohutta Fog",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 960,
+  "fkgl": 5.7,
+  "genre": "Literary",
+  "subGenre": "Historical Adventure",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL4",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Through the Cohutta Fog",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Cold mountain mist rolled down the slopes of Cohutta Ridge faster than Clara had expected. Within ten minutes, a thick gray blanket hid the pine tops along the North Georgia trail. Her younger brother, Sam, stopped beside a mossy boulder and pulled his wool coat tight. The wooden trail signs from the forestry camp had vanished into the swirling haze. Clara reached into her canvas pack. She unfolded their grandfather's hand-drawn map from 1938.\n\nGrandpa Arthur had sketched every creek bend and rock ledge in waterproof ink. He had made the map while working for the state park service. Sam peered over Clara's shoulder at the faded paper, hoping to spot a quick shortcut. The steep logging path, hidden beneath a thick carpet of wet pine needles and fallen oak limbs, was carefully traced by Clara with her brass compass. She knew that one wrong turn near the ridge could lead them into a rocky gorge. Instead of guessing which fork to take, she knelt to check the landmarks drawn in the margin.\n\nNear the center of the page, Grandpa had drawn three notched hemlock trees beside a granite split. Clara held the compass flat on her palm. She waited until the quivering red needle settled toward north. A hundred yards ahead, the dim shapes of three tall hemlocks loomed like silent sentries in the mist. Sam ran his fingers across the rough bark of the middle trunk. He felt the three deep axe marks carved long ago.\n\nBeyond the hemlock trees, the ground dropped sharply toward a rushing mountain stream that blocked the faint path. Smooth stepping stones, slick with green moss, curved across the foaming water toward the cabin. Sam started to leap onto the first wet rock, eager to reach the warm hearth on the far bank. Clara caught his sleeve and pointed to a note penciled at the bottom of the map. The note warned hikers to walk upstream fifty paces to a sturdy locust log bridge during high water.\n\nThey followed the creek bank through the quiet woods until the broad log bridge appeared out of the fog. Crossing safely above the cold spray, Sam admitted that jumping the stones would have ended in a freezing soak. Moments later, the yellow lantern of the ranger station glowed through the trees like a small sun. Clara folded the linen map with care and tucked it back into its leather case. Grandpa's patient eye had guided them home across eighty years of mountain weather.",
+    "wordCount": 417,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The steep logging path, hidden beneath a thick carpet of wet pine needles and fallen oak limbs, was carefully traced by Clara with her brass compass.",
+      "actorChunk": "Clara",
+      "actionChunk": "carefully traced",
+      "receiverChunk": "The steep logging path",
+      "distractorChunks": [
+        "hidden beneath a thick carpet of wet pine needles and fallen oak limbs",
+        "with her brass compass"
+      ],
+      "activeRewrite": "Clara carefully traced the steep logging path with her brass compass."
+    },
+    "tier2Words": [
+      {
+        "word": "vanished",
+        "definition": "disappeared suddenly and completely from sight",
+        "rootHint": "Latin root vanus ('empty')",
+        "contextClue": "A thick gray blanket of fog swallowed the pine tops so the wooden trail signs could no longer be seen."
+      },
+      {
+        "word": "gorge",
+        "definition": "a narrow, steep-walled canyon or deep valley between hills",
+        "rootHint": "Old French gorge ('throat or narrow passage')",
+        "contextClue": "One wrong turn near the high mountain ridge could lead hikers down into a steep, rocky canyon."
+      },
+      {
+        "word": "quivering",
+        "definition": "trembling or shaking with a slight, rapid motion",
+        "rootHint": "From Old English cwifer ('nimble or trembling')",
+        "contextClue": "Clara held the compass flat on her palm until the shaking red needle finally settled toward north."
+      },
+      {
+        "word": "sentries",
+        "definition": "guards stationed at a spot to keep watch and protect a path",
+        "rootHint": "Related to sentinel ('watchman')",
+        "contextClue": "The three tall hemlock trees stood side by side in the mist as if guarding the mountain trail."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w03_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The steep logging path, hidden beneath a thick carpet of wet pine needles and fallen oak limbs, was carefully traced by Clara with her brass compass.\"\n\nWho or what performed the action of tracing the logging path?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wet pine needles and fallen oak limbs traced the brass compass across the ridge.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Clara traced the steep logging path using her brass compass.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The steep logging path traced Clara until she reached the valley road.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Grandpa Arthur walked ahead of the children to clear the fallen oak limbs.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The steep logging path, hidden beneath a thick carpet of wet pine needles and fallen oak limbs, was carefully traced by Clara with her brass compass.",
+      "childTip": "Skip the comma phrase about pine needles and oak limbs! Look after 'was carefully traced by' to find the real actor.",
+      "parentExplanation": "In this passive construction, 'The steep logging path' is the receiver of the action, separated from the verb by an 11-word participial phrase ('hidden beneath...'). 'Clara' (after 'by') is the true grammatical actor."
+    },
+    {
+      "questionId": "w03_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"A hundred yards ahead, the dim shapes of three tall hemlocks loomed like silent sentries in the mist.\"\n\nWhy does the author compare the three hemlock trees to \"silent sentries\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To show that the tall trees stood upright in a row as if standing guard over the mountain trail",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To suggest that the trees were shouting loud warnings to hikers lost in the valley",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "To prove that park rangers had chopped down all the trees along Cohutta Ridge",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "To explain how hemlock needles turn bright yellow during dry summer weather",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "A hundred yards ahead, the dim shapes of three tall hemlocks loomed like silent sentries in the mist.",
+      "childTip": "A sentry is a watchful guard. The simile compares the tall, quiet trees to guards marking the trail.",
+      "parentExplanation": "This item targets ELAGSE5RL4 (figurative language/simile). Comparing the notched hemlocks to 'silent sentries' emphasizes how they stood tall and watchful at a key checkpoint along the foggy trail."
+    },
+    {
+      "questionId": "w03_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why does Clara stop Sam from jumping onto the stepping stones?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The stones are slick with moss in high water, and Grandpa's map points to a safer log bridge upstream.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She wants to turn around and spend the night inside the hollow trunk of a hemlock tree.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Sam does not know how to swim across deep lakes during the winter.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The ranger cabin is located on the same side of the stream where they are already standing.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "The note warned hikers to walk upstream fifty paces to a sturdy locust log bridge during high water.",
+      "childTip": "Click the sentence in Paragraph 4 that tells what Grandpa's penciled note warned hikers to do.",
+      "parentExplanation": "Paragraph 4 explains that the stepping stones were slick with moss and foaming water, and Clara noticed Grandpa's penciled warning to use the locust log bridge fifty paces upstream instead."
+    },
+    {
+      "questionId": "w03_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How do Clara and Sam respond differently to the challenges on the foggy trail?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sam looks for quick shortcuts and leaps ahead, while Clara checks landmarks and reads every detail on the map.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Clara wants to race across the mossy stones, while Sam insists on reading the 1938 map with the compass.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Both siblings ignore their grandfather's map and follow a park ranger down the valley road.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Sam draws a brand-new map in waterproof ink while Clara builds a wooden bridge over the creek.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Sam started to leap onto the first wet rock, eager to reach the warm hearth on the far bank.",
+      "childTip": "Compare how Sam acts (hoping for a shortcut, leaping onto wet rocks) with how Clara checks the map first.",
+      "parentExplanation": "Across Paragraphs 2 and 4 (ELAGSE5RL3), Sam is impulsive—hoping for a quick shortcut and starting to leap onto slick rocks—whereas Clara methodically verifies compass bearings, tree notches, and margin notes."
+    },
+    {
+      "questionId": "w03_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w03_q6",
+      "prompt": "Part A: What is a central message of \"Through the Cohutta Fog\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careful preparation and wisdom passed down from the past can guide people safely through sudden dangers.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Hand-drawn paper maps are completely useless whenever fog covers a mountain trail.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Hikers should always cross mountain streams by jumping across mossy stepping stones.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Hemlock trees grow taller in North Georgia than anywhere else in the United States.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Grandpa's patient eye had guided them home across eighty years of mountain weather.",
+      "childTip": "Look at how Grandpa's 1938 map and Clara's careful reading work together to bring them safely to the station.",
+      "parentExplanation": "The story's central message highlights how Grandpa Arthur's careful 1938 surveyor notes and Clara's disciplined navigation worked together to bring the siblings safely through the fog."
+    },
+    {
+      "questionId": "w03_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w03_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Her younger brother, Sam, stopped beside a mossy boulder and pulled his wool coat tight.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"The wooden trail signs from the forestry camp had vanished into the swirling haze.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Beyond the hemlock trees, the ground dropped sharply toward a rushing mountain stream that blocked the faint path.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Grandpa's patient eye had guided them home across eighty years of mountain weather.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Grandpa's patient eye had guided them home across eighty years of mountain weather.",
+      "childTip": "Pick the final sentence in Paragraph 5 that sums up how Grandpa's careful work led them to safety.",
+      "parentExplanation": "Option D is the concluding sentence of the passage and directly encapsulates the theme selected in Part A."
+    }
+  ]
+}

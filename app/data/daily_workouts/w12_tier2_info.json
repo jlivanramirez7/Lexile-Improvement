@@ -1,0 +1,309 @@
+{
+  "workoutId": "w12_tier2_info",
+  "workoutNumber": 12,
+  "title": "Stone Steps and Grass Bridges of the Andes",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1030,
+  "fkgl": 7.04,
+  "genre": "Informational",
+  "subGenre": "Ancient Civilizations",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI5",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Stone Steps and Grass Bridges of the Andes",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Five hundred years ago, the Inca Empire stretched for two thousand miles along the spine of the Andes Mountains in South America. This high world of jagged peaks and deep river gorges was one of the hardest places on Earth to build a kingdom. Flat farmland barely existed on the steep cliffs. Heavy summer rains could quickly wash away loose dirt. At night, icy mountain winds dropped temperatures below freezing and threatened to kill young crops. Yet Inca engineers solved both farming and travel challenges using local stone and wild mountain grass.\n\nTo create flat fields on steep slopes, workers carved giant steps called terraces into the mountainside. Each step was held in place by a slanted wall of tightly fitted granite blocks. Beneath the rich topsoil of every terrace, layers of coarse river gravel and packed sand were carefully arranged by Inca masons. When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode. Even better, the dark stone walls soaked up warm sunlight all afternoon. Throughout the freezing night, the rocks retained that stored heat and kept potato and corn roots from turning to ice.\n\nGrowing food was only half the battle across the broken mountain chain. The Inca also needed to connect their royal road network across roaring canyons that were hundreds of feet deep. Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps. Instead, engineers turned to tough golden grass that grew wild on the high plains.\n\nEvery year, whole villages gathered to twist millions of pliable grass stems into cords as thick as a person's waist. Workers braided three or four of these giant cables together to form the floor and hand ropes of a suspension bridge. They anchored the ends around heavy stone piers on each cliff edge. Some grass bridges spanned gorges more than one hundred fifty feet wide.\n\nAlthough grass rots over time in rain and wind, the Inca turned that weakness into a yearly tradition. Each spring, local communities wove fresh cables and replaced the old bridge in just three days. While stone terraces conquered the steep slopes, woven grass bridges linked the empire together across the sky.",
+    "wordCount": 382,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Beneath the rich topsoil of every terrace, layers of coarse river gravel and packed sand were carefully arranged by Inca masons.",
+      "actorChunk": "Inca masons",
+      "actionChunk": "carefully arranged",
+      "receiverChunk": "layers of coarse river gravel and packed sand",
+      "distractorChunks": [
+        "Beneath the rich topsoil",
+        "of every terrace"
+      ],
+      "activeRewrite": "Inca masons carefully arranged layers of coarse river gravel and packed sand beneath the rich topsoil of every terrace."
+    },
+    "tier2Words": [
+      {
+        "word": "erode",
+        "definition": "to gradually wear away or wash away soil and rock by water or wind",
+        "rootHint": "Latin 'e-' (away) + 'rodere' (to gnaw)",
+        "contextClue": "The underground gravel filter let extra storm water drain safely so the soil could not wash away."
+      },
+      {
+        "word": "retained",
+        "definition": "kept or continued to hold something inside rather than losing it",
+        "rootHint": "Latin 're-' (back) + 'tenere' (to hold)",
+        "contextClue": "The dark stone walls soaked up sunlight all afternoon and held on to that stored heat through the freezing night."
+      },
+      {
+        "word": "pliable",
+        "definition": "easily bent or twisted without breaking; flexible",
+        "rootHint": "French 'plier' (to fold or bend)",
+        "contextClue": "Villagers twisted millions of bendable grass stems into thick cords."
+      },
+      {
+        "word": "spanned",
+        "definition": "stretched or extended all the way across from one side to the other",
+        "rootHint": "Old English 'spannan' (to join or stretch across)",
+        "contextClue": "Some grass bridges stretched across gorges more than one hundred fifty feet wide."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w12_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Beneath the rich topsoil of every terrace, layers of coarse river gravel and packed sand were carefully arranged by Inca masons.\"\n\nBased on the structure of this sentence, who or what performed the action of arranging?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inca masons building the mountain terraces",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The rich topsoil at the top of every terrace",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Layers of coarse river gravel and packed sand",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Fierce summer storms drenching the mountain peaks",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Beneath the rich topsoil of every terrace, layers of coarse river gravel and packed sand were carefully arranged by Inca masons.",
+      "childTip": "Look right after 'were carefully arranged' to find the 'by' phrase naming the real builders.",
+      "parentExplanation": "In this passive sentence, 'layers of coarse river gravel and packed sand' is the grammatical subject receiving the action. The true actor performing the arranging is in the final 'by' phrase: 'Inca masons' (Option A)."
+    },
+    {
+      "questionId": "w12_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Throughout the freezing night, the rocks retained that stored heat and kept potato and corn roots from turning to ice.\"\n\nWhat does the word \"retained\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Held on to and kept inside",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Blocked sunlight from reaching the stone walls",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Cracked into small pieces of river gravel",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Melted the granite blocks into liquid rock",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Throughout the freezing night, the rocks retained that stored heat and kept potato and corn roots from turning to ice.",
+      "childTip": "Notice how the previous sentence says the walls soaked up warm sunlight all afternoon, and then kept roots from freezing at night.",
+      "parentExplanation": "The root 'tenere' means to hold ('re-' + 'tain' = hold back/keep). Because the stone walls soaked up afternoon sun and kept crop roots from freezing overnight, 'retained' means held on to that stored heat (Option A)."
+    },
+    {
+      "questionId": "w12_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "According to Paragraph 3, why did Inca engineers weave bridges out of wild mountain grass instead of building them from wood or stone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The high Andes lacked tall, straight trees for wooden beams, and stone arches were too heavy to cross such wide canyons.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Inca masons did not know how to carve or fit granite blocks together on steep cliffs.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Wild mountain grass never rotted in the rain and lasted for hundreds of years without repairs.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Wooden bridges attracted herds of wild animals that ate the corn and potato crops.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps.",
+      "childTip": "Click the sentence in Paragraph 3 that begins with 'Because the Andes lacked' to prove why wood and stone were not used.",
+      "parentExplanation": "Paragraph 3 directly explains the material constraint: 'Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps,' leading engineers to use wild golden grass (Option A)."
+    },
+    {
+      "questionId": "w12_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the author organize the information across the entire passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By introducing the harsh mountain challenges of the Andes and then explaining the engineering solutions the Inca created for farming and travel",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By comparing the height of the Andes Mountains to other mountain ranges in North America and Europe",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "By focusing only on how villagers braided three or four grass cables together to form a single bridge floor",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "By arguing that woven grass bridges were much more important to the Inca Empire than stone farming terraces",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Yet Inca engineers solved both farming and travel challenges using local stone and wild mountain grass.",
+      "childTip": "Look at the last sentence of Paragraph 1 to see the two big problems and solutions that organize the rest of the passage.",
+      "parentExplanation": "Aligned to ELAGSE5RI5, the passage uses a clear Problem/Solution structure forecast in Paragraph 1 ('solved both farming and travel challenges'): Paragraph 2 details the terrace solution for farming, and Paragraphs 3–5 detail the suspension bridge solution for travel (Option A)."
+    },
+    {
+      "questionId": "w12_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w12_q6",
+      "prompt": "PART A: Based on Paragraph 2, how did the underground layers of gravel and sand protect the Inca farming terraces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They allowed heavy storm water to drain safely to lower steps so the rich topsoil would not wash down the mountain.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "They absorbed afternoon sunlight and warmed the potato roots during freezing mountain nights.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "They provided a soft place for villagers to anchor the ends of their woven grass bridge cables.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "They stopped all rain clouds from forming above the peaks of the Andes Mountains.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode.",
+      "childTip": "Be careful not to mix up what the underground gravel filter did (drain water) with what the dark stone walls did (store heat).",
+      "parentExplanation": "Paragraph 2 describes two distinct features of the terraces: the underground gravel/sand filter drained storm water so soil would not erode (Option A), whereas the dark granite walls stored solar heat (Option B, a Syntactic/Concept Reversal trap)."
+    },
+    {
+      "questionId": "w12_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w12_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Flat farmland barely existed on the steep cliffs.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"Even better, the dark stone walls soaked up warm sunlight all afternoon.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "\"Each spring, local communities wove fresh cables and replaced the old bridge in just three days.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode.",
+      "childTip": "Pick the quote from Paragraph 2 that explains how the underground filter kept the soil from eroding during storms.",
+      "parentExplanation": "Option B directly proves the claim in Part A by quoting how the underground gravel and sand filter drained storm water safely so the topsoil could not erode."
+    }
+  ]
+}

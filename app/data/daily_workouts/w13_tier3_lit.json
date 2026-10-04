@@ -1,0 +1,333 @@
+{
+  "workoutId": "w13_tier3_lit",
+  "workoutNumber": 13,
+  "title": "The Vault Beneath the Permafrost",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1040,
+  "fkgl": 6.88,
+  "genre": "Literary",
+  "subGenre": "Realistic / Science Fiction",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Vault Beneath the Permafrost",
+    "author": "BEACON Assessment Lab",
+    "text": "Deep inside a frozen peak on Svalbard Island, young clerk Sorel checked the frost dials in Chamber Three. Outside the thick steel doors, an Arctic gale howled across the dark ice and snapped the main power lines. Inside the room, rows of glass crates held dormant crop seeds sent from farms all over Earth. When the bright ceiling lamps flickered and died, small amber lanterns cast long shadows across the floor. Sorel knew that most of the seeds would stay safe for weeks. The deep mountain rock stayed well below freezing.\n\nOne front drawer near the entry hatch, though, faced real danger because warm tunnel air was leaking through a cracked seal. That drawer held twelve packs of highland winter barley that cold mountain farms needed to plant their spring crops. The rare barley pouches, sealed inside silver foil packets for nearly forty years, were swiftly transferred by Sorel into the deep stone alcove. While red wall lights flashed in the dark, she watched the backup battery charge dwindle with each passing minute. If the cooling fans stopped completely, the rising heat near the door would wake the seeds too soon and spoil them.\n\nSorel faced a hard choice before the last battery cell drained. Standard vault rules required staff to lock the inner chamber door and wait in the warm control room until engineers cleared the storm. Yet if she left the room now, the warm draft near the hatch would slowly spread toward the middle racks. On the other hand, she could haul heavy blocks of glacier ice from the porch to insulate the cracked seal. Doing that meant working alone in the dark.\n\nPulling her wool scarf tight, Sorel pried loose a sled of dense ice blocks from the outer porch. She wedged the frozen slabs firmly against the leaking rubber seal and packed crushed snow into every narrow gap. Soon the warm draft stopped completely. Her fingers ached inside her thick gloves, and her lamp beam grew dim, yet the wall gauge steadied at eighteen degrees below zero. The natural cold of the mountain rock was once again holding the chamber in a safe, steady freeze.\n\nWhen the repair crew finally forced open the outer hatch at dawn, they found Sorel logging frost readings by lantern light. The head botanist checked the packed ice wall and praised her quick work, noting that every pack of highland grain remained safe. Sorel saw that guarding the vault meant more than scanning neat metal shelves on calm days. True stewardship required protecting vital seeds when machines failed and only human resolve stood between a rare harvest and loss.",
+    "wordCount": 439,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The rare barley pouches, sealed inside silver foil packets for nearly forty years, were swiftly transferred by Sorel into the deep stone alcove.",
+      "actorChunk": "by Sorel",
+      "actionChunk": "were swiftly transferred",
+      "receiverChunk": "The rare barley pouches",
+      "distractorChunks": [
+        "sealed inside silver foil packets for nearly forty years",
+        "into the deep stone alcove"
+      ],
+      "activeRewrite": "Sorel swiftly transferred the rare barley pouches into the deep stone alcove."
+    },
+    "tier2Words": [
+      {
+        "word": "dormant",
+        "definition": "Asleep or inactive, waiting for the right conditions to grow",
+        "rootHint": "dorm- (Latin root meaning 'sleep', as in dormitory)",
+        "contextClue": "The seeds must stay cold so the rising heat does not 'wake the seeds too soon and spoil them.'"
+      },
+      {
+        "word": "dwindle",
+        "definition": "To gradually shrink, decrease, or fade away",
+        "rootHint": "Old English dwinan (to waste away or become smaller)",
+        "contextClue": "Paired with 'with each passing minute' and 'before the last battery cell drained.'"
+      },
+      {
+        "word": "insulate",
+        "definition": "To shield or block something so heat or cold cannot pass through",
+        "rootHint": "insul- (Latin root meaning 'island' or 'set apart')",
+        "contextClue": "Sorel wedges frozen ice slabs against the leaking seal until 'the warm draft stopped completely.'"
+      },
+      {
+        "word": "vital",
+        "definition": "Absolutely necessary for life or survival",
+        "rootHint": "vit- (Latin root meaning 'life', as in vitamin)",
+        "contextClue": "The barley is needed by mountain farms to plant spring crops and prevent permanent 'loss.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w13_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The rare barley pouches, sealed inside silver foil packets for nearly forty years, were swiftly transferred by Sorel into the deep stone alcove.\"\n\nWho or what performed the action of transferring the pouches in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The silver foil packets that held the grain for forty years",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the object inside the descriptive participial phrase ('sealed inside silver foil packets') with the grammatical actor."
+        },
+        {
+          "id": "B",
+          "text": "Sorel, the young clerk working inside the seed chamber",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Sorel') in the passive verb construction 'were swiftly transferred by Sorel'."
+        },
+        {
+          "id": "C",
+          "text": "The rare barley pouches resting near the entry hatch",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('The rare barley pouches') with the actor performing the transfer."
+        },
+        {
+          "id": "D",
+          "text": "The deep stone alcove at the back of the seed vault",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Selects the destination prepositional phrase ('into the deep stone alcove') rather than the person who moved the pouches."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The rare barley pouches, sealed inside silver foil packets for nearly forty years, were swiftly transferred by Sorel into the deep stone alcove.",
+      "childTip": "Spot the passive verb 'were transferred by.' The word right after 'by' tells you who actually did the moving!",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). Because 'The rare barley pouches' appears first and is followed by a 9-word descriptive phrase ('sealed inside silver foil packets for nearly forty years'), rushed readers often miss that the verb 'were swiftly transferred by Sorel' is passive. Sorel is the true actor."
+    },
+    {
+      "questionId": "w13_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5L4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"While red wall lights flashed in the dark, she watched the backup battery charge dwindle with each passing minute.\"\n\nWhat does the word dwindle most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Surge dangerously high during a storm",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the meaning of the word; power is running out, not surging higher."
+        },
+        {
+          "id": "B",
+          "text": "Shrink steadily toward nothing",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the context clues of failing backup batteries and Paragraph 3's reference to 'before the last battery cell drained.'"
+        },
+        {
+          "id": "C",
+          "text": "Flash brightly along the stone wall",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Associates the verb with 'red wall lights flashed' rather than the amount of battery charge remaining."
+        },
+        {
+          "id": "D",
+          "text": "Recharge automatically using wind turbines",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Introduces unsupported outside concepts about wind turbines that contradict the power failure in the text."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "While red wall lights flashed in the dark, she watched the backup battery charge dwindle with each passing minute.",
+      "childTip": "Look at the next paragraph for a clue: the battery cell is draining. What happens to power as it drains?",
+      "parentExplanation": "Students must triangulate 'dwindle' using surrounding context clues: the main lamps died (Paragraph 1), the cooling fans are about to stop (Paragraph 2), and the 'last battery cell drained' (Paragraph 3). Therefore, 'dwindle' means to shrink steadily."
+    },
+    {
+      "questionId": "w13_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraphs 2 and 4, why was the deep stone alcove safer for the barley packets than the front drawer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The stone alcove had its own separate diesel generator that never lost electricity.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents a separate diesel generator not mentioned anywhere in the passage."
+        },
+        {
+          "id": "B",
+          "text": "The deep mountain rock stayed naturally below freezing once the warm draft from the cracked seal was blocked.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Combines the fact that the surrounding mountain rock stays naturally below freezing with Sorel's ice wall blocking the warm air leak."
+        },
+        {
+          "id": "C",
+          "text": "The alcove was heated by lanterns so the frost-resistant barley could begin sprouting right away.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Flips the goal of the seed vault: warming the seeds would spoil them by waking them too soon."
+        },
+        {
+          "id": "D",
+          "text": "Every seed crate in the vault was indestructible and could never be harmed by warm air.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('indestructible', 'never') that directly contradicts the danger described in Paragraph 2."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "The natural cold of the mountain rock was once again holding the chamber in a safe, steady freeze.",
+      "childTip": "First click the sentence in Paragraph 4 that explains what kept the chamber frozen after the power went out.",
+      "parentExplanation": "This item requires Click-to-Prove verification (ELAGSE5RL1). Paragraph 1 and Paragraph 4 explain that the surrounding mountain rock naturally stays below freezing; the front drawer was only endangered because warm tunnel air leaked through a cracked rubber seal."
+    },
+    {
+      "questionId": "w13_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 3 mainly contribute to the overall structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It explains the history of how Svalbard Island was chosen as the site for the seed vault.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Refers to historical background information that does not appear in Paragraph 3."
+        },
+        {
+          "id": "B",
+          "text": "It presents the central conflict by weighing the safety rule of waiting in the control room against the urgent need to seal the leak.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately captures how Paragraph 3 frames Sorel's internal dilemma between standard protocol and saving the seeds."
+        },
+        {
+          "id": "C",
+          "text": "It describes the exact tools the repair crew used to fix the snapped coastal power lines.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Misattributes details about engineers and power lines, which are only briefly mentioned in Paragraphs 1 and 5."
+        },
+        {
+          "id": "D",
+          "text": "It proves that vault safety rules are always useless during every Arctic storm.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses absolute qualifiers ('always useless', 'every') that distort Sorel's specific emergency decision."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Standard vault rules required staff to lock the inner chamber door and wait in the warm control room until engineers cleared the storm.",
+      "childTip": "Ask yourself: what two choices is Sorel weighing against each other in Paragraph 3?",
+      "parentExplanation": "Under ELAGSE5RL5 (Story Structure), Paragraph 3 serves as the turning-point dilemma between the inciting problem (Paragraph 2: leaking warm air) and the climax action (Paragraph 4: packing glacier ice against the seal)."
+    },
+    {
+      "questionId": "w13_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w13_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Automated computers and electric fans are more reliable than human workers in extreme climates.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts the story, where automated cooling fails and human resolve saves the seeds."
+        },
+        {
+          "id": "B",
+          "text": "True responsibility means taking thoughtful action to protect what matters when routine systems fail.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes Sorel's decision to act during the blackout and the concluding lesson about true stewardship."
+        },
+        {
+          "id": "C",
+          "text": "Highland winter barley is the only grain crop capable of surviving inside an underground Arctic vault.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses the extreme qualifier 'only' and focuses on a narrow detail rather than the thematic message."
+        },
+        {
+          "id": "D",
+          "text": "Junior clerks should organize seed packets by age so forty-year-old pouches are easy to find.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on a minor detail from Paragraph 2 instead of the overarching theme."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "True stewardship required protecting vital seeds when machines failed and only human resolve stood between a rare harvest and loss.",
+      "childTip": "Look at what Sorel learns at the very end of Paragraph 5 about what 'true stewardship' really means.",
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). While Option D is a minor detail ('TRAP_TOO_NARROW') and Option A reverses the plot ('TRAP_SYNTACTIC_REVERSAL'), Option B captures the passage's concluding insight on stewardship during crisis."
+    },
+    {
+      "questionId": "w13_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w13_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Inside the room, rows of glass crates held dormant crop seeds sent from farms all over Earth.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the setting of the vault in Paragraph 1 but does not prove the theme about human responsibility when machines fail."
+        },
+        {
+          "id": "B",
+          "text": "\"While red wall lights flashed in the dark, she watched the backup battery charge dwindle with each passing minute.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Mentions the flashing lights and battery charge, but does not express the lesson about human stewardship."
+        },
+        {
+          "id": "C",
+          "text": "\"When the repair crew finally forced open the outer hatch at dawn, they found Sorel logging frost readings by lantern light.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Shows the resolution of the plot, but does not state the overarching thematic takeaway."
+        },
+        {
+          "id": "D",
+          "text": "\"True stewardship required protecting vital seeds when machines failed and only human resolve stood between a rare harvest and loss.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the theme in Part A by connecting 'true stewardship' to human resolve when automated systems fail."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "True stewardship required protecting vital seeds when machines failed and only human resolve stood between a rare harvest and loss.",
+      "childTip": "Pick the exact quote from Paragraph 5 that connects 'true stewardship' to acting when machines fail.",
+      "parentExplanation": "Part B requires 100% verbatim textual proof for the theme identified in Part A. Option D directly states the lesson Sorel learns at the end of the narrative."
+    }
+  ]
+}

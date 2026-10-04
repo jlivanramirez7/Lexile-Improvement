@@ -1,0 +1,304 @@
+{
+  "workoutId": "w20_tier4_info",
+  "workoutNumber": 20,
+  "title": "Mirrors in the Cold Dark",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1110,
+  "fkgl": 7.58,
+  "genre": "Informational",
+  "subGenre": "Astrophysics & Space Exploration",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RI3",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "Mirrors in the Cold Dark",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 392,
+    "paragraphCount": 5,
+    "text": "Light from the first stars has traveled across space for more than thirteen billion years. As the universe expands, it stretches those ancient light waves until they shift past what human eyes can see. They become faint infrared rays, which we feel on Earth as gentle heat. Because warm air and glowing dust in our own sky block those weak signals, ground telescopes cannot spot them clearly. To capture that ancient starlight, engineers had to send the James Webb Space Telescope far beyond the moon.\n\nThe craft orbits at a stable balance spot in deep space called the second Lagrange point, or L2. Here, the pull of Earth and the Sun hold the telescope steady on a cold, dark path. One million miles from Earth, the eighteen gold-coated mirror segments made of light beryllium were unfolded by tiny motors after the sunshield was locked tight. This rare metal stays stiff in deep freeze and weighs far less than glass. A five-layer kite of thin film blocks heat from the Sun and Earth so warmth does not impede the sensors.\n\nIn that deep chill, the main mirror works like a giant bucket for catching faint heat drops from young galaxies. Each six-sided plate is polished until its curve is smooth within a fraction of a human hair. Tiny rods behind each plate nudge the metal segments until all eighteen pieces act as one wide eye. Working together, they preserve the crisp shape of distant star clusters that formed soon after cosmic dawn.\n\nEven with a twenty-foot gold mirror, some early stars are still too dim for the telescope to see alone. Fortunately, space itself provides a natural booster through an effect known as gravitational lensing. When a massive cluster of galaxies sits between the telescope and a deeper star, its huge gravity bends the fabric of space. Like a thick glass lens, that curved space acts to magnify the background light into bright arcs and rings.\n\nBy aiming the cold mirror at these gravity lenses, scientists can study galaxies that would otherwise stay hidden forever. Sensors on the craft split the stretched light into a rainbow code that reveals subtle traces of oxygen, carbon, and neon. Step by step, human tools at L2 now team up with giant cosmic lenses. Together, they are rewriting the story of how the first stars were born.",
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "One million miles from Earth, the eighteen gold-coated mirror segments made of light beryllium were unfolded by tiny motors after the sunshield was locked tight.",
+      "actorChunk": "tiny motors",
+      "actionChunk": "were unfolded",
+      "receiverChunk": "the eighteen gold-coated mirror segments",
+      "distractorChunks": [
+        "One million miles from Earth",
+        "made of light beryllium",
+        "after the sunshield was locked tight"
+      ],
+      "activeRewrite": "One million miles from Earth, tiny motors unfolded the eighteen gold-coated mirror segments made of light beryllium after locking the sunshield tight."
+    },
+    "tier2Words": [
+      {
+        "word": "impede",
+        "definition": "To block, slow down, or get in the way of a process",
+        "rootHint": "From Latin 'impedire' meaning to shackle the feet",
+        "contextClue": "The five-layer sunshield blocks heat from the Sun and Earth so warmth does not interfere with the cold sensors."
+      },
+      {
+        "word": "preserve",
+        "definition": "To keep something safe, intact, or in its original state",
+        "rootHint": "From 'pre-' (before) + 'servare' (to guard or keep safe)",
+        "contextClue": "Aligning all eighteen mirror pieces keeps the crisp shape of distant star clusters clear."
+      },
+      {
+        "word": "magnify",
+        "definition": "To make something appear larger, brighter, or stronger",
+        "rootHint": "From Latin 'magnus' meaning great or large",
+        "contextClue": "Like a thick glass lens, curved space boosts and enlarges faint background light into bright arcs."
+      },
+      {
+        "word": "subtle",
+        "definition": "Faint, delicate, or hard to detect without close inspection",
+        "rootHint": "From Latin 'subtilis' meaning fine or delicately woven",
+        "contextClue": "Special sensors split the stretched light to spot faint chemical traces of oxygen and carbon."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w20_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"One million miles from Earth, the eighteen gold-coated mirror segments made of light beryllium were unfolded by tiny motors after the sunshield was locked tight.\"\n\nIn this sentence, what performed the action of unfolding the mirror segments?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The light beryllium that formed the eighteen gold-coated segments",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The tiny motors on the spacecraft",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The five-layer sunshield that was locked tight",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The pull of Earth one million miles away",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "One million miles from Earth, the eighteen gold-coated mirror segments made of light beryllium were unfolded by tiny motors after the sunshield was locked tight.",
+      "childTip": "Find the passive verb 'were unfolded by'—the noun right after 'by' names what did the unfolding.",
+      "parentExplanation": "The passive verb 'were unfolded by' is separated from the grammatical subject ('mirror segments') by the participial phrase 'made of light beryllium.' The agent performing the unfolding is 'tiny motors.'"
+    },
+    {
+      "questionId": "w20_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"A five-layer kite of thin film blocks heat from the Sun and Earth so warmth does not impede the sensors.\"\n\nWhat does the word \"impede\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Power or recharge",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Interfere with or block",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Polish or brighten",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Destroy completely forever",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "A five-layer kite of thin film blocks heat from the Sun and Earth so warmth does not impede the sensors.",
+      "childTip": "Notice why the sunshield blocks heat: to keep warmth from getting in the way of the cold sensors.",
+      "parentExplanation": "Because the telescope detects faint infrared heat signals, stray warmth from the Sun or Earth would interfere with ('impede') the sensors' ability to read distant starlight."
+    },
+    {
+      "questionId": "w20_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 1, why has ancient starlight turned into infrared rays by the time it reaches the telescope?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Warm air and glowing dust in Earth's sky heat the light waves up as they pass the moon.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The expanding universe stretches the traveling light waves beyond visible light.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The gold coating on the eighteen mirror segments turns every beam of light into heat.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Ancient stars only ever gave off invisible heat instead of bright light when they formed.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "As the universe expands, it stretches those ancient light waves until they shift past what human eyes can see.",
+      "childTip": "Click the sentence in Paragraph 1 that explains what happens to ancient light waves as the universe expands.",
+      "parentExplanation": "Paragraph 1 explicitly explains the cause-and-effect relationship: as the universe expands over billions of years, it stretches the ancient light waves until they shift past visible light into infrared rays."
+    },
+    {
+      "questionId": "w20_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Why does the author compare curved space to \"a thick glass lens\" in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To prove that the telescope's mirrors should have been made of thick glass instead of beryllium",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "To help readers understand how the gravity of a massive galaxy cluster bends and boosts dim starlight behind it",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "To show that solid glass clouds float between distant galaxies in deep space",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "To explain why tiny rods behind each mirror plate must nudge the segments into a curve",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Like a thick glass lens, that curved space acts to magnify the background light into bright arcs and rings.",
+      "childTip": "Think about what a glass magnifying lens does to light, and match that to what curved space does in Paragraph 4.",
+      "parentExplanation": "The analogy in Paragraph 4 compares space curved by a galaxy cluster's gravity to a thick glass lens because both bend and magnify faint light passing through them."
+    },
+    {
+      "questionId": "w20_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w20_q6",
+      "prompt": "Part A: Which statement best explains how human engineering and natural cosmic forces work together in the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Sun's heat warms the beryllium mirror segments so they can bend gravity around the moon.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The telescope's cold mirror captures faint infrared rays that have already been magnified by the gravity of galaxy clusters.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Ground telescopes on Earth bounce laser beams off the five-layer sunshield at the L2 point.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Gravity lenses completely replace the need for any mirrors or sensors on space telescopes.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By aiming the cold mirror at these gravity lenses, scientists can study galaxies that would otherwise stay hidden forever.",
+      "childTip": "Look at Paragraph 5 to see how scientists combine the cold mirror with natural gravity lenses in space.",
+      "parentExplanation": "Paragraphs 4 and 5 show that natural gravitational lensing magnifies distant starlight first, and then scientists aim the chilled Webb mirror at those gravity lenses to capture and analyze the light."
+    },
+    {
+      "questionId": "w20_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w20_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Because warm air and glowing dust in our own sky block those weak signals, ground telescopes cannot spot them clearly.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"This rare metal stays stiff in deep freeze and weighs far less than glass.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Each six-sided plate is polished until its curve is smooth within a fraction of a human hair.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"By aiming the cold mirror at these gravity lenses, scientists can study galaxies that would otherwise stay hidden forever.\"",
+          "isCorrect": true
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By aiming the cold mirror at these gravity lenses, scientists can study galaxies that would otherwise stay hidden forever.",
+      "childTip": "Select the sentence from Paragraph 5 that links the cold mirror directly with the natural gravity lenses.",
+      "parentExplanation": "Option D directly proves Part A by stating how scientists aim the engineered cold mirror at natural gravity lenses to study otherwise hidden galaxies."
+    }
+  ]
+}
