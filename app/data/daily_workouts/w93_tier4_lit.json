@@ -1,0 +1,304 @@
+{
+  "workoutId": "w93_tier4_lit",
+  "workoutNumber": 93,
+  "title": "The Bead of Clear Glass",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1095,
+  "fkgl": 7.01,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "The Bead of Clear Glass",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 412,
+    "paragraphCount": 5,
+    "text": "Cold rain tapped against the leaded window of the Delft cloth shop as Hendrik pumped the foot bellows beneath the lamp. His uncle, Antonie van Leeuwenhoek, leaned close to the blue flame while holding a thin rod of soda glass. Most Dutch merchants used simple hand lenses just to count the warp threads in linen and wool. Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth. If Hendrik let the air stream waver for even a second, soot would cloud the melting glass.\n\nAntonie pulled the glowing rod apart until a hair-thin strand stretched between his steady fingers. Next, he thrust the tip of that fine thread back into the hottest part of the flame. Instantly, the melting tip curled into a tiny round bead no bigger than a grain of coarse sand. In the quiet workshop beside the canal, the tiny glass bead was clamped between two thin brass plates by Hendrik before the metal cooled. A pinhead hole drilled through both brass sheets let a narrow beam of daylight pass straight through the bead.\n\nHendrik rubbed his cramped thumb and squinted at the humble brass paddle resting on the oak bench. At the guild hall, wealthy scholars boasted about foot-long tubes fitted with three wide lenses from Paris. Compared to those grand instruments, Antonie's palm-sized brass plate looked like a child's toy. Still, Hendrik knew that a smaller sphere bent light at a much sharper angle than any wide disk could manage.\n\nWith a brass screw, Antonie mounted a thin glass tube filled with murky rain barrel water behind the lens. He raised the flat plate until it nearly touched his brow and turned his face toward the bright window. For a long minute, only the ticking wall clock broke the silence of the room. Then Antonie let out a low breath and passed the brass paddle into his nephew's waiting hands.\n\nHendrik pressed his eye to the pinhole and twisted the bottom focus screw half a turn. The gray blur sharpened into a sunlit sea where hundreds of tiny creatures darted, spun, and tumbled past green threads. Some whipped fine tails like oars, while others glided in spirals like living jewels. No human eye before theirs had ever witnessed this miniature crowd swimming inside a single drop. Hendrik lowered the brass plate with trembling hands, realizing that the smallest window in Delft had just opened the widest world.",
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "In the quiet workshop beside the canal, the tiny glass bead was clamped between two thin brass plates by Hendrik before the metal cooled.",
+      "actorChunk": "Hendrik",
+      "actionChunk": "was clamped",
+      "receiverChunk": "the tiny glass bead",
+      "distractorChunks": [
+        "In the quiet workshop beside the canal",
+        "between two thin brass plates",
+        "before the metal cooled"
+      ],
+      "activeRewrite": "In the quiet workshop beside the canal, Hendrik clamped the tiny glass bead between two thin brass plates before the metal cooled."
+    },
+    "tier2Words": [
+      {
+        "word": "waver",
+        "definition": "To shake, flicker, or become unsteady",
+        "rootHint": "From Old Norse 'vafra' meaning to flicker or move unsteadily",
+        "contextClue": "Hendrik had to pump the foot bellows evenly so the air stream and flame would not flicker."
+      },
+      {
+        "word": "coarse",
+        "definition": "Rough in texture and made of large grains or particles",
+        "rootHint": "Related to ordinary, rough-textured cloth or sand",
+        "contextClue": "The melted glass tip curled into a tiny bead no larger than a rough grain of sand."
+      },
+      {
+        "word": "humble",
+        "definition": "Simple, plain, and modest in appearance rather than fancy",
+        "rootHint": "From Latin 'humilis' meaning low or close to the ground",
+        "contextClue": "Unlike the grand foot-long tubes from Paris, the small brass paddle looked plain and simple."
+      },
+      {
+        "word": "miniature",
+        "definition": "On a very small scale; tiny compared to everyday things",
+        "rootHint": "From Italian 'miniatura', a tiny detailed painting",
+        "contextClue": "Hundreds of microscopic creatures formed a tiny crowd inside a single drop of water."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w93_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"In the quiet workshop beside the canal, the tiny glass bead was clamped between two thin brass plates by Hendrik before the metal cooled.\"\n\nWho performed the action of clamping the tiny glass bead in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The two thin brass plates that cooled on the bench",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Hendrik, who fastened the bead between the plates",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Antonie van Leeuwenhoek, who melted the glass rod",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The tiny glass bead inside the quiet workshop",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "In the quiet workshop beside the canal, the tiny glass bead was clamped between two thin brass plates by Hendrik before the metal cooled.",
+      "childTip": "Look at the passive verb 'was clamped' and find the person named right after the word 'by.'",
+      "parentExplanation": "In this passive construction, 'the tiny glass bead' is the receiver of 'was clamped.' The prepositional phrase 'by Hendrik' identifies the person who performed the action."
+    },
+    {
+      "questionId": "w93_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Hendrik rubbed his cramped thumb and squinted at the humble brass paddle resting on the oak bench.\"\n\nWhat does the word \"humble\" most nearly mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Plain and modest in appearance",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Polished with expensive gold leaf",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Cracked and useless for viewing",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Imported from a famous shop in Paris",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Hendrik rubbed his cramped thumb and squinted at the humble brass paddle resting on the oak bench.",
+      "childTip": "Compare the simple brass paddle to the grand foot-long tubes that wealthy scholars bragged about in Paragraph 3.",
+      "parentExplanation": "Paragraph 3 contrasts the small, plain brass paddle with the grand foot-long tubes from Paris, showing that 'humble' means simple and unpretentious."
+    },
+    {
+      "questionId": "w93_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why is Antonie's tiny glass bead able to outperform the larger microscopes used by wealthy scholars?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The brass paddle uses three wide lenses stacked inside a foot-long tube.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A smaller glass sphere bends light at a much sharper angle than a wide disk can.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Soot from the blue lamp coats the glass bead so it blocks bright sunlight.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The oak bench keeps the rain barrel water warmer than the air in the guild hall.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Still, Hendrik knew that a smaller sphere bent light at a much sharper angle than any wide disk could manage.",
+      "childTip": "Click the last sentence of Paragraph 3 that explains how a smaller sphere bends light.",
+      "parentExplanation": "In Paragraph 3, Hendrik reflects on the optical principle behind his uncle's design: a tiny glass sphere bends light rays at a far sharper angle than wide lenses, producing stronger magnification."
+    },
+    {
+      "questionId": "w93_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "What does Hendrik mean in Paragraph 5 when he realizes that \"the smallest window in Delft had just opened the widest world\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The leaded glass window in the cloth shop was replaced with a wide pane from Paris.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Looking through the tiny pinhole lens revealed a vast, hidden realm of living creatures.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Dutch merchants could now sail across the ocean using the brass paddle as a compass.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Every person in Delft would soon abandon cloth making to collect rain barrels.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Hendrik lowered the brass plate with trembling hands, realizing that the smallest window in Delft had just opened the widest world.",
+      "childTip": "Connect the 'smallest window' (the tiny pinhole bead) to the 'widest world' (the living sea inside the water drop).",
+      "parentExplanation": "The metaphor contrasts the physical smallness of the pinhole lens ('the smallest window') with the immense scientific discovery of microscopic life ('the widest world')."
+    },
+    {
+      "questionId": "w93_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w93_q6",
+      "prompt": "Part A: How does Antonie van Leeuwenhoek differ from most other merchants in Delft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He refuses to let his nephew touch any of the tools in his workshop.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "He is driven by curiosity to explore unseen nature rather than merely inspecting cloth for trade.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "He buys expensive three-lens tubes from Paris to impress the guild hall scholars.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "He only works when the sun is shining brightly over the canal.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth.",
+      "childTip": "Check Paragraph 1 to see what most merchants used lenses for versus what Antonie cared about most.",
+      "parentExplanation": "Paragraph 1 contrasts ordinary Dutch merchants—who used lenses only to count threads in linen and wool—with Antonie, who was fascinated by what hid inside a drop of canal water."
+    },
+    {
+      "questionId": "w93_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w93_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Cold rain tapped against the leaded window of the Delft cloth shop as Hendrik pumped the foot bellows beneath the lamp.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth.\"",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "\"A pinhead hole drilled through both brass sheets let a narrow beam of daylight pass straight through the bead.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"For a long minute, only the ticking wall clock broke the silence of the room.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth.",
+      "childTip": "Find the sentence in Paragraph 1 that directly compares canal water drops to bolts of cloth.",
+      "parentExplanation": "Option B directly proves Part A by showing that Antonie valued investigating canal water over inspecting bolts of cloth."
+    }
+  ]
+}

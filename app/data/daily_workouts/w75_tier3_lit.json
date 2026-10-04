@@ -1,0 +1,333 @@
+{
+  "workoutId": "w75_tier3_lit",
+  "workoutNumber": 75,
+  "title": "The Iron Chain Across Donner Pass",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1040,
+  "fkgl": 6.12,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Iron Chain Across Donner Pass",
+    "author": "BEACON Assessment Lab",
+    "text": "High on the granite ledges of the Sierra Nevada in 1865, young Caleb gripped the brass handle of a heavy iron chain. Sixty-six feet ahead, chief surveyor Mr. Judah stood beside a three-legged brass transit. He peered through its narrow lens. Below their boots, a sheer canyon dropped eight hundred feet to a foaming river. Their small crew was mapping a path for the new railroad. Every link of Caleb's chain had to lie flat and straight along the rock shelf. Even a small error here would steer the iron rails into thin air.\n\nAll morning, icy gusts tore across the pass and numbed Caleb's knuckles through his leather mittens. When they reached a jagged ravine split by a rushing snowmelt creek, the regular trail vanished against a wall of dark slate. The heavy sixty-six-foot iron chain, dragged across sharp granite boulders by Caleb, was carefully anchored beside the brass stake at the canyon rim. Mr. Judah waved his red wool glove. He signaled for Caleb to hold the rear ring steady against the plumb line. If the wind pushed the cord even two inches off center, the angle for the bridge would fail.\n\nCaleb knelt on the frozen gravel and braced his shoulder against a rock to shield the brass weight from the gale. His knees throbbed from the cold stone. Sleet stung his cheeks like tiny needles. Part of him wanted to call out that the mark was close enough and hurry back to the warm canvas tent. Yet he remembered what Mr. Judah had told him at camp: a locomotive weighing forty tons forgives no careless math.\n\nWith slow, deliberate breaths, Caleb wedged his wooden pack frame upright beside the stake to form a windbreak. Behind that shelter, the brass plumb bob stopped swaying and hung dead still over the chiseled cross on the stone. He pulled the iron chain taut until the links sang in the cold air and raised his free hand to signal the mark. Through the swirling mist, Mr. Judah nodded once. He wrote the exact bearing inside his leather field book.\n\nAs the crew packed their gear before dusk, Mr. Judah handed Caleb the leather field book to carry down the ridge. Looking back at the row of small wooden stakes on the vast cliff, Caleb felt a quiet pride rise in his chest. Long before steam engines or iron spikes ever reached the mountain, the giant railroad began with a boy holding a cold chain steady in the wind.",
+    "wordCount": 418,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The heavy sixty-six-foot iron chain, dragged across sharp granite boulders by Caleb, was carefully anchored beside the brass stake at the canyon rim.",
+      "actorChunk": "by Caleb",
+      "actionChunk": "was carefully anchored",
+      "receiverChunk": "The heavy sixty-six-foot iron chain",
+      "distractorChunks": [
+        "dragged across sharp granite boulders",
+        "beside the brass stake at the canyon rim"
+      ],
+      "activeRewrite": "Caleb dragged the heavy sixty-six-foot iron chain across sharp granite boulders and carefully anchored it beside the brass stake at the canyon rim."
+    },
+    "tier2Words": [
+      {
+        "word": "sheer",
+        "definition": "Almost straight up and down; very steep",
+        "rootHint": "Old English scir (clear, unbroken, steep)",
+        "contextClue": "A 'sheer canyon dropped eight hundred feet to a foaming river' below their boots."
+      },
+      {
+        "word": "ravine",
+        "definition": "A deep, narrow gorge or valley worn by running water",
+        "rootHint": "Latin rapina (a rushing flood or deep gully)",
+        "contextClue": "Described as 'a jagged ravine split by a rushing snowmelt creek' where a bridge is needed."
+      },
+      {
+        "word": "deliberate",
+        "definition": "Done carefully, calmly, and on purpose without rushing",
+        "rootHint": "libra- (Latin root meaning 'scales' or 'to weigh carefully')",
+        "contextClue": "Paired with 'slow' breaths as Caleb carefully builds a windbreak instead of rushing."
+      },
+      {
+        "word": "taut",
+        "definition": "Pulled tight and straight, with no slack",
+        "rootHint": "Middle English toght (pulled tight or firm)",
+        "contextClue": "He pulled the iron chain 'until the links sang in the cold air' so it had no slack."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w75_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The heavy sixty-six-foot iron chain, dragged across sharp granite boulders by Caleb, was carefully anchored beside the brass stake at the canyon rim.\"\n\nIn this sentence, what was carefully anchored beside the brass stake?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The sharp granite boulders along the mountain trail",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects the object of the preposition 'across sharp granite boulders' inside the interrupting phrase rather than the grammatical subject."
+        },
+        {
+          "id": "B",
+          "text": "The heavy sixty-six-foot iron chain",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly links the grammatical subject ('The heavy sixty-six-foot iron chain') across the participial clause to the passive verb ('was carefully anchored')."
+        },
+        {
+          "id": "C",
+          "text": "The canyon rim above the rushing snowmelt creek",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Picks the location noun at the end of the prepositional phrase ('at the canyon rim') instead of what was anchored."
+        },
+        {
+          "id": "D",
+          "text": "Caleb, the young surveyor's apprentice",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the agent who dragged the chain ('by Caleb') with the object that was anchored beside the brass stake."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The heavy sixty-six-foot iron chain, dragged across sharp granite boulders by Caleb, was carefully anchored beside the brass stake at the canyon rim.",
+      "childTip": "Cover up the words between the two commas. What subject connects right to 'was carefully anchored'?",
+      "parentExplanation": "Sentence Surgery (ELAGSE5L1) testing Subject-Verb Tracking across an embedded participial modifier. Stripping out ', dragged across sharp granite boulders by Caleb,' reveals the core clause: 'The heavy sixty-six-foot iron chain... was carefully anchored beside the brass stake.'"
+    },
+    {
+      "questionId": "w75_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"He pulled the iron chain taut until the links sang in the cold air and raised his free hand to signal the mark.\"\n\nWhat does the word taut mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stretched tightly with no loose slack",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the action 'pulled... until the links sang' and Paragraph 1's rule that every link had to lie flat and straight."
+        },
+        {
+          "id": "B",
+          "text": "Coiled into a loose pile on the gravel",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Gives the exact opposite of 'taut'; a loose pile could not measure the sixty-six-foot baseline accurately."
+        },
+        {
+          "id": "C",
+          "text": "Painted bright red so it could be seen in the mist",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows the red color from Mr. Judah's wool glove in Paragraph 2 rather than using the context of pulling the chain."
+        },
+        {
+          "id": "D",
+          "text": "Melted by the heat of a steam locomotive",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Brings in steam locomotives, which have not even been built on the pass yet."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "He pulled the iron chain taut until the links sang in the cold air and raised his free hand to signal the mark.",
+      "childTip": "Picture pulling a heavy metal chain until the links hum in the air. Is the chain loose or tight?",
+      "parentExplanation": "Contextual Vocabulary (ELAGSE5RL4). The verb 'pulled' combined with the result 'until the links sang in the cold air' and Paragraph 1's requirement that the chain 'lie flat and straight' proves that 'taut' means stretched tightly."
+    },
+    {
+      "questionId": "w75_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, how did Caleb solve the problem of the icy wind blowing the plumb line off center?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He waited inside the warm canvas tent until the mountain storm stopped blowing.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Selects the temptation Caleb rejected in Paragraph 3 rather than the action he actually took in Paragraph 4."
+        },
+        {
+          "id": "B",
+          "text": "He set his wooden pack frame upright next to the stake to block the wind so the brass weight hung still.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately states how Caleb used his wooden pack frame as a windbreak to steady the plumb bob."
+        },
+        {
+          "id": "C",
+          "text": "He shortened the iron chain by ten links so the wind would have less metal to push.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents shortening the chain, which would ruin the exact sixty-six-foot baseline measurement."
+        },
+        {
+          "id": "D",
+          "text": "He asked Mr. Judah to guess the bridge angle without using the brass plumb bob.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Contradicts the crew's strict need for exact math so a forty-ton locomotive stays safe."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "With slow, deliberate breaths, Caleb wedged his wooden pack frame upright beside the stake to form a windbreak.",
+      "childTip": "First click the sentence in Paragraph 4 that tells what Caleb placed beside the stake to block the wind.",
+      "parentExplanation": "Click-to-Prove Inference/Explicit Detail item (ELAGSE5RL1). Paragraph 4 explains that Caleb wedged his wooden pack frame upright beside the stake to form a windbreak, allowing the plumb bob to hang dead still."
+    },
+    {
+      "questionId": "w75_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Why does the author include Mr. Judah's warning that \"a locomotive weighing forty tons forgives no careless math\" at the end of Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To explain why Caleb decides to resist the freezing cold and take the time to measure the mark accurately",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Shows how the remembered quote resolves Caleb's internal conflict in Paragraph 3 and motivates his careful action in Paragraph 4."
+        },
+        {
+          "id": "B",
+          "text": "To show that Mr. Judah is angry at Caleb for dropping the brass transit into the foaming river",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents an accident with the brass transit that never happens in the passage."
+        },
+        {
+          "id": "C",
+          "text": "To prove that steam locomotives were already running across the timber bridge in 1865",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 5, which states that the survey took place 'long before steam engines or iron spikes ever reached the mountain.'"
+        },
+        {
+          "id": "D",
+          "text": "To describe the exact weight of the leather field book that Caleb carries down the ridge",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the weight of a forty-ton locomotive with the small field book in Paragraph 5."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Yet he remembered what Mr. Judah had told him at camp: a locomotive weighing forty tons forgives no careless math.",
+      "childTip": "Look at what Caleb is tempted to do right before he remembers Mr. Judah's words.",
+      "parentExplanation": "Story Structure & Character Motivation (ELAGSE5RL5). In Paragraph 3, Caleb is tempted to call the mark 'close enough' to escape the sleet. Remembering Mr. Judah's warning reminds him of the life-or-death stakes of his measurement."
+    },
+    {
+      "questionId": "w75_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w75_q6",
+      "prompt": "PART A: Based on the passage, what can the reader infer about why Mr. Judah hands Caleb the leather field book at the end of the workday?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Caleb has earned Mr. Judah's trust by showing patience and precision under harsh mountain conditions.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Connects Caleb's careful work in the sleet (Paragraph 4) to Mr. Judah entrusting him with the valuable book of survey bearings (Paragraph 5)."
+        },
+        {
+          "id": "B",
+          "text": "Mr. Judah has decided to quit the railroad crew and leave fourteen-year-old Caleb in charge of the canyon.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Makes an extreme leap unsupported by the text; Mr. Judah is simply walking down the ridge with the crew at dusk."
+        },
+        {
+          "id": "C",
+          "text": "The leather field book is completely empty because the swirling mist ruined every measurement that day.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 4, where Mr. Judah 'wrote the exact bearing inside his leather field book.'"
+        },
+        {
+          "id": "D",
+          "text": "Caleb is being punished for letting the iron chain slip two inches off the chiseled stone cross.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the plot: Caleb held the plumb bob dead still over the cross and felt quiet pride at dusk."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Long before steam engines or iron spikes ever reached the mountain, the giant railroad began with a boy holding a cold chain steady in the wind.",
+      "childTip": "Think about how Caleb proved himself on the windy cliff and how he feels as they walk down.",
+      "parentExplanation": "Focus domain D5_EBSR / ELAGSE5RL1 (Inference with Textual Evidence). Entrusting the apprentice with the leather field book of exact bearings—paired with Caleb's quiet pride—shows that Caleb's steady discipline earned the chief surveyor's respect."
+    },
+    {
+      "questionId": "w75_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w75_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Below their boots, a sheer canyon dropped eight hundred feet to a foaming river.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the dangerous mountain setting in Paragraph 1, not how Caleb earned trust through his careful work."
+        },
+        {
+          "id": "B",
+          "text": "\"All morning, icy gusts tore across the pass and numbed Caleb's knuckles through his leather mittens.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Repeats the word 'leather' ('leather mittens' vs. 'leather field book') but only describes the cold weather."
+        },
+        {
+          "id": "C",
+          "text": "\"Part of him wanted to call out that the mark was close enough and hurry back to the warm canvas tent.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Quotes the fleeting urge that Caleb overcame, rather than the steady work that earned him pride and trust."
+        },
+        {
+          "id": "D",
+          "text": "\"Behind that shelter, the brass plumb bob stopped swaying and hung dead still over the chiseled cross on the stone.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Proves Part A by showing the exact moment Caleb's resourceful patience achieved a precise measurement in the storm."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Behind that shelter, the brass plumb bob stopped swaying and hung dead still over the chiseled cross on the stone.",
+      "childTip": "Choose the quote from Paragraph 4 that proves Caleb succeeded in making an exact measurement in the wind.",
+      "parentExplanation": "Part B requires selecting the verbatim quote that demonstrates Caleb's precision under pressure (Option D), which directly explains why Mr. Judah trusted him with the field book."
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "workoutId": "w44_tier1_info",
+  "workoutNumber": 44,
+  "title": "The Mountain That Stores Sunlight",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 965,
+  "fkgl": 5.71,
+  "genre": "Informational",
+  "subGenre": "Physics & Energy",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI6",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Mountain That Stores Sunlight",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Across the American South, shiny rows of solar panels soak up bright midday sunshine and turn it into clean power. Yet solar panels face a basic daily problem. They make the most power at noon when the sun sits high in the sky, but families use the most power in the evening when they cook supper and turn on lights. Power lines cannot hold extra power by themselves. Grid crews need giant storage banks to save noon sun for night use.\n\nSome towns put in rooms full of costly shop batteries. However, workers in the North Georgia hills use a much older tool. They use water and the pull of the earth. At Rocky Mountain near Rome, Georgia, two deep lakes sit at two heights on the same ridge. One lake rests in the low valley. The second lake sits in a stone bowl high on the hill. Wide steel tunnels bored straight through the solid rock connect the upper lake to the lower lake.\n\nOn sunny days, solar farms make more power than towns need. That is when giant pumps at the dam switch on. Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin. Lifting all that heavy water to the top of the ridge stores energy. It works the same way stretching a rubber band stores a pull. As long as the water stays locked behind the top gates, the power waits safely on the hill.\n\nSoon the sun sinks below the trees. Kitchen lights flick on across the state, and workers open the steel gates. The pull of the earth sends the water roaring back down through the rock tunnels. On its way down, the rushing stream spins huge metal blades called turbines. That spinning motion sends fresh power out to thousands of homes in less than a minute.\n\nSome critics once claimed that pumping water uphill was a waste of effort because the pumps use a small share of power to lift the lake. However, grid planners point out that without storage, extra midday solar power would simply go to waste. By reusing the same water up and down the hill every day, a mountain lake works like a giant rechargeable battery that never wears out.",
+    "wordCount": 388,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.",
+      "actorChunk": "reversible electric pumps",
+      "actionChunk": "pushed high up the mountain",
+      "receiverChunk": "Vast gallons of cool river water",
+      "distractorChunks": [
+        "drawn from the lower valley lake",
+        "into the upper stone basin"
+      ],
+      "activeRewrite": "Reversible electric pumps draw vast gallons of cool river water from the lower valley lake and push them high up the mountain."
+    },
+    "tier2Words": [
+      {
+        "word": "reversible",
+        "definition": "able to run or work in the opposite direction",
+        "rootHint": "Latin root vertere ('to turn') + prefix re- ('back') + suffix -ible ('able to')",
+        "contextClue": "The same machines pump water up the mountain in the afternoon and spin to make power when water flows back down."
+      },
+      {
+        "word": "basin",
+        "definition": "a wide, bowl-shaped hollow in the earth that holds water",
+        "rootHint": "From Old French bacin, meaning 'a round bowl'",
+        "contextClue": "The second lake sits in a wide stone bowl high on the mountaintop."
+      },
+      {
+        "word": "turbines",
+        "definition": "machines with spinning blades that turn moving water or wind into electricity",
+        "rootHint": "From Latin turbo, meaning 'spinning top or whirlwind'",
+        "contextClue": "On its way down, the rushing stream spins massive metal blades that send fresh power out to homes."
+      },
+      {
+        "word": "critics",
+        "definition": "people who point out faults or disagree with a plan",
+        "rootHint": "From Greek kritikos, meaning 'able to judge'",
+        "contextClue": "These doubters once claimed that pumping water uphill was a waste of effort, while grid planners disagreed."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w44_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.\"\n\nBased on the structure of the sentence, what draws and pushes the river water, and where does the water end up?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The upper stone basin pushes the electric pumps down into the lower valley lake.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Reversible electric pumps draw and push the water, and it ends up in the upper stone basin on the mountain.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Cool river water builds the steel tunnels and pushes the mountain into the valley.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Heavy rain clouds fill the upper stone basin because the valley lake is completely dry.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.",
+      "childTip": "Find the 'by' phrase ('by reversible electric pumps') to see what moves the water up into the upper basin.",
+      "parentExplanation": "In this passive sentence, 'Vast gallons of cool river water' is the subject/receiver, 'reversible electric pumps' is the agent after 'by', and 'into the upper stone basin' is the destination."
+    },
+    {
+      "questionId": "w44_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 2 and Paragraph 3:\n\n\"One lake rests in the valley, while the second lake sits in a stone bowl high on the mountaintop... Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.\"\n\nWhat does the word basin mean as it is used in Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A bowl-shaped hollow that holds a lake of water",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "A tall metal tower that holds power lines",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "A glass panel that catches midday sunshine",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "A narrow underground wire that carries radio signals",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.",
+      "childTip": "Connect 'upper stone basin' in Paragraph 3 to 'a stone bowl high on the mountaintop' in Paragraph 2.",
+      "parentExplanation": "Paragraph 2 describes the upper lake sitting in 'a stone bowl high on the mountaintop,' which directly defines 'the upper stone basin' in Paragraph 3."
+    },
+    {
+      "questionId": "w44_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 1, why do solar power systems need a way to store energy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Solar panels make the most power at noon, whereas families use the most electricity in the evening.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Solar panels only work during cold winter nights when the wind blows across the hills.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Power lines automatically store extra electricity for weeks without needing any batteries.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Engineers in Georgia prefer burning coal at noon instead of turning on solar panels.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "They make the most power at noon when the sun sits high in the sky, but families use the most power in the evening when they cook supper and turn on lights.",
+      "childTip": "Click the sentence in Paragraph 1 that compares when solar panels make power with when families use it.",
+      "parentExplanation": "Paragraph 1 explains the timing mismatch: peak solar production happens at noon, while peak household demand happens in the evening."
+    },
+    {
+      "questionId": "w44_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2B_FIGURATIVE_POINT_OF_VIEW",
+      "standard": "ELAGSE5RI6",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "In Paragraph 5, how do the viewpoints of the critics and the grid planners differ regarding pumped-storage lakes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Critics focused on the power used by the pumps, whereas grid planners emphasize that pumping saves extra midday solar power from being wasted.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Critics wanted to build three more lakes on Rocky Mountain, whereas grid planners wanted to drain the valley lake.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Both groups agreed that chemical batteries last much longer than stone reservoirs.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Grid planners argued that gravity no longer pulls water downhill after sunset.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "However, grid planners point out that without storage, extra midday solar power would simply go to waste.",
+      "childTip": "Look at the two perspectives in Paragraph 5 separated by the signal word 'However.'",
+      "parentExplanation": "Paragraph 5 contrasts two perspectives (ELAGSE5RI6): critics saw pumping water uphill as a waste of energy, while grid planners point out that it captures surplus midday solar energy that would otherwise be lost."
+    },
+    {
+      "questionId": "w44_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w44_q6",
+      "prompt": "Part A: Why does the author compare the Rocky Mountain reservoir system to \"a giant rechargeable battery\" in Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It stores extra energy by pumping water uphill during the day and releases that energy by spinning turbines at night, repeating the cycle daily.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The upper lake is filled with battery acid instead of fresh river water from the valley.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The mountain can only be used once before all the water evaporates into the clouds.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Homeowners can carry buckets of water from the lake to plug into their kitchen lamps.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By reusing the same water up and down the hill every day, a mountain lake works like a giant rechargeable battery that never wears out.",
+      "childTip": "Think about how recharging and using a battery matches pumping the same water up and down the mountain each day.",
+      "parentExplanation": "Across Paragraphs 3–5, the passage shows that pumping water uphill charges the system with potential energy and letting it rush downhill through turbines discharges electricity, reusing the same water daily like a rechargeable battery."
+    },
+    {
+      "questionId": "w44_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w44_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Across the American South, shiny rows of solar panels soak up bright midday sunshine and turn it into clean power.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Wide steel tunnels bored straight through the solid rock connect the upper lake to the lower lake.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Some critics once claimed that pumping water uphill was a waste of effort because the pumps use a small share of power to lift the lake.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"By reusing the same water up and down the hill every day, a mountain lake works like a giant rechargeable battery that never wears out.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By reusing the same water up and down the hill every day, a mountain lake works like a giant rechargeable battery that never wears out.",
+      "childTip": "Pick the final sentence in Paragraph 5 that explains why the lake acts like a rechargeable battery.",
+      "parentExplanation": "Option D directly quotes Paragraph 5, explaining how cycling the same water up and down the ridge each day makes the reservoir system act like a giant rechargeable battery."
+    }
+  ]
+}

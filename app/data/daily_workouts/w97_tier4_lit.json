@@ -1,0 +1,303 @@
+{
+  "workoutId": "w97_tier4_lit",
+  "workoutNumber": 97,
+  "title": "Echoes from the Black Trench",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1125,
+  "fkgl": 7.35,
+  "genre": "Literary",
+  "subGenre": "Realistic / Science Fiction",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL6",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "Echoes from the Black Trench",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 415,
+    "paragraphCount": 5,
+    "text": "Seven miles beneath the pitching hull of our research ship, the autonomous yellow sub glided through ink-black water. Up in the warm control room, I kept my eyes glued to the green sonar trace while Chief Lin watched the depth gauge. Most interns saw the deep ocean floor as a dead desert of gray mud and crushing weight. To me, every sound ping bouncing back from the abyss felt like a tap on a locked door. If our battery pack held its charge in the freezing brine, we would map three miles of the Mariana ridge before midnight.\n\nSuddenly, the flat sonar line spiked into a jagged row of tall needles along the canyon wall. Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers. Yet the echo timing stayed crisp and steady with every fresh sound pulse sent from the sub's nose. Three miles down in the dark canyon, a row of tall stone chimneys was struck by the sonar beam before the sub turned north. Whatever stood on that fault line was solid rock rising sixty feet above the silt.\n\nI nudged the main joystick to slow the thrusters and asked the onboard computer to tilt the nose lamps down. Because radio waves die fast in deep salt water, our commands traveled through a hair-thin glass fiber spooling behind the craft. Four seconds later, twin cones of white LED light pierced the gloom on our high-definition screen. Chief Lin leaned forward over my chair, her doubt vanishing in a single breath.\n\nBlack plumes of superheated water billowed from the jagged stone towers like smoke from factory stacks. Though the water gushing from those vents was hot enough to melt lead, the crushing sea weight kept it from boiling into steam. Even more amazing, thick mats of white crabs and red tube worms crowded right around the scorching chimneys. With no sunlight to grow green plants, this whole hidden community fed on minerals pouring from Earth's crust.\n\nWhile the sub hovered ten yards from the tallest spire, I triggered the robotic claw to scoop a vial of vent fluid. Up on deck, storm waves still hammered our ship, yet down in the trench an ancient oasis thrived in total darkness. Chief Lin clapped my shoulder and logged the exact coordinates into the ship's master chart. We had come looking for bare rock, but the deep echo had led us to a living world.",
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Three miles down in the dark canyon, a row of tall stone chimneys was struck by the sonar beam before the sub turned north.",
+      "actorChunk": "the sonar beam",
+      "actionChunk": "was struck",
+      "receiverChunk": "a row of tall stone chimneys",
+      "distractorChunks": [
+        "Three miles down in the dark canyon",
+        "before the sub turned north"
+      ],
+      "activeRewrite": "Three miles down in the dark canyon, the sonar beam struck a row of tall stone chimneys before the sub turned north."
+    },
+    "tier2Words": [
+      {
+        "word": "autonomous",
+        "definition": "Able to operate and steer itself without a human pilot riding inside",
+        "rootHint": "From Greek 'auto-' (self) + 'nomos' (law or rule)",
+        "contextClue": "The crew stayed up in the ship's control room while the self-guiding yellow sub glided seven miles below."
+      },
+      {
+        "word": "abyss",
+        "definition": "A vastly deep, dark ocean trench or chasm that seems bottomless",
+        "rootHint": "From Greek 'abyssos' meaning bottomless",
+        "contextClue": "Sound pings bounced back from the ink-black ocean floor seven miles beneath the ship."
+      },
+      {
+        "word": "billowed",
+        "definition": "Swelled outward and rose in large rolling clouds",
+        "rootHint": "Related to 'billow', a large rolling wave or cloud of smoke",
+        "contextClue": "Black plumes of hot water rolled upward from the stone towers like smoke from factory stacks."
+      },
+      {
+        "word": "oasis",
+        "definition": "A fertile, life-filled spot in the middle of a harsh, barren place",
+        "rootHint": "Originally a green water hole in a dry desert",
+        "contextClue": "Surrounded by a dark desert of gray mud, the warm vents supported a thriving community of crabs and worms."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w97_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Three miles down in the dark canyon, a row of tall stone chimneys was struck by the sonar beam before the sub turned north.\"\n\nIn this sentence, what performed the action of striking the stone chimneys?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The row of tall stone chimneys in the canyon",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The sonar beam sent out by the sub",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The robotic claw on the front of the craft",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The dark canyon three miles down",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Three miles down in the dark canyon, a row of tall stone chimneys was struck by the sonar beam before the sub turned north.",
+      "childTip": "Find the passive verb 'was struck' and look right after 'by' to see what hit the chimneys.",
+      "parentExplanation": "In this passive sentence, 'a row of tall stone chimneys' receives the action ('was struck'). The agent following 'by' is 'the sonar beam.'"
+    },
+    {
+      "questionId": "w97_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"Up on deck, storm waves still hammered our ship, yet down in the trench an ancient oasis thrived in total darkness.\"\n\nWhat does the word \"oasis\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A sheltered pocket teeming with life inside a barren environment",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A sandy island floating on top of the ocean waves",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "A broken cable that sends false static to a screen",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "A freezing layer of mud where nothing can survive",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Up on deck, storm waves still hammered our ship, yet down in the trench an ancient oasis thrived in total darkness.",
+      "childTip": "Contrast the 'dead desert of gray mud' in Paragraph 1 with the thriving vent community in Paragraphs 4 and 5.",
+      "parentExplanation": "Just as a desert oasis supports life amid dry sand, the hydrothermal vent field serves as a thriving hub of crabs and tube worms amid the barren ocean floor."
+    },
+    {
+      "questionId": "w97_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, how are the white crabs and red tube worms able to survive seven miles down where no sunlight reaches?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Their food web runs on minerals pouring from Earth's crust rather than sunlight.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "They swim up to the ocean surface each night to feed on green plants.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "They absorb electrical energy from the sub's white LED nose lamps.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "They freeze solid in the brine until a research ship drops food into the trench.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "With no sunlight to grow green plants, this whole hidden community fed on minerals pouring from Earth's crust.",
+      "childTip": "Click the last sentence of Paragraph 4 that explains what the hidden community feeds on without sunlight.",
+      "parentExplanation": "Paragraph 4 states that in the absence of sunlight for plants, the vent community relies on mineral-rich water pouring from Earth's crust."
+    },
+    {
+      "questionId": "w97_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2D_POV_VOICE",
+      "standard": "ELAGSE5RL6",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the narrator's first-person point of view shape the way the discovery of the hydrothermal vents is told?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It lets the reader share the intern's curiosity and suspense while waiting for the sonar echoes and camera feed from the deep trench.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It shows that the narrator is terrified of riding inside the tiny yellow sub seven miles below the ship.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "It proves that Chief Lin wanted to abandon the mission before the sub reached the canyon wall.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "It explains how the ship's captain repaired the storm damage on the upper deck.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "To me, every sound ping bouncing back from the abyss felt like a tap on a locked door.",
+      "childTip": "Consider how the narrator's personal thoughts—like comparing sonar pings to 'a tap on a locked door'—build excitement.",
+      "parentExplanation": "Told from the intern's first-person perspective in the control room, the narrative contrasts other interns' view of a 'dead desert' with the narrator's sense of wonder ('a tap on a locked door'), building suspense until the LED cameras reveal the vents."
+    },
+    {
+      "questionId": "w97_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w97_q6",
+      "prompt": "Part A: Why does Chief Lin's attitude change between Paragraph 2 and Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She initially thinks the jagged sonar spikes are just cable static, but seeing the chimneys on the camera screen proves they are real.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "She is angry that the narrator slowed the thrusters without asking permission first.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "She worries that the hair-thin glass fiber will snap if the sub hovers near the vents.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "She realizes that the battery pack has completely run out of charge in the cold water.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers.",
+      "childTip": "Compare what Chief Lin suspects in Paragraph 2 with what happens when the LED lights turn on in Paragraph 3.",
+      "parentExplanation": "In Paragraph 2, Chief Lin doubts the sonar reading and blames a loose cable; in Paragraph 3, when the white LED lights illuminate the stone towers on the screen, 'her doubt vanishing in a single breath' marks her shift to awe."
+    },
+    {
+      "questionId": "w97_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w97_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"If our battery pack held its charge in the freezing brine, we would map three miles of the Mariana ridge before midnight.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers.\"",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "\"Because radio waves die fast in deep salt water, our commands traveled through a hair-thin glass fiber spooling behind the craft.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"While the sub hovered ten yards from the tallest spire, I triggered the robotic claw to scoop a vial of vent fluid.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers.",
+      "childTip": "Select the sentence from Paragraph 2 that shows why Chief Lin first doubted the jagged sonar spikes.",
+      "parentExplanation": "Option B directly proves Part A by showing Chief Lin's initial skepticism that a loose cable was causing false static."
+    }
+  ]
+}

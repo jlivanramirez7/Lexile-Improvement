@@ -1,0 +1,309 @@
+{
+  "workoutId": "w61_tier2_lit",
+  "workoutNumber": 61,
+  "title": "The Power of Giving Ground",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1000,
+  "fkgl": 6.05,
+  "genre": "Literary",
+  "subGenre": "Contemporary Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Power of Giving Ground",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Clara tapped her stack of blue index cards against the wood podium in the school library. As captain of the fifth-grade debate team, she had spent two weeks getting ready for this match. Her goal was to argue that the town should trade its old school buses for electric ones. In past matches, Clara treated every debate like a tug-of-war where giving an inch meant losing the whole rope. She thought a strong speaker had to block every single claim from the other side. Across the aisle, Marcus adjusted his glasses and spread out a neat chart of town budget numbers.\n\nWhen the timekeeper rang the small brass bell, Clara stepped up to the microphone and read her opening speech. During the opening round on the stage, her best point about solar roof panels was quickly challenged by a sharp question from the opposing captain. Marcus pointed out that electric buses cost nearly twice as much to buy upfront as regular buses. He warned the three judges that a small town would have to cut park repairs just to pay for the new fleet.\n\nBack at her table during the two-minute break, Clara reached for a red card. That card brushed off starting costs as a small detail. Yet when she looked at the judges' faces, she saw them nodding at Marcus's budget chart. If she acted stubborn and pretended the high price tag did not matter, the judges would stop trusting her numbers. Her coach had once told her that admitting a real drawback makes the rest of a speaker's plan sound much more honest.\n\nClara set the red card aside and wrote two fresh lines on a blank white card. When the bell rang for her next turn, she looked straight at Marcus and smiled. She chose to concede that buying electric buses costs more in the first year, and she agreed that the town should not buy twenty new buses at once. Then she pivoted to her fuel and repair chart. Buying just two new buses each year when old ones wore out would save huge sums on fuel. By year four, those savings would pay for the next bus.\n\nMarcus blinked in surprise. He had prepared to fight an all-or-nothing plan, not a slow step-by-step swap. By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel. When the head judge named the winner, she praised Clara for using the other side's worry to build a smart plan. Clara shook Marcus's hand, knowing that true strength in a debate can start with giving ground.",
+    "wordCount": 436,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "During the opening round on the stage, her best point about solar roof panels was quickly challenged by a sharp question from the opposing captain.",
+      "actorChunk": "a sharp question from the opposing captain",
+      "actionChunk": "quickly challenged",
+      "receiverChunk": "her best point about solar roof panels",
+      "distractorChunks": [
+        "During the opening round on the stage",
+        "about solar roof panels"
+      ],
+      "activeRewrite": "A sharp question from the opposing captain quickly challenged her best point about solar roof panels."
+    },
+    "tier2Words": [
+      {
+        "word": "stubborn",
+        "definition": "refusing to change one's mind or course of action despite good reasons to do so",
+        "rootHint": "Middle English 'stoburn' (untamable or fixed like a tree stump)",
+        "contextClue": "Clara realized she should not refuse to budge and pretend the high price tag did not matter."
+      },
+      {
+        "word": "concede",
+        "definition": "to admit that a point is true or valid after first resisting it",
+        "rootHint": "Latin 'concedere' (to yield or give way)",
+        "contextClue": "Clara admitted that buying electric buses costs more in the first year instead of denying Marcus's point."
+      },
+      {
+        "word": "pivoted",
+        "definition": "turned or shifted smoothly to a new point or direction",
+        "rootHint": "French 'pivot' (a central pin on which something turns)",
+        "contextClue": "After agreeing about first-year costs, Clara shifted the focus to her fuel and repair savings chart."
+      },
+      {
+        "word": "credible",
+        "definition": "able to be believed; convincing and trustworthy",
+        "rootHint": "Latin 'credere' (to believe or trust)",
+        "contextClue": "Admitting the high starting price made her long-term savings plan look fair and believable to the judges."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w61_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"During the opening round on the stage, her best point about solar roof panels was quickly challenged by a sharp question from the opposing captain.\"\n\nBased on the structure of this sentence, what actually challenged Clara's point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The solar roof panels on the school buses",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A sharp question from the opposing captain",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The opening round clock on the library stage",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The timekeeper ringing the small brass bell",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "During the opening round on the stage, her best point about solar roof panels was quickly challenged by a sharp question from the opposing captain.",
+      "childTip": "Look right after 'was quickly challenged by' to find what actually did the challenging.",
+      "parentExplanation": "In this passive-voice sentence, 'her best point about solar roof panels' receives the action. The true actor performing 'was challenged' comes after 'by': 'a sharp question from the opposing captain' (Option B)."
+    },
+    {
+      "questionId": "w61_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"She chose to concede that buying electric buses costs more in the first year, and she agreed that the town should not buy twenty new buses at once.\"\n\nWhat does the word \"concede\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To admit that an opponent's point is true",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To shout loudly so the judges cannot hear the other team",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "To hide a stack of index cards inside a desk drawer",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "To prove that an opponent's math chart is completely fake",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "She chose to concede that buying electric buses costs more in the first year, and she agreed that the town should not buy twenty new buses at once.",
+      "childTip": "Use the clue 'and she agreed' in the second half of the sentence to understand what 'concede' means.",
+      "parentExplanation": "The parallel phrase 'and she agreed' in Paragraph 4, along with Paragraph 5's 'By admitting the high starting price,' confirms that 'concede' means to admit that an opponent's point is true (Option A)."
+    },
+    {
+      "questionId": "w61_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Why does Clara decide not to use her red index card during the prep break in Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She sees the judges nodding at Marcus's chart and realizes that brushing off the high cost will make her lose their trust.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She notices that the red card has the wrong town name written across the top.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "She runs out of time before the brass bell rings for the second round.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "She decides that diesel buses are actually cleaner and cheaper than electric buses.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "If she acted stubborn and pretended the high price tag did not matter, the judges would stop trusting her numbers.",
+      "childTip": "Click the sentence in Paragraph 3 that explains how the judges would react if Clara acted stubborn.",
+      "parentExplanation": "In Paragraph 3, Clara sees the judges nodding at Marcus's budget chart and realizes that 'If she acted stubborn and pretended the high price tag did not matter, the judges would stop trusting her numbers' (Option A)."
+    },
+    {
+      "questionId": "w61_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the tug-of-war comparison in Paragraph 1 help the reader understand Clara's change in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It shows how Clara used to think giving an inch meant losing, which contrasts with her winning choice to concede a point later.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It explains why the debate team practices pulling ropes in the school gym before every library match.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "It proves that Marcus was much stronger than Clara during last year's field day games.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "It shows that Clara never cared about winning debates until she met Marcus.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "In past matches, Clara treated every debate like a tug-of-war where giving an inch meant losing the whole rope.",
+      "childTip": "Compare Clara's old 'tug-of-war' mindset in Paragraph 1 with her new choice to give ground in Paragraph 4.",
+      "parentExplanation": "Paragraph 1 establishes Clara's initial rigid mindset ('giving an inch meant losing the whole rope'), which highlights her character growth in Paragraph 4 when she yields on upfront cost to win the larger argument (Option A)."
+    },
+    {
+      "questionId": "w61_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w61_q6",
+      "prompt": "PART A: Why does Clara's revised argument in Paragraph 4 convince the judges to name her the winner?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By acknowledging the high upfront cost and proposing a gradual two-bus-per-year replacement plan, she makes her savings argument realistic.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By proving that electric buses actually cost half as much to buy as standard diesel buses, she shows Marcus made a math error.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "By promising that students will wash all twenty buses for free every weekend, she saves the town money.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "By reading her red index card louder than Marcus spoke, she keeps the judges from looking at his budget chart.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel.",
+      "childTip": "Look at how Clara blends Marcus's cost concern with a step-by-step bus replacement plan.",
+      "parentExplanation": "Aligned to ELAGSE5RL1, Clara wins over the panel because she admits the high starting price and proposes buying just two buses a year so fuel savings help pay for future buses, making her plan fair and credible (Option A)."
+    },
+    {
+      "questionId": "w61_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w61_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Clara tapped her stack of blue index cards against the wood podium in the school library.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Across the aisle, Marcus adjusted his glasses and spread out a neat chart of town budget numbers.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"When the timekeeper rang the small brass bell, Clara stepped up to the microphone and read her opening speech.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel.",
+      "childTip": "Pick the quote from Paragraph 5 that explains why the panel found Clara's savings plan believable.",
+      "parentExplanation": "Option C directly proves Part A by showing that conceding the high starting price made Clara's long-term savings plan credible to the judges."
+    }
+  ]
+}

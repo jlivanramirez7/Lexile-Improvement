@@ -1,0 +1,309 @@
+{
+  "workoutId": "w26_tier0_info",
+  "workoutNumber": 26,
+  "title": "The Waggle Dance of the Honeybee",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 870,
+  "fkgl": 6.05,
+  "genre": "Informational",
+  "subGenre": "Life Science",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI4",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Waggle Dance of the Honeybee",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "On warm spring mornings, thousands of worker bees leave their wooden hive to search for food. A strong hive needs sweet nectar and yellow pollen from wildflowers to live. Meadows are very wide. A single bee cannot harvest a whole patch of clover alone. Instead, early scouts fly out in every direction to find the best blooms. When a scout spots a thick field of flowers, she drinks a drop of nectar and hurries home to share the news.\n\nInside the hive, there is no light to show where the flowers grow. The returning scout climbs onto the vertical wax comb in the dark chamber. Other workers gather closely around her and touch her sides with their feelers. The exact location of a distant clover patch, hidden beyond tall pine trees and a winding stream, is clearly shared by the scout bee through a lively figure-eight dance. Scientists call this special movement the waggle dance.\n\nFirst, the dancer walks in a straight line while shaking her abdomen from side to side. Then she circles back to her starting point from the left and repeats the straight run. Next, she loops back from the right to trace a neat figure eight on the comb. The length of that middle waggle run tells the other bees how far they must fly. A short buzz of one second points to flowers nearby, while a longer run signals a distant meadow.\n\nTelling the distance is only half of the map, so the scout must also show the right direction. She uses the position of the sun in the sky as her compass guide. If the flowers lie straight toward the sun, the scout dances straight up the wax wall. If the patch sits to the right of the sun, she tilts her waggle line to the right by that exact angle. Even on cloudy days, bees can sense sunlight through the mist.\n\nAs the dance ends, the scout shares tiny sips of nectar from her stomach with her hive mates. This sample lets the other workers smell the precise type of blossom they should seek once they arrive. Within minutes, dozens of bees launch from the front board and fly straight toward the meadow. By turning simple steps and angles into a living map, honeybees feed their whole colony without speaking a single word.",
+    "wordCount": 390,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The exact location of a distant clover patch, hidden beyond tall pine trees and a winding stream, is clearly shared by the scout bee through a lively figure-eight dance.",
+      "actorChunk": "the scout bee",
+      "actionChunk": "clearly shared",
+      "receiverChunk": "The exact location of a distant clover patch",
+      "distractorChunks": [
+        "hidden beyond tall pine trees and a winding stream",
+        "through a lively figure-eight dance"
+      ],
+      "activeRewrite": "The scout bee clearly shares the exact location of a distant clover patch through a lively figure-eight dance."
+    },
+    "tier2Words": [
+      {
+        "word": "harvest",
+        "definition": "to gather or collect a crop or natural food source when it is ready",
+        "rootHint": "From Old English haerfest, meaning 'autumn season of gathering crops'",
+        "contextClue": "A single bee cannot gather nectar and pollen from a whole patch of clover alone."
+      },
+      {
+        "word": "vertical",
+        "definition": "standing straight up and down rather than flat across",
+        "rootHint": "From Latin vertex, meaning 'highest point or top'",
+        "contextClue": "The scout climbs onto the upright wax wall inside the hive and dances straight up."
+      },
+      {
+        "word": "abdomen",
+        "definition": "the rear section of an insect's body behind the chest and wings",
+        "rootHint": "From Latin abdomen, referring to the lower body cavity",
+        "contextClue": "The dancer walks in a straight line while shaking the back part of her body from side to side."
+      },
+      {
+        "word": "precise",
+        "definition": "exact and accurate in every detail",
+        "rootHint": "From Latin praecisus, meaning 'cut short or clearly defined'",
+        "contextClue": "Sharing a sip of nectar lets the workers smell the exact type of blossom they should look for."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w26_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The exact location of a distant clover patch, hidden beyond tall pine trees and a winding stream, is clearly shared by the scout bee through a lively figure-eight dance.\"\n\nBased on the structure of the sentence, who or what shares the location of the clover patch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The tall pine trees and winding stream share the clover patch with the hive.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The scout bee shares the exact location through a figure-eight dance.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The distant clover patch performs a lively dance for the scout bee.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Scientists inside the dark chamber share the map with the worker bees.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The exact location of a distant clover patch, hidden beyond tall pine trees and a winding stream, is clearly shared by the scout bee through a lively figure-eight dance.",
+      "childTip": "Look for the 'by' phrase right after 'is clearly shared' to see who does the action.",
+      "parentExplanation": "In this passive-voice sentence, 'The exact location of a distant clover patch' receives the action, while 'by the scout bee' names the actor performing the sharing."
+    },
+    {
+      "questionId": "w26_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 5:\n\n\"As the dance ends, the scout shares tiny sips of nectar from her stomach with her hive mates. This sample lets the other workers smell the precise type of blossom they should seek once they arrive.\"\n\nWhat does the word precise mean as it is used in Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exact and specific",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Wilted and dried out",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Hidden in the dark",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Careless and random",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "This sample lets the other workers smell the precise type of blossom they should seek once they arrive.",
+      "childTip": "The nectar sample gives the bees the exact scent of the flower they need to find.",
+      "parentExplanation": "In Paragraph 5, smelling the nectar sample tells the worker bees the exact, specific ('precise') kind of flower to look for in the meadow."
+    },
+    {
+      "questionId": "w26_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RI2",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "According to Paragraph 3, how does a scout bee show other bees how far away the flowers are?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By flying in tall circles above the roof of the wooden hive",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "By tapping her feelers against the wax comb once for every mile",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "By changing how long she performs the middle waggle run of her dance",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "By dropping yellow pollen grains in a long trail across the floor",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The length of that middle waggle run tells the other bees how far they must fly.",
+      "childTip": "Click the sentence in Paragraph 3 that explains what the length of the middle waggle run tells the bees.",
+      "parentExplanation": "Paragraph 3 states that the duration/length of the middle waggle run communicates the distance to the flowers (a short run means nearby, while a longer run means farther away)."
+    },
+    {
+      "questionId": "w26_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How do Paragraphs 3 and 4 work together to help the reader understand the waggle dance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Paragraph 3 explains how the dance shows distance, and Paragraph 4 explains how the dance shows direction.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Paragraph 3 describes a problem inside the hive, and Paragraph 4 explains how beekeepers fix it.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Paragraph 3 tells how bees make wax combs, and Paragraph 4 tells how bees store honey for winter.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Paragraph 3 argues that bees cannot see in the dark, and Paragraph 4 proves that bees never fly on cloudy days.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Telling the distance is only half of the map, so the scout must also show the right direction.",
+      "childTip": "Look at the first sentence of Paragraph 4 to see how it connects distance (Paragraph 3) with direction (Paragraph 4).",
+      "parentExplanation": "Paragraph 3 details how the waggle run's length communicates distance, and Paragraph 4 transitions ('Telling the distance is only half of the map...') to explain how the angle of the dance relative to gravity shows the sun's direction."
+    },
+    {
+      "questionId": "w26_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w26_q6",
+      "prompt": "Part A: Which statement best summarizes the main idea of the entire passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Honeybees cannot find clover patches whenever clouds block the bright spring sun.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Scout honeybees use a detailed dance and nectar samples to guide hive mates to distant flowers.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A single worker bee can easily gather enough pollen from a meadow to feed the whole colony.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Wax combs inside a wooden hive must always be built near a winding stream and tall pine trees.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By turning simple steps and angles into a living map, honeybees feed their whole colony without speaking a single word.",
+      "childTip": "Find the big idea that covers the whole passage: how scout bees guide the hive to food using their dance.",
+      "parentExplanation": "The passage as a whole explains how scout bees communicate distance, direction, and flower scent through the waggle dance and nectar samples so the colony can harvest food."
+    },
+    {
+      "questionId": "w26_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w26_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"A single bee cannot harvest a whole patch of clover alone.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Inside the hive, there is no light to show where the flowers grow.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Even on cloudy days, bees can sense sunlight through the mist.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"By turning simple steps and angles into a living map, honeybees feed their whole colony without speaking a single word.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By turning simple steps and angles into a living map, honeybees feed their whole colony without speaking a single word.",
+      "childTip": "Pick the quote in Paragraph 5 that shows how the bee's steps and angles act as a map for the whole colony.",
+      "parentExplanation": "Option D summarizes the central message of the passage by connecting the steps and angles of the dance ('a living map') to feeding the entire colony."
+    }
+  ]
+}

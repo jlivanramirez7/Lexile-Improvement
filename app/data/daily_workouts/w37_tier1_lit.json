@@ -1,0 +1,308 @@
+{
+  "workoutId": "w37_tier1_lit",
+  "workoutNumber": 37,
+  "title": "Keeper of the Glass Rings",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 945,
+  "fkgl": 6.59,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Keeper of the Glass Rings",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the autumn of 1898, twelve-year-old Caleb climbed the spiral iron steps of the St. Simons Island Lighthouse. Outside the thick brick tower, gray clouds rolled low across the Georgia sound. Stiff gusts of wind rattled the brass window latches and drove white foam across the marsh grass. Caleb's father had ridden into the village to fetch clean lamp oil before the gale struck. Before leaving, he had trusted Caleb with the afternoon chore that mattered most to passing ships.\n\nAt the top of the stairs, Caleb stepped into the bright lantern room. Directly in the center stood the great Fresnel lens, shaped like a giant beehive of polished glass rings and brass frames. Even a thin film of soot from last night's oil wick or a smudge of salt dust could dim the beacon's reach across the dark water. The scattered rays of the small central oil flame, bent into one narrow sheet of light by the angled glass prisms, were sent twenty miles out to sea by the revolving lens. Caleb tied on a soft linen apron so his coat buttons would not scratch the crystal.\n\nMoving with steady care, Caleb dipped a lambskin cloth into a bowl of whiting powder and wiped each curved prism from left to right. Halfway around the frame, his fingers felt a gritty crust near the upper vent. A sharp gust during the morning squall had blown fine beach sand through a tiny gap in the brass shutter. Caleb paused and reached for his camel-hair brush instead of rubbing the sand with his cloth.\n\nHe knew that pressing down on sharp grains of quartz would carve permanent scratches into the soft French glass. Gently, he whisked every speck of grit into his palm before touching the linen cloth to the surface. His arms ached from reaching high above his head, and the rising wind hummed against the iron roof. Still, he checked each ring twice until the glass shone like clear ice.\n\nJust as dusk settled over the tossing waves, his father's boots clanged up the iron stairs. Together they trimmed the cotton wick and struck a match. Instant beams of golden light pierced the driving rain and swept across the dark channel. Down near the outer sandbar, a wooden schooner flashed its deck lantern in thanks, guided safely home by the spotless glass.",
+    "wordCount": 392,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The scattered rays of the small central oil flame, bent into one narrow sheet of light by the angled glass prisms, were sent twenty miles out to sea by the revolving lens.",
+      "actorChunk": "the revolving lens",
+      "actionChunk": "sent twenty miles out to sea",
+      "receiverChunk": "The scattered rays of the small central oil flame",
+      "distractorChunks": [
+        "bent into one narrow sheet of light by the angled glass prisms"
+      ],
+      "activeRewrite": "The revolving lens sent the scattered rays of the small central oil flame twenty miles out to sea."
+    },
+    "tier2Words": [
+      {
+        "word": "gale",
+        "definition": "a very strong windstorm, especially along the coast",
+        "rootHint": "From early English gale, referring to a fierce sea wind",
+        "contextClue": "Gray clouds rolled low across the sound while stiff gusts of wind rattled the brass latches and drove white foam."
+      },
+      {
+        "word": "beacon",
+        "definition": "a bright guiding light placed in a high spot to warn or direct ships",
+        "rootHint": "Old English beacen, meaning 'sign or signal light'",
+        "contextClue": "Even a thin film of soot could dim the lighthouse light's reach across the dark water."
+      },
+      {
+        "word": "revolving",
+        "definition": "turning around a central point in a steady circle",
+        "rootHint": "Latin root volvere ('to roll or turn') + prefix re- ('back, again')",
+        "contextClue": "As the lens turned in the lantern room, beams of golden light swept across the dark channel."
+      },
+      {
+        "word": "permanent",
+        "definition": "lasting forever without fading or going away",
+        "rootHint": "Latin root manere ('to remain') + prefix per- ('completely')",
+        "contextClue": "Pressing sharp grains of sand against the soft glass would carve lasting scratches that could never be wiped off."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w37_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The scattered rays of the small central oil flame, bent into one narrow sheet of light by the angled glass prisms, were sent twenty miles out to sea by the revolving lens.\"\n\nBased on the structure of the sentence, what bends the scattered rays into a narrow sheet, and what sends them out to sea?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The small oil flame bends the revolving lens, and the sea sends the glass prisms twenty miles away.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The angled glass prisms bend the rays into a narrow sheet, and the revolving lens sends them out to sea.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Caleb's linen apron bends the light rays, and the brass window latches send them across the marsh.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "A passing wooden schooner shines its deck lantern into the tower to light the oil wick.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The scattered rays of the small central oil flame, bent into one narrow sheet of light by the angled glass prisms, were sent twenty miles out to sea by the revolving lens.",
+      "childTip": "Follow the two 'by' phrases: angled glass prisms bend the rays, and the revolving lens sends them out.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'bent... by the angled glass prisms' and 'were sent... by the revolving lens'. Option B accurately tracks both agents."
+    },
+    {
+      "questionId": "w37_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"He knew that pressing down on sharp grains of quartz would carve permanent scratches into the soft French glass.\"\n\nWhat does the word permanent mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lasting forever and impossible to wipe away",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Easy to wash off with warm water and soap",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Glowing brightly like a golden oil flame",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Hidden underneath the spiral iron staircase",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "He knew that pressing down on sharp grains of quartz would carve permanent scratches into the soft French glass.",
+      "childTip": "Think about why Caleb used a soft brush first: scratches carved into glass cannot be erased.",
+      "parentExplanation": "Because sharp sand grains would 'carve' scratches into the soft French glass if rubbed, 'permanent' means lasting or irreversible damage."
+    },
+    {
+      "questionId": "w37_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why does Caleb tie on a soft linen apron before he begins cleaning the lens?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He wants to keep the hard buttons on his coat from scratching the glass rings.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "He needs a heavy coat to stay warm while walking into the village for lamp oil.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "He uses the apron to block the broken window shutter so rain cannot enter.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "He is required to wear a white uniform whenever a ship passes the island.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Caleb tied on a soft linen apron so his coat buttons would not scratch the crystal.",
+      "childTip": "Click the last sentence in Paragraph 2 that tells why Caleb tied on the linen apron.",
+      "parentExplanation": "Paragraph 2 explicitly states that Caleb tied on a soft linen apron 'so his coat buttons would not scratch the crystal.'"
+    },
+    {
+      "questionId": "w37_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 1 contribute to the plot of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It explains how French scientists invented the first beehive lens in Europe.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "It establishes the stormy coastal setting and explains why Caleb is responsible for preparing the lens alone.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It shows the wooden schooner flashing its deck lantern near the outer sandbar.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "It proves that Caleb prefers working in the village store over climbing lighthouse stairs.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Before leaving, he had trusted Caleb with the afternoon chore that mattered most to passing ships.",
+      "childTip": "Look at what Paragraph 1 sets up: the approaching gale, the father's errand, and Caleb's important job.",
+      "parentExplanation": "Paragraph 1 introduces the historical setting (St. Simons Island, 1898), the rising storm, and the conflict/duty placed on Caleb while his father fetches oil."
+    },
+    {
+      "questionId": "w37_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w37_q6",
+      "prompt": "Part A: What can the reader infer about Caleb from the way he handles the gritty sand in Paragraphs 3 and 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He is a well-trained and conscientious worker who takes time to protect delicate equipment even when tired.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "He is afraid of heights and rushes through his chores so he can climb back down the stairs.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "He forgets his father's instructions and accidentally scratches the upper glass prism with his cloth.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "He believes that a few smudges of soot and sand make no difference to the brightness of the lamp.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Gently, he whisked every speck of grit into his palm before touching the linen cloth to the surface.",
+      "childTip": "Notice how Caleb stops rubbing, switches to a soft brush, and checks every ring twice despite aching arms.",
+      "parentExplanation": "Caleb recognizes the danger of rubbing quartz sand against soft French glass, switches tools to whisk the grit away first, and double-checks every ring even when his arms ache."
+    },
+    {
+      "questionId": "w37_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w37_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Outside the thick brick tower, gray clouds rolled low across the Georgia sound.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"A sharp gust during the morning squall had blown fine beach sand through a tiny gap in the brass shutter.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Gently, he whisked every speck of grit into his palm before touching the linen cloth to the surface.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"Just as dusk settled over the tossing waves, his father's boots clanged up the iron stairs.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Gently, he whisked every speck of grit into his palm before touching the linen cloth to the surface.",
+      "childTip": "Choose the quote from Paragraph 4 that shows Caleb's careful action to prevent scratching the glass.",
+      "parentExplanation": "Option C directly shows Caleb's careful technique—whisking away every speck of sand before wiping the prism with his cloth."
+    }
+  ]
+}

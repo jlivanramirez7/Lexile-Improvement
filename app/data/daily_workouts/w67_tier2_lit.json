@@ -1,0 +1,309 @@
+{
+  "workoutId": "w67_tier2_lit",
+  "workoutNumber": 67,
+  "title": "Stitches for the Mountain Trail",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1015,
+  "fkgl": 5.96,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Stitches for the Mountain Trail",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Frost sparkled on the rough pine boards of the porch in Leslie County, Kentucky, in the winter of 1936. Twelve-year-old Maren blew on her stiff fingers. She lit the lamp beside her workbench. Outside in the yard, her older sister Ada was strapping heavy canvas bags onto their mule, Jenny. Ada rode for the Pack Horse Library Project, carrying reading books up steep mountain hollows where no paved roads or trucks could reach. Isolated families in the high cabins waited all week for Ada's mule to splash up the creek bed.\n\nBecause the county had almost no money to buy new volumes, every donated book was read until its pages came loose. Maren served as the unpaid book doctor before each dawn run. She kept a tin pot of warm flour paste, a curved bone needle, and a basket of old cloth scraps on her table. Before the mountain trails froze solid at dawn, the torn cloth spines of the battered school readers were neatly mended by Maren with flour paste and scrap muslin. When a library magazine grew too frayed to hold together at all, she salvaged its best stories and pictures by pasting them into sturdy cardboard scrapbooks.\n\nJust as Maren tied a waxed thread along the back of a reader, Ada stepped inside. She stamped snow from her boots. She pointed to the leather pouch meant for Piney Fork, the highest one-room school on her route. A sudden overnight freeze had coated the rocky creek crossings with glare ice. Jenny had to wade the swift water at Beaver Dam. If the mule slipped there, icy spray would soak right through the plain canvas bags and ruin the thin paper inside.\n\nMaren looked at the stack of fresh books. She knew she could not let the creek ruin them. She reached under her bench and pulled out a cracked oilskin coat that her father had worn in the coal mines. With her sharp shears, she cut the waterproof yellow oilskin into four wide squares. She rubbed beeswax along the seams and stitched the oilskin liners inside Ada's canvas saddlebags. Then she wrapped each stack of books in brown paper and tucked them deep inside the wax-sealed pockets.\n\nWhen Ada rode back at dusk with frost on her wool coat, Maren ran out to the barn to meet her. Ada patted Jenny's neck. She told Maren that the mule had stumbled twice in the treacherous, ice-choked current at Beaver Dam. Cold water had splashed high over the straps. Yet when Ada opened the oilskin liners at Piney Fork School, every page inside was bone-dry. Best of all, the teacher had sent back a bag of clean feed sacks so Maren would have strong cloth for next week's bindings.",
+    "wordCount": 459,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Before the mountain trails froze solid at dawn, the torn cloth spines of the battered school readers were neatly mended by Maren with flour paste and scrap muslin.",
+      "actorChunk": "Maren",
+      "actionChunk": "neatly mended",
+      "receiverChunk": "the torn cloth spines of the battered school readers",
+      "distractorChunks": [
+        "Before the mountain trails froze solid at dawn",
+        "with flour paste and scrap muslin"
+      ],
+      "activeRewrite": "Before the mountain trails froze solid at dawn, Maren neatly mended the torn cloth spines of the battered school readers with flour paste and scrap muslin."
+    },
+    "tier2Words": [
+      {
+        "word": "isolated",
+        "definition": "far away from other places, buildings, or people; remote",
+        "rootHint": "Latin 'insula' (island; cut off like an island)",
+        "contextClue": "Families lived high up in steep mountain hollows where no paved roads or trucks could reach."
+      },
+      {
+        "word": "frayed",
+        "definition": "unraveled or worn at the edges from constant use",
+        "rootHint": "Latin 'fricare' (to rub or chafe)",
+        "contextClue": "Books were read so many times that the cloth and paper wore out and could no longer hold together."
+      },
+      {
+        "word": "salvaged",
+        "definition": "saved useful parts from something that was damaged or worn out",
+        "rootHint": "Latin 'salvare' (to save)",
+        "contextClue": "When a magazine could no longer hold together, she saved its best stories by pasting them into sturdy scrapbooks."
+      },
+      {
+        "word": "treacherous",
+        "definition": "presenting hidden or unpredictable dangers; unsafe to cross",
+        "rootHint": "Old French 'trecherie' (deceit, hidden hazard)",
+        "contextClue": "Glare ice and swift, ice-choked currents made the rocky creek crossing dangerous for the mule."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w67_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Before the mountain trails froze solid at dawn, the torn cloth spines of the battered school readers were neatly mended by Maren with flour paste and scrap muslin.\"\n\nIn this sentence, who or what actually performed the action of mending the book spines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The mountain trails freezing solid at dawn",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Maren, using flour paste and scrap muslin",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The battered school readers pressing against the table",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The teacher waiting at the Piney Fork one-room school",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Before the mountain trails froze solid at dawn, the torn cloth spines of the battered school readers were neatly mended by Maren with flour paste and scrap muslin.",
+      "childTip": "Look right after 'were neatly mended by' to see who fixed the torn cloth spines.",
+      "parentExplanation": "In this passive sentence, 'the torn cloth spines of the battered school readers' is the receiver of the action. The true actor performing the mending appears after the preposition 'by': 'Maren' (Option B)."
+    },
+    {
+      "questionId": "w67_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"When a library magazine grew too frayed to hold together at all, she salvaged its best stories and pictures by pasting them into sturdy cardboard scrapbooks.\"\n\nWhat does the word \"salvaged\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Threw away in the wood stove to keep the cabin warm",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Saved and rescued from being lost or ruined",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Ordered brand-new copies from a wealthy city store",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Soaked in icy creek water until the ink faded away",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "When a library magazine grew too frayed to hold together at all, she salvaged its best stories and pictures by pasting them into sturdy cardboard scrapbooks.",
+      "childTip": "Look at how Maren pastes the best stories into sturdy scrapbooks so readers can still enjoy them.",
+      "parentExplanation": "Even when a magazine was too worn to stay intact, Maren pasted its best stories and pictures into sturdy cardboard scrapbooks so they could still circulate. Thus, 'salvaged' means saved and rescued from being lost (Option B)."
+    },
+    {
+      "questionId": "w67_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Why did the Pack Horse Library Project use mules instead of delivery trucks to bring books to families in Leslie County?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The mountain families lived up steep hollows and creek beds where no paved roads existed for trucks.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The county passed a law banning all motor vehicles from driving near one-room schools.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Mules could carry ten times more weight than a large delivery truck on flat highways.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The librarians wanted to keep the books wet by splashing through Beaver Dam every morning.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Ada rode for the Pack Horse Library Project, carrying reading books up steep mountain hollows where no paved roads or trucks could reach.",
+      "childTip": "Click the sentence in Paragraph 1 that explains what kind of terrain Ada and her mule had to cross.",
+      "parentExplanation": "Paragraph 1 explicitly states that Ada carried books 'up steep mountain hollows where no paved roads or trucks could reach,' and that families waited for her mule to splash up the creek bed (Option A)."
+    },
+    {
+      "questionId": "w67_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_PLOT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How do Paragraphs 2 and 4 work together to develop Maren's character?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They show how she uses everyday household scraps and clever craftsmanship to keep the mountain library running.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "They prove that she wishes she could ride the mule across the creek instead of staying on the porch.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "They explain why her father was angry when she cut up his brand-new mining coat.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "They demonstrate that flour paste is much stronger than beeswax when sealing canvas bags.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "She rubbed beeswax along the seams and stitched the oilskin liners inside Ada's canvas saddlebags.",
+      "childTip": "Notice the everyday items Maren repurposes in both paragraphs: flour paste, cloth scraps, an old oilskin coat, and beeswax.",
+      "parentExplanation": "In Paragraph 2, Maren mends torn books with flour paste, cloth scraps, and cardboard; in Paragraph 4, she cuts up an old oilskin coat and seals the seams with beeswax. Together, these paragraphs highlight her resourcefulness and dedication (Option A)."
+    },
+    {
+      "questionId": "w67_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w67_q6",
+      "prompt": "PART A: What can the reader infer about the people of Piney Fork School from the detail at the very end of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They had no interest in reading geography books during the cold winter months.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "They valued the library deeply and contributed their own scarce materials to help keep the books repaired.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "They wanted Maren to sew feed-sack coats for all the mules in Leslie County.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "They had enough money to buy hundreds of brand-new books for the county library.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Best of all, the teacher had sent back a bag of clean feed sacks so Maren would have strong cloth for next week's bindings.",
+      "childTip": "Look at the last sentence of Paragraph 5 to see what the teacher sent back to Maren and why.",
+      "parentExplanation": "Aligned to ELAGSE5RL1, the teacher at Piney Fork School sends back clean cloth feed sacks specifically so Maren will have strong material for next week's book bindings, showing how the community actively shared scarce supplies to sustain the library (Option B)."
+    },
+    {
+      "questionId": "w67_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w67_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Because the county had almost no money to buy new volumes, every donated book was read until its pages came loose.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"A sudden overnight freeze had coated the rocky creek crossings with glare ice.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"With her sharp shears, she cut the waterproof yellow oilskin into four wide squares.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Best of all, the teacher had sent back a bag of clean feed sacks so Maren would have strong cloth for next week's bindings.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Best of all, the teacher had sent back a bag of clean feed sacks so Maren would have strong cloth for next week's bindings.",
+      "childTip": "Pick the quote from Paragraph 5 that shows the gift the school sent back for Maren's workbench.",
+      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 showing how the Piney Fork teacher reciprocated by donating clean feed sacks for future book bindings, directly supporting Part A."
+    }
+  ]
+}

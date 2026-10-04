@@ -1,0 +1,333 @@
+{
+  "workoutId": "w80_tier3_info",
+  "workoutNumber": 80,
+  "title": "Towers That Breathe Without Fans",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1060,
+  "fkgl": 6.9,
+  "genre": "Informational",
+  "subGenre": "Entomology & Engineering",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Towers That Breathe Without Fans",
+    "author": "BEACON Assessment Lab",
+    "text": "Across the dry grasslands of southern Africa, tall clay towers rise up to fifteen feet into the sky. Although they look like solid stone pillars, these mounds are built by millions of tiny blind insects. Each tower sits directly above a deep underground nest where the termite colony lives. Out on the open plain, noon sun bakes the dirt above one hundred degrees. At night, the air drops near freezing. Yet the queen's chamber deep below the mound stays at a steady eighty-six degrees all day and all night.\n\nTermites need this steady warmth to farm a special white fungus that serves as their main food. Two million insects and their growing fungus garden use up oxygen fast and give off warm, stale gas. If that stagnant air stayed trapped below the ground, the whole colony would soon suffocate. Instead, the tall dirt mound above them acts like a giant lung. It trades stale gas for fresh air using only sun and wind.\n\nThe secret lies in how the workers shape the clay walls. A wide central chimney runs straight up the core of the mound, while dozens of narrow side tunnels sit just beneath the thin outer skin. Stale air from the deep nest, warmed by millions of tiny insects and their fungus gardens, is steadily pushed up the central shaft into the narrow surface flutes. Because the outer clay skin is porous, tiny holes let carbon gas seep out while fresh oxygen soaks in.\n\nSunlight striking the outside of the mound drives this air loop all day long. As morning sun warms the east face of the tower, air inside those outer side flutes heats up and rises. At the same time, cooler air sinks down the shaded side flutes into the cellar below. Some mounds are even shaped like flat wedges that point north and south. This smart shape catches warm morning rays on the wide sides while shielding the mound from the harsh noon sun.\n\nModern architects have studied these clay towers to design tall office buildings that stay cool with very little power. One shopping center in Harare, Zimbabwe, uses concrete chimneys and night breezes modeled after termite vents. By copying a blind insect no larger than a grain of rice, human builders have learned how to regulate indoor air without giant electric fans.",
+    "wordCount": 389,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "Stale air from the deep nest, warmed by millions of tiny insects and their fungus gardens, is steadily pushed up the central shaft into the narrow surface flutes.",
+      "actorChunk": "by millions of tiny insects and their fungus gardens",
+      "actionChunk": "is steadily pushed",
+      "receiverChunk": "Stale air from the deep nest",
+      "distractorChunks": [
+        "warmed",
+        "up the central shaft into the narrow surface flutes"
+      ],
+      "activeRewrite": "Millions of tiny insects and their fungus gardens warm stale air from the deep nest and steadily push it up the central shaft into the narrow surface flutes."
+    },
+    "tier2Words": [
+      {
+        "word": "stagnant",
+        "definition": "Not flowing or moving; stale and still",
+        "rootHint": "stagn- (Latin root meaning 'standing pool of water')",
+        "contextClue": "Refers back to 'warm, stale gas' that is 'trapped below the ground' and would make the colony suffocate."
+      },
+      {
+        "word": "porous",
+        "definition": "Full of tiny holes that let air or liquid pass through",
+        "rootHint": "por- (Greek root meaning 'passage' or 'tiny opening')",
+        "contextClue": "Explained right after: 'tiny holes let carbon gas seep out while fresh oxygen soaks in.'"
+      },
+      {
+        "word": "flutes",
+        "definition": "Long, narrow vertical grooves or channels running along a surface",
+        "rootHint": "Old French flaute (a hollow reed or grooved channel)",
+        "contextClue": "Paired with 'dozens of narrow side tunnels sit just beneath the thin outer skin.'"
+      },
+      {
+        "word": "regulate",
+        "definition": "To control or keep something steady according to a set level",
+        "rootHint": "regul- (Latin root meaning 'rule' or 'guide')",
+        "contextClue": "Architects copy termite vents 'to design tall office buildings that stay cool' and keep indoor air steady."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w80_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4B_NESTED_CLAUSE",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Stale air from the deep nest, warmed by millions of tiny insects and their fungus gardens, is steadily pushed up the central shaft into the narrow surface flutes.\"\n\nIn this sentence, what is steadily pushed up the central shaft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Millions of tiny insects crawling toward the surface",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the noun inside the middle participial phrase ('by millions of tiny insects') with the grammatical subject of the sentence."
+        },
+        {
+          "id": "B",
+          "text": "Stale air rising from the deep underground nest",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly connects the grammatical subject ('Stale air from the deep nest') across the 10-word participial modifier to the verb ('is steadily pushed')."
+        },
+        {
+          "id": "C",
+          "text": "The white fungus gardens grown for food",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Selects the second noun inside the interrupting modifier ('and their fungus gardens') rather than what rises up the shaft."
+        },
+        {
+          "id": "D",
+          "text": "The narrow surface flutes beneath the clay skin",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Picks the destination at the end of the prepositional phrase ('into the narrow surface flutes') instead of the subject being pushed."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Stale air from the deep nest, warmed by millions of tiny insects and their fungus gardens, is steadily pushed up the central shaft into the narrow surface flutes.",
+      "childTip": "Cross out the middle phrase between the commas to see what subject links right to 'is steadily pushed.'",
+      "parentExplanation": "Focus domain D4_SYNTAX / ELAGSE5L1. The embedded participial phrase ', warmed by millions of tiny insects and their fungus gardens,' separates the subject ('Stale air from the deep nest') from its passive verb ('is steadily pushed')."
+    },
+    {
+      "questionId": "w80_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Because the outer clay skin is porous, tiny holes let carbon gas seep out while fresh oxygen soaks in.\"\n\nWhat does the word porous mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Filled with tiny openings that allow gases to pass through",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the direct explanation in the second half of the sentence ('tiny holes let carbon gas seep out while fresh oxygen soaks in')."
+        },
+        {
+          "id": "B",
+          "text": "Sealed completely tight like a solid sheet of glass",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Gives the opposite meaning; a sealed wall would trap stale gas and suffocate the colony."
+        },
+        {
+          "id": "C",
+          "text": "Painted bright white to reflect the hot noon sun",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Confuses the white fungus in Paragraph 2 with the outer clay skin of the mound."
+        },
+        {
+          "id": "D",
+          "text": "Soaked with heavy rainwater from summer storms",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Misreads the verb 'soaks in' (referring to fresh oxygen) as liquid water."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because the outer clay skin is porous, tiny holes let carbon gas seep out while fresh oxygen soaks in.",
+      "childTip": "Read the rest of the sentence right after the comma—it defines 'porous' for you!",
+      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). The main clause ('tiny holes let carbon gas seep out while fresh oxygen soaks in') directly explains what it means for the outer clay skin to be 'porous.'"
+    },
+    {
+      "questionId": "w80_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why do some termites build their mounds in the shape of flat wedges that point north and south?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The wide sides catch warm morning sunlight to drive airflow while protecting the mound from overheating under the harsh noon sun.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately states the cause-and-effect explanation in the final sentence of Paragraph 4."
+        },
+        {
+          "id": "B",
+          "text": "The sharp wedge shape acts as a compass needle that spins around whenever the wind changes direction.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents a spinning clay mound, which is physically impossible."
+        },
+        {
+          "id": "C",
+          "text": "Pointing north and south keeps the entire mound in freezing shade for twenty-four hours a day.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Contradicts Paragraph 4, which states that the wide east side catches warm morning sun rays."
+        },
+        {
+          "id": "D",
+          "text": "The flat sides trap all the stale carbon gas inside the cellar so the fungus garden can freeze.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses both the temperature goal (steady 86 degrees) and the airflow goal (venting stale gas out)."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "This smart shape catches warm morning rays on the wide sides while shielding the mound from the harsh noon sun.",
+      "childTip": "First click the last sentence in Paragraph 4 that explains what the wedge shape does in the morning and at noon.",
+      "parentExplanation": "Click-to-Prove Scientific Cause and Effect (ELAGSE5RI3). Paragraph 4 explains that orienting the flat wedge north-to-south lets the wide east/west faces absorb gentle morning warmth while presenting only a thin edge to the blazing overhead noon sun."
+    },
+    {
+      "questionId": "w80_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 5 connect to the scientific explanations in Paragraphs 1 through 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It shows how human architects have applied the termites' natural chimney design to cool large buildings without heavy electric fans.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains how Paragraph 5 extends the biological explanation of termite mounds into human engineering."
+        },
+        {
+          "id": "B",
+          "text": "It explains how builders in Zimbabwe knocked down termite mounds to clear land for a new shopping center.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Misuses the reference to the Harare shopping center, which modeled its concrete chimneys after termite vents."
+        },
+        {
+          "id": "C",
+          "text": "It argues that office buildings in Africa no longer need roofs or walls to stay cool.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses an extreme distortion not supported by the passage."
+        },
+        {
+          "id": "D",
+          "text": "It proves that electric fans work much better than clay chimneys in dry grasslands.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the point of Paragraph 5, which praises cooling buildings with very little power and without giant electric fans."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Modern architects have studied these clay towers to design tall office buildings that stay cool with very little power.",
+      "childTip": "Look at the first sentence of Paragraph 5 to see what human builders learned from the termites.",
+      "parentExplanation": "Text Structure & Idea Connection (ELAGSE5RI5). After Paragraphs 1–4 explain how termite mounds circulate air and regulate heat naturally, Paragraph 5 shows how human architects adapted those exact principles for sustainable buildings."
+    },
+    {
+      "questionId": "w80_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w80_q6",
+      "prompt": "PART A: Which statement best expresses the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "African termites build porous clay mounds with central chimneys and side tunnels that use sun and wind to keep underground nests fresh and at a steady temperature.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the temperature challenge (Para 1), gas exchange need (Para 2), chimney/flute structure (Para 3-4), and engineering value (Para 5)."
+        },
+        {
+          "id": "B",
+          "text": "Termites in southern Africa are completely blind and grow white fungus gardens deep below the ground.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on two supporting facts from Paragraphs 1 and 2 while omitting how the mound regulates air and heat."
+        },
+        {
+          "id": "C",
+          "text": "Grassland temperatures in southern Africa rise above one hundred degrees at noon and drop near freezing at night.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "States only the outdoor weather setting from Paragraph 1."
+        },
+        {
+          "id": "D",
+          "text": "Every office building in the world is now made of porous clay so workers can farm white fungus indoors.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Combines details from Paragraphs 2, 3, and 5 into an absurd, extreme claim."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Instead, the tall dirt mound above them acts like a giant lung.",
+      "childTip": "Pick the summary that explains how the clay mound's tunnels and chimneys keep the underground nest fresh and steady.",
+      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option A captures how the mound's structure uses natural forces to ventilate and regulate the underground colony."
+    },
+    {
+      "questionId": "w80_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w80_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Out on the open plain, noon sun bakes the dirt above one hundred degrees.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes only the hot afternoon weather outside the mound in Paragraph 1."
+        },
+        {
+          "id": "B",
+          "text": "\"Two million insects and their growing fungus garden use up oxygen fast and give off warm, stale gas.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "States only the problem of stale gas in Paragraph 2, not how the mound solves it."
+        },
+        {
+          "id": "C",
+          "text": "\"A wide central chimney runs straight up the core of the mound, while dozens of narrow side tunnels sit just beneath the thin outer skin.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly supports Part A by explaining the internal chimney and side-tunnel architecture that drives the mound's airflow."
+        },
+        {
+          "id": "D",
+          "text": "\"One shopping center in Harare, Zimbabwe, uses concrete chimneys and night breezes modeled after termite vents.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Gives a single human application example in Paragraph 5 rather than explaining how termite mounds work."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "A wide central chimney runs straight up the core of the mound, while dozens of narrow side tunnels sit just beneath the thin outer skin.",
+      "childTip": "Find the quote from Paragraph 3 that describes the central chimney and side tunnels inside the mound.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence (ELAGSE5RI1) supporting the central idea in Part A."
+    }
+  ]
+}

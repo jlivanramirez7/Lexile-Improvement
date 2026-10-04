@@ -1,0 +1,309 @@
+{
+  "workoutId": "w34_tier0_info",
+  "workoutNumber": 34,
+  "title": "Six Dots That Opened a World of Books",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 930,
+  "fkgl": 5.81,
+  "genre": "Informational",
+  "subGenre": "History & Inventions",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RI1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Six Dots That Opened a World of Books",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In 1821, a twelve-year-old boy named Louis Braille went to a school for blind kids in Paris, France. He had lost his sight as a young child, and he was eager to read books on his own. However, the school library held only fourteen books in the entire building. Those volumes used giant raised letters pressed into thick paper coated with wax. Each book weighed twenty pounds and took minutes to trace just one sentence with a finger. Worse still, blind students had no way to write their own notes.\n\nThat year, a French army officer named Charles Barbier came to the school to share a code he called night writing. Soldiers had tried using this system of raised bumps to read battle messages in the dark without striking a match. His code used twelve raised dots set in two tall rows. While the idea excited Louis right away, the army code had a major flaw. Twelve dots were too tall to fit under one finger at once. Readers had to move their finger up and down to feel each sign.\n\nLouis spent the next three years working late in his room to make a faster, simpler code. Using a blunt awl from his father's shop, he pressed thousands of test dots into thick paper. At age fifteen, he found the answer by cutting the tall twelve-dot cell in half. The new six-dot reading cell, arranged in two short columns of three tiny bumps, was easily felt by a reader's fingertip in a single touch. A reader could now glide smoothly across a page without stopping.\n\nEven though each cell held only six spots, Louis found a way to make sixty-three dot shapes. The first ten letters of the alphabet used only the top four dots in the cell. The next ten letters just added one bottom dot to those first ten shapes. Other dot shapes stood for numbers, stops, and even music notes. With a metal frame called a slate and a small pointed stylus, blind students could also punch their own raised words into paper.\n\nToday, the code known as braille is used in almost every land around the world. Raised braille cells show up on lift buttons, pill boxes, food menus, and keys. By refusing to give up on a flawed idea, a young student gave millions of blind people the power to read and write.",
+    "wordCount": 399,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "The new six-dot reading cell, arranged in two short columns of three tiny bumps, was easily felt by a reader's fingertip in a single touch.",
+      "actorChunk": "a reader's fingertip",
+      "actionChunk": "easily felt",
+      "receiverChunk": "The new six-dot reading cell",
+      "distractorChunks": [
+        "arranged in two short columns of three tiny bumps",
+        "in a single touch"
+      ],
+      "activeRewrite": "A reader's fingertip easily felt the new six-dot reading cell in a single touch."
+    },
+    "tier2Words": [
+      {
+        "word": "volumes",
+        "definition": "individual books, especially large or heavy ones in a library collection",
+        "rootHint": "From Latin volumen, meaning 'roll of parchment or book'",
+        "contextClue": "The school library held only fourteen books, and each of those heavy books weighed twenty pounds."
+      },
+      {
+        "word": "flaw",
+        "definition": "a weakness, mistake, or design problem that keeps something from working well",
+        "rootHint": "From Old Norse flaga, meaning 'crack or weak spot'",
+        "contextClue": "Captain Barbier's army code had a major problem because twelve dots were too tall to fit beneath one fingertip."
+      },
+      {
+        "word": "blunt",
+        "definition": "having a rounded or dull tip rather than a sharp point",
+        "rootHint": "From Middle English blunt, meaning 'dull or not sharp'",
+        "contextClue": "Louis used a rounded awl tool to press raised bumps into thick paper without poking holes all the way through."
+      },
+      {
+        "word": "stylus",
+        "definition": "a small pen-shaped tool with a pointed tip used for pressing marks or dots into a surface",
+        "rootHint": "From Latin stilus, meaning 'pointed writing tool used on wax tablets'",
+        "contextClue": "With a grooved metal frame and a small pointed tool, students could punch their own raised words into paper."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w34_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The new six-dot reading cell, arranged in two short columns of three tiny bumps, was easily felt by a reader's fingertip in a single touch.\"\n\nBased on the structure of the sentence, what felt the new six-dot reading cell?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The two short columns felt the reader's fingertip in the dark.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A reader's fingertip felt the new six-dot reading cell in a single touch.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The three tiny bumps felt the blunt awl on the thick paper.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Captain Barbier felt the fourteen heavy wax books in the library.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The new six-dot reading cell, arranged in two short columns of three tiny bumps, was easily felt by a reader's fingertip in a single touch.",
+      "childTip": "Find the 'by' phrase right after 'was easily felt' to see what performed the action.",
+      "parentExplanation": "In this passive-voice sentence, 'The new six-dot reading cell' receives the action, while 'by a reader's fingertip' identifies what felt the cell."
+    },
+    {
+      "questionId": "w34_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 2:\n\n\"While the idea excited Louis right away, the army code had a major flaw. Twelve dots were too tall to fit beneath a single fingertip, so readers had to move their finger up and down to feel each symbol.\"\n\nWhat does the word flaw mean as it is used in Paragraph 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A clever secret shared only with French soldiers",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "A design weakness that causes a problem",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A heavy wooden shelf inside a school library",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "A perfect solution that works right away",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "While the idea excited Louis right away, the army code had a major flaw.",
+      "childTip": "Read the next sentence to see what was wrong with the twelve-dot code: it was too tall for one fingertip.",
+      "parentExplanation": "The sentence following 'flaw' explains the problem with the twelve-dot code (it was too tall to fit under one fingertip), showing that 'flaw' means a weakness or design problem."
+    },
+    {
+      "questionId": "w34_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RI1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "According to Paragraph 1, why were the fourteen books in the Paris school library so difficult for blind students to use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each book weighed twenty pounds and took minutes to trace a single sentence of giant raised letters.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The books were written in a secret army code that only Captain Barbier knew how to read.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The pages were made of thin tissue paper that tore whenever a student touched them.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The school principal kept all fourteen books locked inside a leather shop across town.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Each book weighed twenty pounds and took minutes to trace just one sentence with a finger.",
+      "childTip": "Click the sentence in Paragraph 1 that tells how much each book weighed and how long it took to trace one sentence.",
+      "parentExplanation": "Paragraph 1 explicitly states that the wax-coated books weighed twenty pounds each and took minutes just to trace a single sentence with a finger."
+    },
+    {
+      "questionId": "w34_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does the author organize the information in Paragraphs 2 and 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By comparing the cost of French books in 1821 with the cost of modern computers",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "By describing the problem with Captain Barbier's twelve-dot code and then showing how Louis solved it with a six-dot cell",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "By listing every book that Louis Braille read during his first year in Paris",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "By arguing that soldiers should use wax letters instead of night writing during battles",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "At age fifteen, he found the answer by cutting the tall twelve-dot cell in half.",
+      "childTip": "Look at how Paragraph 2 shows the flaw in the twelve-dot code and Paragraph 3 shows how Louis fixed it.",
+      "parentExplanation": "Paragraphs 2 and 3 use a problem-and-solution structure: Paragraph 2 explains why the twelve-dot night writing code was too tall for a single fingertip, and Paragraph 3 shows how Louis solved this by cutting the cell in half to six dots."
+    },
+    {
+      "questionId": "w34_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w34_q6",
+      "prompt": "Part A: Why did Louis Braille's six-dot cell allow people to read much faster than Captain Barbier's twelve-dot code?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The six-dot cell only had enough patterns for the first ten letters of the French alphabet.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The smaller six-dot cell fit under one fingertip at once, so readers could glide smoothly across the page.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The six-dot bumps glowed in the dark so soldiers could see them from across a room.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The six-dot cell was printed on twenty-pound wax pages that never wore down.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "A reader could now glide smoothly across a page without stopping.",
+      "childTip": "Check the end of Paragraph 3 to see what happened once the whole six-dot cell fit under a fingertip in one touch.",
+      "parentExplanation": "Paragraphs 2 and 3 explain that Barbier's twelve-dot cell required moving the finger up and down on every symbol, whereas Braille's six-dot cell could be felt in a single touch, letting readers glide smoothly across the page."
+    },
+    {
+      "questionId": "w34_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w34_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"However, the school library held only fourteen books in the entire building.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Soldiers had tried using this system of raised bumps to read battle messages in the dark without striking a match.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"A reader could now glide smoothly across a page without stopping.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"The first ten letters of the alphabet used only the top four dots in the cell.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "A reader could now glide smoothly across a page without stopping.",
+      "childTip": "Pick the quote from Paragraph 3 that explains how a reader's finger moves across a page of six-dot cells.",
+      "parentExplanation": "Option C directly proves Part A by showing that the single-touch six-dot cell allowed readers to glide smoothly across a page without stopping."
+    }
+  ]
+}

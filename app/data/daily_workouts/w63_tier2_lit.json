@@ -1,0 +1,309 @@
+{
+  "workoutId": "w63_tier2_lit",
+  "workoutNumber": 63,
+  "title": "Sketching the Cloud Line",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1005,
+  "fkgl": 6.62,
+  "genre": "Literary",
+  "subGenre": "Historical Adventure",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL6",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Sketching the Cloud Line",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the fall of 1895, Clara stood at the base of Lookout Mountain and stared up at the iron tracks climbing straight into the mist. Most passengers boarding the new Incline Railway in Chattanooga clutched their hats and whispered about the sheer slope. Near the top, the grade tilted sharper than a church roof. Clara's older cousin, Thomas, sat on the inner bench with his eyes shut tight and his knuckles white on his cane. Clara, however, took the window seat and opened her leather field book to a blank page.\n\nAs the bell clanged, the cable beneath the floor pulled taut and the car began its slow climb. Halfway up the steep limestone bluff, the two slanted wooden cable cars were smoothly pulled past each other by a steam drum at the summit. Thomas groaned and muttered that no person was meant to hang from a wire rope on a cliff. Clara barely heard his timid warning. To her eyes, the deep trench blasted through the mountain rock was not a scary drop at all. It was an open book of Earth's past.\n\nWhere the track cut through the lower ridge, thick bands of pale gray limestone lay stacked like flat pancakes. Clara braced her elbow on the brass rail and sketched the neat horizontal lines with her charcoal stick. In the margin, she noted small white crinoid stems and seashell prints locked inside the stone. Millions of years ago, a warm, shallow sea had covered this exact spot in Tennessee.\n\nHigher up the slope, the car entered the steepest cut near the bluff's rim. While Thomas hid his face behind his coat collar, Clara leaned closer to the open window. Above a thin seam of dark coal shale, the rock changed into rough tan sandstone streaked with rust. The dynamite crew had exposed cross-bedded ripples that ancient river currents had carved into sandbars long after the sea dried up. Because the car moved at a steady crawl, she had just enough time to shade each layer in order from bottom to top.\n\nWhen the car glided into the top station above the clouds, Thomas leaped onto the wood platform and vowed to walk all the way down. Clara stayed by the rail for one last look at the valley far below. Her fingers were black with charcoal, but her sketchbook held a complete vertical map of the mountain's bones. The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.",
+    "wordCount": 419,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Halfway up the steep limestone bluff, the two slanted wooden cable cars were smoothly pulled past each other by a steam drum at the summit.",
+      "actorChunk": "a steam drum at the summit",
+      "actionChunk": "smoothly pulled",
+      "receiverChunk": "the two slanted wooden cable cars",
+      "distractorChunks": [
+        "Halfway up the steep limestone bluff",
+        "past each other"
+      ],
+      "activeRewrite": "A steam drum at the summit smoothly pulled the two slanted wooden cable cars past each other."
+    },
+    "tier2Words": [
+      {
+        "word": "sheer",
+        "definition": "extremely steep; almost straight up and down",
+        "rootHint": "Old English 'scir' (clear, unbroken, or vertical)",
+        "contextClue": "Passengers whispered about the steep slope because the grade tilted sharper than a church roof."
+      },
+      {
+        "word": "timid",
+        "definition": "showing a lack of courage or confidence; easily frightened",
+        "rootHint": "Latin 'timidus' (fearful, afraid)",
+        "contextClue": "Thomas sat with his eyes shut tight and groaned that no person should hang from a wire rope."
+      },
+      {
+        "word": "exposed",
+        "definition": "uncovered and laid bare so that something hidden can be seen",
+        "rootHint": "Latin 'ex-' (out) + 'ponere' (to place or set forth)",
+        "contextClue": "The dynamite crew blasted a trench through the mountain that uncovered hidden rock ripples."
+      },
+      {
+        "word": "ancient",
+        "definition": "belonging to the very distant past and no longer in existence",
+        "rootHint": "Latin 'ante' (before; from long ago)",
+        "contextClue": "Millions of years ago, old seas and rivers left shells and ripples in the stone."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w63_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Halfway up the steep limestone bluff, the two slanted wooden cable cars were smoothly pulled past each other by a steam drum at the summit.\"\n\nBased on the structure of this sentence, what actually pulled the two cable cars?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The steep limestone bluff halfway up the mountain",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A steam drum at the summit",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The passengers sitting on the inner wooden benches",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "A team of horses walking beside the iron tracks",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Halfway up the steep limestone bluff, the two slanted wooden cable cars were smoothly pulled past each other by a steam drum at the summit.",
+      "childTip": "Look after the passive verb 'were smoothly pulled past each other by' to find the real actor.",
+      "parentExplanation": "In this passive-voice sentence, 'the two slanted wooden cable cars' is the receiver of the action. The true actor performing the pulling appears after 'by': 'a steam drum at the summit' (Option B)."
+    },
+    {
+      "questionId": "w63_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 1:\n\n\"Most passengers boarding the new Incline Railway in Chattanooga clutched their hats and whispered about the sheer slope.\"\n\nWhat does the word \"sheer\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Very steep and rising almost straight up",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Thin and easy to see through like glass",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Smooth and flat like a valley meadow",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Used for cutting wool off farm sheep",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Most passengers boarding the new Incline Railway in Chattanooga clutched their hats and whispered about the sheer slope.",
+      "childTip": "Read the very next sentence in Paragraph 1 about the grade tilting 'sharper than a church roof.'",
+      "parentExplanation": "Although 'sheer' can mean thin fabric in other contexts, the clue in the next sentence ('the grade tilted sharper than a church roof') proves that 'sheer slope' means a very steep incline (Option A)."
+    },
+    {
+      "questionId": "w63_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, how does Clara know that Lookout Mountain was once covered by a shallow sea?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She spots fossilized crinoid stems and seashell prints locked inside the lower limestone bands.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She sees ocean waves still crashing against the bottom station in Chattanooga.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "She reads a bronze plaque nailed to the wooden platform at the top station.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "She tastes salt water dripping from the steam drum at the summit.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "In the margin, she noted small white crinoid stems and seashell prints locked inside the stone.",
+      "childTip": "Click the sentence in Paragraph 3 that tells what small prints Clara noted inside the gray stone.",
+      "parentExplanation": "In Paragraph 3, Clara observes 'small white crinoid stems and seashell prints locked inside the stone,' which provides geological proof that a warm, shallow sea once covered the area (Option A)."
+    },
+    {
+      "questionId": "w63_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2D_POV_PURPOSE",
+      "standard": "ELAGSE5RL6",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the narrator's point of view in the story shape how the Incline Railway ride is described?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By contrasting Thomas's fear of the steep drop with Clara's scientific excitement, it shows how the same climb looks different to two riders.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By telling the story in first person from the steam engineer's view, it focuses only on how much coal the boiler burns.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "By showing that both Clara and Thomas keep their eyes shut the entire trip, it hides what the mountain looks like.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "By focusing only on the price of train tickets in 1895, it proves the railway was built for tourists.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.",
+      "childTip": "Notice how the narrator compares Thomas shutting his eyes with Clara leaning out the window to sketch rocks.",
+      "parentExplanation": "Aligned to ELAGSE5RL6, the third-person narrator contrasts Thomas's fearful perspective (white knuckles, closed eyes) with Clara's curious perspective (seeing the rock trench as 'an open book of Earth's past') (Option A)."
+    },
+    {
+      "questionId": "w63_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w63_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Curiosity can turn an intimidating experience into a rare chance to discover something new.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Steep mountain railways are too dangerous for anyone to ride without a guide.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Charcoal sticks are much better for drawing rock layers than ink pens.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Older cousins always know more about mountain history than younger relatives.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "To her eyes, the deep trench blasted through the mountain rock was not a scary drop at all.",
+      "childTip": "Think about how Clara's curiosity transforms a scary cliff ride into a scientific discovery.",
+      "parentExplanation": "While Thomas is paralyzed by fear of the steep slope, Clara's scientific curiosity allows her to see the blasted rock cut as an opportunity to map millions of years of Earth's history (Option A)."
+    },
+    {
+      "questionId": "w63_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w63_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"As the bell clanged, the cable beneath the floor pulled taut and the car began its slow climb.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Millions of years ago, a warm, shallow sea had covered this exact spot in Tennessee.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"When the car glided into the top station above the clouds, Thomas leaped onto the wood platform and vowed to walk all the way down.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.",
+      "childTip": "Choose the quote from Paragraph 5 that shows how the scary ride rewarded Clara's curiosity.",
+      "parentExplanation": "Option D directly proves the theme in Part A by contrasting Thomas's fear with the scientific reward Clara gained from her curiosity."
+    }
+  ]
+}

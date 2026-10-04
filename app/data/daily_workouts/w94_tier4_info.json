@@ -1,0 +1,304 @@
+{
+  "workoutId": "w94_tier4_info",
+  "workoutNumber": 94,
+  "title": "Voices the Enemy Could Not Crack",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1100,
+  "fkgl": 6.86,
+  "genre": "Informational",
+  "subGenre": "Linguistics & History",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI5",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "Voices the Enemy Could Not Crack",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 402,
+    "paragraphCount": 5,
+    "text": "During World War II, radio waves across the wide sea carried urgent orders between ships and island beaches. Yet each time a Marine spoke into a mic, sharp enemy ears tuned in on the same channel. Standard machine codes took half an hour to punch out on paper tape and read at the far end. Worse still, smart codebreakers often cracked those number patterns before the first small boats hit the sand. Fleet leaders needed a fast voice code that no foe could ever solve.\n\nIn 1942, twenty-nine young Navajo men met inside a locked room at a Marine camp on the west coast. Their spoken tongue had never been written down in books or taught to outside scholars. Its strict verb forms and rising or falling voice tones changed the sense of a word right away. Even a fluent speaker from a nearby tribe could not guess what a phrase meant without years of study. Starting from scratch, the young men built a two-part voice cipher locked inside their native speech.\n\nThe first layer used nature words to name modern war tools that did not exist in old camp life. Warplanes became birds: a fast dive plane was called a hawk, while a night scout plane was an owl. Big ships took the names of sea life, so a deep sub became an iron fish and a huge ship became a whale. Even if a spy knew a few words of the tongue, hearing that an iron fish struck a whale made no sense.\n\nFor names of islands or base camps that had no single code word, the men built a second layer. Inside the guarded wooden hall at camp, a phonetic list of common Navajo nouns was learned by each recruit before the fleet sailed west. To spell the letter A, a speaker might say the word for ant, apple, or axe. Because each English letter had three distinct choices, repeat letters never sounded the same twice in a row.\n\nUnder heavy fire on rough beaches like Iwo Jima, two Code Talkers could send and read a three-line order in twenty seconds. Machine ciphers needed thirty minutes to handle the exact same warning. Through the whole war, not one radio call sent in the Navajo code was ever broken by enemy teams. By blending old grammar with clever wordplay, those Marine radio crews forged the safest voice shield in history.",
+    "monsterSentence": {
+      "paragraphNumber": 4,
+      "verbatimSentence": "Inside the guarded wooden hall at camp, a phonetic list of common Navajo nouns was learned by each recruit before the fleet sailed west.",
+      "actorChunk": "each recruit",
+      "actionChunk": "was learned",
+      "receiverChunk": "a phonetic list",
+      "distractorChunks": [
+        "Inside the guarded wooden hall at camp",
+        "of common Navajo nouns",
+        "before the fleet sailed west"
+      ],
+      "activeRewrite": "Inside the guarded wooden hall at camp, each recruit learned a phonetic list of common Navajo nouns before the fleet sailed west."
+    },
+    "tier2Words": [
+      {
+        "word": "fluent",
+        "definition": "Able to speak or understand a language smoothly, easily, and accurately",
+        "rootHint": "From Latin 'fluere' meaning to flow smoothly",
+        "contextClue": "Even someone who spoke a nearby tribal language smoothly could not guess Navajo voice tones."
+      },
+      {
+        "word": "cipher",
+        "definition": "A secret system of writing or speaking used to hide the true meaning of messages",
+        "rootHint": "From Arabic 'sifr', later used for secret number and letter codes",
+        "contextClue": "The recruits built a two-part secret code system locked inside their native speech."
+      },
+      {
+        "word": "phonetic",
+        "definition": "Based on spoken sounds and how letters are pronounced",
+        "rootHint": "From Greek 'phone' meaning voice or sound",
+        "contextClue": "To spell out letters by sound, speakers used Navajo nouns whose English meanings started with each letter."
+      },
+      {
+        "word": "forged",
+        "definition": "Built or shaped something strong and lasting through hard effort",
+        "rootHint": "From a blacksmith's forge where hot metal is hammered into strong tools",
+        "contextClue": "By blending old grammar with clever wordplay, the Marines created the safest voice shield."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w94_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"Inside the guarded wooden hall at camp, a phonetic list of common Navajo nouns was learned by each recruit before the fleet sailed west.\"\n\nWho performed the action of learning the phonetic list in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The common Navajo nouns inside the guarded wooden hall",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Each recruit training at the Marine camp",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The fleet that sailed west across the sea",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Enemy listeners tuning in on the radio channel",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Inside the guarded wooden hall at camp, a phonetic list of common Navajo nouns was learned by each recruit before the fleet sailed west.",
+      "childTip": "Spot the passive verb 'was learned' and look right after 'by' to find who did the learning.",
+      "parentExplanation": "The subject 'a phonetic list of common Navajo nouns' receives the passive verb 'was learned.' The agent performing the action is 'each recruit.'"
+    },
+    {
+      "questionId": "w94_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"By blending old grammar with clever wordplay, those Marine radio crews forged the safest voice shield in history.\"\n\nWhat does the word \"forged\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Copied illegally from an enemy codebook",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Created and built through careful effort",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Melted down inside a hot ship engine",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Forgot completely after the war ended",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By blending old grammar with clever wordplay, those Marine radio crews forged the safest voice shield in history.",
+      "childTip": "Think of how a blacksmith shapes strong metal—here, the Marines built a strong code by blending grammar and wordplay.",
+      "parentExplanation": "While 'forge' can mean faking a signature in other contexts, here 'forged the safest voice shield' draws on a blacksmith shaping strong metal, meaning built or crafted."
+    },
+    {
+      "questionId": "w94_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why did the Code Talkers assign three distinct Navajo words to each English letter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "So that repeated letters in a spelled word would not make the same sound pattern twice in a row",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Because three different Marines had to speak into the radio mic at the exact same time",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Because the Navajo language only had three nouns for animals and plants",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "So that machine tape printers could punch three holes for every vowel",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Because each English letter had three distinct choices, repeat letters never sounded the same twice in a row.",
+      "childTip": "Click the last sentence in Paragraph 4 that explains the benefit of having three distinct choices per letter.",
+      "parentExplanation": "In Paragraph 4, the author explains that giving each letter three distinct choices prevented recurring letter patterns that enemy codebreakers normally look for."
+    },
+    {
+      "questionId": "w94_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How are Paragraphs 3 and 4 organized to explain how the Navajo code worked?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They compare the speed of deep subs with the flight speed of night scout planes.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "They break down the two layers of the cipher: first the nature words for war tools, and second the phonetic list for spelling names.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "They list every island battle in the exact order the fleet visited them.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "They argue that machine ciphers were much safer than spoken codes during island landings.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The first layer used nature words to name modern war tools that did not exist in old camp life.",
+      "childTip": "Notice how Paragraph 3 starts with 'The first layer' and Paragraph 4 explains 'a second layer.'",
+      "parentExplanation": "Paragraph 2 introduces a 'two-part voice cipher,' and Paragraphs 3 and 4 systematically unpack each layer: nature words for whole war terms (Paragraph 3) and a multi-option phonetic list for spelling names (Paragraph 4)."
+    },
+    {
+      "questionId": "w94_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w94_q6",
+      "prompt": "Part A: Why was the Navajo code a major improvement over standard military machine codes during battle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It allowed Marines to send unbreakable orders in seconds instead of waiting half an hour for machine tape.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It worked without any radio sets by flashing mirrors between ships and beaches.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It was printed in books so every sailor in the fleet could read it without training.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "It automatically jammed enemy radio channels so nobody else on the sea could speak.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Under heavy fire on rough beaches like Iwo Jima, two Code Talkers could send and read a three-line order in twenty seconds.",
+      "childTip": "Compare the time it took two Code Talkers in Paragraph 5 against the thirty minutes needed for machine codes.",
+      "parentExplanation": "Paragraphs 1 and 5 contrast slow, vulnerable machine codes (30 minutes) with the Navajo code, which sent unbreakable three-line orders in just 20 seconds."
+    },
+    {
+      "questionId": "w94_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w94_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"In 1942, twenty-nine young Navajo men met inside a locked room at a Marine camp on the west coast.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Warplanes became birds: a fast dive plane was called a hawk, while a night scout plane was an owl.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"To spell the letter A, a speaker might say the word for ant, apple, or axe.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Under heavy fire on rough beaches like Iwo Jima, two Code Talkers could send and read a three-line order in twenty seconds.\"",
+          "isCorrect": true
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Under heavy fire on rough beaches like Iwo Jima, two Code Talkers could send and read a three-line order in twenty seconds.",
+      "childTip": "Choose the sentence from Paragraph 5 that shows how fast Code Talkers sent orders under fire.",
+      "parentExplanation": "Option D provides direct evidence of the speed advantage described in Part A: sending and reading a three-line order in twenty seconds."
+    }
+  ]
+}

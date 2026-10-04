@@ -1,0 +1,308 @@
+{
+  "workoutId": "w30_tier0_info",
+  "workoutNumber": 30,
+  "title": "Water Stairs for Heavy Ships",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 905,
+  "fkgl": 6.21,
+  "genre": "Informational",
+  "subGenre": "Engineering",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI5",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Water Stairs for Heavy Ships",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Long before highways and trains crossed the land, wooden boats carried big loads of grain, coal, and wood along rivers. Floating a ton of cargo on calm water takes far less effort than pulling a wagon over bumpy mud roads. Yet wild rivers do not stay flat for long. Steep hills, fast rapids, and falls block boats from going up or down the river. A heavy barge cannot climb a rocky hill on wheels, so engineers invented a clever water elevator called a canal lock.\n\nA canal lock is a long stone or concrete chamber built between two water levels. Strong gates stand at both the top end and the bottom end of the chamber. These heavy gates swing open like giant doors when the water on both sides is even. When the water levels do not match, the gates stay shut tight to hold the river back. Small valves at the bottom of the walls let water flow in or out of the box.\n\nPicture a captain steering a loaded barge up from a low river into a high canal. First, the lower gates swing open so the boat can glide inside the lock chamber. Next, the lock keeper closes the lower gates tightly behind the stern of the boat. The heavy wooden barge, floating calmly inside the narrow stone walls, is steadily lifted by rising water from the upper river. No motors or cranes ever touch the hull of the ship.\n\nGravity does all the lifting work inside the lock without burning a drop of fuel. Because water always flows downhill, opening the upper valves lets water rush from the high canal into the lock chamber. As the space fills up, the floating boat rises right along with the water until it reaches the top. Once the water inside the lock matches the high canal, the top gates swing wide open. The captain simply steers the boat forward into the high channel.\n\nGoing down the river works in the opposite way. A boat enters from the high canal, both gates close, and the bottom valves open to let water out of the lock. The boat gently sinks until it matches the low river below. By linking several locks in a row, builders can make a stair of water over steep hills. Even today, giant steel ships use this simple design to cross canals around the world.",
+    "wordCount": 398,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "The heavy wooden barge, floating calmly inside the narrow stone walls, is steadily lifted by rising water from the upper river.",
+      "actorChunk": "rising water from the upper river",
+      "actionChunk": "steadily lifted",
+      "receiverChunk": "The heavy wooden barge",
+      "distractorChunks": [
+        "floating calmly inside the narrow stone walls"
+      ],
+      "activeRewrite": "Rising water from the upper river steadily lifts the heavy wooden barge."
+    },
+    "tier2Words": [
+      {
+        "word": "cargo",
+        "definition": "heavy goods and supplies carried by a ship, train, or truck",
+        "rootHint": "From Spanish cargar, meaning 'to load a wagon or ship'",
+        "contextClue": "Wooden barges carried heavy loads of grain, coal, and lumber along rivers."
+      },
+      {
+        "word": "chamber",
+        "definition": "an enclosed room or walled space designed for a specific purpose",
+        "rootHint": "From Greek kamara, meaning 'vaulted room'",
+        "contextClue": "A canal lock is a long rectangular space built out of stone or concrete between two water levels."
+      },
+      {
+        "word": "stern",
+        "definition": "the rear or back end of a boat or ship",
+        "rootHint": "From Old Norse stjorn, meaning 'steering oar at the back of a ship'",
+        "contextClue": "After the boat glides inside the lock, the keeper closes the lower gates tightly behind the back end of the boat."
+      },
+      {
+        "word": "channel",
+        "definition": "a deep waterway or passage where boats can travel safely",
+        "rootHint": "From Latin canalis, meaning 'water pipe or groove'",
+        "contextClue": "Once the upper gates swing open, the captain steers the boat forward into the high waterway."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w30_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The heavy wooden barge, floating calmly inside the narrow stone walls, is steadily lifted by rising water from the upper river.\"\n\nBased on the way this sentence is built, what lifts the heavy wooden barge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The narrow stone walls lift the upper river over the barge.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Rising water from the upper river lifts the heavy wooden barge.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The heavy wooden barge lifts the stone walls out of the water.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Large steel cranes on the riverbank lift the hull of the ship.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The heavy wooden barge, floating calmly inside the narrow stone walls, is steadily lifted by rising water from the upper river.",
+      "childTip": "Find the 'by' phrase after 'is steadily lifted' to see what performs the lifting.",
+      "parentExplanation": "In this passive-voice sentence, 'The heavy wooden barge' receives the action, while 'by rising water from the upper river' identifies the agent that lifts the barge."
+    },
+    {
+      "questionId": "w30_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 3:\n\n\"First, the lower gates swing open so the boat can glide inside the lock chamber. Next, the lock keeper closes the lower gates tightly behind the stern of the boat.\"\n\nWhat does the word stern mean as it is used in Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Strict and angry in behavior",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The back end of a boat",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A rocky waterfall in a steep valley",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "A sliding valve at the bottom of a wall",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Next, the lock keeper closes the lower gates tightly behind the stern of the boat.",
+      "childTip": "Picture the boat gliding forward into the chamber: the lower gates close right behind the back of the boat.",
+      "parentExplanation": "Although 'stern' can mean strict in other contexts, here the phrase 'closes the lower gates tightly behind the stern of the boat' shows it refers to the rear end of the boat."
+    },
+    {
+      "questionId": "w30_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "According to Paragraph 4, why does a canal lock not need motors or fuel to fill its chamber with water?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gravity makes water flow downhill from the high canal into the chamber when the upper valves open.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Teams of horses pull giant buckets of water up from the lower river every morning.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The captain uses the ship's paddle wheel to push water over the top of the stone gates.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Heavy rainstorms fill the rectangular chamber every time a barge glides inside.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Because water always flows downhill, opening the upper valves lets water rush from the high canal into the lock chamber.",
+      "childTip": "Click the sentence in Paragraph 4 that explains what happens when the upper valves open.",
+      "parentExplanation": "Paragraph 4 explains that gravity does the work because water naturally flows downhill; opening the upper valves lets water rush from the higher canal into the lock chamber."
+    },
+    {
+      "questionId": "w30_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How is the overall structure of the passage organized?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It compares the speed of modern freight trains with the speed of historic wagons.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "It lists the dates when famous canals were dug across North America in chronological order.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It introduces the problem of steep rivers and then explains step by step how canal locks solve it.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "It argues that stone canal locks should be torn down and replaced with steel bridges.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "A heavy barge cannot climb a rocky hill on wheels, so engineers invented a clever water elevator called a canal lock.",
+      "childTip": "Look at how Paragraph 1 presents the problem of steep hills on rivers, and Paragraphs 2-5 explain how the lock works.",
+      "parentExplanation": "The passage uses a problem-and-solution / process structure (ELAGSE5RI5): Paragraph 1 introduces the obstacle of rapids and hills on rivers, and Paragraphs 2–5 explain step by step how a canal lock lifts and lowers boats."
+    },
+    {
+      "questionId": "w30_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w30_q6",
+      "prompt": "Part A: Based on the passage, when is it safe for the gates at either end of a canal lock to swing open?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only when the water level inside the lock chamber matches the water level on the other side of that gate",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Only when both the upper valves and lower valves are closed for the entire winter season",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Whenever the water in the high canal is at least ten feet higher than the water in the chamber",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "As soon as the crew unloads all of the heavy coal and lumber onto the stone walls",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "These heavy gates swing open like giant doors when the water on both sides is even.",
+      "childTip": "Check Paragraph 2 and Paragraph 4 to see what must be true about the water levels before the gates open.",
+      "parentExplanation": "Paragraph 2 states that the gates swing open when the water on both sides is even (and stay shut when levels do not match), which is reinforced in Paragraph 4 when the upper gates open once the lock water matches the high canal."
+    },
+    {
+      "questionId": "w30_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w30_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Floating a ton of cargo on calm water takes far less effort than pulling a wagon over bumpy mud roads.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"These heavy gates swing open like giant doors when the water on both sides is even.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"No motors or cranes ever touch the hull of the ship.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Even today, giant steel ships use this simple design to cross canals around the world.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "These heavy gates swing open like giant doors when the water on both sides is even.",
+      "childTip": "Pick the quote in Paragraph 2 that explains when the heavy gates swing open like giant doors.",
+      "parentExplanation": "Option B directly proves Part A by stating that the gates open when the water level on both sides is even."
+    }
+  ]
+}

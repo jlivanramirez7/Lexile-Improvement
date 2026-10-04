@@ -1,0 +1,308 @@
+{
+  "workoutId": "w32_tier0_info",
+  "workoutNumber": 32,
+  "title": "Coats That Match the Seasons",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 915,
+  "fkgl": 6.26,
+  "genre": "Informational",
+  "subGenre": "Animal Adaptations",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RI3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Coats That Match the Seasons",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the far north, the land changes its look completely between summer and winter. For months, deep white snow blankets the ground from hill to stream. Then the warm June sun melts the drifts and leaves dark brown soil, gray rocks, and green moss. A small mammal with only one coat color would stand out during half of the year. To stay hidden from sharp eyes in every season, both the snowshoe hare and the arctic fox grow two different coats each year.\n\nMany people think that cold air or falling snow makes these animals turn white in the fall. However, the real trigger is the changing amount of daylight as the seasons shift. In late autumn, each day grows shorter and brings fewer hours of sunlight. Tiny sensors inside the animal's eyes send a signal to the brain when the days grow short. The dark brown summer fur, shed bit by bit as autumn days grow shorter, is gradually replaced by thick white winter hair. By the time big winter storms arrive, the new white coat is ready.\n\nThis winter coat does two important jobs at the same time. First, the pure white fur acts as camouflage against the bright snowbanks. A snowshoe hare sitting still on a drift looks just like a lump of snow to a passing owl or lynx. Meanwhile, the arctic fox uses its own white coat to sneak up on prey without being seen. Second, the winter hairs are hollow and trap warm body heat close to the skin during freezing gales.\n\nWhen spring returns in April and May, the hours of daylight stretch longer again. More sunlight entering the eyes tells the animal's body to stop making white hairs and start growing dark pigment. Patch by patch, the snowy coat falls out in soft clumps along the trail. The snowshoe hare grows a dusty brown coat that matches fallen twigs and dry leaves. The arctic fox trades its white fluff for sleek gray and brown fur that blends with bare tundra rocks.\n\nBecause the coat change is tied to daylight rather than temperature, unusual weather can sometimes cause a mismatch. If spring snow melts early during a warm spell, a white hare may have to hop across bare brown dirt for a few weeks. Even so, this twice-a-year wardrobe change remains one of nature's smartest tools for survival in the north.",
+    "wordCount": 398,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The dark brown summer fur, shed bit by bit as autumn days grow shorter, is gradually replaced by thick white winter hair.",
+      "actorChunk": "thick white winter hair",
+      "actionChunk": "gradually replaced",
+      "receiverChunk": "The dark brown summer fur",
+      "distractorChunks": [
+        "shed bit by bit as autumn days grow shorter"
+      ],
+      "activeRewrite": "Thick white winter hair gradually replaces the dark brown summer fur."
+    },
+    "tier2Words": [
+      {
+        "word": "trigger",
+        "definition": "an event or condition that starts a natural process or reaction",
+        "rootHint": "From Dutch trekker, meaning 'puller or starter catch'",
+        "contextClue": "Cold air does not start the change; instead, the changing amount of daylight is what starts the coat change."
+      },
+      {
+        "word": "gradually",
+        "definition": "slowly and step by step over a period of time rather than all at once",
+        "rootHint": "From Latin gradus, meaning 'step'",
+        "contextClue": "The summer fur is shed bit by bit as autumn days grow shorter until the white hair takes its place."
+      },
+      {
+        "word": "camouflage",
+        "definition": "colors or patterns that help an animal blend in with its surroundings so it cannot be seen",
+        "rootHint": "From French camoufler, meaning 'to disguise or hide'",
+        "contextClue": "A white snowshoe hare sitting still on a snowbank looks just like a lump of snow to a passing owl."
+      },
+      {
+        "word": "pigment",
+        "definition": "a natural substance inside skin, hair, or feathers that gives them color",
+        "rootHint": "From Latin pingere, meaning 'to paint or color'",
+        "contextClue": "In spring, the animal's body stops making white hairs and starts growing dark color for its brown and gray coat."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w32_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The dark brown summer fur, shed bit by bit as autumn days grow shorter, is gradually replaced by thick white winter hair.\"\n\nBased on the way this sentence is built, what replaces the dark brown summer fur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thick white winter hair replaces the dark brown summer fur.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The dark brown summer fur replaces the thick white winter hair.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Shorter autumn days replace the snowbanks with green moss.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Passing owls and lynxes replace the animal's winter coat.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The dark brown summer fur, shed bit by bit as autumn days grow shorter, is gradually replaced by thick white winter hair.",
+      "childTip": "Find the 'by' phrase right after 'is gradually replaced' to see what takes the place of the brown fur.",
+      "parentExplanation": "In this passive-voice sentence, 'The dark brown summer fur' receives the action, while 'by thick white winter hair' identifies what replaces it."
+    },
+    {
+      "questionId": "w32_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 3:\n\n\"First, the pure white fur acts as camouflage against the bright snowbanks. A snowshoe hare sitting still on a drift looks just like a lump of snow to a passing owl or lynx.\"\n\nWhat does the word camouflage mean as it is used in Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A loud warning call that scares away hungry predators",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "A natural disguise that helps an animal blend into its background",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A deep underground tunnel dug beneath frozen soil",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "A bright flash of color that makes an animal easy to spot",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "A snowshoe hare sitting still on a drift looks just like a lump of snow to a passing owl or lynx.",
+      "childTip": "Read the next sentence: looking just like a lump of snow helps the hare blend in.",
+      "parentExplanation": "The following sentence explains that the white hare looks just like a lump of snow against the drift, showing that 'camouflage' means a disguise that blends into the background."
+    },
+    {
+      "questionId": "w32_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "According to Paragraph 2, what actually causes a snowshoe hare or arctic fox to start growing its white coat in the fall?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Touching cold snowdrifts with its paws during the first winter storm",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Eating white moss and icy twigs instead of green summer leaves",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Sensing fewer hours of daylight through its eyes as autumn days grow shorter",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Hearing the wings of snowy owls flying down from the north",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Tiny sensors inside the animal's eyes send a signal to the brain when the days grow short.",
+      "childTip": "Click the sentence in Paragraph 2 that explains how sensors in the animal's eyes react when days grow short.",
+      "parentExplanation": "Paragraph 2 explains the cause-and-effect relationship (ELAGSE5RI3): rather than cold air, shorter autumn days with fewer hours of sunlight trigger sensors in the eyes to signal the brain."
+    },
+    {
+      "questionId": "w32_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3B_CAUSE_EFFECT",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Based on Paragraph 3, how do the snowshoe hare and the arctic fox use their white winter coats in different ways?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The hare uses its white coat to hide from predators, while the fox uses its white coat to sneak up on prey.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The hare uses its white coat to stay cool in summer, while the fox uses its coat to swim across streams.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The hare sheds its white coat in December, while the fox keeps its white coat all year long.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The hare has solid heavy hairs, while the fox is the only animal with hollow winter hairs.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Meanwhile, the arctic fox uses its own white coat to sneak up on prey without being seen.",
+      "childTip": "Compare how the hare hides from owls and lynxes with what the fox does in the next sentence.",
+      "parentExplanation": "Paragraph 3 contrasts the two animals' use of camouflage: the hare sits still to hide from predators (owls and lynxes), whereas the arctic fox uses its white coat to stalk prey."
+    },
+    {
+      "questionId": "w32_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w32_q6",
+      "prompt": "Part A: Why can an unusually warm spring cause a problem for a snowshoe hare?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Warm weather makes the sun set earlier each evening, which turns the hare's fur bright green.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "The snow can melt early while the hare is still wearing its white coat, making it stand out against brown dirt.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Warm spring air causes all of the hare's fur to fall out in a single afternoon.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The hare's eyes cannot sense any sunlight when the ground is covered in dark brown soil.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "If spring snow melts early during a warm spell, a white hare may have to hop across bare brown dirt for a few weeks.",
+      "childTip": "Look at Paragraph 5 to see what happens when snow melts early during a warm spring spell.",
+      "parentExplanation": "Because the coat change is triggered by daylight hours rather than temperature, Paragraph 5 explains that an early warm spell can melt the snow while the hare is still white, leaving it visible against bare brown dirt."
+    },
+    {
+      "questionId": "w32_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w32_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"For months, deep white snow blankets the ground from hill to stream.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Second, the winter hairs are hollow and trap warm body heat close to the skin during freezing gales.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Patch by patch, the snowy coat falls out in soft clumps along the trail.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"If spring snow melts early during a warm spell, a white hare may have to hop across bare brown dirt for a few weeks.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "If spring snow melts early during a warm spell, a white hare may have to hop across bare brown dirt for a few weeks.",
+      "childTip": "Pick the quote from Paragraph 5 that shows the mismatch between a white hare and bare brown dirt.",
+      "parentExplanation": "Option D provides the direct textual proof from Paragraph 5 explaining how early snowmelt leaves a white hare hopping across bare brown dirt."
+    }
+  ]
+}

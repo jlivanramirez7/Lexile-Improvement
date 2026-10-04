@@ -1,0 +1,309 @@
+{
+  "workoutId": "w64_tier2_info",
+  "workoutNumber": 64,
+  "title": "From Silk Looms to Software",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1010,
+  "fkgl": 6.06,
+  "genre": "Informational",
+  "subGenre": "Computer Science & History",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RI2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "From Silk Looms to Software",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Long before anyone built a glass screen or a computer chip, the first seed of modern software grew inside a French silk shop. In the 1700s, weaving fancy flowers or leaves into silk cloth was slow and tedious work. A master weaver sat at the front of a wood loom. Meanwhile, a young helper perched high on the top beam. Before each pass of the shuttle, the helper had to pull up exact bundles of thread by hand. One wrong pull ruined the pattern, and a single yard of rich cloth could take weeks to finish.\n\nIn 1804, a French builder named Joseph-Marie Jacquard found a way to guide the loom with paper instead of hands. Inside the tall wooden frame of the loom, each row of colored silk threads was automatically lifted by a chain of punched paper cards. Every stiff card held a grid of small holes, much like a roll for a player piano. Each card pressed against a row of metal rods. The rods that met a hole poked right through and raised their threads. Rods that hit solid card stayed still.\n\nBy linking hundreds of punched cards in a loop, a weaver could make intricate silk pictures of roses or castles without a single mistake. Even better, a shop might want to switch from weaving roses to weaving stars. Workers did not need to rebuild the heavy wood loom. They simply swapped in a new chain of punched cards. The cards acted as a stored set of instructions that told the machine what to do next.\n\nThirty years later across the sea in England, a math thinker named Charles Babbage bought a silk picture of Jacquard. It had been woven with twenty-four thousand cards. The detail was so fine that visitors mistook the cloth for an ink drawing. Inspired by the loom, Babbage designed a giant brass calculating machine called the Analytical Engine. It was built to read punched cards to solve hard math problems instead of weaving cloth.\n\nA bright young thinker named Ada Lovelace studied Babbage's plans and saw an even bigger future. In 1843, she wrote out a step-by-step sequence of card rules. Her plan showed how the brass engine could work out a famous list of numbers. Even more visionary, Lovelace saw that punched holes could stand for music notes or letters too. More than a century before modern laptops, a silk loom and a pair of thinkers gave birth to computer coding.",
+    "wordCount": 412,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Inside the tall wooden frame of the loom, each row of colored silk threads was automatically lifted by a chain of punched paper cards.",
+      "actorChunk": "a chain of punched paper cards",
+      "actionChunk": "automatically lifted",
+      "receiverChunk": "each row of colored silk threads",
+      "distractorChunks": [
+        "Inside the tall wooden frame of the loom",
+        "of colored silk threads"
+      ],
+      "activeRewrite": "A chain of punched paper cards automatically lifted each row of colored silk threads inside the tall wooden frame of the loom."
+    },
+    "tier2Words": [
+      {
+        "word": "tedious",
+        "definition": "taking a long time and very tiresome, slow, or repetitive",
+        "rootHint": "Latin 'taedium' (weariness or boredom)",
+        "contextClue": "A helper had to pull up thread bundles by hand before every pass, and a single yard of cloth took weeks."
+      },
+      {
+        "word": "intricate",
+        "definition": "having many complex, fine, and detailed parts",
+        "rootHint": "Latin 'intricare' (to entangle or interweave closely)",
+        "contextClue": "A silk portrait woven with twenty-four thousand cards had detail so fine that visitors mistook it for an ink drawing."
+      },
+      {
+        "word": "sequence",
+        "definition": "a particular order in which related steps or things follow each other",
+        "rootHint": "Latin 'sequi' (to follow in order)",
+        "contextClue": "Lovelace wrote out a step-by-step order of card instructions to calculate a set of numbers."
+      },
+      {
+        "word": "visionary",
+        "definition": "thinking about or planning the future with great imagination and wisdom",
+        "rootHint": "Latin 'visio' (sight; able to see far ahead)",
+        "contextClue": "More than a century before laptops, Lovelace foresaw that machines could handle music notes and letters."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w64_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Inside the tall wooden frame of the loom, each row of colored silk threads was automatically lifted by a chain of punched paper cards.\"\n\nIn this sentence, what actually lifted each row of colored silk threads?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The tall wooden frame of the loom",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A chain of punched paper cards",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A young helper perched high on the top beam",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "An electric motor attached to a silicon chip",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Inside the tall wooden frame of the loom, each row of colored silk threads was automatically lifted by a chain of punched paper cards.",
+      "childTip": "Look right after 'was automatically lifted by' to find what performed the action.",
+      "parentExplanation": "In this passive-voice sentence, 'each row of colored silk threads' is the receiver of the action. The true actor performing the lifting appears after 'by': 'a chain of punched paper cards' (Option B)."
+    },
+    {
+      "questionId": "w64_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 1:\n\n\"In the 1700s, weaving fancy flowers or leaves into silk cloth was slow and tedious work.\"\n\nWhat does the word \"tedious\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tiresome and demanding long, repetitive effort",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Quick and easy for a machine to finish in minutes",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Loud enough to shake the walls of the silk shop",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Woven only with cheap cotton instead of silk thread",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "In the 1700s, weaving fancy flowers or leaves into silk cloth was slow and tedious work.",
+      "childTip": "Read the rest of Paragraph 1 about pulling every bundle by hand for weeks to see why the job felt tedious.",
+      "parentExplanation": "Paragraph 1 pairs 'tedious' with 'slow' and explains that a helper had to pull thread bundles by hand before every pass for weeks, proving 'tedious' means tiresome and repetitive (Option A)."
+    },
+    {
+      "questionId": "w64_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, how were Jacquard's punched cards similar to modern computer software?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Workers could make the same machine create a new pattern just by swapping in a new set of card instructions.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The paper cards used electricity and glass screens to display pictures of castles.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Workers had to tear down and rebuild the wooden loom every time they wanted a new design.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The punched cards could only weave straight lines and could never make curved shapes.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The cards acted as a stored set of instructions that told the machine what to do next.",
+      "childTip": "Click the last sentence of Paragraph 3 to see how the cards worked like a computer program.",
+      "parentExplanation": "Paragraph 3 explains that workers did not need to rebuild the hardware (the wooden loom) to change patterns; they simply loaded a new chain of punched cards because 'The cards acted as a stored set of instructions that told the machine what to do next' (Option A)."
+    },
+    {
+      "questionId": "w64_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How is the information in the passage mainly organized?",
+      "options": [
+        {
+          "id": "A",
+          "text": "In chronological order, tracing how punched-card weaving in France led to Babbage's engine and Lovelace's computer programs in England",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By comparing the price of French silk cloth to the price of English wool coats in the 1800s",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "By listing all the parts of a modern laptop computer and explaining how silicon chips are made",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "By arguing that hand-woven silk is much prettier than cloth made on a Jacquard loom",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Inspired by the loom, Babbage designed a giant brass calculating machine called the Analytical Engine.",
+      "childTip": "Follow the dates from the 1700s and 1804 in France to thirty years later and 1843 in England.",
+      "parentExplanation": "The passage follows a chronological and cause-and-effect chain from 1700s hand-weaving (P1) to Jacquard's 1804 punched-card loom (P2–3), Babbage's Analytical Engine thirty years later (P4), and Lovelace's 1843 code (P5) (Option A)."
+    },
+    {
+      "questionId": "w64_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w64_q6",
+      "prompt": "PART A: Which statement best expresses the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jacquard's invention of punched cards to guide silk looms inspired Charles Babbage and Ada Lovelace to develop the foundational ideas of computer programming.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Player pianos were the most popular musical instruments in France during the early 1800s.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "Charles Babbage traveled to France to work as a young helper on top of a wooden silk loom.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Ada Lovelace believed that machines would never be able to handle anything except simple addition.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "More than a century before modern laptops, a silk loom and a pair of thinkers gave birth to computer coding.",
+      "childTip": "Pick the big idea that connects Jacquard's silk loom cards to Babbage and Lovelace's work on coding.",
+      "parentExplanation": "Aligned to ELAGSE5RI2, the overarching central idea of the passage is that the punched-card system invented for Jacquard's silk loom directly inspired Babbage's Analytical Engine and Lovelace's pioneering computer algorithms (Option A)."
+    },
+    {
+      "questionId": "w64_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w64_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"One wrong pull ruined the pattern, and a single yard of rich cloth could take weeks to finish.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Every stiff card held a grid of small holes, much like a roll for a player piano.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"The detail was so fine that visitors mistook the cloth for an ink drawing.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"More than a century before modern laptops, a silk loom and a pair of thinkers gave birth to computer coding.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "More than a century before modern laptops, a silk loom and a pair of thinkers gave birth to computer coding.",
+      "childTip": "Select the quote from Paragraph 5 that sums up how the silk loom and the two thinkers started computer coding.",
+      "parentExplanation": "Option D directly supports Part A by summarizing the historical link between Jacquard's silk loom and Babbage and Lovelace's creation of computer coding."
+    }
+  ]
+}

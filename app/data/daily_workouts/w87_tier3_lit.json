@@ -1,0 +1,333 @@
+{
+  "workoutId": "w87_tier3_lit",
+  "workoutNumber": 87,
+  "title": "Wings Above Peachtree Street",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1075,
+  "fkgl": 7.21,
+  "genre": "Literary",
+  "subGenre": "Contemporary Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Wings Above Peachtree Street",
+    "author": "BEACON Assessment Lab",
+    "text": "Fifty stories above downtown Atlanta, Maya crouched behind the glass parapet of the Peachtree Tower roof. Far below, yellow cabs and city buses crept along the hot concrete canyons like tiny painted beetles. Up here on the windy ledge, though, a wild drama was unfolding. Two peregrine falcons had claimed a stone corner tray filled with pea gravel as their high aerie. For her youth film project, Maya hoped to catch the exact hour when the two young chicks tested their wings.\n\nBefore dawn that spring, building staff had helped set up a remote lens so the birds would never feel crowded. The silent tripod camera, bolted inside a gray weather box near the corner drain, was aimed by Maya toward the shallow gravel scrape. Sitting in the hall with her screen, Maya watched the two chicks grow from white bundles into sleek brown hunters. Beside her sat her young brother Leo, who tapped his foot and wished the birds would dive right away. Unlike Leo, who wanted fast action for a thrilling clip, Maya knew that rushing wild creatures only ruined the truth of a story.\n\nBy ten o'clock, a warm updraft rose off the sun-baked asphalt of the city streets and swept up the glass tower wall. The older chick, a bold female with dark barred wings, marched to the very lip of the stone ledge. She spread her tail against the rising wind, gave three sharp cries, and launched straight into the open sky. Leo gasped and leaned toward the glass door to wave his arms and cheer.\n\nMaya caught her brother's sleeve before he could touch the latch. Out on the stone rim, the second fledgling still huddled near the wall, peering down at the steep drop. If a kid burst onto the roof deck now, the scared bird might panic and fall into the street shadows before catching the warm air current. Leo looked at the trembling fledgling, lowered his hands, and nodded as he saw the risk.\n\nTen quiet minutes passed while only the hum of city traffic drifted up from below. Then the mother falcon glided past the tower window holding a prize in her claws and called softly from an upper spire. Drawn by that steady call, the cautious fledgling stepped to the edge, caught the rising updraft, and soared smoothly toward its sister. Watching the green recording light glow on her screen, Maya smiled, grateful that patience had given the second bird the calm space it needed to fly.",
+    "wordCount": 418,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The silent tripod camera, bolted inside a gray weather box near the corner drain, was aimed by Maya toward the shallow gravel scrape.",
+      "actorChunk": "by Maya",
+      "actionChunk": "was aimed",
+      "receiverChunk": "The silent tripod camera",
+      "distractorChunks": [
+        "bolted inside a gray weather box near the corner drain",
+        "toward the shallow gravel scrape"
+      ],
+      "activeRewrite": "Maya aimed the silent tripod camera toward the shallow gravel scrape."
+    },
+    "tier2Words": [
+      {
+        "word": "aerie",
+        "definition": "A high nest built on a cliff or tall ledge by a bird of prey",
+        "rootHint": "Old French aire (high nesting ledge of a hawk or eagle)",
+        "contextClue": "Two peregrine falcons claimed 'a granite corner tray filled with pea gravel as their high aerie' fifty stories up."
+      },
+      {
+        "word": "updraft",
+        "definition": "An upward current of warm, rising air",
+        "rootHint": "up + draft (a current of air)",
+        "contextClue": "Described as 'rose off the sun-baked asphalt of the city streets and swept up the glass tower wall.'"
+      },
+      {
+        "word": "fledgling",
+        "definition": "A young bird that has just grown its flight feathers and is learning to fly",
+        "rootHint": "fledge (ready to fly, from Old English fleogan) + -ling (young one)",
+        "contextClue": "Refers to the young chicks testing their flight feathers on the stone rim."
+      },
+      {
+        "word": "cautious",
+        "definition": "Careful and hesitant in order to avoid danger",
+        "rootHint": "caut- (Latin root meaning 'to beware or take heed') + -ious",
+        "contextClue": "Contrasted with the 'bold female' chick; the second bird 'huddled near the wall, peering nervously down.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w87_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The silent tripod camera, bolted inside a gray weather box near the corner drain, was aimed by Maya toward the shallow gravel scrape.\"\n\nWho or what performed the action of aiming the camera in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The gray weather box near the corner drain",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a noun from the middle participial phrase ('bolted inside a gray weather box') rather than the actor."
+        },
+        {
+          "id": "B",
+          "text": "The silent tripod camera mounted on the roof",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver ('The silent tripod camera') with the person who aimed it."
+        },
+        {
+          "id": "C",
+          "text": "Maya, the student filmmaker recording the falcons",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Maya') in the passive construction 'was aimed by Maya'."
+        },
+        {
+          "id": "D",
+          "text": "The shallow gravel scrape on the granite ledge",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Picks the directional object at the end of the sentence ('toward the shallow gravel scrape') instead of the actor."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The silent tripod camera, bolted inside a gray weather box near the corner drain, was aimed by Maya toward the shallow gravel scrape.",
+      "childTip": "Find the passive verb 'was aimed by.' The name right after 'by' tells you who pointed the camera!",
+      "parentExplanation": "This Sentence Surgery question tests Passive Voice Actor Tracking (ELAGSE5L1). The subject 'The silent tripod camera' is separated from 'was aimed by Maya' by a 10-word modifier describing the gray weather box."
+    },
+    {
+      "questionId": "w87_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5L4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"By ten o'clock, a warm updraft rose off the sun-baked asphalt of the city streets and swept up the glass tower wall.\"\n\nWhat does the word updraft most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A rising current of warm air moving skyward",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses word parts ('up' + 'draft') and context clues ('rose off the sun-baked asphalt... and swept up the glass tower wall')."
+        },
+        {
+          "id": "B",
+          "text": "A rough sketch drawn in a filmmaker's notebook",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the writing meaning of 'draft' with a rising current of air."
+        },
+        {
+          "id": "C",
+          "text": "A heavy rainstorm that forces birds to stay in their nests",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts the sunny conditions and the way the falcons use the updraft to soar smoothly."
+        },
+        {
+          "id": "D",
+          "text": "A loud siren echoing between downtown city buses",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Borrows urban street imagery from Paragraph 1 rather than defining the rising air current."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "By ten o'clock, a warm updraft rose off the sun-baked asphalt of the city streets and swept up the glass tower wall.",
+      "childTip": "Break the compound word into 'up' + 'draft' and look at the words 'rose off' and 'swept up.'",
+      "parentExplanation": "Morphological and contextual vocabulary item (ELAGSE5L4). Students combine the compound word parts ('up' + 'draft') with the context clues 'rose off the sun-baked asphalt' and 'catching the warm air current' (Paragraph 4)."
+    },
+    {
+      "questionId": "w87_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_CHARACTER_CONTRAST",
+      "standard": "ELAGSE5RL3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraphs 2 and 4, how does Maya's attitude toward filming the falcons differ from Leo's initial attitude?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maya wants to scare the chicks into flying before noon, whereas Leo wants to turn off the camera and go home.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the two characters' behaviors: Leo is impatient for fast action, while Maya insists on quiet patience."
+        },
+        {
+          "id": "B",
+          "text": "Maya prioritizes quiet patience to keep the birds safe, whereas Leo is initially eager for fast action and nearly steps onto the roof.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately contrasts Maya's patient restraint with Leo's initial impatience and excitement across Paragraphs 2, 3, and 4."
+        },
+        {
+          "id": "C",
+          "text": "Maya cares only about winning a film prize, whereas Leo cares only about studying city buses from the roof.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('only') and misrepresents both characters' motivations."
+        },
+        {
+          "id": "D",
+          "text": "Maya is afraid of high skyscraper ledges, whereas Leo works with the building staff every morning before dawn.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Contradicts Paragraph 1 and 2, where Maya works on the fiftieth-floor roof before dawn."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Unlike Leo, who wanted fast action for a thrilling clip, Maya knew that rushing wild creatures only ruined the truth of a story.",
+      "childTip": "First click the sentence in Paragraph 2 that begins with 'Unlike Leo' to prove how the two siblings differ.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RL3 (Compare & Contrast Characters), this Click-to-Prove item requires students to contrast Leo's initial eagerness for quick action with Maya's patient respect for the falcons' safety."
+    },
+    {
+      "questionId": "w87_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_CHARACTER_CONTRAST",
+      "standard": "ELAGSE5RL3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How do the two young falcon chicks respond differently when the morning updraft rises up the tower wall in Paragraphs 3 through 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The older chick launches boldly into the wind right away, while the second fledgling huddles nervously until its mother calls it from an upper spire.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately compares and contrasts the two chicks' behaviors across Paragraphs 3, 4, and 5 using specific textual details."
+        },
+        {
+          "id": "B",
+          "text": "Both chicks leap off the granite ledge at the exact same second without waiting for their mother.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraphs 4 and 5, where the second chick waits ten quiet minutes until the mother falcon glides past."
+        },
+        {
+          "id": "C",
+          "text": "The older chick hides inside the gray weather box, while the younger chick flies down to Peachtree Street to chase yellow cabs.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Scrambles setting details ('gray weather box', 'yellow cabs') into inaccurate actions."
+        },
+        {
+          "id": "D",
+          "text": "Neither chick is able to fly because city traffic noises permanently frighten all urban falcons.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('permanently', 'all') and contradicts both chicks soaring smoothly by the end of the story."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Drawn by that steady call, the cautious fledgling stepped to the edge, caught the rising updraft, and soared smoothly toward its sister.",
+      "childTip": "Compare how the 'bold female' acts in Paragraph 3 with what the 'cautious fledgling' needs in Paragraphs 4 and 5.",
+      "parentExplanation": "This DOK 3 item deepens the focus on ELAGSE5RL3 by asking students to compare and contrast the two falcon chicks' responses to the same event (the rising morning updraft), mirroring the contrast between Leo's boldness and Maya's caution."
+    },
+    {
+      "questionId": "w87_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w87_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Observing nature responsibly requires patience and restraint so wild creatures are not harmed by human excitement.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the remote camera setup, Maya stopping Leo from opening the roof door, and the peaceful flight of the second fledgling."
+        },
+        {
+          "id": "B",
+          "text": "Skyscrapers in big cities are safer for all wildlife than natural mountain cliffs.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Makes an extreme claim ('all wildlife') that goes beyond the story's focus on one falcon family."
+        },
+        {
+          "id": "C",
+          "text": "Younger brothers should never be allowed to watch wildlife documentaries being filmed.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('never') and ignores that Leo learns to lower his hands and wait quietly in Paragraph 4."
+        },
+        {
+          "id": "D",
+          "text": "Remote tripod cameras can only record clear video when the sun is shining on asphalt streets.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on a minor technical detail and adds the unsupported restriction 'only'."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Watching the green recording light glow on her screen, Maya smiled, grateful that patience had given the second bird the calm space it needed to fly.",
+      "childTip": "Look at the last sentence of Paragraph 5 to see what Maya is grateful for as the second bird flies.",
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Maya's use of a hidden weather box and her quick intervention when Leo reaches for the door demonstrate that true wildlife observation puts the animals' well-being ahead of human impatience."
+    },
+    {
+      "questionId": "w87_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w87_q5",
+      "prompt": "Which quotation from the story best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Far below, yellow cabs and city buses crept along the hot concrete canyons like tiny painted beetles.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the downtown street view from the roof in Paragraph 1 without addressing patience toward wildlife."
+        },
+        {
+          "id": "B",
+          "text": "\"By ten o'clock, a warm updraft rose off the sun-baked asphalt of the city streets and swept up the glass tower wall.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Explains the weather condition that helped the falcons fly, not the theme of human patience and restraint."
+        },
+        {
+          "id": "C",
+          "text": "\"Leo gasped and leaned toward the glass door to wave his arms and cheer.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Shows Leo's impulsive excitement before Maya stops him, rather than the lesson learned."
+        },
+        {
+          "id": "D",
+          "text": "\"Watching the green recording light glow on her screen, Maya smiled, grateful that patience had given the second bird the calm space it needed to fly.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the theme in Part A by connecting Maya's patience to giving the fledgling safe, calm space to fly."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Watching the green recording light glow on her screen, Maya smiled, grateful that patience had given the second bird the calm space it needed to fly.",
+      "childTip": "Pick the exact quote in Paragraph 5 that shows why patience mattered for the second bird.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence supporting the theme from Part A. Option D explicitly links patience and restraint to the fledgling's safe flight."
+    }
+  ]
+}

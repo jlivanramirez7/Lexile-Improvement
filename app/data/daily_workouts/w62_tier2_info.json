@@ -1,0 +1,309 @@
+{
+  "workoutId": "w62_tier2_info",
+  "workoutNumber": 62,
+  "title": "The Hidden River Beneath the Sea",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1000,
+  "fkgl": 6.36,
+  "genre": "Informational",
+  "subGenre": "Oceanography",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RI3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Hidden River Beneath the Sea",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "When people picture ocean currents, they often think of top waves pushed along by the wind. Yet far below the bright top layer, a giant sea river loops slowly around the whole world. Scientists call this deep path the global conveyor belt. The name comes from two Greek words: thermo for heat and haline for salt. Unlike surface waves that race across the sea, this deep current creeps along at a few inches per second. Even so, it moves more water than a hundred giant rivers combined.\n\nThe engine that drives this global loop starts in the icy waters near the North Pole. Near the frozen edges of Greenland, vast sheets of heavy salt water are steadily pushed down to the sea floor by the freezing winter air. As bitter winds blow across the sea, two things happen at once. First, the water grows very cold. That cold makes its tiny parts pack tightly together. Second, as sea ice forms on the surface, the growing ice crystals leave their salt behind in the liquid water below.\n\nBecause this polar water is both icy cold and loaded with extra salt, it becomes much more dense than the water around it. Like a stone dropped into a pond, the heavy water plunges two miles straight down to the dark sea floor. Once it hits the bottom, the sinking water shoves the older deep water south. This deep, cold river glides slowly past North and South America until it reaches the icy fringe of the South Pole.\n\nDown near the bottom of the world, fresh blasts of polar cold add even more sinking water to the stream. From there, the deep current splits into two main branches. Those branches sweep north into the Indian and Pacific Oceans. As the deep water travels toward warm seas, it heats up and mixes with lighter water above. Slowly, the warmed water rises back to the top. That rising water brings rich minerals from the sea floor to feed fish and tiny sea plants.\n\nOnce back at the surface, warm currents like the Gulf Stream carry the water back north toward Greenland to start the cycle all over again. A single drop of seawater takes nearly a thousand years to circulate through the whole loop. By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.",
+    "wordCount": 408,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Near the frozen edges of Greenland, vast sheets of heavy salt water are steadily pushed down to the sea floor by the freezing winter air.",
+      "actorChunk": "the freezing winter air",
+      "actionChunk": "steadily pushes down",
+      "receiverChunk": "vast sheets of heavy salt water",
+      "distractorChunks": [
+        "Near the frozen edges of Greenland",
+        "to the sea floor"
+      ],
+      "activeRewrite": "The freezing winter air steadily pushes vast sheets of heavy salt water down to the sea floor."
+    },
+    "tier2Words": [
+      {
+        "word": "dense",
+        "definition": "closely packed together in mass; heavy for its size",
+        "rootHint": "Latin 'densus' (thick, crowded)",
+        "contextClue": "Because the polar water is icy cold and loaded with extra salt, its molecules pack tightly and it sinks like a stone."
+      },
+      {
+        "word": "fringe",
+        "definition": "the outer edge or border of an area",
+        "rootHint": "Old French 'frange' (border or outer rim)",
+        "contextClue": "The deep river glides south past the Americas until it reaches the outer edge of Antarctica."
+      },
+      {
+        "word": "circulate",
+        "definition": "to move continuously through a closed system or loop",
+        "rootHint": "Latin 'circulus' (a small ring or circle)",
+        "contextClue": "A single drop of seawater takes nearly a thousand years to travel all the way through the global loop."
+      },
+      {
+        "word": "vital",
+        "definition": "absolutely necessary or essential for life to continue",
+        "rootHint": "Latin 'vita' (life)",
+        "contextClue": "This ocean belt is essential because it keeps Earth's climate mild and stirs up food for sea life."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w62_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Near the frozen edges of Greenland, vast sheets of heavy salt water are steadily pushed down to the sea floor by the freezing winter air.\"\n\nIn this sentence, what actually pushes the heavy salt water down to the sea floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The sea floor pulling on the edges of Greenland",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The freezing winter air",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Surface waves racing across the Amazon River",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Large ships breaking through the northern ice",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Near the frozen edges of Greenland, vast sheets of heavy salt water are steadily pushed down to the sea floor by the freezing winter air.",
+      "childTip": "Look right after 'are steadily pushed down to the sea floor by' to find the real actor.",
+      "parentExplanation": "In this passive-voice construction, 'vast sheets of heavy salt water' receives the action. The true actor performing the pushing appears after 'by': 'the freezing winter air' (Option B)."
+    },
+    {
+      "questionId": "w62_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Because this polar water is both icy cold and loaded with extra salt, it becomes much more dense than the water around it.\"\n\nWhat does the word \"dense\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Heavy and tightly packed together",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Warm and full of bright sunlight",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Completely free of any salt or minerals",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Spinning fast like a surface whirlpool",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because this polar water is both icy cold and loaded with extra salt, it becomes much more dense than the water around it.",
+      "childTip": "Connect 'dense' to Paragraph 2 ('tiny parts pack tightly together') and the next sentence ('heavy water plunges').",
+      "parentExplanation": "Paragraph 2 explains that cold temperatures make tiny parts 'pack tightly together,' and Paragraph 3 states that this 'heavy water plunges two miles straight down,' proving 'dense' means heavy and tightly packed (Option A)."
+    },
+    {
+      "questionId": "w62_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why does the liquid seawater around Greenland become saltier when winter sea ice forms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "As surface water freezes into ice crystals, the salt is left behind in the unfrozen water below.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Strong winds blow dry salt dust from the land of Greenland out across the ocean waves.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The Amazon River dumps millions of tons of salt into the North Pole every winter.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Underwater volcanoes melt salt rocks on the sea floor and shoot them up into the ice.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Second, as sea ice forms on the surface, the growing ice crystals leave their salt behind in the liquid water below.",
+      "childTip": "Click the last sentence of Paragraph 2 to see what happens to the salt when ice crystals form.",
+      "parentExplanation": "Aligned to ELAGSE5RI3, Paragraph 2 explains the cause-and-effect relationship: when seawater freezes at the surface, 'the growing ice crystals leave their salt behind in the liquid water below' (Option A)."
+    },
+    {
+      "questionId": "w62_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the author organize Paragraphs 2 through 5 to explain the global conveyor belt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By tracing the continuous path of the water as it sinks at the poles, flows along the seabed, rises in warmer seas, and returns north",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By comparing the speed of modern cargo ships to the speed of ancient sailing boats on the Gulf Stream",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "By listing all the fish species that live in the Pacific Ocean from smallest to largest",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "By arguing that surface winds are much more important to Earth's climate than deep ocean currents",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Once back at the surface, warm currents like the Gulf Stream carry the water back north toward Greenland to start the cycle all over again.",
+      "childTip": "Follow the journey of the water from Greenland in Paragraph 2 all the way back to Greenland in Paragraph 5.",
+      "parentExplanation": "Paragraphs 2–5 follow a sequential cause-and-effect cycle: cold salty water sinks near Greenland (P2–3), travels south and branches into the Indian and Pacific Oceans where it warms and rises (P4), and returns north to complete the loop (P5) (Option A)."
+    },
+    {
+      "questionId": "w62_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w62_q6",
+      "prompt": "PART A: Which statement best expresses the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Driven by sinking cold, salty water at the poles, the global ocean conveyor belt circulates heat and nutrients around the planet.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The global conveyor belt moves much faster than wind-driven waves on the surface of the ocean.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Sea ice near Greenland will soon freeze the entire Atlantic Ocean from the surface to the bottom.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The word thermohaline comes from two ancient Greek words that mean heat and salt.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.",
+      "childTip": "Pick the choice that combines what drives the deep current and why it matters for the whole planet.",
+      "parentExplanation": "The central idea of the passage is that temperature and salt differences near the poles drive a global underwater current that distributes heat and marine nutrients across the Earth (Option A)."
+    },
+    {
+      "questionId": "w62_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w62_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"The name comes from two Greek words: thermo for heat and haline for salt.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Unlike surface waves that race across the sea, this deep current creeps along at a few inches per second.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"A single drop of seawater takes nearly a thousand years to circulate through the whole loop.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.",
+      "childTip": "Select the quote from Paragraph 5 that shows how the ocean belt helps Earth's climate and sea life.",
+      "parentExplanation": "Option D directly supports the central idea in Part A by summarizing the global impact of the thermohaline conveyor belt on climate and marine food webs."
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "workoutId": "w42_tier1_info",
+  "workoutNumber": 42,
+  "title": "Masters of the Reef Disguise",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 960,
+  "fkgl": 5.55,
+  "genre": "Informational",
+  "subGenre": "Marine Biology",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RI3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Masters of the Reef Disguise",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Most animals in the sea rely on hard shells, sharp teeth, or fast fins to stay alive. Yet the common reef octopus has none of these tools. Its soft, boneless body makes a tempting meal for sharks, eels, and groupers. Instead of wearing armor, the octopus stays safe by hiding in plain sight. In less than a second, it can shift its skin from smooth white to speckled brown. It can vanish right against a coral ledge.\n\nThis fast disguise starts inside thousands of tiny color sacs called chromatophores. These sacs sit just beneath the outer layer of the skin. Each sac holds a drop of red, yellow, or brown dye. A circle of tiny muscles rings each sac. Tiny sacs of red and yellow pigment, linked directly to the brain by fast nerve fibers, are stretched wide by rings of muscle to flash bright colors. When the muscles squeeze tight, the sac opens like an umbrella and shows a bold spot of color. When the muscles relax, the sac shrinks back to a pinpoint that the eye can barely see.\n\nBeneath those dye sacs lies a second layer of cells that work like tiny mirrors. While the upper sacs create warm reds and browns, these lower mirror cells bounce blue and green light back through the water. By using both layers at once, an octopus can copy the exact shade of pink coral, gray sand, or waving green sea grass.\n\nEven more amazing, an octopus can change the texture of its skin to match the bumps around it. Small muscles under the skin push up pointed ridges. Those bumps look just like rough barnacles or branched seaweed. A hunting shark may swim right past a rock without noticing that the lump on top is breathing.\n\nBecause nerves control these skin muscles directly, an octopus does not have to wait for slow body chemicals to change its look. It can flash dark stripes to scare a crab. Then it can blend into a reef in the blink of an eye. Through color, light, and shape, this soft sea animal turns its own skin into the ocean's best shield.",
+    "wordCount": 358,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Tiny sacs of red and yellow pigment, linked directly to the brain by fast nerve fibers, are stretched wide by rings of muscle to flash bright colors.",
+      "actorChunk": "rings of muscle",
+      "actionChunk": "stretched wide",
+      "receiverChunk": "Tiny sacs of red and yellow pigment",
+      "distractorChunks": [
+        "linked directly to the brain by fast nerve fibers",
+        "to flash bright colors"
+      ],
+      "activeRewrite": "Rings of muscle stretch tiny sacs of red and yellow pigment wide to flash bright colors."
+    },
+    "tier2Words": [
+      {
+        "word": "tempting",
+        "definition": "very appealing or attractive, especially as food",
+        "rootHint": "From Latin temptare, meaning 'to test or attract'",
+        "contextClue": "Without a hard shell or sharp teeth, the octopus's soft body makes an easy, appealing meal for sharks and eels."
+      },
+      {
+        "word": "vanish",
+        "definition": "to disappear suddenly and completely from sight",
+        "rootHint": "From Latin evanescere, meaning 'to fade away'",
+        "contextClue": "By shifting its skin to speckled brown in less than a second, the octopus disappears against a coral ledge."
+      },
+      {
+        "word": "pigment",
+        "definition": "a natural substance that gives color to skin, plants, or paint",
+        "rootHint": "From Latin pingere, meaning 'to paint or dye'",
+        "contextClue": "Each tiny sac holds a drop of red, yellow, or brown dye that shows a spot of color when stretched."
+      },
+      {
+        "word": "texture",
+        "definition": "the way a surface feels or looks, such as smooth, rough, or bumpy",
+        "rootHint": "Latin root texere ('to weave')",
+        "contextClue": "Small muscles under the skin push up pointed ridges so the octopus matches the rough bumps of barnacles."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w42_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Tiny sacs of red and yellow pigment, linked directly to the brain by fast nerve fibers, are stretched wide by rings of muscle to flash bright colors.\"\n\nBased on the structure of the sentence, what links the pigment sacs to the brain, and what stretches the sacs wide?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rings of muscle link the brain to the coral reef, and fast nerve fibers stretch the water wide.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Fast nerve fibers link the sacs to the brain, and rings of muscle stretch the sacs wide.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Bright colors stretch the fast nerve fibers until the brain turns red and yellow.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Passing sharks squeeze the pigment sacs shut when they brush against the reef.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Tiny sacs of red and yellow pigment, linked directly to the brain by fast nerve fibers, are stretched wide by rings of muscle to flash bright colors.",
+      "childTip": "Check both 'by' phrases: fast nerve fibers link the sacs to the brain, and rings of muscle stretch them.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'linked directly to the brain by fast nerve fibers' and 'are stretched wide by rings of muscle'. Option B accurately identifies both."
+    },
+    {
+      "questionId": "w42_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Even more amazing, an octopus can change the texture of its skin to match the bumps around it. Small muscles under the skin push up pointed ridges that look just like rough barnacles or branched seaweed.\"\n\nWhat does the word texture mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bumpy or smooth feel and shape of a surface",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The speed at which an animal swims through deep water",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The loud sound a predator makes when hunting on a reef",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The internal bones that support a fish's tail fin",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Even more amazing, an octopus can change the texture of its skin to match the bumps around it.",
+      "childTip": "Use the clues 'match the bumps around it' and 'pointed ridges that look just like rough barnacles.'",
+      "parentExplanation": "Paragraph 4 explains that changing 'texture' means matching surrounding bumps by raising pointed ridges like rough barnacles or seaweed."
+    },
+    {
+      "questionId": "w42_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, what happens to a color sac when the ring of muscles around it relaxes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The sac shrinks back down to a tiny dot so its color is barely visible.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The sac bursts open and releases a cloud of black ink into the water.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The sac stretches wide like an umbrella to show a bright spot of red dye.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The sac turns into a hard shell that blocks sharks from biting the skin.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "When the muscles relax, the sac shrinks back to a pinpoint that the eye can barely see.",
+      "childTip": "Click the last sentence in Paragraph 2 that tells what happens when the muscles relax.",
+      "parentExplanation": "Paragraph 2 contrasts squeezing muscles (which open the sac like an umbrella) with relaxing muscles ('When the muscles relax, the sac shrinks back to a pinpoint that the eye can barely see')."
+    },
+    {
+      "questionId": "w42_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 3 build upon the information in Paragraph 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It explains how a second layer of mirror-like cells adds blue and green shades to the reds and yellows of the upper sacs.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It argues that mirror cells are much more important for survival than the brain or nerve fibers.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "It describes how baby octopuses learn to swim away from eels in the open ocean.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "It shows that octopuses can only hide on pink coral and never swim near green sea grass.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "While the upper sacs create warm reds and browns, these lower mirror cells bounce blue and green light back through the water.",
+      "childTip": "Look at how Paragraph 3 adds a lower layer of mirror cells to the upper dye sacs from Paragraph 2.",
+      "parentExplanation": "Paragraph 2 explains how upper pigment sacs produce red, yellow, and brown, and Paragraph 3 shows how lower mirror cells reflect blue and green light so the octopus can match any reef color."
+    },
+    {
+      "questionId": "w42_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w42_q6",
+      "prompt": "Part A: Based on the passage, why is an octopus able to change its appearance in less than a second?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Its skin muscles are controlled directly by fast nerve signals from the brain rather than slow body chemicals.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It rubs green sea grass and crushed coral across its skin whenever a shark swims nearby.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The warm water around a coral reef automatically bleaches the octopus's skin white.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Its mirror cells only work at night when there is no sunlight in the ocean.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Because nerves control these skin muscles directly, an octopus does not have to wait for slow body chemicals to change its look.",
+      "childTip": "Check Paragraph 5 to see why an octopus does not have to wait for slow body chemicals.",
+      "parentExplanation": "Across Paragraphs 2 and 5 (ELAGSE5RI3), the author explains the cause-and-effect link: because fast nerve fibers connect the brain directly to the skin muscles, the octopus changes color and texture almost instantly."
+    },
+    {
+      "questionId": "w42_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w42_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Its soft, boneless body makes a tempting meal for sharks, eels, and groupers.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Beneath those dye sacs lies a second layer of cells that work like tiny mirrors.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"A hunting shark may swim right past a rock without noticing that the lump on top is breathing.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Because nerves control these skin muscles directly, an octopus does not have to wait for slow body chemicals to change its look.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Because nerves control these skin muscles directly, an octopus does not have to wait for slow body chemicals to change its look.",
+      "childTip": "Pick the quote in Paragraph 5 that explains how direct nerve control makes the change so fast.",
+      "parentExplanation": "Option D directly quotes Paragraph 5, proving that direct nerve control allows the octopus to change its appearance without waiting for slow chemicals."
+    }
+  ]
+}

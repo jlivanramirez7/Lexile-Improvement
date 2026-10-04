@@ -1,0 +1,333 @@
+{
+  "workoutId": "w83_tier3_lit",
+  "workoutNumber": 83,
+  "title": "The Pulse Inside the Brass Case",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1070,
+  "fkgl": 7.0,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Pulse Inside the Brass Case",
+    "author": "BEACON Assessment Lab",
+    "text": "At the back of the quiet clock shop, Julian fit a black magnifier over his right eye and leaned above the oak bench. Before him rested a nineteenth-century ship chronometer that had stopped keeping true time during rough coastal voyages. Master Lin had trusted Julian to replace its bent balance wheel before Friday. Inside the brass case, dozens of tiny gold gears gleamed beneath the bench lamp. Yet a clock was only as honest as the small wheel that swung back and forth to count each fifth of a second.\n\nHolding brass tweezers steady, Julian lifted the fresh assembly from its velvet tray. The coiled steel hairspring, forged thinner than a single strand of spider silk, was carefully lowered by Julian onto the jeweled balance staff. When he nudged the rim, the wheel began to swing in a brisk, lively arc. On the digital timing screen, though, the green line of dots drifted upward. The restored pocket watch was gaining four seconds every hour, which meant a sailor using it at sea would misjudge a reef by miles.\n\nJulian frowned and checked the brass screws along the rim of the wheel. Standard shop manuals stated that a fast clock had a hairspring that was wound too short or tight. He reached for his steel wrench to loosen the outer pin, but Master Lin tapped the edge of the bench. The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light. Sometimes a hidden culprit mimicked a stiff spring.\n\nTilting his lamp low, Julian peered sideways into the tiny red ruby hole where the steel pivot spun. There, clinging to a film of old oil, sat a gray speck of lint no wider than an eyelash. Each time the wheel swung left, that stray bit of debris brushed the inner coil and cut its swing short. Because the wheel could not complete its full, wide arc, it bounced back early and beat too fast. Julian dipped a pointed pegwood stick in clean solvent and swept the ruby bearing completely bare.\n\nAs soon as the pivot spun in the clean jewel, the wheel settled into a wide, unhurried poise. Across the timing screen, the green dots marched in a flat, level line with zero gain or loss. Julian closed the glass bezel so no stray dust could drift inside to impede the swing again. He saw that great precision did not come from forcing heavy gears into place, but from guarding the smallest space where motion lived.",
+    "wordCount": 424,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The coiled steel hairspring, forged thinner than a single strand of spider silk, was carefully lowered by Julian onto the jeweled balance staff.",
+      "actorChunk": "by Julian",
+      "actionChunk": "was carefully lowered",
+      "receiverChunk": "The coiled steel hairspring",
+      "distractorChunks": [
+        "forged thinner than a single strand of spider silk",
+        "onto the jeweled balance staff"
+      ],
+      "activeRewrite": "Julian carefully lowered the coiled steel hairspring onto the jeweled balance staff."
+    },
+    "tier2Words": [
+      {
+        "word": "chronometer",
+        "definition": "An extremely accurate timepiece built to keep exact time at sea",
+        "rootHint": "chron- (Greek root meaning 'time') + -meter (measure)",
+        "contextClue": "Described as a nineteenth-century ship clock that sailors use at sea to avoid misjudging a reef."
+      },
+      {
+        "word": "debris",
+        "definition": "Scattered bits of waste, dust, or unwanted fragments",
+        "rootHint": "Old French debriser (to break down into small pieces)",
+        "contextClue": "Refers back to 'a gray speck of lint no wider than an eyelash' clinging to old oil."
+      },
+      {
+        "word": "poise",
+        "definition": "Balanced, steady, and graceful motion or bearing",
+        "rootHint": "Old French pois (weight or balance)",
+        "contextClue": "Once the lint is removed, the wheel settles into 'a wide, unhurried poise' with zero gain or loss."
+      },
+      {
+        "word": "impede",
+        "definition": "To slow down, block, or interfere with smooth movement",
+        "rootHint": "im- (in) + ped- (Latin root meaning 'foot', as in shackle the feet)",
+        "contextClue": "Julian closes the glass cover so dust cannot drift inside and interfere with the wheel's swing again."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w83_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The coiled steel hairspring, forged thinner than a single strand of spider silk, was carefully lowered by Julian onto the jeweled balance staff.\"\n\nWho or what performed the action of lowering the hairspring in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The single strand of spider silk inside the brass case",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a noun from the descriptive comparison ('thinner than a single strand of spider silk') instead of the actor."
+        },
+        {
+          "id": "B",
+          "text": "Julian, the student watchmaker working at the bench",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Julian') in the passive verb phrase 'was carefully lowered by Julian'."
+        },
+        {
+          "id": "C",
+          "text": "The coiled steel hairspring resting on the tray",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('The coiled steel hairspring') with the actor performing the lowering."
+        },
+        {
+          "id": "D",
+          "text": "The jeweled balance staff at the center of the clock",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Picks the destination object of the preposition ('onto the jeweled balance staff') rather than who lowered the part."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The coiled steel hairspring, forged thinner than a single strand of spider silk, was carefully lowered by Julian onto the jeweled balance staff.",
+      "childTip": "Find the passive verb 'was carefully lowered by.' The name right after 'by' tells you who did the action!",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The grammatical subject ('The coiled steel hairspring') is separated from the passive verb by a 9-word participial phrase ('forged thinner than a single strand of spider silk'), tempting readers to miss that 'by Julian' names the true actor."
+    },
+    {
+      "questionId": "w83_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5L4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"Julian closed the glass bezel so no stray dust could drift inside to impede the swing again.\"\n\nWhat does the word impede most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Block or get in the way of smooth motion",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short."
+        },
+        {
+          "id": "B",
+          "text": "Polish with a clean wooden stick and oil",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows cleaning details from Paragraph 4 instead of defining what stray dust would do to the balance wheel's swing."
+        },
+        {
+          "id": "C",
+          "text": "Power the clock gears without needing a spring",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the harmful effect of dust into a helpful power source."
+        },
+        {
+          "id": "D",
+          "text": "Measure the exact distance to a coastal reef",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Confuses the purpose of a ship's chronometer in Paragraph 2 with the meaning of 'impede' in Paragraph 5."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Julian closed the glass bezel so no stray dust could drift inside to impede the swing again.",
+      "childTip": "Think about what the speck of lint did in Paragraph 4. Why does Julian want to keep dust out?",
+      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5L4). In Paragraph 4, a speck of lint brushed the inner coil and cut the wheel's swing short; in Paragraph 5, Julian closes the glass cover so dust cannot 'impede' (hinder or obstruct) the swing again."
+    },
+    {
+      "questionId": "w83_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why did the tiny speck of lint cause the ship chronometer to run fast instead of slow?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The lint added extra weight that made the heavy gold gears spin twice as fast.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents an explanation about heavy gold gears spinning faster from added weight."
+        },
+        {
+          "id": "B",
+          "text": "The lint brushed the inner coil and cut each swing short, making the wheel bounce back early.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains the mechanical cause-and-effect in Paragraph 4: a shorter arc causes the wheel to reverse early and beat too fast."
+        },
+        {
+          "id": "C",
+          "text": "The lint soaked up all the clean solvent and froze the balance wheel in place.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts the text; a frozen wheel would stop completely rather than gain four seconds every hour."
+        },
+        {
+          "id": "D",
+          "text": "Every ship chronometer is built to run fast whenever a bench lamp shines on the ruby.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('Every', 'whenever') and misinterprets Julian tilting his lamp to inspect the ruby."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Because the wheel could not complete its full, wide arc, it bounced back early and beat too fast.",
+      "childTip": "First click the sentence in Paragraph 4 that explains what happens when the wheel cannot finish its full arc.",
+      "parentExplanation": "This Click-to-Prove item requires students to verify counterintuitive physical causation in the text (ELAGSE5RL1). Rather than slowing the watch down, the speck of lint shortened the hairspring's swing arc so it bounced back early and ticked too rapidly."
+    },
+    {
+      "questionId": "w83_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4B_CONJUNCTION_LOGIC",
+      "standard": "ELAGSE5L1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"He saw that great precision did not come from forcing heavy gears into place, but from guarding the smallest space where motion lived.\"\n\nHow does the correlative structure \"not... from..., but from...\" support the meaning of the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It shows that Julian decided to remove all the heavy gold gears from the brass case.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Misreads the contrast as a literal removal of all gears from the clock."
+        },
+        {
+          "id": "B",
+          "text": "It contrasts rough mechanical force with the delicate care needed to keep tiny clock parts clean and accurate.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Explains how the correlative conjunction pair ('not... but...') contrasts brute force with protecting tiny spaces from dust."
+        },
+        {
+          "id": "C",
+          "text": "It proves that Master Lin was angry at Julian for using a steel wrench on the hairspring.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Introduces an unsupported emotional conflict; Julian never used the wrench because Master Lin advised him in time."
+        },
+        {
+          "id": "D",
+          "text": "It lists the exact steps for building a glass bezel inside a nineteenth-century workshop.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Confuses the reflective closing syntax with a step-by-step manufacturing guide."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "He saw that great precision did not come from forcing heavy gears into place, but from guarding the smallest space where motion lived.",
+      "childTip": "Look at the two ideas linked by 'not from... but from...' to see what Julian rejects and what he values.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5L1 (Conjunctions & Syntactic Logic), this item examines how the correlative construction 'not from X, but from Y' sets up a thematic contrast between forceful adjustment and careful attention to microscopic detail."
+    },
+    {
+      "questionId": "w83_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w83_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careful observation before making changes prevents a craftsperson from fixing the wrong problem.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring."
+        },
+        {
+          "id": "B",
+          "text": "Old ship clocks should always be replaced with digital screens before sailors leave port.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('always') and contradicts the story's successful restoration of the brass chronometer."
+        },
+        {
+          "id": "C",
+          "text": "Shop manuals are completely useless whenever a student repairs a balance wheel.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Overgeneralizes Julian's specific discovery into an extreme claim that manuals are 'completely useless'."
+        },
+        {
+          "id": "D",
+          "text": "Pegwood sticks are the most expensive tools on a watchmaker's oak bench.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on a minor tool mentioned in Paragraph 4 and invents a claim about its price."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light.",
+      "childTip": "Think about what would have happened if Julian had loosened the spring before looking closely at the ruby jewel.",
+      "parentExplanation": "Part A of this EBSR pair assesses Theme (ELAGSE5RL2). Julian nearly alters a perfectly good hairspring until Master Lin reminds him to inspect the bearings first, revealing that patient observation must precede action."
+    },
+    {
+      "questionId": "w83_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w83_q5",
+      "prompt": "Which quotation from the story best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Inside the brass case, dozens of tiny gold gears gleamed beneath the bench lamp.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the appearance of the clock gears in Paragraph 1 without addressing the lesson about careful inspection."
+        },
+        {
+          "id": "B",
+          "text": "\"The restored pocket watch was gaining four seconds every hour, which meant a sailor using it at sea would misjudge a reef by miles.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Explains why the timing error mattered, not the principle of inspecting before altering a part."
+        },
+        {
+          "id": "C",
+          "text": "\"The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly supports the theme in Part A by stating Master Lin's rule to inspect carefully before altering a delicate part."
+        },
+        {
+          "id": "D",
+          "text": "\"Across the timing screen, the green dots marched in a flat, level line with zero gain or loss.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Shows the final test result in Paragraph 5 rather than the guiding principle of observation before adjustment."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light.",
+      "childTip": "Pick the exact quote in Paragraph 3 where Master Lin gives Julian advice before he touches the spring.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence supporting the theme from Part A. Option C states the exact rule that saved Julian from altering an undamaged hairspring."
+    }
+  ]
+}

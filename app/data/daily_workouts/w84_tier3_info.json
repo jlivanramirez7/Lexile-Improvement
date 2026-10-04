@@ -1,0 +1,333 @@
+{
+  "workoutId": "w84_tier3_info",
+  "workoutNumber": 84,
+  "title": "The Star Dust Written in Stone",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1070,
+  "fkgl": 7.44,
+  "genre": "Informational",
+  "subGenre": "Paleontology & Geology",
+  "focusDomain": "D3_INTEGRATION",
+  "focusStandard": "ELAGSE5RI8",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Star Dust Written in Stone",
+    "author": "BEACON Assessment Lab",
+    "text": "For more than a century, scientists puzzled over a sudden change in the fossil record sixty-six million years ago. Below a sharp rock boundary, ancient seas and lands swarmed with shelled sea life and giant dinosaurs. Directly above that line, most of those species vanished forever. Most geologists once assumed that slow shifts, such as cooling seas or shrinking swamps, caused these animals to die out over millions of years. Yet in 1977, geologist Walter Alvarez noticed a clue in an Italian canyon that pointed to a far more abrupt event.\n\nHigh in the hills near Gubbio, tilted beds of pink and white limestone held a record of ancient sea mud. Right between the older stone and the younger stone lay a dark band of clay. It was just one thin layer with no fish bones at all. Walter brought rock samples home to study with his father, physicist Luis Alvarez. They wanted to know how many thousands of years it took for that thin clay seam to settle on the sea floor. The dark band of ancient clay, sandwiched between white limestone beds near Gubbio, was closely tested by the Alvarez team for rare metals.\n\nLuis suggested measuring a dense metal called iridium. On Earth's surface, iridium is extremely scarce because most of it sank into our planet's molten iron core when the world was young. Space rocks and cosmic dust, however, carry much higher amounts of iridium and rain down on Earth at a slow, steady pace. If the clay layer took a long time to form, it would hold a small, normal pinch of cosmic dust. If it formed rapidly during a mudslide, it would hold almost none.\n\nWhen lab chemists tested the Italian clay, the results stunned the whole team. The thin seam held thirty times more iridium than the stone above or below it. Soon, core samples drilled from sea beds in Denmark and New Zealand showed the exact same spike of iridium at the exact same age. No gentle rain of dust could explain a global blanket so rich in space metal.\n\nIn 1980, the Alvarez team proposed a bold explanation. They argued that a six-mile-wide asteroid slammed into Earth and vaporized upon impact, blasting a vast cloud of iridium-rich debris into the sky. That dust shroud blocked the sun for months. It stopped green plants from growing and starved food chains across the globe. Years later, geologists found the giant buried crater on the coast of Mexico, confirming that a single day of fire from space ended the age of dinosaurs.",
+    "wordCount": 428,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The dark band of ancient clay, sandwiched between white limestone beds near Gubbio, was closely tested by the Alvarez team for rare metals.",
+      "actorChunk": "by the Alvarez team",
+      "actionChunk": "was closely tested",
+      "receiverChunk": "The dark band of ancient clay",
+      "distractorChunks": [
+        "sandwiched between white limestone beds near Gubbio",
+        "for rare metals"
+      ],
+      "activeRewrite": "The Alvarez team closely tested the dark band of ancient clay for rare metals."
+    },
+    "tier2Words": [
+      {
+        "word": "abrupt",
+        "definition": "Sudden, rapid, and unexpected rather than gradual",
+        "rootHint": "ab- (off) + rupt- (Latin root meaning 'break', as in erupt)",
+        "contextClue": "Contrasted directly with 'slow shifts... over millions of years' in the previous sentence."
+      },
+      {
+        "word": "scarce",
+        "definition": "Rare or hard to find in large quantities",
+        "rootHint": "Old French escars (plucked out or limited in supply)",
+        "contextClue": "Iridium is 'extremely scarce' on Earth's surface because most of it sank into the planet's molten core."
+      },
+      {
+        "word": "debris",
+        "definition": "Scattered rock fragments and dust thrown out by an explosion or impact",
+        "rootHint": "Old French debriser (to break apart)",
+        "contextClue": "The asteroid vaporized upon impact, 'blasting a vast cloud of iridium-rich debris into the sky.'"
+      },
+      {
+        "word": "shroud",
+        "definition": "A thick covering or cloud that hides or blocks something from view",
+        "rootHint": "Old English scrud (garment or covering)",
+        "contextClue": "'That dust shroud blocked the sun for months, halting plant growth.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w84_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The dark band of ancient clay, sandwiched between white limestone beds near Gubbio, was closely tested by the Alvarez team for rare metals.\"\n\nIn this sentence, what received the action of being closely tested?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The dark band of ancient clay from the Italian canyon",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly links the grammatical subject/receiver ('The dark band of ancient clay') across the middle participial phrase to 'was closely tested'."
+        },
+        {
+          "id": "B",
+          "text": "The Alvarez team working in the California laboratory",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the actor performing the test ('by the Alvarez team') with the rock layer being tested."
+        },
+        {
+          "id": "C",
+          "text": "The town of Gubbio high in the Italian hills",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Picks the geographic location inside the prepositional phrase ('near Gubbio') rather than the subject of the clause."
+        },
+        {
+          "id": "D",
+          "text": "The white limestone beds above and below the seam",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Selects a noun inside the descriptive phrase ('sandwiched between white limestone beds') instead of the main subject."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The dark band of ancient clay, sandwiched between white limestone beds near Gubbio, was closely tested by the Alvarez team for rare metals.",
+      "childTip": "Skip over the words between the commas to see what subject connects directly to 'was closely tested.'",
+      "parentExplanation": "This Sentence Surgery question assesses Passive Receiver & Interrupting Clause Tracking (ELAGSE5L1). By mentally removing the 7-word interrupting phrase ', sandwiched between white limestone beds near Gubbio,', students see that 'The dark band of ancient clay' was closely tested."
+    },
+    {
+      "questionId": "w84_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 1:\n\n\"Most geologists once assumed that slow shifts, such as cooling seas or shrinking swamps, caused these animals to die out over millions of years. Yet in 1977, geologist Walter Alvarez noticed a clue in an Italian canyon that pointed to a far more abrupt event.\"\n\nWhat does the word abrupt most likely mean as it is used in Paragraph 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sudden and rapid",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the contrast signal 'Yet' against 'slow shifts... over millions of years' and the root 'rupt' (break) to identify 'sudden'."
+        },
+        {
+          "id": "B",
+          "text": "Hidden deep beneath the ocean floor",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows sea-floor imagery from Paragraph 2 instead of using the contrast clue in Paragraph 1."
+        },
+        {
+          "id": "C",
+          "text": "Stretching peacefully across millions of years",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Selects the exact opposite meaning by ignoring the contrast word 'Yet'."
+        },
+        {
+          "id": "D",
+          "text": "Caused by freezing winter temperatures",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Confuses 'cooling seas' from the old theory with the meaning of 'abrupt'."
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Yet in 1977, geologist Walter Alvarez noticed a clue in an Italian canyon that pointed to a far more abrupt event.",
+      "childTip": "Notice the contrast word 'Yet.' How does 'abrupt' contrast with 'slow shifts... over millions of years'?",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5RI4). The transition word 'Yet' signals an antonym relationship between the older view ('slow shifts... over millions of years') and the new clue pointing to an 'abrupt' (sudden) event."
+    },
+    {
+      "questionId": "w84_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why is iridium useful for telling the difference between Earth rock and material from space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Iridium glows brightly under cave lamps whenever it touches dinosaur bones.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents an unsupported claim about iridium glowing near dinosaur fossils."
+        },
+        {
+          "id": "B",
+          "text": "Iridium is scarce in Earth's crust because most of it sank into the planet's core, but space rocks contain much more of it.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately synthesizes Paragraph 3: Earth's surface has very little iridium, whereas space rocks and cosmic dust carry much higher amounts."
+        },
+        {
+          "id": "C",
+          "text": "Iridium is found only in Italian limestone and never appears anywhere else on Earth.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme words ('only', 'never') that contradict Paragraph 4's discovery of iridium spikes in Denmark and New Zealand."
+        },
+        {
+          "id": "D",
+          "text": "Earth's surface has thirty times more iridium than asteroids or cosmic dust.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the comparison in Paragraph 3; space rocks carry much higher amounts of iridium than Earth's crust."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Space rocks and cosmic dust, however, carry much higher amounts of iridium and rain down on Earth at a slow, steady pace.",
+      "childTip": "First click the sentence in Paragraph 3 that compares how much iridium space rocks carry.",
+      "parentExplanation": "This Click-to-Prove item tests scientific relationships (ELAGSE5RI3). Paragraph 3 explains that because Earth's iridium sank into its molten iron core early on, an unusually high spike of iridium in surface clay must come from space."
+    },
+    {
+      "questionId": "w84_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "In Paragraph 4, the author claims that the high iridium spike was a worldwide event rather than a local Italian accident. Which evidence from Paragraph 4 best supports this claim?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lab chemists were stunned when they first tested the thin clay seam from Gubbio.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the scientists' reaction to the first local Italian sample, not proof that the layer was global."
+        },
+        {
+          "id": "B",
+          "text": "Core samples drilled from sea beds in Denmark and New Zealand showed the exact same spike of iridium at the exact same age.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the global scale of the event by citing matching iridium spikes in both Europe (Denmark) and the Southern Hemisphere (New Zealand)."
+        },
+        {
+          "id": "C",
+          "text": "The Italian clay layer measured only one centimeter thick between the pink and white limestone beds.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Repeats a measurement from Paragraph 2 about the local Italian site rather than proving a global blanket."
+        },
+        {
+          "id": "D",
+          "text": "Every rock layer on Earth contains exactly thirty times more iridium than normal limestone.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses the extreme qualifier 'Every rock layer on Earth', distorting the specific boundary clay seam."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Soon, core samples drilled from sea beds in Denmark and New Zealand showed the exact same spike of iridium at the exact same age.",
+      "childTip": "Find the detail in Paragraph 4 that shows matching clay samples from distant parts of the globe.",
+      "parentExplanation": "Focus standard ELAGSE5RI8 (Author's Claims & Evidence). To prove that the iridium blanket was global rather than local to Italy, the author cites matching sea-bed core samples from Denmark and New Zealand."
+    },
+    {
+      "questionId": "w84_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w84_q6",
+      "prompt": "PART A: Which statement best expresses the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By discovering a global spike of space-borne iridium in a thin clay layer, the Alvarez team proved that a massive asteroid impact ended the dinosaur era.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the entire investigation: the fossil puzzle (Para 1), the Gubbio clay and iridium test (Paras 2-4), and the confirmed asteroid impact theory (Para 5)."
+        },
+        {
+          "id": "B",
+          "text": "Most of Earth's natural iridium sank into the planet's molten iron core billions of years ago.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "States a single background fact from Paragraph 3 rather than the central discovery of the passage."
+        },
+        {
+          "id": "C",
+          "text": "Italian limestone canyons are the only places where geologists can study ancient ocean mud.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses 'only' and contradicts the core samples taken from Denmark, New Zealand, and Mexico."
+        },
+        {
+          "id": "D",
+          "text": "Dinosaurs vanished slowly over millions of years because swamps dried up and ocean waters cooled.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Presents the outdated assumption from Paragraph 1 that the Alvarez team's evidence overturned."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "They argued that a six-mile-wide asteroid slammed into Earth and vaporized upon impact, blasting a vast cloud of iridium-rich debris into the sky.",
+      "childTip": "Choose the statement that connects the iridium clay clue to the asteroid impact that ended the dinosaur era.",
+      "parentExplanation": "Part A of the EBSR pair assesses Central Idea synthesis (ELAGSE5RI2). Option D is a classic misconception trap (stating the old disproven theory), while Option A integrates the iridium evidence with the asteroid conclusion."
+    },
+    {
+      "questionId": "w84_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w84_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Most geologists once assumed that slow shifts, such as cooling seas or shrinking swamps, caused these animals to die out over millions of years.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Quotes the older gradual-extinction belief rather than the Alvarez asteroid discovery."
+        },
+        {
+          "id": "B",
+          "text": "\"On Earth's surface, iridium is extremely scarce because most of it sank into our planet's molten iron core when the world was young.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Explains only a background property of iridium without connecting it to the asteroid impact."
+        },
+        {
+          "id": "C",
+          "text": "\"If it formed rapidly during a mudslide, it would hold almost none.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Quotes one of the ruled-out hypotheses from Paragraph 3 rather than the central conclusion."
+        },
+        {
+          "id": "D",
+          "text": "\"They argued that a six-mile-wide asteroid slammed into Earth and vaporized upon impact, blasting a vast cloud of iridium-rich debris into the sky.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly supports Part A by linking the iridium-rich debris layer to the massive asteroid impact."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "They argued that a six-mile-wide asteroid slammed into Earth and vaporized upon impact, blasting a vast cloud of iridium-rich debris into the sky.",
+      "childTip": "Select the quote from Paragraph 5 that explains how the asteroid created the global layer of iridium.",
+      "parentExplanation": "Part B requires 100% verbatim textual support for the central idea in Part A. Option D directly states the Alvarez team's conclusion linking the iridium spike to a six-mile-wide asteroid impact."
+    }
+  ]
+}

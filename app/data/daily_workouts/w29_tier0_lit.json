@@ -1,0 +1,309 @@
+{
+  "workoutId": "w29_tier0_lit",
+  "workoutNumber": 29,
+  "title": "The Tin of Heirloom Seeds",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 900,
+  "fkgl": 6.17,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Tin of Heirloom Seeds",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Late October sunlight slanted through the cedar boards of Grandma Ruth's barn in Macon County, Georgia. The air smelled of dry corn husks and sweet red clay. Ten-year-old Eli sat on an upturned apple crate beside a wide wooden table covered with brown paper sacks. Now that the autumn harvest of 1936 was finished, it was time to save the best vegetable seeds for next spring. Grandma Ruth carried over a painted biscuit tin that had belonged to her own mother fifty years ago.\n\nInside the tin rested dozens of small cloth pouches tied with white cotton string. Each pouch held heirloom seeds passed down through the family from one season to the next. Grandma Ruth untied a little bag and poured a handful of speckled butterbeans onto a clean china plate. The plumpest bean seeds, dried on the sunny back porch for three full weeks, were carefully sorted by Eli into small paper envelopes. He set aside any wrinkled or cracked beans for the chickens to eat.\n\nAt first, Eli wondered why they did not simply buy new seed packets at the general store in town. Sorting every tiny tomato and okra seed by hand made his shoulders ache. Grandma Ruth picked up a large purple hull pea and held it in a patch of golden light. She explained that store seeds often came from distant farms with cool, wet weather. Their family seeds came from plants that had already proved they could survive Georgia's hot July sun.\n\nEvery fall, Grandma Ruth picked pods only from the strongest, sweetest vines in the garden row. By saving seeds from the toughest plants year after year, each new crop grew a little hardier than the last. She handed Eli a stubby lead pencil so he could label the next row of folded brown packets. In neat letters, he wrote the name of each crop and the year on the front flap. His handwriting looked just like his grandfather's old notes inside the tin lid.\n\nWhen the last pouch of yellow squash seeds was tied shut, Grandma Ruth closed the metal lid with a firm click. She placed the tin on the highest shelf where field mice could not reach it during the winter. Eli looked at his ink-stained fingers and felt a quiet pride in the afternoon's slow work. Those tiny dry specks did not look like much on a plate right now. Yet inside that tin waited a whole summer of green vines and full dinner tables.",
+    "wordCount": 417,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The plumpest bean seeds, dried on the sunny back porch for three full weeks, were carefully sorted by Eli into small paper envelopes.",
+      "actorChunk": "Eli",
+      "actionChunk": "carefully sorted",
+      "receiverChunk": "The plumpest bean seeds",
+      "distractorChunks": [
+        "dried on the sunny back porch for three full weeks",
+        "into small paper envelopes"
+      ],
+      "activeRewrite": "Eli carefully sorted the plumpest bean seeds into small paper envelopes."
+    },
+    "tier2Words": [
+      {
+        "word": "heirloom",
+        "definition": "something valuable, such as a traditional plant variety or family object, passed down through generations",
+        "rootHint": "From heir ('person who inherits') + loom ('tool or prized possession')",
+        "contextClue": "Each pouch held seeds passed down through the family from one season to the next in a fifty-year-old tin."
+      },
+      {
+        "word": "speckled",
+        "definition": "marked with many small spots or patches of color",
+        "rootHint": "From Old English specca, meaning 'small spot or mark'",
+        "contextClue": "Grandma Ruth poured the spotted butterbeans onto a clean white china plate so Eli could see them clearly."
+      },
+      {
+        "word": "survive",
+        "definition": "to stay alive and keep growing through difficult conditions",
+        "rootHint": "Latin prefix super- ('beyond') + vivere ('to live')",
+        "contextClue": "Their family seeds came from strong plants that could live through Georgia's hot July sun."
+      },
+      {
+        "word": "hardier",
+        "definition": "stronger and better able to handle tough weather without dying",
+        "rootHint": "From Old French hardi, meaning 'bold, tough, and sturdy'",
+        "contextClue": "By saving seeds from the toughest plants year after year, each new crop grew stronger than the last."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w29_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The plumpest bean seeds, dried on the sunny back porch for three full weeks, were carefully sorted by Eli into small paper envelopes.\"\n\nBased on the structure of the sentence, who or what sorted the bean seeds?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The sunny back porch sorted the bean seeds for three full weeks.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The small paper envelopes sorted Eli on the back porch.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Eli sorted the plumpest bean seeds into small paper envelopes.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "The plumpest bean seeds sorted themselves into the biscuit tin.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The plumpest bean seeds, dried on the sunny back porch for three full weeks, were carefully sorted by Eli into small paper envelopes.",
+      "childTip": "Find the 'by' phrase after 'were carefully sorted' to see who did the sorting.",
+      "parentExplanation": "In this passive-voice sentence, 'The plumpest bean seeds' receives the action, while 'by Eli' names Eli as the actor who sorted the seeds."
+    },
+    {
+      "questionId": "w29_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Every fall, Grandma Ruth picked pods only from the strongest, sweetest vines in the garden row. By saving seeds from the toughest plants year after year, each new crop grew a little hardier than the last.\"\n\nWhat does the word hardier mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sturdier and better able to handle tough conditions",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Smaller and harder to see on a china plate",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "More expensive to buy at the town general store",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Softer and easier to crush inside a paper sack",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "By saving seeds from the toughest plants year after year, each new crop grew a little hardier than the last.",
+      "childTip": "Look at the clues 'strongest' and 'toughest plants' to see what kind of crop grows from them.",
+      "parentExplanation": "The surrounding context clues ('strongest, sweetest vines' and 'toughest plants') show that 'hardier' means stronger and better able to withstand harsh weather."
+    },
+    {
+      "questionId": "w29_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "According to Paragraph 2, what does Eli do with the bean seeds that are wrinkled or cracked?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He plants them right away in the red clay behind the barn.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "He sets them aside so the chickens can eat them.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "He ties them inside the painted biscuit tin for fifty years.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "He trades them for a new lead pencil at the general store.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "He set aside any wrinkled or cracked beans for the chickens to eat.",
+      "childTip": "Click the last sentence of Paragraph 2 to see where the wrinkled or cracked beans go.",
+      "parentExplanation": "Paragraph 2 directly states that while Eli sorted the plumpest seeds into envelopes for planting, 'He set aside any wrinkled or cracked beans for the chickens to eat.'"
+    },
+    {
+      "questionId": "w29_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How do Paragraphs 3 and 4 change Eli's attitude toward sorting seeds?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They show why Eli decides to stop helping his grandmother and go into town instead.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "They explain the value of the family's hardy seeds, turning Eli's tiredness into pride.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "They prove that field mice have already eaten most of the yellow squash seeds.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "They describe how a sudden rainstorm ruins the seeds drying on the back porch.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Their family seeds came from plants that had already proved they could survive Georgia's hot July sun.",
+      "childTip": "In Paragraph 3 Eli wonders why they don't buy store seeds; see how Grandma Ruth's answer changes how he feels.",
+      "parentExplanation": "In Paragraph 3, Eli starts out with aching shoulders wondering why they don't just buy store packets. Once Grandma Ruth explains in Paragraphs 3–4 how their family seeds are adapted to Georgia's hot sun, Eli feels pride in continuing the family tradition."
+    },
+    {
+      "questionId": "w29_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w29_q6",
+      "prompt": "Part A: Why are Grandma Ruth's heirloom seeds better suited for her garden than seeds from the general store?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They come from plants that have already proved they can handle Georgia's hot summer weather.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "They can grow indoors inside a dark cedar barn without needing any sunlight or water.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "They were grown on distant northern farms where the weather stays cool and wet all year.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "They are coated in special ink that keeps field mice and chickens away from the garden.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Their family seeds came from plants that had already proved they could survive Georgia's hot July sun.",
+      "childTip": "Look at the end of Paragraph 3 to see what Grandma Ruth says about their family seeds and the July sun.",
+      "parentExplanation": "Grandma Ruth explains in Paragraph 3 that store seeds often come from cool, wet farms far away, whereas their family's heirloom seeds come from plants proven to survive Georgia's hot July sun."
+    },
+    {
+      "questionId": "w29_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w29_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Late October sunlight slanted through the cedar boards of Grandma Ruth's barn in Macon County, Georgia.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Inside the tin rested dozens of small cloth pouches tied with white cotton string.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Their family seeds came from plants that had already proved they could survive Georgia's hot July sun.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"She placed the tin on the highest shelf where field mice could not reach it during the winter.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Their family seeds came from plants that had already proved they could survive Georgia's hot July sun.",
+      "childTip": "Pick the quote from Paragraph 3 that directly mentions surviving Georgia's hot July sun.",
+      "parentExplanation": "Option C provides the exact textual evidence from Paragraph 3 explaining why the family's saved seeds outperform store-bought seeds in their local climate."
+    }
+  ]
+}

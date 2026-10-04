@@ -1,0 +1,309 @@
+{
+  "workoutId": "w59_tier2_lit",
+  "workoutNumber": 59,
+  "title": "The Notches in Elderberry Bridge",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 995,
+  "fkgl": 6.83,
+  "genre": "Literary",
+  "subGenre": "Adventure / Mystery",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Notches in Elderberry Bridge",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Sunlight slanted through the gaps in the weathered pine siding of Elderberry Creek Bridge as Tessa stepped onto the thick floor planks. Her boots echoed above the rush of cold North Georgia water below. Tessa's grandfather had helped repair this covered bridge fifty years ago. Before he passed his old canvas tool bag to Tessa, he had sketched a rough map of the bridge trusses on the inside flap. Next to the drawing, he had written one line in faded ink: Count where the X-beams cross the king posts.\n\nTessa shone her flashlight up into the dim rafters where heavy diagonal timbers formed a row of giant X shapes. High along the center oak beam, a row of slanted tally marks had been deeply chiseled into the timber by the original bridge builder. Most walkers thought the marks were random scratches left by a saw. Yet when Tessa looked closer, she saw that the cuts were neat and deliberate. The first post held three short vertical cuts, the second held five, and the third held two.\n\nHer younger brother, Eli, joined her at the middle window and read the numbers aloud as Tessa wrote them down: three, five, two, and four. Eli wondered if the marks recorded how many wagons crossed the creek on opening day. Tessa shook her head and pointed to the wooden pegs, called trunnels, that pinned each diagonal brace together. Every truss section had six pegs in a row. When she matched the carved numbers to the pegs on the fourth post, she noticed that the fourth peg stuck out an inch farther than the rest.\n\nStanding on the low wheel guard, Tessa gripped the fourth oak peg with both hands and gave it a firm twist. With a dry click, a hollow square of wood slid open inside the thick post. Concealed inside the dry slot rested a small copper tube sealed with beeswax. Tessa pried off the cap and unrolled a crisp sheet of linen paper dated 1884.\n\nThe paper held the builder's original stress drawings and a list of the local quarry stones used in the creek piers. At the bottom, a note praised the ingenious lattice design that allowed the bridge to flex under heavy loads without iron nails. Tessa and Eli grinned as they slid the tube into their grandfather's tool bag to share with the county historical society. The old builder had left a guide for the next generation to keep the bridge standing strong.",
+    "wordCount": 415,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "High along the center oak beam, a row of slanted tally marks had been deeply chiseled into the timber by the original bridge builder.",
+      "actorChunk": "the original bridge builder",
+      "actionChunk": "had deeply chiseled",
+      "receiverChunk": "a row of slanted tally marks",
+      "distractorChunks": [
+        "High along the center oak beam",
+        "into the timber"
+      ],
+      "activeRewrite": "The original bridge builder had deeply chiseled a row of slanted tally marks into the timber."
+    },
+    "tier2Words": [
+      {
+        "word": "weathered",
+        "definition": "worn, aged, or darkened by long exposure to wind, sun, and rain",
+        "rootHint": "From 'weather' (exposed to the elements over many years)",
+        "contextClue": "Sunlight slanted through gaps in the old pine siding of the 1884 covered bridge."
+      },
+      {
+        "word": "deliberate",
+        "definition": "done consciously and intentionally; careful and planned",
+        "rootHint": "Latin 'deliberare' (to weigh carefully in one's mind)",
+        "contextClue": "Instead of random saw scratches, the cuts were neat and followed a specific pattern."
+      },
+      {
+        "word": "concealed",
+        "definition": "kept secret or hidden from sight",
+        "rootHint": "Latin 'con-' (completely) + 'celare' (to hide)",
+        "contextClue": "A hollow square of wood slid open inside the thick post to reveal a hidden copper tube."
+      },
+      {
+        "word": "ingenious",
+        "definition": "clever, original, and inventive in design",
+        "rootHint": "Latin 'ingenium' (inborn talent or cleverness)",
+        "contextClue": "The smart lattice design allowed the bridge to flex under heavy loads without iron nails."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w59_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"High along the center oak beam, a row of slanted tally marks had been deeply chiseled into the timber by the original bridge builder.\"\n\nBased on the structure of this sentence, who or what carved the tally marks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The center oak beam pressing against the roof",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The original bridge builder",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Walkers crossing Elderberry Creek with saws",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Tessa's younger brother Eli",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "High along the center oak beam, a row of slanted tally marks had been deeply chiseled into the timber by the original bridge builder.",
+      "childTip": "Look after the passive verb 'had been deeply chiseled into the timber by' to find the real doer.",
+      "parentExplanation": "In this passive-voice sentence, 'a row of slanted tally marks' is the receiver of the action. The true actor performing the chiseling comes after 'by': 'the original bridge builder' (Option B)."
+    },
+    {
+      "questionId": "w59_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Yet when Tessa looked closer, she saw that the cuts were neat and deliberate.\"\n\nWhat does the word \"deliberate\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Done on purpose with careful planning",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Covered in thick green moss from the creek",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Made by accident when a wagon wheel slipped",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Too faint for any flashlight beam to illuminate",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Yet when Tessa looked closer, she saw that the cuts were neat and deliberate.",
+      "childTip": "Contrast 'deliberate' with 'random scratches left by a saw' in the sentence right before it.",
+      "parentExplanation": "The previous sentence states that most walkers thought the marks were 'random scratches.' The contrast word 'Yet' and the pairing with 'neat' show that 'deliberate' means done on purpose with careful planning (Option A)."
+    },
+    {
+      "questionId": "w59_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "How does Tessa figure out which wooden peg to twist in Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She matches the carved tally numbers to the rows of pegs and sees the fourth peg on the fourth post sticking out.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She pulls on every single peg in the bridge until one of them breaks off in her hand.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "She follows a bright red arrow painted on the floor planks by the county historical society.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "She counts the number of wagons pictured on the inside flap of her grandfather's tool bag.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "When she matched the carved numbers to the pegs on the fourth post, she noticed that the fourth peg stuck out an inch farther than the rest.",
+      "childTip": "Click the last sentence of Paragraph 3 to see how matching the carved numbers to the pegs revealed the clue.",
+      "parentExplanation": "In Paragraph 3, Tessa compares the sequence of carved numbers (3, 5, 2, 4) to the rows of wooden pegs and notices that on the fourth post, the fourth peg sticks out an inch farther than the others (Option A)."
+    },
+    {
+      "questionId": "w59_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "What is the main role of the grandfather's note at the end of Paragraph 1 in the structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It gives Tessa the specific clue that launches her search up in the bridge rafters.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It explains why the county decided to close Elderberry Creek Bridge to cars.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It warns Tessa and Eli to stay off the bridge because the oak beams are rotting.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "It reveals the ending of the mystery before Tessa even steps onto the planks.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Next to the drawing, he had written one line in faded ink: Count where the X-beams cross the king posts.",
+      "childTip": "Look at how the faded ink line in Paragraph 1 directs Tessa's flashlight straight to the X-beams in Paragraph 2.",
+      "parentExplanation": "Structurally, the grandfather's clue at the end of Paragraph 1 ('Count where the X-beams cross the king posts') serves as the inciting clue that directs Tessa's investigation in Paragraphs 2 and 3 (Option A)."
+    },
+    {
+      "questionId": "w59_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w59_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careful observation can uncover the wisdom that past builders left behind to help future generations preserve their work.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Old wooden bridges should be torn down and replaced with modern steel highways.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Hidden treasure chests full of gold coins can be found inside every covered bridge in Georgia.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Younger brothers are better at solving math codes than older sisters.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "The old builder had left a guide for the next generation to keep the bridge standing strong.",
+      "childTip": "Focus on what the 1884 paper actually contained and why the builder hid it for future caretakers.",
+      "parentExplanation": "Aligned to ELAGSE5RL2, the story's theme centers on intergenerational stewardship: by looking closely where others saw only random scratches, Tessa recovers the 1884 engineering plans left to help future generations care for the bridge (Option A)."
+    },
+    {
+      "questionId": "w59_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w59_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Her boots echoed above the rush of cold North Georgia water below.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Most walkers thought the marks were random scratches left by a saw.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Eli wondered if the marks recorded how many wagons crossed the creek on opening day.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"The old builder had left a guide for the next generation to keep the bridge standing strong.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "The old builder had left a guide for the next generation to keep the bridge standing strong.",
+      "childTip": "Choose the quote from Paragraph 5 that explains why the builder hid the drawings inside the post.",
+      "parentExplanation": "Option D directly supports the theme in Part A by stating how the hidden 1884 stress drawings connect past craftsmanship with the next generation's preservation efforts."
+    }
+  ]
+}

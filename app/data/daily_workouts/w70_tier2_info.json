@@ -1,0 +1,309 @@
+{
+  "workoutId": "w70_tier2_info",
+  "workoutNumber": 70,
+  "title": "The Silent Pump Inside Giant Trees",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1025,
+  "fkgl": 6.58,
+  "genre": "Informational",
+  "subGenre": "Plant Physiology",
+  "focusDomain": "D3_INTEGRATION",
+  "focusStandard": "ELAGSE5RI8",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Silent Pump Inside Giant Trees",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the mountain forests of California, giant sequoia trees rise higher than a thirty-story building. Each sunny day, one big tree lifts hundreds of gallons of water from the damp soil up to its top branches. A tall apartment building needs loud electric motors to push water to the top floor. Yet a giant tree has no heart, no valves, and no noisy pump at all. Instead, it uses sunbeams, tiny tubes, and the sticky nature of water itself.\n\nInside the trunk runs a bundle of millions of microscopic pipes called xylem. These thin tubes start in the deep roots. They form a continuous path all the way to the green needles at the top. The tubes are thinner than a strand of hair. Inside them, water drops press tight against the wood walls. This attraction between water and the tube walls is called adhesion, and it helps keep the heavy liquid from slipping backward toward the ground.\n\nThe real lifting power starts at the very top of the tree. Each green needle is dotted with tiny pores that open to take in air for making food. Whenever tiny water drops evaporate from the high green needles into the dry mountain air, an unbroken chain of water molecules is pulled upward through the narrow wood tubes by tension. This sunlit water loss is called transpiration. As one drop turns to mist and leaves a pore, it tugs the next drop into its place.\n\nThat upward tug works only because water drops cling to each other like tiny magnets. This sticking force, known as cohesion, turns the water inside each xylem tube into a single taut rope reaching from leaf to root. When the sun pulls on the top of the rope in the high crown, the whole column of water slides up the trunk together. At the base, the roots drink in fresh water from the soil to replace what moved up.\n\nEven a giant tree faces a strict height limit in the sky. The higher water climbs against gravity, the harder the tension pulls on the liquid rope in the wood. Above three hundred feet, air bubbles can pop into the tubes and snap the water chain, blocking the flow to the top needles. By pairing sunlit pull with narrow wood tubes, these tall trees push nature to its very edge.",
+    "wordCount": 392,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "Whenever tiny water drops evaporate from the high green needles into the dry mountain air, an unbroken chain of water molecules is pulled upward through the narrow wood tubes by tension.",
+      "actorChunk": "tension",
+      "actionChunk": "pulls upward",
+      "receiverChunk": "an unbroken chain of water molecules",
+      "distractorChunks": [
+        "Whenever tiny water drops evaporate from the high green needles into the dry mountain air",
+        "through the narrow wood tubes"
+      ],
+      "activeRewrite": "Whenever tiny water drops evaporate from the high green needles into the dry mountain air, tension pulls an unbroken chain of water molecules upward through the narrow wood tubes."
+    },
+    "tier2Words": [
+      {
+        "word": "microscopic",
+        "definition": "so extremely small that it can only be seen clearly with a microscope",
+        "rootHint": "Greek 'mikros' (small) + 'skopein' (to look at)",
+        "contextClue": "The xylem pipes inside the trunk are thinner than a single human hair."
+      },
+      {
+        "word": "continuous",
+        "definition": "forming an unbroken whole without gaps or interruptions",
+        "rootHint": "Latin 'continuus' (holding together uninterrupted)",
+        "contextClue": "The narrow tubes start in the deepest roots and run all the way to the needles without a break."
+      },
+      {
+        "word": "evaporate",
+        "definition": "to change from liquid water into invisible vapor or gas",
+        "rootHint": "Latin 'e-' (out) + 'vapor' (steam or mist)",
+        "contextClue": "As one drop turns to vapor and leaves a needle pore into the dry mountain air, it tugs the next drop."
+      },
+      {
+        "word": "cohesion",
+        "definition": "the sticking together of particles of the same substance",
+        "rootHint": "Latin 'co-' (together) + 'haerere' (to stick or cling)",
+        "contextClue": "Water molecules cling to each other like tiny magnets, turning the column into a single taut rope."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w70_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Whenever tiny water drops evaporate from the high green needles into the dry mountain air, an unbroken chain of water molecules is pulled upward through the narrow wood tubes by tension.\"\n\nIn the main clause of this sentence, what force actually pulls the chain of water molecules upward?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The narrow wood tubes pushing down on the roots",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The dry mountain air blowing the branches sideways",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Tension created as water drops evaporate from the needles",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "An electric motor hidden inside the base of the trunk",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Whenever tiny water drops evaporate from the high green needles into the dry mountain air, an unbroken chain of water molecules is pulled upward through the narrow wood tubes by tension.",
+      "childTip": "Look at the 'by' phrase at the end of the sentence to spot what pulls the water chain upward.",
+      "parentExplanation": "In the passive main clause, 'an unbroken chain of water molecules' is the receiver of 'is pulled upward.' The grammatical actor appears after the preposition 'by': 'tension' (Option C)."
+    },
+    {
+      "questionId": "w70_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"That upward tug works only because water molecules cling to each other like tiny magnets. This sticking force, known as cohesion, turns the water inside each xylem tube into a single taut rope reaching from leaf to root.\"\n\nWhat does the word \"cohesion\" mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The force that makes like molecules stick tightly to one another",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The process of tree roots digging through hard mountain rock",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The snapping of a water chain when air bubbles enter a tube",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The heat of the sun burning the green needles at the crown",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "This sticking force, known as cohesion, turns the water inside each xylem tube into a single taut rope reaching from leaf to root.",
+      "childTip": "Look at the previous sentence's clue—'water molecules cling to each other like tiny magnets'—and the phrase 'This sticking force.'",
+      "parentExplanation": "Paragraph 4 defines 'cohesion' directly through context: 'water molecules cling to each other like tiny magnets. This sticking force, known as cohesion...' (Option A)."
+    },
+    {
+      "questionId": "w70_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_CAUSE_EFFECT",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, how does adhesion help a giant sequoia move water up its trunk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It opens the tiny pores on the green needles so sunlight can enter.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "It causes water molecules to cling to the narrow wood walls so the liquid does not slide back down.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It pushes air bubbles into the xylem tubes to make the water lighter.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "It turns soil minerals into sugar inside the deepest roots.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "This attraction between water and the tube walls is called adhesion, and it helps keep the heavy liquid from slipping backward toward the ground.",
+      "childTip": "Click the sentence in Paragraph 2 that names 'adhesion' and explains what it keeps the heavy liquid from doing.",
+      "parentExplanation": "Paragraph 2 explains that water molecules press tightly against the inner walls of the hair-thin xylem tubes; this attraction ('adhesion') 'helps keep the heavy liquid from slipping backward toward the ground' (Option B)."
+    },
+    {
+      "questionId": "w70_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_REASONING",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Which evidence does the author provide in Paragraph 5 to support the claim that \"Even a giant sequoia faces a strict height limit in the sky\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Above three hundred feet, strong tension can cause air bubbles to pop into the xylem tubes and snap the water chain.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Tall apartment buildings in California cannot pump water higher than the thirtieth floor.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Mountain soil runs out of groundwater whenever a sequoia grows taller than a human hair.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Park rangers trim the top branches of giant sequoias every summer to protect airplanes.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Above three hundred feet, air bubbles can pop into the tubes and snap the water chain, blocking the flow to the top needles.",
+      "childTip": "Look in Paragraph 5 for the exact reason water stops flowing above three hundred feet.",
+      "parentExplanation": "Aligned to ELAGSE5RI8, the author supports the claim that sequoias face a height limit by explaining that above three hundred feet, extreme tension allows air bubbles to pop into the tubes and snap the water chain (Option A)."
+    },
+    {
+      "questionId": "w70_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w70_q6",
+      "prompt": "PART A: Which statement best summarizes how a giant sequoia lifts water to its top branches without a mechanical pump?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Root valves squeeze the bottom of the trunk like a bellows and blast water up into the needles.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Rainwater collects in giant bowls at the top of the crown so the tree never needs water from the ground.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Evaporating water at the needles pulls a continuous, clinging rope of water molecules upward through microscopic xylem tubes.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Air bubbles inside the wood push individual drops of water upward one inch per year.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When the sun pulls on the top of the rope in the high crown, the whole column of water slides up the trunk together.",
+      "childTip": "Choose the answer that combines evaporation at the top needles with the sticky rope of water inside the xylem tubes.",
+      "parentExplanation": "Across the passage, the author explains that transpiration at the sunlit needles pulls on a cohesive, continuous column of water inside microscopic xylem tubes, drawing the whole water chain up from the roots (Option C)."
+    },
+    {
+      "questionId": "w70_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w70_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"In the mountain forests of California, giant sequoia trees rise higher than a thirty-story building.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"A tall apartment building needs loud electric motors to push water to the top floor.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Each green needle is dotted with tiny pores that open to take in air for making food.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"When the sun pulls on the top of the rope in the high crown, the whole column of water slides up the trunk together.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When the sun pulls on the top of the rope in the high crown, the whole column of water slides up the trunk together.",
+      "childTip": "Pick the quote from Paragraph 4 that shows how the sunlit pull moves the entire water column up the trunk.",
+      "parentExplanation": "Option D provides the direct textual evidence from Paragraph 4 showing how solar transpiration at the crown pulls the cohesive water column up the trunk as one unit, supporting Part A."
+    }
+  ]
+}

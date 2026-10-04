@@ -1,0 +1,308 @@
+{
+  "workoutId": "w71_tier2_lit",
+  "workoutNumber": 71,
+  "title": "The Whisper Under the Millstone",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1025,
+  "fkgl": 7.15,
+  "genre": "Literary",
+  "subGenre": "Adventure / Mystery",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Whisper Under the Millstone",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Late July heat baked the red clay hills of North Carolina. Yet a cool breath of mist drifted from the stone foundation of the old Hawkins gristmill. Eleven-year-old Eli and his sister Nora stood beside the giant wooden waterwheel, which had not turned a single inch in forty years. The surface creek above the dam was parched and cracked from a month without rain. Even so, Eli could hear a faint, steady gurgle somewhere deep beneath the mossy granite blocks.\n\nNora knelt by the dry wooden chute that once fed the wheel. She shone her flashlight along the stone wall where an iron grate sat half buried in leaves. Their grandfather had told them that the mill builder had tapped a cold mountain spring to keep grain grinding during summer droughts. Over the decades, however, the hidden channel had vanished from sight. Beneath the mossy oak beams of the dry millrace, the hidden stone arch of the old springhouse was completely blocked by fallen slate and tangled hemlock roots.\n\nEli stepped into the cool trench and pressed his palm against the damp slate slabs. The rock felt icy against his skin, proving that subterranean water was still pooling right behind the wall. If they pried all the heavy stones out at once, a sudden surge of mud might flood the lower cellar of the mill. Instead, Nora pointed to a narrow weep hole at the base of the arch where a thin ribbon of clear water trickled out.\n\nWorking with a flat iron pry bar and a cedar branch, the two explorers cleared the lower outlet first. Eli braced his boots against the granite sill and dislodged a wedge of gray slate near the bottom corner. Right away, a stream of cold, clear spring water gushed into the stone trough, washing away decades of dark silt. As the pressure behind the wall dropped, they lifted the tangled hemlock roots out of the arch without a slide.\n\nInside the low stone chamber, two clear limestone streams converged in a deep basin carved out of solid bedrock. The water was so pure that Eli could count the white quartz pebbles resting on the bottom. Following the stone gutter they had just cleared, the spring flowed down the chute and dripped onto the lower blades of the great wheel. With a deep groan of seasoned oak, the old waterwheel shifted an inch, keeping the builder's secret promise alive.",
+    "wordCount": 405,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Beneath the mossy oak beams of the dry millrace, the hidden stone arch of the old springhouse was completely blocked by fallen slate and tangled hemlock roots.",
+      "actorChunk": "fallen slate and tangled hemlock roots",
+      "actionChunk": "completely blocked",
+      "receiverChunk": "the hidden stone arch of the old springhouse",
+      "distractorChunks": [
+        "Beneath the mossy oak beams of the dry millrace"
+      ],
+      "activeRewrite": "Beneath the mossy oak beams of the dry millrace, fallen slate and tangled hemlock roots completely blocked the hidden stone arch of the old springhouse."
+    },
+    "tier2Words": [
+      {
+        "word": "parched",
+        "definition": "dried out with heat; extremely thirsty or lacking water",
+        "rootHint": "Middle English 'parchen' (to dry up or roast)",
+        "contextClue": "The surface creek above the dam was dry and cracked from a full month without rain."
+      },
+      {
+        "word": "subterranean",
+        "definition": "existing, occurring, or flowing beneath the Earth's surface",
+        "rootHint": "Latin 'sub-' (under) + 'terra' (earth or ground)",
+        "contextClue": "The icy rock proved that underground spring water was still pooling behind the stone wall."
+      },
+      {
+        "word": "dislodged",
+        "definition": "knocked or pried out of a fixed or stuck position",
+        "rootHint": "Old French 'deslogier' (to move from a place)",
+        "contextClue": "Eli used an iron pry bar to pry loose a wedge of gray slate stuck near the bottom corner."
+      },
+      {
+        "word": "converged",
+        "definition": "came together from different directions to meet at one point",
+        "rootHint": "Latin 'con-' (together) + 'vergere' (to bend or incline)",
+        "contextClue": "Inside the stone chamber, two separate limestone streams met and flowed together in a single deep basin."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w71_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Beneath the mossy oak beams of the dry millrace, the hidden stone arch of the old springhouse was completely blocked by fallen slate and tangled hemlock roots.\"\n\nBased on the structure of this sentence, what actually blocked the stone arch of the springhouse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The mossy oak beams of the dry millrace",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The hidden stone arch pressing down on the creek",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Fallen slate and tangled hemlock roots",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Bags of grain left inside the lower cellar by the miller",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Beneath the mossy oak beams of the dry millrace, the hidden stone arch of the old springhouse was completely blocked by fallen slate and tangled hemlock roots.",
+      "childTip": "Look right after the passive verb 'was completely blocked by' to find what caused the blockage.",
+      "parentExplanation": "Aligned to ELAGSE5L1, this passive sentence begins with a prepositional phrase and places the receiver ('the hidden stone arch') before the verb. The true grammatical actor appears after 'by': 'fallen slate and tangled hemlock roots' (Option C)."
+    },
+    {
+      "questionId": "w71_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The rock felt icy against his skin, proving that subterranean water was still pooling right behind the wall.\"\n\nWhat does the word \"subterranean\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Flowing or located beneath the surface of the ground",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Heated by the July sun on top of the red clay hills",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Poured from a plastic water bottle carried in a backpack",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Frozen into solid blocks of winter ice all year long",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The rock felt icy against his skin, proving that subterranean water was still pooling right behind the wall.",
+      "childTip": "Break the word into its Latin parts: 'sub-' (under) and 'terra' (earth or ground).",
+      "parentExplanation": "From Latin 'sub-' (under) and 'terra' (earth), 'subterranean' describes the hidden underground spring water pooling behind the buried stone wall (Option A)."
+    },
+    {
+      "questionId": "w71_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Why do Eli and Nora clear the narrow weep hole at the bottom of the arch before removing all the heavy stones?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They want to let the water pressure drop safely so a sudden mud surge does not flood the mill cellar.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "They hope to trap white quartz pebbles inside the iron grate to sell in town.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "They are afraid the cedar branch will snap if it touches the mossy oak beams.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "They want to keep the spring water locked inside the cave so the waterwheel never turns.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "If they pried all the heavy stones out at once, a sudden surge of mud might flood the lower cellar of the mill.",
+      "childTip": "Click the sentence in Paragraph 3 that warns what might happen if they pried all the heavy stones out at once.",
+      "parentExplanation": "Paragraph 3 explains that prying out all the stones at once could unleash a sudden surge of mud into the lower cellar; releasing the water gradually through the lower outlet drops the pressure safely first (Option A)."
+    },
+    {
+      "questionId": "w71_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4B_CONJUNCTIONS_PREPOSITIONS",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 1:\n\n\"The surface creek above the dam was parched and cracked from a month without rain. Even so, Eli could hear a faint, steady gurgle somewhere deep beneath the mossy granite blocks.\"\n\nHow does the transition phrase \"Even so\" connect these two sentences?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It shows that the dry weather caused the granite blocks to crack in half.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "It introduces a surprising contrast between the bone-dry surface creek and the hidden water still flowing underground.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It proves that Eli was imagining the sound of water because no water existed anywhere near the mill.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "It explains the exact year when the Hawkins family built the wooden dam.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Even so, Eli could hear a faint, steady gurgle somewhere deep beneath the mossy granite blocks.",
+      "childTip": "Think about how 'Even so' works like 'Despite that' to contrast the dry creek with the underground gurgle.",
+      "parentExplanation": "Aligned to ELAGSE5L1, the conjunctive phrase 'Even so' signals a concession/contrast: despite the surface creek being parched from drought, Eli still hears water gurgling underground (Option B)."
+    },
+    {
+      "questionId": "w71_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w71_q6",
+      "prompt": "PART A: What mystery from their grandfather's story do Eli and Nora confirm by the end of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The mill builder had connected a hidden underground spring to the chute so the mill could run even during summer droughts.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The old miller had hidden bags of gold coins beneath the white quartz pebbles in the basin.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The giant oak waterwheel was too heavy to ever move again without an electric motor.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Hemlock trees only grow inside dark stone caves where no sunlight can reach.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Their grandfather had told them that the mill builder had tapped a cold mountain spring to keep grain grinding during summer droughts.",
+      "childTip": "Connect what their grandfather told them in Paragraph 2 to what happens when the water hits the wheel in Paragraph 5.",
+      "parentExplanation": "In Paragraph 2, the children recall their grandfather's account that the mill builder tapped a mountain spring for summer droughts; by clearing the blocked arch in Paragraphs 4–5, they confirm the hidden springhouse and watch its water shift the wheel (Option A)."
+    },
+    {
+      "questionId": "w71_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w71_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Late July heat baked the red clay hills of North Carolina.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Their grandfather had told them that the mill builder had tapped a cold mountain spring to keep grain grinding during summer droughts.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"Working with a flat iron pry bar and a cedar branch, the two explorers cleared the lower outlet first.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"The water was so pure that Eli could count the white quartz pebbles resting on the bottom.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Their grandfather had told them that the mill builder had tapped a cold mountain spring to keep grain grinding during summer droughts.",
+      "childTip": "Select the quote from Paragraph 2 that states the grandfather's story about the mill builder's secret water supply.",
+      "parentExplanation": "Option B directly states the grandfather's story about the drought-proof mountain spring that Eli and Nora uncover and verify by the end of the passage."
+    }
+  ]
+}

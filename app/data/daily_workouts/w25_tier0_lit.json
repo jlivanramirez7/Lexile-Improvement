@@ -1,0 +1,309 @@
+{
+  "workoutId": "w25_tier0_lit",
+  "workoutNumber": 25,
+  "title": "The Shell on the Flooded Path",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 860,
+  "fkgl": 5.33,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Shell on the Flooded Path",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Warm steam rose from the wet bike path in Piedmont Park after a loud summer storm. Maya stepped around puddles in her yellow rain boots and listened to water drip from the oak leaves. Strong gusts had blown pine cones and tangled twigs across the gray concrete. Near the stone bridge, the muddy creek was still rushing fast and high. Most neighbors stayed inside their dry homes until the clouds cleared completely. Maya liked walking right after the rain because the quiet park felt fresh and alive.\n\nAs she neared the willow tree, a round lump beside the wooden rail caught her eye. At first, she thought it was just a smooth river rock washed up by the flood. Then she saw bright orange spots painted across a dark brown dome. The small eastern box turtle, trapped between two heavy oak branches and a rising puddle, was carefully lifted by Maya onto dry grass. When her fingers touched its wet shell, the shy reptile pulled its head tight inside.\n\nMaya knelt on the damp ground and stayed very still so she would not scare it further. She knew that wild turtles needed to stay near their own home turf to find food and shelter. Taking the animal to her house would only harm it. Instead, she looked for a safe spot on the higher hill where blackberry bushes grew thick. The soft soil under the bushes was warm and free from fast runoff.\n\nBefore moving the turtle again, Maya decided to inspect its shell for any cracks or scrapes. The heavy branches had only left a streak of brown mud across its back. While she waited in silence, the front hinge of the shell slowly opened a crack. Two dark eyes peeked out from the gap to check the sunny bank. After a long pause, four scaly legs pushed against the grass and carried the turtle toward the shade.\n\nMaya watched until the orange spots vanished beneath the green leaves of the blackberry patch. She felt grateful that she had walked down the trail before bikes returned to the path. A speeding wheel could have struck the stranded animal near the bridge. Helping wildlife did not require a big rescue team or fancy tools. Sometimes a quiet walk and two gentle hands were enough to keep a small neighbor safe.",
+    "wordCount": 390,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The small eastern box turtle, trapped between two heavy oak branches and a rising puddle, was carefully lifted by Maya onto dry grass.",
+      "actorChunk": "Maya",
+      "actionChunk": "carefully lifted",
+      "receiverChunk": "The small eastern box turtle",
+      "distractorChunks": [
+        "trapped between two heavy oak branches and a rising puddle",
+        "onto dry grass"
+      ],
+      "activeRewrite": "Maya carefully lifted the small eastern box turtle onto dry grass."
+    },
+    "tier2Words": [
+      {
+        "word": "stranded",
+        "definition": "left stuck in a place without a way to get out safely on one's own",
+        "rootHint": "From Old English strand, meaning 'shore or beach where ships run aground'",
+        "contextClue": "The turtle was trapped between two heavy oak branches and a rising puddle near the bike path."
+      },
+      {
+        "word": "inspect",
+        "definition": "to look closely at something in order to check for damage or problems",
+        "rootHint": "Latin root spect- ('to look') + prefix in- ('into')",
+        "contextClue": "Maya looked closely at the turtle's shell to check for any cracks or scrapes."
+      },
+      {
+        "word": "vanished",
+        "definition": "disappeared completely from sight",
+        "rootHint": "From Latin evanescere, meaning 'to fade away or disappear'",
+        "contextClue": "Maya watched until the orange spots on the shell could no longer be seen beneath the green leaves."
+      },
+      {
+        "word": "reptile",
+        "definition": "a cold-blooded animal with scaly skin, such as a turtle, lizard, or snake",
+        "rootHint": "From Latin reptilis, meaning 'creeping or crawling'",
+        "contextClue": "The box turtle had a hard shell and four scaly legs."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w25_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The small eastern box turtle, trapped between two heavy oak branches and a rising puddle, was carefully lifted by Maya onto dry grass.\"\n\nBased on the way this sentence is built, who or what performed the action of lifting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The two heavy oak branches lifted Maya over the rising puddle.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Maya lifted the small eastern box turtle onto the dry grass.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The small eastern box turtle lifted the heavy oak branches by itself.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The rising puddle lifted the wooden rail onto the grassy hill.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The small eastern box turtle, trapped between two heavy oak branches and a rising puddle, was carefully lifted by Maya onto dry grass.",
+      "childTip": "Find the 'by' phrase after the action 'was carefully lifted' to spot who did the lifting.",
+      "parentExplanation": "In this passive-voice sentence, 'The small eastern box turtle' receives the action, while the prepositional phrase 'by Maya' identifies Maya as the actor who lifted the turtle."
+    },
+    {
+      "questionId": "w25_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Before moving the turtle again, Maya decided to inspect its shell for any cracks or scrapes. The heavy branches had only left a streak of brown mud across its back.\"\n\nWhat does the word inspect mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To paint bright orange spots across a dark surface",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "To wash away mud using fast creek water",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "To examine carefully for any signs of harm",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "To hide something deep beneath green bushes",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Before moving the turtle again, Maya decided to inspect its shell for any cracks or scrapes.",
+      "childTip": "Look at why Maya checks the shell: she is looking closely for cracks or scrapes.",
+      "parentExplanation": "The context clue 'for any cracks or scrapes' shows that 'inspect' means to examine closely for damage (Option C)."
+    },
+    {
+      "questionId": "w25_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why does Maya decide to leave the turtle in the park instead of taking it home?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She knows wild turtles need to stay in their own home area to find food and shelter.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She is afraid the turtle will bite her fingers if she carries it across the bridge.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Her parents never allow her to wear muddy rain boots inside the house.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The turtle is too heavy for one person to carry up the steep concrete path.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "She knew that wild turtles needed to stay near their own home turf to find food and shelter.",
+      "childTip": "Click the sentence in Paragraph 3 that explains what wild turtles need in their own home area.",
+      "parentExplanation": "Paragraph 3 explicitly states that Maya knew wild turtles must stay near their own home turf to find food and shelter, and taking it home would harm it."
+    },
+    {
+      "questionId": "w25_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 1 help set up the events of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It explains why blackberry bushes grow best on sunny hills during the summer.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "It shows that every neighbor in town came out to clean branches off the bridge.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "It describes the storm damage in the park and explains why Maya is out walking on the path.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "It teaches readers how to tell an eastern box turtle apart from a painted river rock.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Strong gusts had blown pine cones and tangled twigs across the gray concrete.",
+      "childTip": "Think about what Paragraph 1 shows first: the wet park after the storm and Maya starting her walk.",
+      "parentExplanation": "Paragraph 1 establishes the setting—a flooded, branch-strewn park right after a summer storm—and explains why Maya is walking along the path where she discovers the trapped turtle."
+    },
+    {
+      "questionId": "w25_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w25_q6",
+      "prompt": "Part A: Which sentence best states the central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Walking outside right after a thunderstorm is always safer than riding a bicycle.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "B",
+          "text": "Wild animals can only survive storms if park workers build higher bridges.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "River rocks and box turtles look exactly the same when they are covered in mud.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Paying attention and acting with gentle care allows ordinary people to protect nature.",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Sometimes a quiet walk and two gentle hands were enough to keep a small neighbor safe.",
+      "childTip": "Look at the final paragraph to find the big lesson Maya learns about helping wildlife.",
+      "parentExplanation": "The central theme of the passage is that simple mindfulness and gentle action ('a quiet walk and two gentle hands') are enough for an everyday person to protect wild creatures in their natural habitat."
+    },
+    {
+      "questionId": "w25_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w25_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Warm steam rose from the wet bike path in Piedmont Park after a loud summer storm.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"At first, she thought it was just a smooth river rock washed up by the flood.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"The heavy branches had only left a streak of brown mud across its back.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Sometimes a quiet walk and two gentle hands were enough to keep a small neighbor safe.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Sometimes a quiet walk and two gentle hands were enough to keep a small neighbor safe.",
+      "childTip": "Choose the quote from Paragraph 5 that sums up how Maya's gentle hands kept the turtle safe.",
+      "parentExplanation": "Option D directly supports the theme in Part A by stating that a quiet walk and gentle hands were all it took to keep the turtle safe."
+    }
+  ]
+}

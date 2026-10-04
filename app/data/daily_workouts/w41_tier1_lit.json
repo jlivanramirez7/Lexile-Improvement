@@ -1,0 +1,308 @@
+{
+  "workoutId": "w41_tier1_lit",
+  "workoutNumber": 41,
+  "title": "Behind the Velvet Curtain",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 955,
+  "fkgl": 5.56,
+  "genre": "Literary",
+  "subGenre": "Contemporary Fiction",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL4",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Behind the Velvet Curtain",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "From the dark wing of the middle school stage, Nora watched the final lines of Act One. While the audience laughed at the actors in their pirate hats, Nora kept her eyes on the prompt book clipped to her board. As stage crew leader, she never bowed in the bright lights. Still, every cue depended on her timing. When the lead actor shouted his last line, Nora spoke softly into her headset. Then she reached for the thick hemp rope that closed the main velvet curtain.\n\nShe pulled down hard on the braided line, hoping the heavy red drapes would glide shut with a soft swoosh. Instead, the rope stopped dead in her palms after moving only three feet. Above the stage, the iron pulley wheel gave a sharp squeak and refused to turn. The heavy velvet curtain, snagged high near the wooden beam by a loose canvas banner, was held half-open above the startled cast by the jammed iron pulley. Down in the front row, whispers rippled through the crowd as the actors stood frozen in place.\n\nNora's heart hammered against her ribs like a trapped bird, but she kept her voice steady on the headset. She told the lighting boy to fade the stage lamps to dark blue so the crew could switch the cardboard ship for the island set in the shadows. Next, she clipped her flashlight to her shirt collar. She climbed the short wooden ladder bolted to the side wall.\n\nShining her narrow beam along the iron track, Nora spotted the culprit right away. A corner of the painted storm-cloud banner had drifted sideways in a draft from the gym doors. The cloth had wedged itself deep into the pulley groove. If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter. Gripping the ladder rail with one hand, Nora turned the pulley wheel backward half an inch to slacken the pinch, then slipped the fabric free.\n\nShe climbed down, planted her boots on the floor, and gave the hemp rope a smooth, steady pull. The velvet drapes swept shut just as the hall lights blinked on for intermission. Across the dim wing, the drama teacher gave Nora a quiet smile and a thumbs-up. The calmest person in the room had just saved the school play.",
+    "wordCount": 388,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The heavy velvet curtain, snagged high near the wooden beam by a loose canvas banner, was held half-open above the startled cast by the jammed iron pulley.",
+      "actorChunk": "the jammed iron pulley",
+      "actionChunk": "held half-open above the startled cast",
+      "receiverChunk": "The heavy velvet curtain",
+      "distractorChunks": [
+        "snagged high near the wooden beam by a loose canvas banner"
+      ],
+      "activeRewrite": "The jammed iron pulley held the heavy velvet curtain half-open above the startled cast."
+    },
+    "tier2Words": [
+      {
+        "word": "cue",
+        "definition": "a signal in a play that tells an actor or crew member to do something at an exact moment",
+        "rootHint": "Theater term from the letter Q (Latin quando, 'when to enter')",
+        "contextClue": "Nora watched the prompt book and waited for the lead actor's last line before signaling the curtain."
+      },
+      {
+        "word": "snagged",
+        "definition": "caught or hooked on a sharp or sticking-out object",
+        "rootHint": "From Old Norse snagi, meaning 'a wooden peg or sharp point'",
+        "contextClue": "A corner of the loose canvas banner had caught inside the pulley groove and stopped the rope."
+      },
+      {
+        "word": "culprit",
+        "definition": "the person or thing responsible for causing a problem",
+        "rootHint": "From Anglo-French culpable, meaning 'at fault'",
+        "contextClue": "Shining her beam along the track, Nora spotted what was causing the jam: the corner of the painted banner."
+      },
+      {
+        "word": "slacken",
+        "definition": "to loosen or reduce tightness and tension",
+        "rootHint": "Old English slaec ('loose, not tight') + suffix -en ('to make')",
+        "contextClue": "Nora turned the wheel backward half an inch to loosen the tight pinch so she could slip the fabric free."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w41_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The heavy velvet curtain, snagged high near the wooden beam by a loose canvas banner, was held half-open above the startled cast by the jammed iron pulley.\"\n\nBased on the sentence, what snagged the curtain near the beam, and what held it half-open?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The startled cast snagged the wooden beam, and the heavy velvet curtain held the iron pulley open.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A loose canvas banner snagged the curtain near the beam, and the jammed iron pulley held it half-open.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The jammed iron pulley painted the canvas banner and dropped it onto the pirate actors.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "A spectator in the front row pulled the hemp rope and tied it to a folding chair.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The heavy velvet curtain, snagged high near the wooden beam by a loose canvas banner, was held half-open above the startled cast by the jammed iron pulley.",
+      "childTip": "Check both 'by' phrases: a loose canvas banner snagged the curtain, and the jammed iron pulley held it half-open.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'snagged... by a loose canvas banner' and 'was held half-open... by the jammed iron pulley'. Option B accurately matches both."
+    },
+    {
+      "questionId": "w41_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2B_FIGURATIVE_POINT_OF_VIEW",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Nora's heart hammered against her ribs like a trapped bird, but she kept her voice steady on the headset.\"\n\nWhy does the author compare Nora's heart to \"a trapped bird\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To show that a real pigeon had flown through the gym doors and landed in the rafters",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "To show that Nora felt a sudden rush of nervousness inside even though she acted calm",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "To show that Nora had forgotten all her stage cues and wanted to run off the stage",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "To show that the pirate actors were carrying a wooden birdcage as a stage prop",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Nora's heart hammered against her ribs like a trapped bird, but she kept her voice steady on the headset.",
+      "childTip": "Think about how fast a trapped bird flutters, and notice how the word 'but' contrasts that feeling with her steady voice.",
+      "parentExplanation": "The simile 'her heart hammered against her ribs like a trapped bird' (ELAGSE5RL4) conveys Nora's sudden internal alarm when the curtain jams, which contrasts with her calm, steady voice on the headset."
+    },
+    {
+      "questionId": "w41_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why does Nora tell the lighting boy to fade the stage lamps to dark blue as soon as the curtain jams?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dimming the stage lights lets the crew change the scenery in the shadows even without the closed curtain.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Dark blue light helps the audience read their printed playbills during intermission.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "The bright spotlights were overheating and causing the hemp rope to melt near the ceiling.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The drama teacher ordered her to cancel the second act of the play right away.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "She told the lighting boy to fade the stage lamps to dark blue so the crew could switch the cardboard ship for the island set in the shadows.",
+      "childTip": "Click the sentence in Paragraph 3 that tells what Nora asked the lighting boy to do and why.",
+      "parentExplanation": "Paragraph 3 states that Nora had the lighting boy fade the lamps to dark blue 'so the crew could switch the cardboard ship for the island set in the shadows' while she fixed the curtain."
+    },
+    {
+      "questionId": "w41_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"Gripping the ladder rail with one hand, Nora turned the pulley wheel backward half an inch to slacken the pinch, then slipped the fabric free.\"\n\nWhat does the word slacken mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To loosen or make less tight",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To tie into a double knot",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "To cut with sharp metal scissors",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "To shine a bright flashlight beam on",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Gripping the ladder rail with one hand, Nora turned the pulley wheel backward half an inch to slacken the pinch, then slipped the fabric free.",
+      "childTip": "Think about what turning the wheel backward half an inch does so the pinched banner can slip free.",
+      "parentExplanation": "By turning the jammed pulley wheel backward slightly, Nora loosened ('slackened') the tight pinch on the banner so the fabric could slide out without tearing."
+    },
+    {
+      "questionId": "w41_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w41_q6",
+      "prompt": "Part A: Why does Nora climb the ladder to inspect the pulley instead of pulling harder on the rope from the floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She knows that yanking a jammed rope blindly will tear the banner and wedge the pulley wheel even tighter.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She wants the audience in the front row to see her climbing the wall during intermission.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "The hemp rope had snapped in half on the floor and was too short to reach from below.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "She needs to hang a new pirate hat from the wooden beam before Act Two begins.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter.",
+      "childTip": "Look at Paragraph 4 to see what would have happened if Nora had yanked the main rope from below.",
+      "parentExplanation": "Paragraph 4 explains that yanking the rope from below would have torn the canvas banner and jammed the wheel even tighter, so Nora climbed up to roll the wheel backward gently."
+    },
+    {
+      "questionId": "w41_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w41_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"While the audience laughed at the actors in their pirate hats, Nora kept her eyes on the prompt book clipped to her board.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Down in the front row, whispers rippled through the crowd as the actors stood frozen in place.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"The velvet drapes swept shut just as the hall lights blinked on for intermission.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter.",
+      "childTip": "Choose the quote in Paragraph 4 that explains the danger of yanking the rope from below.",
+      "parentExplanation": "Option C directly proves why Nora avoided pulling harder from the floor and instead freed the banner carefully by hand."
+    }
+  ]
+}

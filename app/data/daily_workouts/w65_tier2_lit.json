@@ -1,0 +1,309 @@
+{
+  "workoutId": "w65_tier2_lit",
+  "workoutNumber": 65,
+  "title": "Starlight in the Center Ring",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1010,
+  "fkgl": 6.92,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Starlight in the Center Ring",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Cold August dew soaked the grass as Clara and her cousin Leo carried the heavy wood rocker box onto the back lawn. Tonight was the peak of the Perseid meteor shower. They had waited all summer to test their grandfather's eight-inch Dobsonian scope. Clara wanted to swing the wide barrel toward the north sky right away so they would not miss a single shooting star. When she peered through the eyepiece at a bright guide star, however, she groaned. Instead of a sharp point of light, the star looked like a smeared, distorted comet with a flaring tail.\n\nLeo clicked on his dim red flashlight so their night eyes would stay sharp in the dark yard. He reminded Clara that the bumpy ride in their parents' trunk had likely jostled the heavy glass mirror out of place. While Clara tapped her foot and glanced at the clouds near the trees, Leo stayed calm and methodical. He slipped a small sighting cap with a tiny center hole into the top tube. Before the brightest meteors streaked across the northern sky, the tilted primary mirror at the base of the tube was carefully aligned by Leo with three brass thumbscrews.\n\nClara watched from the top of the barrel as Leo turned each lower screw by a fraction of an inch. At first, she thought he was wasting precious viewing time on a tiny reflection that barely mattered. Then Leo invited her to look through the sighting cap herself. Inside the dark tube, Clara saw a black dot painted on the center of the bottom mirror, and it sat far outside the silver ring of the eyepiece reflection. As long as the two mirrors pointed along different paths, half the faint starlight entering the tube was obscured or scattered.\n\nClara saw at once that haste would ruin their view all night. She knelt on the damp grass beside the base of the scope. She offered to turn the brass adjustment knobs while Leo called out directions from the eyepiece above. Whenever Leo asked for a quarter turn to the left, Clara moved the spring screw with steady fingers. Soon the black dot glided straight into the middle of the silver ring. Working as one team, they locked the bottom bolts just as the last thin clouds drifted away.\n\nWhen Clara looked into the wide eyepiece again, she let out a quiet gasp. The bright star Vega now shone like a crisp diamond against black space. Dozens of tiny neighbor stars that had been hidden minutes earlier now sparkled around it. A moment later, a luminous green meteor flashed across the glass and left a glowing trail that lingered for three full seconds. Clara smiled in the red glow of the flashlight, glad that Leo's patience had turned a blurry smudge into a clear window on the stars.",
+    "wordCount": 474,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Before the brightest meteors streaked across the northern sky, the tilted primary mirror at the base of the tube was carefully aligned by Leo with three brass thumbscrews.",
+      "actorChunk": "Leo",
+      "actionChunk": "carefully aligned",
+      "receiverChunk": "the tilted primary mirror at the base of the tube",
+      "distractorChunks": [
+        "Before the brightest meteors streaked across the northern sky",
+        "with three brass thumbscrews"
+      ],
+      "activeRewrite": "Before the brightest meteors streaked across the northern sky, Leo carefully aligned the tilted primary mirror at the base of the tube with three brass thumbscrews."
+    },
+    "tier2Words": [
+      {
+        "word": "distorted",
+        "definition": "pulled or twisted out of its normal, clear shape",
+        "rootHint": "Latin 'dis-' (completely) + 'torquere' (to twist)",
+        "contextClue": "Instead of a sharp pinpoint of light, the guide star looked like a smeared comet with a flaring tail."
+      },
+      {
+        "word": "methodical",
+        "definition": "done according to a systematic, orderly, and careful procedure",
+        "rootHint": "Greek 'methodos' (pursuit of knowledge, systematic way)",
+        "contextClue": "While Clara tapped her foot anxiously, Leo stayed calm and worked step-by-step with the sighting cap and brass screws."
+      },
+      {
+        "word": "obscured",
+        "definition": "kept from being seen clearly; hidden or blocked from view",
+        "rootHint": "Latin 'obscurus' (dark, covered over)",
+        "contextClue": "Because the mirrors pointed along different paths, half the faint starlight was blocked or scattered before reaching their eyes."
+      },
+      {
+        "word": "luminous",
+        "definition": "shining brightly; radiating or reflecting light, especially in the dark",
+        "rootHint": "Latin 'lumen' (light)",
+        "contextClue": "A bright green meteor flashed across the dark sky and left a glowing trail."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w65_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Before the brightest meteors streaked across the northern sky, the tilted primary mirror at the base of the tube was carefully aligned by Leo with three brass thumbscrews.\"\n\nBased on the structure of this sentence, who or what actually performed the action of aligning the mirror?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The brightest meteors streaking across the northern sky",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Leo, who used the three brass thumbscrews at the base",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The tilted primary mirror pushing against the brass thumbscrews",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Clara's grandfather before he packed the telescope in the trunk",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Before the brightest meteors streaked across the northern sky, the tilted primary mirror at the base of the tube was carefully aligned by Leo with three brass thumbscrews.",
+      "childTip": "Look right after the passive verb 'was carefully aligned by' to see who did the work.",
+      "parentExplanation": "This passive sentence places an introductory time clause first and the receiver ('the tilted primary mirror') as the grammatical subject. The true actor performing the alignment appears after the preposition 'by': 'Leo' (Option B)."
+    },
+    {
+      "questionId": "w65_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"While Clara tapped her foot and glanced at the clouds near the trees, Leo stayed calm and methodical.\"\n\nWhat does the word \"methodical\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Working in a careful, step-by-step, and orderly way",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Rushing through a task before dark clouds cover the stars",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Shining a bright white light across the damp backyard grass",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Refusing to let anyone else touch the telescope all night",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "While Clara tapped her foot and glanced at the clouds near the trees, Leo stayed calm and methodical.",
+      "childTip": "Notice the contrast word 'While' that compares impatient Clara to calm Leo following each step in order.",
+      "parentExplanation": "The sentence contrasts Clara's impatience with Leo's calm approach as he inserts the sighting cap and adjusts the thumbscrews in order. Thus, 'methodical' means working in a careful, step-by-step manner (Option A)."
+    },
+    {
+      "questionId": "w65_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_CHARACTER_CONTRAST",
+      "standard": "ELAGSE5RL3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "How do Clara's and Leo's reactions differ when they first discover the telescope's blurry view in Paragraphs 1 and 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Clara wants to carry the telescope back inside, whereas Leo wants to wait until the moon rises.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "Clara thinks the eyepiece glass is cracked, whereas Leo blames the wet August dew on the grass.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Clara grows impatient about missing meteors, whereas Leo calmly diagnoses and adjusts the shifted mirror.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Clara immediately unscrews the brass bolts, whereas Leo refuses to look through the sighting cap.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "While Clara tapped her foot and glanced at the clouds near the trees, Leo stayed calm and methodical.",
+      "childTip": "Click the sentence in Paragraph 2 that directly compares Clara's impatient reaction with Leo's calm response.",
+      "parentExplanation": "Aligned to ELAGSE5RL3, Paragraphs 1 and 2 contrast Clara's eagerness and frustration over losing viewing time with Leo's calm, methodical diagnosis that the car ride jostled the primary mirror out of alignment (Option C)."
+    },
+    {
+      "questionId": "w65_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_PLOT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 3 contribute to the overall structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It introduces the main conflict by explaining why the Perseid meteor shower happens every August.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "It marks a turning point where Clara sees the misaligned reflection herself and understands why Leo's careful work is needed.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It resolves the plot by describing the bright green trail left by the first meteor.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "It proves that Dobsonian telescopes are too fragile to ever be transported in a family car.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Inside the dark tube, Clara saw a black dot painted on the center of the bottom mirror, and it sat far outside the silver ring of the eyepiece reflection.",
+      "childTip": "Ask yourself how looking through the sighting cap in Paragraph 3 changes Clara's attitude in Paragraph 4.",
+      "parentExplanation": "In Paragraphs 1–2, Clara feels Leo is wasting time. In Paragraph 3, Leo invites her to look through the sighting cap; seeing the off-center dot firsthand shifts her perspective and prompts her to help calibrate the mirror in Paragraph 4 (Option B)."
+    },
+    {
+      "questionId": "w65_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w65_q6",
+      "prompt": "PART A: Why do Clara and Leo succeed in getting a crystal-clear view of the meteor shower by the end of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They replace the heavy primary mirror with a brand-new lens from their grandfather's garage.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "They wait for the bright moon to rise and light up the dark backyard grass.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Clara sets aside her haste to turn the base knobs while Leo guides the mirror alignment from the eyepiece.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Leo removes the sighting cap and tilts the wooden rocker box toward the southern horizon.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "She offered to turn the brass adjustment knobs while Leo called out directions from the eyepiece above.",
+      "childTip": "Look at Paragraph 4 to see how the two cousins divide the job of aligning the telescope.",
+      "parentExplanation": "Once Clara realizes haste will ruin their view, she kneels by the base to turn the adjustment screws while Leo checks the center ring from the eyepiece above, allowing them to align the mirror rapidly together (Option C)."
+    },
+    {
+      "questionId": "w65_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w65_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Cold August dew soaked the grass as Clara and her cousin Leo carried the heavy wood rocker box onto the back lawn.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Instead of a sharp point of light, the star looked like a smeared, distorted comet with a flaring tail.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"At first, she thought he was wasting precious viewing time on a tiny reflection that barely mattered.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "\"She offered to turn the brass adjustment knobs while Leo called out directions from the eyepiece above.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "She offered to turn the brass adjustment knobs while Leo called out directions from the eyepiece above.",
+      "childTip": "Choose the quote from Paragraph 4 that shows how Clara and Leo teamed up to adjust the mirror.",
+      "parentExplanation": "Option D provides the exact textual evidence from Paragraph 4 showing how Clara and Leo coordinated their efforts at the base and eyepiece to align the mirror, directly supporting Part A."
+    }
+  ]
+}

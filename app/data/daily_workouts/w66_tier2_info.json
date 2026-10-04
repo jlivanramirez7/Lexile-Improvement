@@ -1,0 +1,309 @@
+{
+  "workoutId": "w66_tier2_info",
+  "workoutNumber": 66,
+  "title": "A Conveyor Belt of Fire and Stone",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1015,
+  "fkgl": 6.49,
+  "genre": "Informational",
+  "subGenre": "Geology & Volcanology",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RI3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "A Conveyor Belt of Fire and Stone",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "On a map of the Pacific Ocean, the islands of Hawaii line up like stepping stones from northwest to southeast. Most volcanoes on Earth form near the edges of giant crust plates. There, the plates crash together or pull apart. Yet Hawaii sits thousands of miles away from the nearest plate border. For years, scientists wondered why a long line of fiery peaks rose right in the middle of the sea. The answer lies in a hidden blowtorch deep below the seabed.\n\nDeep inside the Earth's mantle, a narrow column of hot rock rises toward the crust. This fixed heat source is called a mantle hotspot. While the hotspot itself stays stationary in one spot, the ocean floor above it never stops moving. Over millions of years, the thick rocky crust of the Pacific Plate is slowly dragged northwest across a fixed plume of rising heat by deep currents in the Earth. The plate creeps along at about the same speed that a human fingernail grows.\n\nWhere the hotspot burns through the moving plate, molten rock called magma melts a path up to the seabed. Lava pours out onto the cold sea floor and cools into dark stone. Each blast piles fresh rock higher and higher. Soon a deep sea mountain pokes above the waves as a new island. The Big Island of Hawaii sits right over the hotspot today, which is why its active craters still pour red lava into the sea.\n\nBecause the Pacific Plate keeps sliding northwest, no island can stay over the fiery plume forever. Eventually, the crust carries each volcano away from its deep magma supply. Cut off from the heat below, the cone stops blasting and grows dormant. At the same time, the fixed hotspot punches a brand-new hole in the plate right behind the older island. Like boxes on a factory conveyor belt, a chain of islands forms in a neat row.\n\nThis steady motion shows why the islands change so much from one end of the chain to the other. The oldest islands in the northwest, such as Kauai, left the hotspot long ago. Wind, rain, and crashing waves have worn down their tall peaks into steep green cliffs and sandy beaches. Farther out, the oldest peaks have worn down until they are fully submerged under the waves as flat seamounts. Meanwhile, on the southeast side of the Big Island, a new sea mount is already growing toward the sun.",
+    "wordCount": 408,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Over millions of years, the thick rocky crust of the Pacific Plate is slowly dragged northwest across a fixed plume of rising heat by deep currents in the Earth.",
+      "actorChunk": "deep currents in the Earth",
+      "actionChunk": "slowly drag northwest",
+      "receiverChunk": "the thick rocky crust of the Pacific Plate",
+      "distractorChunks": [
+        "Over millions of years",
+        "across a fixed plume of rising heat"
+      ],
+      "activeRewrite": "Over millions of years, deep currents in the Earth slowly drag the thick rocky crust of the Pacific Plate northwest across a fixed plume of rising heat."
+    },
+    "tier2Words": [
+      {
+        "word": "stationary",
+        "definition": "not moving; remaining fixed in a single place",
+        "rootHint": "Latin 'statio' (a standing still, fixed post)",
+        "contextClue": "While the hotspot stays fixed in one spot, the ocean floor above it never stops moving."
+      },
+      {
+        "word": "molten",
+        "definition": "liquefied by extreme heat; melted into a glowing fluid",
+        "rootHint": "Old English 'melten' (to melt or make liquid)",
+        "contextClue": "Hot rock called magma melts a path up to the seabed and pours out as lava."
+      },
+      {
+        "word": "dormant",
+        "definition": "inactive as if asleep; no longer erupting",
+        "rootHint": "Latin 'dormire' (to sleep)",
+        "contextClue": "Cut off from the heat below, the volcano stops erupting and becomes quiet."
+      },
+      {
+        "word": "submerged",
+        "definition": "completely covered with water; sunken beneath the surface",
+        "rootHint": "Latin 'sub-' (under) + 'mergere' (to plunge or dip)",
+        "contextClue": "Ancient peaks have eroded until they sit beneath the waves as underwater seamounts."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w66_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Over millions of years, the thick rocky crust of the Pacific Plate is slowly dragged northwest across a fixed plume of rising heat by deep currents in the Earth.\"\n\nBased on the structure of this sentence, what actually pulls the Pacific Plate toward the northwest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The fixed plume of rising heat pushing the islands apart",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The thick rocky crust sliding down a steep underwater mountain",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Deep currents in the Earth moving beneath the crust",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Strong ocean waves crashing against the beaches of Kauai",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Over millions of years, the thick rocky crust of the Pacific Plate is slowly dragged northwest across a fixed plume of rising heat by deep currents in the Earth.",
+      "childTip": "Find the 'by' phrase at the end of the sentence to see what force drags the Pacific Plate.",
+      "parentExplanation": "In this passive-voice construction, 'the thick rocky crust of the Pacific Plate' is the receiver of the verb 'is slowly dragged.' The true actor performing the dragging appears after the preposition 'by': 'deep currents in the Earth' (Option C)."
+    },
+    {
+      "questionId": "w66_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"While the hotspot itself stays stationary in one spot, the ocean floor above it never stops moving.\"\n\nWhat does the word \"stationary\" mean as it is used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fixed in one place without moving",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Spinning rapidly in a wide circle under the sea",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Cooling down until it turns into solid ice",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Floating on top of the ocean waves like a boat",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "While the hotspot itself stays stationary in one spot, the ocean floor above it never stops moving.",
+      "childTip": "Use the contrast between the hotspot staying 'in one spot' and the ocean floor that 'never stops moving.'",
+      "parentExplanation": "The sentence contrasts the hotspot ('stays stationary in one spot') with the moving ocean floor, and the previous sentence calls it a 'fixed heat source.' Therefore, 'stationary' means fixed in one place without moving (Option A)."
+    },
+    {
+      "questionId": "w66_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_CAUSE_EFFECT",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why do older Hawaiian volcanoes eventually stop erupting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cold rain and ocean waves fill the top craters with wet sand and mud.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The moving Pacific Plate carries each island away from the fixed hotspot that supplies its magma.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The mantle hotspot runs out of heat after building a single volcano.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "New islands block the wind from blowing across the northwest side of the chain.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Eventually, the crust carries each volcano away from its deep magma supply.",
+      "childTip": "Click the sentence in Paragraph 4 that explains how the moving crust separates a volcano from its magma.",
+      "parentExplanation": "Aligned to ELAGSE5RI3, Paragraph 4 explains the cause-and-effect relationship: as the Pacific Plate slides northwest, 'the crust carries each volcano away from its deep magma supply,' causing it to become dormant (Option B)."
+    },
+    {
+      "questionId": "w66_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Why does the author compare the Hawaiian island chain to \"boxes on a factory conveyor belt\" in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To show that factories on the Big Island use volcanic heat to build cardboard boxes",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "To prove that human machines are stronger than the currents inside the Earth's mantle",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "To help the reader picture how a moving crust plate carries finished islands away while new ones form over the same spot",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "To explain why the oldest islands in the northwest are taller than the Big Island of Hawaii",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Like boxes on a factory conveyor belt, a chain of islands forms in a neat row.",
+      "childTip": "Think about how a moving belt carries one box away so the machine can fill the next box in line.",
+      "parentExplanation": "The conveyor-belt analogy helps readers visualize how a stationary machine (the mantle hotspot) forms one volcano after another as the moving belt (the Pacific Plate) carries older islands away to the northwest (Option C)."
+    },
+    {
+      "questionId": "w66_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w66_q6",
+      "prompt": "PART A: Based on the passage, why are the islands in the northwest part of the chain smaller and more worn down than the Big Island in the southeast?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The northwest islands were formed millions of years earlier and have been eroded by wind, rain, and waves without new lava.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The hotspot burned much cooler in the past, so it could only build tiny flat seamounts in the northwest.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The northwest islands sit directly on top of the active hotspot where magma melts away their peaks.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Strong earthquakes along the plate border broke Kauai into flat underwater rocks last year.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Wind, rain, and crashing waves have worn down their tall peaks into steep green cliffs and sandy beaches.",
+      "childTip": "Check Paragraph 5 to see what happened to the oldest islands like Kauai after they left the hotspot.",
+      "parentExplanation": "Paragraph 5 explains that the northwestern islands left the hotspot millions of years ago; without fresh lava to build them up, wind, rain, and waves have steadily worn down their peaks (Option A)."
+    },
+    {
+      "questionId": "w66_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w66_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Yet Hawaii sits thousands of miles away from the nearest plate border.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"The plate creeps along at about the same speed that a human fingernail grows.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"The Big Island of Hawaii sits right over the hotspot today, which is why its active craters still pour red lava into the sea.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Wind, rain, and crashing waves have worn down their tall peaks into steep green cliffs and sandy beaches.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Wind, rain, and crashing waves have worn down their tall peaks into steep green cliffs and sandy beaches.",
+      "childTip": "Select the quote from Paragraph 5 that shows what weather and ocean forces do to the oldest islands.",
+      "parentExplanation": "Option D provides the direct textual evidence from Paragraph 5 explaining how weather and ocean erosion shrink the older northwestern islands over millions of years, supporting Part A."
+    }
+  ]
+}

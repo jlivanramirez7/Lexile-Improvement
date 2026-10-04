@@ -1,0 +1,309 @@
+{
+  "workoutId": "w73_tier2_lit",
+  "workoutNumber": 73,
+  "title": "The Song Inside the Spruce",
+  "tier": 2,
+  "lexileBand": "980L-1030L",
+  "targetLexile": 1030,
+  "fkgl": 7.22,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Song Inside the Spruce",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Sweet curls of cedar and pine dust covered the floor of Uncle Mateo's guitar shop. Eleven-year-old Tobias stood by the tall wood rack, running his fingers over stacked planks of maple, walnut, and spruce. Today, Mateo was letting him choose the top soundboard for his very first handmade acoustic guitar. Tobias immediately reached for a wide board of lowland pine on the bottom shelf. Its golden surface looked smooth and spotless, without a single knot or dark blemish.\n\nUncle Mateo smiled and lifted a narrower plank of Sitka spruce from a high beam near the ceiling. Unlike the bright lowland board, this piece had rested on drying racks for seven winters until it was fully seasoned. Tobias frowned at the pale wood. Along its outer edge ran a faint ripple where a mountain windstorm had once bent the living tree. He asked why anyone would pick an old, weathered plank over fresh lumber that had just arrived from the sawmill.\n\nMateo handed Tobias a small brass tuning hammer and asked him to hold the fresh lowland board lightly between two fingers. When Tobias tapped the center of the plank, it gave a dull, short thud, like knocking on a wet cardboard box. Next, Mateo held up the pale mountain spruce. When the thin spruce board was tapped lightly near its center seam, a clear, bell-like note was carried across the quiet workshop by the tight winter grain lines. The wood seemed to hum against Tobias's knuckles for several seconds.\n\nMateo pointed to the fine dark lines packed closely across the face of the spruce. Up on the freezing mountain ridge, the tree had grown very slowly each year, laying down tight, stiff rings of wood fiber. After seven years of slow drying in the shop, the sap had hardened into tiny crystal chambers while the wood stayed light and supple. Fresh wood from a warm valley grew fast and wide, leaving soft, spongy gaps that swallowed up string vibrations.\n\nTobias set the wide pine plank back on the lower shelf and cradled the seasoned spruce in both hands. As he planed the thin board that afternoon, each stroke of the blade released a crisp scent of resin and high mountain air. He realized that the fierce winters and long years of quiet waiting had not weakened the tree at all. Instead, those hard seasons had given the wood the strength to resonate when guitar strings finally sang across its bridge.",
+    "wordCount": 410,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "When the thin spruce board was tapped lightly near its center seam, a clear, bell-like note was carried across the quiet workshop by the tight winter grain lines.",
+      "actorChunk": "the tight winter grain lines",
+      "actionChunk": "carried",
+      "receiverChunk": "a clear, bell-like note",
+      "distractorChunks": [
+        "When the thin spruce board was tapped lightly near its center seam",
+        "across the quiet workshop"
+      ],
+      "activeRewrite": "When the thin spruce board was tapped lightly near its center seam, the tight winter grain lines carried a clear, bell-like note across the quiet workshop."
+    },
+    "tier2Words": [
+      {
+        "word": "blemish",
+        "definition": "a small mark, flaw, or spot that spoils the appearance of something",
+        "rootHint": "Old French 'blemir' (to stain or mark)",
+        "contextClue": "The golden surface of the lowland pine looked smooth and spotless, without a single knot or dark spot."
+      },
+      {
+        "word": "seasoned",
+        "definition": "dried and aged over a long time until ready for woodworking",
+        "rootHint": "Old French 'seisonner' (to ripen or mature through the seasons)",
+        "contextClue": "This plank had rested on drying racks for seven winters until its sap hardened and the wood matured."
+      },
+      {
+        "word": "supple",
+        "definition": "bending and flexing easily without cracking or breaking",
+        "rootHint": "Latin 'supplex' (flexible, pliant)",
+        "contextClue": "After slow drying, the spruce stayed light and flexible enough to vibrate with the strings."
+      },
+      {
+        "word": "resonate",
+        "definition": "to produce or be filled with a deep, clear, lingering sound",
+        "rootHint": "Latin 'resonare' (to sound again, echo)",
+        "contextClue": "The tight grain allowed the wood to ring with a clear, bell-like note when guitar strings sang across its bridge."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w73_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"When the thin spruce board was tapped lightly near its center seam, a clear, bell-like note was carried across the quiet workshop by the tight winter grain lines.\"\n\nIn the main clause of this sentence, what actually carried the clear, bell-like note across the workshop?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The center seam splitting the quiet workshop in half",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The clear, bell-like note tapping on the brass hammer",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "The tight winter grain lines inside the spruce board",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "An electric guitar amplifier plugged into the wall",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "When the thin spruce board was tapped lightly near its center seam, a clear, bell-like note was carried across the quiet workshop by the tight winter grain lines.",
+      "childTip": "Look right after 'was carried across the quiet workshop by' to find what carried the note.",
+      "parentExplanation": "In the main passive clause, 'a clear, bell-like note' is the receiver of 'was carried.' The true actor performing the action appears after the preposition 'by': 'the tight winter grain lines' (Option C)."
+    },
+    {
+      "questionId": "w73_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 2:\n\n\"Uncle Mateo smiled and lifted a narrower plank of Sitka spruce from a high beam near the ceiling. Unlike the bright lowland board, this piece had rested on drying racks for seven winters until it was fully seasoned.\"\n\nWhat does the word \"seasoned\" mean as it is used in Paragraph 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Carefully dried and aged over time so it is ready for building",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Sprinkled with salt and pepper before being cooked in an oven",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Freshly cut from a warm valley sawmill that same morning",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Painted bright gold to hide every knot and dark blemish",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Unlike the bright lowland board, this piece had rested on drying racks for seven winters until it was fully seasoned.",
+      "childTip": "Use the clue 'rested on drying racks for seven winters' to figure out what 'seasoned' means for lumber.",
+      "parentExplanation": "While 'seasoned' can refer to food spices in other contexts (Option B), here the context clue 'rested on drying racks for seven winters' proves it means aged and dried over time for woodworking (Option A)."
+    },
+    {
+      "questionId": "w73_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_CAUSE_EFFECT",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Why did the fresh lowland pine board make a dull thud instead of a clear note when Tobias tapped it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tobias held the board too tightly with both hands while tapping the outer edge.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "It grew quickly in a warm valley, leaving soft, spongy gaps in the wood that swallowed up vibrations.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It had been dried on the high ceiling beam for fourteen winters until it cracked.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The brass tuning hammer was made of soft rubber that could not make any sound.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Fresh wood from a warm valley grew fast and wide, leaving soft, spongy gaps that swallowed up string vibrations.",
+      "childTip": "Click the sentence in Paragraph 4 that explains what fast valley growth leaves inside fresh wood.",
+      "parentExplanation": "Paragraph 4 explains the contrast: whereas mountain spruce grows slowly with tight rings and hardened sap crystals, 'Fresh wood from a warm valley grew fast and wide, leaving soft, spongy gaps that swallowed up string vibrations' (Option B)."
+    },
+    {
+      "questionId": "w73_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_PLOT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Why does Uncle Mateo have Tobias tap both planks with a brass hammer in Paragraph 3 instead of simply telling him which wood to use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "So Tobias can hear and feel the difference in tone for himself rather than judging the wood only by its smooth outside look",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Because Uncle Mateo has forgotten which shelf holds the Sitka spruce and which shelf holds the walnut",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "To prove that a brass tuning hammer can break a lowland pine board in a single tap",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "So Tobias will decide to build a drum instead of an acoustic guitar",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The wood seemed to hum against Tobias's knuckles for several seconds.",
+      "childTip": "Compare how Tobias judged the boards with his eyes in Paragraph 1 to what he discovers with his ears in Paragraph 3.",
+      "parentExplanation": "In Paragraph 1, Tobias judges the wood purely by appearance. By having him tap both boards in Paragraph 3, Mateo lets Tobias hear the dull thud versus the bell-like ring firsthand (Option A)."
+    },
+    {
+      "questionId": "w73_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w73_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "New materials that look spotless on the outside are always stronger than older materials.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "True strength and beauty often come from enduring hard seasons and patient preparation rather than spotless appearances.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A guitar maker should never use wood that grew on a cold mountain ridge.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Cedar and pine dust must be swept from a workshop floor before anyone planes a board.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Instead, those hard seasons had given the wood the strength to resonate when guitar strings finally sang across its bridge.",
+      "childTip": "Look at what Tobias realizes in Paragraph 5 about the fierce winters and long years of waiting.",
+      "parentExplanation": "Aligned to ELAGSE5RL2, Tobias learns not to judge by spotless surface appearances: the mountain spruce's slow growth through fierce winters and seven years of patient seasoning gave it the inner strength to resonate clearly (Option B)."
+    },
+    {
+      "questionId": "w73_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w73_q5",
+      "prompt": "PART B: Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Sweet curls of cedar and pine dust covered the floor of Uncle Mateo's guitar shop.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Tobias immediately reached for a wide board of lowland pine on the bottom shelf.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"When Tobias tapped the center of the plank, it gave a dull, short thud, like knocking on a wet cardboard box.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Instead, those hard seasons had given the wood the strength to resonate when guitar strings finally sang across its bridge.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Instead, those hard seasons had given the wood the strength to resonate when guitar strings finally sang across its bridge.",
+      "childTip": "Pick the quote from Paragraph 5 that shows how hard seasons gave the wood its clear voice.",
+      "parentExplanation": "Option D provides the direct textual evidence from Paragraph 5 summarizing how enduring harsh winters and patient seasoning gave the spruce its resonant strength, supporting the theme in Part A."
+    }
+  ]
+}

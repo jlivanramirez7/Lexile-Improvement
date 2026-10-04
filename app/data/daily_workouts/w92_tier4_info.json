@@ -1,0 +1,303 @@
+{
+  "workoutId": "w92_tier4_info",
+  "workoutNumber": 92,
+  "title": "The Iron Engine Beneath Our Feet",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1090,
+  "fkgl": 7.45,
+  "genre": "Informational",
+  "subGenre": "Geophysics",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RI2",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "The Iron Engine Beneath Our Feet",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 402,
+    "paragraphCount": 5,
+    "text": "High above the clouds, a fierce stream of charged gas blasts outward from the Sun at a million miles per hour. This solar wind carries enough raw force to strip away the air and water that keep our planet alive. Yet Earth does not lose its sky like barren Mars did long ago. Instead, an unseen cage of force stretches thousands of miles into space and turns those fast solar particles aside. That vast shield is born in the dark, white-hot heart of our world.\n\nNearly two thousand miles below the rocky crust lies the outer core, a deep sea of melted iron and nickel. At the very center sits the inner core, a solid metal ball squeezed tight by the weight of the whole globe. Intense heat from that solid inner ball warms the bottom layer of the liquid metal above it. As the hot liquid iron expands and rises toward the cooler mantle, denser metal sinks back down to take its place. This endless rise and fall creates giant churning loops that never rest.\n\nHeat alone cannot build a planet-wide shield without help from Earth's daily spin. As the globe turns on its axis, the rising streams of liquid metal are twisted into tight corkscrews by the planet's spin. In physics, when a fluid that conducts charge moves through a weak magnetic field, it breeds fresh electric currents. Those currents then generate an even stronger magnetic field in a self-feeding cycle called a geodynamo. Sustained by heat and spin, billions of amps of current surge through the dark metal sea.\n\nFrom the core, twin loops of force push up through the rock and arch from the south pole to the north pole. When a solar storm slams into this barrier, most of the harmful wind is deflected around the globe like water parting around a bow. A small fraction of the trapped particles slides down the field lines toward the icy poles. There, they strike gases in the high air and paint the night sky with green and violet ribbons of light.\n\nUnderstanding this deep engine helps scientists track subtle shifts in our planet's shield over time. Rock records on the ocean floor show that the north and south poles have traded places many times across history. Even during those slow flips, the outer core never stops churning, ensuring that life on the surface stays safe beneath its invisible armor.",
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "As the globe turns on its axis, the rising streams of liquid metal are twisted into tight corkscrews by the planet's spin.",
+      "actorChunk": "the planet's spin",
+      "actionChunk": "are twisted",
+      "receiverChunk": "the rising streams of liquid metal",
+      "distractorChunks": [
+        "As the globe turns on its axis",
+        "into tight corkscrews"
+      ],
+      "activeRewrite": "As the globe turns on its axis, the planet's spin twists the rising streams of liquid metal into tight corkscrews."
+    },
+    "tier2Words": [
+      {
+        "word": "barren",
+        "definition": "Bleak, lifeless, and unable to support growth",
+        "rootHint": "From Old French 'baraigne' meaning unproductive or empty",
+        "contextClue": "Earth keeps its air and water, unlike lifeless Mars, which lost its sky long ago."
+      },
+      {
+        "word": "denser",
+        "definition": "More tightly packed and heavier for its size",
+        "rootHint": "From Latin 'densus' meaning thick or crowded",
+        "contextClue": "While hot liquid iron expands and rises, cooler, heavier metal sinks back down."
+      },
+      {
+        "word": "sustained",
+        "definition": "Kept going or supported continuously over time",
+        "rootHint": "From Latin 'sub-' (up from below) + 'tenere' (to hold)",
+        "contextClue": "Powered nonstop by heat and spin, strong currents keep surging through the metal sea."
+      },
+      {
+        "word": "deflected",
+        "definition": "Turned aside or caused to change direction after hitting a barrier",
+        "rootHint": "From Latin 'de-' (away) + 'flectere' (to bend)",
+        "contextClue": "Harmful solar wind is bent around the globe like water parting around a ship's bow."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w92_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"As the globe turns on its axis, the rising streams of liquid metal are twisted into tight corkscrews by the planet's spin.\"\n\nIn this sentence, what performs the action of twisting the streams of liquid metal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The rising streams of liquid metal in the core",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The planet's spin as the globe turns on its axis",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The tight corkscrews inside the rocky crust",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The solar wind blasting outward from the Sun",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "As the globe turns on its axis, the rising streams of liquid metal are twisted into tight corkscrews by the planet's spin.",
+      "childTip": "Find the passive verb 'are twisted' and look after the word 'by' to see what causes the twisting.",
+      "parentExplanation": "In this passive sentence, 'the rising streams of liquid metal' receives the action ('are twisted'). The phrase 'by the planet's spin' identifies the true actor."
+    },
+    {
+      "questionId": "w92_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"When a solar storm slams into this barrier, most of the harmful wind is deflected around the globe like water parting around a bow.\"\n\nWhat does the word \"deflected\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Absorbed deep into the rocky crust",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Turned aside and redirected away",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Heated until it melts into liquid iron",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Frozen solid at the icy poles",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When a solar storm slams into this barrier, most of the harmful wind is deflected around the globe like water parting around a bow.",
+      "childTip": "Picture water parting around the front of a boat to see how the barrier turns the solar wind aside.",
+      "parentExplanation": "The simile 'like water parting around a bow' shows that 'deflected' means bent or turned aside around an obstacle rather than passing straight through."
+    },
+    {
+      "questionId": "w92_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1A_CENTRAL_IDEA",
+      "standard": "ELAGSE5RI2",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why does the liquid iron in the outer core move in an endless rise-and-fall loop?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fierce solar storms push through the rocky crust and stir the melted nickel.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Hot liquid iron near the inner core expands and rises while cooler, denser metal sinks.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The solid inner ball melts each night and freezes solid again each morning.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Ocean tides on the surface pull the heavy nickel upward toward the north pole.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "As the hot liquid iron expands and rises toward the cooler mantle, denser metal sinks back down to take its place.",
+      "childTip": "Click the sentence in Paragraph 2 that explains why hot iron rises and denser metal sinks.",
+      "parentExplanation": "Paragraph 2 explains convection in the outer core: heat from the inner core causes bottom liquid iron to expand and rise toward the mantle while cooler, denser metal sinks to replace it."
+    },
+    {
+      "questionId": "w92_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the author support the claim in Paragraph 3 that heat alone is not enough to build Earth's magnetic shield?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By showing that Earth's spin twists rising metal streams so they breed electric currents and a stronger magnetic field",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "By proving that the inner core has cooled down so much that it can no longer melt nickel",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "By describing how green and violet ribbons of light warm the air above the icy poles",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "By comparing the rocky crust of Earth to the deep ocean floor on Mars",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Sustained by heat and spin, billions of amps of current surge through the dark metal sea.",
+      "childTip": "Check Paragraph 3 to see how Earth's daily spin works together with rising heat to create electric currents.",
+      "parentExplanation": "In Paragraph 3, the author explains that Earth's rotation twists the rising liquid metal into corkscrews, allowing moving conductive fluid to generate self-reinforcing electric currents and magnetic fields."
+    },
+    {
+      "questionId": "w92_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w92_q6",
+      "prompt": "Part A: Which statement best summarizes the main idea of the entire passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Churning liquid iron in Earth's spinning outer core generates a magnetic shield that protects our atmosphere from solar wind.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Green and violet lights appear at the poles whenever the north and south magnetic poles trade places.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "Scientists drill two thousand miles through the crust to measure the weight of the solid inner core.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Solar storms are growing strong enough to strip away all of Earth's water during the next pole flip.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Even during those slow flips, the outer core never stops churning, ensuring that life on the surface stays safe beneath its invisible armor.",
+      "childTip": "Choose the summary that connects the churning metal core deep inside Earth to the shield protecting life above.",
+      "parentExplanation": "Across all five paragraphs, the passage explains how heat and spin in Earth's liquid iron outer core power the geodynamo that shields our atmosphere and life from solar wind."
+    },
+    {
+      "questionId": "w92_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w92_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"At the very center sits the inner core, a solid metal ball squeezed tight by the weight of the whole globe.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"A small fraction of the trapped particles slides down the field lines toward the icy poles.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"Rock records on the ocean floor show that the north and south poles have traded places many times across history.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Even during those slow flips, the outer core never stops churning, ensuring that life on the surface stays safe beneath its invisible armor.\"",
+          "isCorrect": true
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Even during those slow flips, the outer core never stops churning, ensuring that life on the surface stays safe beneath its invisible armor.",
+      "childTip": "Pick the sentence from Paragraph 5 that links the churning outer core to keeping surface life safe.",
+      "parentExplanation": "Option D captures both essential halves of the central idea: the nonstop churning of the outer core and the invisible magnetic armor that keeps surface life safe."
+    }
+  ]
+}

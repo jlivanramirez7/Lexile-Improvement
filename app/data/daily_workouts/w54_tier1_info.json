@@ -1,0 +1,309 @@
+{
+  "workoutId": "w54_tier1_info",
+  "workoutNumber": 54,
+  "title": "Copper Grooves Among the Stars",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 980,
+  "fkgl": 6.65,
+  "genre": "Informational",
+  "subGenre": "Space Science",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RI2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Copper Grooves Among the Stars",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "In the late summer of 1977, two space probes named Voyager 1 and Voyager 2 lifted off from Florida. Their first job was to take clear photos of the giant outer planets, like Jupiter and Saturn. Yet teams knew that once the probes flew past Neptune, their momentum would carry them out of our solar system for good. Dr. Carl Sagan and a small team of helpers had a bold idea. Each craft would carry a greeting from Earth into deep space.\n\nPlastic tape or paper notes would never last on a trip of a million years. Harsh space rays and deep cold would quickly ruin normal tape or paper. Instead, builders made two twelve-inch sound discs out of solid copper. Then they coated each disc with a thin layer of gold. Copper and gold resist rust and wear in the vacuum of space. Each shiny disc was tucked inside a metal cover bolted to the side of the probe.\n\nTo pick what to put on the discs, the team gathered sounds and scenes that showed the rich life on our world. Spoken greetings in fifty-five human languages, followed by whale songs, thunderclaps, and footsteps, were carefully etched into the copper discs by recording engineers. The grooves also held ninety minutes of music from around the globe. The songs ranged from old flutes to modern jazz. Along with the sounds, the team saved over one hundred photos as wave lines in the metal tracks.\n\nBecause a distant space traveler might not know how to play a record, the team carved simple drawings onto the outer metal cover. One drawing shows a stylus needle resting in the groove and explains how fast to spin the disc. Another diagram uses the steady pulse of a hydrogen atom as a universal clock. Even if the finder speaks no human tongue, the laws of nature stay the same across every star group.\n\nMore than forty-five years after launch, both probes have crossed into interstellar space beyond the sun's wind. Long after their power cells fade, the Golden Records will keep gliding quietly between the stars. Protected inside their metal shells, those tiny copper grooves hold a lasting portrait of our home world.",
+    "wordCount": 368,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "Spoken greetings in fifty-five human languages, followed by whale songs, thunderclaps, and footsteps, were carefully etched into the copper discs by recording engineers.",
+      "actorChunk": "recording engineers",
+      "actionChunk": "carefully etched",
+      "receiverChunk": "Spoken greetings in fifty-five human languages",
+      "distractorChunks": [
+        "followed by whale songs, thunderclaps, and footsteps",
+        "into the copper discs"
+      ],
+      "activeRewrite": "Recording engineers carefully etched spoken greetings in fifty-five human languages into the copper discs."
+    },
+    "tier2Words": [
+      {
+        "word": "momentum",
+        "definition": "the forward motion that keeps a moving object traveling through space",
+        "rootHint": "Latin root movere ('to move')",
+        "contextClue": "Once the probes flew past Neptune, their forward motion carried them out of our solar system forever."
+      },
+      {
+        "word": "etched",
+        "definition": "cut or carved in fine lines onto a metal or glass surface",
+        "rootHint": "German aetzen ('to engrave or cut into a surface')",
+        "contextClue": "Engineers carved fine sound grooves of greetings, whale songs, and music into the solid copper discs."
+      },
+      {
+        "word": "universal",
+        "definition": "shared and understood everywhere across the entire universe",
+        "rootHint": "Latin universalis ('belonging to the whole cosmos')",
+        "contextClue": "Even if a finder speaks no earthly language, a hydrogen atom clock works the same way across every galaxy."
+      },
+      {
+        "word": "interstellar",
+        "definition": "located or traveling in the deep space between the stars",
+        "rootHint": "Prefix inter- ('between') + Latin stella ('star')",
+        "contextClue": "Both probes have crossed beyond the sun's wind to glide silently between the stars."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w54_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Spoken greetings in fifty-five human languages, followed by whale songs, thunderclaps, and footsteps, were carefully etched into the copper discs by recording engineers.\"\n\nBased on the structure of the sentence, who performed the action of etching, and what was etched into the copper discs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spoken greetings and whale songs etched the recording engineers onto the outer aluminum cover.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Recording engineers etched spoken greetings in fifty-five languages and natural sounds into the copper discs.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Copper discs etched fifty-five recording engineers while flying past Jupiter and Saturn.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Whales and thunderstorms carved maps of Florida onto plastic tape in 1977.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Spoken greetings in fifty-five human languages, followed by whale songs, thunderclaps, and footsteps, were carefully etched into the copper discs by recording engineers.",
+      "childTip": "Find the 'by' phrase at the end: 'by recording engineers' tells who did the etching.",
+      "parentExplanation": "In this passive sentence, 'Spoken greetings in fifty-five human languages' is the subject receiving the verb 'were carefully etched,' and 'by recording engineers' names the actors."
+    },
+    {
+      "questionId": "w54_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Another diagram uses the steady pulse of a hydrogen atom as a universal clock. Even if the finder speaks no earthly language, the laws of physics remain the same across every galaxy.\"\n\nWhat does the word universal mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Working the same way and able to be understood anywhere in the cosmos",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Written only in a secret code that no scientist can ever read",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Made out of fragile plastic tape that melts near the sun",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Powered by heavy batteries that must be charged every week",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Another diagram uses the steady pulse of a hydrogen atom as a universal clock.",
+      "childTip": "Look at the next sentence: the laws of physics 'remain the same across every galaxy.'",
+      "parentExplanation": "Paragraph 4 explains that even if a finder knows no earthly language, the laws of physics are the same across every galaxy, showing that 'universal' means applying everywhere in the universe."
+    },
+    {
+      "questionId": "w54_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why did engineers make the Voyager records out of gold-plated copper instead of plastic tape?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gold-plated copper was lighter and cheaper to buy in Florida than plastic tape.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "Copper and gold resist rust and wear so the records can survive cosmic rays and cold for millions of years.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Plastic tape could only record whale songs and could not hold human voices.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The gold plating acted as a solar panel to power the probe's cameras near Neptune.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Copper and gold resist rust and wear in the vacuum of space.",
+      "childTip": "Click the sentence in Paragraph 2 that explains why copper and gold hold up in the vacuum of space.",
+      "parentExplanation": "Paragraph 2 explains that cosmic rays and freezing temperatures would ruin plastic or paper, whereas gold-plated copper resists rust and wear in the vacuum of space."
+    },
+    {
+      "questionId": "w54_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 4 fit into the overall structure of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It explains how scientists solved the problem of teaching a distant finder how to play the record without using human words.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It lists the names of all fifty-five languages recorded by Dr. Carl Sagan's team in 1977.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "It compares the size of Jupiter's moons to the size of Saturn's icy rings.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "It argues that neither Voyager probe will ever leave our solar system.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Because a distant space traveler might not know how to play a record, the team carved simple drawings onto the outer metal cover.",
+      "childTip": "Look at the first sentence of Paragraph 4 to see what problem the carved drawings were designed to solve.",
+      "parentExplanation": "Paragraph 4 addresses the practical challenge of how a distant finder could decode the disc, explaining the visual drawings and hydrogen clock carved on the metal cover."
+    },
+    {
+      "questionId": "w54_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w54_q6",
+      "prompt": "Part A: Which statement best expresses the main idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Scientists designed the durable Voyager Golden Records to carry a lasting portrait of Earth's life, sounds, and science across interstellar space.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Voyager 1 and Voyager 2 were built only to test whether metal covers rust in Florida's summer weather.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "Recording engineers discovered that whale songs travel faster through deep space than radio waves.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Modern jazz is the only style of music that can be etched into a solid copper sound disc.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Protected inside their metal shells, those tiny copper grooves hold a lasting portrait of our home world.",
+      "childTip": "Choose the statement that brings together why the Golden Records were built, what they hold, and where they are going.",
+      "parentExplanation": "Across all five paragraphs (ELAGSE5RI2), the passage explains how scientists crafted durable gold-plated copper records etched with Earth's sounds, images, and physical diagrams to serve as a lasting portrait of our world in interstellar space."
+    },
+    {
+      "questionId": "w54_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w54_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Their first job was to take clear photos of the giant outer planets, like Jupiter and Saturn.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Plastic tape or paper notes would never last on a trip of a million years.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"One drawing shows a stylus needle resting in the groove and explains how fast to spin the disc.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Protected inside their metal shells, those tiny copper grooves hold a lasting portrait of our home world.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Protected inside their metal shells, those tiny copper grooves hold a lasting portrait of our home world.",
+      "childTip": "Pick the final quote in Paragraph 5 that sums up what the protected copper grooves hold.",
+      "parentExplanation": "Option D directly quotes the concluding sentence of Paragraph 5, encapsulating the main idea of the Golden Records as a durable portrait of Earth."
+    }
+  ]
+}

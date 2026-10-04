@@ -1,0 +1,333 @@
+{
+  "workoutId": "w90_tier3_info",
+  "workoutNumber": 90,
+  "title": "Blueprints Borrowed from Leaf and Fin",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1085,
+  "fkgl": 6.78,
+  "genre": "Informational",
+  "subGenre": "Materials & Biomimicry",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5RI3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Blueprints Borrowed from Leaf and Fin",
+    "author": "BEACON Assessment Lab",
+    "text": "When builders design outdoor glass or cargo ship hulls, they face a stubborn challenge. Dirt, soot, and sea slime cling to flat surfaces. For decades, plants fought this buildup by brushing harsh chemical sprays onto walls and metal plates. Yet rain and ocean waves slowly wash those toxic coatings into rivers and reefs. Today, materials scientists are solving this problem without poison. They study living surfaces that stay clean through pure physical shape.\n\nOne famous model grows in muddy ponds across Asia. Even though the lotus plant rises up through sticky silt, its wide green leaves stay spotless without a single drop of soap. Under a strong lens, a lotus leaf is not smooth at all; it is covered with millions of tiny wax posts packed close together. Because air pockets sit between those posts, water cannot spread out flat to wet the leaf. Beads of clear morning rain, propped high on wax bumps across the green lotus leaf, are rolled by gravity toward the pond below. As each round drop tumbles off, it scoops up stray dust specks and leaves the plant dry and clean.\n\nBuilders have copied this bumpy texture to make self-cleaning roof tiles and solar panels. Instead of using slick chemical films that wear off, crews mold tiny ridges right into glass and paint. Whenever a rain shower hits the roof, water balls up and sweeps away street soot on its own. Solar panels with lotus-style glass keep soaking up full sun in dusty deserts where flat glass would quickly grow dim.\n\nBeneath the ocean, fast sharks use a similar trick of surface shape to solve an even tougher problem. Cargo ships lose huge amounts of fuel because barnacles and green algae foul their smooth steel hulls and create heavy drag. Sharks move through the same waters, yet their skin stays free of hitchhiking shells. Shark skin is armored with tiny tooth-like scales etched with fine lengthwise grooves.\n\nThose narrow grooves speed up water flow right against the shark's side. They make the surface too shaky for baby barnacles to grip. Shipbuilders now press matching micro-grooves into thin plastic films that wrap around steel ship hulls. Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.",
+    "wordCount": 390,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Beads of clear morning rain, propped high on wax bumps across the green lotus leaf, are rolled by gravity toward the pond below.",
+      "actorChunk": "by gravity",
+      "actionChunk": "are rolled",
+      "receiverChunk": "Beads of clear morning rain",
+      "distractorChunks": [
+        "propped high on wax bumps across the green lotus leaf",
+        "toward the pond below"
+      ],
+      "activeRewrite": "Gravity rolls beads of clear morning rain toward the pond below."
+    },
+    "tier2Words": [
+      {
+        "word": "toxic",
+        "definition": "Poisonous and capable of harming living things or the environment",
+        "rootHint": "Greek toxikon (poison)",
+        "contextClue": "Paired with 'harsh chemical sprays' and contrasted with 'solving this problem without poison.'"
+      },
+      {
+        "word": "foul",
+        "definition": "To clog, dirty, or crust over a surface so it cannot work smoothly",
+        "rootHint": "Old English ful (dirty or clogged)",
+        "contextClue": "'Cargo ships lose huge amounts of fuel because barnacles and green algae foul their smooth steel hulls.'"
+      },
+      {
+        "word": "drag",
+        "definition": "The backward pull or friction that slows a moving object in water or air",
+        "rootHint": "Old Norse draga (to pull back)",
+        "contextClue": "Barnacles and algae on ship hulls 'create heavy drag' that wastes fuel."
+      },
+      {
+        "word": "repel",
+        "definition": "To push away or keep something from sticking or entering",
+        "rootHint": "re- (back) + pel- (Latin root meaning 'to drive or push')",
+        "contextClue": "'Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w90_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Beads of clear morning rain, propped high on wax bumps across the green lotus leaf, are rolled by gravity toward the pond below.\"\n\nWho or what performs the action of rolling the beads of rain in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The wax bumps across the green lotus leaf",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a noun from the middle participial phrase ('propped high on wax bumps') rather than the actor after 'by'."
+        },
+        {
+          "id": "B",
+          "text": "Beads of clear morning rain resting on the plant",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Beads of clear morning rain') with the force performing the action."
+        },
+        {
+          "id": "C",
+          "text": "Gravity pulling the water droplets downward",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by gravity') in the passive construction 'are rolled by gravity'."
+        },
+        {
+          "id": "D",
+          "text": "The muddy pond below the lotus stems",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Picks the directional object at the end of the sentence ('toward the pond below') instead of the actor."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Beads of clear morning rain, propped high on wax bumps across the green lotus leaf, are rolled by gravity toward the pond below.",
+      "childTip": "Find the passive verb 'are rolled by.' The word right after 'by' tells you what force moves the raindrops!",
+      "parentExplanation": "This Sentence Surgery question tests Passive Voice Actor Tracking (ELAGSE5L1). The subject 'Beads of clear morning rain' is separated from 'are rolled by gravity' by an 11-word modifier describing the wax bumps."
+    },
+    {
+      "questionId": "w90_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.\"\n\nWhat does the word repel most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Push away or keep from sticking",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the parallel clue 'to shed sea slime' and the root 'pel' (push) to identify pushing away or keeping off."
+        },
+        {
+          "id": "B",
+          "text": "Soak up like a thick kitchen sponge",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the meaning; the lotus leaf stays dry and spotless rather than soaking up mud."
+        },
+        {
+          "id": "C",
+          "text": "Paint with harsh chemical sprays",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows the outdated chemical method from Paragraph 1 instead of defining what the lotus bumps do to mud."
+        },
+        {
+          "id": "D",
+          "text": "Sink deep beneath the ocean waves",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Confuses ocean setting details with the verb describing how lotus bumps shed mud."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.",
+      "childTip": "Look at the parallel phrase in the second half of the sentence: 'use tiny grooves to shed sea slime.'",
+      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5RI4). The sentence sets up a parallel comparison ('Just as X uses tiny bumps to repel pond mud, Y uses tiny grooves to shed sea slime'), showing that 'repel' means to push away or shed."
+    },
+    {
+      "questionId": "w90_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why do raindrops form round beads and roll off a lotus leaf instead of spreading out flat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Air pockets trapped between millions of tiny wax posts keep the water propped up so it cannot wet the leaf.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately traces the physical cause-and-effect in Paragraph 2: microscopic wax posts trap air pockets beneath the raindrops."
+        },
+        {
+          "id": "B",
+          "text": "Farmers brush a thin coat of liquid soap across the pond leaves every morning before dawn.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Directly contradicts Paragraph 2, which states the leaves stay spotless 'without a single drop of soap.'"
+        },
+        {
+          "id": "C",
+          "text": "Lotus leaves spin rapidly in the wind to fling rainwater and mud across the pond.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents a spinning leaf motion not found in the text."
+        },
+        {
+          "id": "D",
+          "text": "Every plant that grows in muddy water has completely flat, glass-smooth leaves.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses 'Every plant' and contradicts the text's key point that a lotus leaf is bumpy, not smooth."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Because air pockets sit between those posts, water cannot spread out flat to wet the leaf.",
+      "childTip": "First click the sentence in Paragraph 2 that starts with 'Because air pockets' to prove why water cannot spread flat.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RI3 (Scientific Relationships & Interactions), this Click-to-Prove item requires students to verify the exact physical interaction between the wax posts, trapped air pockets, and water droplets."
+    },
+    {
+      "questionId": "w90_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4B_CONJUNCTION_LOGIC",
+      "standard": "ELAGSE5RI3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.\"\n\nHow does the opening clause \"Just as the lotus leaf uses tiny bumps to repel pond mud\" help explain the relationship between the two inventions in the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It connects both sections of the passage by showing how two different microscopic surface shapes—bumps on leaves and grooves on shark skin—each keep surfaces clean without chemicals.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Explains how the comparative subordinate clause ('Just as...') synthesizes the shared physical principle linking lotus-inspired glass and shark-inspired ship films."
+        },
+        {
+          "id": "B",
+          "text": "It proves that shipbuilders glue real green lotus leaves onto the bottom of steel cargo ships.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Misreads the comparative analogy ('Just as...') as a literal statement that lotus leaves are glued to ships."
+        },
+        {
+          "id": "C",
+          "text": "It shows that lotus leaves only work in salty ocean water, while shark skin only works in muddy ponds.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Swaps the two natural habitats described in the sentence."
+        },
+        {
+          "id": "D",
+          "text": "It argues that solar panels are completely useless unless they are wrapped in plastic ship film.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('completely useless') and confuses the two separate engineering applications."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.",
+      "childTip": "Notice the words 'Just as.' What big scientific idea do the lotus bumps and the shark grooves have in common?",
+      "parentExplanation": "Combining focus domain D4_SYNTAX with focus standard ELAGSE5RI3, this item tests how the comparative syntax ('Just as [Clause A], [Clause B]') links the two biological models into a unified engineering concept."
+    },
+    {
+      "questionId": "w90_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w90_q6",
+      "prompt": "PART A: Which statement best expresses the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By copying the microscopic surface shapes of lotus leaves and shark skin, engineers can keep solar panels and ship hulls clean without relying on toxic chemical coatings.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the problem of toxic coatings (Para 1), the lotus leaf and solar panel solution (Paras 2-3), and the shark skin and ship hull solution (Paras 4-5)."
+        },
+        {
+          "id": "B",
+          "text": "Lotus plants grow in muddy ponds across Asia and have wide green leaves that stay dry in the rain.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses only on a single natural example from Paragraph 2 without mentioning shark skin or human engineering."
+        },
+        {
+          "id": "C",
+          "text": "Barnacles and green algae are the only ocean creatures capable of swimming faster than sharks.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses 'only' and misinterprets hitchhiking shells on ship hulls as fast-swimming creatures."
+        },
+        {
+          "id": "D",
+          "text": "Harsh chemical sprays are the safest and most permanent way to protect desert solar panels from dust.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraphs 1 and 3, which explain that chemical sprays wash off and pollute water whereas molded ridges last."
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Today, materials scientists are solving this problem without poison.",
+      "childTip": "Pick the choice that covers BOTH the lotus-leaf and shark-skin designs AND why they are better than chemical sprays.",
+      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option B is too narrow (only Paragraph 2), Option D reverses the text's message, and Option A integrates the entire biomimicry thesis."
+    },
+    {
+      "questionId": "w90_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w90_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Yet rain and ocean waves slowly wash those toxic coatings into rivers and reefs.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes only the drawback of old chemical sprays in Paragraph 1 without showing how nature's surface shapes solve it."
+        },
+        {
+          "id": "B",
+          "text": "\"Even though the lotus plant rises up through sticky silt, its wide green leaves stay spotless without a single drop of soap.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Covers only the lotus plant in Paragraph 2 rather than the full engineering takeaway across both models."
+        },
+        {
+          "id": "C",
+          "text": "\"Cargo ships lose huge amounts of fuel because barnacles and green algae foul their smooth steel hulls and create heavy drag.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "States only the ship-fouling problem in Paragraph 4 rather than the biomimicry solution."
+        },
+        {
+          "id": "D",
+          "text": "\"Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly supports Part A by uniting the lotus-leaf bump model and the shark-skin groove model into a single summary of chemical-free cleaning."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Just as the lotus leaf uses tiny bumps to repel pond mud, shark-inspired hull films use tiny grooves to shed sea slime and cut fuel waste across the world's oceans.",
+      "childTip": "Select the quote from Paragraph 5 that brings together both the lotus bumps and the shark-inspired hull grooves.",
+      "parentExplanation": "Part B requires 100% verbatim textual support for the central idea in Part A. Option D synthesizes both biomimetic surface structures and their practical benefits."
+    }
+  ]
+}

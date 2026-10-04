@@ -1,0 +1,309 @@
+{
+  "workoutId": "w27_tier0_lit",
+  "workoutNumber": 27,
+  "title": "The Driftwood Tower at Tybee Point",
+  "tier": 0,
+  "lexileBand": "850L-930L",
+  "targetLexile": 880,
+  "fkgl": 6.27,
+  "genre": "Literary",
+  "subGenre": "Adventure Fiction",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Driftwood Tower at Tybee Point",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Salt wind whipped across the wide sandbar at the north end of Tybee Island. Twelve-year-old Caleb shaded his eyes and looked down the beach toward the distant wooden pier. His aunt and uncle had promised to paddle their yellow kayaks around the point at four o'clock. Low dunes and tall sea oats blocked the family camp from the open water. Caleb and his cousin Nora wanted to build a tall driftwood marker so the paddlers could spot their landing zone from far out at sea.\n\nTime was running short because the afternoon tide had already started to creep up the slope. Foamy waves hissed across the flat shells and crept closer to the dry sand every minute. If the cousins built their tower too low on the beach, the rising surf would knock the whole frame down. They scrambled along the high tide line to gather gray cedar limbs bleached white by the sun. Nora dragged three thick poles to the top of a firm shell mound above the water mark.\n\nAt first, Caleb tried to prop the three tall poles together like a simple tent. As soon as he let go, a sharp gust off the ocean blew the loose wood flat into the sand. He realized that smooth driftwood needed a deep anchor and strong ties to survive the coastal breeze. Using a curved clam shell, he dug three deep holes into the damp sand at the base of the mound. Once the heavy ends were buried two feet deep, the frame stood steady.\n\nNext, the cousins searched the wrack line for dried marsh vines to lash the top joints together. The longest cedar branch, crowned with a bright red towel that fluttered like a lighthouse flag, was firmly braced by Nora between the upright posts. She wrapped the tough vines around the crossed wood until the center pole could not wobble. Even when a strong gust rattled the sea oats, the five-foot tower held its ground.\n\nJust as Nora tied the final knot, two bright yellow kayaks glided around the rocky jetty. Half a mile out, Uncle Devon raised his double paddle high in the air to wave at the red flag. Without that tall beacon on the shell mound, the paddlers might have drifted past the camp toward the marsh. Caleb grinned and brushed the wet sand from his knees as the kayaks turned toward shore. Working together with smart planning had beaten both the wind and the rising tide.",
+    "wordCount": 414,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 4,
+      "verbatimSentence": "The longest cedar branch, crowned with a bright red towel that fluttered like a lighthouse flag, was firmly braced by Nora between the upright posts.",
+      "actorChunk": "Nora",
+      "actionChunk": "firmly braced",
+      "receiverChunk": "The longest cedar branch",
+      "distractorChunks": [
+        "crowned with a bright red towel that fluttered like a lighthouse flag",
+        "between the upright posts"
+      ],
+      "activeRewrite": "Nora firmly braced the longest cedar branch between the upright posts."
+    },
+    "tier2Words": [
+      {
+        "word": "bleached",
+        "definition": "turned pale or white by strong sunlight or chemicals",
+        "rootHint": "From Old English blaecan, meaning 'to make pale or white'",
+        "contextClue": "The gray cedar limbs had been turned white by the bright coastal sun."
+      },
+      {
+        "word": "anchor",
+        "definition": "a heavy base or support that holds something firmly in place",
+        "rootHint": "From Greek ankyra, meaning 'hook or firm hold'",
+        "contextClue": "Caleb dug three holes two feet deep into the damp sand so the poles would stand steady in the wind."
+      },
+      {
+        "word": "braced",
+        "definition": "supported and held tightly in position so it cannot fall or shake",
+        "rootHint": "From Old French bracier, meaning 'to hold in strong arms'",
+        "contextClue": "Nora wrapped tough vines around the crossed wood until the center pole could not wobble."
+      },
+      {
+        "word": "beacon",
+        "definition": "a visible signal or guiding marker placed on a high spot to guide travelers",
+        "rootHint": "From Old English beacen, meaning 'sign or signal light'",
+        "contextClue": "The five-foot tower with the red towel helped the kayakers spot their landing zone from half a mile out."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w27_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"The longest cedar branch, crowned with a bright red towel that fluttered like a lighthouse flag, was firmly braced by Nora between the upright posts.\"\n\nBased on the way this sentence is written, who or what braced the cedar branch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bright red towel braced Nora against the ocean wind.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The lighthouse flag braced the upright posts in the wet sand.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Nora braced the longest cedar branch between the upright posts.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "Uncle Devon braced the cedar branch using his yellow kayak paddle.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "The longest cedar branch, crowned with a bright red towel that fluttered like a lighthouse flag, was firmly braced by Nora between the upright posts.",
+      "childTip": "Skip the middle description about the red towel and look for 'by Nora' to find who did the bracing.",
+      "parentExplanation": "In this passive construction, 'The longest cedar branch' is the subject receiving the action, while the prepositional phrase 'by Nora' identifies Nora as the person who braced it."
+    },
+    {
+      "questionId": "w27_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 5:\n\n\"Half a mile out, Uncle Devon raised his double paddle high in the air to wave at the red flag. Without that tall beacon on the shell mound, the paddlers might have drifted past the camp toward the marsh.\"\n\nWhat does the word beacon mean as it is used in Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A guiding signal that can be seen from far away",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "A sharp shell used for digging deep holes in sand",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "A strong ocean current that pushes boats toward a marsh",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "A wooden kayak paddle painted bright yellow",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Without that tall beacon on the shell mound, the paddlers might have drifted past the camp toward the marsh.",
+      "childTip": "Think about what the tall tower with the red flag does: it guides the kayakers to shore.",
+      "parentExplanation": "In Paragraph 5, 'that tall beacon' refers back to the five-foot driftwood tower topped with a red flag that guided the kayakers to their landing spot from half a mile away."
+    },
+    {
+      "questionId": "w27_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why do Caleb and Nora build their tower on top of a shell mound instead of near the water's edge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The sand near the water is too hard to dig with a clam shell.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "They want to keep the rising tide from knocking their driftwood frame down.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "They are not allowed to walk near the foamy waves without their aunt and uncle.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "All of the dried marsh vines grow only on top of the rocky jetty.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "If the cousins built their tower too low on the beach, the rising surf would knock the whole frame down.",
+      "childTip": "Click the sentence in Paragraph 2 that tells what would happen if they built the tower too low on the beach.",
+      "parentExplanation": "Paragraph 2 explains that the afternoon tide was creeping up the slope, so building too low on the beach would allow the rising surf to knock the tower down."
+    },
+    {
+      "questionId": "w27_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does the failure of Caleb's first tower in Paragraph 3 move the plot forward?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It causes the cousins to give up on building and swim out to meet the kayaks instead.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "It shows that the wind is too strong for anyone to paddle a kayak around Tybee Point.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "It leads Caleb to dig deep anchor holes so the poles can stand firm against the wind.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "It explains why the cedar limbs had turned white from lying in the bright sun.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "He realized that smooth driftwood needed a deep anchor and strong ties to survive the coastal breeze.",
+      "childTip": "Look at what Caleb learns right after the wind blows the loose poles flat into the sand.",
+      "parentExplanation": "When the wind knocks down the loosely propped poles in Paragraph 3, Caleb realizes the tower needs deep anchor holes and strong ties, leading to the sturdy design that succeeds."
+    },
+    {
+      "questionId": "w27_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w27_q6",
+      "prompt": "Part A: Which statement best expresses a central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careful planning and teamwork can overcome natural challenges when a first attempt fails.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Ocean beaches are too windy for building anything out of natural driftwood.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Kayakers should always carry a radio instead of looking for landmarks on the shore.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Clam shells are better digging tools than metal shovels on a sandy island.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Working together with smart planning had beaten both the wind and the rising tide.",
+      "childTip": "Check the very last sentence of the story to see what helped Caleb and Nora succeed.",
+      "parentExplanation": "Throughout the story, Caleb and Nora adapt their plan (choosing high ground, digging anchor holes, lashing with vines) and work together to beat the wind and tide."
+    },
+    {
+      "questionId": "w27_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w27_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Salt wind whipped across the wide sandbar at the north end of Tybee Island.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Foamy waves hissed across the flat shells and crept closer to the dry sand every minute.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Using a curved clam shell, he dug three deep holes into the damp sand at the base of the mound.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Working together with smart planning had beaten both the wind and the rising tide.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Working together with smart planning had beaten both the wind and the rising tide.",
+      "childTip": "Pick the quote from Paragraph 5 that directly connects teamwork and planning to beating the wind and tide.",
+      "parentExplanation": "Option D provides the direct textual evidence from the story's conclusion confirming how teamwork and smart planning overcame the environmental obstacles."
+    }
+  ]
+}

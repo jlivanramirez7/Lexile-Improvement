@@ -1,0 +1,309 @@
+{
+  "workoutId": "w48_tier1_info",
+  "workoutNumber": 48,
+  "title": "Echoes Under Etowah",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 970,
+  "fkgl": 6.45,
+  "genre": "Informational",
+  "subGenre": "Archaeology",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RI1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Echoes Under Etowah",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Near Cartersville, Georgia, six flat-topped earth mounds rise above the north bank of the Etowah River. Long ago, this valley was a thriving town where thousands of people lived, traded, and held grand games. Today, thick green grass covers the broad fields between the tall mounds. To a park guest walking the trail, the open lawn looks quite empty. Yet just a few feet under the turf lies the plan of an old town.\n\nFor many years, teams had only one way to check buried walls. They dug deep trenches with metal spades. Digging could find clay pots or stone tools, but it also sliced through delicate dirt floors that could never be fixed. Out of respect for native history and fragile soil layers, modern researchers needed a way to peer underground without turning a single spade of dirt. They turned to a tool called ground radar.\n\nA radar cart looks much like a push mower rolled across the grass in straight, even rows. As the wheels roll forward, a small box sends safe radio waves down into the dirt. When those waves hit packed clay, post holes, or stone hearths, they bounce back to a screen on the cart. Buried council houses and wide clay plazas, hidden beneath centuries of grass and river silt, are clearly mapped by the radar team on a digital screen. Different soil densities show up as crisp dark lines.\n\nAt Etowah, these radar maps showed a busy town plan that no spade had ever found. Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings. Around the edge of that plaza stood rows of large wood halls, tall walls, and deep food pits. The builders had leveled and packed the red clay so tightly that it still reflects radio waves after nine hundred years.\n\nBecause ground radar leaves the earth intact, future guests will be able to see Etowah just as it stands today. Park rangers now use the maps to keep heavy mowers and new paths away from the most fragile buried walls. By blending modern tools with deep respect for the past, teams can read the story of an old Georgia town while keeping its sacred ground whole.",
+    "wordCount": 376,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "Buried council houses and wide clay plazas, hidden beneath centuries of grass and river silt, are clearly mapped by the radar team on a digital screen.",
+      "actorChunk": "the radar team",
+      "actionChunk": "clearly mapped",
+      "receiverChunk": "Buried council houses and wide clay plazas",
+      "distractorChunks": [
+        "hidden beneath centuries of grass and river silt",
+        "on a digital screen"
+      ],
+      "activeRewrite": "The radar team clearly maps buried council houses and wide clay plazas on a digital screen."
+    },
+    "tier2Words": [
+      {
+        "word": "thriving",
+        "definition": "growing strong, active, and successful",
+        "rootHint": "Old Norse thrifask ('to grasp or prosper')",
+        "contextClue": "Long ago, thousands of people lived, traded, and held grand games in the busy valley."
+      },
+      {
+        "word": "delicate",
+        "definition": "easily damaged or broken if not handled with great care",
+        "rootHint": "Latin root delicatus ('fine or tender')",
+        "contextClue": "Metal spades sliced through fragile dirt floors that could never be fixed once dug up."
+      },
+      {
+        "word": "densities",
+        "definition": "how tightly packed or solid different materials are",
+        "rootHint": "Latin root densus ('thick or closely packed')",
+        "contextClue": "Tightly packed clay floors, post holes, and loose soil bounce radio waves back differently to form dark lines."
+      },
+      {
+        "word": "intact",
+        "definition": "whole, untouched, and not damaged in any way",
+        "rootHint": "Latin root tactus ('touched') + prefix in- ('not')",
+        "contextClue": "Because radar scans do not dig up the soil, the ground stays whole for future guests."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w48_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Buried council houses and wide clay plazas, hidden beneath centuries of grass and river silt, are clearly mapped by the radar team on a digital screen.\"\n\nBased on the structure of the sentence, who performs the action of mapping, and what is being mapped?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Centuries of grass and river silt map the radar team onto a digital screen.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The radar team maps the buried council houses and wide clay plazas.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Buried council houses map the river silt using a push mower.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Park guests draw maps of the Etowah River on clay tablets with metal spades.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Buried council houses and wide clay plazas, hidden beneath centuries of grass and river silt, are clearly mapped by the radar team on a digital screen.",
+      "childTip": "Look for the 'by' phrase after the verb: 'by the radar team' tells who does the mapping.",
+      "parentExplanation": "In this passive sentence, 'Buried council houses and wide clay plazas' receive the action 'are clearly mapped,' while 'by the radar team' identifies the actor performing the mapping."
+    },
+    {
+      "questionId": "w48_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 5:\n\n\"Because ground radar leaves the earth intact, future guests will be able to see Etowah just as it stands today.\"\n\nWhat does the word intact mean as it is used in Paragraph 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dug up into deep open trenches across the lawn",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Undamaged, whole, and left in its natural state",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Paved over with modern concrete parking lots",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Flooded by water from the nearby Etowah River",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Because ground radar leaves the earth intact, future guests will be able to see Etowah just as it stands today.",
+      "childTip": "Use the clue in the second half of the sentence: guests will see Etowah 'just as it stands today.'",
+      "parentExplanation": "Paragraph 5 contrasts radar scanning with shovel digging and notes that the site remains 'just as it stands today' and 'whole,' proving that 'intact' means undisturbed and undamaged."
+    },
+    {
+      "questionId": "w48_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why does the ancient plaza floor at Etowah still bounce radio waves back to the surface today?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The ancient builders leveled and packed the red clay so tightly that it remains dense underground.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Park rangers buried sheets of shiny copper foil beneath the grass every spring.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "The Etowah River freezes into solid ice underneath the six mounds all year long.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Radio waves only bounce off loose green grass blades on top of the lawn.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "The builders had leveled and packed the red clay so tightly that it still reflects radio waves after nine hundred years.",
+      "childTip": "Click the last sentence in Paragraph 4 that explains why the red clay still reflects radio waves.",
+      "parentExplanation": "Paragraph 4 explicitly states that the ancient builders leveled and packed the red clay so tightly that it still reflects radio waves nine hundred years later."
+    },
+    {
+      "questionId": "w48_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does the author organize Paragraph 2 to show why researchers adopted ground radar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By listing the names and ages of every scientist who has worked near Cartersville",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "By explaining the problem of how spade digging damaged fragile soil layers and introducing radar as the solution",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "By comparing the height of the Etowah mounds to modern skyscrapers in Atlanta",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "By arguing that clay pots and stone tools have no value to historians",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Out of respect for native history and fragile soil layers, modern researchers needed a way to peer underground without turning a single spade of dirt.",
+      "childTip": "Notice how Paragraph 2 first shows the damage caused by spades and then introduces a tool that solves that problem.",
+      "parentExplanation": "Paragraph 2 uses a problem-and-solution structure: digging trenches sliced through delicate floors (problem), so researchers turned to ground radar to look underground without digging (solution)."
+    },
+    {
+      "questionId": "w48_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w48_q6",
+      "prompt": "Part A: Which inference about the flat grassy fields between the mounds at Etowah is best supported by the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Although the fields look empty from above, they hold the buried layout of an organized town center.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The fields between the mounds were never used by the ancient residents because the soil was too soft.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "All ancient buildings at Etowah were built on rafts floating in the middle of the river.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Park rangers must dig up the entire central plaza every winter to protect it from frost.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.",
+      "childTip": "Compare how the lawn looks to a casual visitor in Paragraph 1 with what the radar scans found in Paragraph 4.",
+      "parentExplanation": "Paragraphs 1 and 4 show that while the grassy fields between the mounds appear empty to a casual walker, radar scans beneath the lawn revealed a vast central plaza surrounded by council buildings and walls."
+    },
+    {
+      "questionId": "w48_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w48_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Near Cartersville, Georgia, six flat-topped earth mounds rise above the north bank of the Etowah River.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"A radar cart looks much like a push mower rolled across the grass in straight, even rows.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"As the wheels roll forward, a small box sends safe radio waves down into the dirt.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.",
+      "childTip": "Choose the quote in Paragraph 4 that tells what the radar scans traced beneath the quiet lawn.",
+      "parentExplanation": "Option C directly quotes Paragraph 4, proving that the seemingly empty lawn conceals a vast central plaza where citizens once gathered."
+    }
+  ]
+}

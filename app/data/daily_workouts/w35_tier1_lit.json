@@ -1,0 +1,308 @@
+{
+  "workoutId": "w35_tier1_lit",
+  "workoutNumber": 35,
+  "title": "The Breath Inside the Clay",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 940,
+  "fkgl": 6.56,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Breath Inside the Clay",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Every Tuesday afternoon, Maya hurried to the community art studio at the end of Elm Street. The warm room smelled of wet red earth and pine shelves. Last week, she had shaped her first cereal bowl on the spinning potter's wheel. She had smoothed the rim with a damp sponge and carved a ring of tiny leaves around the base. Today, her teacher, Ms. Lin, was unloading the electric kiln after a long night of firing.\n\nMaya stood on her tiptoes beside the heavy metal oven, hoping to see her bowl gleaming on the top shelf. Instead, Ms. Lin lifted out two jagged halves of hard orange clay. The thin clay wall, weakened by a hidden pocket of trapped air and trace moisture, was split apart by rising steam inside the hot chamber. Maya stared at the fractured leaf pattern in her hands. Her throat felt tight as she wondered how a smooth bowl could break inside a closed oven.\n\nMs. Lin set the broken pieces gently on the wooden table and pointed to a tiny smooth pit along the broken edge. She explained that air bubbles often hide deep inside a lump of fresh clay. When the kiln heats up past the boiling point of water, damp air inside that tiny pocket expands with sudden force. Because the stiff clay cannot stretch, the trapped steam pushes outward until the wall cracks open.\n\nDetermined to make a stronger bowl, Maya carried a fresh block of gray clay to the wedging table. Instead of rushing straight to the wheel, she followed a slow, methodical routine called spiral wedging. She pressed the clay forward with the heels of her hands, folded it over itself, and rotated the lump a quarter turn. Each firm push squeezed out hidden pockets of air until the clay felt dense and even.\n\nWhen Maya sliced the lump in half with a wire tool to check her work, the flat inside surfaces looked completely smooth. Not a single pinhole remained in the gray earth. She centered the solid clay on the wheel and shaped a new bowl with steady hands. This time, Maya knew her careful preparation at the table would protect her art inside the fire.",
+    "wordCount": 369,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The thin clay wall, weakened by a hidden pocket of trapped air and trace moisture, was split apart by rising steam inside the hot chamber.",
+      "actorChunk": "rising steam inside the hot chamber",
+      "actionChunk": "split apart",
+      "receiverChunk": "The thin clay wall",
+      "distractorChunks": [
+        "weakened by a hidden pocket of trapped air and trace moisture"
+      ],
+      "activeRewrite": "Rising steam inside the hot chamber split apart the thin clay wall."
+    },
+    "tier2Words": [
+      {
+        "word": "chamber",
+        "definition": "an enclosed room or space, especially inside a machine or oven",
+        "rootHint": "From Greek kamara, meaning 'vaulted room or enclosed space'",
+        "contextClue": "The clay was heated inside the closed metal kiln oven during the long night of firing."
+      },
+      {
+        "word": "fractured",
+        "definition": "cracked or broken into jagged pieces",
+        "rootHint": "Latin root fract- ('to break')",
+        "contextClue": "Ms. Lin lifted out two jagged halves of the bowl after the wall split apart."
+      },
+      {
+        "word": "expands",
+        "definition": "grows larger or spreads out to take up more space",
+        "rootHint": "Latin root pandere ('to spread') + prefix ex- ('out')",
+        "contextClue": "When the kiln heats up, damp air inside the pocket swells and pushes outward against the stiff clay."
+      },
+      {
+        "word": "methodical",
+        "definition": "done in a careful, step-by-step, and orderly way",
+        "rootHint": "From Greek methodos, meaning 'a regular plan or way of doing something'",
+        "contextClue": "Instead of rushing, Maya pressed, folded, and rotated the clay in a steady, repeated routine."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w35_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The thin clay wall, weakened by a hidden pocket of trapped air and trace moisture, was split apart by rising steam inside the hot chamber.\"\n\nBased on the structure of the sentence, what weakened the clay wall, and what split it apart?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rising steam weakened the wet clay on the wheel, and Ms. Lin split it apart with a wire tool.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "A hidden pocket of trapped air and moisture weakened the wall, and rising steam split it apart.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The thin clay wall split the hot chamber apart because the electric kiln grew too cold.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Another student dropped a heavy metal shelf onto Maya's bowl while unloading the kiln.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The thin clay wall, weakened by a hidden pocket of trapped air and trace moisture, was split apart by rising steam inside the hot chamber.",
+      "childTip": "Track both 'by' phrases: trapped air and moisture weakened the wall, while rising steam split it apart.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'weakened by a hidden pocket of trapped air and trace moisture' and 'was split apart by rising steam'. Option B accurately identifies both causes."
+    },
+    {
+      "questionId": "w35_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Instead of rushing straight to the wheel, she followed a slow, methodical routine called spiral wedging. She pressed the clay forward with the heels of her hands, folded it over itself, and rotated the lump a quarter turn.\"\n\nWhat does the word methodical mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careless and hurried in order to finish before class ends",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Careful and orderly, following clear steps one by one",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Loud and noisy enough to disturb other art students",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Decorated with carved leaves around the bottom edge",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Instead of rushing straight to the wheel, she followed a slow, methodical routine called spiral wedging.",
+      "childTip": "Contrast 'methodical' with 'rushing' and look at the repeated steps Maya follows in the next sentence.",
+      "parentExplanation": "Paragraph 4 contrasts 'rushing' with a 'slow, methodical routine' and then describes the exact sequence of pressing, folding, and rotating the clay."
+    },
+    {
+      "questionId": "w35_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 5, why does Maya slice the fresh lump of clay in half with a wire tool before putting it on the potter's wheel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She wants to make sure no tiny air pockets remain inside the clay after wedging it.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "She needs two small pieces of clay so Ms. Lin can make a matching cup beside her.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "She is trying to carve a leaf pattern into the center of the gray clay block.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "She wants to dry the clay completely before shaping it on the spinning wheel.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "When Maya sliced the lump in half with a wire tool to check her work, the flat inside surfaces looked completely smooth.",
+      "childTip": "Click the first sentence in Paragraph 5 that explains why Maya sliced the lump in half.",
+      "parentExplanation": "Paragraph 5 states that Maya sliced the clay with a wire tool 'to check her work' and saw that 'not a single pinhole remained' inside."
+    },
+    {
+      "questionId": "w35_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 3 fit into the overall structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It introduces the setting of the Elm Street studio and describes the smell of pine shelves.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "It explains the scientific cause of Maya's broken bowl so she knows how to solve the problem in Paragraph 4.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It shows that Maya decides to quit pottery class and take up painting instead.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "It describes how the finished gray bowl looks after its second night in the kiln.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because the stiff clay cannot stretch, the trapped steam pushes outward until the wall cracks open.",
+      "childTip": "Look at what Ms. Lin explains in Paragraph 3: why the bowl cracked and what caused the pressure.",
+      "parentExplanation": "Paragraph 3 bridges the problem in Paragraph 2 (the cracked bowl) and the solution in Paragraph 4 (spiral wedging) by explaining how expanding steam inside an air bubble splits stiff clay."
+    },
+    {
+      "questionId": "w35_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w35_q6",
+      "prompt": "Part A: Which statement best expresses the central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Careful unseen preparation is just as important as outer decoration for creating lasting work.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Pottery wheels should never be used by beginners because they trap air inside the clay.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Gray clay is always stronger than red clay when heated inside an electric kiln.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Carving leaves into a bowl's base causes the rim to crack during firing.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "This time, Maya knew her careful preparation at the table would protect her art inside the fire.",
+      "childTip": "Think about the lesson Maya learns by the end: why wedging the clay before shaping matters.",
+      "parentExplanation": "Maya's first bowl looked smooth and decorated on the outside but broke due to hidden air pockets; by wedging the clay first, she learns that thorough preparation protects the finished piece."
+    },
+    {
+      "questionId": "w35_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w35_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Every Tuesday afternoon, Maya hurried to the community art studio at the end of Elm Street.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"She had smoothed the rim with a damp sponge and carved a ring of tiny leaves around the base.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "\"Maya stood on her tiptoes beside the heavy metal oven, hoping to see her bowl gleaming on the top shelf.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"This time, Maya knew her careful preparation at the table would protect her art inside the fire.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "This time, Maya knew her careful preparation at the table would protect her art inside the fire.",
+      "childTip": "Select the quote from Paragraph 5 that connects Maya's careful preparation to protecting her art.",
+      "parentExplanation": "Option D directly states the takeaway of the story: Maya's careful preparation at the wedging table will protect her bowl during firing."
+    }
+  ]
+}

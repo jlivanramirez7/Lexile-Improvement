@@ -1,0 +1,332 @@
+{
+  "workoutId": "w74_tier3_info",
+  "workoutNumber": 74,
+  "title": "Nets That Catch the Clouds",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1035,
+  "fkgl": 7.26,
+  "genre": "Informational",
+  "subGenre": "Atmospheric Science",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RI5",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Nets That Catch the Clouds",
+    "author": "BEACON Assessment Lab",
+    "text": "Along the rocky coast of northern Chile lies the Atacama Desert, the most arid place on Earth. In some mountain towns, rain gauges have stood empty for decades at a time. Dry creek beds wind through red dust, and digging deep wells costs more money than small farm towns can pay. For generations, families had to buy water brought in by tank trucks over rough dirt roads. Yet almost every morning, a thick gray bank of ocean fog rolls right over these parched hills.\n\nLocal scientists noticed that wild desert cacti survived by catching this daily mist on their sharp spines. Inspired by those plants, engineers built tall frames along the high mountain ridges and stretched fine plastic mesh between the poles. Tiny water droplets, carried inland from the cold ocean by steady coastal winds, are swiftly trapped by the woven plastic threads of the tall ridge nets. Because the fog droplets are too light to fall as rain, they need a solid surface to strike. When the mist hits the mesh, the tiny drops cling to the fibers and merge into heavy beads.\n\nOnce the droplets condense into larger beads, gravity pulls the clear water down the vertical screen. A narrow plastic trough hangs along the bottom edge of each net to catch the steady drip. From that trough, the clean water flows through buried black pipes all the way down the steep slope into village storage tanks. No motors, fuel pumps, or power lines are needed to move the water from the ridge to the taps below.\n\nA single fog net can harvest more than one hundred gallons of fresh water on a misty morning. When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town. Villagers now use this cloud water to drink, wash clothes, and irrigate rows of olive trees and sweet corn. Even dry hillsides have turned green where small gardens bloom beside the pipe tanks.\n\nStill, fog harvesting works only where the right weather and land meet. The system requires cold ocean currents offshore to brew thick mist and steep coastal cliffs to push those clouds upward. During clear summer weeks when the breeze shifts, towns must rely on their saved tank supply until the gray clouds return. Even with those limits, cloud nets prove that smart design can turn drifting mist into a steady life source.",
+    "wordCount": 405,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Tiny water droplets, carried inland from the cold ocean by steady coastal winds, are swiftly trapped by the woven plastic threads of the tall ridge nets.",
+      "actorChunk": "by the woven plastic threads of the tall ridge nets",
+      "actionChunk": "are swiftly trapped",
+      "receiverChunk": "Tiny water droplets",
+      "distractorChunks": [
+        "carried inland from the cold ocean by steady coastal winds"
+      ],
+      "activeRewrite": "The woven plastic threads of the tall ridge nets swiftly trap tiny water droplets carried inland from the cold ocean."
+    },
+    "tier2Words": [
+      {
+        "word": "arid",
+        "definition": "Extremely dry, having very little or no rain",
+        "rootHint": "arid- (Latin root meaning 'to be dry' or 'parched')",
+        "contextClue": "In the next sentence, 'rain gauges have stood empty for decades at a time.'"
+      },
+      {
+        "word": "parched",
+        "definition": "Dried out and thirsty from heat and a lack of water",
+        "rootHint": "Middle English perchen (to dry up or roast with heat)",
+        "contextClue": "Refers back to the 'dry creek beds' and towns where rain has not fallen for decades."
+      },
+      {
+        "word": "condense",
+        "definition": "To change or gather from a fine mist or gas into liquid drops",
+        "rootHint": "con- (together) + dense (thick, pressed closely)",
+        "contextClue": "The tiny mist drops 'merge into heavy beads' and 'condense into larger beads.'"
+      },
+      {
+        "word": "sustain",
+        "definition": "To keep alive, support, or supply with basic needs",
+        "rootHint": "sub- (under) + ten- (Latin root meaning 'to hold up')",
+        "contextClue": "Villagers use the collected water 'to drink, wash clothes, and irrigate rows of olive trees.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w74_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Tiny water droplets, carried inland from the cold ocean by steady coastal winds, are swiftly trapped by the woven plastic threads of the tall ridge nets.\"\n\nIn the main clause of this sentence, what traps the tiny water droplets?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The steady coastal winds blowing off the ocean",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('by steady coastal winds', which carry the droplets) with the agent that traps them."
+        },
+        {
+          "id": "B",
+          "text": "The woven plastic threads of the tall ridge nets",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('are swiftly trapped by the woven plastic threads of the tall ridge nets')."
+        },
+        {
+          "id": "C",
+          "text": "The cold ocean currents along the northern coast",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Selects a location noun inside the embedded modifier rather than the actor of the main verb."
+        },
+        {
+          "id": "D",
+          "text": "The tiny water droplets floating inside the gray cloud",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Tiny water droplets') with the actor performing the trapping."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Tiny water droplets, carried inland from the cold ocean by steady coastal winds, are swiftly trapped by the woven plastic threads of the tall ridge nets.",
+      "childTip": "Watch out for two 'by' phrases! Find the main verb 'are swiftly trapped by' to see what actually catches the drops.",
+      "parentExplanation": "This Sentence Surgery item tests Passive Actor Tracking (ELAGSE5L1) with a double-'by' distractor. While 'by steady coastal winds' modifies 'carried inland', the main passive verb 'are swiftly trapped' is performed 'by the woven plastic threads of the tall ridge nets.'"
+    },
+    {
+      "questionId": "w74_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Once the droplets condense into larger beads, gravity pulls the clear water down the vertical screen.\"\n\nWhat does the word condense most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Come together to form thicker liquid drops",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the root clue ('con-' together + 'dense' thick) and Paragraph 2's explanation that tiny drops 'merge into heavy beads.'"
+        },
+        {
+          "id": "B",
+          "text": "Dry up and vanish into the warm desert air",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the physical process; the mist is turning into liquid water that runs down the screen, not evaporating."
+        },
+        {
+          "id": "C",
+          "text": "Freeze into solid sheets of mountain ice",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Introduces freezing ice, which contradicts 'clear water' flowing down into troughs and pipes."
+        },
+        {
+          "id": "D",
+          "text": "Tear holes through the vertical plastic screen",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Focuses on the word 'screen' at the end of the sentence rather than the change in the water droplets."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Once the droplets condense into larger beads, gravity pulls the clear water down the vertical screen.",
+      "childTip": "Look at the end of Paragraph 2: the tiny drops cling to the fibers and merge into heavy beads.",
+      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). Paragraph 2 ends with 'merge into heavy beads,' and Paragraph 3 begins with 'Once the droplets condense into larger beads,' confirming that 'condense' means to gather into thicker liquid drops."
+    },
+    {
+      "questionId": "w74_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why is the fog-harvesting system inexpensive for remote mountain villages to run?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gravity pulls the water down from the ridge through pipes without needing motors, fuel pumps, or power lines.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately identifies the cause-and-effect explanation in Paragraph 3 showing how gravity moves water without costly machines or fuel."
+        },
+        {
+          "id": "B",
+          "text": "Tank trucks deliver free river water to the mountain storage tanks every morning.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the old, expensive method mentioned in Paragraph 1 (buying water from tank trucks) with the new fog net system."
+        },
+        {
+          "id": "C",
+          "text": "Solar panels attached to the nets heat the clouds so rain falls directly onto the roofs below.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents solar panels and heated clouds that never appear in the passage."
+        },
+        {
+          "id": "D",
+          "text": "The plastic mesh nets last forever and never need to be attached to poles or pipes.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('forever', 'never') that contradicts Paragraph 2 and Paragraph 3."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "No motors, fuel pumps, or power lines are needed to move the water from the ridge to the taps below.",
+      "childTip": "Click the last sentence in Paragraph 3 that tells what machines are NOT needed to move the water.",
+      "parentExplanation": "This Click-to-Prove item targets scientific cause and effect (ELAGSE5RI3). Because the nets sit on high ridges above the village, gravity pulls the collected water down the slope through pipes with zero electricity or fuel."
+    },
+    {
+      "questionId": "w74_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RI5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How do the structures of Paragraph 1 and Paragraph 2 work together to develop the author's ideas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Paragraph 1 compares two different deserts in South America, while Paragraph 2 lists the dates when each desert received rain.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Mischaracterizes both paragraphs; only the Atacama Desert is discussed, and no timeline of rain dates is listed."
+        },
+        {
+          "id": "B",
+          "text": "Paragraph 1 establishes the problem of severe water scarcity despite daily coastal fog, and Paragraph 2 explains the engineered solution inspired by desert cacti.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains the Problem-and-Solution structural relationship linking Paragraph 1 and Paragraph 2."
+        },
+        {
+          "id": "C",
+          "text": "Paragraph 1 argues that tank trucks are the best way to haul water, and Paragraph 2 proves that cacti are harmed by coastal mist.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Flips the meaning of both paragraphs: tank trucks were costly, and cacti survived by catching the mist."
+        },
+        {
+          "id": "D",
+          "text": "Paragraph 1 describes how olive trees are planted, and Paragraph 2 explains how black plastic pipes are buried on slopes.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Pulls details from Paragraphs 3 and 4 instead of analyzing how Paragraphs 1 and 2 connect."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Inspired by those plants, engineers built tall frames along the high mountain ridges and stretched fine plastic mesh between the poles.",
+      "childTip": "Ask yourself: what big problem does Paragraph 1 introduce, and how do engineers solve it in Paragraph 2?",
+      "parentExplanation": "Focus standard ELAGSE5RI5 (Text Structure). Paragraph 1 sets up the central problem (bone-dry towns beneath thick coastal fog), and Paragraph 2 introduces the biomimetic solution (mesh nets modeled after cactus spines)."
+    },
+    {
+      "questionId": "w74_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w74_q6",
+      "prompt": "PART A: Which statement best summarizes the central idea of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "In the dry Atacama Desert, ridge-top mesh nets capture water from coastal fog and gravity-feed it to villages for drinking and farming.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the setting (Atacama), the mechanism (fog-catching mesh and gravity pipes), and the impact on communities."
+        },
+        {
+          "id": "B",
+          "text": "Wild desert cacti in northern Chile grow sharp spines because rain gauges have stood empty for decades.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Combines two minor background details from Paragraphs 1 and 2 while leaving out the fog-harvesting nets entirely."
+        },
+        {
+          "id": "C",
+          "text": "Fog nets can produce fresh water in every desert on Earth regardless of wind direction or nearby oceans.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Directly contradicts Paragraph 5, which explains that fog harvesting works only where cold ocean currents and steep cliffs meet."
+        },
+        {
+          "id": "D",
+          "text": "Mountain towns in Chile prefer buying water from tank trucks because coastal fog only appears during the summer.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraphs 1, 4, and 5 by reversing how villagers get water and when the fog appears."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.",
+      "childTip": "Pick the summary that covers where the nets are, how they catch mist, and how that water helps the towns.",
+      "parentExplanation": "Part A of the EBSR pair assesses Central Idea synthesis (ELAGSE5RI2). Option A integrates the problem, the fog-net technology, and the benefit to Atacama towns, while Option C falls for an extreme generalization contradicted by Paragraph 5."
+    },
+    {
+      "questionId": "w74_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w74_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"In some mountain towns, rain gauges have stood empty for decades at a time.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Shows only the dryness of the desert in Paragraph 1 without mentioning the fog-harvesting nets or water supply."
+        },
+        {
+          "id": "B",
+          "text": "\"Because the fog droplets are too light to fall as rain, they need a solid surface to strike.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Explains a single physical detail about mist droplets rather than the overall impact of the fog nets."
+        },
+        {
+          "id": "C",
+          "text": "\"When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly supports the central idea in Part A by showing how ridge-top nets harvest enough fog water to sustain a village."
+        },
+        {
+          "id": "D",
+          "text": "\"During clear summer weeks when the breeze shifts, towns must rely on their saved tank supply until the gray clouds return.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Focuses on a temporary seasonal limitation in Paragraph 5 rather than the main idea of how fog nets supply towns."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.",
+      "childTip": "Find the quote from Paragraph 4 that shows how a row of nets along a ridge supports a whole town.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence (ELAGSE5RI1) that backs up the central idea in Part A. Option C connects the ridge-top nets directly to sustaining hill towns."
+    }
+  ]
+}

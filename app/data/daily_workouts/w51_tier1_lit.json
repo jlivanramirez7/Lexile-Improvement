@@ -1,0 +1,309 @@
+{
+  "workoutId": "w51_tier1_lit",
+  "workoutNumber": 51,
+  "title": "The Voice in the Middle Row",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 975,
+  "fkgl": 6.3,
+  "genre": "Literary",
+  "subGenre": "Contemporary Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL3",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Voice in the Middle Row",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "For three weeks, Elena had practiced the spring concert solo until her fingers knew every note on her violin neck. At home in her room, the high melody sounded bright and crisp. Yet each Tuesday in the school band room, the middle part felt flat. Elena tried bowing harder so her violin would ring above the rest of the group. Still, Ms. Ortiz tapped her stick on the stand and asked the strings to stop.\n\nInstead of scolding the first violins, Ms. Ortiz asked Elena to trade seats with Malik in the middle row for ten minutes. Malik played the viola, an instrument slightly larger than a violin with a deeper, warmer voice. At first, Elena felt puzzled as she sat in the row and held her bow still. She had always thought the middle row just played soft chords while the front row kept the main tune.\n\nWhen Ms. Ortiz raised her baton again, Elena listened from the center of the circle. Right away, she heard what her own loud playing had drowned out all month. The rich inner rhythm, carried across the slow measures by the warm wooden violas, was completely missed by Elena from her front-row chair. The violas were not playing dull filler notes at all. They were passing a steady, rising counter-melody that built a bridge between the deep cellos and her high violin line.\n\nWhen Elena returned to her front seat, she stopped trying to overpower the room. Instead of rushing ahead on the high notes, she leaned her ear toward Malik's stand. She let her bow float on top of the viola chord. Her bright melody wove into their warm notes like silver thread through dark wool. The harsh edge vanished, and the whole string section sounded like one breathing instrument.\n\nAfter the last chord faded, Ms. Ortiz smiled and lowered her stick without a single change. Malik gave Elena a glad nod from the middle row. Elena saw that leading a song did not mean playing the loudest part in the hall. True harmony happened only when she listened as carefully as she played.",
+    "wordCount": 352,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "The rich inner rhythm, carried across the slow measures by the warm wooden violas, was completely missed by Elena from her front-row chair.",
+      "actorChunk": "Elena",
+      "actionChunk": "completely missed",
+      "receiverChunk": "The rich inner rhythm",
+      "distractorChunks": [
+        "carried across the slow measures by the warm wooden violas",
+        "from her front-row chair"
+      ],
+      "activeRewrite": "Elena completely missed the rich inner rhythm from her front-row chair."
+    },
+    "tier2Words": [
+      {
+        "word": "melody",
+        "definition": "the main tune or sequence of musical notes in a song",
+        "rootHint": "Greek meloidia ('singing or choral song')",
+        "contextClue": "At home, the high main tune sounded bright and crisp on her violin."
+      },
+      {
+        "word": "puzzled",
+        "definition": "confused or unable to understand why something is happening",
+        "rootHint": "Related to pose ('to put in a perplexed state')",
+        "contextClue": "Elena did not understand why Ms. Ortiz asked her to sit in the middle row without playing."
+      },
+      {
+        "word": "overpower",
+        "definition": "to be too loud or strong for others, drowning them out",
+        "rootHint": "Prefix over- ('too much') + power ('strength or force')",
+        "contextClue": "Instead of bowing harder to ring above the room, Elena softened her tone and leaned her ear toward Malik's stand."
+      },
+      {
+        "word": "harmony",
+        "definition": "a pleasing blend of different musical notes played together as one",
+        "rootHint": "Greek harmonia ('joining or agreement of sounds')",
+        "contextClue": "When her bright violin wove into the warm viola notes, the whole string section sounded like one instrument."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w51_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The rich inner rhythm, carried across the slow measures by the warm wooden violas, was completely missed by Elena from her front-row chair.\"\n\nBased on the structure of the sentence, what played the inner rhythm, and who failed to hear it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elena carried the inner rhythm across the slow measures, and the wooden violas missed it.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The warm wooden violas carried the inner rhythm, and Elena missed it from her front-row chair.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The front-row chair carried the wooden violas across the band room while Elena watched.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Ms. Ortiz missed the spring concert because her wooden baton broke in half.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The rich inner rhythm, carried across the slow measures by the warm wooden violas, was completely missed by Elena from her front-row chair.",
+      "childTip": "Check both 'by' phrases: the wooden violas carried the rhythm, while Elena missed it.",
+      "parentExplanation": "In this passive sentence, 'by the warm wooden violas' modifies 'carried' (what produced the rhythm), while 'was completely missed by Elena' identifies who failed to hear it."
+    },
+    {
+      "questionId": "w51_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"When Elena returned to her front seat, she stopped trying to overpower the room. Instead of rushing ahead on the high notes, she leaned her ear toward Malik's stand.\"\n\nWhat does the word overpower mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To play so loudly that one instrument drowns out the rest of the group",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To whisper quietly so no one in the back row can hear the tune",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "To plug electric amplifiers into the band room wall sockets",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "To trade sheet music stands with a partner in the middle row",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When Elena returned to her front seat, she stopped trying to overpower the room.",
+      "childTip": "Compare Paragraph 1, where she bowed harder to ring above the group, with Paragraph 4, where she lets her bow float gently.",
+      "parentExplanation": "In Paragraph 1, Elena tried bowing harder to play louder than everyone else; in Paragraph 4, she stops trying to 'overpower' the room and instead blends her notes gently with the violas."
+    },
+    {
+      "questionId": "w51_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, how does sitting in Malik's seat change Elena's view of the viola section?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She decides to quit playing the violin and switch to the cello before the spring concert.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "B",
+          "text": "She discovers that the violas play a rising counter-melody that connects the deep cellos to her high violin part.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "She realizes that Malik has been playing from the wrong sheet music for three weeks.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "She concludes that the middle row only plays quiet background filler chords.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "They were passing a steady, rising counter-melody that built a bridge between the deep cellos and her high violin line.",
+      "childTip": "Click the last sentence in Paragraph 3 that explains what the violas were actually playing.",
+      "parentExplanation": "In Paragraph 3 (ELAGSE5RL3), sitting in Malik's seat shifts Elena's perspective from thinking violas play dull filler notes to hearing how their counter-melody bridges the cellos and violins."
+    },
+    {
+      "questionId": "w51_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_FIGURATIVE",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"Her bright melody wove into their warm notes like silver thread through dark wool.\"\n\nWhy does the author compare the violin and viola notes to silver thread and dark wool?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To show how Elena's clear high notes and the violas' rich low notes blended together into one fabric of sound",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "To explain that the students had to sew their own wool concert uniforms before Tuesday",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "To prove that violin strings are always made from spun sheep's wool",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "To suggest that the music sounded scratchy and uncomfortable to the audience",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Her bright melody wove into their warm notes like silver thread through dark wool.",
+      "childTip": "Picture bright silver thread weaving into warm dark wool: two different textures joining together smoothly.",
+      "parentExplanation": "The simile compares the high, bright violin tone ('silver thread') and the warm, deep viola tone ('dark wool') to show how the two contrasting sounds interlocked smoothly."
+    },
+    {
+      "questionId": "w51_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL3",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w51_q6",
+      "prompt": "Part A: How does Elena's approach to playing her solo change from the beginning of the passage to the end?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At first she tries to play louder than everyone else, but by the end she listens closely to blend her part with the other strings.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "At first she refuses to practice at home, but by the end she practices for ten hours every night.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "At first she wants Malik to play the solo, but by the end she insists on playing alone on stage.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "At first she plays the viola in the middle row, but by the end she switches to the cello.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "True harmony happened only when she listened as carefully as she played.",
+      "childTip": "Compare how Elena bowed in Paragraph 1 with what she learns in Paragraph 5 about listening carefully.",
+      "parentExplanation": "Tracking character change across the text (ELAGSE5RL3) shows Elena shifting from trying to ring above the room in Paragraph 1 to listening and blending in Paragraphs 4 and 5."
+    },
+    {
+      "questionId": "w51_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w51_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"For three weeks, Elena had practiced the spring concert solo until her fingers knew every note on her violin neck.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Malik played the viola, an instrument slightly larger than a violin with a deeper, warmer voice.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"When Ms. Ortiz raised her baton again, Elena listened from the center of the circle.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"True harmony happened only when she listened as carefully as she played.\"",
+          "isCorrect": true,
+          "trapType": null
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "True harmony happened only when she listened as carefully as she played.",
+      "childTip": "Select the final quote in Paragraph 5 that sums up how Elena changed her approach to playing.",
+      "parentExplanation": "Option D directly quotes Paragraph 5, confirming that Elena learned to balance her playing with careful listening."
+    }
+  ]
+}

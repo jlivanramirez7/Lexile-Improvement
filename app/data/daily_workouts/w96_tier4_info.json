@@ -1,0 +1,303 @@
+{
+  "workoutId": "w96_tier4_info",
+  "workoutNumber": 96,
+  "title": "The Vault of Wild Seeds",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1120,
+  "fkgl": 7.62,
+  "genre": "Informational",
+  "subGenre": "Botany & Genetics",
+  "focusDomain": "D3_INTEGRATION",
+  "focusStandard": "ELAGSE5RI8",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "The Vault of Wild Seeds",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 403,
+    "paragraphCount": 5,
+    "text": "Walk through a modern wheat field and you will see millions of stalks standing at the exact same height. Farmers breed food crops for big yields, sweet taste, and smooth harvest by machine. Yet planting a single uniform crop across vast plains carries a hidden risk. Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest. When farm crops lose their natural defenses, where can scientists find the traits needed to save them?\n\nA century ago, a Russian plant scientist named Nikolai Vavilov found the answer high in rugged mountain ranges. Travelling by mule across five continents, he noticed that wild cousins of wheat, corn, and potatoes still grew in the hills where farming first began. Unlike pampered farm plants, these tough wild weeds had battled drought, frost, and rot for thousands of years. Each harsh valley forced the local plants to keep rare traits that helped them survive.\n\nVavilov realized that these ancient birthplaces, which he called centers of origin, held a priceless treasure for human food. If a new blight struck modern farm wheat, breeders could crossbreed that weak crop with a wild mountain cousin that could shrug off the mold. To guard those traits before wild valleys were plowed under, he built the world's first seed bank in Leningrad. Across five continents, thousands of wild seed packets were gathered by Vavilov before modern plows cleared the old hills. By the 1930s, his vault held more than two hundred thousand distinct samples of grains, beans, and tubers.\n\nPreserving a seed vault takes far more than locking tin boxes inside a cool stone basement. Seeds are living embryos that slowly lose their power to sprout if they sit on a shelf for decades. Every few years, staff must plant a portion of each sample in guarded test plots, harvest fresh seeds, and dry them for cold storage. During the harsh siege of Leningrad in World War II, Vavilov's team guarded the vault day and night so future crops would not perish.\n\nToday, global vaults buried in Arctic ice still follow the blueprint that Vavilov drew a hundred years ago. Whenever scorching heat or a strange rust mold threatens the world's bread supply, plant breeders turn to those cold shelves. Inside a single rough seed from a mountain weed may rest the exact code needed to feed the next century.",
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "Across five continents, thousands of wild seed packets were gathered by Vavilov before modern plows cleared the old hills.",
+      "actorChunk": "Vavilov",
+      "actionChunk": "were gathered",
+      "receiverChunk": "thousands of wild seed packets",
+      "distractorChunks": [
+        "Across five continents",
+        "before modern plows cleared the old hills"
+      ],
+      "activeRewrite": "Across five continents, Vavilov gathered thousands of wild seed packets before modern plows cleared the old hills."
+    },
+    "tier2Words": [
+      {
+        "word": "uniform",
+        "definition": "All the same in form, size, or appearance, with no variation",
+        "rootHint": "From Latin 'unus' (one) + 'forma' (shape or form)",
+        "contextClue": "Millions of wheat stalks stand at the exact same height and share the exact same traits."
+      },
+      {
+        "word": "blight",
+        "definition": "A plant disease caused by fungi or bacteria that withers and kills crops",
+        "rootHint": "An old agricultural word for a sudden withering disease on leaves and grain",
+        "contextClue": "When a crop disease strikes farm wheat, breeders look for a wild cousin that can shrug off the mold."
+      },
+      {
+        "word": "distinct",
+        "definition": "Clearly different and separate from others of the same kind",
+        "rootHint": "From Latin 'distinguere' meaning to separate or mark apart",
+        "contextClue": "The seed vault held more than two hundred thousand separate, unique samples of grains and beans."
+      },
+      {
+        "word": "perish",
+        "definition": "To die, be destroyed, or pass away completely",
+        "rootHint": "From Latin 'perire' meaning to pass away or be lost",
+        "contextClue": "Scientists guarded the seed collection during the siege so future food crops would not die out."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w96_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Across five continents, thousands of wild seed packets were gathered by Vavilov before modern plows cleared the old hills.\"\n\nWho performed the action of gathering the wild seed packets in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The modern plows that cleared the old hills",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Vavilov, the Russian plant scientist",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The thousands of wild seed packets",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "The farmers who planted uniform wheat across the plains",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Across five continents, thousands of wild seed packets were gathered by Vavilov before modern plows cleared the old hills.",
+      "childTip": "Find the passive verb 'were gathered' and check the noun right after 'by' to see who collected the packets.",
+      "parentExplanation": "In this passive construction, 'thousands of wild seed packets' is the receiver of 'were gathered.' The agent phrase 'by Vavilov' identifies who performed the gathering."
+    },
+    {
+      "questionId": "w96_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 1:\n\n\"Yet planting a single uniform crop across vast plains carries a hidden risk.\"\n\nWhat does the word \"uniform\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Identical and lacking variety from plant to plant",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Grown high on rugged mountain slopes",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Protected against every kind of insect pest",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Dressed in heavy winter work clothes",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Yet planting a single uniform crop across vast plains carries a hidden risk.",
+      "childTip": "Look at the sentences right before and after: millions of stalks stand at the exact same height and share the same traits.",
+      "parentExplanation": "Paragraph 1 describes stalks standing at the exact same height and sharing the exact same traits, showing that 'uniform' means identical and lacking variation."
+    },
+    {
+      "questionId": "w96_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 4, why must seed bank workers periodically plant a portion of their stored seeds in test plots?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stored seeds are living embryos that gradually lose their ability to sprout if left on a shelf for too many decades.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Wild mountain seeds turn into ordinary farm wheat if they stay inside tin boxes.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Arctic ice melts every summer and floods the stone basement of the vault.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "Farmers buy all the stored seeds from the vault every spring to feed their mules.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Seeds are living embryos that slowly lose their power to sprout if they sit on a shelf for decades.",
+      "childTip": "Click the sentence in Paragraph 4 that explains what happens to living seed embryos if they sit on a shelf for decades.",
+      "parentExplanation": "Paragraph 4 explains that because seeds are living embryos that lose viability over decades, workers must periodically grow them out in test plots to harvest fresh seeds."
+    },
+    {
+      "questionId": "w96_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "Which evidence does the author provide to support the claim that wild crop cousins are crucial for protecting the modern food supply?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wild plants have survived drought, frost, and rot for thousands of years, keeping hardy traits that breeders can cross into weak farm crops.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Wild mountain weeds produce much larger yields and sweeter grain than modern farm wheat.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Modern harvesting machines can only cut stalks that grow in rugged mountain valleys.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "A single packet of wild seeds can be ground into enough flour to feed a whole city.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "If a new blight struck modern farm wheat, breeders could crossbreed that weak crop with a wild mountain cousin that could shrug off the mold.",
+      "childTip": "Connect what wild weeds endured in Paragraph 2 with how breeders use them to fight blight in Paragraph 3.",
+      "parentExplanation": "In Paragraphs 2 and 3, the author supports the claim by showing that wild relatives evolved natural resistance to drought, frost, and rot, which breeders can crossbreed into vulnerable farm crops."
+    },
+    {
+      "questionId": "w96_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w96_q6",
+      "prompt": "Part A: Why are modern farm fields more vulnerable to being wiped out by a single disease than wild mountain valleys?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every stalk in a modern field shares the exact same traits, so a disease that harms one plant can harm them all.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Modern farmers refuse to water or fertilize their wheat fields once the stalks sprout.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Fungi and insect pests can only survive on flat plains and never enter mountain ranges.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Wild mountain valleys are sprayed every week by plant breeders from Arctic seed vaults.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest.",
+      "childTip": "Look at Paragraph 1 for the sentence that explains the danger of every stalk sharing the same traits.",
+      "parentExplanation": "Paragraph 1 explains that genetic uniformity makes modern crops vulnerable: when every plant shares identical traits, one fungus or pest can destroy the entire harvest."
+    },
+    {
+      "questionId": "w96_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w96_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Farmers breed food crops for big yields, sweet taste, and smooth harvest by machine.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest.\"",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "\"By the 1930s, his vault held more than two hundred thousand distinct samples of grains, beans, and tubers.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Today, global vaults buried in Arctic ice still follow the blueprint that Vavilov drew a hundred years ago.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest.",
+      "childTip": "Pick the exact sentence from Paragraph 1 that links shared traits to a fungus or pest wiping out the harvest.",
+      "parentExplanation": "Option B directly proves Part A by stating why uniform crops sharing identical traits can be wiped out by a single fungus or pest."
+    }
+  ]
+}

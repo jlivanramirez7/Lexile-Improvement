@@ -1,0 +1,303 @@
+{
+  "workoutId": "w100_tier4_info",
+  "workoutNumber": 100,
+  "title": "Wings in the Red Dust",
+  "tier": 4,
+  "lexileBand": "1085L-1150L",
+  "targetLexile": 1150,
+  "fkgl": 6.82,
+  "genre": "Informational",
+  "subGenre": "Planetary Science & Engineering",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RI1",
+  "estimatedMinutes": 12,
+  "passage": {
+    "title": "Wings in the Red Dust",
+    "author": "DRC BEACON Assessment Bank",
+    "wordCount": 399,
+    "paragraphCount": 5,
+    "text": "When the Mars rover touched down in 2021, a four-pound craft named Ingenuity rode tucked beneath its frame. Space builders had made the small rotor craft to test a bold question. Could a machine fly in the thin skies of a far world? On Earth, spinning blades push against thick air to create upward lift. On Mars, though, the gas at the ground is ninety-nine percent thinner than Earth's sea-level air. Trying to hover above the red dust of Jezero Crater felt like flying a chopper twenty miles above Earth.\n\nTo beat that thin air, builders had to trim every spare gram of weight while boosting blade speed to the limit. Standard Earth choppers spin their main blades at roughly five hundred turns per minute. The Mars craft's twin sets of four-foot blades had to spin five times faster—at twenty-five hundred turns per minute—just to bite into the wispy gas. Inside the test chamber on Earth, the four carbon-fiber blades were spun by tiny motors before the craft shipped to launch. Each stiff foam-core wing weighed less than a playing card yet stayed rigid at top speed.\n\nStrict weight limits also meant the craft could not carry heavy cells to survive the bitter nights. After sunset, the chill in the crater plunged to minus one hundred thirty degrees. That deep freeze was cold enough to crack metal joints and ruin wires. A palm-sized solar panel perched above the top rotor soaked up weak sunlight each day. Nearly two-thirds of that stored solar charge went straight to small heaters just to keep the craft warm until dawn. Whatever charge remained had to power a ninety-second flight.\n\nDuring those brief hops, no human pilot on Earth could steer the craft with a live stick. Because radio waves took more than ten minutes to cross the gulf between Earth and Mars, a live command would arrive long after a crash. Instead, a small computer tracked rocks and sand ridges through a downward lens thirty times each second. By matching those ground shadows against tilt sensors, the craft steered itself through sudden dust gusts.\n\nBuilt as a thirty-day test to prove five short hops were possible, the little craft amazed its team by flying seventy-two times over three years. It scouted rocky ridges and sand traps ahead of the rover, proving that winged scouts can guide future explorers across distant worlds.",
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Inside the test chamber on Earth, the four carbon-fiber blades were spun by tiny motors before the craft shipped to launch.",
+      "actorChunk": "tiny motors",
+      "actionChunk": "were spun",
+      "receiverChunk": "the four carbon-fiber blades",
+      "distractorChunks": [
+        "Inside the test chamber on Earth",
+        "before the craft shipped to launch"
+      ],
+      "activeRewrite": "Inside the test chamber on Earth, tiny motors spun the four carbon-fiber blades before the craft shipped to launch."
+    },
+    "tier2Words": [
+      {
+        "word": "wispy",
+        "definition": "Thin, faint, and light, like a delicate thread of smoke or cloud",
+        "rootHint": "From 'wisp', a small, thin bundle or faint streak",
+        "contextClue": "Because the Martian air is ninety-nine percent thinner than Earth's, the blades had to spin fast to bite into the thin gas."
+      },
+      {
+        "word": "rigid",
+        "definition": "Stiff, firm, and unable to bend or twist out of shape",
+        "rootHint": "From Latin 'rigidus' meaning stiff or inflexible",
+        "contextClue": "Each stiff carbon-fiber wing stayed firm without bending even when spinning at twenty-five hundred turns per minute."
+      },
+      {
+        "word": "plunged",
+        "definition": "Dropped suddenly and steeply to a much lower level",
+        "rootHint": "Related to diving or dropping sharply downward",
+        "contextClue": "After sunset, crater chill dropped sharply to minus one hundred thirty degrees."
+      },
+      {
+        "word": "gulf",
+        "definition": "A vast, wide gap or distance separating two places",
+        "rootHint": "From Greek 'kolpos', extended to mean a wide expanse or chasm",
+        "contextClue": "Radio waves took more than ten minutes to cross the vast distance of space between Earth and Mars."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w100_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Inside the test chamber on Earth, the four carbon-fiber blades were spun by tiny motors before the craft shipped to launch.\"\n\nIn this sentence, what performed the action of spinning the carbon-fiber blades?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The four carbon-fiber blades inside the chamber",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "The tiny motors on the rotor craft",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The test chamber on Earth",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "The Mars rover in Jezero Crater",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Inside the test chamber on Earth, the four carbon-fiber blades were spun by tiny motors before the craft shipped to launch.",
+      "childTip": "Find the passive verb 'were spun' and look right after 'by' to see what turned the blades.",
+      "parentExplanation": "In this passive sentence, 'the four carbon-fiber blades' receives the action ('were spun'). The agent phrase 'by tiny motors' identifies what performed the spinning."
+    },
+    {
+      "questionId": "w100_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RI4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Each stiff foam-core wing weighed less than a playing card yet stayed rigid at top speed.\"\n\nWhat does the word \"rigid\" most nearly mean as used in this sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Firm and unbending under pressure",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Soft and easy to fold in half",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Heavy enough to sink into red sand",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Powered by a palm-sized solar panel",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Each stiff foam-core wing weighed less than a playing card yet stayed rigid at top speed.",
+      "childTip": "Use the clue word 'stiff' earlier in the sentence—even though the wing was light, it stayed stiff and firm at top speed.",
+      "parentExplanation": "The sentence pairs 'stiff foam-core wing' with 'stayed rigid at top speed,' showing that 'rigid' means firm and unbending."
+    },
+    {
+      "questionId": "w100_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RI3",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why was only about one-third of Ingenuity's solar battery power available for actual flying?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nearly two-thirds of the stored charge had to run small heaters so the freezing night would not ruin wires.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The Mars rover drained two-thirds of the rotor craft's power every afternoon.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Red dust covered two-thirds of the solar panel before the craft even left Earth.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "The downward lens used two-thirds of the charge to film color movies.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Nearly two-thirds of that stored solar charge went straight to small heaters just to keep the craft warm until dawn.",
+      "childTip": "Click the sentence in Paragraph 3 that explains where nearly two-thirds of the stored solar charge went.",
+      "parentExplanation": "Paragraph 3 explains that because Martian night chill plunges to minus 130 degrees, nearly two-thirds of the solar charge had to power small heaters just to keep the craft warm until dawn."
+    },
+    {
+      "questionId": "w100_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D3_INTEGRATION",
+      "subSkill": "3A_AUTHOR_CLAIM",
+      "standard": "ELAGSE5RI8",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the author support the idea in Paragraph 4 that Ingenuity had to steer itself without live help from human pilots?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By explaining that radio waves took over ten minutes to travel between Earth and Mars, which is far too slow for a ninety-second flight",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "By showing that human pilots on Earth did not know how to use a stick to fly a four-pound rotor craft",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "By stating that thin Martian gas blocks all radio waves from leaving Jezero Crater",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "By noting that the downward lens only worked when the craft was parked under the rover's frame",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Because radio waves took more than ten minutes to cross the gulf between Earth and Mars, a live command would arrive long after a crash.",
+      "childTip": "Check Paragraph 4 to see why a ten-minute radio delay made live stick steering impossible.",
+      "parentExplanation": "In Paragraph 4, the author supports the necessity of self-guided flight by pointing out the ten-minute one-way radio delay between Earth and Mars—meaning any live command would arrive long after a ninety-second flight ended."
+    },
+    {
+      "questionId": "w100_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w100_q6",
+      "prompt": "Part A: How did builders enable Ingenuity to create enough lift in Mars's ultra-thin air?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They gave the light craft stiff carbon-fiber blades that spun five times faster than standard Earth chopper blades.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "They attached heavy rocket thrusters under each blade to blast hot gas against the crater floor.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "They waited for thick rain clouds to gather over Jezero Crater before spinning the rotors.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "They slowed the blades down to five hundred turns per minute so the motors would not overheat.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The Mars craft's twin sets of four-foot blades had to spin five times faster—at twenty-five hundred turns per minute—just to bite into the wispy gas.",
+      "childTip": "Look at Paragraph 2 to see how fast the Mars craft's four-foot blades had to spin compared to Earth choppers.",
+      "parentExplanation": "Paragraph 2 explains that to generate lift in air ninety-nine percent thinner than Earth's, builders kept the craft down to four pounds and spun its stiff four-foot carbon-fiber blades at 2,500 rpm—five times faster than standard choppers."
+    },
+    {
+      "questionId": "w100_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RI1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w100_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"When the Mars rover touched down in 2021, a four-pound craft named Ingenuity rode tucked beneath its frame.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"The Mars craft's twin sets of four-foot blades had to spin five times faster—at twenty-five hundred turns per minute—just to bite into the wispy gas.\"",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "\"A palm-sized solar panel perched above the top rotor soaked up weak sunlight each day.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"By matching those ground shadows against tilt sensors, the craft steered itself through sudden dust gusts.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The Mars craft's twin sets of four-foot blades had to spin five times faster—at twenty-five hundred turns per minute—just to bite into the wispy gas.",
+      "childTip": "Pick the sentence in Paragraph 2 that tells how fast the four-foot blades spun to bite into the wispy gas.",
+      "parentExplanation": "Option B directly proves Part A by stating that the Mars craft's twin sets of four-foot blades spun five times faster (2,500 rpm) to bite into the wispy gas."
+    }
+  ]
+}

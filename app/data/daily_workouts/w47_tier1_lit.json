@@ -1,0 +1,310 @@
+{
+  "workoutId": "w47_tier1_lit",
+  "workoutNumber": 47,
+  "title": "Grain of the Cedar Rib",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 970,
+  "fkgl": 6.49,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL6",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Grain of the Cedar Rib",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Sawdust floated in the golden light of the barn as Jonah and his older brother, Marcus, knelt beside their grandfather's wooden canoe. For ten summers, the sixteen-foot craft had carried them across Lake Rabun. Now a cracked rib near the bow needed repair before Saturday's trip. Jonah ran his hand over the smooth cedar planks. He admired how every brass tack lined up in a neat row. He wanted their repair to match the quiet pride their grandfather had built into the hull.\n\nMarcus, however, kept glancing at his watch and tapping a can of quick-setting paste. From Marcus's viewpoint, spending three nights steaming and bending a fresh strip of white cedar was a waste of time when no one would look under the rim. He argued that a thick scoop of gray paste would harden in twenty minutes and get them onto the lake by noon. Jonah shook his head. Stiff paste would crack the first time the flexible wooden hull bent against a wave.\n\nTo settle the dispute, Jonah lifted the broken section to show why the old rib had failed after a rocky landing last autumn. The split cedar rib, weakened by winter moisture trapped beneath a patched coat of paint, was carefully pried from the hull by Jonah with a flat chisel. Under the old patch, someone had once smeared hard putty instead of putting in new wood. Instead of bonding with the cedar, the stiff lump had pulled away from the planks and trapped lake water against the grain.\n\nSeeing the dark, softened wood under the old shortcut made Marcus set his can of paste back on the shelf. He admitted that a fast patch today would only rot two more planks by next spring. Together, the brothers filled the iron steamer kettle and slid a fresh strip of white cedar into the hot mist. When the wood grew pliable, Marcus helped Jonah clamp the curve smoothly against the hull.\n\nBy Friday night, a coat of clear marine varnish gleamed over the new rib. At dawn, they carried the canoe down to the dock. The hull felt light, tight, and balanced on their shoulders. Marcus grinned and thanked his younger brother for being stubborn enough to protect their grandfather's boat. Out on the glassy water, the cedar planks flexed gently with every stroke of their paddles.",
+    "wordCount": 391,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "The split cedar rib, weakened by winter moisture trapped beneath a patched coat of paint, was carefully pried from the hull by Jonah with a flat chisel.",
+      "actorChunk": "Jonah",
+      "actionChunk": "carefully pried",
+      "receiverChunk": "The split cedar rib",
+      "distractorChunks": [
+        "weakened by winter moisture trapped beneath a patched coat of paint",
+        "from the hull",
+        "with a flat chisel"
+      ],
+      "activeRewrite": "Jonah carefully pried the split cedar rib from the hull with a flat chisel."
+    },
+    "tier2Words": [
+      {
+        "word": "viewpoint",
+        "definition": "a person's way of thinking about or looking at a situation",
+        "rootHint": "Compound word combining view ('to see') + point ('position')",
+        "contextClue": "Marcus saw the repair differently than Jonah and thought steaming new wood was a waste of time."
+      },
+      {
+        "word": "flexible",
+        "definition": "able to bend easily without breaking or cracking",
+        "rootHint": "Latin root flectere ('to bend')",
+        "contextClue": "Unlike stiff paste that would crack, the wood hull bent gently when hitting a wave."
+      },
+      {
+        "word": "pliable",
+        "definition": "easy to bend and shape without snapping",
+        "rootHint": "Latin root plicare ('to fold or bend')",
+        "contextClue": "After sitting in the hot mist of the kettle, the cedar strip bent smoothly against the curve of the hull."
+      },
+      {
+        "word": "gleamed",
+        "definition": "shone brightly with a smooth, clean light",
+        "rootHint": "Old English glaem ('bright beam or glow')",
+        "contextClue": "A fresh coat of clear marine varnish shone brightly over the newly repaired cedar rib."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w47_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The split cedar rib, weakened by winter moisture trapped beneath a patched coat of paint, was carefully pried from the hull by Jonah with a flat chisel.\"\n\nBased on the sentence structure, what damaged the cedar rib, and who removed it from the canoe?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jonah weakened the cedar rib with a flat chisel, and winter moisture pried it from the hull.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Winter moisture trapped under paint weakened the rib, and Jonah pried it out using a flat chisel.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A flat chisel trapped the winter moisture until the patched coat of paint pried itself loose.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Marcus broke the cedar rib by dropping the iron kettle inside the wooden hull.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The split cedar rib, weakened by winter moisture trapped beneath a patched coat of paint, was carefully pried from the hull by Jonah with a flat chisel.",
+      "childTip": "Look at both 'by' phrases: winter moisture weakened the rib, while Jonah pried it from the hull.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'weakened by winter moisture' explains what damaged the wood, and 'was carefully pried from the hull by Jonah' identifies who removed it."
+    },
+    {
+      "questionId": "w47_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"They slid a fresh strip of white cedar into the hot mist. When the wood grew pliable, Marcus helped Jonah clamp the curve smoothly against the hull.\"\n\nWhat does the word pliable mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Brittle and likely to snap into sharp splinters",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Softened and easy to bend into a smooth curve",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Covered in thick gray paste from a metal can",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Heavy enough to sink the canoe to the lake bottom",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "When the wood grew pliable, Marcus helped Jonah clamp the curve smoothly against the hull.",
+      "childTip": "Think about what hot steam does to wood so the brothers can clamp it into a smooth curve.",
+      "parentExplanation": "After being steamed in hot mist, the cedar strip could be clamped smoothly into a curve against the hull, showing that 'pliable' means bendable and supple."
+    },
+    {
+      "questionId": "w47_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, what finally convinces Marcus to give up his plan of using quick paste?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He discovers that the hardware store is completely sold out of gray paste.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "He sees that an older putty shortcut had pulled away from the planks and trapped water against the wood.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "He realizes that steaming white cedar takes only five minutes instead of three nights.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "He worries that brass tacks will rust if they ever touch clear marine varnish.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Instead of bonding with the cedar, the stiff lump had pulled away from the planks and trapped lake water against the grain.",
+      "childTip": "Click the sentence in Paragraph 3 that shows what the old lump of stiff putty did to the planks.",
+      "parentExplanation": "In Paragraph 3, Jonah pries off the broken rib and reveals that an old putty patch had pulled away from the cedar and trapped water, which convinces Marcus in Paragraph 4 to put his can away."
+    },
+    {
+      "questionId": "w47_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2B_POV_VOICE",
+      "standard": "ELAGSE5RL6",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does the narrator's point of view in Paragraph 2 help the reader understand the conflict between the brothers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By contrasting Marcus's desire for a quick fix with Jonah's knowledge of how a wood hull moves on the water",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By showing that neither brother cares about their granddad's canoe anymore",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "By telling the entire story in the first person through the granddad's journal entries",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "By explaining that Jonah wants to sell the canoe as soon as the paint dries",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "From Marcus's viewpoint, spending three nights steaming and bending a fresh strip of white cedar was a waste of time when no one would look under the rim.",
+      "childTip": "Compare how Marcus views the repair in Paragraph 2 with how Jonah explains the flexing hull.",
+      "parentExplanation": "The third-person narrator reveals both brothers' perspectives in Paragraph 2 (ELAGSE5RL6): Marcus focuses on saving time with a hidden patch, while Jonah focuses on structural integrity."
+    },
+    {
+      "questionId": "w47_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w47_q6",
+      "prompt": "Part A: Which statement best expresses a central theme of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Doing a job the right way takes patience, whereas careless shortcuts often create worse damage later.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Older brothers should always let younger brothers do all the heavy work in a barn.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "Wooden canoes cannot float on Lake Rabun unless they are painted every Saturday.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "Quick-setting paste is stronger and more flexible than steamed white cedar.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "He admitted that a fast patch today would only rot two more planks by next spring.",
+      "childTip": "Look at what Marcus realizes in Paragraph 4 about the true cost of a fast shortcut.",
+      "parentExplanation": "The central theme contrasts patient craftsmanship with hasty shortcuts, highlighted when Marcus recognizes that a quick patch today would cause worse rot by next spring."
+    },
+    {
+      "questionId": "w47_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w47_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"For ten summers, the sixteen-foot craft had carried them across Lake Rabun.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"He admitted that a fast patch today would only rot two more planks by next spring.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"By Friday night, a coat of clear marine varnish gleamed over the new rib.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Out on the glassy water, the cedar planks flexed gently with every stroke of their paddles.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "He admitted that a fast patch today would only rot two more planks by next spring.",
+      "childTip": "Pick the quote in Paragraph 4 where Marcus admits what a fast patch would cause by next spring.",
+      "parentExplanation": "Option B directly supports the theme in Part A by showing how a hasty shortcut leads to greater damage over time."
+    }
+  ]
+}

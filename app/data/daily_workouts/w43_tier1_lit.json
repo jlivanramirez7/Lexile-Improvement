@@ -1,0 +1,309 @@
+{
+  "workoutId": "w43_tier1_lit",
+  "workoutNumber": 43,
+  "title": "A Whistle Across the Pasture",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 960,
+  "fkgl": 6.19,
+  "genre": "Literary",
+  "subGenre": "Realistic Fiction",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "A Whistle Across the Pasture",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Morning dew still clung to the clover in the north pasture when Eli unlatched the wooden gate. Beside his boots, Pip, a ten-month-old border collie with black-and-white fur, quivered like a coiled spring. All week, Eli had tried to help his grandfather move the flock of twenty ewes from the hill down to the wooden pen. Yet every time Pip sprinted toward the sheep, Eli had shouted and waved his arms to steer the puppy. Instead of listening, Pip had barked wildly and scattered the wooly flock into the briars.\n\nGrandfather walked over and handed Eli a flat silver shepherd's whistle strung on a leather cord. He explained that a loud human voice sounds like panic to both a young dog and nervous sheep. The nervous ewes near the stone wall, startled earlier by Eli's waving arms and loud shouts, were calmly gathered by Grandfather's older dog with a wide, silent sweep. Pip watched the older dog glide along the edge of the flock without making a single yip.\n\nEli pressed the curved metal whistle against his tongue and blew a soft, low note. Grandfather had taught him two basic signals on the porch after supper. One long, steady blast told the dog to lie flat in the grass and pause. Two short, rising notes told the dog to circle wide to the left around the flock. Because a clear whistle cuts through valley wind without sounding angry, a working dog can hear the cue from half a mile away.\n\nWhen Grandfather nodded, Eli sent Pip trotting up the green slope toward the grazing ewes. Halfway up the hill, the puppy lowered his head and sped up, ready to charge straight into the middle of the sheep. Eli resisted the urge to yell across the grass. Instead, he blew one firm, level note on the silver whistle.\n\nPip's ears twitched, and his belly dropped straight into the wet clover. The ewes merely lifted their heads without bolting. After a three-second pause, Eli blew two crisp rising notes. Pip rose smoothly and trotted in a wide arc around the left flank, guiding the whole flock straight through the open gate.",
+    "wordCount": 359,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The nervous ewes near the stone wall, startled earlier by Eli's waving arms and loud shouts, were calmly gathered by Grandfather's older dog with a wide, silent sweep.",
+      "actorChunk": "Grandfather's older dog",
+      "actionChunk": "calmly gathered",
+      "receiverChunk": "The nervous ewes near the stone wall",
+      "distractorChunks": [
+        "startled earlier by Eli's waving arms and loud shouts",
+        "with a wide, silent sweep"
+      ],
+      "activeRewrite": "Grandfather's older dog calmly gathered the nervous ewes near the stone wall with a wide, silent sweep."
+    },
+    "tier2Words": [
+      {
+        "word": "quivered",
+        "definition": "trembled or shook slightly with excitement or eagerness",
+        "rootHint": "From Middle English quiver, meaning 'nimble, eager, or trembling'",
+        "contextClue": "Beside Eli's boots, the eager border collie puppy trembled like a coiled spring waiting to run."
+      },
+      {
+        "word": "scattered",
+        "definition": "drove or sent off in many different directions",
+        "rootHint": "From Middle English scateren, meaning 'to separate and dash apart'",
+        "contextClue": "When Pip barked wildly, the frightened flock broke apart and ran into the briars."
+      },
+      {
+        "word": "resisted",
+        "definition": "held back from doing something even when tempted",
+        "rootHint": "Latin root sistere ('to stand firm') + prefix re- ('against')",
+        "contextClue": "Instead of yelling across the grass when Pip sped up, Eli held back and used his whistle."
+      },
+      {
+        "word": "flank",
+        "definition": "the side edge of a group, herd, or body",
+        "rootHint": "From Old French flanc, meaning 'side'",
+        "contextClue": "Following the two-note signal to circle left, Pip trotted in a wide arc around the left side of the flock."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w43_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The nervous ewes near the stone wall, startled earlier by Eli's waving arms and loud shouts, were calmly gathered by Grandfather's older dog with a wide, silent sweep.\"\n\nBased on the sentence, what startled the ewes earlier, and what gathered them calmly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grandfather's older dog startled the ewes near the wall, and Eli's loud shouts gathered them into the pen.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Eli's waving arms and loud shouts startled the ewes, and Grandfather's older dog calmly gathered them.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The stone wall gathered Eli's waving arms while the nervous ewes chased the older dog.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "A sudden clap of thunder startled the flock, and a farm truck herded them down the hill.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The nervous ewes near the stone wall, startled earlier by Eli's waving arms and loud shouts, were calmly gathered by Grandfather's older dog with a wide, silent sweep.",
+      "childTip": "Separate the two 'by' phrases: Eli's waving arms and shouts startled the ewes, while the older dog gathered them.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'startled earlier by Eli's waving arms and loud shouts' and 'were calmly gathered by Grandfather's older dog'. Option B tracks both accurately."
+    },
+    {
+      "questionId": "w43_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Halfway up the hill, the puppy lowered his head and sped up, ready to charge straight into the middle of the sheep. Eli resisted the urge to yell across the grass. Instead, he blew one firm, level note on the silver whistle.\"\n\nWhat does the word resisted mean as it is used in Paragraph 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stopped himself from doing something he felt like doing",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Shouted as loudly as possible across the pasture",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Forgot which whistle notes his grandfather had taught him",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "Dropped the silver whistle into the wet clover",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Eli resisted the urge to yell across the grass.",
+      "childTip": "Look at the word 'Instead' in the next sentence: Eli wanted to yell, but he held back and used the whistle.",
+      "parentExplanation": "In Paragraph 4, 'Instead, he blew one firm, level note' shows that Eli held back ('resisted') his habit of yelling at the puppy."
+    },
+    {
+      "questionId": "w43_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1B_KEY_DETAILS",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why does a shepherd's whistle work better than shouting across a windy pasture?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Its clear notes travel far through the wind without sounding angry or startling the animals.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Its magic sound puts the sheep to sleep so the shepherd can carry them into the pen.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Only adult border collies have ears strong enough to hear a human voice.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "The whistle makes a loud barking noise that scares the sheep away from the briars.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Because a clear whistle cuts through valley wind without sounding angry, a working dog can hear the cue from half a mile away.",
+      "childTip": "Click the last sentence in Paragraph 3 that explains how a clear whistle travels through valley wind.",
+      "parentExplanation": "Paragraph 3 explains that a clear whistle cuts through valley wind without sounding angry or panicked, letting a dog hear the cue from half a mile away."
+    },
+    {
+      "questionId": "w43_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 5 resolve the conflict introduced in Paragraph 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It shows Pip obeying Eli's quiet whistle signals to guide the flock calmly through the gate instead of scattering them.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "It shows Grandfather locking Pip inside the barn while the older dog finishes all the farm chores.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It explains why sheep prefer eating clover on the hill over standing near the stone wall.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "It proves that ten-month-old puppies are too young to learn any herding commands.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Pip rose smoothly and trotted in a wide arc around the left flank, guiding the whole flock straight through the open gate.",
+      "childTip": "Compare the scattered sheep in Paragraph 1 with what Pip does at the end of Paragraph 5.",
+      "parentExplanation": "In Paragraph 1, Eli's shouting and Pip's barking scattered the ewes into the briars; in Paragraph 5, Eli's calm whistle cues help Pip pause and circle wide to bring the flock smoothly through the gate."
+    },
+    {
+      "questionId": "w43_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w43_q6",
+      "prompt": "Part A: Based on Paragraphs 3 through 5, why does Eli blow one long, steady blast before blowing the two short rising notes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He needs Pip to lie down and stop his fast charge first so the sheep do not bolt in fear.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "He forgets the signal for circling left and blows the wrong note by mistake.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "He wants Grandfather's older dog to run up the hill and take Pip's place.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "D",
+          "text": "One long blast tells the sheep to walk single file into the briar patch.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Pip's ears twitched, and his belly dropped straight into the wet clover.",
+      "childTip": "Remember what one long blast means in Paragraph 3, and see what Pip was about to do in Paragraph 4!",
+      "parentExplanation": "In Paragraph 3, one long blast means 'lie flat and pause.' When Pip lowers his head to charge the sheep in Paragraph 4, Eli blows that single long note so Pip drops into the clover and the ewes do not bolt."
+    },
+    {
+      "questionId": "w43_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w43_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Morning dew still clung to the clover in the north pasture when Eli unlatched the wooden gate.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"Grandfather walked over and handed Eli a flat silver shepherd's whistle strung on a leather cord.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"One long, steady blast told the dog to lie flat in the grass and pause.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"Two short, rising notes told the dog to circle wide to the left around the flock.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "One long, steady blast told the dog to lie flat in the grass and pause.",
+      "childTip": "Choose the quote in Paragraph 3 that explains the exact meaning of the single long blast.",
+      "parentExplanation": "Option C directly proves why Eli blew one long, steady note when Pip began to charge—to command the puppy to lie flat in the grass and pause."
+    }
+  ]
+}

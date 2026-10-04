@@ -1,0 +1,309 @@
+{
+  "workoutId": "w49_tier1_lit",
+  "workoutNumber": 49,
+  "title": "Lines on the Pine Ridge",
+  "tier": 1,
+  "lexileBand": "940L-980L",
+  "targetLexile": 975,
+  "fkgl": 6.48,
+  "genre": "Literary",
+  "subGenre": "Adventure / Survival",
+  "focusDomain": "D4_SYNTAX",
+  "focusStandard": "ELAGSE5L1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Lines on the Pine Ridge",
+    "author": "DRC BEACON Assessment Passage",
+    "text": "Halfway up Tray Mountain, a sudden gust of wind knocked Maya's plastic compass from a granite ledge into a deep briar ravine. Her older cousin, Devon, peered down the steep drop and sighed. Fetching the compass from the thorny tangle would be unsafe. Still, they needed to reach the ranger shelter on the east ridge before dusk. Devon pointed to a thick green patch of moss on a hemlock trunk and guessed that the mossy side must be north.\n\nMaya shook her head and knelt on a sunny patch of flat rock. In the damp Blue Ridge Mountains, mist blew through the gaps from every side, so moss often grew all around a tree trunk. Relying on bark moss alone could easily lead them into the wrong hollow. Instead, Maya pushed a straight pine stick upright into the dirt and placed a small white pebble at the tip of its shadow. After waiting fifteen minutes, she placed a second pebble where the shadow tip had moved.\n\nBecause the sun crosses the sky from east to west, the shadow tip always travels in the opposite direction. A straight line connecting the first pebble to the second pebble pointed due east. Next, Maya unfolded her paper trail map and aligned its east border with her two pebbles on the ground. The steep granite bluff, marked on the paper map by tightly packed brown contour lines, was wisely avoided by the cousins in favor of a gentle saddle trail. Where the brown loops sat far apart on the page, the slope rose gradually.\n\nAs they hiked along the gentler curve of the ridge, Devon matched the map lines to the real hills around them. To their left, the cliffs dropped away just where the brown lines bunched together like stacked rings. To their right, a wide pine meadow opened up where the lines spread wide apart. Without the compass needle, Maya's two pebbles and the contour map guided every turn.\n\nAn hour before sunset, the tin roof of the stone shelter glinted through the hemlocks dead ahead. Devon tapped the folded map in Maya's hand with respect. He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day. Up on the breezy ridge, careful observation had turned a lost tool into a lasting lesson.",
+    "wordCount": 389,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "The steep granite bluff, marked on the paper map by tightly packed brown contour lines, was wisely avoided by the cousins in favor of a gentle saddle trail.",
+      "actorChunk": "the cousins",
+      "actionChunk": "wisely avoided",
+      "receiverChunk": "The steep granite bluff",
+      "distractorChunks": [
+        "marked on the paper map by tightly packed brown contour lines",
+        "in favor of a gentle saddle trail"
+      ],
+      "activeRewrite": "The cousins wisely avoided the steep granite bluff in favor of a gentle saddle trail."
+    },
+    "tier2Words": [
+      {
+        "word": "ravine",
+        "definition": "a deep, narrow gorge or valley with steep rocky sides",
+        "rootHint": "French ravin ('rushing mountain gully')",
+        "contextClue": "The compass fell off a granite ledge down a steep drop into a deep, thorny tangle."
+      },
+      {
+        "word": "aligned",
+        "definition": "lined up in the exact same direction or straight row",
+        "rootHint": "French aligner ('to put into a straight line')",
+        "contextClue": "Maya turned her paper trail map so its east border matched the straight line between her two pebbles."
+      },
+      {
+        "word": "contour",
+        "definition": "an outline or map line that connects points of equal height on a hill",
+        "rootHint": "Italian contorno ('outline or curve around')",
+        "contextClue": "Where the brown map lines bunched tightly together, the cliff was steep; where they spread apart, the slope was gentle."
+      },
+      {
+        "word": "gradually",
+        "definition": "slowly and steadily over a distance or time rather than all at once",
+        "rootHint": "Latin root gradus ('step')",
+        "contextClue": "Where the brown loops sat far apart on the map, the trail rose along a gentle slope instead of a steep cliff."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w49_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The steep granite bluff, marked on the paper map by tightly packed brown contour lines, was wisely avoided by the cousins in favor of a gentle saddle trail.\"\n\nBased on the sentence structure, how was the steep bluff shown on the map, and who chose to stay away from it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The cousins drew brown contour lines on the granite bluff, and the saddle trail avoided the paper map.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Tightly packed brown contour lines marked the bluff on the map, and the cousins avoided it.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A gentle saddle trail marked the cousins with brown contour lines so they would not fall.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Park rangers painted brown lines across the granite ledge after Maya dropped her compass.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The steep granite bluff, marked on the paper map by tightly packed brown contour lines, was wisely avoided by the cousins in favor of a gentle saddle trail.",
+      "childTip": "Separate the two 'by' phrases: contour lines marked the bluff, while the cousins did the avoiding.",
+      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by tightly packed brown contour lines') explains how the bluff is represented on the map, and the second ('by the cousins') names the actors who avoided it."
+    },
+    {
+      "questionId": "w49_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read these sentences from Paragraph 3:\n\n\"A straight line connecting the first pebble to the second pebble pointed due east. Next, Maya unfolded her paper trail map and aligned its east border with her two pebbles on the ground.\"\n\nWhat does the word aligned mean as it is used in Paragraph 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Turned and matched up so both pointed the same way",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Tore into small strips to mark the trees along the path",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Folded shut and tucked deep inside a hiking pack",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "Covered with damp green moss from a hemlock trunk",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Next, Maya unfolded her paper trail map and aligned its east border with her two pebbles on the ground.",
+      "childTip": "Think about why Maya matches the east edge of her map with the east-pointing line of pebbles.",
+      "parentExplanation": "After finding due east with her two pebbles, Maya oriented the east border of her trail map to match that line, showing that 'aligned' means placed in the same line or direction."
+    },
+    {
+      "questionId": "w49_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, why does Maya refuse to trust the moss on the hemlock trunk to find north?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She knows that hemlock trees only grow on the southern side of Tray Mountain.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "She explains that mountain mist blows from all sides, causing moss to grow all around a trunk.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "She cannot see the tree bark clearly because the sun has already set behind the ridge.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "She thinks that white pebbles are easier to carry than strips of green tree moss.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "In the damp Blue Ridge Mountains, mist blew through the gaps from every side, so moss often grew all around a tree trunk.",
+      "childTip": "Click the sentence in Paragraph 2 that explains why moss grows all around trees in the Blue Ridge Mountains.",
+      "parentExplanation": "Paragraph 2 explains that because damp mountain mist blows from every direction in the Blue Ridge Mountains, moss grows all around tree trunks rather than only on the north side."
+    },
+    {
+      "questionId": "w49_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "How does Paragraph 4 contribute to the development of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It explains how the cousins lost their compass in the briar ravine at the start of the hike.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "It shows the cousins putting the map clues into action as they compare the contour lines to the real mountain slopes.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It proves that paper trail maps are useless unless a hiker also carries a plastic compass.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "D",
+          "text": "It describes how park rangers built the stone shelter out of hemlock logs.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "As they hiked along the gentler curve of the ridge, Devon matched the map lines to the real hills around them.",
+      "childTip": "Look at what Devon and Maya do in Paragraph 4 as they hike along the ridge toward the shelter.",
+      "parentExplanation": "Paragraph 4 moves the plot from planning to successful navigation as Devon matches the bunched and wide-spaced contour lines on the page to the real cliffs and meadows around them."
+    },
+    {
+      "questionId": "w49_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w49_q6",
+      "prompt": "Part A: Which statement best expresses the central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Testing reliable clues in nature is much safer than relying on a quick guess when you lose your way.",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Hikers should always climb down into thorny ravines to rescue dropped equipment.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Tree moss is the only tool needed to cross the Blue Ridge Mountains in winter.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "D",
+          "text": "A shadow stick only works on cloudy nights when the moon is hidden behind pine trees.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day.",
+      "childTip": "Look at Paragraph 5 to see what Devon admits about checking the sun and slope lines versus guessing.",
+      "parentExplanation": "The story contrasts Devon's initial guess about tree moss with Maya's careful, methodical use of a shadow stick and contour lines, showing that tested observation beats guesswork."
+    },
+    {
+      "questionId": "w49_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w49_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Halfway up Tray Mountain, a sudden gust of wind knocked Maya's plastic compass from a granite ledge into a deep briar ravine.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "\"After waiting fifteen minutes, she placed a second pebble where the shadow tip had moved.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "\"He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day.\"",
+          "isCorrect": true,
+          "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"An hour before sunset, the tin roof of the stone shelter glinted through the hemlocks dead ahead.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day.",
+      "childTip": "Pick the quote in Paragraph 5 that directly contrasts reading the sun and map lines with guessing at moss.",
+      "parentExplanation": "Option C directly quotes Paragraph 5, confirming the theme that careful observation of the sun and map contours is far more dependable than guessing at moss."
+    }
+  ]
+}

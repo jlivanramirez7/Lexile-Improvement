@@ -1,0 +1,333 @@
+{
+  "workoutId": "w85_tier3_lit",
+  "workoutNumber": 85,
+  "title": "Ink and Whitewater in the Red Gorge",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1075,
+  "fkgl": 7.53,
+  "genre": "Literary",
+  "subGenre": "Historical Fiction",
+  "focusDomain": "D2_CRAFT_STRUCTURE",
+  "focusStandard": "ELAGSE5RL5",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Ink and Whitewater in the Red Gorge",
+    "author": "BEACON Assessment Lab",
+    "text": "In the summer of 1869, young mapmaker Thomas crouched on a slick sandstone ledge while the Colorado River roared through the narrow chasm below. On government maps in Washington, this deep gorge was nothing more than a blank white patch marked as unknown territory. Major John Wesley Powell stood beside the wooden rowboats, scanning the brown waves with his one good arm. Thomas held a brass sighting tube and a damp sketch pad. His job was to turn this wild labyrinth of stone into measured lines before the river took their supplies.\n\nAhead of the crew, a jagged wall of black granite forced the river into a foaming drop filled with hidden boulders. The oarsmen unloaded heavy sacks of flour and dried apples to carry them along the narrow cliff trail. The brass compass and leather logbooks, wrapped tightly inside oiled canvas sacks, were lashed by young Thomas beneath the bow deck. Even if a wave flipped the boat, the records of every bend and rapid had to float free. Without those notes, their perilous journey would leave future travelers just as blind as before.\n\nHalfway past the granite falls, the rear cable slipped from a wet boulder. At once, the wooden boat lurched sideways into the main chute and slammed against a hidden rock shelf. Muddy spray drenched the cliff as the stern hatch popped open, spilling two wooden crates of bacon and a brass barometer into the foam. While the men hauled the cracked hull into calm water, Thomas saw the spare glass tube sink out of sight. Without a working barometer to measure air pressure at river level, they could not calculate the depth of the canyon walls.\n\nRefusing to leave a blank gap on his chart, Thomas strapped the remaining glass tube across his chest and began climbing a steep fault crack up the cliff. Loose shale slid beneath his boots as he edged from ledge to narrow ledge. Two hundred feet above the river, he reached a wind-carved niche with a clear vantage of the canyon rim and the rapids below. He read the mercury column at the top and sketched the sharp river bend. Then he climbed back down before dusk.\n\nThat night beside a driftwood fire, Major Powell checked Thomas's inked angles by flickering light. The wet pages smelled of river silt and pine smoke, yet every cliff height and rock hazard stood clearly marked. Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.",
+    "wordCount": 426,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "The brass compass and leather logbooks, wrapped tightly inside oiled canvas sacks, were lashed by young Thomas beneath the bow deck.",
+      "actorChunk": "by young Thomas",
+      "actionChunk": "were lashed",
+      "receiverChunk": "The brass compass and leather logbooks",
+      "distractorChunks": [
+        "wrapped tightly inside oiled canvas sacks",
+        "beneath the bow deck"
+      ],
+      "activeRewrite": "Young Thomas lashed the brass compass and leather logbooks beneath the bow deck."
+    },
+    "tier2Words": [
+      {
+        "word": "chasm",
+        "definition": "A deep, steep-sided gorge or gap in the earth's surface",
+        "rootHint": "Greek khasma (yawning hollow or deep opening)",
+        "contextClue": "Paired with 'deep gorge' and 'canyon walls' where the Colorado River roars below."
+      },
+      {
+        "word": "uncharted",
+        "definition": "Not yet mapped, surveyed, or explored",
+        "rootHint": "un- (not) + chart (map) + -ed",
+        "contextClue": "Refers back to Paragraph 1, where government maps showed only 'a blank white patch marked as unknown territory.'"
+      },
+      {
+        "word": "perilous",
+        "definition": "Full of grave danger or risk",
+        "rootHint": "peril (Latin periculum, meaning 'danger' or 'trial') + -ous",
+        "contextClue": "The river is a 'churning brown' chute of 'foaming drop filled with hidden boulders' that can smash boats."
+      },
+      {
+        "word": "vantage",
+        "definition": "A high place or position that affords a broad, clear view",
+        "rootHint": "Old French avantage (favorable position)",
+        "contextClue": "Two hundred feet above the river, the niche gives Thomas 'a clear vantage of the canyon rim and the rapids below.'"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w85_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"The brass compass and leather logbooks, wrapped tightly inside oiled canvas sacks, were lashed by young Thomas beneath the bow deck.\"\n\nWho or what performed the action of lashing the instruments beneath the deck?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The oiled canvas sacks that kept the river spray out",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a noun from the middle participial phrase ('wrapped tightly inside oiled canvas sacks') rather than the actor."
+        },
+        {
+          "id": "B",
+          "text": "The brass compass and leather logbooks used for mapping",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the compound subject/receiver of the passive verb with the person performing the action."
+        },
+        {
+          "id": "C",
+          "text": "Young Thomas, the expedition's mapmaker",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent following 'by' ('by young Thomas') in the passive construction 'were lashed by young Thomas'."
+        },
+        {
+          "id": "D",
+          "text": "The wooden bow deck at the front of the rowboat",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Picks the location phrase at the end of the sentence ('beneath the bow deck') instead of the actor."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "The brass compass and leather logbooks, wrapped tightly inside oiled canvas sacks, were lashed by young Thomas beneath the bow deck.",
+      "childTip": "Spot the passive verb 'were lashed by.' The words right after 'by' tell you who tied the gear down!",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). Because the compound subject ('The brass compass and leather logbooks') comes first and is followed by a 6-word modifier, students must look past the verb 'were lashed' to find the agent 'by young Thomas'."
+    },
+    {
+      "questionId": "w85_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5L4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"Two hundred feet above the river, he reached a wind-carved niche with a clear vantage of the canyon rim and the rapids below.\"\n\nWhat does the word vantage most likely mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A deep crack filled with crumbling loose shale",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows words from the earlier climbing sentence ('steep fault crack', 'Loose shale') rather than what Thomas gained at the high ledge."
+        },
+        {
+          "id": "B",
+          "text": "A spot that provides a wide, clear view of the surroundings",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the context of climbing two hundred feet high to see 'the canyon rim and the rapids below' and sketch the river bend."
+        },
+        {
+          "id": "C",
+          "text": "A thick canvas bag used to keep paper dry in whitewater",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Confuses the oiled canvas sacks in Paragraph 2 with the high observation point in Paragraph 4."
+        },
+        {
+          "id": "D",
+          "text": "A blind spot where canyon walls block all sunlight",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the meaning of 'a clear vantage' into a blocked view."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Two hundred feet above the river, he reached a wind-carved niche with a clear vantage of the canyon rim and the rapids below.",
+      "childTip": "Why did Thomas climb 200 feet up the cliff? Think about what he needed to see from that high ledge.",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). The surrounding phrases 'Two hundred feet above the river' and 'of the canyon rim and the rapids below' show that a 'vantage' is an elevated viewpoint."
+    },
+    {
+      "questionId": "w85_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 3, why was losing the spare barometer in the rapids such a serious problem for the expedition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The crew needed a working barometer to measure air pressure and calculate the depth of the canyon walls.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth."
+        },
+        {
+          "id": "B",
+          "text": "The brass barometer was the only tool that could steer the wooden boats through submerged rocks.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Misinterprets a scientific measuring tube as a boat-steering device."
+        },
+        {
+          "id": "C",
+          "text": "Major Powell refused to light a driftwood campfire unless both barometers were stored in the stern.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents an unsupported rule about campfires not found in the story."
+        },
+        {
+          "id": "D",
+          "text": "Losing the spare barometer meant that every single logbook on the boat had already sunk to the bottom.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('every single logbook') that contradicts Paragraph 2 and Paragraph 5, where the logbooks survive."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Without a working barometer to measure air pressure at river level, they could not calculate the depth of the canyon walls.",
+      "childTip": "First click the final sentence of Paragraph 3 that explains what a barometer measures inside the canyon.",
+      "parentExplanation": "This Click-to-Prove item tests explicit and inferential cause-and-effect in historical fiction (ELAGSE5RL1). Paragraph 3 explains that expedition mapmakers used barometers to measure air pressure differences and calculate the height of the canyon walls."
+    },
+    {
+      "questionId": "w85_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How do Paragraphs 3 and 4 work together to build the structure of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Paragraph 3 introduces a crisis when the boat crashes and loses a barometer, and Paragraph 4 shows how Thomas overcomes that setback by climbing the cliff with the remaining tube.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4."
+        },
+        {
+          "id": "B",
+          "text": "Paragraph 3 describes the quiet offices in Washington, and Paragraph 4 explains how government printers published the finished map.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Misattributes minor setting references from Paragraphs 1 and 5 to Paragraphs 3 and 4."
+        },
+        {
+          "id": "C",
+          "text": "Paragraph 3 proves that wooden boats cannot float in the Colorado River, and Paragraph 4 shows the crew walking all the way home.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Distorts the temporary boat accident into a total abandonment of the river expedition."
+        },
+        {
+          "id": "D",
+          "text": "Paragraph 3 lists the food rations in the crates, and Paragraph 4 explains how the oarsmen cooked dinner over driftwood.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on minor background props (bacon crates, driftwood) rather than the structural turning point of the plot."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Refusing to leave a blank gap on his chart, Thomas strapped the remaining glass tube across his chest and began climbing a steep fault crack up the cliff.",
+      "childTip": "Ask yourself: what problem happens in the river in Paragraph 3, and how does Thomas respond in Paragraph 4?",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RL5 (Story Structure), this question examines how individual scenes fit together: Paragraph 3 provides the inciting crisis (losing the spare barometer in the crash), which directly motivates Thomas's daring climb in Paragraph 4."
+    },
+    {
+      "questionId": "w85_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w85_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Turning the unknown into shared knowledge requires perseverance and courage in the face of real danger.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes Thomas's protection of the logbooks, his cliff climb after the crash, and his final realization by the campfire."
+        },
+        {
+          "id": "B",
+          "text": "Glass barometers are too fragile to ever be carried on wooden rowboats.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('too fragile to ever be carried') and ignores that the remaining barometer succeeded."
+        },
+        {
+          "id": "C",
+          "text": "Travelers should avoid canyons that are marked as blank patches on government maps.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the whole purpose of Powell's expedition, which entered the canyon specifically to map the unknown."
+        },
+        {
+          "id": "D",
+          "text": "Sacks of flour and dried apples are more valuable than compasses on a river trip.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on a minor detail from Paragraph 2 and contradicts the priority Thomas gives to the logbooks and instruments."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.",
+      "childTip": "Look at the final sentence of Paragraph 5 to see what Thomas realizes about how a true map is earned.",
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Throughout the passage, Thomas risks whitewater and loose shale so future travelers will not be blind, culminating in the final insight that knowledge is earned through courage and persistence."
+    },
+    {
+      "questionId": "w85_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w85_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"On government maps in Washington, this deep gorge was nothing more than a blank white patch marked as unknown territory.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Establishes the initial setting and problem in Paragraph 1, but does not express the theme of earning knowledge through courage."
+        },
+        {
+          "id": "B",
+          "text": "\"The oarsmen unloaded heavy sacks of flour and dried apples to carry them along the narrow cliff trail.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes routine portage work in Paragraph 2 rather than the thematic takeaway."
+        },
+        {
+          "id": "C",
+          "text": "\"Muddy spray drenched the cliff as the stern hatch popped open, spilling two wooden crates of bacon and a brass barometer into the foam.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Shows the physical danger of the river crash, but not the perseverance that turns danger into knowledge."
+        },
+        {
+          "id": "D",
+          "text": "\"Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the theme in Part A by linking accurate mapping to courage and persistence in uncharted terrain."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.",
+      "childTip": "Pick the quote from Paragraph 5 that connects 'a true map' with 'courage' and 'uncharted stone.'",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence for the theme identified in Part A. Option D encapsulates the story's central message."
+    }
+  ]
+}

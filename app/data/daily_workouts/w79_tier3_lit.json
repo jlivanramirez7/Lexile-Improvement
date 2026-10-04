@@ -1,0 +1,332 @@
+{
+  "workoutId": "w79_tier3_lit",
+  "workoutNumber": 79,
+  "title": "The Sound of the Unpainted Scroll",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1055,
+  "fkgl": 7.48,
+  "genre": "Literary",
+  "subGenre": "Literary Fiction",
+  "focusDomain": "D1_KEY_IDEAS",
+  "focusStandard": "ELAGSE5RL2",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "The Sound of the Unpainted Scroll",
+    "author": "BEACON Assessment Lab",
+    "text": "In Grandfather's quiet studio above the tea shop, eleven-year-old Ren ground a black pine-soot inkstick against a wet stone slab. Every Saturday, Ren practiced painting bamboo stalks and mountain cranes for the autumn youth exhibition. Yet the three-foot paper scrolls stacked beside his mat all suffered from the same flaw. Trying to prove his skill, Ren packed every inch of paper with twisting branches, rocky ledges, and flocks of birds. Instead of looking alive, his crowded paintings felt heavy and airless, as if the ink itself could hardly breathe.\n\nGrandfather stepped beside the low worktable and unrolled a fresh sheet of pale mulberry paper. Without speaking a word, the old master dipped a stiff wolf-hair brush into the dark inkwell. Three slender bamboo stalks, brushed across the lower corner of the pale mulberry scroll by Grandfather, were surrounded by a wide expanse of untouched white paper. Near the top tip of the highest leaf, he added a single tiny sparrow with two deft flicks of his wrist. Then Grandfather laid his brush down on its porcelain rest. More than two-thirds of the scroll remained completely blank.\n\nRen frowned at the sparse page and asked why Grandfather had stopped before painting the river, the clouds, or the distant hills. Grandfather smiled and pointed to the wide white space above the sparrow's wings. He asked Ren what he saw in the blank paper. At first, Ren saw only dry mulberry fibers. As he looked longer, though, the empty white space began to feel like morning mist drifting around the bamboo and open sky waiting for the sparrow to leap.\n\nGrandfather explained that in brush painting, the untouched paper is not wasted space; it is the silence that lets the ink speak. When a scroll is jammed with clutter from edge to edge, the viewer's eye has nowhere to rest and nothing to imagine. Just as music needs pauses between notes so a melody can ring clear, a painting needs open space to give each black stroke weight and poise.\n\nRen unrolled a clean sheet of mulberry paper and took a slow breath before lifting his brush. This time, he painted just one gnarled pine bough reaching out from a cliff edge and left the rest of the scroll open to the pale paper. Stepping back from the mat, Ren saw that the lone branch looked stronger than a hundred crowded trees.",
+    "wordCount": 399,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 2,
+      "verbatimSentence": "Three slender bamboo stalks, brushed across the lower corner of the pale mulberry scroll by Grandfather, were surrounded by a wide expanse of untouched white paper.",
+      "actorChunk": "by a wide expanse of untouched white paper",
+      "actionChunk": "were surrounded",
+      "receiverChunk": "Three slender bamboo stalks",
+      "distractorChunks": [
+        "brushed across the lower corner of the pale mulberry scroll by Grandfather"
+      ],
+      "activeRewrite": "A wide expanse of untouched white paper surrounded the three slender bamboo stalks that Grandfather brushed across the lower corner of the pale mulberry scroll."
+    },
+    "tier2Words": [
+      {
+        "word": "deft",
+        "definition": "Skillful, quick, and neat in movement",
+        "rootHint": "Middle English defte (skillful, practiced, neat)",
+        "contextClue": "The old master creates a whole sparrow 'with two deft flicks of his wrist.'"
+      },
+      {
+        "word": "sparse",
+        "definition": "Thinly spread out with plenty of open space; not crowded",
+        "rootHint": "spars- (Latin root meaning 'scattered thinly')",
+        "contextClue": "More than two-thirds of the scroll remained blank, contrasting with Ren's 'crowded paintings.'"
+      },
+      {
+        "word": "clutter",
+        "definition": "A crowded, messy collection of too many things packed into one space",
+        "rootHint": "Middle English cloteren (to crowd or heap together)",
+        "contextClue": "Refers back to when Ren 'packed every inch of paper with twisting branches, rocky ledges, and flocks of birds.'"
+      },
+      {
+        "word": "poise",
+        "definition": "Calm balance, grace, and steady dignity",
+        "rootHint": "Old French pois (weight, balance)",
+        "contextClue": "Paired with 'weight' as open space gives each black brush stroke calm balance."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w79_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 2:\n\n\"Three slender bamboo stalks, brushed across the lower corner of the pale mulberry scroll by Grandfather, were surrounded by a wide expanse of untouched white paper.\"\n\nIn the main clause of this sentence, what surrounded the three slender bamboo stalks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grandfather, the old calligraphy master",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('brushed... by Grandfather') with what surrounded the stalks in the main clause."
+        },
+        {
+          "id": "B",
+          "text": "A wide expanse of untouched white paper",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the noun phrase following 'were surrounded by' as the grammatical agent of the main verb."
+        },
+        {
+          "id": "C",
+          "text": "The lower corner of the pale mulberry scroll",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Selects a location phrase inside the embedded modifier rather than what surrounded the bamboo."
+        },
+        {
+          "id": "D",
+          "text": "The three slender bamboo stalks painted in black ink",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver ('Three slender bamboo stalks') with what surrounded them."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Three slender bamboo stalks, brushed across the lower corner of the pale mulberry scroll by Grandfather, were surrounded by a wide expanse of untouched white paper.",
+      "childTip": "Skip the middle phrase between the commas. Look right after 'were surrounded by' to find the answer!",
+      "parentExplanation": "Sentence Surgery (ELAGSE5L1). This sentence contains two 'by' phrases: 'by Grandfather' modifies 'brushed', whereas 'by a wide expanse of untouched white paper' completes the main passive verb 'were surrounded.'"
+    },
+    {
+      "questionId": "w79_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"Ren frowned at the sparse page and asked why Grandfather had stopped before painting the river, the clouds, or the distant hills.\"\n\nWhat does the word sparse mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Having only a few simple strokes with plenty of open space",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches Paragraph 2's description that Grandfather painted only three stalks and one tiny sparrow, leaving two-thirds of the scroll blank."
+        },
+        {
+          "id": "B",
+          "text": "Covered completely from edge to edge with dark black ink",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the meaning of 'sparse'; Ren's earlier scrolls were crowded, whereas Grandfather's scroll is mostly blank."
+        },
+        {
+          "id": "C",
+          "text": "Torn and ruined by too much water from the inkstone",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Introduces torn paper, which never happens in the scene."
+        },
+        {
+          "id": "D",
+          "text": "Painted with bright blue rivers and green mountain hills",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows the words 'river' and 'hills' from the end of the sentence, which are the very things Grandfather did NOT paint."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "Ren frowned at the sparse page and asked why Grandfather had stopped before painting the river, the clouds, or the distant hills.",
+      "childTip": "Look back at the end of Paragraph 2: more than two-thirds of Grandfather's scroll was still completely blank!",
+      "parentExplanation": "Contextual Vocabulary (ELAGSE5RL4). Because Grandfather left two-thirds of the scroll blank and omitted the river, clouds, and hills, 'sparse' means thinly filled or having very few elements."
+    },
+    {
+      "questionId": "w79_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 1, why did Ren's early paintings feel \"heavy and airless\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He tried to show off his skill by crowding every inch of the paper with branches, rocks, and birds.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately identifies the cause stated in Paragraph 1: packing every inch of paper to prove his skill made the scrolls feel heavy and airless."
+        },
+        {
+          "id": "B",
+          "text": "He used cheap gray ink that soaked through the thin mulberry paper and stained the mat.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents a problem with cheap ink staining the mat that is never mentioned in the story."
+        },
+        {
+          "id": "C",
+          "text": "The studio above the tea shop had no windows, so the wet ink could never dry.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Takes the figurative word 'airless' (describing the crowded paintings) and misreads it as a literal lack of air in the room."
+        },
+        {
+          "id": "D",
+          "text": "He left too much blank white paper around the edges of his bamboo stalks.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses Ren's mistake: he left no blank space at all until Grandfather taught him why empty space matters."
+        }
+      ],
+      "provingParagraph": 1,
+      "provingSentenceText": "Trying to prove his skill, Ren packed every inch of paper with twisting branches, rocky ledges, and flocks of birds.",
+      "childTip": "First click the sentence in Paragraph 1 that tells what Ren did to every inch of paper to prove his skill.",
+      "parentExplanation": "Click-to-Prove Character Action & Cause/Effect (ELAGSE5RL1). Paragraph 1 explains that Ren packed every inch of the scroll with details to prove his skill, which made the paintings feel heavy and crowded."
+    },
+    {
+      "questionId": "w79_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL4",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "In Paragraph 4, why does Grandfather compare unpainted paper on a scroll to \"pauses between notes\" in music?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To help Ren understand that empty space is an active part of art that makes each brush stroke stand out clearly",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Explains the figurative analogy: just as rests in music let a melody ring clear, blank paper gives ink strokes weight and room for the imagination."
+        },
+        {
+          "id": "B",
+          "text": "To convince Ren to quit brush painting and learn to play a musical instrument for the autumn exhibition",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Misinterprets the musical comparison as literal advice to quit painting."
+        },
+        {
+          "id": "C",
+          "text": "To complain that the customers in the tea shop downstairs are making too much noise while they paint",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Connects 'silence' and 'music' to the tea shop setting in Paragraph 1, which is described as quiet."
+        },
+        {
+          "id": "D",
+          "text": "To show that a good painting should never contain more than one single drop of black ink",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('never contain more than one single drop') that exaggerates Grandfather's lesson on balance."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Just as music needs pauses between notes so a melody can ring clear, a painting needs open space to give each black stroke weight and poise.",
+      "childTip": "Think about what happens to a song if every note is played all at once with no pauses in between.",
+      "parentExplanation": "Figurative Analogy & Craft (ELAGSE5RL4). Grandfather uses the analogy of musical rests ('pauses between notes') to show Ren that empty space is not 'unfinished'—it is what allows the painted strokes to stand out."
+    },
+    {
+      "questionId": "w79_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL2",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w79_q6",
+      "prompt": "PART A: Which statement best expresses a central theme of the passage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Restraint and open space often create greater power and meaning than crowding a work with everything at once.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes Grandfather's lesson (Paragraphs 2-4) and Ren's growth when his single pine bough looks stronger than a hundred crowded trees (Paragraph 5)."
+        },
+        {
+          "id": "B",
+          "text": "Young artists must copy their teachers' exact drawings of sparrows if they want to win youth exhibitions.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 5, where Ren applies the principle to his own new subject—a gnarled pine bough on a cliff."
+        },
+        {
+          "id": "C",
+          "text": "Pine-soot inksticks and wolf-hair brushes are the most expensive art supplies in the world.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on minor setting details from Paragraphs 1 and 2 rather than the theme."
+        },
+        {
+          "id": "D",
+          "text": "A painting of a single tree branch is always easier to finish quickly than a painting of a forest.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Misses the artistic lesson about strength, silence, and imagination by reducing Ren's choice to saving time."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Stepping back from the mat, Ren saw that the lone branch looked stronger than a hundred crowded trees.",
+      "childTip": "Look at how Ren's new painting in Paragraph 5 compares a single branch against a hundred crowded trees.",
+      "parentExplanation": "Focus standard ELAGSE5RL2 (Theme). Across the story, Ren moves from over-packing his scroll out of insecurity to discovering that deliberate simplicity and open space give art its true strength."
+    },
+    {
+      "questionId": "w79_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w79_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"In Grandfather's quiet studio above the tea shop, eleven-year-old Ren ground a black pine-soot inkstick against a wet stone slab.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Introduces the setting and characters in Paragraph 1 without stating the theme."
+        },
+        {
+          "id": "B",
+          "text": "\"Without speaking a word, the old master dipped a stiff wolf-hair brush into the dark inkwell.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes a single action in Paragraph 2 rather than the thematic lesson about open space and restraint."
+        },
+        {
+          "id": "C",
+          "text": "\"At first, Ren saw only dry mulberry fibers.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Shows Ren's initial literal reaction before he understands the power of the blank space."
+        },
+        {
+          "id": "D",
+          "text": "\"Stepping back from the mat, Ren saw that the lone branch looked stronger than a hundred crowded trees.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the theme in Part A by contrasting the strength of one well-placed branch in open space against a hundred crowded trees."
+        }
+      ],
+      "provingParagraph": 5,
+      "provingSentenceText": "Stepping back from the mat, Ren saw that the lone branch looked stronger than a hundred crowded trees.",
+      "childTip": "Pick the final sentence of Paragraph 5 that shows what Ren discovered when he left open space on his scroll.",
+      "parentExplanation": "Part B requires 100% verbatim textual proof (ELAGSE5RL1) for the theme in Part A."
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "workoutId": "w81_tier3_lit",
+  "workoutNumber": 81,
+  "title": "Running the Altamaha Shoals",
+  "tier": 3,
+  "lexileBand": "1030L-1085L",
+  "targetLexile": 1060,
+  "fkgl": 7.5,
+  "genre": "Literary",
+  "subGenre": "Historical Adventure",
+  "focusDomain": "D5_EBSR",
+  "focusStandard": "ELAGSE5RL1",
+  "estimatedMinutes": 10,
+  "passage": {
+    "title": "Running the Altamaha Shoals",
+    "author": "BEACON Assessment Lab",
+    "text": "Dawn mist hung low over the brown waters of the Altamaha River in 1884 as twelve-year-old Jonas planted his bare feet on the front crib of pine logs. Beneath him, two hundred buoyant heart-pine timbers were pinned together with oak pegs into a raft eighty feet long. At the stern sweep oar, his uncle Silas squinted downstream toward the low roar of Narrow Gap Shoals. They had four days to float this timber down to the port mills at Darien. With June heat drying the Georgia hills, the river was dropping an inch every hour.\n\nIf the water fell much lower, jagged limestone ledges would trap their heavy raft until the autumn rains. Uncle Silas called out from the back, warning Jonas to watch the color of the current ahead. Where the river ran deep and safe, the water looked like dark sweet tea. Where pale yellow foam curled over a shallow shoal, hidden rocks waited just beneath the surface to rip the oak pegs apart.\n\nAs the river bent sharply around a cypress bluff, the current sped up and pulled the long raft toward a shelf of boiling white water. The heavy eighty-foot pine raft, pushed sideways toward the jagged limestone ledge by the swift river current, was steadied at the bow by Jonas with a long ash sweep oar. Jonas threw his whole weight against the wooden handle until his shoulders burned. Each heave of the twenty-foot oar pushed the nose of the raft two feet closer to the dark, deep channel on the left.\n\nSuddenly, a submerged cypress stump scraped beneath the middle logs with a low groan. The wooden pegs creaked, and cold river spray splashed across Jonas's knees. For a second, the front crib hung caught on the snag while the back end started to swing wide. Instead of panicking, Jonas waited for the tail wave to lift the stern. The instant the logs floated free, he dug his oar blade deep into the eddy and pried the bow straight into the dark tea-colored chute.\n\nTen minutes later, the roar of the rapids faded behind them as the raft glided onto a wide, calm reach lined with mossy oaks. Uncle Silas raised his battered felt hat in a silent salute from the stern. Jonas wiped the river spray from his forehead and kept his eyes fixed on the water ahead, reading every ripple like a map toward Darien.",
+    "wordCount": 403,
+    "paragraphCount": 5,
+    "monsterSentence": {
+      "paragraphNumber": 3,
+      "verbatimSentence": "The heavy eighty-foot pine raft, pushed sideways toward the jagged limestone ledge by the swift river current, was steadied at the bow by Jonas with a long ash sweep oar.",
+      "actorChunk": "by Jonas",
+      "actionChunk": "was steadied",
+      "receiverChunk": "The heavy eighty-foot pine raft",
+      "distractorChunks": [
+        "pushed sideways toward the jagged limestone ledge by the swift river current",
+        "at the bow",
+        "with a long ash sweep oar"
+      ],
+      "activeRewrite": "Jonas steadied the heavy eighty-foot pine raft at the bow with a long ash sweep oar."
+    },
+    "tier2Words": [
+      {
+        "word": "buoyant",
+        "definition": "Able to float easily on top of water",
+        "rootHint": "Spanish boyar (to float, like a harbor buoy)",
+        "contextClue": "Two hundred pine timbers are pinned into a raft to 'float this timber down to the port mills.'"
+      },
+      {
+        "word": "shoal",
+        "definition": "A shallow place in a river or sea where sand or rock sits close to the surface",
+        "rootHint": "Old English sceald (shallow water)",
+        "contextClue": "Paired with 'shallow' and 'hidden rocks waited just beneath the surface.'"
+      },
+      {
+        "word": "heave",
+        "definition": "A strong, heavy push or pull that takes great effort",
+        "rootHint": "Old English hebban (to lift or push with force)",
+        "contextClue": "Jonas 'threw his whole weight against the wooden handle until his shoulders burned.'"
+      },
+      {
+        "word": "submerged",
+        "definition": "Hidden completely underwater below the surface",
+        "rootHint": "sub- (under) + mergere (Latin root meaning 'to plunge or dip')",
+        "contextClue": "The cypress stump 'scraped beneath the middle logs' from underwater."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "questionId": "w81_q1",
+      "questionNumber": 1,
+      "itemType": "SENTENCE_SURGERY",
+      "domain": "D4_SYNTAX",
+      "subSkill": "4A_PASSIVE_ACTOR",
+      "standard": "ELAGSE5L1",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 3:\n\n\"The heavy eighty-foot pine raft, pushed sideways toward the jagged limestone ledge by the swift river current, was steadied at the bow by Jonas with a long ash sweep oar.\"\n\nIn the main clause of this sentence, who or what steadied the pine raft at the bow?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The swift river current rounding the cypress bluff",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('pushed sideways... by the swift river current') with the agent of the main verb ('was steadied')."
+        },
+        {
+          "id": "B",
+          "text": "Jonas, using a long ash sweep oar",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('was steadied at the bow by Jonas')."
+        },
+        {
+          "id": "C",
+          "text": "The jagged limestone ledge beneath the white water",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Selects the hazard inside the interrupting modifier rather than the person who steadied the raft."
+        },
+        {
+          "id": "D",
+          "text": "The heavy eighty-foot pine raft itself",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('The heavy eighty-foot pine raft') with the actor performing the steadying."
+        }
+      ],
+      "provingParagraph": 3,
+      "provingSentenceText": "The heavy eighty-foot pine raft, pushed sideways toward the jagged limestone ledge by the swift river current, was steadied at the bow by Jonas with a long ash sweep oar.",
+      "childTip": "Watch out for two 'by' phrases! Find the main verb 'was steadied' and see who comes right after 'by.'",
+      "parentExplanation": "Sentence Surgery (ELAGSE5L1) with a double-'by' passive trap. The swift river current pushed the raft sideways, but Jonas steadied it at the bow."
+    },
+    {
+      "questionId": "w81_q2",
+      "questionNumber": 2,
+      "itemType": "VOCAB_CONTEXT",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2A_TIER2_VOCAB",
+      "standard": "ELAGSE5RL4",
+      "dok": 2,
+      "requireClickToProve": false,
+      "prompt": "Read this sentence from Paragraph 4:\n\n\"Suddenly, a submerged cypress stump scraped beneath the middle logs with a low groan.\"\n\nWhat does the word submerged mean as it is used in the sentence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hidden beneath the surface of the water",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the prefix 'sub-' (under) and the context clue 'scraped beneath the middle logs' to identify that the stump is underwater."
+        },
+        {
+          "id": "B",
+          "text": "Standing high on top of the dry river bluff",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the location; a stump high on a dry bluff could not scrape beneath the middle logs of a floating raft."
+        },
+        {
+          "id": "C",
+          "text": "Pinned together with carved oak pegs",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the underwater cypress stump with how the heart-pine raft timbers were pinned together in Paragraph 1."
+        },
+        {
+          "id": "D",
+          "text": "Burning brightly with hot summer flames",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Introduces fire, which contradicts the river setting."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Suddenly, a submerged cypress stump scraped beneath the middle logs with a low groan.",
+      "childTip": "Use the prefix 'sub-' (under, like submarine) and notice where the stump scraped the raft.",
+      "parentExplanation": "Morphology & Context Clues (ELAGSE5RL4/L4b). Combining the Latin prefix 'sub-' (under) with the context clue 'scraped beneath the middle logs' shows that 'submerged' means underwater."
+    },
+    {
+      "questionId": "w81_q3",
+      "questionNumber": 3,
+      "itemType": "KEY_IDEAS",
+      "domain": "D1_KEY_IDEAS",
+      "subSkill": "1C_INFERENCE",
+      "standard": "ELAGSE5RL1",
+      "dok": 2,
+      "requireClickToProve": true,
+      "prompt": "Based on Paragraph 2, how could Jonas tell the difference between safe deep water and dangerous shallow rocks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deep, safe water looked dark like sweet tea, while shallow rocks were marked by pale yellow foam curling on the surface.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately summarizes the visual contrast explained in Paragraph 2 between dark tea-colored deep water and foamy yellow shoals."
+        },
+        {
+          "id": "B",
+          "text": "Safe water boiled with white foam, while dangerous rocks lay under smooth, dark tea-colored water.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Flips the two water signs described in Paragraph 2."
+        },
+        {
+          "id": "C",
+          "text": "Wooden buoys painted bright red were anchored over every limestone ledge between the bluff and Darien.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents painted channel buoys that do not exist in the 1884 river setting."
+        },
+        {
+          "id": "D",
+          "text": "Jonas had to jump into the river ahead of the raft to measure the depth with a measuring stick.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Contradicts the story, where Jonas stays on the front crib steering with his twenty-foot ash sweep oar."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "Where the river ran deep and safe, the water looked like dark sweet tea.",
+      "childTip": "First click the sentence in Paragraph 2 that tells what the water looked like where the river ran deep and safe.",
+      "parentExplanation": "Click-to-Prove Explicit & Inferential Detail (ELAGSE5RL1). Paragraph 2 explains how timber raftsmen read the Altamaha River: dark sweet-tea water meant a deep channel, while pale yellow foam warned of shallow limestone ledges."
+    },
+    {
+      "questionId": "w81_q4",
+      "questionNumber": 4,
+      "itemType": "CRAFT_OR_INTEGRATION",
+      "domain": "D2_CRAFT_STRUCTURE",
+      "subSkill": "2C_TEXT_STRUCTURE",
+      "standard": "ELAGSE5RL5",
+      "dok": 3,
+      "requireClickToProve": false,
+      "prompt": "How does the detail in Paragraph 1 that \"the river was dropping an inch every hour\" contribute to the plot of the story?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It creates urgency and raises the stakes, because low water exposes the limestone ledges and stumps that threaten the raft in Paragraphs 3 and 4.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Explains how the falling river level sets up both the time pressure to reach Darien and the physical danger of the shallow shoals."
+        },
+        {
+          "id": "B",
+          "text": "It shows that the river will completely dry up into a dusty road before Jonas and Uncle Silas reach Narrow Gap Shoals.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Exaggerates the dropping river level into complete evaporation within minutes."
+        },
+        {
+          "id": "C",
+          "text": "It explains why Uncle Silas decides to tie the raft to a cypress tree and wait for autumn rains.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the characters' goal; they are pushing through the shoals specifically to avoid being trapped until autumn."
+        },
+        {
+          "id": "D",
+          "text": "It proves that heart-pine logs sink to the bottom whenever the summer weather turns warm.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Contradicts Paragraph 1, which describes the heart-pine timbers as buoyant."
+        }
+      ],
+      "provingParagraph": 2,
+      "provingSentenceText": "If the water fell much lower, jagged limestone ledges would trap their heavy raft until the autumn rains.",
+      "childTip": "Look at the first sentence of Paragraph 2 to see what would happen if the river dropped much lower.",
+      "parentExplanation": "Story Structure & Plot Development (ELAGSE5RL5). Introducing the falling summer water in Paragraph 1 establishes the ticking clock and directly causes the shallow-water hazards at Narrow Gap Shoals."
+    },
+    {
+      "questionId": "w81_q5",
+      "questionNumber": 5,
+      "itemType": "EBSR_PART_A",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartBId": "w81_q6",
+      "prompt": "PART A: Based on Paragraph 4, what can the reader infer about Jonas from the way he handles the raft when it catches on the cypress stump?",
+      "options": [
+        {
+          "id": "A",
+          "text": "He stays calm under pressure and uses the river's own wave motion rather than brute force alone to free the raft.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes Jonas's composed response ('Instead of panicking, Jonas waited for the tail wave to lift the stern') and his timely oar stroke."
+        },
+        {
+          "id": "B",
+          "text": "He is too weak to move the ash sweep oar by himself and must wait for Uncle Silas to walk to the front of the raft.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraphs 3 and 4, where Jonas handles the bow sweep oar himself while Silas steers the stern."
+        },
+        {
+          "id": "C",
+          "text": "He forgets Uncle Silas's advice and steers the raft straight into the shallow yellow foam.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 4, where Jonas pries the bow 'straight into the dark tea-colored chute.'"
+        },
+        {
+          "id": "D",
+          "text": "He cares more about keeping his knees dry than protecting the two hundred heart-pine timbers.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Misinterprets the descriptive detail of cold river spray splashing across his knees."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Instead of panicking, Jonas waited for the tail wave to lift the stern.",
+      "childTip": "Look at what Jonas waits for in Paragraph 4 right after the front crib catches on the underwater snag.",
+      "parentExplanation": "Focus domain D5_EBSR / ELAGSE5RL1 (Character Inference with Textual Proof). Rather than jerking the oar in panic and snapping the oak pegs, Jonas waits for the rising tail wave to float the logs free before prying the bow into the deep channel."
+    },
+    {
+      "questionId": "w81_q6",
+      "questionNumber": 6,
+      "itemType": "EBSR_PART_B",
+      "domain": "D5_EBSR",
+      "subSkill": "5A_JOINT_PROOF",
+      "standard": "ELAGSE5RL1",
+      "dok": 3,
+      "requireClickToProve": false,
+      "linkedPartAId": "w81_q5",
+      "prompt": "Which quotation from the passage best supports the correct answer to Question 5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Beneath him, two hundred buoyant heart-pine timbers were pinned together with oak pegs into a raft eighty feet long.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes how the raft was built in Paragraph 1, not how Jonas responded when caught on the stump."
+        },
+        {
+          "id": "B",
+          "text": "\"With June heat drying the Georgia hills, the river was dropping an inch every hour.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the weather and water level in Paragraph 1 rather than Jonas's skill during the snag."
+        },
+        {
+          "id": "C",
+          "text": "\"The wooden pegs creaked, and cold river spray splashed across Jonas's knees.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Describes the sensory moment of hitting the stump in Paragraph 4, but not Jonas's calm, strategic response."
+        },
+        {
+          "id": "D",
+          "text": "\"Instead of panicking, Jonas waited for the tail wave to lift the stern.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves Part A by showing Jonas staying calm and timing the river's wave to free the raft."
+        }
+      ],
+      "provingParagraph": 4,
+      "provingSentenceText": "Instead of panicking, Jonas waited for the tail wave to lift the stern.",
+      "childTip": "Pick the quote from Paragraph 4 that shows Jonas staying calm and timing the wave.",
+      "parentExplanation": "Part B requires 100% verbatim textual proof (ELAGSE5RL1) for the inference in Part A."
+    }
+  ]
+}
