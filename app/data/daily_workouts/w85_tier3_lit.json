@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The brass compass and leather logbooks, wrapped tightly inside oiled canvas sacks, were lashed by young Thomas beneath the bow deck.",
-      "actorChunk": "by young Thomas",
+      "actorChunk": "young Thomas",
       "actionChunk": "were lashed",
       "receiverChunk": "The brass compass and leather logbooks",
       "distractorChunks": [
@@ -46,7 +46,7 @@
         "word": "perilous",
         "definition": "Full of grave danger or risk",
         "rootHint": "peril (Latin periculum, meaning 'danger' or 'trial') + -ous",
-        "contextClue": "The river is a 'churning brown' chute of 'foaming drop filled with hidden boulders' that can smash boats."
+        "contextClue": "Ahead of the crew, a jagged wall of black granite forced the river into a 'foaming drop filled with hidden boulders.'"
       },
       {
         "word": "vantage",
@@ -115,17 +115,17 @@
       "options": [
         {
           "id": "A",
-          "text": "A deep crack filled with crumbling loose shale",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows words from the earlier climbing sentence ('steep fault crack', 'Loose shale') rather than what Thomas gained at the high ledge."
-        },
-        {
-          "id": "B",
           "text": "A spot that provides a wide, clear view of the surroundings",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Matches the context of climbing two hundred feet high to see 'the canyon rim and the rapids below' and sketch the river bend."
+        },
+        {
+          "id": "B",
+          "text": "A deep crack filled with crumbling loose shale",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows words from the earlier climbing sentence ('steep fault crack', 'Loose shale') rather than what Thomas gained at the high ledge."
         },
         {
           "id": "C",
@@ -160,17 +160,17 @@
       "options": [
         {
           "id": "A",
-          "text": "The crew needed a working barometer to measure air pressure and calculate the depth of the canyon walls.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth."
-        },
-        {
-          "id": "B",
           "text": "The brass barometer was the only tool that could steer the wooden boats through submerged rocks.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
           "diagnosticNote": "Misinterprets a scientific measuring tube as a boat-steering device."
+        },
+        {
+          "id": "B",
+          "text": "The crew needed a working barometer to measure air pressure and calculate the depth of the canyon walls.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth."
         },
         {
           "id": "C",
@@ -205,10 +205,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Paragraph 3 introduces a crisis when the boat crashes and loses a barometer, and Paragraph 4 shows how Thomas overcomes that setback by climbing the cliff with the remaining tube.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4."
+          "text": "Paragraph 3 lists the food rations in the crates, and Paragraph 4 explains how the oarsmen cooked dinner over driftwood.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Focuses on minor background props (bacon crates, driftwood) rather than the structural turning point of the plot."
         },
         {
           "id": "B",
@@ -226,10 +226,10 @@
         },
         {
           "id": "D",
-          "text": "Paragraph 3 lists the food rations in the crates, and Paragraph 4 explains how the oarsmen cooked dinner over driftwood.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses on minor background props (bacon crates, driftwood) rather than the structural turning point of the plot."
+          "text": "Paragraph 3 introduces a crisis when the boat loses a barometer, and Paragraph 4 shows Thomas climbing the cliff with the spare tube.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4."
         }
       ],
       "provingParagraph": 4,

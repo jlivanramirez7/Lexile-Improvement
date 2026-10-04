@@ -77,14 +77,15 @@
         },
         {
           "id": "B",
-          "text": "The hungry otters using flat anvil stones",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The purple shells that were gathered during the dive",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "The hungry otters using flat anvil stones",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -112,7 +113,8 @@
         {
           "id": "A",
           "text": "Hold firmly in one place",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -158,7 +160,8 @@
         {
           "id": "B",
           "text": "It forms a pouch where the otter can store its favorite rock and carry extra clams to the surface.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -191,8 +194,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It describes the problem of ocean currents sweeping sleeping otters away and explains how otters solve it by wrapping in kelp.",
-          "isCorrect": true
+          "text": "It compares the weight of a flat anvil stone with the weight of a purple sea urchin.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -202,9 +206,9 @@
         },
         {
           "id": "C",
-          "text": "It compares the weight of a flat anvil stone with the weight of a purple sea urchin.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "It describes the problem of ocean currents sweeping sleeping otters away and explains how otters solve it by wrapping in kelp.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -239,7 +243,8 @@
         {
           "id": "B",
           "text": "They eat large numbers of sea urchins that would otherwise chew through the kelp stems and destroy the forest.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -292,7 +297,8 @@
         {
           "id": "D",
           "text": "\"By eating thousands of urchins every week, sea otters play a vital role in protecting the green kelp canopy for fish, crabs, and seals.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

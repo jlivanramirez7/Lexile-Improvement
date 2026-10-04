@@ -75,9 +75,9 @@
         },
         {
           "id": "B",
-          "text": "A sweet ring of glistening nectar attracts the insects, and the plant's twin lobes snap them inside.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Falling raindrops push the flies into the bog mud beneath the plant's roots.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -87,9 +87,9 @@
         },
         {
           "id": "D",
-          "text": "Falling raindrops push the flies into the bog mud beneath the plant's roots.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "A sweet ring of glistening nectar attracts the insects, and the plant's twin lobes snap them inside.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -116,15 +116,15 @@
         },
         {
           "id": "B",
-          "text": "Drawn in or tempted by a sweet treat",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Washed underground by heavy summer rain",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Drawn in or tempted by a sweet treat",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -151,15 +151,15 @@
       "options": [
         {
           "id": "A",
-          "text": "It waits until two trigger hairs are touched within twenty seconds before clamping shut.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "It grows a tall leafy hood that blocks all rainwater from touching its lobes.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "It waits until two trigger hairs are touched within twenty seconds before clamping shut.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -234,15 +234,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Carnivorous bog plants make sugar from sunlight like other plants, but they digest insects to replace missing soil minerals.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Venus flytraps and pitcher plants have no roots and must eat insects because they cannot use sunlight.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Carnivorous bog plants make sugar from sunlight like other plants, but they digest insects to replace missing soil minerals.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -288,15 +288,15 @@
         },
         {
           "id": "C",
-          "text": "\"Instead, the dissolved bodies of insects act like tiny vitamin pills that replace the nitrogen missing from the bog mud.\"",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "\"Today, both plants face threats when wetlands are drained or when summer brush fires are blocked completely.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"Instead, the dissolved bodies of insects act like tiny vitamin pills that replace the nitrogen missing from the bog mud.\"",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,

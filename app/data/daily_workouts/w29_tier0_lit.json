@@ -70,9 +70,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The sunny back porch sorted the bean seeds for three full weeks.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Eli sorted the plumpest bean seeds into small paper envelopes.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -82,9 +82,9 @@
         },
         {
           "id": "C",
-          "text": "Eli sorted the plumpest bean seeds into small paper envelopes.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The sunny back porch sorted the bean seeds for three full weeks.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Sturdier and better able to handle tough conditions",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Smaller and harder to see on a china plate",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Sturdier and better able to handle tough conditions",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -158,15 +158,15 @@
         },
         {
           "id": "B",
-          "text": "He sets them aside so the chickens can eat them.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "He ties them inside the painted biscuit tin for fifty years.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "He sets them aside so the chickens can eat them.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -199,9 +199,9 @@
         },
         {
           "id": "B",
-          "text": "They explain the value of the family's hardy seeds, turning Eli's tiredness into pride.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "They describe how a sudden rainstorm ruins the seeds drying on the back porch.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "They describe how a sudden rainstorm ruins the seeds drying on the back porch.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "They explain the value of the family's hardy seeds, turning Eli's tiredness into pride.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,

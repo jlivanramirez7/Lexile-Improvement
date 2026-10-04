@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "Stubborn slabs of dark basalt, cooled from molten lava streams years before, are slowly etched by mild lichen acids into fine mineral grains.",
-      "actorChunk": "by mild lichen acids",
+      "actorChunk": "mild lichen acids",
       "actionChunk": "are slowly etched",
       "receiverChunk": "Stubborn slabs of dark basalt",
       "distractorChunks": [
@@ -70,17 +70,17 @@
       "options": [
         {
           "id": "A",
-          "text": "The molten lava streams that flowed across the valley",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a noun from the middle participial modifier ('cooled from molten lava streams') rather than the grammatical actor."
-        },
-        {
-          "id": "B",
           "text": "Mild lichen acids produced by the growing partnership",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Correctly identifies the agent after 'by' ('by mild lichen acids') in the passive verb construction 'are slowly etched by mild lichen acids'."
+        },
+        {
+          "id": "B",
+          "text": "The molten lava streams that flowed across the valley",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a noun from the middle participial modifier ('cooled from molten lava streams') rather than the grammatical actor."
         },
         {
           "id": "C",
@@ -122,17 +122,17 @@
         },
         {
           "id": "B",
-          "text": "A helpful partnership between two sides working together",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Matches the context of Paragraph 2, where the fungus provides shelter and water while the algae brew sugars to feed both partners."
-        },
-        {
-          "id": "C",
           "text": "A deep crack formed by freezing winter ice",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Borrows a detail from Paragraph 3 about winter ice wedges rather than defining the relationship in Paragraph 2."
+        },
+        {
+          "id": "C",
+          "text": "A helpful partnership between two sides working together",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the context of Paragraph 2, where the fungus provides shelter and water while the algae brew sugars to feed both partners."
         },
         {
           "id": "D",
@@ -212,17 +212,17 @@
         },
         {
           "id": "B",
-          "text": "It traces a step-by-step sequence from bare volcanic rock, to lichens breaking stone into soil, to larger plants and forests taking root.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately captures the chronological/process progression from Paragraph 1 (bare lava) through Paragraphs 2-4 (lichen soil-building) to Paragraph 5 (mosses, grasses, and forests)."
-        },
-        {
-          "id": "C",
           "text": "It presents a debate between two scientists who disagree about whether algae can use sunlight.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
           "diagnosticNote": "Invents a scientific controversy not present anywhere in the passage."
+        },
+        {
+          "id": "C",
+          "text": "It traces a step-by-step sequence from bare volcanic rock, to lichens breaking stone into soil, to larger plants and forests taking root.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately captures the chronological/process progression from Paragraph 1 (bare lava) through Paragraphs 2-4 (lichen soil-building) to Paragraph 5 (mosses, grasses, and forests)."
         },
         {
           "id": "D",
@@ -251,17 +251,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Working together as a partnership of fungus and algae, lichens survive on harsh rock and slowly break it into fertile soil for future forests.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Integrates the symbiotic partnership (Para 2), the rock-to-soil process (Para 3), drought resilience (Para 4), and forest succession (Para 5)."
-        },
-        {
-          "id": "B",
           "text": "Freezing winter ice wedges are the only force in nature strong enough to crack dark volcanic basalt.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
           "diagnosticNote": "Uses 'only' and ignores the mild lichen acids that first widen the hairline cracks."
+        },
+        {
+          "id": "B",
+          "text": "As a partnership of fungus and algae, lichens survive on bare rock and break it into fertile soil for forests.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Integrates the symbiotic partnership (Para 2), the rock-to-soil process (Para 3), drought resilience (Para 4), and forest succession (Para 5)."
         },
         {
           "id": "C",
@@ -281,7 +281,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "Every tall forest growing on ancient volcanic hills owes its start to the tiny partners that first unlocked the bare stone.",
       "childTip": "Pick the big idea that explains BOTH how lichens survive as partners AND how they prepare the ground for forests.",
-      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option A combines the fungal-algal partnership with its long-term role in building fertile soil for entire ecosystems."
+      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option B combines the fungal-algal partnership with its long-term role in building fertile soil for entire ecosystems."
     },
     {
       "questionId": "w86_q6",

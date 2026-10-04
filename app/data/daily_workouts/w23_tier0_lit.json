@@ -78,7 +78,8 @@
         {
           "id": "B",
           "text": "Uncle Mateo, who tested the board with a brass square",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -112,7 +113,8 @@
         {
           "id": "A",
           "text": "Exact and accurate",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -157,14 +159,15 @@
         },
         {
           "id": "B",
-          "text": "A wide gap at the roof peak would let cold rain pour inside and soak the nest.",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The front wall of the birdhouse was too heavy to hang on the oak branch.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "A wide gap at the roof peak would let cold rain pour inside and soak the nest.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -192,7 +195,8 @@
         {
           "id": "A",
           "text": "Paragraph 2 shows Leo rushing without measuring, while Paragraph 4 shows him carefully double-checking his marks with the tape and square.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -232,8 +236,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Taking a little extra time to prepare carefully prevents wasted effort later.",
-          "isCorrect": true
+          "text": "Brass screws hold wood together much better than glue or nails.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -243,9 +248,9 @@
         },
         {
           "id": "C",
-          "text": "Brass screws hold wood together much better than glue or nails.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Taking a little extra time to prepare carefully prevents wasted effort later.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -292,7 +297,8 @@
         {
           "id": "D",
           "text": "\"As they hung the finished box on the oak branch, Leo knew that two extra minutes with a ruler had saved an afternoon of waste.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

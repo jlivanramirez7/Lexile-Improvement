@@ -77,15 +77,15 @@
         },
         {
           "id": "B",
-          "text": "Winter moisture trapped under paint weakened the rib, and Jonah pried it out using a flat chisel.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "A flat chisel trapped the winter moisture until the patched coat of paint pried itself loose.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Winter moisture trapped under paint weakened the rib, and Jonah pried it out using a flat chisel.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -108,19 +108,19 @@
       "standard": "ELAGSE5RL4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 4:\n\n\"They slid a fresh strip of white cedar into the hot mist. When the wood grew pliable, Marcus helped Jonah clamp the curve smoothly against the hull.\"\n\nWhat does the word pliable mean as it is used in Paragraph 4?",
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Together, the brothers filled the iron steamer kettle and slid a fresh strip of white cedar into the hot mist. When the wood grew pliable, Marcus helped Jonah clamp the curve smoothly against the hull.\"\n\nWhat does the word pliable mean as it is used in Paragraph 4?",
       "options": [
         {
           "id": "A",
-          "text": "Brittle and likely to snap into sharp splinters",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Softened and easy to bend into a smooth curve",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Brittle and likely to snap into sharp splinters",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -159,9 +159,9 @@
         },
         {
           "id": "B",
-          "text": "He sees that an older putty shortcut had pulled away from the planks and trapped water against the wood.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "He worries that brass tacks will rust if they ever touch clear marine varnish.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -171,9 +171,9 @@
         },
         {
           "id": "D",
-          "text": "He worries that brass tacks will rust if they ever touch clear marine varnish.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "He sees that an older putty shortcut had pulled away from the planks and trapped water against the wood.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -194,15 +194,15 @@
       "options": [
         {
           "id": "A",
-          "text": "By contrasting Marcus's desire for a quick fix with Jonah's knowledge of how a wood hull moves on the water",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "By showing that neither brother cares about their granddad's canoe anymore",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "B",
+          "text": "By contrasting Marcus's desire for a quick fix with Jonah's knowledge of how a wood hull moves on the water",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -236,9 +236,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Doing a job the right way takes patience, whereas careless shortcuts often create worse damage later.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Wooden canoes cannot float on Lake Rabun unless they are painted every Saturday.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -248,9 +248,9 @@
         },
         {
           "id": "C",
-          "text": "Wooden canoes cannot float on Lake Rabun unless they are painted every Saturday.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Doing a job the right way takes patience, whereas careless shortcuts often create worse damage later.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -278,15 +278,15 @@
       "options": [
         {
           "id": "A",
-          "text": "\"For ten summers, the sixteen-foot craft had carried them across Lake Rabun.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "B",
           "text": "\"He admitted that a fast patch today would only rot two more planks by next spring.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "\"For ten summers, the sixteen-foot craft had carried them across Lake Rabun.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "C",

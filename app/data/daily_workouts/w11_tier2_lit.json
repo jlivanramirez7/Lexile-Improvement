@@ -88,7 +88,7 @@
         },
         {
           "id": "D",
-          "text": "Elena's red-filtered flashlight beam on the beach",
+          "text": "Elena's red flashlight beam on the beach",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
         }
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Drawn or pulled toward something",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Protected from hungry birds by a wire screen",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Protected from hungry birds by a wire screen",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Drawn or pulled toward something",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -137,7 +137,7 @@
       "provingParagraph": 4,
       "provingSentenceText": "The hatchlings were being lured away from the surf by a trick of fog and water.",
       "childTip": "Think about how the bright puddle tricked the baby turtles into crawling toward the woods instead of the ocean.",
-      "parentExplanation": "In Paragraph 4, the reflected glare of the boat lantern acts as a false beacon that pulls ('lured') the hatchlings uphill away from the ocean surf (Option A)."
+      "parentExplanation": "In Paragraph 4, the reflected glare of the boat lantern acts as a false beacon that pulls ('lured') the hatchlings uphill away from the ocean surf (Option C)."
     },
     {
       "questionId": "w11_q3",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Thick fog covered the ocean to the east, making the single white lamp in the western marsh stand out more brightly.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The shrimp boat had sailed right onto the dry sand of the high dune near Nest 14.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
-          "text": "The shrimp boat had sailed right onto the dry sand of the primary dune near Nest 14.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Thick fog covered the ocean to the east, making the single white lamp in the western marsh stand out more brightly.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -178,7 +178,7 @@
       "provingParagraph": 3,
       "provingSentenceText": "Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea.",
       "childTip": "Click the last sentence in Paragraph 3 that explains why the boat lamp shone brighter than the sea.",
-      "parentExplanation": "Paragraph 3 directly explains the environmental cause: 'Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea' (Option A)."
+      "parentExplanation": "Paragraph 3 directly explains the environmental cause: 'Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea' (Option B)."
     },
     {
       "questionId": "w11_q4",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "They present a sudden mystery when the hatchlings crawl the wrong way, uncover the hidden cause, and show Elena's quick solution.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "They explain why Cumberland Island should ban all visitors from walking on the beach at night.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "They explain why Cumberland Island should ban all visitors from walking on the beach at night.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "They present a sudden mystery when the hatchlings crawl the wrong way, uncover the hidden cause, and show Elena's quick solution.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -219,7 +219,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "As soon as the tarp blocked the boat's reflection, the dune trough fell dark again.",
       "childTip": "Trace the story arc: the turtles go the wrong way (problem), Elena spots the lamp and puddle (cause), and she uses her poncho (solution).",
-      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraphs 2–5 follow a classic problem-investigation-resolution narrative structure: Paragraph 2 introduces the disoriented hatchlings, Paragraphs 3–4 uncover the lantern and puddle reflection, and Paragraph 5 resolves the crisis with the poncho barrier (Option A)."
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraphs 2–5 follow a classic problem-investigation-resolution narrative structure: Paragraph 2 introduces the disoriented hatchlings, Paragraphs 3–4 uncover the lantern and puddle reflection, and Paragraph 5 resolves the crisis with the poncho barrier (Option C)."
     },
     {
       "questionId": "w11_q5",

@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "A chain of punched paper cards",
-          "isCorrect": true,
-          "trapType": null
+          "text": "An electric motor attached to a silicon chip",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "An electric motor attached to a silicon chip",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "A chain of punched paper cards",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Tiresome and demanding long, repetitive effort",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Loud enough to shake the walls of the silk shop",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Loud enough to shake the walls of the silk shop",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Tiresome and demanding long, repetitive effort",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Workers could make the same machine create a new pattern just by swapping in a new set of card instructions.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "The paper cards used electricity and glass screens to display pictures of castles.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "Workers could make the same machine create a new pattern just by swapping in a new set of card instructions.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Jacquard's invention of punched cards to guide silk looms inspired Charles Babbage and Ada Lovelace to develop the foundational ideas of computer programming.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Player pianos were the most popular musical instruments in France during the early 1800s.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "Jacquard's invention of punched cards to guide silk looms inspired Charles Babbage and Ada Lovelace to develop the foundational ideas of computer programming.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",

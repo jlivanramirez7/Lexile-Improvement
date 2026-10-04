@@ -110,9 +110,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Stayed in one area for a long time without moving away",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Migrated hundreds of miles north into Canada every autumn",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -128,9 +128,9 @@
         },
         {
           "id": "D",
-          "text": "Migrated hundreds of miles north into Canada every autumn",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Stayed in one area for a long time without moving away",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 1,
@@ -151,9 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Gray wolves hunted all the beavers along the northern range in the 1920s.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "They lacked tall willow branches to eat and use for building their lodges and dams.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -163,9 +163,9 @@
         },
         {
           "id": "C",
-          "text": "They lacked tall willow branches to eat and use for building their lodges and dams.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Gray wolves hunted all the beavers along the northern range in the 1920s.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "D",
@@ -192,9 +192,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The number of beaver colonies on the northern range grew from one to nine, and songbirds nested in the shady branches.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Elk herds learned to weave willow branches into shelters to hide from Canadian wolves.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -204,9 +204,9 @@
         },
         {
           "id": "C",
-          "text": "Elk herds learned to weave willow branches into shelters to hide from Canadian wolves.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "The number of beaver colonies on the northern range grew from one to nine, and songbirds nested in the shady branches.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By tracing how wolves kept elk moving, which let willow roots and beaver dams trap silt and narrow the creek banks",
-          "isCorrect": true,
-          "trapType": null
+          "text": "By explaining that native trout pushed mud onto the riverbanks to shade the water",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -252,9 +252,9 @@
         },
         {
           "id": "D",
-          "text": "By explaining that native trout pushed mud onto the riverbanks to shade the water",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "By tracing how wolves kept elk moving, which let willow roots and beaver dams trap silt and narrow the creek banks",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -282,9 +282,9 @@
         },
         {
           "id": "B",
-          "text": "\"The streams grew wide, shallow, and warm under the summer sun.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "\"Silt settled to the bottom of the pools instead of washing downstream, and thick willow roots locked the banks into firm soil.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -294,9 +294,9 @@
         },
         {
           "id": "D",
-          "text": "\"Silt settled to the bottom of the pools instead of washing downstream, and thick willow roots locked the banks into firm soil.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"The streams grew wide, shallow, and warm under the summer sun.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         }
       ],
       "provingParagraph": 5,

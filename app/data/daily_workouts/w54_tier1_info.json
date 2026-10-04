@@ -46,7 +46,7 @@
         "word": "universal",
         "definition": "shared and understood everywhere across the entire universe",
         "rootHint": "Latin universalis ('belonging to the whole cosmos')",
-        "contextClue": "Even if a finder speaks no earthly language, a hydrogen atom clock works the same way across every galaxy."
+        "contextClue": "Even if a finder speaks no human tongue, a hydrogen atom clock works the same way across every star group."
       },
       {
         "word": "interstellar",
@@ -107,13 +107,13 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 4:\n\n\"Another diagram uses the steady pulse of a hydrogen atom as a universal clock. Even if the finder speaks no earthly language, the laws of physics remain the same across every galaxy.\"\n\nWhat does the word universal mean as it is used in Paragraph 4?",
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Another diagram uses the steady pulse of a hydrogen atom as a universal clock. Even if the finder speaks no human tongue, the laws of nature stay the same across every star group.\"\n\nWhat does the word universal mean as it is used in Paragraph 4?",
       "options": [
         {
           "id": "A",
-          "text": "Working the same way and able to be understood anywhere in the cosmos",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Powered by heavy batteries that must be charged every week",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -129,15 +129,15 @@
         },
         {
           "id": "D",
-          "text": "Powered by heavy batteries that must be charged every week",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Working the same way and able to be understood anywhere in the cosmos",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Another diagram uses the steady pulse of a hydrogen atom as a universal clock.",
-      "childTip": "Look at the next sentence: the laws of physics 'remain the same across every galaxy.'",
-      "parentExplanation": "Paragraph 4 explains that even if a finder knows no earthly language, the laws of physics are the same across every galaxy, showing that 'universal' means applying everywhere in the universe."
+      "childTip": "Look at the next sentence: the laws of nature 'stay the same across every star group.'",
+      "parentExplanation": "Paragraph 4 explains that even if a finder speaks no human tongue, the laws of nature stay the same across every star group, showing that 'universal' means applying everywhere in the universe."
     },
     {
       "questionId": "w54_q3",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Gold-plated copper was lighter and cheaper to buy in Florida than plastic tape.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
-        },
-        {
-          "id": "B",
           "text": "Copper and gold resist rust and wear so the records can survive cosmic rays and cold for millions of years.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Gold-plated copper was lighter and cheaper to buy in Florida than plastic tape.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It explains how scientists solved the problem of teaching a distant finder how to play the record without using human words.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It compares the size of Jupiter's moons to the size of Saturn's icy rings.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "It compares the size of Jupiter's moons to the size of Saturn's icy rings.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "It explains how scientists solved the problem of teaching a distant finder how to play the record without using human words.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Scientists designed the durable Voyager Golden Records to carry a lasting portrait of Earth's life, sounds, and science across interstellar space.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Modern jazz is the only style of music that can be etched into a solid copper sound disc.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "Modern jazz is the only style of music that can be etched into a solid copper sound disc.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Scientists designed the durable Voyager Golden Records to carry a lasting portrait of Earth's life, sounds, and science across interstellar space.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -283,9 +283,9 @@
         },
         {
           "id": "B",
-          "text": "\"Plastic tape or paper notes would never last on a trip of a million years.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"Protected inside their metal shells, those tiny copper grooves hold a lasting portrait of our home world.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"Protected inside their metal shells, those tiny copper grooves hold a lasting portrait of our home world.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Plastic tape or paper notes would never last on a trip of a million years.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

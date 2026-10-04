@@ -20,8 +20,8 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The heavy sixty-six-foot iron chain, dragged across sharp granite boulders by Caleb, was carefully anchored beside the brass stake at the canyon rim.",
-      "actorChunk": "by Caleb",
-      "actionChunk": "was carefully anchored",
+      "actorChunk": "Caleb",
+      "actionChunk": "carefully anchored",
       "receiverChunk": "The heavy sixty-six-foot iron chain",
       "distractorChunks": [
         "dragged across sharp granite boulders",
@@ -77,17 +77,17 @@
         },
         {
           "id": "B",
-          "text": "The heavy sixty-six-foot iron chain",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly links the grammatical subject ('The heavy sixty-six-foot iron chain') across the participial clause to the passive verb ('was carefully anchored')."
-        },
-        {
-          "id": "C",
           "text": "The canyon rim above the rushing snowmelt creek",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Picks the location noun at the end of the prepositional phrase ('at the canyon rim') instead of what was anchored."
+        },
+        {
+          "id": "C",
+          "text": "The heavy sixty-six-foot iron chain",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly links the grammatical subject ('The heavy sixty-six-foot iron chain') across the participial clause to the passive verb ('was carefully anchored')."
         },
         {
           "id": "D",
@@ -167,10 +167,10 @@
         },
         {
           "id": "B",
-          "text": "He set his wooden pack frame upright next to the stake to block the wind so the brass weight hung still.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately states how Caleb used his wooden pack frame as a windbreak to steady the plumb bob."
+          "text": "He asked Mr. Judah to guess the bridge angle without using the brass plumb bob.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Contradicts the crew's strict need for exact math so a forty-ton locomotive stays safe."
         },
         {
           "id": "C",
@@ -181,10 +181,10 @@
         },
         {
           "id": "D",
-          "text": "He asked Mr. Judah to guess the bridge angle without using the brass plumb bob.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Contradicts the crew's strict need for exact math so a forty-ton locomotive stays safe."
+          "text": "He set his wooden pack frame upright next to the stake to block the wind so the brass weight hung still.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately states how Caleb used his wooden pack frame as a windbreak to steady the plumb bob."
         }
       ],
       "provingParagraph": 4,
@@ -205,17 +205,17 @@
       "options": [
         {
           "id": "A",
-          "text": "To explain why Caleb decides to resist the freezing cold and take the time to measure the mark accurately",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Shows how the remembered quote resolves Caleb's internal conflict in Paragraph 3 and motivates his careful action in Paragraph 4."
-        },
-        {
-          "id": "B",
           "text": "To show that Mr. Judah is angry at Caleb for dropping the brass transit into the foaming river",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
           "diagnosticNote": "Invents an accident with the brass transit that never happens in the passage."
+        },
+        {
+          "id": "B",
+          "text": "To explain why Caleb decides to resist the freezing cold and take the time to measure the mark accurately",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Shows how the remembered quote resolves Caleb's internal conflict in Paragraph 3 and motivates his careful action in Paragraph 4."
         },
         {
           "id": "C",
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Caleb has earned Mr. Judah's trust by showing patience and precision under harsh mountain conditions.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Connects Caleb's careful work in the sleet (Paragraph 4) to Mr. Judah entrusting him with the valuable book of survey bearings (Paragraph 5)."
+          "text": "The leather field book is completely empty because the swirling mist ruined every measurement that day.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 4, where Mr. Judah 'wrote the exact bearing inside his leather field book.'"
         },
         {
           "id": "B",
@@ -265,10 +265,10 @@
         },
         {
           "id": "C",
-          "text": "The leather field book is completely empty because the swirling mist ruined every measurement that day.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraph 4, where Mr. Judah 'wrote the exact bearing inside his leather field book.'"
+          "text": "Caleb has earned Mr. Judah's trust by showing patience and precision under harsh mountain conditions.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Connects Caleb's careful work in the sleet (Paragraph 4) to Mr. Judah entrusting him with the valuable book of survey bearings (Paragraph 5)."
         },
         {
           "id": "D",
@@ -297,10 +297,10 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Below their boots, a sheer canyon dropped eight hundred feet to a foaming river.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes the dangerous mountain setting in Paragraph 1, not how Caleb earned trust through his careful work."
+          "text": "\"Behind that shelter, the brass plumb bob stopped swaying and hung dead still over the chiseled cross on the stone.\"",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Proves Part A by showing the exact moment Caleb's resourceful patience achieved a precise measurement in the storm."
         },
         {
           "id": "B",
@@ -318,10 +318,10 @@
         },
         {
           "id": "D",
-          "text": "\"Behind that shelter, the brass plumb bob stopped swaying and hung dead still over the chiseled cross on the stone.\"",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Proves Part A by showing the exact moment Caleb's resourceful patience achieved a precise measurement in the storm."
+          "text": "\"Below their boots, a sheer canyon dropped eight hundred feet to a foaming river.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Describes the dangerous mountain setting in Paragraph 1, not how Caleb earned trust through his careful work."
         }
       ],
       "provingParagraph": 4,

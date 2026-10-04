@@ -21,7 +21,7 @@
       "paragraphNumber": 2,
       "verbatimSentence": "Heated past the boiling point and loaded with dissolved minerals, the dark plumes of water are blasted upward into the icy sea by immense underground pressure.",
       "actorChunk": "immense underground pressure",
-      "actionChunk": "blasts upward",
+      "actionChunk": "blasted upward",
       "receiverChunk": "the dark plumes of water",
       "distractorChunks": [
         "Heated past the boiling point",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "They rely on billions of bacteria living inside their bodies to turn sulfur chemicals into food.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "They swim up to the ocean surface each night to feed on green plants.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -170,15 +170,15 @@
         },
         {
           "id": "D",
-          "text": "They swim up to the ocean surface each night to feed on green plants.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "They rely on billions of bacteria living inside their bodies to turn sulfur chemicals into food.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Instead, they pack their red plumes and inner tissues with billions of sulfur-eating bacteria that make food for them from the inside.",
       "childTip": "Click the sentence in Paragraph 4 that begins with 'Instead' to see how tube worms get their food.",
-      "parentExplanation": "Paragraph 4 explicitly explains the symbiotic relationship: because tube worms lack a mouth and stomach, 'they pack their red plumes and inner tissues with billions of sulfur-eating bacteria that make food for them from the inside' (Option A)."
+      "parentExplanation": "Paragraph 4 explicitly explains the symbiotic relationship: because tube worms lack a mouth and stomach, 'they pack their red plumes and inner tissues with billions of sulfur-eating bacteria that make food for them from the inside' (Option D)."
     },
     {
       "questionId": "w08_q4",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Deep-sea hydrothermal vents support thriving communities of life in total darkness because bacteria turn mineral chemicals into food.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Research submarines discovered the Galapagos Islands in 1977 while searching for sunken ships on the seabed.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -253,15 +253,15 @@
         },
         {
           "id": "D",
-          "text": "Research submarines discovered the Galapagos Islands in 1977 while searching for sunken ships on the seabed.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Deep-sea hydrothermal vents support thriving communities of life in total darkness because bacteria turn mineral chemicals into food.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because no sunlight reaches the seabed, these hardy microbes perform a process called chemosynthesis instead of using light.",
       "childTip": "Choose the big idea that connects the hot mineral vents, the sulfur-eating bacteria, and the animals across the whole passage.",
-      "parentExplanation": "Aligned to ELAGSE5RI2, the overarching central idea spanning Paragraphs 1–5 is that hydrothermal vents sustain rich ecosystems without sunlight because chemosynthetic bacteria convert sulfur chemicals into food at the base of the food web (Option A). Option B is a Tiny Detail Trap from Paragraph 5."
+      "parentExplanation": "Aligned to ELAGSE5RI2, the overarching central idea spanning Paragraphs 1–5 is that hydrothermal vents sustain rich ecosystems without sunlight because chemosynthetic bacteria convert sulfur chemicals into food at the base of the food web (Option D). Option B is a Tiny Detail Trap from Paragraph 5."
     },
     {
       "questionId": "w08_q6",

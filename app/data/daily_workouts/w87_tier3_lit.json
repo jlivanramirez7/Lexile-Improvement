@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The silent tripod camera, bolted inside a gray weather box near the corner drain, was aimed by Maya toward the shallow gravel scrape.",
-      "actorChunk": "by Maya",
+      "actorChunk": "Maya",
       "actionChunk": "was aimed",
       "receiverChunk": "The silent tripod camera",
       "distractorChunks": [
@@ -34,7 +34,7 @@
         "word": "aerie",
         "definition": "A high nest built on a cliff or tall ledge by a bird of prey",
         "rootHint": "Old French aire (high nesting ledge of a hawk or eagle)",
-        "contextClue": "Two peregrine falcons claimed 'a granite corner tray filled with pea gravel as their high aerie' fifty stories up."
+        "contextClue": "Two peregrine falcons claimed 'a stone corner tray filled with pea gravel as their high aerie' fifty stories up."
       },
       {
         "word": "updraft",
@@ -52,7 +52,7 @@
         "word": "cautious",
         "definition": "Careful and hesitant in order to avoid danger",
         "rootHint": "caut- (Latin root meaning 'to beware or take heed') + -ious",
-        "contextClue": "Contrasted with the 'bold female' chick; the second bird 'huddled near the wall, peering nervously down.'"
+        "contextClue": "Contrasted with the 'bold female' chick; the second bird 'huddled near the wall, peering down at the steep drop.'"
       }
     ]
   },
@@ -77,21 +77,21 @@
         },
         {
           "id": "B",
-          "text": "The silent tripod camera mounted on the roof",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver ('The silent tripod camera') with the person who aimed it."
-        },
-        {
-          "id": "C",
           "text": "Maya, the student filmmaker recording the falcons",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Correctly identifies the agent after 'by' ('by Maya') in the passive construction 'was aimed by Maya'."
         },
         {
+          "id": "C",
+          "text": "The silent tripod camera mounted on the roof",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Confuses the grammatical subject/receiver ('The silent tripod camera') with the person who aimed it."
+        },
+        {
           "id": "D",
-          "text": "The shallow gravel scrape on the granite ledge",
+          "text": "The shallow gravel scrape on the stone ledge",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Picks the directional object at the end of the sentence ('toward the shallow gravel scrape') instead of the actor."
@@ -115,10 +115,10 @@
       "options": [
         {
           "id": "A",
-          "text": "A rising current of warm air moving skyward",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Uses word parts ('up' + 'draft') and context clues ('rose off the sun-baked asphalt... and swept up the glass tower wall')."
+          "text": "A loud siren echoing between downtown city buses",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Borrows urban street imagery from Paragraph 1 rather than defining the rising air current."
         },
         {
           "id": "B",
@@ -136,10 +136,10 @@
         },
         {
           "id": "D",
-          "text": "A loud siren echoing between downtown city buses",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Borrows urban street imagery from Paragraph 1 rather than defining the rising air current."
+          "text": "A rising current of warm air moving skyward",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses word parts ('up' + 'draft') and context clues ('rose off the sun-baked asphalt... and swept up the glass tower wall')."
         }
       ],
       "provingParagraph": 3,
@@ -167,17 +167,17 @@
         },
         {
           "id": "B",
-          "text": "Maya prioritizes quiet patience to keep the birds safe, whereas Leo is initially eager for fast action and nearly steps onto the roof.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately contrasts Maya's patient restraint with Leo's initial impatience and excitement across Paragraphs 2, 3, and 4."
-        },
-        {
-          "id": "C",
           "text": "Maya cares only about winning a film prize, whereas Leo cares only about studying city buses from the roof.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
           "diagnosticNote": "Uses extreme language ('only') and misrepresents both characters' motivations."
+        },
+        {
+          "id": "C",
+          "text": "Maya prioritizes quiet patience to keep the birds safe, whereas Leo is initially eager for fast action and nearly steps onto the roof.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately contrasts Maya's patient restraint with Leo's initial impatience and excitement across Paragraphs 2, 3, and 4."
         },
         {
           "id": "D",
@@ -212,7 +212,7 @@
         },
         {
           "id": "B",
-          "text": "Both chicks leap off the granite ledge at the exact same second without waiting for their mother.",
+          "text": "Both chicks leap off the stone ledge at the exact same second without waiting for their mother.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Contradicts Paragraphs 4 and 5, where the second chick waits ten quiet minutes until the mother falcon glides past."
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Observing nature responsibly requires patience and restraint so wild creatures are not harmed by human excitement.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the remote camera setup, Maya stopping Leo from opening the roof door, and the peaceful flight of the second fledgling."
+          "text": "Younger brothers should never be allowed to watch wildlife documentaries being filmed.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('never') and ignores that Leo learns to lower his hands and wait quietly in Paragraph 4."
         },
         {
           "id": "B",
@@ -265,10 +265,10 @@
         },
         {
           "id": "C",
-          "text": "Younger brothers should never be allowed to watch wildlife documentaries being filmed.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('never') and ignores that Leo learns to lower his hands and wait quietly in Paragraph 4."
+          "text": "Observing nature responsibly requires patience and restraint so wild creatures are not harmed by human excitement.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the remote camera setup, Maya stopping Leo from opening the roof door, and the peaceful flight of the second fledgling."
         },
         {
           "id": "D",

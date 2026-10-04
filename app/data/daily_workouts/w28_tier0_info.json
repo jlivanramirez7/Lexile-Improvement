@@ -70,9 +70,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Thousands of drops build the tiny ring of mineral into a stalactite.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Park rangers build the mineral rings using special cave tools.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "Park rangers build the mineral rings using special cave tools.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Thousands of drops build the tiny ring of mineral into a stalactite.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -107,7 +107,7 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 5:\n\n\"At times, a top cone and a bottom cone grow long enough to meet in the middle. When they fuse together, they form a solid stone pillar from floor to ceiling.\"\n\nWhat does the word fuse mean as it is used in Paragraph 5?",
+      "prompt": "Read these sentences from Paragraph 5:\n\n\"At times, a hanging cone and a rising cone grow long enough to meet in the middle. When they fuse together, they form a solid stone pillar from floor to ceiling.\"\n\nWhat does the word fuse mean as it is used in Paragraph 5?",
       "options": [
         {
           "id": "A",
@@ -117,15 +117,15 @@
         },
         {
           "id": "B",
-          "text": "Join and bond into one solid piece",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Drip quickly from a high stone roof",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Join and bond into one solid piece",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -136,7 +136,7 @@
       ],
       "provingParagraph": 5,
       "provingSentenceText": "When they fuse together, they form a solid stone pillar from floor to ceiling.",
-      "childTip": "When the top and bottom rock shapes meet in the middle, they join into one solid column.",
+      "childTip": "When the hanging and rising rock shapes meet in the middle, they join into one solid column.",
       "parentExplanation": "Paragraph 5 explains that a stalactite and stalagmite grow until they meet in the middle and form a single solid stone pillar, showing that 'fuse' means to join or bond into one piece."
     },
     {
@@ -158,15 +158,15 @@
         },
         {
           "id": "B",
-          "text": "It mixes with skin oils left behind by visitors walking on the forest floor.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "C",
           "text": "It picks up carbon dioxide gas from the air and dead leaves, turning into a weak acid.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It mixes with skin oils left behind by visitors walking on the forest floor.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -193,19 +193,19 @@
       "options": [
         {
           "id": "A",
-          "text": "To prove that human skin is stronger than weakly acidic rainwater",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "B",
           "text": "To support the point that cave visitors should never touch cave formations",
           "isCorrect": true,
           "trapType": null
         },
         {
+          "id": "B",
+          "text": "To prove that human skin is stronger than weakly acidic rainwater",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
+        },
+        {
           "id": "C",
-          "text": "To show how park rangers polish stalagmites so they look like pancakes",
+          "text": "To show how park rangers polish stalactites so they look like stone icicles",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Once air fills an empty cave, dripping water switches from carving away rock to building new rock shapes.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Once air enters a cave, rainwater loses all of its minerals and can no longer drip from the roof.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Once air fills an empty cave, dripping water switches from carving away rock to building new rock shapes.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"Once air fills the cave, the same dripping water begins to build new rock shapes instead of carving them away.\"",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "\"The falling drop splashes onto the cave floor directly below the tip of the stalactite.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Once air fills the cave, the same dripping water begins to build new rock shapes instead of carving them away.\"",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,

@@ -76,14 +76,14 @@
         },
         {
           "id": "B",
-          "text": "Vavilov, the Russian plant scientist",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The thousands of wild seed packets",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Vavilov, the Russian plant scientist",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -150,8 +150,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Stored seeds are living embryos that gradually lose their ability to sprout if left on a shelf for too many decades.",
-          "isCorrect": true
+          "text": "Farmers buy all the stored seeds from the vault every spring to feed their mules.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -167,9 +168,8 @@
         },
         {
           "id": "D",
-          "text": "Farmers buy all the stored seeds from the vault every spring to feed their mules.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Stored seeds are living embryos that slowly lose their power to sprout on a shelf.",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 4,
@@ -190,14 +190,14 @@
       "options": [
         {
           "id": "A",
-          "text": "Wild plants have survived drought, frost, and rot for thousands of years, keeping hardy traits that breeders can cross into weak farm crops.",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
           "text": "Wild mountain weeds produce much larger yields and sweeter grain than modern farm wheat.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Wild plants survived drought, frost, and rot, keeping hardy traits breeders can cross into farm crops.",
+          "isCorrect": true
         },
         {
           "id": "C",
@@ -231,8 +231,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Every stalk in a modern field shares the exact same traits, so a disease that harms one plant can harm them all.",
-          "isCorrect": true
+          "text": "Wild mountain valleys are sprayed every week by plant breeders from Arctic seed vaults.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -248,9 +249,8 @@
         },
         {
           "id": "D",
-          "text": "Wild mountain valleys are sprayed every week by plant breeders from Arctic seed vaults.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Every stalk shares identical traits, so a disease that harms one plant can harm them all.",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 1,

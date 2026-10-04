@@ -110,9 +110,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Tough and able to survive harsh conditions",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Covered in hard shells like an eastern oyster",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -128,9 +128,9 @@
         },
         {
           "id": "D",
-          "text": "Covered in hard shells like an eastern oyster",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Tough and able to survive harsh conditions",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -192,9 +192,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By contrasting how concrete seawalls and porous salt marshes handle floodwater during storms",
-          "isCorrect": true,
-          "trapType": null
+          "text": "By describing the life cycle of an eastern oyster from larva to adult shell",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -204,9 +204,9 @@
         },
         {
           "id": "C",
-          "text": "By describing the life cycle of an eastern oyster from larva to adult shell",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "By contrasting how concrete seawalls and porous salt marshes handle floodwater during storms",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Oyster reefs calm strong waves so young cordgrass can take root, while cordgrass roots hold the creek bank soil in place.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Volunteers must replant every blade of cordgrass each week because oysters crowd out the grass roots.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -252,9 +252,9 @@
         },
         {
           "id": "D",
-          "text": "Volunteers must replant every blade of cordgrass each week because oysters crowd out the grass roots.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Oyster reefs calm strong waves so young cordgrass can take root, while cordgrass roots hold the creek bank soil in place.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

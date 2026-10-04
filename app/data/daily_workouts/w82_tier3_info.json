@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 4,
       "verbatimSentence": "Incoming starlight from distant galaxies, bent out of shape by swirling pockets of warm and cool air, is instantly sharpened by tiny pistons pushing behind the flexible glass mirror.",
-      "actorChunk": "by tiny pistons pushing behind the flexible glass mirror",
+      "actorChunk": "tiny pistons pushing behind the flexible glass mirror",
       "actionChunk": "is instantly sharpened",
       "receiverChunk": "Incoming starlight from distant galaxies",
       "distractorChunks": [
@@ -51,7 +51,7 @@
         "word": "compensate",
         "definition": "To make up for or cancel out an unwanted effect",
         "rootHint": "com- + pensare (Latin root meaning 'to weigh or balance against')",
-        "contextClue": "In Paragraph 4, 'Each tiny bend cancels out the exact ripple in the air above.'"
+        "contextClue": "In Paragraph 4, 'Each small bend cancels out the exact ripple in the air above.'"
       }
     ]
   },
@@ -76,17 +76,17 @@
         },
         {
           "id": "B",
-          "text": "Tiny pistons pushing behind the flexible glass mirror",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('is instantly sharpened by tiny pistons pushing behind the flexible glass mirror')."
-        },
-        {
-          "id": "C",
           "text": "Distant galaxies shining across trillions of miles",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Selects the object of the preposition 'from distant galaxies' rather than the mechanism that sharpens the light."
+        },
+        {
+          "id": "C",
+          "text": "Tiny pistons pushing behind the flexible glass mirror",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('is instantly sharpened by tiny pistons pushing behind the flexible glass mirror')."
         },
         {
           "id": "D",
@@ -114,17 +114,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Bend or twist out of its true shape",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Matches the Latin root 'tort' (twist) and Paragraph 4's restatement ('bent out of shape by swirling pockets of warm and cool air')."
-        },
-        {
-          "id": "B",
           "text": "Keep completely still and razor-sharp",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Reverses the effect of the wind pockets; the shifting air blurs and bends the light, while the mirror makes it sharp."
+        },
+        {
+          "id": "B",
+          "text": "Bend or twist out of its true shape",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the Latin root 'tort' (twist) and Paragraph 4's restatement ('bent out of shape by swirling pockets of warm and cool air')."
         },
         {
           "id": "C",
@@ -204,10 +204,10 @@
       "options": [
         {
           "id": "A",
-          "text": "To help the reader picture how moving layers of air bend starlight and make clear objects look wavy and blurred",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately explains how the everyday analogy makes the abstract optical concept of atmospheric refraction concrete for readers."
+          "text": "To explain how astronomers pay for expensive space telescopes using coins collected at observatories",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Latching onto the word 'coin' and connecting it to 'expensive telescopes' in Paragraph 3."
         },
         {
           "id": "B",
@@ -218,10 +218,10 @@
         },
         {
           "id": "C",
-          "text": "To explain how astronomers pay for expensive space telescopes using coins collected at observatories",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Latching onto the word 'coin' and connecting it to 'expensive telescopes' in Paragraph 3."
+          "text": "To help the reader picture how moving layers of air bend starlight and make clear objects look wavy and blurred",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains how the everyday analogy makes the abstract optical concept of atmospheric refraction concrete for readers."
         },
         {
           "id": "D",
@@ -250,17 +250,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Adaptive optics systems use laser guide stars and fast-bending mirrors to cancel out atmospheric blur, allowing ground telescopes to capture sharp images of space.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the atmospheric blur problem (Paras 1-2), the laser and flexible mirror mechanism (Paras 3-4), and the resulting clear astronomical views (Para 5)."
-        },
-        {
-          "id": "B",
           "text": "Stars do not actually flicker in deep space because their light travels in straight lines across trillions of miles of vacuum.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "States only an introductory background fact from Paragraph 1 rather than the passage's central topic of adaptive optics."
+        },
+        {
+          "id": "B",
+          "text": "Adaptive optics systems use laser guide stars and fast-bending mirrors to cancel out atmospheric blur, allowing ground telescopes to capture sharp images of space.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the atmospheric blur problem (Paras 1-2), the laser and flexible mirror mechanism (Paras 3-4), and the resulting clear astronomical views (Para 5)."
         },
         {
           "id": "C",
@@ -280,7 +280,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "By learning to compensate for shifting air in real time, astronomers have given Earthbound telescopes a view almost as clear as space itself.",
       "childTip": "Choose the summary that covers both the problem of blurry air and how adaptive optics fixes it for ground telescopes.",
-      "parentExplanation": "Focus standard ELAGSE5RI2 (Central Idea). Option A integrates the problem (atmospheric distortion), the engineering solution (laser guide stars + flexible mirrors), and the outcome (space-quality views from Earth)."
+      "parentExplanation": "Focus standard ELAGSE5RI2 (Central Idea). Option B integrates the problem (atmospheric distortion), the engineering solution (laser guide stars + flexible mirrors), and the outcome (space-quality views from Earth)."
     },
     {
       "questionId": "w82_q6",

@@ -69,15 +69,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The startled cast snagged the wooden beam, and the heavy velvet curtain held the iron pulley open.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "A loose canvas banner snagged the curtain near the beam, and the jammed iron pulley held it half-open.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The startled cast snagged the wooden beam, and the heavy velvet curtain held the iron pulley open.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -151,9 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Dimming the stage lights lets the crew change the scenery in the shadows even without the closed curtain.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The bright spotlights were overheating and causing the hemp rope to melt near the ceiling.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -163,9 +163,9 @@
         },
         {
           "id": "C",
-          "text": "The bright spotlights were overheating and causing the hemp rope to melt near the ceiling.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Dimming the stage lights lets the crew change the scenery in the shadows even without the closed curtain.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -192,9 +192,9 @@
       "options": [
         {
           "id": "A",
-          "text": "To loosen or make less tight",
-          "isCorrect": true,
-          "trapType": null
+          "text": "To shine a bright flashlight beam on",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -210,9 +210,9 @@
         },
         {
           "id": "D",
-          "text": "To shine a bright flashlight beam on",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "To loosen or make less tight",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,

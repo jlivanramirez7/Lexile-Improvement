@@ -76,14 +76,14 @@
         },
         {
           "id": "B",
-          "text": "The planet's spin as the globe turns on its axis",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The tight corkscrews inside the rocky crust",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The planet's spin as the globe turns on its axis",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -150,14 +150,14 @@
       "options": [
         {
           "id": "A",
-          "text": "Fierce solar storms push through the rocky crust and stir the melted nickel.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Hot liquid iron near the inner core expands and rises while cooler, denser metal sinks.",
+          "isCorrect": true
         },
         {
           "id": "B",
-          "text": "Hot liquid iron near the inner core expands and rises while cooler, denser metal sinks.",
-          "isCorrect": true
+          "text": "Fierce solar storms push through the rocky crust and stir the melted nickel.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -190,8 +190,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By showing that Earth's spin twists rising metal streams so they breed electric currents and a stronger magnetic field",
-          "isCorrect": true
+          "text": "By describing how green and violet ribbons of light warm the air above the icy poles",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -201,9 +202,8 @@
         },
         {
           "id": "C",
-          "text": "By describing how green and violet ribbons of light warm the air above the icy poles",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "By showing that Earth's spin twists rising metal streams so they breed electric currents and a stronger magnetic field",
+          "isCorrect": true
         },
         {
           "id": "D",

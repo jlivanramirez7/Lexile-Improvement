@@ -158,9 +158,9 @@
         },
         {
           "id": "B",
-          "text": "They want to keep the rising tide from knocking their driftwood frame down.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "All of the dried marsh vines grow only on top of the rocky jetty.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "C",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "All of the dried marsh vines grow only on top of the rocky jetty.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "They want to keep the rising tide from knocking their driftwood frame down.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -199,15 +199,15 @@
         },
         {
           "id": "B",
-          "text": "It shows that the wind is too strong for anyone to paddle a kayak around Tybee Point.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
-        },
-        {
-          "id": "C",
           "text": "It leads Caleb to dig deep anchor holes so the poles can stand firm against the wind.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "It shows that the wind is too strong for anyone to paddle a kayak around Tybee Point.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "D",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Careful planning and teamwork can overcome natural challenges when a first attempt fails.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Kayakers should always carry a radio instead of looking for landmarks on the shore.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Kayakers should always carry a radio instead of looking for landmarks on the shore.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Careful planning and teamwork can overcome natural challenges when a first attempt fails.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Salt wind whipped across the wide sandbar at the north end of Tybee Island.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"Working together with smart planning had beaten both the wind and the rising tide.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"Working together with smart planning had beaten both the wind and the rising tide.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Salt wind whipped across the wide sandbar at the north end of Tybee Island.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

@@ -20,8 +20,8 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "Tiny water droplets, carried inland from the cold ocean by steady coastal winds, are swiftly trapped by the woven plastic threads of the tall ridge nets.",
-      "actorChunk": "by the woven plastic threads of the tall ridge nets",
-      "actionChunk": "are swiftly trapped",
+      "actorChunk": "the woven plastic threads of the tall ridge nets",
+      "actionChunk": "swiftly trapped",
       "receiverChunk": "Tiny water droplets",
       "distractorChunks": [
         "carried inland from the cold ocean by steady coastal winds"
@@ -114,10 +114,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Come together to form thicker liquid drops",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Matches the root clue ('con-' together + 'dense' thick) and Paragraph 2's explanation that tiny drops 'merge into heavy beads.'"
+          "text": "Tear holes through the vertical plastic screen",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Focuses on the word 'screen' at the end of the sentence rather than the change in the water droplets."
         },
         {
           "id": "B",
@@ -135,10 +135,10 @@
         },
         {
           "id": "D",
-          "text": "Tear holes through the vertical plastic screen",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Focuses on the word 'screen' at the end of the sentence rather than the change in the water droplets."
+          "text": "Come together to form thicker liquid drops",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the root clue ('con-' together + 'dense' thick) and Paragraph 2's explanation that tiny drops 'merge into heavy beads.'"
         }
       ],
       "provingParagraph": 3,
@@ -211,17 +211,17 @@
         },
         {
           "id": "B",
-          "text": "Paragraph 1 establishes the problem of severe water scarcity despite daily coastal fog, and Paragraph 2 explains the engineered solution inspired by desert cacti.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately explains the Problem-and-Solution structural relationship linking Paragraph 1 and Paragraph 2."
-        },
-        {
-          "id": "C",
           "text": "Paragraph 1 argues that tank trucks are the best way to haul water, and Paragraph 2 proves that cacti are harmed by coastal mist.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Flips the meaning of both paragraphs: tank trucks were costly, and cacti survived by catching the mist."
+        },
+        {
+          "id": "C",
+          "text": "Paragraph 1 establishes the problem of severe water scarcity despite daily coastal fog, and Paragraph 2 explains the engineered solution inspired by desert cacti.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains the Problem-and-Solution structural relationship linking Paragraph 1 and Paragraph 2."
         },
         {
           "id": "D",
@@ -250,10 +250,10 @@
       "options": [
         {
           "id": "A",
-          "text": "In the dry Atacama Desert, ridge-top mesh nets capture water from coastal fog and gravity-feed it to villages for drinking and farming.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the setting (Atacama), the mechanism (fog-catching mesh and gravity pipes), and the impact on communities."
+          "text": "Mountain towns in Chile prefer buying water from tank trucks because coastal fog only appears during the summer.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraphs 1, 4, and 5 by reversing how villagers get water and when the fog appears."
         },
         {
           "id": "B",
@@ -271,10 +271,10 @@
         },
         {
           "id": "D",
-          "text": "Mountain towns in Chile prefer buying water from tank trucks because coastal fog only appears during the summer.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraphs 1, 4, and 5 by reversing how villagers get water and when the fog appears."
+          "text": "In the dry Atacama Desert, ridge-top mesh nets capture water from coastal fog and gravity-feed it to villages for drinking and farming.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the setting (Atacama), the mechanism (fog-catching mesh and gravity pipes), and the impact on communities."
         }
       ],
       "provingParagraph": 4,
@@ -303,17 +303,17 @@
         },
         {
           "id": "B",
-          "text": "\"Because the fog droplets are too light to fall as rain, they need a solid surface to strike.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Explains a single physical detail about mist droplets rather than the overall impact of the fog nets."
-        },
-        {
-          "id": "C",
           "text": "\"When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.\"",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Directly supports the central idea in Part A by showing how ridge-top nets harvest enough fog water to sustain a village."
+        },
+        {
+          "id": "C",
+          "text": "\"Because the fog droplets are too light to fall as rain, they need a solid surface to strike.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Explains a single physical detail about mist droplets rather than the overall impact of the fog nets."
         },
         {
           "id": "D",

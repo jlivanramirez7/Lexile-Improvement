@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Solid rock banks press down on the carts, and flowing water guides the arch into the valley.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Flowing water and carts press the load against the stone ring, and the arch guides the load into the rock banks.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Solid rock banks press down on the carts, and flowing water guides the arch into the valley.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -96,7 +96,7 @@
       "provingParagraph": 2,
       "provingSentenceText": "Heavy downward loads, pressed against the curved stone ring by flowing water and carts, were smoothly guided by the arch into solid rock banks.",
       "childTip": "Track both 'by' phrases: flowing water and carts press the load down, while the arch guides it into the banks.",
-      "parentExplanation": "The sentence contains an embedded participial phrase ('pressed... by flowing water and carts') and a passive main verb ('were smoothly guided by the arch'). Option B accurately separates the two agents."
+      "parentExplanation": "The sentence contains an embedded participial phrase ('pressed... by flowing water and carts') and a passive main verb ('were smoothly guided by the arch'). Option A accurately separates the two agents."
     },
     {
       "questionId": "w04_q2",
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "A pulling force that stretches a cable or rope tight",
-          "isCorrect": true,
-          "trapType": null
+          "text": "A nervous feeling shared by drivers crossing a high bridge",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "A nervous feeling shared by drivers crossing a high bridge",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "A pulling force that stretches a cable or rope tight",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -137,7 +137,7 @@
       "provingParagraph": 4,
       "provingSentenceText": "This pulling force, known as tension, travels up the cables to the tall towers and into huge concrete anchor blocks on land.",
       "childTip": "Look right before 'known as tension': the sentence directly defines it as 'This pulling force'!",
-      "parentExplanation": "Paragraph 4 defines 'tension' directly via apposition ('This pulling force, known as tension...'). Note how Option C tests a common non-scientific meaning of 'tension' (nervousness) that does not fit the engineering context."
+      "parentExplanation": "Paragraph 4 defines 'tension' directly via apposition ('This pulling force, known as tension...'). Note how Option A tests a common non-scientific meaning of 'tension' (nervousness) that does not fit the engineering context."
     },
     {
       "questionId": "w04_q3",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "They require many thick stone piers in the water that block cargo ships and cost too much to build.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Salt water dissolves granite blocks within a few days of touching the harbor.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "They require many thick stone piers in the water that block cargo ships and cost too much to build.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Engineers overcome gravity across wide gaps by designing bridge shapes that channel weight through compression in stone or tension in steel.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Flat stone slabs are the strongest and safest bridge design for crossing deep ocean harbors.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Flat stone slabs are the strongest and safest bridge design for crossing deep ocean harbors.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Engineers overcome gravity across wide gaps by designing bridge shapes that channel weight through compression in stone or tension in steel.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -261,7 +261,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "By matching the shape of a bridge to the strength of its materials, engineers can cross almost any gap on the planet.",
       "childTip": "Don't pick a detail from just one paragraph! Choose the main idea that covers both Roman arches and modern steel bridges.",
-      "parentExplanation": "Option A synthesizes the overarching main idea across all five paragraphs. Option B is a classic TRAP_TOO_NARROW (true detail from Paragraph 2 only)."
+      "parentExplanation": "Option C synthesizes the overarching main idea across all five paragraphs. Option B is a classic TRAP_TOO_NARROW (true detail from Paragraph 2 only)."
     },
     {
       "questionId": "w04_q6",

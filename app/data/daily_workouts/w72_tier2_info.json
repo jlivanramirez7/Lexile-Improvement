@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "Wilbur and Orville",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Famous flight experts visiting from North Carolina",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "Famous flight experts visiting from North Carolina",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Wilbur and Orville",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Inaccurate and containing serious mistakes",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Completely proven by every glider flight at Kitty Hawk",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Completely proven by every glider flight at Kitty Hawk",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Inaccurate and containing serious mistakes",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "By comparing the price of bicycles in Dayton to the cost of train tickets to North Carolina",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
-        },
-        {
-          "id": "B",
           "text": "By presenting the problem of inaccurate flight tables and tracing how the brothers invented and used a wind tunnel to solve it",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By comparing the price of bicycles in Dayton to the cost of train tickets to North Carolina",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -241,15 +241,15 @@
         },
         {
           "id": "B",
-          "text": "Famous flight experts had already tested every possible wing shape on a bicycle wheel.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "C",
           "text": "Long, narrow wings with a gentle curve performed much better in the air than thick, stubby wings.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Famous flight experts had already tested every possible wing shape on a bicycle wheel.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",

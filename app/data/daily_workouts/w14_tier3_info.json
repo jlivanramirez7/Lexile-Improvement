@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "Dissolved soil minerals, gathered from narrow rock pores by silky fungal threads, are steadily traded to towering fir trees in exchange for liquid sugar.",
-      "actorChunk": "by silky fungal threads",
+      "actorChunk": "silky fungal threads",
       "actionChunk": "are steadily traded",
       "receiverChunk": "Dissolved soil minerals",
       "distractorChunks": [
@@ -77,10 +77,10 @@
         },
         {
           "id": "B",
-          "text": "Dissolved soil minerals collected by the fungi",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly links the grammatical subject 'Dissolved soil minerals' across the 9-word participial clause to the verb 'are steadily traded'."
+          "text": "Silky fungal threads that grow into tall tree trunks",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Confuses the agent collecting the minerals ('by silky fungal threads') with the item traded to the trees."
         },
         {
           "id": "C",
@@ -91,10 +91,10 @@
         },
         {
           "id": "D",
-          "text": "Silky fungal threads that grow into tall tree trunks",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the agent collecting the minerals ('by silky fungal threads') with the item traded to the trees."
+          "text": "Dissolved soil minerals collected by the fungi",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly links the grammatical subject 'Dissolved soil minerals' across the 9-word participial clause to the verb 'are steadily traded'."
         }
       ],
       "provingParagraph": 2,
@@ -167,17 +167,17 @@
         },
         {
           "id": "B",
-          "text": "Chemical warning signals travel through the root web so neighboring pines can produce bitter resins before the insects arrive.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately traces the cause-and-effect chain in Paragraph 4 from root distress signals to defensive bitter resins."
-        },
-        {
-          "id": "C",
           "text": "Injured pine trees drain all the water from nearby trees so the beetles have nothing left to eat.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Reverses the cooperative relationship described in Paragraph 4 into a harmful one."
+        },
+        {
+          "id": "C",
+          "text": "Chemical warning signals travel through the root web so neighboring pines can produce bitter resins before the insects arrive.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately traces the cause-and-effect chain in Paragraph 4 from root distress signals to defensive bitter resins."
         },
         {
           "id": "D",
@@ -219,17 +219,17 @@
         },
         {
           "id": "C",
-          "text": "When autumn arrived and the birch leaves fell, the young firs sent small amounts of sugar back to the bare birch roots.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Directly proves a two-way seasonal exchange by showing young firs returning sugar to leafless birch trees in autumn."
-        },
-        {
-          "id": "D",
           "text": "Young saplings always produce more carbon than towering hub trees during every season of the year.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
           "diagnosticNote": "Uses extreme words ('always', 'every season') and contradicts the passage."
+        },
+        {
+          "id": "D",
+          "text": "When autumn arrived and the birch leaves fell, the young firs sent small amounts of sugar back to the bare birch roots.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves a two-way seasonal exchange by showing young firs returning sugar to leafless birch trees in autumn."
         }
       ],
       "provingParagraph": 3,

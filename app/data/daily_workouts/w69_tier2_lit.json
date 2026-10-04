@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The linked paper parallelograms pushing against the desk",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Kenji, using a single diagonal motion",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The linked paper parallelograms pushing against the desk",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -117,15 +117,15 @@
         },
         {
           "id": "B",
-          "text": "Heavy enough to break through a plastic rocket tube",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
-        },
-        {
-          "id": "C",
           "text": "Neatly and tightly packed into a very small space",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Heavy enough to break through a plastic rocket tube",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Its angled creases act like linked hinges so the entire sheet opens or closes from just two corners without jamming.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It requires four students to pull every row one by one during the design fair.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -164,9 +164,9 @@
         },
         {
           "id": "C",
-          "text": "It requires four students to pull every row one by one during the design fair.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Its angled creases act like linked hinges so the entire sheet opens or closes from just two corners without jamming.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -199,9 +199,9 @@
         },
         {
           "id": "B",
-          "text": "To connect the smooth unfolding of the shiny solar model back to his aunt's clue about how a beech leaf unfolds from a tiny bud",
-          "isCorrect": true,
-          "trapType": null
+          "text": "To explain why the judges decided to move the space design fair outdoors under a beech tree",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "To explain why the judges decided to move the space design fair outdoors under a beech tree",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "To connect the smooth unfolding of the shiny solar model back to his aunt's clue about how a beech leaf unfolds from a tiny bud",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"At the Friday afternoon judging, Kenji attached two light spring rods to the opposite corners of his folded wing.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "D",
           "text": "\"The judges leaned forward in amazement, seeing how an ancient paper art could solve a modern space problem.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"At the Friday afternoon judging, Kenji attached two light spring rods to the opposite corners of his folded wing.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         }
       ],
       "provingParagraph": 5,

@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The fresh block of pale limestone, shaped with a flat chisel on the ground below, was hoisted by Clara onto the high scaffold.",
-      "actorChunk": "by Clara",
+      "actorChunk": "Clara",
       "actionChunk": "was hoisted",
       "receiverChunk": "The fresh block of pale limestone",
       "distractorChunks": [
@@ -70,10 +70,10 @@
       "options": [
         {
           "id": "A",
-          "text": "The flat chisel used on the ground below",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a tool inside the middle participial phrase ('shaped with a flat chisel') rather than the actor."
+          "text": "Clara, the apprentice stonecutter on the roof",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Clara') in the passive construction 'was hoisted by Clara'."
         },
         {
           "id": "B",
@@ -84,10 +84,10 @@
         },
         {
           "id": "C",
-          "text": "Clara, the apprentice stonecutter on the roof",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Clara') in the passive construction 'was hoisted by Clara'."
+          "text": "The flat chisel used on the ground below",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a tool inside the middle participial phrase ('shaped with a flat chisel') rather than the actor."
         },
         {
           "id": "D",
@@ -115,10 +115,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Soak or trickle slowly into small cracks",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Matches the contrast with shooting water 'clear into the street' so that moisture does not soak into the soft mortar and crumble the wall."
+          "text": "Carve a decorative wing with a steel chisel",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows stone-carving details from the passage instead of defining how water enters soft mortar."
         },
         {
           "id": "B",
@@ -129,10 +129,10 @@
         },
         {
           "id": "C",
-          "text": "Carve a decorative wing with a steel chisel",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows stone-carving details from the passage instead of defining how water enters soft mortar."
+          "text": "Soak or trickle slowly into small cracks",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the contrast with shooting water 'clear into the street' so that moisture does not soak into the soft mortar and crumble the wall."
         },
         {
           "id": "D",
@@ -160,10 +160,10 @@
       "options": [
         {
           "id": "A",
-          "text": "She wanted to make sure no puddle could stay inside the spout and freeze during the next winter.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Directly matches the explanation in Paragraph 4: angling the channel downward prevents standing water from freezing and splitting the jaw again."
+          "text": "She knew that tourists in the courtyard could only see the gargoyle if its mouth pointed straight down.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows 'tourists in the courtyard' from Paragraph 1 and misapplies it to the internal throat channel."
         },
         {
           "id": "B",
@@ -181,10 +181,10 @@
         },
         {
           "id": "D",
-          "text": "She knew that tourists in the courtyard could only see the gargoyle if its mouth pointed straight down.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows 'tourists in the courtyard' from Paragraph 1 and misapplies it to the internal throat channel."
+          "text": "She wanted to make sure no puddle could stay inside the spout and freeze during the next winter.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly matches the explanation in Paragraph 4: angling the channel downward prevents standing water from freezing and splitting the jaw again."
         }
       ],
       "provingParagraph": 4,
@@ -205,17 +205,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Paragraph 1 explains that gargoyles are functional spouts that throw water clear of the walls, which shows why the cracked jaw in Paragraph 2 threatens the abbey before the spring thaw.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately explains how Paragraph 1 establishes the gargoyle's protective engineering role so the reader understands the stakes of the broken jaw in Paragraph 2."
-        },
-        {
-          "id": "B",
           "text": "Paragraph 1 introduces an argument between Clara and the tourists, and Paragraph 2 shows Master Borel closing the courtyard gates.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
           "diagnosticNote": "Invents a conflict with tourists that never happens in the passage."
+        },
+        {
+          "id": "B",
+          "text": "Paragraph 1 explains that gargoyles drain water off the walls, showing why the cracked jaw in Paragraph 2 threatens the abbey.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains how Paragraph 1 establishes the gargoyle's protective engineering role so the reader understands the stakes of the broken jaw in Paragraph 2."
         },
         {
           "id": "C",
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Lasting craftsmanship relies on unseen structural care that protects a work through future storms.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the gargoyle's hidden drainage role, the dovetail joint and angled throat channel, and the concluding reflection."
+          "text": "Lime mortar is strong enough by itself to hold heavy limestone blocks without any carved joints.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Directly contradicts Paragraph 3, where Master Borel warns that lime paste alone would snap under floodwater."
         },
         {
           "id": "B",
@@ -265,10 +265,10 @@
         },
         {
           "id": "C",
-          "text": "Lime mortar is strong enough by itself to hold heavy limestone blocks without any carved joints.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Directly contradicts Paragraph 3, where Master Borel warns that lime paste alone would snap under floodwater."
+          "text": "Lasting craftsmanship relies on unseen structural care that protects a work through future storms.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the gargoyle's hidden drainage role, the dovetail joint and angled throat channel, and the concluding reflection."
         },
         {
           "id": "D",

@@ -107,13 +107,13 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 4:\n\n\"Even more amazing, an octopus can change the texture of its skin to match the bumps around it. Small muscles under the skin push up pointed ridges that look just like rough barnacles or branched seaweed.\"\n\nWhat does the word texture mean as it is used in Paragraph 4?",
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"Even more amazing, an octopus can change the texture of its skin to match the bumps around it. Small muscles under the skin push up pointed ridges. Those bumps look just like rough barnacles or branched seaweed.\"\n\nWhat does the word texture mean as it is used in Paragraph 4?",
       "options": [
         {
           "id": "A",
-          "text": "The bumpy or smooth feel and shape of a surface",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The internal bones that support a fish's tail fin",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -129,14 +129,14 @@
         },
         {
           "id": "D",
-          "text": "The internal bones that support a fish's tail fin",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "The bumpy or smooth feel and shape of a surface",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Even more amazing, an octopus can change the texture of its skin to match the bumps around it.",
-      "childTip": "Use the clues 'match the bumps around it' and 'pointed ridges that look just like rough barnacles.'",
+      "childTip": "Use the clues 'match the bumps around it' and 'look just like rough barnacles.'",
       "parentExplanation": "Paragraph 4 explains that changing 'texture' means matching surrounding bumps by raising pointed ridges like rough barnacles or seaweed."
     },
     {
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It explains how a second layer of mirror-like cells adds blue and green shades to the reds and yellows of the upper sacs.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It describes how baby octopuses learn to swim away from eels in the open ocean.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "It describes how baby octopuses learn to swim away from eels in the open ocean.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "It explains how a second layer of mirror-like cells adds blue and green shades to the reds and yellows of the upper sacs.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Its skin muscles are controlled directly by fast nerve signals from the brain rather than slow body chemicals.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Its mirror cells only work at night when there is no sunlight in the ocean.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "Its mirror cells only work at night when there is no sunlight in the ocean.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Its skin muscles are controlled directly by fast nerve signals from the brain rather than slow body chemicals.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -283,9 +283,9 @@
         },
         {
           "id": "B",
-          "text": "\"Beneath those dye sacs lies a second layer of cells that work like tiny mirrors.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"Because nerves control these skin muscles directly, an octopus does not have to wait for slow body chemicals to change its look.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"Because nerves control these skin muscles directly, an octopus does not have to wait for slow body chemicals to change its look.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Beneath those dye sacs lies a second layer of cells that work like tiny mirrors.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

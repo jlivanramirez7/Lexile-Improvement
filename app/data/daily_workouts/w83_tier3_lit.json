@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The coiled steel hairspring, forged thinner than a single strand of spider silk, was carefully lowered by Julian onto the jeweled balance staff.",
-      "actorChunk": "by Julian",
+      "actorChunk": "Julian",
       "actionChunk": "was carefully lowered",
       "receiverChunk": "The coiled steel hairspring",
       "distractorChunks": [
@@ -70,17 +70,17 @@
       "options": [
         {
           "id": "A",
-          "text": "The single strand of spider silk inside the brass case",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a noun from the descriptive comparison ('thinner than a single strand of spider silk') instead of the actor."
-        },
-        {
-          "id": "B",
           "text": "Julian, the student watchmaker working at the bench",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Correctly identifies the agent after 'by' ('by Julian') in the passive verb phrase 'was carefully lowered by Julian'."
+        },
+        {
+          "id": "B",
+          "text": "The single strand of spider silk inside the brass case",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Selects a noun from the descriptive comparison ('thinner than a single strand of spider silk') instead of the actor."
         },
         {
           "id": "C",
@@ -115,10 +115,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Block or get in the way of smooth motion",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short."
+          "text": "Measure the exact distance to a coastal reef",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW",
+          "diagnosticNote": "Confuses the purpose of a ship's chronometer in Paragraph 2 with the meaning of 'impede' in Paragraph 5."
         },
         {
           "id": "B",
@@ -136,10 +136,10 @@
         },
         {
           "id": "D",
-          "text": "Measure the exact distance to a coastal reef",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Confuses the purpose of a ship's chronometer in Paragraph 2 with the meaning of 'impede' in Paragraph 5."
+          "text": "Block or get in the way of smooth motion",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short."
         }
       ],
       "provingParagraph": 5,
@@ -205,17 +205,17 @@
       "options": [
         {
           "id": "A",
-          "text": "It shows that Julian decided to remove all the heavy gold gears from the brass case.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Misreads the contrast as a literal removal of all gears from the clock."
-        },
-        {
-          "id": "B",
           "text": "It contrasts rough mechanical force with the delicate care needed to keep tiny clock parts clean and accurate.",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Explains how the correlative conjunction pair ('not... but...') contrasts brute force with protecting tiny spaces from dust."
+        },
+        {
+          "id": "B",
+          "text": "It shows that Julian decided to remove all the heavy gold gears from the brass case.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Misreads the contrast as a literal removal of all gears from the clock."
         },
         {
           "id": "C",
@@ -251,17 +251,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Careful observation before making changes prevents a craftsperson from fixing the wrong problem.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring."
-        },
-        {
-          "id": "B",
           "text": "Old ship clocks should always be replaced with digital screens before sailors leave port.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
           "diagnosticNote": "Uses extreme language ('always') and contradicts the story's successful restoration of the brass chronometer."
+        },
+        {
+          "id": "B",
+          "text": "Careful observation before making changes prevents a craftsperson from fixing the wrong problem.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring."
         },
         {
           "id": "C",

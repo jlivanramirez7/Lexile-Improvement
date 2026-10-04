@@ -69,9 +69,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The tiny ridges carved onto the limestone seats",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The hidden electric speakers under the center stone",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -87,9 +87,9 @@
         },
         {
           "id": "D",
-          "text": "The hidden electric speakers under the center stone",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The tiny ridges carved onto the limestone seats",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -116,15 +116,15 @@
         },
         {
           "id": "B",
-          "text": "Shaped into a pattern of repeating ridges and grooves",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Covered with thick wool carpets to keep guests warm",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Shaped into a pattern of repeating ridges and grooves",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -157,15 +157,15 @@
         },
         {
           "id": "B",
-          "text": "The concrete benches cracked in the hot sun before the first audience arrived.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
-        },
-        {
-          "id": "C",
           "text": "Without the carved stone ridges, wind noise echoed across the bowl and blurred the actors' words.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The concrete benches cracked in the hot sun before the first audience arrived.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "D",

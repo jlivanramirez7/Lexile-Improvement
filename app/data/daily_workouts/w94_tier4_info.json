@@ -111,14 +111,14 @@
       "options": [
         {
           "id": "A",
-          "text": "Copied illegally from an enemy codebook",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Created and built through careful effort",
+          "isCorrect": true
         },
         {
           "id": "B",
-          "text": "Created and built through careful effort",
-          "isCorrect": true
+          "text": "Copied illegally from an enemy codebook",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -151,8 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "So that repeated letters in a spelled word would not make the same sound pattern twice in a row",
-          "isCorrect": true
+          "text": "Because the Navajo language only had three nouns for animals and plants",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -162,9 +163,8 @@
         },
         {
           "id": "C",
-          "text": "Because the Navajo language only had three nouns for animals and plants",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "So that repeated letters in a spelled word would not make the same sound pattern twice in a row",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -197,7 +197,7 @@
         },
         {
           "id": "B",
-          "text": "They break down the two layers of the cipher: first the nature words for war tools, and second the phonetic list for spelling names.",
+          "text": "They explain the two cipher layers: nature words for war tools and a phonetic list for spelling.",
           "isCorrect": true
         },
         {

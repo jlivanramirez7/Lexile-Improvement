@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 3,
       "verbatimSentence": "The heavy eighty-foot pine raft, pushed sideways toward the jagged limestone ledge by the swift river current, was steadied at the bow by Jonas with a long ash sweep oar.",
-      "actorChunk": "by Jonas",
+      "actorChunk": "Jonas",
       "actionChunk": "was steadied",
       "receiverChunk": "The heavy eighty-foot pine raft",
       "distractorChunks": [
@@ -161,10 +161,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Deep, safe water looked dark like sweet tea, while shallow rocks were marked by pale yellow foam curling on the surface.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately summarizes the visual contrast explained in Paragraph 2 between dark tea-colored deep water and foamy yellow shoals."
+          "text": "Wooden buoys painted bright red were anchored over every limestone ledge between the bluff and Darien.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents painted channel buoys that do not exist in the 1884 river setting."
         },
         {
           "id": "B",
@@ -175,10 +175,10 @@
         },
         {
           "id": "C",
-          "text": "Wooden buoys painted bright red were anchored over every limestone ledge between the bluff and Darien.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents painted channel buoys that do not exist in the 1884 river setting."
+          "text": "Deep, safe water looked dark like sweet tea, while shallow rocks were marked by pale yellow foam curling on the surface.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately summarizes the visual contrast explained in Paragraph 2 between dark tea-colored deep water and foamy yellow shoals."
         },
         {
           "id": "D",
@@ -206,17 +206,17 @@
       "options": [
         {
           "id": "A",
-          "text": "It creates urgency and raises the stakes, because low water exposes the limestone ledges and stumps that threaten the raft in Paragraphs 3 and 4.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Explains how the falling river level sets up both the time pressure to reach Darien and the physical danger of the shallow shoals."
-        },
-        {
-          "id": "B",
           "text": "It shows that the river will completely dry up into a dusty road before Jonas and Uncle Silas reach Narrow Gap Shoals.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
           "diagnosticNote": "Exaggerates the dropping river level into complete evaporation within minutes."
+        },
+        {
+          "id": "B",
+          "text": "It creates urgency and raises the stakes, because low water exposes the limestone ledges and stumps that threaten the raft in Paragraphs 3 and 4.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Explains how the falling river level sets up both the time pressure to reach Darien and the physical danger of the shallow shoals."
         },
         {
           "id": "C",

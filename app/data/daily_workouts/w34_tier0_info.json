@@ -40,7 +40,7 @@
         "word": "flaw",
         "definition": "a weakness, mistake, or design problem that keeps something from working well",
         "rootHint": "From Old Norse flaga, meaning 'crack or weak spot'",
-        "contextClue": "Captain Barbier's army code had a major problem because twelve dots were too tall to fit beneath one fingertip."
+        "contextClue": "Charles Barbier's army code had a major problem because twelve dots were too tall to fit under one finger at once."
       },
       {
         "word": "blunt",
@@ -88,7 +88,7 @@
         },
         {
           "id": "D",
-          "text": "Captain Barbier felt the fourteen heavy wax books in the library.",
+          "text": "Charles Barbier felt the fourteen heavy wax books in the library.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
         }
@@ -107,7 +107,7 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 2:\n\n\"While the idea excited Louis right away, the army code had a major flaw. Twelve dots were too tall to fit beneath a single fingertip, so readers had to move their finger up and down to feel each symbol.\"\n\nWhat does the word flaw mean as it is used in Paragraph 2?",
+      "prompt": "Read these sentences from Paragraph 2:\n\n\"While the idea excited Louis right away, the army code had a major flaw. Twelve dots were too tall to fit under one finger at once. Readers had to move their finger up and down to feel each sign.\"\n\nWhat does the word flaw mean as it is used in Paragraph 2?",
       "options": [
         {
           "id": "A",
@@ -117,9 +117,9 @@
         },
         {
           "id": "B",
-          "text": "A design weakness that causes a problem",
-          "isCorrect": true,
-          "trapType": null
+          "text": "A perfect solution that works right away",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -129,15 +129,15 @@
         },
         {
           "id": "D",
-          "text": "A perfect solution that works right away",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "A design weakness that causes a problem",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "While the idea excited Louis right away, the army code had a major flaw.",
-      "childTip": "Read the next sentence to see what was wrong with the twelve-dot code: it was too tall for one fingertip.",
-      "parentExplanation": "The sentence following 'flaw' explains the problem with the twelve-dot code (it was too tall to fit under one fingertip), showing that 'flaw' means a weakness or design problem."
+      "childTip": "Read the next sentence to see what was wrong with the twelve-dot code: it was too tall for one finger.",
+      "parentExplanation": "The sentence following 'flaw' explains the problem with the twelve-dot code (it was too tall to fit under one finger at once), showing that 'flaw' means a weakness or design problem."
     },
     {
       "questionId": "w34_q3",
@@ -158,7 +158,7 @@
         },
         {
           "id": "B",
-          "text": "The books were written in a secret army code that only Captain Barbier knew how to read.",
+          "text": "The books were written in a secret army code that only Charles Barbier knew how to read.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
         },
@@ -170,7 +170,7 @@
         },
         {
           "id": "D",
-          "text": "The school principal kept all fourteen books locked inside a leather shop across town.",
+          "text": "The school principal kept all fourteen books locked inside a workshop across town.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
         }
@@ -199,15 +199,15 @@
         },
         {
           "id": "B",
-          "text": "By describing the problem with Captain Barbier's twelve-dot code and then showing how Louis solved it with a six-dot cell",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "By listing every book that Louis Braille read during his first year in Paris",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "By describing the problem with Charles Barbier's twelve-dot code and then showing how Louis solved it with a six-dot cell",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -231,7 +231,7 @@
       "dok": 3,
       "requireClickToProve": false,
       "linkedPartBId": "w34_q6",
-      "prompt": "Part A: Why did Louis Braille's six-dot cell allow people to read much faster than Captain Barbier's twelve-dot code?",
+      "prompt": "Part A: Why did Louis Braille's six-dot cell allow people to read much faster than Charles Barbier's twelve-dot code?",
       "options": [
         {
           "id": "A",
@@ -241,9 +241,9 @@
         },
         {
           "id": "B",
-          "text": "The smaller six-dot cell fit under one fingertip at once, so readers could glide smoothly across the page.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The six-dot cell was printed on twenty-pound wax pages that never wore down.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "The six-dot cell was printed on twenty-pound wax pages that never wore down.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "The smaller six-dot cell fit under one fingertip at once, so readers could glide smoothly across the page.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -283,15 +283,15 @@
         },
         {
           "id": "B",
-          "text": "\"Soldiers had tried using this system of raised bumps to read battle messages in the dark without striking a match.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "C",
           "text": "\"A reader could now glide smoothly across a page without stopping.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"Soldiers had tried using this system of raised bumps to read battle messages in the dark without striking a match.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "D",

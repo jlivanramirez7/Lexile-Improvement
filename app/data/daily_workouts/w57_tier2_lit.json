@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The master's mineral ledger inside the box",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "A rival merchant from the mainland",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The master's mineral ledger inside the box",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -117,15 +117,15 @@
         },
         {
           "id": "B",
-          "text": "A heavy iron lock that cannot be broken with tools",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "C",
           "text": "A fake item left out to trick a thief and protect the real secret",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "A heavy iron lock that cannot be broken with tools",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "He knows the thief only copied a fake recipe while the real formula remained hidden in the glass beads.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "He realizes that the candle flame burned up the thief's copy before the man reached the dock.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -164,9 +164,9 @@
         },
         {
           "id": "C",
-          "text": "He realizes that the candle flame burned up the thief's copy before the man reached the dock.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "He knows the thief only copied a fake recipe while the real formula remained hidden in the glass beads.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Paragraph 2 shows a break-in that makes it seem the secret was stolen, while Paragraph 3 flashes back to explain the trap set two weeks earlier.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Paragraph 2 introduces Master Lorenzo's childhood, while Paragraph 3 skips ahead fifty years.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "Paragraph 2 introduces Master Lorenzo's childhood, while Paragraph 3 skips ahead fifty years.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Paragraph 2 shows a break-in that makes it seem the secret was stolen, while Paragraph 3 flashes back to explain the trap set two weeks earlier.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,

@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "The composer wrote the delicate melody, and Maya buried it under a rush of harsh bow strokes.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Mr. Lin erased the delicate melody from the second page of the sheet music.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,15 +88,15 @@
         },
         {
           "id": "D",
-          "text": "Mr. Lin erased the delicate melody from the second page of the sheet music.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The composer wrote the delicate melody, and Maya buried it under a rush of harsh bow strokes.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The delicate melody, written by the composer to sound like a quiet evening breeze, was completely buried by Maya under a rush of harsh bow strokes.",
       "childTip": "Separate the two 'by' phrases: 'written by the composer' tells who made it, and 'buried by Maya' tells who covered it up.",
-      "parentExplanation": "This passive sentence embeds a participial clause with its own 'by' agent ('written by the composer') before the main passive verb ('was completely buried by Maya'). Option B correctly distinguishes the two actors."
+      "parentExplanation": "This passive sentence embeds a participial clause with its own 'by' agent ('written by the composer') before the main passive verb ('was completely buried by Maya'). Option D correctly distinguishes the two actors."
     },
     {
       "questionId": "w05_q2",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "To help her see how crowding too many notes together destroys the clarity of each individual sound",
-          "isCorrect": true,
-          "trapType": null
+          "text": "To show her that oak leaves make the same sound as a cello bow on steel strings",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -164,13 +164,13 @@
         },
         {
           "id": "C",
-          "text": "To show her that oak leaves make the same sound as a cello bow on steel strings",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "To help her see how crowding too many notes together destroys the clarity of each individual sound",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
-          "text": "To prove that cellists should never play sixteenth-note runs during an audition",
+          "text": "To prove that cellists should never play fast runs during an audition",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME"
         }
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "It shows Maya's mistaken belief that playing faster than everyone else is the key to winning the audition.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "It explains how the three judges at the regional audition score each student's clipboard.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "It shows Maya's mistaken belief that playing faster than everyone else is the key to winning the audition.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",

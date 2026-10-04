@@ -40,7 +40,7 @@
         "word": "inspect",
         "definition": "to look at something closely and carefully in order to check its condition",
         "rootHint": "Latin root spect- ('to look') + prefix in- ('into')",
-        "contextClue": "Leo lifted the faceplate to look into the dark interior behind the Roman numerals."
+        "contextClue": "Leo lifted the faceplate to look into the dark space behind the numerals."
       },
       {
         "word": "reluctant",
@@ -117,15 +117,15 @@
         },
         {
           "id": "B",
-          "text": "Hesitant and cautious about acting too quickly",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Completely unable to see inside the dark clock case",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Hesitant and cautious about acting too quickly",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -137,7 +137,7 @@
       "provingParagraph": 3,
       "provingSentenceText": "At first, Leo felt reluctant to press the strange lever without asking his uncle for help.",
       "childTip": "Look at the next sentence: Leo worried a careless push could snap a gear, so he hesitated before pressing.",
-      "parentExplanation": "In Paragraph 3, the sentence immediately following 'reluctant' explains Leo's caution ('A careless push could snap a fragile tooth'). Option B captures this careful hesitation."
+      "parentExplanation": "In Paragraph 3, the sentence immediately following 'reluctant' explains Leo's caution ('A careless push could snap a fragile tooth'). Option C captures this careful hesitation."
     },
     {
       "questionId": "w01_q3",
@@ -170,7 +170,7 @@
         },
         {
           "id": "D",
-          "text": "He hopes to find gold coins that the original owner hid behind the Roman numerals.",
+          "text": "He hopes to find gold coins that the original owner hid behind the clock numerals.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
         }
@@ -199,9 +199,9 @@
         },
         {
           "id": "B",
-          "text": "It reveals the climax of Leo's discovery by showing what the hidden mechanism does when triggered.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It proves that modern clocks in store windows are always more reliable than antique clocks.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "C",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It proves that modern clocks in store windows are always more reliable than antique clocks.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "It reveals the climax of Leo's discovery by showing what the hidden mechanism does when triggered.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Patient care and close observation can uncover hidden beauty that rushed shortcuts would destroy.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Ten-year-old apprentices cannot repair delicate machines without constant help from an adult.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Ten-year-old apprentices cannot repair delicate machines without constant help from an adult.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Patient care and close observation can uncover hidden beauty that rushed shortcuts would destroy.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",

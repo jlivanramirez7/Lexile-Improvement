@@ -70,9 +70,9 @@
       "options": [
         {
           "id": "A",
-          "text": "A pinch of grated nutmeg sampled the fresh lemon peel.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "The head judge sampled the golden peach cobbler with a silver spoon.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -82,9 +82,9 @@
         },
         {
           "id": "C",
-          "text": "The head judge sampled the golden peach cobbler with a silver spoon.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "A pinch of grated nutmeg sampled the fresh lemon peel.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Simple and homemade rather than fancy",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Burned black and impossible to eat",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "B",
+          "text": "Simple and homemade rather than fancy",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -158,15 +158,15 @@
         },
         {
           "id": "B",
-          "text": "She sees fancy cakes and tarts that make her family's cobbler look plain by comparison.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "She drops the warm ceramic dish on the floor before reaching Table Four.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "She sees fancy cakes and tarts that make her family's cobbler look plain by comparison.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It lets the reader experience the narrator's secret doubts about her plain dish before she discovers how much the judges love its taste.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It proves that the narrator does not care at all about winning a ribbon at the county fair.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It proves that the narrator does not care at all about winning a ribbon at the county fair.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "It lets the reader experience the narrator's secret doubts about her plain dish before she discovers how much the judges love its taste.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Bakers must always buy brand-new ceramic dishes if they want to impress county fair judges.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "True quality and honest family traditions matter more than flashy outward appearances.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "True quality and honest family traditions matter more than flashy outward appearances.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Bakers must always buy brand-new ceramic dishes if they want to impress county fair judges.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "D",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"First, the head judge in the red apron tasted the tall cakes at the end of the row.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "D",
           "text": "\"She said that fancy frosting looks pretty under bright lights, but nothing beats fresh Georgia peaches baked until the crust sings.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"First, the head judge in the red apron tasted the tall cakes at the end of the row.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         }
       ],
       "provingParagraph": 4,

@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "The radar team maps the buried council houses and wide clay plazas.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Park guests draw maps of the Etowah River on clay tablets with metal spades.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "Park guests draw maps of the Etowah River on clay tablets with metal spades.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The radar team maps the buried council houses and wide clay plazas.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -117,15 +117,15 @@
         },
         {
           "id": "B",
-          "text": "Undamaged, whole, and left in its natural state",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Paved over with modern concrete parking lots",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Undamaged, whole, and left in its natural state",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The ancient builders leveled and packed the red clay so tightly that it remains dense underground.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Park rangers buried sheets of shiny copper foil beneath the grass every spring.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "The ancient builders leveled and packed the red clay so tightly that it remains dense underground.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "By listing the names and ages of every scientist who has worked near Cartersville",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
-        },
-        {
-          "id": "B",
           "text": "By explaining the problem of how spade digging damaged fragile soil layers and introducing radar as the solution",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "By listing the names and ages of every scientist who has worked near Cartersville",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Although the fields look empty from above, they hold the buried layout of an organized town center.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "The fields between the mounds were never used by the ancient residents because the soil was too soft.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Although the fields look empty from above, they hold the buried layout of an organized town center.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.\"",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "\"As the wheels roll forward, a small box sends safe radio waves down into the dirt.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.\"",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,

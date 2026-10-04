@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "The thick rocky crust sliding down a steep underwater mountain",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "C",
           "text": "Deep currents in the Earth moving beneath the crust",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The thick rocky crust sliding down a steep underwater mountain",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "D",
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Fixed in one place without moving",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Floating on top of the ocean waves like a boat",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -129,9 +129,9 @@
         },
         {
           "id": "D",
-          "text": "Floating on top of the ocean waves like a boat",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Fixed in one place without moving",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Cold rain and ocean waves fill the top craters with wet sand and mud.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "B",
           "text": "The moving Pacific Plate carries each island away from the fixed hotspot that supplies its magma.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Cold rain and ocean waves fill the top craters with wet sand and mud.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The northwest islands were formed millions of years earlier and have been eroded by wind, rain, and waves without new lava.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Strong earthquakes along the plate border broke Kauai into flat underwater rocks last year.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "Strong earthquakes along the plate border broke Kauai into flat underwater rocks last year.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "The northwest islands were formed millions of years earlier and have been eroded by wind, rain, and waves without new lava.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -283,9 +283,9 @@
         },
         {
           "id": "B",
-          "text": "\"The plate creeps along at about the same speed that a human fingernail grows.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"Wind, rain, and crashing waves have worn down their tall peaks into steep green cliffs and sandy beaches.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"Wind, rain, and crashing waves have worn down their tall peaks into steep green cliffs and sandy beaches.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"The plate creeps along at about the same speed that a human fingernail grows.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

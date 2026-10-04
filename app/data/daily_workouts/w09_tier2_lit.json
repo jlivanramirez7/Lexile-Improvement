@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "The young apprentice working beside the candle",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The British patrol sergeant inspecting the shop",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,15 +88,15 @@
         },
         {
           "id": "D",
-          "text": "The British patrol sergeant inspecting the shop",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The young apprentice working beside the candle",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Working with ink-stained thumbs beside the dim flame, the reversed lead letters for the warning headline were carefully scrutinized by the young apprentice.",
       "childTip": "Look right after 'were carefully scrutinized' to the 'by' phrase at the end of the sentence to find the actor.",
-      "parentExplanation": "Because this sentence is written in passive voice ('were carefully scrutinized by the young apprentice'), the grammatical subject ('the reversed lead letters') receives the action. The true actor performing the inspection is 'the young apprentice' (Option B)."
+      "parentExplanation": "Because this sentence is written in passive voice ('were carefully scrutinized by the young apprentice'), the grammatical subject ('the reversed lead letters') receives the action. The true actor performing the inspection is 'the young apprentice' (Option D)."
     },
     {
       "questionId": "w09_q2",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Master Edes gives a calm excuse about his injured wrist that convinces the sergeant to leave without searching the cellar.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Master Edes asks the patrol sergeant to help print shipping forms for the harbor at noon.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -164,9 +164,9 @@
         },
         {
           "id": "C",
-          "text": "Master Edes asks the patrol sergeant to help print shipping forms for the harbor at noon.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Master Edes gives a calm excuse about his injured wrist that convinces the sergeant to leave without searching the cellar.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -178,7 +178,7 @@
       "provingParagraph": 3,
       "provingSentenceText": "Master Edes calmly replied that he was soaking his swollen wrist in warm salt water so he could print shipping forms at noon.",
       "childTip": "Click the sentence in Paragraph 3 that tells what Master Edes says to explain why the light is still on.",
-      "parentExplanation": "Aligned to ELAGSE5RL3 (how characters interact and respond to challenges), Master Edes protects Thomas's secret work below by using his real wrist injury as a believable excuse for why a light is burning past curfew (Option A)."
+      "parentExplanation": "Aligned to ELAGSE5RL3 (how characters interact and respond to challenges), Master Edes protects Thomas's secret work below by using his real wrist injury as a believable excuse for why a light is burning past curfew (Option C)."
     },
     {
       "questionId": "w09_q4",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It builds the story's highest moment of suspense as the patrol boots pace right above Thomas's hiding spot before leaving.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It proves that Thomas was too frightened to ever touch the printing press again.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -211,15 +211,15 @@
         },
         {
           "id": "D",
-          "text": "It proves that Thomas was too frightened to ever touch the printing press again.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "It builds the story's highest moment of suspense as the patrol boots pace right above Thomas's hiding spot before leaving.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "For ten tense seconds, the heavy boots paced right above Thomas's head near the cellar trapdoor.",
       "childTip": "Think about how Paragraph 4 makes the reader feel while the soldier walks right over the trapdoor.",
-      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 4 serves as the climax of tension between the sergeant's arrival in Paragraph 3 and the triumphant printing resolution in Paragraph 5 (Option A)."
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 4 serves as the climax of tension between the sergeant's arrival in Paragraph 3 and the triumphant printing resolution in Paragraph 5 (Option D)."
     },
     {
       "questionId": "w09_q5",

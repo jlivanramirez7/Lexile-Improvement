@@ -70,14 +70,14 @@
       "options": [
         {
           "id": "A",
-          "text": "The row of tall stone chimneys in the canyon",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "The sonar beam sent out by the sub",
+          "isCorrect": true
         },
         {
           "id": "B",
-          "text": "The sonar beam sent out by the sub",
-          "isCorrect": true
+          "text": "The row of tall stone chimneys in the canyon",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -110,8 +110,9 @@
       "options": [
         {
           "id": "A",
-          "text": "A sheltered pocket teeming with life inside a barren environment",
-          "isCorrect": true
+          "text": "A freezing layer of mud where nothing can survive",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -127,9 +128,8 @@
         },
         {
           "id": "D",
-          "text": "A freezing layer of mud where nothing can survive",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "A sheltered pocket teeming with life inside a barren environment",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 5,
@@ -150,8 +150,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Their food web runs on minerals pouring from Earth's crust rather than sunlight.",
-          "isCorrect": true
+          "text": "They absorb electrical energy from the sub's white LED nose lamps.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -161,9 +162,8 @@
         },
         {
           "id": "C",
-          "text": "They absorb electrical energy from the sub's white LED nose lamps.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Their food web runs on minerals pouring from Earth's crust rather than sunlight.",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -231,8 +231,9 @@
       "options": [
         {
           "id": "A",
-          "text": "She initially thinks the jagged sonar spikes are just cable static, but seeing the chimneys on the camera screen proves they are real.",
-          "isCorrect": true
+          "text": "She realizes that the battery pack has completely run out of charge in the cold water.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -248,9 +249,8 @@
         },
         {
           "id": "D",
-          "text": "She realizes that the battery pack has completely run out of charge in the cold water.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "She first thinks the sonar spikes are cable static until the camera reveals real stone chimneys.",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 2,

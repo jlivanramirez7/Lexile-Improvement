@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 3,
       "verbatimSentence": "Stale air from the deep nest, warmed by millions of tiny insects and their fungus gardens, is steadily pushed up the central shaft into the narrow surface flutes.",
-      "actorChunk": "by millions of tiny insects and their fungus gardens",
+      "actorChunk": "millions of tiny insects and their fungus gardens",
       "actionChunk": "is steadily pushed",
       "receiverChunk": "Stale air from the deep nest",
       "distractorChunks": [
@@ -77,10 +77,10 @@
         },
         {
           "id": "B",
-          "text": "Stale air rising from the deep underground nest",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly connects the grammatical subject ('Stale air from the deep nest') across the 10-word participial modifier to the verb ('is steadily pushed')."
+          "text": "The narrow surface flutes beneath the clay skin",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Picks the destination at the end of the prepositional phrase ('into the narrow surface flutes') instead of the subject being pushed."
         },
         {
           "id": "C",
@@ -91,10 +91,10 @@
         },
         {
           "id": "D",
-          "text": "The narrow surface flutes beneath the clay skin",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Picks the destination at the end of the prepositional phrase ('into the narrow surface flutes') instead of the subject being pushed."
+          "text": "Stale air rising from the deep underground nest",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly connects the grammatical subject ('Stale air from the deep nest') across the 10-word participial modifier to the verb ('is steadily pushed')."
         }
       ],
       "provingParagraph": 3,
@@ -115,17 +115,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Filled with tiny openings that allow gases to pass through",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Uses the direct explanation in the second half of the sentence ('tiny holes let carbon gas seep out while fresh oxygen soaks in')."
-        },
-        {
-          "id": "B",
           "text": "Sealed completely tight like a solid sheet of glass",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Gives the opposite meaning; a sealed wall would trap stale gas and suffocate the colony."
+        },
+        {
+          "id": "B",
+          "text": "Filled with tiny openings that allow gases to pass through",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the direct explanation in the second half of the sentence ('tiny holes let carbon gas seep out while fresh oxygen soaks in')."
         },
         {
           "id": "C",
@@ -205,10 +205,10 @@
       "options": [
         {
           "id": "A",
-          "text": "It shows how human architects have applied the termites' natural chimney design to cool large buildings without heavy electric fans.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately explains how Paragraph 5 extends the biological explanation of termite mounds into human engineering."
+          "text": "It proves that electric fans work much better than clay chimneys in dry grasslands.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the point of Paragraph 5, which praises cooling buildings with very little power and without giant electric fans."
         },
         {
           "id": "B",
@@ -226,10 +226,10 @@
         },
         {
           "id": "D",
-          "text": "It proves that electric fans work much better than clay chimneys in dry grasslands.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the point of Paragraph 5, which praises cooling buildings with very little power and without giant electric fans."
+          "text": "It shows how human architects have applied the termites' natural chimney design to cool large buildings without heavy electric fans.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately explains how Paragraph 5 extends the biological explanation of termite mounds into human engineering."
         }
       ],
       "provingParagraph": 5,
@@ -251,7 +251,7 @@
       "options": [
         {
           "id": "A",
-          "text": "African termites build porous clay mounds with central chimneys and side tunnels that use sun and wind to keep underground nests fresh and at a steady temperature.",
+          "text": "Termites build porous clay mounds with chimneys and tunnels that use sun and wind to keep deep nests fresh and steady.",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Synthesizes the temperature challenge (Para 1), gas exchange need (Para 2), chimney/flute structure (Para 3-4), and engineering value (Para 5)."

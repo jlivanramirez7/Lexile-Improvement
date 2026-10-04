@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "Long cylinders of blue glacier ice, drilled from two miles beneath the polar plateau, are carefully sliced by lab researchers inside freezing work rooms.",
-      "actorChunk": "by lab researchers",
+      "actorChunk": "lab researchers",
       "actionChunk": "are carefully sliced",
       "receiverChunk": "Long cylinders of blue glacier ice",
       "distractorChunks": [
@@ -77,17 +77,17 @@
         },
         {
           "id": "B",
-          "text": "Long cylinders of blue glacier ice are carefully sliced by lab researchers.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly strips the appositive/participial phrase between commas to link the subject ('Long cylinders of blue glacier ice') to the passive verb and actor ('are carefully sliced by lab researchers')."
-        },
-        {
-          "id": "C",
           "text": "Freezing work rooms slice the lab researchers beneath the plateau.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Scrambles the location phrase ('inside freezing work rooms') into the actor performing the slicing."
+        },
+        {
+          "id": "C",
+          "text": "Long cylinders of blue glacier ice are carefully sliced by lab researchers.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly strips the appositive/participial phrase between commas to link the subject ('Long cylinders of blue glacier ice') to the passive verb and actor ('are carefully sliced by lab researchers')."
         },
         {
           "id": "D",
@@ -167,17 +167,17 @@
         },
         {
           "id": "B",
-          "text": "Volcanic ash settles on the polar snow and forms dated gray bands that help historians verify the exact years of ancient climate events.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately traces how windblown ash leaves visible gray bands that can be matched to known eruption dates."
-        },
-        {
-          "id": "C",
           "text": "Volcanoes pump fresh oxygen into the underground bedrock beneath the South Pole.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
           "diagnosticNote": "Fabricates an unsupported geological claim."
+        },
+        {
+          "id": "C",
+          "text": "Volcanic ash settles on the polar snow and forms dated gray bands that help historians verify the exact years of ancient climate events.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately traces how windblown ash leaves visible gray bands that can be matched to known eruption dates."
         },
         {
           "id": "D",

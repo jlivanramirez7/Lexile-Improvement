@@ -21,7 +21,7 @@
       "paragraphNumber": 2,
       "verbatimSentence": "During the third test run, the steering commands sent by the main computer board were stubbornly overridden by a sudden spike from the nose compass.",
       "actorChunk": "a sudden spike from the nose compass",
-      "actionChunk": "overrode",
+      "actionChunk": "stubbornly overridden",
       "receiverChunk": "the steering commands",
       "distractorChunks": [
         "During the third test run",
@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "A sudden spike from the nose compass pushed aside the normal steering commands.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The third test run erased the steering program stored on Maya's laptop.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "A sudden spike from the nose compass pushed aside the normal steering commands.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -96,7 +96,7 @@
       "provingParagraph": 2,
       "provingSentenceText": "During the third test run, the steering commands sent by the main computer board were stubbornly overridden by a sudden spike from the nose compass.",
       "childTip": "Find the 'by' phrase after 'were stubbornly overridden' to spot what truly caused the action.",
-      "parentExplanation": "This passive-voice sentence places the receiver ('the steering commands') first and embeds a participial phrase ('sent by the main computer board') right before the main verb. The true actor performing 'were overridden' is at the end: 'by a sudden spike from the nose compass' (Option B). Option A is a Syntactic Reversal trap that confuses the modifier with the main action."
+      "parentExplanation": "This passive-voice sentence places the receiver ('the steering commands') first and embeds a participial phrase ('sent by the main computer board') right before the main verb. The true actor performing 'were overridden' is at the end: 'by a sudden spike from the nose compass' (Option C). Option A is a Syntactic Reversal trap that confuses the modifier with the main action."
     },
     {
       "questionId": "w07_q2",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "She wants to test whether an outside magnetic force in the floor is pulling the rover's sensor off course.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "She is trying to prove that every compass in the school gym is permanently broken.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -164,21 +164,21 @@
         },
         {
           "id": "C",
-          "text": "She hopes the brass compass will scratch the maple boards and mark the center foul line.",
+          "text": "She hopes the brass compass will scratch the wood boards and mark the center foul line.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
-          "text": "She is trying to prove that every compass in the school gym is permanently broken.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "She wants to test whether an outside magnetic force in the floor is pulling the rover's sensor off course.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Almost at once, the red needle swung sideways and locked onto a narrow brass plate set into the wood.",
       "childTip": "Click the sentence in Paragraph 3 that shows how the compass needle reacts to the metal plate in the floor.",
-      "parentExplanation": "At the end of Paragraph 2, Maya infers that 'something physical near the floor was tricking the sensor.' In Paragraph 3, she slides her simple brass compass across the boards and watches the needle swing toward the brass floor plate, proving she is testing for an external magnetic disturbance (Option A)."
+      "parentExplanation": "At the end of Paragraph 2, Maya infers that 'something near the floor was tricking the sensor.' In Paragraph 3, she slides her simple brass compass across the boards and watches the needle swing toward the brass floor plate, proving she is testing for an external magnetic disturbance (Option D)."
     },
     {
       "questionId": "w07_q4",
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "By revealing Maya's focus on software and Julian's focus on hardware, it shows how each teammate initially blames the other's specialty.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "By speaking only from the judges' perspective, it hides the rover's steering problem until the final race.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "By revealing Maya's focus on software and Julian's focus on hardware, it shows how each teammate initially blames the other's specialty.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -219,7 +219,7 @@
       "provingParagraph": 1,
       "provingSentenceText": "Maya trusted clean software logic, whereas Julian preferred heavy aluminum brackets and thick rubber treads.",
       "childTip": "Notice how the narrator shows Maya trusting software while Julian trusts metal hardware, causing them to clash at first.",
-      "parentExplanation": "Aligned to ELAGSE5RL6, the narrator contrasts Maya's preference for software logic with Julian's reliance on physical hardware in Paragraph 1. This perspective helps the reader see why Julian initially blames Maya's code while Maya checks her sensor logs before they unite in Paragraph 5 (Option A)."
+      "parentExplanation": "Aligned to ELAGSE5RL6, the narrator contrasts Maya's preference for software logic with Julian's reliance on physical hardware in Paragraph 1. This perspective helps the reader see why Julian initially blames Maya's code while Maya checks her sensor logs before they unite in Paragraph 5 (Option B)."
     },
     {
       "questionId": "w07_q5",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Complex problems are solved fastest when teammates stop trading blame and combine their different strengths.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "School gymnasiums should never use electric scoreboards during a robotics contest.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "School gymnasiums should never use electric scoreboards during a robotics contest.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Complex problems are solved fastest when teammates stop trading blame and combine their different strengths.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -261,7 +261,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "With twelve minutes left before the judges called their team name, the two rivals stopped blaming each other and worked as one.",
       "childTip": "Think about what changes in Paragraph 5 when Maya and Julian stop arguing and use both hardware and code fixes.",
-      "parentExplanation": "The central theme emerges in Paragraph 5: once Maya and Julian stop blaming each other's specialty and combine Julian's physical mast adjustment with Maya's software calibration, they solve the magnetic interference problem together (Option A)."
+      "parentExplanation": "The central theme emerges in Paragraph 5: once Maya and Julian stop blaming each other's specialty and combine Julian's physical mast adjustment with Maya's software calibration, they solve the magnetic interference problem together (Option C)."
     },
     {
       "questionId": "w07_q6",

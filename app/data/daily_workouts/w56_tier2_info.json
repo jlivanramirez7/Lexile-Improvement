@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "An internal clock hidden in the butterfly's antennae",
-          "isCorrect": true,
-          "trapType": null
+          "text": "A team of scientists watching from a hill in Mexico",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "A team of scientists watching from a hill in Mexico",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "An internal clock hidden in the butterfly's antennae",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Hidden from view or blocked so it cannot be seen",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Measured carefully with a laboratory stopwatch",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Measured carefully with a laboratory stopwatch",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Hidden from view or blocked so it cannot be seen",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "To prove that blocking light, rather than the paint itself, was what threw off the feeler clocks",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "To make the butterflies easier to spot against the dark fir trees in Mexico",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "To prove that blocking light, rather than the paint itself, was what threw off the feeler clocks",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Each monarch butterfly weighs less than a dime when it leaves the northern fields.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "B",
           "text": "The butterflies flying south in fall are the great-grandchildren of the ones that left Mexico in spring.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Each monarch butterfly weighs less than a dime when it leaves the northern fields.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "C",
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "They combine an eye-based sun tracker, light-sensitive clocks, and a backup magnetic compass to stay on course in any weather.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "They follow the scent of fir needles blown northward from Mexico by warm autumn winds.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "They combine an eye-based sun tracker, light-sensitive clocks, and a backup magnetic compass to stay on course in any weather.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"By blending sun angles, body clocks, and magnetic sensors, these fragile bugs endure one of the longest journeys on Earth.\"",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "\"Once the monarchs reach the cool peaks of Mexico, a new cue tells them to stop and rest on the fir boughs.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "\"By blending sun angles, body clocks, and magnetic sensors, these fragile bugs endure one of the longest journeys on Earth.\"",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

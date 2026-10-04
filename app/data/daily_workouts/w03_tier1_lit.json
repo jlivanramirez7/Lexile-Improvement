@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "Clara traced the steep logging path using her brass compass.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The steep logging path traced Clara until she reached the valley road.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Clara traced the steep logging path using her brass compass.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The stones are slick with moss in high water, and Grandpa's map points to a safer log bridge upstream.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "She wants to turn around and spend the night inside the hollow trunk of a hemlock tree.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "The stones are slick with moss in high water, and Grandpa's map points to a safer log bridge upstream.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Sam looks for quick shortcuts and leaps ahead, while Clara checks landmarks and reads every detail on the map.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Both siblings ignore their grandfather's map and follow a park ranger down the valley road.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "Both siblings ignore their grandfather's map and follow a park ranger down the valley road.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Sam looks for quick shortcuts and leaps ahead, while Clara checks landmarks and reads every detail on the map.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",

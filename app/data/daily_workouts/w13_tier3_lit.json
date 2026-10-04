@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The rare barley pouches, sealed inside silver foil packets for nearly forty years, were swiftly transferred by Sorel into the deep stone alcove.",
-      "actorChunk": "by Sorel",
+      "actorChunk": "Sorel",
       "actionChunk": "were swiftly transferred",
       "receiverChunk": "The rare barley pouches",
       "distractorChunks": [
@@ -122,17 +122,17 @@
         },
         {
           "id": "B",
-          "text": "Shrink steadily toward nothing",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Matches the context clues of failing backup batteries and Paragraph 3's reference to 'before the last battery cell drained.'"
-        },
-        {
-          "id": "C",
           "text": "Flash brightly along the stone wall",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
           "diagnosticNote": "Associates the verb with 'red wall lights flashed' rather than the amount of battery charge remaining."
+        },
+        {
+          "id": "C",
+          "text": "Shrink steadily toward nothing",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Matches the context clues of failing backup batteries and Paragraph 3's reference to 'before the last battery cell drained.'"
         },
         {
           "id": "D",
@@ -160,17 +160,17 @@
       "options": [
         {
           "id": "A",
-          "text": "The stone alcove had its own separate diesel generator that never lost electricity.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a separate diesel generator not mentioned anywhere in the passage."
-        },
-        {
-          "id": "B",
           "text": "The deep mountain rock stayed naturally below freezing once the warm draft from the cracked seal was blocked.",
           "isCorrect": true,
           "trapType": null,
           "diagnosticNote": "Combines the fact that the surrounding mountain rock stays naturally below freezing with Sorel's ice wall blocking the warm air leak."
+        },
+        {
+          "id": "B",
+          "text": "The stone alcove had its own separate diesel generator that never lost electricity.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Invents a separate diesel generator not mentioned anywhere in the passage."
         },
         {
           "id": "C",
@@ -212,17 +212,17 @@
         },
         {
           "id": "B",
-          "text": "It presents the central conflict by weighing the safety rule of waiting in the control room against the urgent need to seal the leak.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately captures how Paragraph 3 frames Sorel's internal dilemma between standard protocol and saving the seeds."
-        },
-        {
-          "id": "C",
           "text": "It describes the exact tools the repair crew used to fix the snapped coastal power lines.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Misattributes details about engineers and power lines, which are only briefly mentioned in Paragraphs 1 and 5."
+        },
+        {
+          "id": "C",
+          "text": "It presents the central conflict by weighing the safety rule of waiting in the control room against the urgent need to seal the leak.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately captures how Paragraph 3 frames Sorel's internal dilemma between standard protocol and saving the seeds."
         },
         {
           "id": "D",

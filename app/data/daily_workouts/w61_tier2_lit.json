@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The solar roof panels on the school buses",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "A sharp question from the opposing captain",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The solar roof panels on the school buses",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "To admit that an opponent's point is true",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "To shout loudly so the judges cannot hear the other team",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "B",
+          "text": "To admit that an opponent's point is true",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "She sees the judges nodding at Marcus's chart and realizes that brushing off the high cost will make her lose their trust.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "She runs out of time before the brass bell rings for the second round.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -164,9 +164,9 @@
         },
         {
           "id": "C",
-          "text": "She runs out of time before the brass bell rings for the second round.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "She sees the judges nodding at Marcus's chart and realizes that brushing off the high cost will make her lose their trust.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It shows how Clara used to think giving an inch meant losing, which contrasts with her winning choice to concede a point later.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It shows that Clara never cared about winning debates until she met Marcus.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It shows that Clara never cared about winning debates until she met Marcus.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "It shows how Clara used to think giving an inch meant losing, which contrasts with her winning choice to concede a point later.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 1,

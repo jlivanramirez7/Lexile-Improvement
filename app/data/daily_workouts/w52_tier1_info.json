@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "Seawater reacting with volcanic ash formed the crystals, and the ancient harbor walls grew them over hundreds of years.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Roman engineers painted mineral crystals onto steel rods to keep them from rusting.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "Roman engineers painted mineral crystals onto steel rods to keep them from rusting.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Seawater reacting with volcanic ash formed the crystals, and the ancient harbor walls grew them over hundreds of years.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -107,13 +107,13 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 2:\n\n\"However, when salty ocean water seeps into tiny pores in modern concrete, the salt rusts the steel rods and makes them swell. Within a few decades, that internal swelling pushes the concrete apart from the inside.\"\n\nWhat does the word internal mean as it is used in Paragraph 2?",
+      "prompt": "Read these sentences from Paragraph 2:\n\n\"Yet salty sea water seeps into tiny pores in the wall. The salt rusts the steel rods and makes them swell. Within a few decades, that internal swelling pushes the concrete apart from the inside.\"\n\nWhat does the word internal mean as it is used in Paragraph 2?",
       "options": [
         {
           "id": "A",
-          "text": "Happening deep inside the material rather than on the outer surface",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Built by ancient Roman engineers near the Bay of Naples",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Built by ancient Roman engineers near the Bay of Naples",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Happening deep inside the material rather than on the outer surface",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Ancient Roman sea walls last for centuries because seawater reacts with volcanic ash to grow crack-sealing crystals, a lesson modern engineers now use.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Modern concrete piers crumble quickly because builders forget to put sand and crushed rock into the cement mix.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "Ancient Roman sea walls last for centuries because seawater reacts with volcanic ash to grow crack-sealing crystals, a lesson modern engineers now use.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"By replacing part of today's cement with volcanic rock dust or fly ash, builders can craft seawalls that heal their own cracks in salt water.\"",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "\"Before long, waves wash away the cracked outer chunks.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"By replacing part of today's cement with volcanic rock dust or fly ash, builders can craft seawalls that heal their own cracks in salt water.\"",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

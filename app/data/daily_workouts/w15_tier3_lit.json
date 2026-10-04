@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The massive timber caisson, pressed down by courses of cut granite blocks, was slowly lowered by the river crew onto the muddy harbor bed.",
-      "actorChunk": "by the river crew",
+      "actorChunk": "the river crew",
       "actionChunk": "was slowly lowered",
       "receiverChunk": "The massive timber caisson",
       "distractorChunks": [
@@ -167,10 +167,10 @@
         },
         {
           "id": "B",
-          "text": "Drilling along the boulder's natural seam directed the force inward toward the center pit instead of damaging the wooden wall.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately identifies how drilling along the grain directed the blast away from the timber caisson wall."
+          "text": "It guaranteed that no worker would ever feel ear pressure inside the iron airlock again.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses extreme language ('guaranteed', 'never... again') unrelated to the rock-splitting problem."
         },
         {
           "id": "C",
@@ -181,10 +181,10 @@
         },
         {
           "id": "D",
-          "text": "It guaranteed that no worker would ever feel ear pressure inside the iron airlock again.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('guaranteed', 'never... again') unrelated to the rock-splitting problem."
+          "text": "Drilling along the boulder's natural seam directed the force inward toward the center pit instead of damaging the wooden wall.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately identifies how drilling along the grain directed the blast away from the timber caisson wall."
         }
       ],
       "provingParagraph": 4,
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Careful observation and precise engineering can overcome obstacles that brute force alone cannot solve.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the contrast between the exhausting iron sledges failing to break the rock and Clara's precise seam-angle sketch splitting it safely."
+          "text": "Chief engineers should always let foremen guess where to drill without looking at blueprints.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Directly reverses the lesson of the story, where studying the chalk sketch solved the crisis."
         },
         {
           "id": "B",
@@ -272,10 +272,10 @@
         },
         {
           "id": "D",
-          "text": "Chief engineers should always let foremen guess where to drill without looking at blueprints.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Directly reverses the lesson of the story, where studying the chalk sketch solved the crisis."
+          "text": "Careful observation and precise engineering can overcome obstacles that brute force alone cannot solve.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the contrast between the exhausting iron sledges failing to break the rock and Clara's precise seam-angle sketch splitting it safely."
         }
       ],
       "provingParagraph": 4,

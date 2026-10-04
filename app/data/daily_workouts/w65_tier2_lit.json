@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The brightest meteors streaking across the northern sky",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "B",
           "text": "Leo, who used the three brass thumbscrews at the base",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The brightest meteors streaking across the northern sky",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Working in a careful, step-by-step, and orderly way",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Rushing through a task before dark clouds cover the stars",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Working in a careful, step-by-step, and orderly way",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -199,9 +199,9 @@
         },
         {
           "id": "B",
-          "text": "It marks a turning point where Clara sees the misaligned reflection herself and understands why Leo's careful work is needed.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It proves that Dobsonian telescopes are too fragile to ever be transported in a family car.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "C",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It proves that Dobsonian telescopes are too fragile to ever be transported in a family car.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "It marks a turning point where Clara sees the misaligned reflection herself and understands why Leo's careful work is needed.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "They replace the heavy primary mirror with a brand-new lens from their grandfather's garage.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Clara sets aside her haste to turn the base knobs while Leo guides the mirror alignment from the eyepiece.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Clara sets aside her haste to turn the base knobs while Leo guides the mirror alignment from the eyepiece.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "They replace the heavy primary mirror with a brand-new lens from their grandfather's garage.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "D",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"At first, she thought he was wasting precious viewing time on a tiny reflection that barely mattered.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "D",
           "text": "\"She offered to turn the brass adjustment knobs while Leo called out directions from the eyepiece above.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"At first, she thought he was wasting precious viewing time on a tiny reflection that barely mattered.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         }
       ],
       "provingParagraph": 4,

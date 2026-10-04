@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The light wooden truss, glued in neat triangles by Priya and Mateo, was slowly pulled downward by the swinging metal hook.",
-      "actorChunk": "by the swinging metal hook",
+      "actorChunk": "the swinging metal hook",
       "actionChunk": "was slowly pulled downward",
       "receiverChunk": "The light wooden truss",
       "distractorChunks": [
@@ -76,17 +76,17 @@
         },
         {
           "id": "B",
-          "text": "The swinging metal hook attached to the loading block",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('was slowly pulled downward by the swinging metal hook')."
-        },
-        {
-          "id": "C",
           "text": "The neat triangles of dried glue along the sides",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Selects a noun phrase inside the descriptive modifier rather than the force pulling the truss down."
+        },
+        {
+          "id": "C",
+          "text": "The swinging metal hook attached to the loading block",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('was slowly pulled downward by the swinging metal hook')."
         },
         {
           "id": "D",
@@ -159,17 +159,17 @@
       "options": [
         {
           "id": "A",
-          "text": "Mateo flinches and steps back at every pop of glue, while Priya leans in closely to watch how the bridge struts hold their balance.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately contrasts Mateo's nervous flinching with Priya's focused scientific observation in Paragraph 3."
-        },
-        {
-          "id": "B",
           "text": "Mateo pours the sand as fast as he can, while Priya covers her eyes and refuses to watch the scale.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Swaps the two partners' roles and actions; Priya pours the sand while Mateo squeezes his eyes shut."
+        },
+        {
+          "id": "B",
+          "text": "Mateo flinches and steps back at every pop of glue, while Priya leans in closely to watch how the bridge struts hold their balance.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately contrasts Mateo's nervous flinching with Priya's focused scientific observation in Paragraph 3."
         },
         {
           "id": "C",
@@ -204,10 +204,10 @@
       "options": [
         {
           "id": "A",
-          "text": "It builds suspense during the sand loading and makes the ending a surprise when Mateo realizes breaking at a high weight actually won first place.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Explains how following Mateo's worry (seeing 'spun glass', wincing at creaks, fearing failure when it snaps) creates tension and a rewarding final realization."
+          "text": "It explains the exact mathematical formulas the judge used to calculate scores for every other school in the gym.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "diagnosticNote": "Refers to scoring math for other schools that is never described in the passage."
         },
         {
           "id": "B",
@@ -218,10 +218,10 @@
         },
         {
           "id": "C",
-          "text": "It explains the exact mathematical formulas the judge used to calculate scores for every other school in the gym.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Refers to scoring math for other schools that is never described in the passage."
+          "text": "It builds suspense during the test and makes the ending a surprise when the broken bridge wins first place.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Explains how following Mateo's worry (seeing 'spun glass', wincing at creaks, fearing failure when it snaps) creates tension and a rewarding final realization."
         },
         {
           "id": "D",

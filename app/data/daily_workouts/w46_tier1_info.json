@@ -110,9 +110,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Tightens and pulls closer toward the center",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Signs a written agreement with weather forecasters",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -128,9 +128,9 @@
         },
         {
           "id": "D",
-          "text": "Signs a written agreement with weather forecasters",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Tightens and pulls closer toward the center",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -151,9 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It freezes the ocean waves into solid ice so the wind can slide across them without friction.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "It releases heat that makes air rise faster and lowers surface pressure, pulling more air inward.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -163,9 +163,9 @@
         },
         {
           "id": "C",
-          "text": "It releases heat that makes air rise faster and lowers surface pressure, pulling more air inward.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It freezes the ocean waves into solid ice so the wind can slide across them without friction.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "D",
@@ -198,15 +198,15 @@
         },
         {
           "id": "B",
-          "text": "By contrasting what happens to the new eyewall over warm Gulf Stream water versus cooler shelf water",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "By describing how pilots build airplanes strong enough to fly through heavy rain",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "C",
+          "text": "By contrasting what happens to the new eyewall over warm Gulf Stream water versus cooler shelf water",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Because the interaction between shifting eyewalls above and water heat below determines how strong the storm will be.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Because flight crews cannot fly above the clouds when the sun is shining.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -252,9 +252,9 @@
         },
         {
           "id": "D",
-          "text": "Because flight crews cannot fly above the clouds when the sun is shining.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Because the interaction between shifting eyewalls above and water heat below determines how strong the storm will be.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -282,15 +282,15 @@
         },
         {
           "id": "B",
-          "text": "\"Most tropical storms weaken before they ever reach the southeastern coast.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "C",
           "text": "\"By tracking both the ocean heat below and the shifting eyewalls above, forecasters give coastal families clearer warnings before the wind arrives.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"Most tropical storms weaken before they ever reach the southeastern coast.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "D",

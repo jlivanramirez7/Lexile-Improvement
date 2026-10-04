@@ -77,14 +77,15 @@
         },
         {
           "id": "B",
-          "text": "Thomas Young, who compared the rings with the Greek letters",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The Greek letters carved at the bottom of the dark slab",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Thomas Young, who compared the rings with the Greek letters",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -112,7 +113,8 @@
         {
           "id": "A",
           "text": "A blend that combines two different methods",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -158,7 +160,8 @@
         {
           "id": "B",
           "text": "He assumed that Egyptians used phonetic sound signs only when spelling foreign rulers' names.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -197,14 +200,15 @@
         },
         {
           "id": "B",
-          "text": "His knowledge of Coptic allowed him to connect the sun symbol's spoken sound ('Ra') with Young's phonetic 'm' and 's' signs to read native Egyptian words.",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "He proved that every hieroglyph on Egyptian temple walls was a silent picture with zero spoken sounds.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "C",
+          "text": "His knowledge of Coptic allowed him to connect the sun symbol's spoken sound ('Ra') with Young's phonetic 'm' and 's' signs to read native Egyptian words.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -239,7 +243,8 @@
         {
           "id": "B",
           "text": "Cracking the Rosetta Stone required realizing that hieroglyphs blend spoken sound signs with symbolic meaning pictures.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -292,7 +297,8 @@
         {
           "id": "D",
           "text": "\"To decipher a full line, a reader had to blend spoken syllables with silent clue pictures placed at the ends of words.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

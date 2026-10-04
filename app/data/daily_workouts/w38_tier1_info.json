@@ -116,9 +116,9 @@
         },
         {
           "id": "B",
-          "text": "Slight shaking or vibrating movements in the earth",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Loud sirens mounted on the roofs of fire stations",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -128,9 +128,9 @@
         },
         {
           "id": "D",
-          "text": "Loud sirens mounted on the roofs of fire stations",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Slight shaking or vibrating movements in the earth",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -192,9 +192,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By comparing the speed, motion, and impact of P-waves and S-waves",
-          "isCorrect": true,
-          "trapType": null
+          "text": "By explaining step by step how engineers pour concrete for highway bridges",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -204,9 +204,9 @@
         },
         {
           "id": "C",
-          "text": "By explaining step by step how engineers pour concrete for highway bridges",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "By comparing the speed, motion, and impact of P-waves and S-waves",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Sensors detect the harmless P-wave first and send light-speed computer signals that arrive ahead of the slower S-wave.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Satellites in space can see underground faults glowing red a full week before an earthquake starts.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -252,9 +252,9 @@
         },
         {
           "id": "D",
-          "text": "Satellites in space can see underground faults glowing red a full week before an earthquake starts.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Sensors detect the harmless P-wave first and send light-speed computer signals that arrive ahead of the slower S-wave.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -282,15 +282,15 @@
         },
         {
           "id": "B",
-          "text": "\"Dogs often bark and window glass rattles when this first pulse passes under a town.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "C",
           "text": "\"Because radio and fiber-optic signals travel at the speed of light, the computer message outruns the slower S-wave.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "\"Dogs often bark and window glass rattles when this first pulse passes under a town.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "D",

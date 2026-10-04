@@ -82,7 +82,7 @@
         },
         {
           "id": "C",
-          "text": "Surface waves racing across the Amazon River",
+          "text": "Surface waves racing across the Gulf Stream",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
         },
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Heavy and tightly packed together",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Spinning fast like a surface whirlpool",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -129,9 +129,9 @@
         },
         {
           "id": "D",
-          "text": "Spinning fast like a surface whirlpool",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Heavy and tightly packed together",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -164,7 +164,7 @@
         },
         {
           "id": "C",
-          "text": "The Amazon River dumps millions of tons of salt into the North Pole every winter.",
+          "text": "The Gulf Stream dumps millions of tons of salt into the North Pole every winter.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
         },
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By tracing the continuous path of the water as it sinks at the poles, flows along the seabed, rises in warmer seas, and returns north",
-          "isCorrect": true,
-          "trapType": null
+          "text": "By listing all the fish species that live in the Pacific Ocean from smallest to largest",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "By listing all the fish species that live in the Pacific Ocean from smallest to largest",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "By tracing the continuous path of the water as it sinks at the poles, flows along the seabed, rises in warmer seas, and returns north",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Driven by sinking cold, salty water at the poles, the global ocean conveyor belt circulates heat and nutrients around the planet.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The word thermohaline comes from two ancient Greek words that mean heat and salt.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "The word thermohaline comes from two ancient Greek words that mean heat and salt.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Driven by sinking cold, salty water at the poles, the global ocean conveyor belt circulates heat and nutrients around the planet.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -283,9 +283,9 @@
         },
         {
           "id": "B",
-          "text": "\"Unlike surface waves that race across the sea, this deep current creeps along at a few inches per second.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Unlike surface waves that race across the sea, this deep current creeps along at a few inches per second.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

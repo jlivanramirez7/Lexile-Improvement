@@ -110,8 +110,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Find the exact location of",
-          "isCorrect": true
+          "text": "Fasten with a sharp metal needle",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -127,9 +128,8 @@
         },
         {
           "id": "D",
-          "text": "Fasten with a sharp metal needle",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Find the exact location of",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 1,
@@ -190,14 +190,14 @@
       "options": [
         {
           "id": "A",
-          "text": "To show that every cesium atom flips at an unchanging rate regardless of outside conditions",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
           "text": "To argue that brass rods work better than cesium clocks during cold winter months",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "To show that every cesium atom flips at an unchanging rate regardless of outside conditions",
+          "isCorrect": true
         },
         {
           "id": "C",
@@ -231,8 +231,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The greatest number of cesium atoms flip their spin state and light up the sensor.",
-          "isCorrect": true
+          "text": "The outer charges stop spinning completely and fall into the center of the atom.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -248,9 +249,8 @@
         },
         {
           "id": "D",
-          "text": "The outer charges stop spinning completely and fall into the center of the atom.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "The greatest number of cesium atoms flip their spin state and light up the sensor.",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 4,

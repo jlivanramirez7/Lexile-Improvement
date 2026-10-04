@@ -75,15 +75,15 @@
         },
         {
           "id": "B",
-          "text": "A hidden pocket of trapped air and moisture weakened the wall, and rising steam split it apart.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The thin clay wall split the hot chamber apart because the electric kiln grew too cold.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "A hidden pocket of trapped air and moisture weakened the wall, and rising steam split it apart.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -110,15 +110,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Careless and hurried in order to finish before class ends",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Careful and orderly, following clear steps one by one",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Careless and hurried in order to finish before class ends",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -151,9 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "She wants to make sure no tiny air pockets remain inside the clay after wedging it.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "She wants to dry the clay completely before shaping it on the spinning wheel.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -169,9 +169,9 @@
         },
         {
           "id": "D",
-          "text": "She wants to dry the clay completely before shaping it on the spinning wheel.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "She wants to make sure no tiny air pockets remain inside the clay after wedging it.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Careful unseen preparation is just as important as outer decoration for creating lasting work.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Gray clay is always stronger than red clay when heated inside an electric kiln.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -246,9 +246,9 @@
         },
         {
           "id": "C",
-          "text": "Gray clay is always stronger than red clay when heated inside an electric kiln.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Careful unseen preparation is just as important as outer decoration for creating lasting work.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -276,9 +276,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Every Tuesday afternoon, Maya hurried to the community art studio at the end of Elm Street.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"This time, Maya knew her careful preparation at the table would protect her art inside the fire.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -294,9 +294,9 @@
         },
         {
           "id": "D",
-          "text": "\"This time, Maya knew her careful preparation at the table would protect her art inside the fire.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Every Tuesday afternoon, Maya hurried to the community art studio at the end of Elm Street.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "Jonah spotted the missing brass eyepiece near the window.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The missing brass eyepiece spotted Jonah beside the drying rack.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Jonah spotted the missing brass eyepiece near the window.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "To polish glass with a dry paper towel",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "To protect something by covering it from harm or dirt",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "To protect something by covering it from harm or dirt",
-          "isCorrect": true,
-          "trapType": null
+          "text": "To polish glass with a dry paper towel",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Tessa wants to rush to the lost-and-found bin, while Jonah stays calm and examines the lab table for clues.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Both students immediately run down the hallway to ask Mr. Patel where he put the microscope slides.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "Both students immediately run down the hallway to ask Mr. Patel where he put the microscope slides.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Tessa wants to rush to the lost-and-found bin, while Jonah stays calm and examines the lab table for clues.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -241,15 +241,15 @@
         },
         {
           "id": "B",
-          "text": "Slowing down to observe clues carefully solves problems faster than rushing around in a panic.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "School lost-and-found bins are always the best place to look for missing science equipment.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Slowing down to observe clues carefully solves problems faster than rushing around in a panic.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"In thirty minutes, families would gather on the soccer field for the fifth-grade astronomy night.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"By slowing down and reading the clues in the room, Jonah had saved the clearest view in the solar system.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"By slowing down and reading the clues in the room, Jonah had saved the clearest view in the solar system.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"In thirty minutes, families would gather on the soccer field for the fifth-grade astronomy night.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

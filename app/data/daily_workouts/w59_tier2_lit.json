@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "The original bridge builder",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Walkers crossing Elderberry Creek with saws",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The original bridge builder",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "She matches the carved tally numbers to the rows of pegs and sees the fourth peg on the fourth post sticking out.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "She counts the number of wagons pictured on the inside flap of her grandfather's tool bag.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "She counts the number of wagons pictured on the inside flap of her grandfather's tool bag.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "She matches the carved tally numbers to the rows of pegs and sees the fourth peg on the fourth post sticking out.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "It gives Tessa the specific clue that launches her search up in the bridge rafters.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "It explains why the county decided to close Elderberry Creek Bridge to cars.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "It gives Tessa the specific clue that launches her search up in the bridge rafters.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Careful observation can uncover the wisdom that past builders left behind to help future generations preserve their work.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Hidden treasure chests full of gold coins can be found inside every covered bridge in Georgia.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Hidden treasure chests full of gold coins can be found inside every covered bridge in Georgia.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Careful observation can uncover the wisdom that past builders left behind to help future generations preserve their work.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Her boots echoed above the rush of cold North Georgia water below.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"The old builder had left a guide for the next generation to keep the bridge standing strong.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"The old builder had left a guide for the next generation to keep the bridge standing strong.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Her boots echoed above the rush of cold North Georgia water below.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

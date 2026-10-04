@@ -692,6 +692,7 @@
       let lexWSum = anchorWeight;
       let lexValSum = anchorWeight * baselineLexile;
       let masteryBonus = 0;
+      let runningLex = baselineLexile;
 
       prog.trialHistory.forEach(function (trial, idx) {
         const age = (nTrials - 1) - idx;
@@ -708,7 +709,10 @@
           acc = Number(trial.firstTryAccuracyPct) / 100.0;
         }
 
-        const effLex = Math.max(baselineLexile, tLex);
+        // Prevent lower-tier review quests completed with >=65% (4/6) accuracy from dragging down earned Lexile
+        const effLex = acc >= 0.65
+          ? Math.max(baselineLexile, tLex, runningLex - 15)
+          : Math.max(baselineLexile, tLex);
         const perfLex = acc >= 0.50
           ? effLex + (acc - 0.68) * 145
           : baselineLexile - (0.68 - acc) * 85;
@@ -718,6 +722,8 @@
 
         if (acc >= 0.80) masteryBonus += 4.5;
         else if (acc >= 0.66) masteryBonus += 2.0;
+
+        runningLex = Math.max(850, Math.min(1180, (lexValSum / lexWSum) + Math.min(45, masteryBonus)));
       });
 
       const rawEst = (lexValSum / lexWSum) + Math.min(45, masteryBonus);
@@ -1078,16 +1084,26 @@
         return a.masteryPct - b.masteryPct;
       });
 
+      const estLex = Number(prog.estimatedLexile) || 940;
+      const zpdFloor = estLex - 40;
       const uncompleted = workouts.filter(function (w) {
         return !completed.includes(w.workoutId);
       });
-      const pool = uncompleted.length ? uncompleted : workouts;
+      const zpdUncompleted = uncompleted.filter(function (w) {
+        return (Number(w.targetLexile) || 960) >= zpdFloor;
+      });
+      const zpdAll = workouts.filter(function (w) {
+        return (Number(w.targetLexile) || 960) >= zpdFloor;
+      });
+      const pool = zpdUncompleted.length
+        ? zpdUncompleted
+        : (uncompleted.length ? uncompleted : (zpdAll.length ? zpdAll : workouts));
 
       // Check if top deficit domain is critically low (<60%) and Tier 0 scaffold exists
       const topDomain = domainList[0];
-      if (topDomain && topDomain.masteryPct < 60) {
-        const scaffolds = pool.filter(function (w) {
-          return Number(w.tier) === 0 && (w.focusDomain === topDomain.domainId || true);
+      if (topDomain && topDomain.masteryPct < 60 && estLex < 980) {
+        const scaffolds = uncompleted.filter(function (w) {
+          return Number(w.tier) === 0 && w.focusDomain === topDomain.domainId;
         });
         if (scaffolds.length) return scaffolds[0];
       }
@@ -1132,10 +1148,15 @@
 
       const prog = window.V2State.progress || buildDefaultProgress(window.V2State.studentId);
       const completed = Array.isArray(prog.completedWorkoutIds) ? prog.completedWorkoutIds : [];
-      const targetLexile = (Number(prog.estimatedLexile) || 940) + 25;
+      const estLex = Number(prog.estimatedLexile) || 940;
+      const zpdFloor = estLex - 40;
+      const targetLexile = estLex + 25;
       const topDomainId = (prog.topWeakness && prog.topWeakness.domainId) || "D4_SYNTAX";
 
       const pickBest = function (predicate, usedIds) {
+        const zpdUncomp = workouts.filter(function (w) {
+          return predicate(w) && !completed.includes(w.workoutId) && !usedIds.has(w.workoutId) && (Number(w.targetLexile) || 960) >= zpdFloor;
+        });
         const uncomp = workouts.filter(function (w) {
           return predicate(w) && !completed.includes(w.workoutId) && !usedIds.has(w.workoutId);
         });
@@ -1143,7 +1164,9 @@
           return predicate(w) && !usedIds.has(w.workoutId);
         });
         const anyMatch = workouts.filter(predicate);
-        const candidates = uncomp.length ? uncomp : (anyUnused.length ? anyUnused : (anyMatch.length ? anyMatch : workouts));
+        const candidates = zpdUncomp.length
+          ? zpdUncomp
+          : (uncomp.length ? uncomp : (anyUnused.length ? anyUnused : (anyMatch.length ? anyMatch : workouts)));
         const sorted = candidates.slice().sort(function (a, b) {
           const distA = Math.abs((Number(a.targetLexile) || 960) - targetLexile);
           const distB = Math.abs((Number(b.targetLexile) || 960) - targetLexile);

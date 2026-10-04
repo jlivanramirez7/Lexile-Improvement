@@ -69,9 +69,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The council elders felt amazed, and the rapid messages shared between Sequoyah and his daughter caused their amazement.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "White soldiers in New Echota were amazed by the metal printing press inside the cabin.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -87,9 +87,9 @@
         },
         {
           "id": "D",
-          "text": "White soldiers in New Echota were amazed by the metal printing press inside the cabin.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The council elders felt amazed, and the rapid messages shared between Sequoyah and his daughter caused their amazement.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -116,15 +116,15 @@
         },
         {
           "id": "B",
-          "text": "Doubtful and unsure whether something is truly real",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Skilled at working with silver and metal printing type",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Doubtful and unsure whether something is truly real",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -151,15 +151,15 @@
       "options": [
         {
           "id": "A",
-          "text": "He realized that making a separate picture for every word would create too many symbols to remember.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "He ran out of birch bark in the woods and could not buy paper from the traders.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "He realized that making a separate picture for every word would create too many symbols to remember.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -234,15 +234,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Capturing Cherokee speech on paper would allow the nation to preserve and share its own laws and news.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Working as a silversmith was the best way to earn money in early nineteenth-century Georgia.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "B",
+          "text": "Capturing Cherokee speech on paper would allow the nation to preserve and share its own laws and news.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -288,15 +288,15 @@
         },
         {
           "id": "C",
-          "text": "\"Printed side by side in Cherokee and English, the paper carried tribal laws, local news, and stories to readers across the nation.\"",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "\"Families painted the symbols on cabin walls and taught neighbors along rural trails.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW"
+        },
+        {
+          "id": "D",
+          "text": "\"Printed side by side in Cherokee and English, the paper carried tribal laws, local news, and stories to readers across the nation.\"",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

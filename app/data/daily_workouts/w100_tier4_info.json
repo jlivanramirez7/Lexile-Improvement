@@ -76,8 +76,9 @@
         },
         {
           "id": "B",
-          "text": "The tiny motors on the rotor craft",
-          "isCorrect": true
+          "text": "The Mars rover in Jezero Crater",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -87,9 +88,8 @@
         },
         {
           "id": "D",
-          "text": "The Mars rover in Jezero Crater",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The tiny motors on the rotor craft",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 2,
@@ -150,8 +150,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Nearly two-thirds of the stored charge had to run small heaters so the freezing night would not ruin wires.",
-          "isCorrect": true
+          "text": "Red dust covered two-thirds of the solar panel before the craft even left Earth.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -161,9 +162,8 @@
         },
         {
           "id": "C",
-          "text": "Red dust covered two-thirds of the solar panel before the craft even left Earth.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Nearly two-thirds of the stored charge had to run small heaters so the freezing night would not ruin wires.",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -190,8 +190,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By explaining that radio waves took over ten minutes to travel between Earth and Mars, which is far too slow for a ninety-second flight",
-          "isCorrect": true
+          "text": "By noting that the downward lens only worked when the craft was parked under the rover's frame",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -207,9 +208,8 @@
         },
         {
           "id": "D",
-          "text": "By noting that the downward lens only worked when the craft was parked under the rover's frame",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "By explaining that radio waves took over ten minutes to travel between Earth and Mars, which is far too slow for a ninety-second flight",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 4,

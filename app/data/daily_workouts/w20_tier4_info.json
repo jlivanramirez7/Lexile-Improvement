@@ -77,14 +77,15 @@
         },
         {
           "id": "B",
-          "text": "The tiny motors on the spacecraft",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The five-layer sunshield that was locked tight",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "The tiny motors on the spacecraft",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -118,7 +119,8 @@
         {
           "id": "B",
           "text": "Interfere with or block",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -157,14 +159,15 @@
         },
         {
           "id": "B",
-          "text": "The expanding universe stretches the traveling light waves beyond visible light.",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The gold coating on the eighteen mirror segments turns every beam of light into heat.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The expanding universe stretches the traveling light waves beyond visible light.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -191,14 +194,15 @@
       "options": [
         {
           "id": "A",
-          "text": "To prove that the telescope's mirrors should have been made of thick glass instead of beryllium",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "To help readers understand how the gravity of a massive galaxy cluster bends and boosts dim starlight behind it",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
-          "text": "To help readers understand how the gravity of a massive galaxy cluster bends and boosts dim starlight behind it",
-          "isCorrect": true
+          "text": "To prove that the telescope's mirrors should have been made of thick glass instead of beryllium",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -239,7 +243,8 @@
         {
           "id": "B",
           "text": "The telescope's cold mirror captures faint infrared rays that have already been magnified by the gravity of galaxy clusters.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -292,7 +297,8 @@
         {
           "id": "D",
           "text": "\"By aiming the cold mirror at these gravity lenses, scientists can study galaxies that would otherwise stay hidden forever.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

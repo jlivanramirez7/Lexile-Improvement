@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Clara interrupted the weather warning with her notepad, and sagging telegraph poles pieced it together.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Bursts of static from sagging poles interrupted the warning, and Clara pieced it together.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Clara interrupted the weather warning with her notepad, and sagging telegraph poles pieced it together.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Broken up and unclear because parts of the signal were missing",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Written in bright ink on a brand-new sheet of paper",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "Broken up and unclear because parts of the signal were missing",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -199,9 +199,9 @@
         },
         {
           "id": "B",
-          "text": "It shows the positive result of Clara's careful work when the express train is stopped in time.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It proves that telegraph wires never work during winter storms in Georgia.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "C",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It proves that telegraph wires never work during winter storms in Georgia.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "It shows the positive result of Clara's careful work when the express train is stopped in time.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"Clara wiped the brass key with a soft cloth and listened to the wind rattle the window pane.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "D",
           "text": "\"Even the faintest voice on the wire could save a hundred travelers if the listener stayed calm and thorough.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"Clara wiped the brass key with a soft cloth and listened to the wind rattle the window pane.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

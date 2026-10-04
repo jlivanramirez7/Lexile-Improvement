@@ -77,8 +77,9 @@
         },
         {
           "id": "B",
-          "text": "Clara, working in the quiet studio",
-          "isCorrect": true
+          "text": "Dr. Vance, who mixed the mild solvent",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +89,8 @@
         },
         {
           "id": "D",
-          "text": "Dr. Vance, who mixed the mild solvent",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Clara, working in the quiet studio",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 2,
@@ -111,8 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Keep hidden from view",
-          "isCorrect": true
+          "text": "Sell to a wealthy duke",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -122,9 +123,8 @@
         },
         {
           "id": "C",
-          "text": "Sell to a wealthy duke",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Keep hidden from view",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -151,7 +151,7 @@
       "options": [
         {
           "id": "A",
-          "text": "The dark blue patch refuses to glow with the milky green haze that old tree-resin varnish shows under the purple beam.",
+          "text": "The dark blue patch refuses to glow with the milky green haze of old varnish.",
           "isCorrect": true
         },
         {
@@ -191,8 +191,9 @@
       "options": [
         {
           "id": "A",
-          "text": "To explain why the young artist painted the duke's portrait over an earlier valley scene",
-          "isCorrect": true
+          "text": "To criticize Clara for using mild cedar oil on the duke's velvet sleeve",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -208,9 +209,8 @@
         },
         {
           "id": "D",
-          "text": "To criticize Clara for using mild cedar oil on the duke's velvet sleeve",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "To explain why the young artist painted the duke's portrait over an earlier valley scene",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 4,
@@ -232,8 +232,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Violet light reveals surface repairs in the top varnish, while infrared waves pass through oil paint to show the sketch underneath.",
-          "isCorrect": true
+          "text": "The ceiling lamps in the studio are broken after the museum halls close at dusk.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -243,9 +244,8 @@
         },
         {
           "id": "C",
-          "text": "The ceiling lamps in the studio are broken after the museum halls close at dusk.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Violet light reveals surface repairs in the top varnish, while infrared waves pass through oil paint to show the sketch underneath.",
+          "isCorrect": true
         },
         {
           "id": "D",

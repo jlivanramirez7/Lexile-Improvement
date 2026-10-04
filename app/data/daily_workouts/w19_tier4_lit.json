@@ -78,7 +78,8 @@
         {
           "id": "B",
           "text": "The wealthy merchants who admired the map before checking the reef depths",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -117,14 +118,15 @@
         },
         {
           "id": "B",
-          "text": "Truthful and direct about real dangers",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "Kept secret from rival merchant ships",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "Truthful and direct about real dangers",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -151,14 +153,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Conti's logbook pages were ruined by salt water when his ship sailed near the coral shoals.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Six days of Conti's wind records are identical, suggesting he copied them instead of observing the sea.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
-          "text": "Six days of Conti's wind records are identical, suggesting he copied them instead of observing the sea.",
-          "isCorrect": true
+          "text": "Conti's logbook pages were ruined by salt water when his ship sailed near the coral shoals.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -197,14 +200,15 @@
         },
         {
           "id": "B",
-          "text": "It confirms Moretti's scientific proof while highlighting the moral choice Marco faces against the guild lords' wishes.",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "It shows Master Bellini scolding Marco for taking too long to finish the Venice atlas.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "It confirms Moretti's scientific proof while highlighting the moral choice Marco faces against the guild lords' wishes.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -239,7 +243,8 @@
         {
           "id": "B",
           "text": "He silently respects Marco's decision to engrave the truthful reef warnings ready for printing.",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -292,7 +297,8 @@
         {
           "id": "D",
           "text": "\"He said nothing at first, then nodded once and handed Marco the heavy ink roller.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,

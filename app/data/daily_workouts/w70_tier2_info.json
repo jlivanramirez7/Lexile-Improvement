@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "The dry mountain air blowing the branches sideways",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "C",
           "text": "Tension created as water drops evaporate from the needles",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "The dry mountain air blowing the branches sideways",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -107,13 +107,13 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 4:\n\n\"That upward tug works only because water molecules cling to each other like tiny magnets. This sticking force, known as cohesion, turns the water inside each xylem tube into a single taut rope reaching from leaf to root.\"\n\nWhat does the word \"cohesion\" mean as it is used in Paragraph 4?",
+      "prompt": "Read these sentences from Paragraph 4:\n\n\"That upward tug works only because water drops cling to each other like tiny magnets. This sticking force, known as cohesion, turns the water inside each xylem tube into a single taut rope reaching from leaf to root.\"\n\nWhat does the word \"cohesion\" mean as it is used in Paragraph 4?",
       "options": [
         {
           "id": "A",
-          "text": "The force that makes like molecules stick tightly to one another",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The heat of the sun burning the green needles at the crown",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -129,15 +129,15 @@
         },
         {
           "id": "D",
-          "text": "The heat of the sun burning the green needles at the crown",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "The force that makes like drops or particles stick tightly to one another",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "This sticking force, known as cohesion, turns the water inside each xylem tube into a single taut rope reaching from leaf to root.",
-      "childTip": "Look at the previous sentence's clue—'water molecules cling to each other like tiny magnets'—and the phrase 'This sticking force.'",
-      "parentExplanation": "Paragraph 4 defines 'cohesion' directly through context: 'water molecules cling to each other like tiny magnets. This sticking force, known as cohesion...' (Option A)."
+      "childTip": "Look at the previous sentence's clue—'water drops cling to each other like tiny magnets'—and the phrase 'This sticking force.'",
+      "parentExplanation": "Paragraph 4 defines 'cohesion' directly through context: 'water drops cling to each other like tiny magnets. This sticking force, known as cohesion...' (Option A)."
     },
     {
       "questionId": "w70_q3",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "It opens the tiny pores on the green needles so sunlight can enter.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "It causes water drops to press tightly to the narrow wood walls so the liquid does not slide back down.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
-          "text": "It causes water molecules to cling to the narrow wood walls so the liquid does not slide back down.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It opens the tiny pores on the green needles so sunlight can enter.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -178,7 +178,7 @@
       "provingParagraph": 2,
       "provingSentenceText": "This attraction between water and the tube walls is called adhesion, and it helps keep the heavy liquid from slipping backward toward the ground.",
       "childTip": "Click the sentence in Paragraph 2 that names 'adhesion' and explains what it keeps the heavy liquid from doing.",
-      "parentExplanation": "Paragraph 2 explains that water molecules press tightly against the inner walls of the hair-thin xylem tubes; this attraction ('adhesion') 'helps keep the heavy liquid from slipping backward toward the ground' (Option B)."
+      "parentExplanation": "Paragraph 2 explains that water drops press tightly against the inner walls of the hair-thin xylem tubes; this attraction ('adhesion') 'helps keep the heavy liquid from slipping backward toward the ground' (Option B)."
     },
     {
       "questionId": "w70_q4",
@@ -189,13 +189,13 @@
       "standard": "ELAGSE5RI8",
       "dok": 3,
       "requireClickToProve": false,
-      "prompt": "Which evidence does the author provide in Paragraph 5 to support the claim that \"Even a giant sequoia faces a strict height limit in the sky\"?",
+      "prompt": "Which evidence does the author provide in Paragraph 5 to support the claim that \"Even a giant tree faces a strict height limit in the sky\"?",
       "options": [
         {
           "id": "A",
-          "text": "Above three hundred feet, strong tension can cause air bubbles to pop into the xylem tubes and snap the water chain.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Mountain soil runs out of groundwater whenever a sequoia grows taller than a human hair.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "Mountain soil runs out of groundwater whenever a sequoia grows taller than a human hair.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Above three hundred feet, strong tension can cause air bubbles to pop into the xylem tubes and snap the water chain.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -247,15 +247,15 @@
         },
         {
           "id": "C",
-          "text": "Evaporating water at the needles pulls a continuous, clinging rope of water molecules upward through microscopic xylem tubes.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "Air bubbles inside the wood push individual drops of water upward one inch per year.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "Evaporating water at the needles pulls a continuous, clinging rope of water molecules upward through microscopic xylem tubes.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -283,9 +283,9 @@
         },
         {
           "id": "B",
-          "text": "\"A tall apartment building needs loud electric motors to push water to the top floor.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "\"When the sun pulls on the top of the rope in the high crown, the whole column of water slides up the trunk together.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"When the sun pulls on the top of the rope in the high crown, the whole column of water slides up the trunk together.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"A tall apartment building needs loud electric motors to push water to the top floor.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         }
       ],
       "provingParagraph": 4,

@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "Eli's waving arms and loud shouts startled the ewes, and Grandfather's older dog calmly gathered them.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The stone wall gathered Eli's waving arms while the nervous ewes chased the older dog.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "Eli's waving arms and loud shouts startled the ewes, and Grandfather's older dog calmly gathered them.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Its clear notes travel far through the wind without sounding angry or startling the animals.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The whistle makes a loud barking noise that scares the sheep away from the briars.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "The whistle makes a loud barking noise that scares the sheep away from the briars.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Its clear notes travel far through the wind without sounding angry or startling the animals.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "It shows Pip obeying Eli's quiet whistle signals to guide the flock calmly through the gate instead of scattering them.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "It shows Grandfather locking Pip inside the barn while the older dog finishes all the farm chores.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "It shows Pip obeying Eli's quiet whistle signals to guide the flock calmly through the gate instead of scattering them.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "He needs Pip to lie down and stop his fast charge first so the sheep do not bolt in fear.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "He wants Grandfather's older dog to run up the hill and take Pip's place.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "He wants Grandfather's older dog to run up the hill and take Pip's place.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "He needs Pip to lie down and stop his fast charge first so the sheep do not bolt in fear.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -258,10 +258,10 @@
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
         }
       ],
-      "provingParagraph": 5,
-      "provingSentenceText": "Pip's ears twitched, and his belly dropped straight into the wet clover.",
+      "provingParagraph": 3,
+      "provingSentenceText": "One long, steady blast told the dog to lie flat in the grass and pause.",
       "childTip": "Remember what one long blast means in Paragraph 3, and see what Pip was about to do in Paragraph 4!",
-      "parentExplanation": "In Paragraph 3, one long blast means 'lie flat and pause.' When Pip lowers his head to charge the sheep in Paragraph 4, Eli blows that single long note so Pip drops into the clover and the ewes do not bolt."
+      "parentExplanation": "In Paragraph 3, one long blast means 'lie flat in the grass and pause.' When Pip lowers his head to charge the sheep in Paragraph 4, Eli blows that single long note so Pip drops into the clover and the ewes do not bolt."
     },
     {
       "questionId": "w43_q6",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Morning dew still clung to the clover in the north pasture when Eli unlatched the wooden gate.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"One long, steady blast told the dog to lie flat in the grass and pause.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -289,9 +289,9 @@
         },
         {
           "id": "C",
-          "text": "\"One long, steady blast told the dog to lie flat in the grass and pause.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Morning dew still clung to the clover in the north pasture when Eli unlatched the wooden gate.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "D",

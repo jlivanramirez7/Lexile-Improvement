@@ -69,15 +69,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The small oil flame bends the revolving lens, and the sea sends the glass prisms twenty miles away.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "The angled glass prisms bend the rays into a narrow sheet, and the revolving lens sends them out to sea.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The small oil flame bends the revolving lens, and the sea sends the glass prisms twenty miles away.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -110,15 +110,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Lasting forever and impossible to wipe away",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Easy to wash off with warm water and soap",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Lasting forever and impossible to wipe away",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -151,9 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "He wants to keep the hard buttons on his coat from scratching the glass rings.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "He uses the apron to block the broken window shutter so rain cannot enter.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -163,9 +163,9 @@
         },
         {
           "id": "C",
-          "text": "He uses the apron to block the broken window shutter so rain cannot enter.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "He wants to keep the hard buttons on his coat from scratching the glass rings.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -198,9 +198,9 @@
         },
         {
           "id": "B",
-          "text": "It establishes the stormy coastal setting and explains why Caleb is responsible for preparing the lens alone.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It proves that Caleb prefers working in the village store over climbing lighthouse stairs.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "C",
@@ -210,9 +210,9 @@
         },
         {
           "id": "D",
-          "text": "It proves that Caleb prefers working in the village store over climbing lighthouse stairs.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "It establishes the stormy coastal setting and explains why Caleb is responsible for preparing the lens alone.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 1,

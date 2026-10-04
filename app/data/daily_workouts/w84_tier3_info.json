@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The dark band of ancient clay, sandwiched between white limestone beds near Gubbio, was closely tested by the Alvarez team for rare metals.",
-      "actorChunk": "by the Alvarez team",
+      "actorChunk": "the Alvarez team",
       "actionChunk": "was closely tested",
       "receiverChunk": "The dark band of ancient clay",
       "distractorChunks": [
@@ -52,7 +52,7 @@
         "word": "shroud",
         "definition": "A thick covering or cloud that hides or blocks something from view",
         "rootHint": "Old English scrud (garment or covering)",
-        "contextClue": "'That dust shroud blocked the sun for months, halting plant growth.'"
+        "contextClue": "'That dust shroud blocked the sun for months. It stopped green plants from growing and starved food chains across the globe.'"
       }
     ]
   },
@@ -70,17 +70,17 @@
       "options": [
         {
           "id": "A",
-          "text": "The dark band of ancient clay from the Italian canyon",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly links the grammatical subject/receiver ('The dark band of ancient clay') across the middle participial phrase to 'was closely tested'."
-        },
-        {
-          "id": "B",
           "text": "The Alvarez team working in the California laboratory",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Confuses the actor performing the test ('by the Alvarez team') with the rock layer being tested."
+        },
+        {
+          "id": "B",
+          "text": "The dark band of ancient clay from the Italian canyon",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly links the grammatical subject/receiver ('The dark band of ancient clay') across the middle participial phrase to 'was closely tested'."
         },
         {
           "id": "C",
@@ -115,10 +115,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Sudden and rapid",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Uses the contrast signal 'Yet' against 'slow shifts... over millions of years' and the root 'rupt' (break) to identify 'sudden'."
+          "text": "Stretching peacefully across millions of years",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Selects the exact opposite meaning by ignoring the contrast word 'Yet'."
         },
         {
           "id": "B",
@@ -129,10 +129,10 @@
         },
         {
           "id": "C",
-          "text": "Stretching peacefully across millions of years",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Selects the exact opposite meaning by ignoring the contrast word 'Yet'."
+          "text": "Sudden and rapid",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the contrast signal 'Yet' against 'slow shifts... over millions of years' and the root 'rupt' (break) to identify 'sudden'."
         },
         {
           "id": "D",
@@ -167,10 +167,10 @@
         },
         {
           "id": "B",
-          "text": "Iridium is scarce in Earth's crust because most of it sank into the planet's core, but space rocks contain much more of it.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately synthesizes Paragraph 3: Earth's surface has very little iridium, whereas space rocks and cosmic dust carry much higher amounts."
+          "text": "Earth's surface has thirty times more iridium than asteroids or cosmic dust.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the comparison in Paragraph 3; space rocks carry much higher amounts of iridium than Earth's crust."
         },
         {
           "id": "C",
@@ -181,10 +181,10 @@
         },
         {
           "id": "D",
-          "text": "Earth's surface has thirty times more iridium than asteroids or cosmic dust.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the comparison in Paragraph 3; space rocks carry much higher amounts of iridium than Earth's crust."
+          "text": "Iridium is scarce in Earth's crust because most sank into the core, whereas space rocks carry much more.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately synthesizes Paragraph 3: Earth's surface has very little iridium, whereas space rocks and cosmic dust carry much higher amounts."
         }
       ],
       "provingParagraph": 3,
@@ -205,24 +205,24 @@
       "options": [
         {
           "id": "A",
+          "text": "Sea-bed cores drilled in Denmark and New Zealand showed the exact same iridium spike at the same age.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves the global scale of the event by citing matching iridium spikes in both Europe (Denmark) and the Southern Hemisphere (New Zealand)."
+        },
+        {
+          "id": "B",
           "text": "Lab chemists were stunned when they first tested the thin clay seam from Gubbio.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Describes the scientists' reaction to the first local Italian sample, not proof that the layer was global."
         },
         {
-          "id": "B",
-          "text": "Core samples drilled from sea beds in Denmark and New Zealand showed the exact same spike of iridium at the exact same age.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Directly proves the global scale of the event by citing matching iridium spikes in both Europe (Denmark) and the Southern Hemisphere (New Zealand)."
-        },
-        {
           "id": "C",
-          "text": "The Italian clay layer measured only one centimeter thick between the pink and white limestone beds.",
+          "text": "The Italian clay layer was just one thin band with no fish bones between the pink and white limestone beds.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Repeats a measurement from Paragraph 2 about the local Italian site rather than proving a global blanket."
+          "diagnosticNote": "Repeats a detail from Paragraph 2 about the local Italian site rather than proving a global blanket."
         },
         {
           "id": "D",
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "By discovering a global spike of space-borne iridium in a thin clay layer, the Alvarez team proved that a massive asteroid impact ended the dinosaur era.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the entire investigation: the fossil puzzle (Para 1), the Gubbio clay and iridium test (Paras 2-4), and the confirmed asteroid impact theory (Para 5)."
+          "text": "Italian limestone canyons are the only places where geologists can study ancient ocean mud.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME",
+          "diagnosticNote": "Uses 'only' and contradicts the core samples taken from Denmark, New Zealand, and Mexico."
         },
         {
           "id": "B",
@@ -265,10 +265,10 @@
         },
         {
           "id": "C",
-          "text": "Italian limestone canyons are the only places where geologists can study ancient ocean mud.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'only' and contradicts the core samples taken from Denmark, New Zealand, and Mexico."
+          "text": "By finding a global spike of space-borne iridium in ancient clay, the Alvarez team proved a giant asteroid ended the dinosaur era.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the entire investigation: the fossil puzzle (Para 1), the Gubbio clay and iridium test (Paras 2-4), and the confirmed asteroid impact theory (Para 5)."
         },
         {
           "id": "D",
@@ -281,7 +281,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "They argued that a six-mile-wide asteroid slammed into Earth and vaporized upon impact, blasting a vast cloud of iridium-rich debris into the sky.",
       "childTip": "Choose the statement that connects the iridium clay clue to the asteroid impact that ended the dinosaur era.",
-      "parentExplanation": "Part A of the EBSR pair assesses Central Idea synthesis (ELAGSE5RI2). Option D is a classic misconception trap (stating the old disproven theory), while Option A integrates the iridium evidence with the asteroid conclusion."
+      "parentExplanation": "Part A of the EBSR pair assesses Central Idea synthesis (ELAGSE5RI2). Option D is a classic misconception trap (stating the old disproven theory), while Option C integrates the iridium evidence with the asteroid conclusion."
     },
     {
       "questionId": "w84_q6",

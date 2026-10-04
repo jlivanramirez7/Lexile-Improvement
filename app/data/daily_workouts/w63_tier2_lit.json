@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "A steam drum at the summit",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The passengers sitting on the inner wooden benches",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "A steam drum at the summit",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "She spots fossilized crinoid stems and seashell prints locked inside the lower limestone bands.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "She tastes salt water dripping from the steam drum at the summit.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "She tastes salt water dripping from the steam drum at the summit.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "She spots fossilized crinoid stems and seashell prints locked inside the lower limestone bands.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "By contrasting Thomas's fear of the steep drop with Clara's scientific excitement, it shows how the same climb looks different to two riders.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "By telling the story in first person from the steam engineer's view, it focuses only on how much coal the boiler burns.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "By contrasting Thomas's fear of the steep drop with Clara's scientific excitement, it shows how the same climb looks different to two riders.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Curiosity can turn an intimidating experience into a rare chance to discover something new.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Charcoal sticks are much better for drawing rock layers than ink pens.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Charcoal sticks are much better for drawing rock layers than ink pens.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Curiosity can turn an intimidating experience into a rare chance to discover something new.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"As the bell clanged, the cable beneath the floor pulled taut and the car began its slow climb.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"As the bell clanged, the cable beneath the floor pulled taut and the car began its slow climb.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

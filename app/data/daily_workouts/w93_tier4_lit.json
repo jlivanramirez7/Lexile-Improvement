@@ -71,14 +71,14 @@
       "options": [
         {
           "id": "A",
-          "text": "The two thin brass plates that cooled on the bench",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Hendrik, who fastened the bead between the plates",
+          "isCorrect": true
         },
         {
           "id": "B",
-          "text": "Hendrik, who fastened the bead between the plates",
-          "isCorrect": true
+          "text": "The two thin brass plates that cooled on the bench",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -111,8 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Plain and modest in appearance",
-          "isCorrect": true
+          "text": "Cracked and useless for viewing",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -122,9 +123,8 @@
         },
         {
           "id": "C",
-          "text": "Cracked and useless for viewing",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Plain and modest in appearance",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -157,8 +157,9 @@
         },
         {
           "id": "B",
-          "text": "A smaller glass sphere bends light at a much sharper angle than a wide disk can.",
-          "isCorrect": true
+          "text": "The oak bench keeps the rain barrel water warmer than the air in the guild hall.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -168,9 +169,8 @@
         },
         {
           "id": "D",
-          "text": "The oak bench keeps the rain barrel water warmer than the air in the guild hall.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "A smaller glass sphere bends light at a much sharper angle than a wide disk can.",
+          "isCorrect": true
         }
       ],
       "provingParagraph": 3,
@@ -191,14 +191,14 @@
       "options": [
         {
           "id": "A",
-          "text": "The leaded glass window in the cloth shop was replaced with a wide pane from Paris.",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Looking through the tiny pinhole lens revealed a vast, hidden realm of living creatures.",
+          "isCorrect": true
         },
         {
           "id": "B",
-          "text": "Looking through the tiny pinhole lens revealed a vast, hidden realm of living creatures.",
-          "isCorrect": true
+          "text": "The leaded glass window in the cloth shop was replaced with a wide pane from Paris.",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "C",
@@ -238,14 +238,14 @@
         },
         {
           "id": "B",
-          "text": "He is driven by curiosity to explore unseen nature rather than merely inspecting cloth for trade.",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "He buys expensive three-lens tubes from Paris to impress the guild hall scholars.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "He is driven by curiosity to explore unseen nature rather than merely inspecting cloth for trade.",
+          "isCorrect": true
         },
         {
           "id": "D",

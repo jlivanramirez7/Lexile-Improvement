@@ -70,9 +70,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The center seam splitting the quiet workshop in half",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "The tight winter grain lines inside the spruce board",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -82,9 +82,9 @@
         },
         {
           "id": "C",
-          "text": "The tight winter grain lines inside the spruce board",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The center seam splitting the quiet workshop in half",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Carefully dried and aged over time so it is ready for building",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Sprinkled with salt and pepper before being cooked in an oven",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "Carefully dried and aged over time so it is ready for building",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -158,15 +158,15 @@
         },
         {
           "id": "B",
-          "text": "It grew quickly in a warm valley, leaving soft, spongy gaps in the wood that swallowed up vibrations.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "It had been dried on the high ceiling beam for fourteen winters until it cracked.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "It grew quickly in a warm valley, leaving soft, spongy gaps in the wood that swallowed up vibrations.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "So Tobias can hear and feel the difference in tone for himself rather than judging the wood only by its smooth outside look",
-          "isCorrect": true,
-          "trapType": null
+          "text": "So Tobias will decide to build a drum instead of an acoustic guitar",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "So Tobias will decide to build a drum instead of an acoustic guitar",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "So Tobias can hear and feel the difference in tone for himself rather than judging the wood only by its smooth outside look",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "New materials that look spotless on the outside are always stronger than older materials.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "True strength and beauty often come from enduring hard seasons and patient preparation rather than spotless appearances.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "New materials that look spotless on the outside are always stronger than older materials.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -289,15 +289,15 @@
         },
         {
           "id": "C",
-          "text": "\"When Tobias tapped the center of the plank, it gave a dull, short thud, like knocking on a wet cardboard box.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "D",
           "text": "\"Instead, those hard seasons had given the wood the strength to resonate when guitar strings finally sang across its bridge.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "D",
+          "text": "\"When Tobias tapped the center of the plank, it gave a dull, short thud, like knocking on a wet cardboard box.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         }
       ],
       "provingParagraph": 5,

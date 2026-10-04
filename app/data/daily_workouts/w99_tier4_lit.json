@@ -77,14 +77,14 @@
         },
         {
           "id": "B",
-          "text": "Miss Leavitt, working at the long oak desk",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
           "text": "The faint star dots from the southern sky",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Miss Leavitt, working at the long oak desk",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -111,14 +111,14 @@
       "options": [
         {
           "id": "A",
-          "text": "Brushed off as unimportant or ordinary",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
           "text": "Praised as the most famous lab in the world",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Brushed off as unimportant or ordinary",
+          "isCorrect": true
         },
         {
           "id": "C",
@@ -151,8 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Because all the stars in that cloud sat at roughly the same distance from Earth, any difference in their dot size was real.",
-          "isCorrect": true
+          "text": "Because none of the stars inside the Small Magellanic Cloud ever changed their dot size from October to November.",
+          "isCorrect": false,
+          "trapType": "TRAP_EXTREME"
         },
         {
           "id": "B",
@@ -162,9 +163,8 @@
         },
         {
           "id": "C",
-          "text": "Because none of the stars inside the Small Magellanic Cloud ever changed their dot size from October to November.",
-          "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "text": "Because all the stars in that cloud sat at roughly the same distance from Earth, any difference in their dot size was real.",
+          "isCorrect": true
         },
         {
           "id": "D",
@@ -232,14 +232,14 @@
       "options": [
         {
           "id": "A",
-          "text": "Patient, careful study of small details can unlock answers to the largest mysteries, even when others overlook the work.",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
           "text": "Scientific discoveries can only be made by researchers who have access to the largest brass domes.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Patient, careful study of small details can unlock answers to the largest mysteries, even when others overlook the work.",
+          "isCorrect": true
         },
         {
           "id": "C",

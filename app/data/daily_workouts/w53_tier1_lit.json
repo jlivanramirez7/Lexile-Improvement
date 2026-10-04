@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Talia coveted the iron needles for years, and every merchant in the valley passed over the golden thread.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Every merchant in the valley wanted the golden thread, and Talia passed it over for the iron needles.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Talia coveted the iron needles for years, and every merchant in the valley passed over the golden thread.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Greatly desired and wished for as a valuable prize",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Thrown away into the mud because it was worthless",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Greatly desired and wished for as a valuable prize",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -158,15 +158,15 @@
         },
         {
           "id": "B",
-          "text": "A falling pine branch smashed the blacksmith's stone forge and snapped the town's last needles.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The shepherds traded all of the town's iron ore for royal banners.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "A falling pine branch smashed the blacksmith's stone forge and snapped the town's last needles.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "It contrasts the uselessness of a palace banner in a storm with the life-saving warmth of mended wool cloaks.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It describes how the pine trees grew above the glaciers around Oakhaven.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It describes how the pine trees grew above the glaciers around Oakhaven.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "It contrasts the uselessness of a palace banner in a storm with the life-saving warmth of mended wool cloaks.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,

@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "Maren, using flour paste and scrap muslin",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The battered school readers pressing against the table",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "Maren, using flour paste and scrap muslin",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Threw away in the wood stove to keep the cabin warm",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Saved and rescued from being lost or ruined",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "Threw away in the wood stove to keep the cabin warm",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The mountain families lived up steep hollows and creek beds where no paved roads existed for trucks.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The librarians wanted to keep the books wet by splashing through Beaver Dam every morning.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "The librarians wanted to keep the books wet by splashing through Beaver Dam every morning.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "The mountain families lived up steep hollows and creek beds where no paved roads existed for trucks.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 1,
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "They show how she uses everyday household scraps and clever craftsmanship to keep the mountain library running.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "They prove that she wishes she could ride the mule across the creek instead of staying on the porch.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "They show how she uses everyday household scraps and clever craftsmanship to keep the mountain library running.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -241,15 +241,15 @@
         },
         {
           "id": "B",
-          "text": "They valued the library deeply and contributed their own scarce materials to help keep the books repaired.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "They wanted Maren to sew feed-sack coats for all the mules in Leslie County.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "They valued the library deeply and contributed their own scarce materials to help keep the books repaired.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Because the county had almost no money to buy new volumes, every donated book was read until its pages came loose.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"Best of all, the teacher had sent back a bag of clean feed sacks so Maren would have strong cloth for next week's bindings.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"Best of all, the teacher had sent back a bag of clean feed sacks so Maren would have strong cloth for next week's bindings.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Because the county had almost no money to buy new volumes, every donated book was read until its pages came loose.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

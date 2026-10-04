@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "A sheet of falling roof ice struck and closed the gas valve.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "Leo turned the gas valve off right before closing his field notes.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "A sheet of falling roof ice struck and closed the gas valve.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Blinked on and off like a warning light",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Dropped steeply and quickly toward a lower level",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Dropped steeply and quickly toward a lower level",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Blinked on and off like a warning light",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "He knows the dark jugs absorbed heat from the afternoon sun and will help warm the enclosed space.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "He wants to keep the plastic jugs from freezing and cracking the sink.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "He wants to keep the plastic jugs from freezing and cracking the sink.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "He knows the dark jugs absorbed heat from the afternoon sun and will help warm the enclosed space.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Resourceful thinking and calm action can protect months of hard work when equipment suddenly fails.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Gas furnaces are much less reliable than battery boxes for heating large school buildings.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "Gas furnaces are much less reliable than battery boxes for heating large school buildings.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Resourceful thinking and calm action can protect months of hard work when equipment suddenly fails.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Sleet rattled against the sloped glass panes of the school greenhouse while Leo held a fine camel-hair brush between his fingers.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"He slid the warm mats and the sun-warmed water jugs right under the burlap tent.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"He slid the warm mats and the sun-warmed water jugs right under the burlap tent.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Sleet rattled against the sloped glass panes of the school greenhouse while Leo held a fine camel-hair brush between his fingers.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 4,

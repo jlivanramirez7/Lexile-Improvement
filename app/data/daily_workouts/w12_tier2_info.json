@@ -70,9 +70,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Inca masons building the mountain terraces",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Layers of coarse river gravel and packed sand",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -82,9 +82,9 @@
         },
         {
           "id": "C",
-          "text": "Layers of coarse river gravel and packed sand",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Inca masons building the mountain terraces",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -96,7 +96,7 @@
       "provingParagraph": 2,
       "provingSentenceText": "Beneath the rich topsoil of every terrace, layers of coarse river gravel and packed sand were carefully arranged by Inca masons.",
       "childTip": "Look right after 'were carefully arranged' to find the 'by' phrase naming the real builders.",
-      "parentExplanation": "In this passive sentence, 'layers of coarse river gravel and packed sand' is the grammatical subject receiving the action. The true actor performing the arranging is in the final 'by' phrase: 'Inca masons' (Option A)."
+      "parentExplanation": "In this passive sentence, 'layers of coarse river gravel and packed sand' is the grammatical subject receiving the action. The true actor performing the arranging is in the final 'by' phrase: 'Inca masons' (Option C)."
     },
     {
       "questionId": "w12_q2",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The high Andes lacked tall, straight trees for wooden beams, and stone arches were too heavy to cross such wide canyons.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Wooden bridges attracted herds of wild animals that ate the corn and potato crops.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -170,15 +170,15 @@
         },
         {
           "id": "D",
-          "text": "Wooden bridges attracted herds of wild animals that ate the corn and potato crops.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "The high Andes lacked tall, straight trees for wooden beams, and stone arches were too heavy to cross such wide canyons.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps.",
       "childTip": "Click the sentence in Paragraph 3 that begins with 'Because the Andes lacked' to prove why wood and stone were not used.",
-      "parentExplanation": "Paragraph 3 directly explains the material constraint: 'Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps,' leading engineers to use wild golden grass (Option A)."
+      "parentExplanation": "Paragraph 3 directly explains the material constraint: 'Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps,' leading engineers to use wild golden grass (Option D)."
     },
     {
       "questionId": "w12_q4",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By introducing the harsh mountain challenges of the Andes and then explaining the engineering solutions the Inca created for farming and travel",
-          "isCorrect": true,
-          "trapType": null
+          "text": "By focusing only on how villagers braided three or four grass cables together to form a single bridge floor",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "By focusing only on how villagers braided three or four grass cables together to form a single bridge floor",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "By introducing the harsh mountain challenges of the Andes and then explaining the engineering solutions the Inca created for farming and travel",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -219,7 +219,7 @@
       "provingParagraph": 1,
       "provingSentenceText": "Yet Inca engineers solved both farming and travel challenges using local stone and wild mountain grass.",
       "childTip": "Look at the last sentence of Paragraph 1 to see the two big problems and solutions that organize the rest of the passage.",
-      "parentExplanation": "Aligned to ELAGSE5RI5, the passage uses a clear Problem/Solution structure forecast in Paragraph 1 ('solved both farming and travel challenges'): Paragraph 2 details the terrace solution for farming, and Paragraphs 3–5 detail the suspension bridge solution for travel (Option A)."
+      "parentExplanation": "Aligned to ELAGSE5RI5, the passage uses a clear Problem/Solution structure forecast in Paragraph 1 ('solved both farming and travel challenges'): Paragraph 2 details the terrace solution for farming, and Paragraphs 3–5 detail the suspension bridge solution for travel (Option C)."
     },
     {
       "questionId": "w12_q5",

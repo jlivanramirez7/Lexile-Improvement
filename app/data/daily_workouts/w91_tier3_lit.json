@@ -14,13 +14,13 @@
   "passage": {
     "title": "Green Ink Under the Blue Ice",
     "author": "BEACON Assessment Lab",
-    "text": "High on the Whitehorn Glacier, young scouts Ren and Nori knelt beside a roaring stream of summer meltwater. All at once, the brook plunged straight down into a deep ice shaft that dropped into the dark belly of the ice. In her coat pocket, Ren kept her granddad's faded 1974 field book. It told a classic tale of grit in which his team had lowered hemp ropes and brass weights into this very shaft. Back then, the ice walls had squeezed their line shut. Where that older adventure relied on muscle and heavy iron to fight the ice, Ren and Nori planned to let the flowing water itself carry their message through the dark.\n\nNori unfolded a silver solar mat to power their optical scanner at the foot of the mountain two miles below. At the same time, Ren unclipped two glass vials from his pack. Two flasks of bright green dye, mixed from safe salt crystals inside the base tent, were poured by Ren into the plunging ice shaft. Within seconds, the neon swirl vanished beneath the blue ice crust. If the stream ran through a straight tunnel to the valley floor, the downstream scanner would flash a mark in forty minutes.\n\nAn hour passed in the cold wind, and then two. Still, Nori's wrist screen showed only clear water coming out of the glacier's snout. Just as in the 1974 book story, the peak seemed to have swallowed their test without a trace. Nori frowned and wondered if the green dye had frozen solid inside a dead-end crack. Ren, though, checked the pressure chart from a sound pod they had spiked into the middle ice field.\n\nInstead of flat silence, the pod picked up a slow, steady hum three hundred feet below their boots. The meltwater had not frozen; it was pooling inside a vast subglacial vault carved out by geothermal warmth from the rock bed. Because that hidden lake held millions of gallons, it diluted the dye and slowed the current before releasing it in a steady trickle. At sunset, the valley sensor finally pinged. A faint, five-hour wave of green light was drifting past the lens.\n\nLooking at the smooth curve on Nori's screen beside the pencil drawings in the 1974 book, Ren felt a quiet thrill. Fifty years apart, two teams had faced the same stubborn wall of mountain ice and asked the same question. Though their tools had changed from hemp rope to laser light, both quests proved that nature reveals its deepest chambers only when explorers listen to the mountain's own rhythm.",
+    "text": "High on the Whitehorn Glacier, young scouts Ren and Nori knelt beside a roaring stream of summer meltwater. All at once, the brook plunged straight down into a deep ice shaft that dropped into the dark belly of the ice. In her coat pocket, Ren kept her granddad's faded 1974 field book. It told a classic tale of grit in which his team had lowered hemp ropes and brass weights into this very shaft. Back then, the ice walls had squeezed their line shut. Where that older adventure relied on muscle and heavy iron to fight the ice, Ren and Nori planned to let the flowing water itself carry their message through the dark.\n\nNori unfolded a silver solar mat to power their optical scanner at the foot of the mountain two miles below. At the same time, Ren unclipped two glass vials from her pack. Two flasks of bright green dye, mixed from safe salt crystals inside the base tent, were poured by Ren into the plunging ice shaft. Within seconds, the neon swirl vanished beneath the blue ice crust. If the stream ran through a straight tunnel to the valley floor, the downstream scanner would flash a mark in forty minutes.\n\nAn hour passed in the cold wind, and then two. Still, Nori's wrist screen showed only clear water coming out of the glacier's snout. Just as in the 1974 book story, the peak seemed to have swallowed their test without a trace. Nori frowned and wondered if the green dye had frozen solid inside a dead-end crack. Ren, though, checked the pressure chart from a sound pod they had spiked into the middle ice field.\n\nInstead of flat silence, the pod picked up a slow, steady hum three hundred feet below their boots. The meltwater had not frozen; it was pooling inside a vast subglacial vault carved out by geothermal warmth from the rock bed. Because that hidden lake held millions of gallons, it diluted the dye and slowed the current before releasing it in a steady trickle. At sunset, the valley sensor finally pinged. A faint, five-hour wave of green light was drifting past the lens.\n\nLooking at the smooth curve on Nori's screen beside the pencil drawings in the 1974 book, Ren felt a quiet thrill. Fifty years apart, two teams had faced the same stubborn wall of mountain ice and asked the same question. Though their tools had changed from hemp rope to laser light, both quests proved that nature reveals its deepest chambers only when explorers listen to the mountain's own rhythm.",
     "wordCount": 429,
     "paragraphCount": 5,
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "Two flasks of bright green dye, mixed from safe salt crystals inside the base tent, were poured by Ren into the plunging ice shaft.",
-      "actorChunk": "by Ren",
+      "actorChunk": "Ren",
       "actionChunk": "were poured",
       "receiverChunk": "Two flasks of bright green dye",
       "distractorChunks": [
@@ -34,13 +34,13 @@
         "word": "shaft",
         "definition": "A deep, narrow vertical tunnel or opening dropping straight down",
         "rootHint": "Old English sceaft (long straight rod or vertical passage)",
-        "contextClue": "The brook 'plunged straight down into a vertical ice shaft that vanished into the dark belly of the glacier.'"
+        "contextClue": "The brook 'plunged straight down into a deep ice shaft that dropped into the dark belly of the ice.'"
       },
       {
         "word": "trace",
         "definition": "A visible mark, sign, or tiny left-behind clue that something was present",
         "rootHint": "Old French tracier (to follow a track or mark)",
-        "contextClue": "When only clear, untinted water exited the glacier, 'the mountain seemed to have swallowed their test without a trace.'"
+        "contextClue": "When only clear water exited the glacier, 'the peak seemed to have swallowed their test without a trace.'"
       },
       {
         "word": "vault",
@@ -77,17 +77,17 @@
         },
         {
           "id": "B",
+          "text": "Ren, one of the young scouts on the glacier",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Ren') in the passive construction 'were poured by Ren'."
+        },
+        {
+          "id": "C",
           "text": "Two flasks of bright green dye",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Two flasks of bright green dye') with the person who poured them."
-        },
-        {
-          "id": "C",
-          "text": "Ren, one of the junior hydrologists on the glacier",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Ren') in the passive construction 'were poured by Ren'."
         },
         {
           "id": "D",
@@ -160,10 +160,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Instead of flowing through a straight tunnel, the stream emptied into a huge underground lake that slowed the current.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately connects the 40-minute straight-tunnel prediction in Paragraph 2 with the subglacial lake discovery in Paragraph 4."
+          "text": "Nori forgot to unfold the silver solar mat until the sun had already set behind the peak.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Contradicts Paragraph 2, where Nori unfolded the solar mat before Ren poured the dye."
         },
         {
           "id": "B",
@@ -174,10 +174,10 @@
         },
         {
           "id": "C",
-          "text": "Nori forgot to unfold the silver solar mat until the sun had already set behind the peak.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraph 2, where Nori unfolded the solar mat before Ren poured the dye."
+          "text": "Instead of flowing through a straight tunnel, the stream emptied into a huge underground lake that slowed the current.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately connects the 40-minute straight-tunnel prediction in Paragraph 2 with the subglacial lake discovery in Paragraph 4."
         },
         {
           "id": "D",
@@ -205,17 +205,17 @@
       "options": [
         {
           "id": "A",
-          "text": "While both quests sought to map the hidden path of the glacier's water, the 1974 tale relied on physical force with ropes and weights, whereas Ren and Nori worked with the water's own flow using dye and sensors.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately compares the shared goal/theme and contrasts the two approaches described in Paragraphs 1 and 5."
+          "text": "The 1974 expedition used optical scanners and sound pods, whereas Ren and Nori lowered heavy iron weights on hemp ropes.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Swaps the tools used by the 1974 team and the modern scouts."
         },
         {
           "id": "B",
-          "text": "The 1974 expedition used laser sensors and seismic pods, whereas Ren and Nori lowered heavy iron weights on hemp ropes.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Swaps the tools used by the 1974 team and the modern hydrologists."
+          "text": "While both quests mapped the glacier's hidden water, the 1974 team used ropes and iron weights, whereas Ren and Nori used dye and sensors.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately compares the shared goal/theme and contrasts the two approaches described in Paragraphs 1 and 5."
         },
         {
           "id": "C",
@@ -229,7 +229,7 @@
           "text": "Only the 1974 team cared about the mountain's secrets, while Ren and Nori were forced to hike up the glacier against their will.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'Only' and contradicts Ren's 'quiet thrill' at continuing his grandfather's quest."
+          "diagnosticNote": "Uses 'Only' and contradicts Ren's 'quiet thrill' at continuing her granddad's quest."
         }
       ],
       "provingParagraph": 1,
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Nature reveals its hidden mysteries when explorers work with natural forces and listen patiently rather than trying to overpower them.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the failure of forcing iron weights into the ice (Para 1), the success of letting water carry the dye and listening to the seismic pod (Paras 2-4), and the final reflection (Para 5)."
+          "text": "Glacier streams always flow in straight tunnels that reach the valley floor in forty minutes.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Mistakes the initial 'if' hypothesis in Paragraph 2 for a universal fact, which the story disproves."
         },
         {
           "id": "B",
@@ -265,10 +265,10 @@
         },
         {
           "id": "C",
-          "text": "Glacier streams always flow in straight tunnels that reach the valley floor in forty minutes.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Mistakes the initial 'if' hypothesis in Paragraph 2 for a universal fact, which the story disproves."
+          "text": "Nature reveals its hidden mysteries when explorers work with natural forces and listen patiently rather than trying to overpower them.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the failure of forcing iron weights into the ice (Para 1), the success of letting water carry the dye and listening to the seismic pod (Paras 2-4), and the final reflection (Para 5)."
         },
         {
           "id": "D",
@@ -281,7 +281,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "Though their tools had changed from hemp rope to laser light, both quests proved that nature reveals its deepest chambers only when explorers listen to the mountain's own rhythm.",
       "childTip": "Read the final sentence of Paragraph 5 to see what both glacier quests proved about how nature reveals its secrets.",
-      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Option A captures the story's central insight: instead of fighting the ice with brute force, Ren and Nori succeed by letting the stream carry the dye and listening to the glacier's seismic rhythm."
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Option C captures the story's central insight: instead of fighting the ice with brute force, Ren and Nori succeed by letting the stream carry the dye and listening to the glacier's seismic rhythm."
     },
     {
       "questionId": "w91_q6",

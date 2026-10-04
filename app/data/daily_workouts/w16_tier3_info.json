@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The brass balance wheels, linked by twin coiled springs inside a wooden case, were carefully designed by John Harrison to beat at a steady rate.",
-      "actorChunk": "by John Harrison",
+      "actorChunk": "John Harrison",
       "actionChunk": "were carefully designed",
       "receiverChunk": "The brass balance wheels",
       "distractorChunks": [
@@ -77,17 +77,17 @@
         },
         {
           "id": "B",
-          "text": "John Harrison carefully designed the brass balance wheels to beat at a steady rate.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Correctly flips the passive verb ('were carefully designed by John Harrison') into active voice with John Harrison as the subject and the brass balance wheels as the receiver."
-        },
-        {
-          "id": "C",
           "text": "The brass balance wheels carefully designed John Harrison inside a wooden case.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
           "diagnosticNote": "Flips the actor and receiver so the wheels design the inventor."
+        },
+        {
+          "id": "C",
+          "text": "John Harrison carefully designed the brass balance wheels to beat at a steady rate.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Correctly flips the passive verb ('were carefully designed by John Harrison') into active voice with John Harrison as the subject and the brass balance wheels as the receiver."
         },
         {
           "id": "D",
@@ -212,17 +212,17 @@
         },
         {
           "id": "B",
-          "text": "By explaining the two physical problems that ruined clocks at sea and describing the mechanical inventions Harrison built to solve each one",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Accurately identifies the Problem-and-Solution structure addressing wave motion (twin coiled springs) and temperature swings (twin-metal strip)."
-        },
-        {
-          "id": "C",
           "text": "By listing every member of the British Parliament in the order they voted on the cash prize",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
           "diagnosticNote": "Fabricates a chronological list based on the brief mention of Parliament in Paragraph 2."
+        },
+        {
+          "id": "C",
+          "text": "By explaining the two physical problems that ruined clocks at sea and describing the mechanical inventions Harrison built to solve each one",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Accurately identifies the Problem-and-Solution structure addressing wave motion (twin coiled springs) and temperature swings (twin-metal strip)."
         },
         {
           "id": "D",

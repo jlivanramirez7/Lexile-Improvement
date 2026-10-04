@@ -76,9 +76,9 @@
         },
         {
           "id": "B",
-          "text": "Reversible electric pumps draw and push the water, and it ends up in the upper stone basin on the mountain.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Heavy rain clouds fill the upper stone basin because the valley lake is completely dry.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -88,9 +88,9 @@
         },
         {
           "id": "D",
-          "text": "Heavy rain clouds fill the upper stone basin because the valley lake is completely dry.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Reversible electric pumps draw and push the water, and it ends up in the upper stone basin on the mountain.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -107,13 +107,13 @@
       "standard": "ELAGSE5RI4",
       "dok": 2,
       "requireClickToProve": false,
-      "prompt": "Read these sentences from Paragraph 2 and Paragraph 3:\n\n\"One lake rests in the valley, while the second lake sits in a stone bowl high on the mountaintop... Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.\"\n\nWhat does the word basin mean as it is used in Paragraph 3?",
+      "prompt": "Read these sentences from Paragraph 2 and Paragraph 3:\n\n\"One lake rests in the low valley. The second lake sits in a stone bowl high on the hill... Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.\"\n\nWhat does the word basin mean as it is used in Paragraph 3?",
       "options": [
         {
           "id": "A",
-          "text": "A bowl-shaped hollow that holds a lake of water",
-          "isCorrect": true,
-          "trapType": null
+          "text": "A glass panel that catches midday sunshine",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "A glass panel that catches midday sunshine",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "A bowl-shaped hollow that holds a lake of water",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -136,8 +136,8 @@
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Vast gallons of cool river water, drawn from the lower valley lake by reversible electric pumps, are pushed high up the mountain into the upper stone basin.",
-      "childTip": "Connect 'upper stone basin' in Paragraph 3 to 'a stone bowl high on the mountaintop' in Paragraph 2.",
-      "parentExplanation": "Paragraph 2 describes the upper lake sitting in 'a stone bowl high on the mountaintop,' which directly defines 'the upper stone basin' in Paragraph 3."
+      "childTip": "Connect 'upper stone basin' in Paragraph 3 to 'a stone bowl high on the hill' in Paragraph 2.",
+      "parentExplanation": "Paragraph 2 describes the upper lake sitting in 'a stone bowl high on the hill,' which directly defines 'the upper stone basin' in Paragraph 3."
     },
     {
       "questionId": "w44_q3",
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Solar panels make the most power at noon, whereas families use the most electricity in the evening.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Solar panels only work during cold winter nights when the wind blows across the hills.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "B",
+          "text": "Solar panels make the most power at noon, whereas families use the most electricity in the evening.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "It stores extra energy by pumping water uphill during the day and releases that energy by spinning turbines at night, repeating the cycle daily.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "The upper lake is filled with battery acid instead of fresh river water from the valley.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "It stores extra energy by pumping water uphill during the day and releases that energy by spinning turbines at night, repeating the cycle daily.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",

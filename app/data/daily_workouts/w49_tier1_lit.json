@@ -70,15 +70,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The cousins drew brown contour lines on the granite bluff, and the saddle trail avoided the paper map.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
-        },
-        {
-          "id": "B",
           "text": "Tightly packed brown contour lines marked the bluff on the map, and the cousins avoided it.",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "The cousins drew brown contour lines on the granite bluff, and the saddle trail avoided the paper map.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -111,15 +111,15 @@
       "options": [
         {
           "id": "A",
-          "text": "Turned and matched up so both pointed the same way",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "Tore into small strips to mark the trees along the path",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "B",
+          "text": "Turned and matched up so both pointed the same way",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -158,15 +158,15 @@
         },
         {
           "id": "B",
-          "text": "She explains that mountain mist blows from all sides, causing moss to grow all around a trunk.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "She cannot see the tree bark clearly because the sun has already set behind the ridge.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL"
+        },
+        {
+          "id": "C",
+          "text": "She explains that mountain mist blows from all sides, causing moss to grow all around a trunk.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -199,9 +199,9 @@
         },
         {
           "id": "B",
-          "text": "It shows the cousins putting the map clues into action as they compare the contour lines to the real mountain slopes.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "It describes how park rangers built the stone shelter out of hemlock logs.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "C",
@@ -211,9 +211,9 @@
         },
         {
           "id": "D",
-          "text": "It describes how park rangers built the stone shelter out of hemlock logs.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "It shows the cousins putting the map clues into action as they compare the contour lines to the real mountain slopes.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 4,

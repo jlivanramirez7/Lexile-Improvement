@@ -69,9 +69,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Thick white winter hair replaces the dark brown summer fur.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Passing owls and lynxes replace the animal's winter coat.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -87,9 +87,9 @@
         },
         {
           "id": "D",
-          "text": "Passing owls and lynxes replace the animal's winter coat.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Thick white winter hair replaces the dark brown summer fur.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -116,15 +116,15 @@
         },
         {
           "id": "B",
-          "text": "A natural disguise that helps an animal blend into its background",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "A deep underground tunnel dug beneath frozen soil",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO"
+        },
+        {
+          "id": "C",
+          "text": "A natural disguise that helps an animal blend into its background",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -157,15 +157,15 @@
         },
         {
           "id": "B",
-          "text": "Eating white moss and icy twigs instead of green summer leaves",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
-        },
-        {
-          "id": "C",
           "text": "Sensing fewer hours of daylight through its eyes as autumn days grow shorter",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "C",
+          "text": "Eating white moss and icy twigs instead of green summer leaves",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "D",

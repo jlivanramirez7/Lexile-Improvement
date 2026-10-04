@@ -282,20 +282,40 @@ LEGACY_TRAP_MAP = {
 }
 
 
+_CURRICULUM_CACHE: Optional[Dict[str, Any]] = None
+_CURRICULUM_MTIME: float = 0.0
+_WORKOUTS_CACHE: Optional[List[Dict[str, Any]]] = None
+_WORKOUTS_DIR_MTIME: float = 0.0
+
+
 def load_curriculum_matrix() -> Dict[str, Any]:
+    global _CURRICULUM_CACHE, _CURRICULUM_MTIME
     if os.path.exists(CURRICULUM_FILE):
         try:
+            mtime = os.path.getmtime(CURRICULUM_FILE)
+            if _CURRICULUM_CACHE is not None and mtime == _CURRICULUM_MTIME:
+                return _CURRICULUM_CACHE
             with open(CURRICULUM_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
+                _CURRICULUM_CACHE = json.load(f)
+                _CURRICULUM_MTIME = mtime
+                return _CURRICULUM_CACHE
         except Exception as e:
             logger.error(f"Failed to read curriculum_matrix.json: {e}")
     return {"studentProfile": {}, "tiers": [], "domains": [], "trapArchetypes": {}}
 
 
 def load_all_workouts() -> List[Dict[str, Any]]:
+    global _WORKOUTS_CACHE, _WORKOUTS_DIR_MTIME
     workouts: List[Dict[str, Any]] = []
     if not os.path.exists(WORKOUTS_DIR):
         return workouts
+
+    try:
+        dir_mtime = os.path.getmtime(WORKOUTS_DIR)
+        if _WORKOUTS_CACHE is not None and dir_mtime == _WORKOUTS_DIR_MTIME:
+            return _WORKOUTS_CACHE
+    except Exception:
+        dir_mtime = 0.0
 
     pattern_direct = os.path.join(WORKOUTS_DIR, "*.json")
     pattern_nested = os.path.join(WORKOUTS_DIR, "**", "*.json")
@@ -316,6 +336,8 @@ def load_all_workouts() -> List[Dict[str, Any]]:
             logger.warning(f"Skipping invalid workout file {norm_path}: {e}")
 
     workouts.sort(key=lambda w: (w.get("workoutNumber", 9999), w.get("workoutId", "")))
+    _WORKOUTS_CACHE = workouts
+    _WORKOUTS_DIR_MTIME = dir_mtime
     return workouts
 
 
@@ -729,6 +751,7 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
         lex_w_sum = anchor_weight
         lex_val_sum = anchor_weight * baseline_lexile
         mastery_bonus = 0.0
+        running_lex = baseline_lexile
 
         for idx, trial in enumerate(trial_history):
             age = (n_trials - 1) - idx
@@ -741,7 +764,10 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
             else:
                 acc = float(trial.get("firstTryAccuracyPct", 75.0)) / 100.0
 
-            eff_lex = max(baseline_lexile, t_lex)
+            if acc >= 0.65:
+                eff_lex = max(baseline_lexile, t_lex, running_lex - 15.0)
+            else:
+                eff_lex = max(baseline_lexile, t_lex)
             if acc >= 0.50:
                 perf_lex = eff_lex + (acc - 0.68) * 145.0
             else:
@@ -754,6 +780,8 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
                 mastery_bonus += 4.5
             elif acc >= 0.66:
                 mastery_bonus += 2.0
+
+            running_lex = max(850.0, min(1180.0, (lex_val_sum / lex_w_sum) + min(45.0, mastery_bonus)))
 
         raw_est = (lex_val_sum / lex_w_sum) + min(45.0, mastery_bonus)
         # Round to nearest 5L matching BEACON convention

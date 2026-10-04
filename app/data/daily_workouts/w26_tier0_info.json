@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Exact and specific",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Careless and random",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -129,9 +129,9 @@
         },
         {
           "id": "D",
-          "text": "Careless and random",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "Exact and specific",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "By flying in tall circles above the roof of the wooden hive",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "By changing how long she performs the middle waggle run of her dance",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -164,9 +164,9 @@
         },
         {
           "id": "C",
-          "text": "By changing how long she performs the middle waggle run of her dance",
-          "isCorrect": true,
-          "trapType": null
+          "text": "By flying in tall circles above the roof of the wooden hive",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "D",
@@ -193,9 +193,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Paragraph 3 explains how the dance shows distance, and Paragraph 4 explains how the dance shows direction.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Paragraph 3 tells how bees make wax combs, and Paragraph 4 tells how bees store honey for winter.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "B",
@@ -205,9 +205,9 @@
         },
         {
           "id": "C",
-          "text": "Paragraph 3 tells how bees make wax combs, and Paragraph 4 tells how bees store honey for winter.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Paragraph 3 explains how the dance shows distance, and Paragraph 4 explains how the dance shows direction.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -241,9 +241,9 @@
         },
         {
           "id": "B",
-          "text": "Scout honeybees use a detailed dance and nectar samples to guide hive mates to distant flowers.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Wax combs inside a wooden hive must always be built near a winding stream and tall pine trees.",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "C",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "Wax combs inside a wooden hive must always be built near a winding stream and tall pine trees.",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "Scout honeybees use a detailed dance and nectar samples to guide hive mates to distant flowers.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 5,
@@ -283,9 +283,9 @@
         },
         {
           "id": "B",
-          "text": "\"Inside the hive, there is no light to show where the flowers grow.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"By turning simple steps and angles into a living map, honeybees feed their whole colony without speaking a single word.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"By turning simple steps and angles into a living map, honeybees feed their whole colony without speaking a single word.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"Inside the hive, there is no light to show where the flowers grow.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

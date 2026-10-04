@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 2,
       "verbatimSentence": "The faded cobalt river, bordered by rows of brick mill houses, was gently cleaned by Mateo with a damp sponge and warm chalk water.",
-      "actorChunk": "by Mateo",
+      "actorChunk": "Mateo",
       "actionChunk": "was gently cleaned",
       "receiverChunk": "The faded cobalt river",
       "distractorChunks": [
@@ -122,17 +122,17 @@
         },
         {
           "id": "B",
-          "text": "Planned on purpose with a clear goal in mind",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Uses the direct contrast clue ('not an accident') and Paragraph 4's explanation of her goal for future artists."
-        },
-        {
-          "id": "C",
           "text": "Covered in thick layers of gray street dust",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
           "diagnosticNote": "Borrows descriptive language from Paragraph 1 unrelated to the meaning of 'deliberate.'"
+        },
+        {
+          "id": "C",
+          "text": "Planned on purpose with a clear goal in mind",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the direct contrast clue ('not an accident') and Paragraph 4's explanation of her goal for future artists."
         },
         {
           "id": "D",
@@ -212,17 +212,17 @@
         },
         {
           "id": "B",
-          "text": "To visually connect the valley's past on the first three walls with an open doorway leading into the community's future",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Captures the symbolic structural role of the archway as a bridge from the historical scenes into the unfinished future."
-        },
-        {
-          "id": "C",
           "text": "To mark the exact spot where builders planned to knock down the brick library wall to add a new door",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
           "diagnosticNote": "Takes the painted archway literally as a construction blueprint rather than part of the mural."
+        },
+        {
+          "id": "C",
+          "text": "To visually connect the valley's past on the first three walls with an open doorway leading into the community's future",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Captures the symbolic structural role of the archway as a bridge from the historical scenes into the unfinished future."
         },
         {
           "id": "D",

@@ -116,9 +116,9 @@
         },
         {
           "id": "B",
-          "text": "The back end of a boat",
-          "isCorrect": true,
-          "trapType": null
+          "text": "A sliding valve at the bottom of a wall",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "C",
@@ -128,9 +128,9 @@
         },
         {
           "id": "D",
-          "text": "A sliding valve at the bottom of a wall",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "The back end of a boat",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Only when the water level inside the lock chamber matches the water level on the other side of that gate",
-          "isCorrect": true,
-          "trapType": null
+          "text": "As soon as the crew unloads all of the heavy coal and lumber onto the stone walls",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -252,9 +252,9 @@
         },
         {
           "id": "D",
-          "text": "As soon as the crew unloads all of the heavy coal and lumber onto the stone walls",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Only when the water level inside the lock chamber matches the water level on the other side of that gate",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,

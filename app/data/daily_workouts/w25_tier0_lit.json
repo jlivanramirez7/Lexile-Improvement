@@ -205,15 +205,15 @@
         },
         {
           "id": "C",
-          "text": "It describes the storm damage in the park and explains why Maya is out walking on the path.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "D",
           "text": "It teaches readers how to tell an eastern box turtle apart from a painted river rock.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "D",
+          "text": "It describes the storm damage in the park and explains why Maya is out walking on the path.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 1,
@@ -241,9 +241,9 @@
         },
         {
           "id": "B",
-          "text": "Wild animals can only survive storms if park workers build higher bridges.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Paying attention and acting with gentle care allows ordinary people to protect nature.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -253,9 +253,9 @@
         },
         {
           "id": "D",
-          "text": "Paying attention and acting with gentle care allows ordinary people to protect nature.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Wild animals can only survive storms if park workers build higher bridges.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         }
       ],
       "provingParagraph": 5,

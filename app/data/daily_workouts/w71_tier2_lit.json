@@ -151,9 +151,9 @@
       "options": [
         {
           "id": "A",
-          "text": "They want to let the water pressure drop safely so a sudden mud surge does not flood the mill cellar.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "They want to keep the spring water locked inside the cave so the waterwheel never turns.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -169,9 +169,9 @@
         },
         {
           "id": "D",
-          "text": "They want to keep the spring water locked inside the cave so the waterwheel never turns.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "They want to let the water pressure drop safely so a sudden mud surge does not flood the mill cellar.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -234,9 +234,9 @@
       "options": [
         {
           "id": "A",
-          "text": "The mill builder had connected a hidden underground spring to the chute so the mill could run even during summer droughts.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "The giant oak waterwheel was too heavy to ever move again without an electric motor.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -246,9 +246,9 @@
         },
         {
           "id": "C",
-          "text": "The giant oak waterwheel was too heavy to ever move again without an electric motor.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "The mill builder had connected a hidden underground spring to the chute so the mill could run even during summer droughts.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -276,15 +276,15 @@
       "options": [
         {
           "id": "A",
-          "text": "\"Late July heat baked the red clay hills of North Carolina.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
-        },
-        {
-          "id": "B",
           "text": "\"Their grandfather had told them that the mill builder had tapped a cold mountain spring to keep grain grinding during summer droughts.\"",
           "isCorrect": true,
           "trapType": null
+        },
+        {
+          "id": "B",
+          "text": "\"Late July heat baked the red clay hills of North Carolina.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         },
         {
           "id": "C",

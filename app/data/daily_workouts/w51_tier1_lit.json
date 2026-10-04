@@ -76,15 +76,15 @@
         },
         {
           "id": "B",
-          "text": "The warm wooden violas carried the inner rhythm, and Elena missed it from her front-row chair.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "C",
           "text": "The front-row chair carried the wooden violas across the band room while Elena watched.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "C",
+          "text": "The warm wooden violas carried the inner rhythm, and Elena missed it from her front-row chair.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -158,9 +158,9 @@
         },
         {
           "id": "B",
-          "text": "She discovers that the violas play a rising counter-melody that connects the deep cellos to her high violin part.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "She concludes that the middle row only plays quiet background filler chords.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "C",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "She concludes that the middle row only plays quiet background filler chords.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "She discovers that the violas play a rising counter-melody that connects the deep cellos to her high violin part.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 3,
@@ -193,15 +193,15 @@
       "options": [
         {
           "id": "A",
-          "text": "To show how Elena's clear high notes and the violas' rich low notes blended together into one fabric of sound",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "To explain that the students had to sew their own wool concert uniforms before Tuesday",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH"
+        },
+        {
+          "id": "B",
+          "text": "To show how Elena's clear high notes and the violas' rich low notes blended together into one fabric of sound",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
@@ -235,9 +235,9 @@
       "options": [
         {
           "id": "A",
-          "text": "At first she tries to play louder than everyone else, but by the end she listens closely to blend her part with the other strings.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "At first she wants Malik to play the solo, but by the end she insists on playing alone on stage.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL"
         },
         {
           "id": "B",
@@ -247,9 +247,9 @@
         },
         {
           "id": "C",
-          "text": "At first she wants Malik to play the solo, but by the end she insists on playing alone on stage.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "text": "At first she tries to play louder than everyone else, but by the end she listens closely to blend her part with the other strings.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -277,9 +277,9 @@
       "options": [
         {
           "id": "A",
-          "text": "\"For three weeks, Elena had practiced the spring concert solo until her fingers knew every note on her violin neck.\"",
-          "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "text": "\"True harmony happened only when she listened as carefully as she played.\"",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "B",
@@ -295,9 +295,9 @@
         },
         {
           "id": "D",
-          "text": "\"True harmony happened only when she listened as carefully as she played.\"",
-          "isCorrect": true,
-          "trapType": null
+          "text": "\"For three weeks, Elena had practiced the spring concert solo until her fingers knew every note on her violin neck.\"",
+          "isCorrect": false,
+          "trapType": "TRAP_TOO_NARROW"
         }
       ],
       "provingParagraph": 5,

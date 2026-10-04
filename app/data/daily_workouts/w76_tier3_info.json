@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 3,
       "verbatimSentence": "Dense oils locked inside the massive whale bones, broken down by partner bacteria living inside the worms' green roots, are steadily absorbed to fuel the growing colony.",
-      "actorChunk": "by partner bacteria living inside the worms' green roots",
+      "actorChunk": "partner bacteria living inside the worms' green roots",
       "actionChunk": "are steadily absorbed",
       "receiverChunk": "Dense oils locked inside the massive whale bones",
       "distractorChunks": [
@@ -115,10 +115,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Empty and lacking food to support much life",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Aligns with Paragraph 1's description that food is scarce on the dark muddy plain and Paragraph 5's contrast with a 'thriving oasis.'"
+          "text": "Made completely out of hollow whale ribs",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH",
+          "diagnosticNote": "Borrows 'rib' from earlier in the sentence instead of defining the surrounding seabed plain."
         },
         {
           "id": "B",
@@ -136,10 +136,10 @@
         },
         {
           "id": "D",
-          "text": "Made completely out of hollow whale ribs",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows 'rib' from earlier in the sentence instead of defining the surrounding seabed plain."
+          "text": "Empty and lacking food to support much life",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Aligns with Paragraph 1's description that food is scarce on the dark muddy plain and Paragraph 5's contrast with a 'thriving oasis.'"
         }
       ],
       "provingParagraph": 5,
@@ -205,10 +205,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Both rely on partner bacteria to turn substances from the whale bones into usable food.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes Paragraph 3 (partner bacteria in Osedax roots break down bone oils) and Paragraph 4 (bacteria in clams and tube worms turn sulfur gas from bones into food)."
+          "text": "Both swim up to the sunlit ocean surface to catch live plankton and gray whales.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Reverses the habitat and feeding behavior of deep-sea bottom dwellers that stay anchored around the sunken skeleton."
         },
         {
           "id": "B",
@@ -219,10 +219,10 @@
         },
         {
           "id": "C",
-          "text": "Both swim up to the sunlit ocean surface to catch live plankton and gray whales.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the habitat and feeding behavior of deep-sea bottom dwellers that stay anchored around the sunken skeleton."
+          "text": "Both rely on partner bacteria to turn substances from the whale bones into usable food.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes Paragraph 3 (partner bacteria in Osedax roots break down bone oils) and Paragraph 4 (bacteria in clams and tube worms turn sulfur gas from bones into food)."
         },
         {
           "id": "D",

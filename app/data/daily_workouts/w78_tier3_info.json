@@ -20,7 +20,7 @@
     "monsterSentence": {
       "paragraphNumber": 3,
       "verbatimSentence": "Fifty-eight large metal boxes, packed with loose factory goods by warehouse crews in New Jersey, were smoothly hoisted onto the ship deck by a giant dock crane.",
-      "actorChunk": "by a giant dock crane",
+      "actorChunk": "a giant dock crane",
       "actionChunk": "were smoothly hoisted",
       "receiverChunk": "Fifty-eight large metal boxes",
       "distractorChunks": [
@@ -52,7 +52,7 @@
         "word": "vast",
         "definition": "Extremely large in size, number, or reach",
         "rootHint": "vastus (Latin root meaning 'immense' or 'huge')",
-        "contextClue": "Modern container ships 'carry up to twenty thousand steel boxes across the oceans on a single voyage.'"
+        "contextClue": "Modern container ships 'carry up to twenty thousand steel boxes across the sea on a single trip.'"
       }
     ]
   },
@@ -115,10 +115,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Standard and matching in size and shape",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Uses the root 'uni- + form' (one shape) and the surrounding context of matching twenty-foot and forty-foot sizes with matching corner castings."
+          "text": "Odd-shaped and different at every single port",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Gives the exact opposite meaning; different hook and box sizes prevented cranes from lifting foreign containers."
         },
         {
           "id": "B",
@@ -129,10 +129,10 @@
         },
         {
           "id": "C",
-          "text": "Odd-shaped and different at every single port",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Gives the exact opposite meaning; different hook and box sizes prevented cranes from lifting foreign containers."
+          "text": "Standard and matching in size and shape",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Uses the root 'uni- + form' (one shape) and the surrounding context of matching twenty-foot and forty-foot sizes with matching corner locks."
         },
         {
           "id": "D",
@@ -212,17 +212,17 @@
         },
         {
           "id": "B",
+          "text": "Cranes loaded the ship in eight hours instead of a week, and loading costs fell to sixteen cents a ton.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Directly proves both parts of the claim with specific time data (eight hours vs. a week) and cost data ($6.00 vs. $0.16 per ton)."
+        },
+        {
+          "id": "C",
           "text": "Warehouse crews in New Jersey packed loose factory goods inside the fifty-eight large metal boxes.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
           "diagnosticNote": "Describes what was inside the boxes rather than providing evidence of faster loading or lower costs."
-        },
-        {
-          "id": "C",
-          "text": "Cranes loaded the ship in under eight hours instead of a week, and loading costs dropped from nearly six dollars a ton to sixteen cents a ton.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Directly proves both parts of the claim with specific time data (eight hours vs. a week) and cost data ($6.00 vs. $0.16 per ton)."
         },
         {
           "id": "D",
@@ -251,10 +251,10 @@
       "options": [
         {
           "id": "A",
-          "text": "Standardized steel shipping containers transformed global trade by allowing cargo to move quickly and cheaply between ships, trains, and trucks without being unpacked.",
-          "isCorrect": true,
-          "trapType": null,
-          "diagnosticNote": "Synthesizes the problem (slow manual ports), McLean's intermodal invention, global standardization, and modern trade impact."
+          "text": "Malcom McLean bought an old oil tanker named the Ideal X because he wanted to ship oil from New Jersey to Texas.",
+          "isCorrect": false,
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "diagnosticNote": "Misinterprets why McLean used a refitted oil tanker in Paragraph 3."
         },
         {
           "id": "B",
@@ -265,10 +265,10 @@
         },
         {
           "id": "C",
-          "text": "Malcom McLean bought an old oil tanker named the Ideal X because he wanted to ship oil from New Jersey to Texas.",
-          "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Misinterprets why McLean used a refitted oil tanker in Paragraph 3."
+          "text": "Standardized steel shipping containers transformed global trade by allowing cargo to move quickly and cheaply between ships, trains, and trucks without being unpacked.",
+          "isCorrect": true,
+          "trapType": null,
+          "diagnosticNote": "Synthesizes the problem (slow manual ports), McLean's intermodal invention, global standardization, and modern trade impact."
         },
         {
           "id": "D",
@@ -281,7 +281,7 @@
       "provingParagraph": 5,
       "provingSentenceText": "By turning messy piles of freight into neat building blocks, the simple shipping container reshaped how the modern world buys and sells almost everything.",
       "childTip": "Choose the big idea that explains how standard steel containers changed shipping across the whole world.",
-      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option A integrates McLean's innovation, global standardization, and the transformation of world trade."
+      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option C integrates McLean's innovation, global standardization, and the transformation of world trade."
     },
     {
       "questionId": "w78_q6",

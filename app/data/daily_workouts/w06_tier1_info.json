@@ -111,9 +111,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Stretching across the entire continent from coast to coast",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Written on thin tissue paper that weighs less than twenty pounds",
+          "isCorrect": false,
+          "trapType": "TRAP_WORD_MATCH"
         },
         {
           "id": "B",
@@ -123,9 +123,9 @@
         },
         {
           "id": "C",
-          "text": "Written on thin tissue paper that weighs less than twenty pounds",
-          "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "text": "Stretching across the entire continent from coast to coast",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "D",
@@ -152,9 +152,9 @@
       "options": [
         {
           "id": "A",
-          "text": "Swapping to a fresh horse every ten miles allowed the mail to travel at top speed day and night without stopping.",
-          "isCorrect": true,
-          "trapType": null
+          "text": "Stagecoach drivers blocked the trail whenever a horse ran farther than ten miles.",
+          "isCorrect": false,
+          "trapType": "TRAP_OUTSIDE_INFO"
         },
         {
           "id": "B",
@@ -170,9 +170,9 @@
         },
         {
           "id": "D",
-          "text": "Stagecoach drivers blocked the trail whenever a horse ran farther than ten miles.",
-          "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "text": "Swapping to a fresh horse every ten miles allowed the mail to travel at top speed day and night without stopping.",
+          "isCorrect": true,
+          "trapType": null
         }
       ],
       "provingParagraph": 2,
@@ -235,15 +235,15 @@
       "options": [
         {
           "id": "A",
-          "text": "The telegraph could send messages across the country in minutes using electricity, making a ten-day horse relay unnecessary.",
-          "isCorrect": true,
-          "trapType": null
-        },
-        {
-          "id": "B",
           "text": "All two hundred relay stations were washed away by a single autumn flood in Missouri.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME"
+        },
+        {
+          "id": "B",
+          "text": "The telegraph could send messages across the country in minutes using electricity, making a ten-day horse relay unnecessary.",
+          "isCorrect": true,
+          "trapType": null
         },
         {
           "id": "C",
