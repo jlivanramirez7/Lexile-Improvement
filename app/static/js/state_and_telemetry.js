@@ -417,14 +417,48 @@
       D5_EBSR: null
     };
 
+    const workoutsById = {};
+    const workoutsByTitle = {};
+    const workoutsByNum = {};
+    if (Array.isArray(workouts)) {
+      workouts.forEach(function (w) {
+        if (!w || typeof w !== "object") return;
+        if (w.workoutId) workoutsById[String(w.workoutId)] = w;
+        if (w.title) workoutsByTitle[String(w.title).trim().toLowerCase()] = w;
+        if (w.workoutNumber !== undefined && w.workoutNumber !== null) {
+          workoutsByNum[Number(w.workoutNumber)] = w;
+        }
+      });
+    }
+
     prog.trialHistory.forEach(function (trial) {
       if (!trial || typeof trial !== "object") return;
-      if (trial.workoutId && !completedWorkoutIds.includes(trial.workoutId)) {
-        completedWorkoutIds.push(trial.workoutId);
+      let wId = trial.workoutId;
+      const wTitleKey = String(trial.title || trial.workoutTitle || "").trim().toLowerCase();
+      const wNum = trial.workoutNumber !== undefined && trial.workoutNumber !== null ? Number(trial.workoutNumber) : null;
+      const matchedW =
+        (wId && workoutsById[String(wId)]) ||
+        (wTitleKey && workoutsByTitle[wTitleKey]) ||
+        (wNum !== null && workoutsByNum[wNum]) ||
+        null;
+
+      if (matchedW) {
+        if (!wId || !workoutsById[String(wId)]) {
+          wId = matchedW.workoutId;
+          trial.workoutId = wId;
+        }
+        if (matchedW.passage) {
+          trial.passage = matchedW.passage;
+        }
+      }
+      const wQuestions = matchedW && Array.isArray(matchedW.questions) ? matchedW.questions : [];
+
+      if (wId && !completedWorkoutIds.includes(wId)) {
+        completedWorkoutIds.push(wId);
       }
 
-      const tGenre = trial.genre || "Informational";
-      const tLexile = Number(trial.targetLexile) || 960;
+      const tGenre = trial.genre || (matchedW && matchedW.genre) || "Informational";
+      const tLexile = Number(trial.targetLexile || (matchedW && matchedW.targetLexile)) || 960;
       const tIso = trial.timestampISO || trial.completedAt || null;
       const rawItems = Array.isArray(trial.itemAttempts)
         ? trial.itemAttempts
@@ -454,6 +488,54 @@
         const dok = Number(item.dok || item.dokLevel || 2);
         const subId = item.subSkill || item.subSkillId || null;
         const itemType = item.itemType || "STANDARD";
+
+        const qDef = wQuestions[idx] || null;
+        if (qDef) {
+          const qOpts = Array.isArray(qDef.options) ? qDef.options : [];
+          item.prompt = qDef.prompt || item.prompt || item.stem || "";
+          item.stem = item.prompt;
+          item.options = qOpts;
+          item.provingParagraph = qDef.provingParagraph || item.provingParagraph || 1;
+          item.provingSentenceText = qDef.provingSentenceText || item.provingSentenceText || "";
+          item.childTip = qDef.childTip || item.childTip || "";
+          item.retryHint = qDef.retryHint || item.retryHint || "";
+          item.parentExplanation = qDef.parentExplanation || item.parentExplanation || "";
+          const correctOpt = qOpts.find(function (o) { return o && o.isCorrect; }) || null;
+          if (correctOpt) {
+            const corrId = correctOpt.id || correctOpt.letter || "A";
+            item.correctOptionId = corrId;
+            item.correctLetter = corrId;
+            item.correctChoice = corrId;
+            if (firstCorrect) {
+              item.selectedOptionId = corrId;
+              item.firstTrySelectedLetter = corrId;
+              item.firstTryChoice = corrId;
+              item.retrySelectedOptionId = corrId;
+              item.retrySelectedLetter = corrId;
+              item.finalChoice = corrId;
+            } else {
+              if (retryCorrect) {
+                item.retrySelectedOptionId = corrId;
+                item.retrySelectedLetter = corrId;
+                item.finalChoice = corrId;
+              }
+              const curFirst = item.selectedOptionId || item.firstTrySelectedLetter || item.firstTryChoice;
+              if (!curFirst || curFirst === corrId) {
+                const trapCode = normalizeTrapCode(item.trapType || item.distractorTrapSelected);
+                const wrongOpt =
+                  qOpts.find(function (o) { return o && !o.isCorrect && o.trapType === trapCode; }) ||
+                  qOpts.find(function (o) { return o && !o.isCorrect; }) ||
+                  null;
+                if (wrongOpt) {
+                  const wOptId = wrongOpt.id || wrongOpt.letter || "A";
+                  item.selectedOptionId = wOptId;
+                  item.firstTrySelectedLetter = wOptId;
+                  item.firstTryChoice = wOptId;
+                }
+              }
+            }
+          }
+        }
 
         const isImpulsive = Boolean(item.impulsiveFlag || item.impulsivityFlag || (safeSec > 0 && safeSec < 8));
         const isHesitation = Boolean(item.hesitationFlag || safeSec > 90);
@@ -1285,7 +1367,8 @@
           questionId: it.questionId || it.itemId || `q${idx + 1}`,
           itemId: it.itemId || it.questionId || `q${idx + 1}`,
           questionIndex: it.questionIndex !== undefined ? it.questionIndex : idx,
-          stem: it.stem || "",
+          prompt: it.prompt || it.stem || "",
+          stem: it.stem || it.prompt || "",
           domain: it.domain || it.domainId || trialPayload.focusDomain || "D1_KEY_IDEAS",
           subSkill: it.subSkill || it.subSkillId || null,
           standard: it.standard || it.standardCode || "ELAGSE5RI1",
@@ -1304,6 +1387,12 @@
           impulsiveFlag: impFlag,
           hesitationFlag: hesFlag,
           verifiedSentenceClicked: Boolean(it.verifiedSentenceClicked || it.clickToProveSuccess),
+          provingParagraph: it.provingParagraph || 1,
+          provingSentenceText: it.provingSentenceText || "",
+          childTip: it.childTip || "",
+          retryHint: it.retryHint || "",
+          parentExplanation: it.parentExplanation || "",
+          options: Array.isArray(it.options) ? it.options : [],
           eliminatedOptions: Array.isArray(it.eliminatedOptions) ? it.eliminatedOptions : []
         };
       });
@@ -1346,6 +1435,7 @@
         hesitationCount: hesCount,
         xpEarned: xpEarned,
         sentenceSurgeryCompleted: Boolean(trialPayload.sentenceSurgeryCompleted),
+        passage: trialPayload.passage || null,
         itemAttempts: normalizedItems,
         items: normalizedItems
       };

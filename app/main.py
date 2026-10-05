@@ -484,18 +484,44 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
     completed_workout_ids: List[str] = []
     domain_last_practiced: Dict[str, Optional[str]] = {d_id: None for d_id in DOMAIN_BASELINE_SEEDS}
 
+    workouts_by_id: Dict[str, Dict[str, Any]] = {
+        str(w.get("workoutId")): w for w in workouts if w.get("workoutId")
+    }
+    workouts_by_title: Dict[str, Dict[str, Any]] = {
+        str(w.get("title") or "").strip().lower(): w for w in workouts if w.get("title")
+    }
+    workouts_by_num: Dict[int, Dict[str, Any]] = {
+        int(w.get("workoutNumber")): w for w in workouts if w.get("workoutNumber") is not None
+    }
+
     for trial in trial_history:
         w_id = trial.get("workoutId")
+        w_title_key = str(trial.get("title") or trial.get("workoutTitle") or "").strip().lower()
+        w_num = trial.get("workoutNumber")
+        matched_w = (
+            (workouts_by_id.get(str(w_id)) if w_id else None)
+            or (workouts_by_title.get(w_title_key) if w_title_key else None)
+            or (workouts_by_num.get(int(w_num)) if w_num is not None else None)
+        )
+        if matched_w:
+            if not w_id or str(w_id) not in workouts_by_id:
+                w_id = matched_w.get("workoutId")
+                trial["workoutId"] = w_id
+            if matched_w.get("passage"):
+                trial["passage"] = matched_w.get("passage")
+        w_questions = (matched_w.get("questions") or []) if matched_w else []
+
         if w_id and w_id not in completed_workout_ids:
             completed_workout_ids.append(w_id)
 
-        t_genre = trial.get("genre") or "Informational"
-        t_lexile = trial.get("targetLexile") or 960
+        t_genre = trial.get("genre") or (matched_w.get("genre") if matched_w else None) or "Informational"
+        t_lexile = trial.get("targetLexile") or (matched_w.get("targetLexile") if matched_w else None) or 960
         t_iso = trial.get("timestampISO") or trial.get("completedAt")
         items = trial.get("itemAttempts")
         if not isinstance(items, list):
             items = trial.get("items") if isinstance(trial.get("items"), list) else []
         trial["itemAttempts"] = items
+        trial["items"] = items
 
         ebsr_part_a_item = None
         ebsr_part_b_item = None
@@ -512,6 +538,48 @@ def recalculate_v2_progress(progress: Dict[str, Any], curriculum: Optional[Dict[
             dok = int(item.get("dok") or item.get("dokLevel") or 2)
             sub_id = item.get("subSkill") or item.get("subSkillId")
             item_type = item.get("itemType") or "STANDARD"
+
+            q_def = w_questions[idx] if idx < len(w_questions) else None
+            if q_def:
+                q_opts = q_def.get("options") or []
+                item["prompt"] = q_def.get("prompt") or item.get("prompt") or item.get("stem") or ""
+                item["stem"] = item["prompt"]
+                item["options"] = q_opts
+                item["provingParagraph"] = q_def.get("provingParagraph") or item.get("provingParagraph") or 1
+                item["provingSentenceText"] = q_def.get("provingSentenceText") or item.get("provingSentenceText") or ""
+                item["childTip"] = q_def.get("childTip") or item.get("childTip") or ""
+                item["retryHint"] = q_def.get("retryHint") or item.get("retryHint") or ""
+                item["parentExplanation"] = q_def.get("parentExplanation") or item.get("parentExplanation") or ""
+                correct_opt = next((o for o in q_opts if o.get("isCorrect")), None)
+                if correct_opt:
+                    corr_id = correct_opt.get("id") or correct_opt.get("letter") or "A"
+                    item["correctOptionId"] = corr_id
+                    item["correctLetter"] = corr_id
+                    item["correctChoice"] = corr_id
+                    if first_correct:
+                        item["selectedOptionId"] = corr_id
+                        item["firstTrySelectedLetter"] = corr_id
+                        item["firstTryChoice"] = corr_id
+                        item["retrySelectedOptionId"] = corr_id
+                        item["retrySelectedLetter"] = corr_id
+                        item["finalChoice"] = corr_id
+                    else:
+                        if retry_correct:
+                            item["retrySelectedOptionId"] = corr_id
+                            item["retrySelectedLetter"] = corr_id
+                            item["finalChoice"] = corr_id
+                        cur_first = item.get("selectedOptionId") or item.get("firstTrySelectedLetter") or item.get("firstTryChoice")
+                        if not cur_first or cur_first == corr_id:
+                            trap_code = normalize_trap_code(item.get("trapType") or item.get("distractorTrapSelected"))
+                            wrong_opt = (
+                                next((o for o in q_opts if not o.get("isCorrect") and o.get("trapType") == trap_code), None)
+                                or next((o for o in q_opts if not o.get("isCorrect")), None)
+                            )
+                            if wrong_opt:
+                                w_opt_id = wrong_opt.get("id") or wrong_opt.get("letter") or "A"
+                                item["selectedOptionId"] = w_opt_id
+                                item["firstTrySelectedLetter"] = w_opt_id
+                                item["firstTryChoice"] = w_opt_id
 
             is_impulsive = bool(item.get("impulsiveFlag") or item.get("impulsivityFlag") or (0 < sec < 8.0))
             is_hesitation = bool(item.get("hesitationFlag") or (sec > 90.0))
@@ -1284,6 +1352,15 @@ def reset_v2_progress(student_id: str = "lucas"):
 # STATIC FILES & HTML ROUTES
 # ==============================================================================
 
+if HAS_FASTAPI:
+    @app.middleware("http")
+    async def disable_static_and_html_cache(request: Request, call_next: Callable):
+        response = await call_next(request)
+        response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+        return response
+
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
@@ -1309,6 +1386,7 @@ def run_stdlib_http_server(host: str = "0.0.0.0", port: int = 8000):
             raw = json.dumps(payload).encode("utf-8")
             self.send_response(status_code)
             self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
             self.send_header("Content-Length", str(len(raw)))
             self.end_headers()
             self.wfile.write(raw)
@@ -1323,6 +1401,9 @@ def run_stdlib_http_server(host: str = "0.0.0.0", port: int = 8000):
                 data = f.read()
             self.send_response(200)
             self.send_header("Content-Type", ctype)
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
             self.send_header("Content-Length", str(len(data)))
             self.end_headers()
             self.wfile.write(data)

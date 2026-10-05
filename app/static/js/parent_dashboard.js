@@ -1537,6 +1537,13 @@
                         <td class="py-3 px-4 text-right space-x-1.5 whitespace-nowrap">
                           <button
                             type="button"
+                            onclick="window.ParentUI.openTrialReading('${escapeHtml(tid)}')"
+                            class="px-2.5 py-1 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 font-extrabold text-xs transition cursor-pointer"
+                          >
+                            📖 Open Reading
+                          </button>
+                          <button
+                            type="button"
                             onclick="window.ParentUI.openTrialInspector('${escapeHtml(tid)}')"
                             class="px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 font-extrabold text-xs transition cursor-pointer"
                           >
@@ -1598,7 +1605,30 @@
       );
       if (!trial) return '';
 
-      const workoutObj = workouts.find((w) => w.workoutId === trial.workoutId) || null;
+      const allWorkouts =
+        Array.isArray(workouts) && workouts.length
+          ? workouts
+          : window.V2State && Array.isArray(window.V2State.workouts)
+            ? window.V2State.workouts
+            : [];
+      const tTitleKey = String(trial.title || trial.workoutTitle || '')
+        .trim()
+        .toLowerCase();
+      const workoutObj =
+        allWorkouts.find((w) => w.workoutId === trial.workoutId) ||
+        (tTitleKey
+          ? allWorkouts.find(
+              (w) =>
+                String(w.title || '')
+                  .trim()
+                  .toLowerCase() === tTitleKey
+            )
+          : null) ||
+        (trial.workoutNumber
+          ? allWorkouts.find((w) => Number(w.workoutNumber) === Number(trial.workoutNumber))
+          : null) ||
+        null;
+
       const passage = (workoutObj && workoutObj.passage) || trial.passage || null;
       const questions = (workoutObj && workoutObj.questions) || [];
       const items = Array.isArray(trial.itemAttempts) ? trial.itemAttempts : trial.items || [];
@@ -1608,9 +1638,9 @@
         trapLookup[t.code] = t;
       });
 
-      // Render collapsible Reading Passage Panel if toggled open
+      // Render collapsible Reading Passage Panel (or compact Open Reading Banner when collapsed)
       let passagePanelHtml = '';
-      if (this.inspectorPassageOpen && passage && passage.text) {
+      if (passage && passage.text) {
         const rawParas = String(passage.text)
           .split(/\n\s*\n/)
           .map((p) => p.trim())
@@ -1618,119 +1648,143 @@
         const ms = passage.monsterSentence || null;
         const tier2 = Array.isArray(passage.tier2Words) ? passage.tier2Words : [];
 
-        // Map proving sentences to question numbers so parents can spot them in the passage
-        const proofSentences = items
-          .map((it, idx) => {
-            const qDef = questions[idx] || {};
-            return {
-              qNum: idx + 1,
-              para: Number(it.provingParagraph || qDef.provingParagraph || 0),
-              text: String(it.provingSentenceText || qDef.provingSentenceText || '').trim(),
-            };
-          })
-          .filter((p) => p.text.length > 15);
-
-        const parasHtml = rawParas
-          .map((pText, pIdx) => {
-            const paraNum = pIdx + 1;
-            const isFocused = this.inspectorFocusPara === paraNum;
-            const cleanPara = pText.replace(/^\[(?:Paragraph\s*)?\d+\]\s*/i, '');
-            const proofBadgesForPara = proofSentences
-              .filter((ps) => ps.para === paraNum)
-              .map(
-                (ps) =>
-                  `<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 text-[11px] font-extrabold mr-1.5">📖 Proves Q${ps.qNum}</span>`
-              )
-              .join('');
-
-            return `
-              <div
-                id="inspector-para-${paraNum}"
-                class="p-3.5 rounded-2xl border transition ${
-                  isFocused
-                    ? 'bg-amber-50/90 border-amber-400 ring-2 ring-amber-400/30'
-                    : 'bg-white border-slate-200'
-                }"
-              >
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-white font-extrabold text-xs">
-                    Paragraph [${paraNum}]
-                  </span>
-                  <div>${proofBadgesForPara}</div>
-                </div>
-                <p class="font-serif text-slate-800 text-sm sm:text-base leading-relaxed">
-                  ${escapeHtml(cleanPara)}
-                </p>
-              </div>
-            `;
-          })
-          .join('');
-
-        passagePanelHtml = `
-          <div class="bg-indigo-950/5 border-b-2 border-indigo-200 p-5 sm:p-6 space-y-4">
-            <div class="flex flex-wrap items-center justify-between gap-3">
+        if (!this.inspectorPassageOpen) {
+          passagePanelHtml = `
+            <div class="bg-indigo-50/80 border-b border-indigo-200 px-5 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3">
               <div>
-                <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-700">
-                  📖 Full Assessment Reading Passage (${rawParas.length} Paragraphs &bull; ${
-                    workoutObj ? workoutObj.genre || 'Reading' : 'Reading'
+                <div class="text-[11px] font-extrabold uppercase tracking-wider text-indigo-700">
+                  📖 Assessment Reading Passage (${rawParas.length} Paragraphs &bull; ${
+                    workoutObj ? workoutObj.genre || 'Reading' : trial.genre || 'Reading'
                   } &bull; ${trial.targetLexile || (workoutObj && workoutObj.targetLexile) || 960}L)
                 </div>
-                <h4 class="text-base sm:text-lg font-extrabold text-slate-900 mt-0.5">
+                <div class="text-sm sm:text-base font-extrabold text-slate-900">
                   ${escapeHtml(passage.title || trial.title || 'Reading Passage')}
-                </h4>
+                </div>
               </div>
               <button
                 type="button"
                 onclick="window.ParentUI.toggleInspectorPassage()"
-                class="px-3 py-1.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-extrabold cursor-pointer"
+                class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-extrabold shadow-xs transition cursor-pointer flex items-center gap-1.5"
               >
-                ▲ Hide Reading
+                <span>📖 Open Full Reading Passage</span>
               </button>
             </div>
+          `;
+        } else {
+          // Map proving sentences to question numbers so parents can spot them in the passage
+          const proofSentences = items
+            .map((it, idx) => {
+              const qDef = questions[idx] || {};
+              return {
+                qNum: idx + 1,
+                para: Number(it.provingParagraph || qDef.provingParagraph || 0),
+                text: String(it.provingSentenceText || qDef.provingSentenceText || '').trim(),
+              };
+            })
+            .filter((p) => p.text.length > 15);
 
-            <div class="space-y-3 max-h-96 overflow-y-auto pr-1">
-              ${parasHtml}
+          const parasHtml = rawParas
+            .map((pText, pIdx) => {
+              const paraNum = pIdx + 1;
+              const isFocused = this.inspectorFocusPara === paraNum;
+              const cleanPara = pText.replace(/^\[(?:Paragraph\s*)?\d+\]\s*/i, '');
+              const proofBadgesForPara = proofSentences
+                .filter((ps) => ps.para === paraNum)
+                .map(
+                  (ps) =>
+                    `<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 text-[11px] font-extrabold mr-1.5">📖 Proves Q${ps.qNum}</span>`
+                )
+                .join('');
+
+              return `
+                <div
+                  id="inspector-para-${paraNum}"
+                  class="p-3.5 rounded-2xl border transition ${
+                    isFocused
+                      ? 'bg-amber-50/90 border-amber-400 ring-2 ring-amber-400/30'
+                      : 'bg-white border-slate-200'
+                  }"
+                >
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                    <span class="px-2 py-0.5 rounded bg-slate-800 text-white font-extrabold text-xs">
+                      Paragraph [${paraNum}]
+                    </span>
+                    <div>${proofBadgesForPara}</div>
+                  </div>
+                  <p class="font-serif text-slate-800 text-sm sm:text-base leading-relaxed">
+                    ${escapeHtml(cleanPara)}
+                  </p>
+                </div>
+              `;
+            })
+            .join('');
+
+          passagePanelHtml = `
+            <div class="bg-indigo-950/5 border-b-2 border-indigo-200 p-5 sm:p-6 space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-700">
+                    📖 Full Assessment Reading Passage (${rawParas.length} Paragraphs &bull; ${
+                      workoutObj ? workoutObj.genre || 'Reading' : 'Reading'
+                    } &bull; ${trial.targetLexile || (workoutObj && workoutObj.targetLexile) || 960}L)
+                  </div>
+                  <h4 class="text-base sm:text-lg font-extrabold text-slate-900 mt-0.5">
+                    ${escapeHtml(passage.title || trial.title || 'Reading Passage')}
+                  </h4>
+                </div>
+                <button
+                  type="button"
+                  onclick="window.ParentUI.toggleInspectorPassage()"
+                  class="px-3 py-1.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-extrabold cursor-pointer"
+                >
+                  ▲ Hide Reading
+                </button>
+              </div>
+
+              <div class="space-y-3 max-h-96 overflow-y-auto pr-1">
+                ${parasHtml}
+              </div>
+
+              ${
+                ms && ms.verbatimSentence
+                  ? `
+                  <div class="p-3.5 rounded-2xl bg-purple-50 border border-purple-200 text-xs space-y-1.5">
+                    <div class="font-extrabold text-purple-900 uppercase tracking-wider text-[11px]">
+                      ✂️ Q1 Sentence Surgery Target (Paragraph ${ms.paragraphNumber || 2})
+                    </div>
+                    <div class="font-serif italic text-purple-950 font-semibold">
+                      "${escapeHtml(ms.verbatimSentence)}"
+                    </div>
+                    ${
+                      ms.activeRewrite
+                        ? `<div class="text-purple-900 font-bold pt-0.5">✨ Simple Active Rewrite: <span class="font-normal">${escapeHtml(ms.activeRewrite)}</span></div>`
+                        : ''
+                    }
+                  </div>
+                `
+                  : ''
+              }
+
+              ${
+                tier2.length
+                  ? `
+                  <div class="flex flex-wrap items-center gap-2 pt-1">
+                    <span class="text-xs font-extrabold text-slate-600 uppercase">Tier 2 Vocab:</span>
+                    ${tier2
+                      .map(
+                        (w) =>
+                          `<span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs text-slate-800"><strong>${escapeHtml(
+                            w.word
+                          )}:</strong> ${escapeHtml(w.definition)}</span>`
+                      )
+                      .join('')}
+                  </div>
+                `
+                  : ''
+              }
             </div>
-
-            ${
-              ms && ms.verbatimSentence
-                ? `
-                <div class="p-3.5 rounded-2xl bg-purple-50 border border-purple-200 text-xs space-y-1.5">
-                  <div class="font-extrabold text-purple-900 uppercase tracking-wider text-[11px]">
-                    ✂️ Q1 Sentence Surgery Target (Paragraph ${ms.paragraphNumber || 2})
-                  </div>
-                  <div class="font-serif italic text-purple-950 font-semibold">
-                    "${escapeHtml(ms.verbatimSentence)}"
-                  </div>
-                  ${
-                    ms.activeRewrite
-                      ? `<div class="text-purple-900 font-bold pt-0.5">✨ Simple Active Rewrite: <span class="font-normal">${escapeHtml(ms.activeRewrite)}</span></div>`
-                      : ''
-                  }
-                </div>
-              `
-                : ''
-            }
-
-            ${
-              tier2.length
-                ? `
-                <div class="flex flex-wrap items-center gap-2 pt-1">
-                  <span class="text-xs font-extrabold text-slate-600 uppercase">Tier 2 Vocab:</span>
-                  ${tier2
-                    .map(
-                      (w) =>
-                        `<span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs text-slate-800"><strong>${escapeHtml(
-                          w.word
-                        )}:</strong> ${escapeHtml(w.definition)}</span>`
-                    )
-                    .join('')}
-                </div>
-              `
-                : ''
-            }
-          </div>
-        `;
+          `;
+        }
       }
 
       return `
@@ -1785,34 +1839,26 @@
                 ${items
                   .map((it, idx) => {
                     const qDef = questions[idx] || {};
-                    const stem = it.stem || it.prompt || qDef.prompt || `Question ${idx + 1}`;
+                    const stem = qDef.prompt || it.stem || it.prompt || `Question ${idx + 1}`;
                     const options =
                       Array.isArray(qDef.options) && qDef.options.length
                         ? qDef.options
                         : Array.isArray(it.options)
                           ? it.options
                           : [];
-                    const provingPara = it.provingParagraph || qDef.provingParagraph || 1;
-                    const provingSent = it.provingSentenceText || qDef.provingSentenceText || '';
+                    const provingPara = qDef.provingParagraph || it.provingParagraph || 1;
+                    const provingSent = qDef.provingSentenceText || it.provingSentenceText || '';
                     const childTip =
                       qDef.childTip ||
                       it.childTip ||
-                      ' Verified against the highlighted proof sentence in the passage.';
+                      'Verified against the highlighted proof sentence in the passage.';
                     const parentExp =
                       qDef.parentExplanation ||
                       it.parentExplanation ||
                       childTip;
 
-                    const firstChoice =
-                      it.selectedOptionId || it.firstTrySelectedLetter || it.firstTryChoice || '—';
-                    const finalChoice =
-                      it.retrySelectedOptionId || it.retrySelectedLetter || it.finalChoice || firstChoice;
-                    const usedRetry =
-                      finalChoice &&
-                      firstChoice &&
-                      finalChoice !== '—' &&
-                      firstChoice !== '—' &&
-                      finalChoice !== firstChoice;
+                    const firstOk = Boolean(it.firstTryCorrect);
+                    const retryOk = Boolean(it.retryCorrect || it.finalCorrect || firstOk);
 
                     const correctOptObj = options.find((o) => o.isCorrect) || null;
                     const correctChoice =
@@ -1822,8 +1868,26 @@
                       it.correctChoice ||
                       '—';
 
-                    const firstOk = Boolean(it.firstTryCorrect);
-                    const retryOk = Boolean(it.retryCorrect || it.finalCorrect);
+                    let firstChoice =
+                      it.selectedOptionId || it.firstTrySelectedLetter || it.firstTryChoice || '—';
+                    let finalChoice =
+                      it.retrySelectedOptionId || it.retrySelectedLetter || it.finalChoice || firstChoice;
+
+                    // Reconcile option letter if trial was recorded prior to A/B/C/D option rebalancing
+                    if (firstOk && correctChoice !== '—') {
+                      firstChoice = correctChoice;
+                      finalChoice = correctChoice;
+                    } else if (!firstOk && retryOk && correctChoice !== '—') {
+                      finalChoice = correctChoice;
+                    }
+
+                    const usedRetry =
+                      finalChoice &&
+                      firstChoice &&
+                      finalChoice !== '—' &&
+                      firstChoice !== '—' &&
+                      finalChoice !== firstChoice;
+
                     const firstPickedOpt =
                       options.find((o) => (o.id || o.letter) === firstChoice) || null;
                     const trapCode =
@@ -2094,11 +2158,36 @@
       `;
     },
 
+    async ensureWorkoutsLoadedForInspector() {
+      const state = window.V2State || {};
+      if (!Array.isArray(state.workouts) || state.workouts.length === 0) {
+        try {
+          const r = await fetch('/api/v2/workouts');
+          if (r.ok) {
+            const d = await r.json();
+            if (d && Array.isArray(d.workouts) && d.workouts.length) {
+              state.workouts = d.workouts;
+              this.renderDashboard();
+            }
+          }
+        } catch (_) {}
+      }
+    },
+
     openTrialInspector(trialId) {
       this.inspectedTrialId = trialId;
       this.inspectorPassageOpen = false;
       this.inspectorFocusPara = null;
       this.renderDashboard();
+      this.ensureWorkoutsLoadedForInspector();
+    },
+
+    openTrialReading(trialId) {
+      this.inspectedTrialId = trialId;
+      this.inspectorPassageOpen = true;
+      this.inspectorFocusPara = null;
+      this.renderDashboard();
+      this.ensureWorkoutsLoadedForInspector();
     },
 
     closeTrialInspector() {
