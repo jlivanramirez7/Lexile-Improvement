@@ -131,6 +131,8 @@
       domain: 'ALL',
     },
     inspectedTrialId: null,
+    inspectorPassageOpen: false,
+    inspectorFocusPara: null,
 
     /**
      * Switch active subject ('reading' | 'math') and re-render Parent Dashboard
@@ -1580,6 +1582,13 @@
 
     /**
      * Item Inspector Drawer / Modal for any selected trial
+     * Shows:
+     *  - Toggleable full reading passage viewer ("📖 Open Reading Passage") with numbered paragraphs [1]-[5],
+     *    Monster Sentence breakdown, and Tier 2 vocabulary.
+     *  - Complete question stem + ALL 4 answer options (A, B, C, D) with full option text.
+     *  - Unmistakable badges for which answer Lucas chose on his 1st try (and 2nd try if retried),
+     *    which option is the correct answer, and what trap each wrong option represents.
+     *  - Both the Child-Friendly Helper Text (childTip + option childFeedback) and Parent Diagnostic Explanation.
      */
     renderTrialInspectorModal(prog, workouts) {
       if (!this.inspectedTrialId) return '';
@@ -1590,133 +1599,495 @@
       if (!trial) return '';
 
       const workoutObj = workouts.find((w) => w.workoutId === trial.workoutId) || null;
+      const passage = (workoutObj && workoutObj.passage) || trial.passage || null;
       const questions = (workoutObj && workoutObj.questions) || [];
       const items = Array.isArray(trial.itemAttempts) ? trial.itemAttempts : trial.items || [];
 
-      return `
-        <div class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
-          <div class="bg-white rounded-3xl border border-slate-200 shadow-2xl max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden">
-            
-            <!-- Modal Header -->
-            <div class="px-6 py-4 bg-slate-900 text-white flex items-center justify-between gap-4">
-              <div>
-                <div class="text-xs font-extrabold text-indigo-300 uppercase tracking-wider">
-                  🔍 Item-by-Item Psychometric Audit
+      const trapLookup = {};
+      TRAP_DISPLAY_ORDER.forEach((t) => {
+        trapLookup[t.code] = t;
+      });
+
+      // Render collapsible Reading Passage Panel if toggled open
+      let passagePanelHtml = '';
+      if (this.inspectorPassageOpen && passage && passage.text) {
+        const rawParas = String(passage.text)
+          .split(/\n\s*\n/)
+          .map((p) => p.trim())
+          .filter(Boolean);
+        const ms = passage.monsterSentence || null;
+        const tier2 = Array.isArray(passage.tier2Words) ? passage.tier2Words : [];
+
+        // Map proving sentences to question numbers so parents can spot them in the passage
+        const proofSentences = items
+          .map((it, idx) => {
+            const qDef = questions[idx] || {};
+            return {
+              qNum: idx + 1,
+              para: Number(it.provingParagraph || qDef.provingParagraph || 0),
+              text: String(it.provingSentenceText || qDef.provingSentenceText || '').trim(),
+            };
+          })
+          .filter((p) => p.text.length > 15);
+
+        const parasHtml = rawParas
+          .map((pText, pIdx) => {
+            const paraNum = pIdx + 1;
+            const isFocused = this.inspectorFocusPara === paraNum;
+            const cleanPara = pText.replace(/^\[(?:Paragraph\s*)?\d+\]\s*/i, '');
+            const proofBadgesForPara = proofSentences
+              .filter((ps) => ps.para === paraNum)
+              .map(
+                (ps) =>
+                  `<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 text-[11px] font-extrabold mr-1.5">📖 Proves Q${ps.qNum}</span>`
+              )
+              .join('');
+
+            return `
+              <div
+                id="inspector-para-${paraNum}"
+                class="p-3.5 rounded-2xl border transition ${
+                  isFocused
+                    ? 'bg-amber-50/90 border-amber-400 ring-2 ring-amber-400/30'
+                    : 'bg-white border-slate-200'
+                }"
+              >
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-white font-extrabold text-xs">
+                    Paragraph [${paraNum}]
+                  </span>
+                  <div>${proofBadgesForPara}</div>
                 </div>
-                <h3 class="text-lg sm:text-xl font-extrabold">
-                  ${escapeHtml(trial.title || trial.workoutTitle || trial.workoutId)} (${trial.targetLexile || 960}L &bull; FKGL ${trial.fkgl || 6.3})
-                </h3>
+                <p class="font-serif text-slate-800 text-sm sm:text-base leading-relaxed">
+                  ${escapeHtml(cleanPara)}
+                </p>
+              </div>
+            `;
+          })
+          .join('');
+
+        passagePanelHtml = `
+          <div class="bg-indigo-950/5 border-b-2 border-indigo-200 p-5 sm:p-6 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-700">
+                  📖 Full Assessment Reading Passage (${rawParas.length} Paragraphs &bull; ${
+                    workoutObj ? workoutObj.genre || 'Reading' : 'Reading'
+                  } &bull; ${trial.targetLexile || (workoutObj && workoutObj.targetLexile) || 960}L)
+                </div>
+                <h4 class="text-base sm:text-lg font-extrabold text-slate-900 mt-0.5">
+                  ${escapeHtml(passage.title || trial.title || 'Reading Passage')}
+                </h4>
               </div>
               <button
                 type="button"
-                onclick="window.ParentUI.closeTrialInspector()"
-                class="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-extrabold cursor-pointer"
+                onclick="window.ParentUI.toggleInspectorPassage()"
+                class="px-3 py-1.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-extrabold cursor-pointer"
               >
-                ✕ Close Inspector
+                ▲ Hide Reading
               </button>
             </div>
 
-            <!-- Modal Body: Question Audit Cards -->
-            <div class="flex-1 overflow-y-auto p-6 space-y-4 bg-slate-50">
-              ${items
-                .map((it, idx) => {
-                  const qDef = questions[idx] || {};
-                  const stem = it.stem || it.prompt || qDef.prompt || `Question ${idx + 1}`;
-                  const provingSent = it.provingSentenceText || qDef.provingSentenceText || '';
-                  const parentExp =
-                    it.parentExplanation ||
-                    qDef.parentExplanation ||
-                    it.childTip ||
-                    qDef.childTip ||
-                    'Verified against passage evidence.';
-                  const firstChoice = it.selectedOptionId || it.firstTrySelectedLetter || it.firstTryChoice || '—';
-                  const finalChoice = it.retrySelectedOptionId || it.retrySelectedLetter || it.finalChoice || firstChoice;
-                  const correctChoice = it.correctOptionId || it.correctLetter || it.correctChoice || '—';
-                  const firstOk = Boolean(it.firstTryCorrect);
-                  const trap = it.trapType || it.distractorTrapSelected || null;
+            <div class="space-y-3 max-h-96 overflow-y-auto pr-1">
+              ${parasHtml}
+            </div>
 
-                  return `
-                    <div class="bg-white rounded-2xl border ${
-                      firstOk ? 'border-emerald-200' : 'border-rose-200'
-                    } p-4 sm:p-5 shadow-2xs space-y-3">
-                      <div class="flex flex-wrap items-center justify-between gap-2">
-                        <div class="flex flex-wrap items-center gap-2">
-                          <span class="px-2.5 py-0.5 rounded-md font-extrabold text-xs ${
-                            firstOk ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
+            ${
+              ms && ms.verbatimSentence
+                ? `
+                <div class="p-3.5 rounded-2xl bg-purple-50 border border-purple-200 text-xs space-y-1.5">
+                  <div class="font-extrabold text-purple-900 uppercase tracking-wider text-[11px]">
+                    ✂️ Q1 Sentence Surgery Target (Paragraph ${ms.paragraphNumber || 2})
+                  </div>
+                  <div class="font-serif italic text-purple-950 font-semibold">
+                    "${escapeHtml(ms.verbatimSentence)}"
+                  </div>
+                  ${
+                    ms.activeRewrite
+                      ? `<div class="text-purple-900 font-bold pt-0.5">✨ Simple Active Rewrite: <span class="font-normal">${escapeHtml(ms.activeRewrite)}</span></div>`
+                      : ''
+                  }
+                </div>
+              `
+                : ''
+            }
+
+            ${
+              tier2.length
+                ? `
+                <div class="flex flex-wrap items-center gap-2 pt-1">
+                  <span class="text-xs font-extrabold text-slate-600 uppercase">Tier 2 Vocab:</span>
+                  ${tier2
+                    .map(
+                      (w) =>
+                        `<span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs text-slate-800"><strong>${escapeHtml(
+                          w.word
+                        )}:</strong> ${escapeHtml(w.definition)}</span>`
+                    )
+                    .join('')}
+                </div>
+              `
+                : ''
+            }
+          </div>
+        `;
+      }
+
+      return `
+        <div class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+          <div class="bg-white rounded-3xl border border-slate-200 shadow-2xl max-w-5xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+            
+            <!-- Modal Header -->
+            <div class="px-5 sm:px-6 py-4 bg-slate-900 text-white flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <div class="text-xs font-extrabold text-indigo-300 uppercase tracking-wider">
+                  🔍 Item-by-Item Psychometric Audit &bull; ${formatDateTime(trial.timestampISO || trial.completedAt)}
+                </div>
+                <h3 class="text-lg sm:text-xl font-extrabold">
+                  ${escapeHtml(trial.title || trial.workoutTitle || (workoutObj && workoutObj.title) || trial.workoutId)} (${
+                    trial.targetLexile || (workoutObj && workoutObj.targetLexile) || 960
+                  }L &bull; FKGL ${trial.fkgl || (workoutObj && workoutObj.fkgl) || 6.3})
+                </h3>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                ${
+                  passage && passage.text
+                    ? `
+                    <button
+                      type="button"
+                      onclick="window.ParentUI.toggleInspectorPassage()"
+                      class="px-3.5 py-2 rounded-xl ${
+                        this.inspectorPassageOpen
+                          ? 'bg-amber-400 text-slate-950 hover:bg-amber-300'
+                          : 'bg-indigo-600 text-white hover:bg-indigo-500'
+                      } text-xs font-extrabold transition cursor-pointer flex items-center gap-1.5 shadow-xs"
+                    >
+                      <span>📖 ${this.inspectorPassageOpen ? 'Hide Reading Passage' : 'Open Reading Passage'}</span>
+                    </button>
+                  `
+                    : ''
+                }
+                <button
+                  type="button"
+                  onclick="window.ParentUI.closeTrialInspector()"
+                  class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-extrabold cursor-pointer"
+                >
+                  ✕ Close Inspector
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal Body: Optional Reading Passage Drawer + 6 Question Audit Cards -->
+            <div class="flex-1 overflow-y-auto bg-slate-50">
+              ${passagePanelHtml}
+
+              <div class="p-5 sm:p-6 space-y-5">
+                ${items
+                  .map((it, idx) => {
+                    const qDef = questions[idx] || {};
+                    const stem = it.stem || it.prompt || qDef.prompt || `Question ${idx + 1}`;
+                    const options =
+                      Array.isArray(qDef.options) && qDef.options.length
+                        ? qDef.options
+                        : Array.isArray(it.options)
+                          ? it.options
+                          : [];
+                    const provingPara = it.provingParagraph || qDef.provingParagraph || 1;
+                    const provingSent = it.provingSentenceText || qDef.provingSentenceText || '';
+                    const childTip =
+                      qDef.childTip ||
+                      it.childTip ||
+                      ' Verified against the highlighted proof sentence in the passage.';
+                    const parentExp =
+                      qDef.parentExplanation ||
+                      it.parentExplanation ||
+                      childTip;
+
+                    const firstChoice =
+                      it.selectedOptionId || it.firstTrySelectedLetter || it.firstTryChoice || '—';
+                    const finalChoice =
+                      it.retrySelectedOptionId || it.retrySelectedLetter || it.finalChoice || firstChoice;
+                    const usedRetry =
+                      finalChoice &&
+                      firstChoice &&
+                      finalChoice !== '—' &&
+                      firstChoice !== '—' &&
+                      finalChoice !== firstChoice;
+
+                    const correctOptObj = options.find((o) => o.isCorrect) || null;
+                    const correctChoice =
+                      (correctOptObj && (correctOptObj.id || correctOptObj.letter)) ||
+                      it.correctOptionId ||
+                      it.correctLetter ||
+                      it.correctChoice ||
+                      '—';
+
+                    const firstOk = Boolean(it.firstTryCorrect);
+                    const retryOk = Boolean(it.retryCorrect || it.finalCorrect);
+                    const firstPickedOpt =
+                      options.find((o) => (o.id || o.letter) === firstChoice) || null;
+                    const trapCode =
+                      it.trapType ||
+                      it.distractorTrapSelected ||
+                      (firstPickedOpt && firstPickedOpt.trapType) ||
+                      null;
+                    const trapMeta = trapCode && trapLookup[trapCode] ? trapLookup[trapCode] : null;
+
+                    // Render all 4 options (A, B, C, D) with unmistakable badges for Lucas's choices & the Answer Key
+                    const optionsListHtml = options.length
+                      ? `
+                        <div class="space-y-2 pt-1">
+                          <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500">
+                            All Answer Choices &amp; What Lucas Selected:
+                          </div>
+                          ${options
+                            .map((opt) => {
+                              const optId = opt.id || opt.letter || 'A';
+                              const isCorrectOpt = Boolean(opt.isCorrect || optId === correctChoice);
+                              const isFirstPick = optId === firstChoice;
+                              const isSecondPick = usedRetry && optId === finalChoice;
+                              const optTrapMeta =
+                                opt.trapType && trapLookup[opt.trapType]
+                                  ? trapLookup[opt.trapType]
+                                  : null;
+
+                              let rowBorder = 'border-slate-200 bg-slate-50/70 text-slate-700';
+                              let letterStyle = 'bg-white text-slate-700 border-slate-300';
+
+                              if (isCorrectOpt && isFirstPick) {
+                                rowBorder =
+                                  'border-emerald-500 bg-emerald-50/90 text-emerald-950 ring-2 ring-emerald-500/20';
+                                letterStyle = 'bg-emerald-600 text-white border-emerald-600';
+                              } else if (isCorrectOpt && isSecondPick) {
+                                rowBorder =
+                                  'border-emerald-500 bg-emerald-50/80 text-emerald-950 ring-2 ring-emerald-500/20';
+                                letterStyle = 'bg-emerald-600 text-white border-emerald-600';
+                              } else if (isCorrectOpt) {
+                                rowBorder = 'border-emerald-400 bg-emerald-50/50 text-emerald-950';
+                                letterStyle = 'bg-emerald-600 text-white border-emerald-600';
+                              } else if (isFirstPick) {
+                                rowBorder =
+                                  'border-rose-400 bg-rose-50/90 text-rose-950 ring-2 ring-rose-400/20';
+                                letterStyle = 'bg-rose-600 text-white border-rose-600';
+                              } else if (isSecondPick && !isCorrectOpt) {
+                                rowBorder =
+                                  'border-rose-400 bg-rose-50/80 text-rose-950 ring-2 ring-rose-400/20';
+                                letterStyle = 'bg-rose-600 text-white border-rose-600';
+                              }
+
+                              const badges = [];
+                              if (isFirstPick && isCorrectOpt) {
+                                badges.push(
+                                  `<span class="px-2.5 py-0.5 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold">👦 Lucas Picked (1st Try) ✅</span>`
+                                );
+                              } else if (isFirstPick && !isCorrectOpt) {
+                                badges.push(
+                                  `<span class="px-2.5 py-0.5 rounded-full bg-rose-600 text-white text-[11px] font-extrabold">👦 Lucas Picked (1st Try) ❌</span>`
+                                );
+                              }
+
+                              if (isSecondPick && isCorrectOpt) {
+                                badges.push(
+                                  `<span class="px-2.5 py-0.5 rounded-full bg-amber-500 text-slate-950 text-[11px] font-extrabold">🔄 Lucas Picked (2nd Try) ✅</span>`
+                                );
+                              } else if (isSecondPick && !isCorrectOpt) {
+                                badges.push(
+                                  `<span class="px-2.5 py-0.5 rounded-full bg-rose-700 text-white text-[11px] font-extrabold">🔄 Lucas Picked (2nd Try) ❌</span>`
+                                );
+                              }
+
+                              if (isCorrectOpt) {
+                                badges.push(
+                                  `<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 text-[11px] font-extrabold">✓ Correct Answer</span>`
+                                );
+                              } else if (optTrapMeta) {
+                                badges.push(
+                                  `<span class="px-2 py-0.5 rounded-md ${
+                                    isFirstPick || isSecondPick
+                                      ? 'bg-rose-200 text-rose-950 font-extrabold'
+                                      : 'bg-slate-200/80 text-slate-600 font-bold'
+                                  } text-[10px]">🪤 ${escapeHtml(optTrapMeta.kidName)} (${escapeHtml(
+                                    optTrapMeta.shortLabel
+                                  )})</span>`
+                                );
+                              } else if (opt.trapType) {
+                                badges.push(
+                                  `<span class="px-2 py-0.5 rounded-md bg-slate-200/80 text-slate-600 font-bold text-[10px]">🪤 ${escapeHtml(
+                                    opt.trapType
+                                  )}</span>`
+                                );
+                              }
+
+                              return `
+                                <div class="rounded-2xl border-2 p-3 sm:p-3.5 transition ${rowBorder}">
+                                  <div class="flex flex-wrap items-start justify-between gap-2">
+                                    <div class="flex items-start gap-2.5 flex-1 min-w-[220px]">
+                                      <span class="w-6 h-6 rounded-lg border font-extrabold text-xs flex items-center justify-center shrink-0 mt-0.5 ${letterStyle}">
+                                        ${escapeHtml(optId)}
+                                      </span>
+                                      <div class="space-y-1 flex-1">
+                                        <div class="text-xs sm:text-sm font-semibold leading-snug">
+                                          ${escapeHtml(opt.text)}
+                                        </div>
+                                        ${
+                                          opt.childFeedback
+                                            ? `<div class="text-[11px] ${
+                                                isCorrectOpt
+                                                  ? 'text-emerald-800'
+                                                  : isFirstPick || isSecondPick
+                                                    ? 'text-rose-900 font-semibold'
+                                                    : 'text-slate-500'
+                                              } pt-0.5">💬 <em>${escapeHtml(opt.childFeedback)}</em></div>`
+                                            : ''
+                                        }
+                                      </div>
+                                    </div>
+                                    <div class="flex flex-wrap items-center gap-1.5 shrink-0">
+                                      ${badges.join('')}
+                                    </div>
+                                  </div>
+                                </div>
+                              `;
+                            })
+                            .join('')}
+                        </div>
+                      `
+                      : '';
+
+                    return `
+                      <div class="bg-white rounded-2xl border-2 ${
+                        firstOk
+                          ? 'border-emerald-200'
+                          : retryOk
+                            ? 'border-amber-300'
+                            : 'border-rose-300'
+                      } p-4 sm:p-5 shadow-2xs space-y-3.5">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                          <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-2.5 py-1 rounded-lg font-extrabold text-xs ${
+                              firstOk
+                                ? 'bg-emerald-100 text-emerald-800'
+                                : retryOk
+                                  ? 'bg-amber-100 text-amber-900'
+                                  : 'bg-rose-100 text-rose-800'
+                            }">
+                              Q${idx + 1}: ${
+                                firstOk
+                                  ? '✅ 1st-Try Correct'
+                                  : retryOk
+                                    ? '🟡 Missed 1st Try &rarr; Fixed on Retry'
+                                    : '❌ Missed Both Tries'
+                              }
+                            </span>
+                            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold text-xs">
+                              ${escapeHtml(it.standard || qDef.standard || 'ELAGSE5')} &bull; DOK ${
+                                it.dok || qDef.dok || 2
+                              }
+                            </span>
+                            <span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 font-bold text-xs">
+                              ${escapeHtml(
+                                DOMAIN_SHORT_LABELS[it.domain || qDef.domain] ||
+                                  it.domain ||
+                                  qDef.domain ||
+                                  ''
+                              )}
+                            </span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            ${
+                              passage && passage.text
+                                ? `
+                                <button
+                                  type="button"
+                                  onclick="window.ParentUI.openInspectorPassageAtPara(${provingPara})"
+                                  class="px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-extrabold transition cursor-pointer"
+                                >
+                                  📖 View Paragraph [${provingPara}]
+                                </button>
+                              `
+                                : ''
+                            }
+                            <span class="text-xs font-bold text-slate-500">
+                              ⏱️ ${it.timeSpentSeconds || 20}s
+                              ${it.impulsiveFlag ? '• ⚡ Impulsive (<8s)' : ''}
+                              ${it.hesitationFlag ? '• 🐢 Hesitation (>90s)' : ''}
+                            </span>
+                          </div>
+                        </div>
+
+                        <!-- Full Question Stem -->
+                        <div class="text-sm sm:text-base font-extrabold text-slate-900 whitespace-pre-line bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                          ${escapeHtml(stem)}
+                        </div>
+
+                        <!-- All 4 Answer Choices (A, B, C, D) -->
+                        ${optionsListHtml}
+
+                        <!-- Summary Strip of Lucas's Choice vs. Answer Key -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
+                          <div class="p-2.5 rounded-xl border ${
+                            firstOk
+                              ? 'bg-emerald-50 border-emerald-200 text-emerald-900'
+                              : 'bg-rose-50 border-rose-200 text-rose-900'
                           }">
-                            Q${idx + 1}: ${firstOk ? '✅ 1st-Try Correct' : '❌ Missed 1st Try'}
-                          </span>
-                          <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold text-xs">
-                            ${escapeHtml(it.standard || qDef.standard || 'ELAGSE5')} &bull; DOK ${it.dok || qDef.dok || 2}
-                          </span>
-                          <span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 font-bold text-xs">
-                            ${escapeHtml(DOMAIN_SHORT_LABELS[it.domain] || it.domain || '')}
-                          </span>
-                        </div>
-                        <span class="text-xs font-bold text-slate-500">
-                          ⏱️ ${it.timeSpentSeconds || 20}s
-                          ${it.impulsiveFlag ? '• ⚡ Impulsive (<8s)' : ''}
-                          ${it.hesitationFlag ? '• 🐢 Hesitation (>90s)' : ''}
-                        </span>
-                      </div>
-
-                      <div class="text-sm font-bold text-slate-900 whitespace-pre-line">
-                        ${escapeHtml(stem)}
-                      </div>
-
-                      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
-                        <div class="p-2.5 rounded-xl border ${
-                          firstOk ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-rose-50 border-rose-200 text-rose-900'
-                        }">
-                          <div class="font-extrabold uppercase text-[10px] opacity-75">1st Choice</div>
-                          <div class="font-extrabold text-sm mt-0.5">
-                            Choice ${escapeHtml(firstChoice)} ${firstOk ? '✅' : '❌'}
-                          </div>
-                          ${
-                            trap
-                              ? `<div class="mt-1 inline-block px-1.5 py-0.5 rounded bg-rose-200/70 text-rose-950 text-[10px] font-extrabold">🪤 ${escapeHtml(trap)}</div>`
-                              : ''
-                          }
-                        </div>
-
-                        <div class="p-2.5 rounded-xl border bg-slate-50 border-slate-200 text-slate-800">
-                          <div class="font-extrabold uppercase text-[10px] opacity-75">Final / Retry Choice</div>
-                          <div class="font-extrabold text-sm mt-0.5">
-                            Choice ${escapeHtml(finalChoice)} ${it.retryCorrect ? '✅' : ''}
-                          </div>
-                        </div>
-
-                        <div class="p-2.5 rounded-xl border bg-emerald-50/60 border-emerald-200 text-emerald-950">
-                          <div class="font-extrabold uppercase text-[10px] opacity-75">Correct Answer Key</div>
-                          <div class="font-extrabold text-sm mt-0.5">
-                            Choice ${escapeHtml(correctChoice)}
-                          </div>
-                        </div>
-                      </div>
-
-                      ${
-                        provingSent
-                          ? `
-                          <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 text-xs space-y-1">
-                            <div class="font-extrabold text-emerald-800 uppercase text-[10px]">
-                              📖 Verbatim Proving Sentence in Passage (Paragraph ${it.provingParagraph || qDef.provingParagraph || 1})
+                            <div class="font-extrabold uppercase text-[10px] opacity-75">Lucas's 1st Choice</div>
+                            <div class="font-extrabold text-sm mt-0.5">
+                              Choice ${escapeHtml(firstChoice)} ${firstOk ? '✅' : '❌'}
                             </div>
-                            <div class="font-serif italic text-emerald-950 font-medium">
-                              "${escapeHtml(provingSent)}"
+                            ${
+                              trapMeta && !firstOk
+                                ? `<div class="mt-1 inline-block px-1.5 py-0.5 rounded bg-rose-200/70 text-rose-950 text-[10px] font-extrabold">🪤 ${escapeHtml(
+                                    trapMeta.kidName
+                                  )}</div>`
+                                : ''
+                            }
+                          </div>
+
+                          <div class="p-2.5 rounded-xl border bg-slate-50 border-slate-200 text-slate-800">
+                            <div class="font-extrabold uppercase text-[10px] opacity-75">Final / Retry Choice</div>
+                            <div class="font-extrabold text-sm mt-0.5">
+                              Choice ${escapeHtml(finalChoice)} ${retryOk ? '✅' : '❌'}
                             </div>
                           </div>
-                        `
-                          : ''
-                      }
 
-                      <div class="p-3 rounded-xl bg-indigo-50/60 border border-indigo-100 text-xs text-slate-800">
-                        <span class="font-extrabold text-indigo-900">🧠 Diagnostic Explanation: </span>
-                        <span>${escapeHtml(parentExp)}</span>
+                          <div class="p-2.5 rounded-xl border bg-emerald-50/60 border-emerald-200 text-emerald-950">
+                            <div class="font-extrabold uppercase text-[10px] opacity-75">Correct Answer Key</div>
+                            <div class="font-extrabold text-sm mt-0.5">
+                              Choice ${escapeHtml(correctChoice)}
+                            </div>
+                          </div>
+                        </div>
+
+                        ${
+                          provingSent
+                            ? `
+                            <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 text-xs space-y-1">
+                              <div class="font-extrabold text-emerald-800 uppercase text-[10px]">
+                                📖 Verbatim Proving Sentence in Passage (Paragraph ${provingPara})
+                              </div>
+                              <div class="font-serif italic text-emerald-950 font-medium">
+                                "${escapeHtml(provingSent)}"
+                              </div>
+                            </div>
+                          `
+                            : ''
+                        }
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                          <div class="p-3 rounded-xl bg-amber-50/70 border border-amber-200 text-xs text-slate-800">
+                            <span class="font-extrabold text-amber-950">🧒 Child-Friendly Explanation Shown to Lucas: </span>
+                            <span>${escapeHtml(childTip)}</span>
+                          </div>
+                          <div class="p-3 rounded-xl bg-indigo-50/60 border border-indigo-100 text-xs text-slate-800">
+                            <span class="font-extrabold text-indigo-900">🧠 Parent Psychometric Rationale: </span>
+                            <span>${escapeHtml(parentExp)}</span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  `;
-                })
-                .join('')}
+                    `;
+                  })
+                  .join('')}
+              </div>
             </div>
           </div>
         </div>
@@ -1725,12 +2096,33 @@
 
     openTrialInspector(trialId) {
       this.inspectedTrialId = trialId;
+      this.inspectorPassageOpen = false;
+      this.inspectorFocusPara = null;
       this.renderDashboard();
     },
 
     closeTrialInspector() {
       this.inspectedTrialId = null;
+      this.inspectorPassageOpen = false;
+      this.inspectorFocusPara = null;
       this.renderDashboard();
+    },
+
+    toggleInspectorPassage() {
+      this.inspectorPassageOpen = !this.inspectorPassageOpen;
+      this.renderDashboard();
+    },
+
+    openInspectorPassageAtPara(paraNum) {
+      this.inspectorPassageOpen = true;
+      this.inspectorFocusPara = Number(paraNum) || 1;
+      this.renderDashboard();
+      setTimeout(() => {
+        const el = document.getElementById(`inspector-para-${this.inspectorFocusPara}`);
+        if (el && typeof el.scrollIntoView === 'function') {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 60);
     },
 
     /**

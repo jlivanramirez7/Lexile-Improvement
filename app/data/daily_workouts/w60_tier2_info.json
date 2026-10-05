@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The thick colonies of harmful germs",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The thick colonies of harmful germs received the action—they were dissolved by the clear ring of liquid, instead of dissolving themselves!"
         },
         {
           "id": "B",
           "text": "A sharp rose thorn placed on the glass plate",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A rose thorn is only mentioned in Paragraph 1 as an example of a cut that could cause an infection; there was no thorn on Fleming's glass dish."
         },
         {
           "id": "C",
           "text": "Hot soap and water from the laboratory wash bin",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 says Fleming stopped instead of tossing the dish into the wash bin, so soap and water didn't dissolve the germs—the mold's clear liquid did."
         },
         {
           "id": "D",
           "text": "A clear ring of liquid oozing from the mold",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'had been completely dissolved by' tells us that 'a clear ring of liquid' oozing from the green mold is what wiped out the harmful germs."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Around the pale green patch of mold, the thick colonies of harmful germs had been completely dissolved by a clear ring of liquid.",
-      "childTip": "Look after the passive verb 'had been completely dissolved by' to find what wiped out the germs.",
-      "parentExplanation": "In this passive-voice sentence, 'the thick colonies of harmful germs' is the receiver of the action. The true actor performing 'had been dissolved' comes after 'by': 'a clear ring of liquid' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'had been completely dissolved by' tells us that 'a clear ring of liquid' oozing from the green mold is what wiped out the harmful germs.",
+      "parentExplanation": "In this passive-voice sentence, 'the thick colonies of harmful germs' is the receiver of the action. The true actor performing 'had been dissolved' comes after 'by': 'a clear ring of liquid' (Option B).",
+      "retryHint": "Look right after 'had been completely dissolved by' in Paragraph 2 to see what actually dissolved the germ colonies."
     },
     {
       "questionId": "w60_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Hidden inside a locked medical journal for ten years",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Fleming printed his notes in a book in Paragraph 3 so chemists COULD read them, not to hide them! 'Extracted' means pulled out from the liquid broth."
         },
         {
           "id": "B",
           "text": "Thrown away into a laboratory trash can",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Throwing the medicine in a trash can is the opposite of saving it! Chain freeze-dried the broth so the pure powder could be pulled out and kept."
         },
         {
           "id": "C",
           "text": "Pulled out and separated from a liquid mixture",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'extracted' means pulled out and separated from a liquid mixture. Chain freeze-dried the watery mold broth to pull out the pure medicine as a stable brown powder."
         },
         {
           "id": "D",
           "text": "Mixed with harmful germs to make the bacteria grow faster",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Penicillin kills harmful germs rather than making them grow faster! 'Extracted' describes separating the pure medicine powder from the liquid broth."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Chain found a way to freeze-dry the broth so the delicate medicine could be extracted as a stable brown powder without losing its strength.",
-      "childTip": "Connect 'extracted' to Fleming's goal in Paragraph 3: to pull the pure healing stuff out of the thin broth.",
-      "parentExplanation": "The Latin root 'ex- + trahere' means to draw out. In context, Chain freeze-dried the liquid broth so the pure medicine could be drawn out and separated as a stable brown powder (Option A)."
+      "childTip": "In Paragraph 4, 'extracted' means pulled out and separated from a liquid mixture. Chain freeze-dried the watery mold broth to pull out the pure medicine as a stable brown powder.",
+      "parentExplanation": "The Latin root 'ex- + trahere' means to draw out. In context, Chain freeze-dried the liquid broth so the pure medicine could be drawn out and separated as a stable brown powder (Option A).",
+      "retryHint": "Connect 'extracted' in Paragraph 4 to what Fleming tried to do in Paragraph 3: 'pull the pure healing stuff out of the thin broth.'"
     },
     {
       "questionId": "w60_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "He accidentally threw the glass dish into the wash bin before naming the mold.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 specifically says that while most lab workers would have tossed the dish into the wash bin, Fleming stopped to study it and saved the mold."
         },
         {
           "id": "B",
           "text": "The raw mold liquid was unstable and lost its germ-fighting power within a few days.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that raw penicillin liquid was extremely fragile and lost its germ-fighting power within days, and for ten years Fleming could not pull out the pure medicine on his own."
         },
         {
           "id": "C",
           "text": "Hospitals in London refused to use any medicine discovered during a summer trip.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 never says London hospitals refused the medicine because of a summer trip; the problem was that the raw liquid spoiled within days."
         },
         {
           "id": "D",
           "text": "The green mold only dissolved healthy human cells and left harmful germs alone.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraphs 1 and 2 show the exact opposite: penicillin dissolved harmful germs without hurting good human cells."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The raw liquid was extremely fragile and lost its germ-fighting power within days.",
-      "childTip": "Click the sentence in Paragraph 3 that explains what happened to the raw liquid within days.",
-      "parentExplanation": "Paragraph 3 explains that although Fleming knew the mold juice was potent, 'The raw liquid was extremely fragile and lost its germ-fighting power within days,' preventing him from turning it into a usable drug on his own (Option A)."
+      "childTip": "Paragraph 3 explains that raw penicillin liquid was extremely fragile and lost its germ-fighting power within days, and for ten years Fleming could not pull out the pure medicine on his own.",
+      "parentExplanation": "Paragraph 3 explains that although Fleming knew the mold juice was potent, 'The raw liquid was extremely fragile and lost its germ-fighting power within days,' preventing him from turning it into a usable drug on his own (Option A).",
+      "retryHint": "Check the second sentence of Paragraph 3 to see what happened to the raw mold liquid within a few days."
     },
     {
       "questionId": "w60_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "Ernst Chain freeze-dried the mold broth to extract a stable brown powder that cured sick mice.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 proves that clever chemistry was needed by showing how Ernst Chain freeze-dried the fragile mold broth to extract a stable brown powder that kept its strength and cured sick mice."
         },
         {
           "id": "B",
           "text": "Fleming left several glass dishes of bacteria stacked on a corner bench in London.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Stacking dishes on a bench in Paragraph 1 explains how the accidental mold landed in 1928, not the chemistry used ten years later in Paragraph 4."
         },
         {
           "id": "C",
           "text": "A tiny scratch from a rose thorn could cause a dangerous illness before 1940.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The rose thorn example in Paragraph 1 only shows why doctors needed a germ-fighting drug before 1940, not how chemists purified penicillin."
         },
         {
           "id": "D",
           "text": "Most researchers tossed spoiled glass dishes straight into the laboratory wash bin.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Tossing spoiled dishes into the wash bin in Paragraph 2 only contrasts other lab workers with Fleming, not how Chain purified the drug."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Chain found a way to freeze-dry the broth so the delicate medicine could be extracted as a stable brown powder without losing its strength.",
-      "childTip": "Look in Paragraph 4 for the breakthrough that solved the problem of the fragile liquid losing its strength.",
-      "parentExplanation": "Aligned to ELAGSE5RI8, the author proves the importance of chemical purification by showing how Ernst Chain freeze-dried the broth into a stable brown powder that kept its strength and cured sick mice (Option B)."
+      "childTip": "Paragraph 4 proves that clever chemistry was needed by showing how Ernst Chain freeze-dried the fragile mold broth to extract a stable brown powder that kept its strength and cured sick mice.",
+      "parentExplanation": "Aligned to ELAGSE5RI8, the author proves the importance of chemical purification by showing how Ernst Chain freeze-dried the broth into a stable brown powder that kept its strength and cured sick mice (Option B).",
+      "retryHint": "Look in Paragraph 4 for the specific chemical breakthrough that solved the problem of the fragile liquid losing its power."
     },
     {
       "questionId": "w60_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Scientists should always leave their laboratory windows open during summer vacation so mold can grow.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The author isn't telling scientists to leave lab windows open! The stray mold spore was a lucky accident that still required years of hard chemistry to become medicine."
         },
         {
           "id": "B",
           "text": "Penicillin became a life-saving medicine because Fleming noticed an accidental mold spore and later scientists found a way to purify it.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The passage traces how two steps were needed to change medicine: first Fleming noticed the accidental mold killing germs in 1928, and later Florey and Chain's team figured out how to purify and store it."
         },
         {
           "id": "C",
           "text": "Milk churns and clay bedpans are better for growing bacteria than glass dishes.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Milk churns and bedpans in Paragraph 4 were just the makeshift containers the Oxford team used to grow mold, not the main idea of the article."
         },
         {
           "id": "D",
           "text": "Howard Florey and Ernst Chain proved that Alexander Fleming's 1928 notes were completely wrong.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Florey and Chain didn't prove Fleming's notes wrong—Paragraph 4 says they built on his notes and solved the purification puzzle he had hoped chemists would tackle!"
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "What began as an accidental speck of mold on a messy lab bench became a life-saving drug only after a second team figured out how to purify and store it.",
-      "childTip": "Look at the final sentence of Paragraph 5, which connects Fleming's discovery to Florey and Chain's work.",
-      "parentExplanation": "The passage traces how two stages of scientific work—Fleming's sharp observation in 1928 and Florey and Chain's purification ten years later—combined to create usable penicillin (Option A)."
+      "childTip": "The passage traces how two steps were needed to change medicine: first Fleming noticed the accidental mold killing germs in 1928, and later Florey and Chain's team figured out how to purify and store it.",
+      "parentExplanation": "The passage traces how two stages of scientific work—Fleming's sharp observation in 1928 and Florey and Chain's purification ten years later—combined to create usable penicillin (Option A).",
+      "retryHint": "Read the last sentence of Paragraph 5 to see how both Fleming's 1928 discovery and the second team's purification work were needed."
     },
     {
       "questionId": "w60_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Before 1940, a tiny scratch from a rose thorn or a scraped knee could turn into a deadly illness.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 only explains how dangerous small cuts were before 1940, without mentioning Fleming's mold or how it was purified."
         },
         {
           "id": "B",
           "text": "\"Before leaving, he had stacked several glass dishes of bacteria on a corner bench.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 1 only sets the scene in Fleming's lab before he even noticed the mold or anyone purified it."
         },
         {
           "id": "C",
           "text": "\"Working day and night with giant milk churns, bath trays, and clay bedpans, they grew gallons of the green mold.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 4 only describes the containers used to grow extra mold, leaving out Fleming's discovery and the purification breakthrough."
         },
         {
           "id": "D",
           "text": "\"What began as an accidental speck of mold on a messy lab bench became a life-saving drug only after a second team figured out how to purify and store it.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly supports Question 5 by connecting Fleming's accidental mold discovery on a lab bench to the second team's work purifying and storing the drug."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "What began as an accidental speck of mold on a messy lab bench became a life-saving drug only after a second team figured out how to purify and store it.",
-      "childTip": "Pick the quote that ties together both the accidental mold discovery and the second team's purification work.",
-      "parentExplanation": "Option D directly proves the central idea in Part A by summarizing how both Fleming's observation and the Oxford team's purification were essential to creating penicillin."
+      "childTip": "This final sentence from Paragraph 5 directly supports Question 5 by connecting Fleming's accidental mold discovery on a lab bench to the second team's work purifying and storing the drug.",
+      "parentExplanation": "Option D directly proves the central idea in Part A by summarizing how both Fleming's observation and the Oxford team's purification were essential to creating penicillin.",
+      "retryHint": "Check the closing sentence of Paragraph 5 connecting the accidental speck of mold on a lab bench to the second team."
     }
   ]
 }

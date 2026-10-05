@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Grandfather's older dog startled the ewes near the wall, and Eli's loud shouts gathered them into the pen.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This swaps the two causes! Eli's loud shouts and waving arms are what startled the sheep, while Grandfather's older dog calmly gathered them with a silent sweep."
         },
         {
           "id": "B",
           "text": "The stone wall gathered Eli's waving arms while the nervous ewes chased the older dog.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A stone wall cannot gather waving arms, and the nervous ewes were not chasing the dog!"
         },
         {
           "id": "C",
           "text": "Eli's waving arms and loud shouts startled the ewes, and Grandfather's older dog calmly gathered them.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'startled earlier by Eli's waving arms and loud shouts' and 'were calmly gathered by Grandfather's older dog' show that Eli's waving arms and shouts startled the ewes, and Grandfather's older dog calmly gathered them."
         },
         {
           "id": "D",
           "text": "A sudden clap of thunder startled the flock, and a farm truck herded them down the hill.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 says morning dew clung to the clover on a calm morning—there was no thunder or farm truck in the pasture."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The nervous ewes near the stone wall, startled earlier by Eli's waving arms and loud shouts, were calmly gathered by Grandfather's older dog with a wide, silent sweep.",
-      "childTip": "Separate the two 'by' phrases: Eli's waving arms and shouts startled the ewes, while the older dog gathered them.",
-      "parentExplanation": "This passive sentence contains two 'by' phrases: 'startled earlier by Eli's waving arms and loud shouts' and 'were calmly gathered by Grandfather's older dog'. Option B tracks both accurately."
+      "childTip": "In Paragraph 2, 'startled earlier by Eli's waving arms and loud shouts' and 'were calmly gathered by Grandfather's older dog' show that Eli's waving arms and shouts startled the ewes, and Grandfather's older dog calmly gathered them.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'startled earlier by Eli's waving arms and loud shouts' and 'were calmly gathered by Grandfather's older dog'. Option B tracks both accurately.",
+      "retryHint": "Look at the two 'by' phrases in Paragraph 2: 'startled earlier by...' and 'were calmly gathered by...'"
     },
     {
       "questionId": "w43_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Stopped himself from doing something he felt like doing",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'resisted' means stopped himself from doing something he felt like doing, because instead of yelling when Pip sped up, Eli held back and blew one firm note on the whistle."
         },
         {
           "id": "B",
           "text": "Shouted as loudly as possible across the pasture",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Shouting across the pasture is what Eli used to do in Paragraph 1; in Paragraph 4, he 'resisted the urge to yell' and used the whistle instead."
         },
         {
           "id": "C",
           "text": "Forgot which whistle notes his grandfather had taught him",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Eli remembered the exact signal Grandfather taught him and blew one firm, level note to make Pip lie down."
         },
         {
           "id": "D",
           "text": "Dropped the silver whistle into the wet clover",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Eli kept the silver whistle on its leather cord and blew two more crisp notes on it in Paragraph 5—he never dropped it in the clover."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Eli resisted the urge to yell across the grass.",
-      "childTip": "Look at the word 'Instead' in the next sentence: Eli wanted to yell, but he held back and used the whistle.",
-      "parentExplanation": "In Paragraph 4, 'Instead, he blew one firm, level note' shows that Eli held back ('resisted') his habit of yelling at the puppy."
+      "childTip": "In Paragraph 4, 'resisted' means stopped himself from doing something he felt like doing, because instead of yelling when Pip sped up, Eli held back and blew one firm note on the whistle.",
+      "parentExplanation": "In Paragraph 4, 'Instead, he blew one firm, level note' shows that Eli held back ('resisted') his habit of yelling at the puppy.",
+      "retryHint": "Look at the next sentence in Paragraph 4 ('Instead, he blew one firm, level note...') to see what Eli stopped himself from doing."
     },
     {
       "questionId": "w43_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "The whistle makes a loud barking noise that scares the sheep away from the briars.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Pip's wild barking in Paragraph 1 is what scattered the sheep into the briars; the silver whistle makes smooth musical notes that keep the sheep calm."
         },
         {
           "id": "B",
           "text": "Its magic sound puts the sheep to sleep so the shepherd can carry them into the pen.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The whistle signals the herding dog—it does not put the twenty ewes to sleep, and a boy could never carry twenty sheep into a pen!"
         },
         {
           "id": "C",
           "text": "Only adult border collies have ears strong enough to hear a human voice.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Young Pip heard Eli's shouting in Paragraph 1, but a loud human voice sounded like panic and made the puppy bark wildly."
         },
         {
           "id": "D",
           "text": "Its clear notes travel far through the wind without sounding angry or startling the animals.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 2 and 3 explain that while a loud human voice sounds like panic to a young dog and nervous sheep, a clear whistle cuts through valley wind up to half a mile away without sounding angry."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because a clear whistle cuts through valley wind without sounding angry, a working dog can hear the cue from half a mile away.",
-      "childTip": "Click the last sentence in Paragraph 3 that explains how a clear whistle travels through valley wind.",
-      "parentExplanation": "Paragraph 3 explains that a clear whistle cuts through valley wind without sounding angry or panicked, letting a dog hear the cue from half a mile away."
+      "childTip": "Paragraphs 2 and 3 explain that while a loud human voice sounds like panic to a young dog and nervous sheep, a clear whistle cuts through valley wind up to half a mile away without sounding angry.",
+      "parentExplanation": "Paragraph 3 explains that a clear whistle cuts through valley wind without sounding angry or panicked, letting a dog hear the cue from half a mile away.",
+      "retryHint": "Check the last sentence of Paragraph 3 to see how a whistle sound travels through valley wind without sounding angry."
     },
     {
       "questionId": "w43_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It shows Grandfather locking Pip inside the barn while the older dog finishes all the farm chores.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Grandfather never locks Pip in the barn; he gives Eli the silver whistle so Eli and Pip can herd the sheep together."
         },
         {
           "id": "B",
           "text": "It shows Pip obeying Eli's quiet whistle signals to guide the flock calmly through the gate instead of scattering them.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 1, Eli's shouting caused Pip to scatter the sheep into the briars, and Paragraph 5 resolves this problem when Pip obeys Eli's calm whistle notes and guides the whole flock smoothly through the gate."
         },
         {
           "id": "C",
           "text": "It explains why sheep prefer eating clover on the hill over standing near the stone wall.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 5 shows the sheep walking through the open wooden gate into the pen, not debating whether clover tastes better on the hill."
         },
         {
           "id": "D",
           "text": "It proves that ten-month-old puppies are too young to learn any herding commands.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Ten-month-old Pip obeys both whistle commands right away in Paragraph 5, proving he is smart and ready to learn."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Pip rose smoothly and trotted in a wide arc around the left flank, guiding the whole flock straight through the open gate.",
-      "childTip": "Compare the scattered sheep in Paragraph 1 with what Pip does at the end of Paragraph 5.",
-      "parentExplanation": "In Paragraph 1, Eli's shouting and Pip's barking scattered the ewes into the briars; in Paragraph 5, Eli's calm whistle cues help Pip pause and circle wide to bring the flock smoothly through the gate."
+      "childTip": "In Paragraph 1, Eli's shouting caused Pip to scatter the sheep into the briars, and Paragraph 5 resolves this problem when Pip obeys Eli's calm whistle notes and guides the whole flock smoothly through the gate.",
+      "parentExplanation": "In Paragraph 1, Eli's shouting and Pip's barking scattered the ewes into the briars; in Paragraph 5, Eli's calm whistle cues help Pip pause and circle wide to bring the flock smoothly through the gate.",
+      "retryHint": "Compare what went wrong when Eli shouted in Paragraph 1 with how Pip and the sheep respond to the whistle in Paragraph 5."
     },
     {
       "questionId": "w43_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "He wants Grandfather's older dog to run up the hill and take Pip's place.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "One long blast is a command for Pip to lie flat in the grass and pause—not a call for Grandfather's older dog to take over."
         },
         {
           "id": "B",
           "text": "He forgets the signal for circling left and blows the wrong note by mistake.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Eli does not blow the note by mistake; pausing Pip for three seconds calmed the sheep before Eli blew the two rising notes to circle left."
         },
         {
           "id": "C",
           "text": "He needs Pip to lie down and stop his fast charge first so the sheep do not bolt in fear.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, Pip lowers his head to charge straight into the sheep, so Eli blows one long blast (the signal from Paragraph 3 to lie flat and pause) so the ewes do not bolt in fear."
         },
         {
           "id": "D",
           "text": "One long blast tells the sheep to walk single file into the briar patch.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The whistle signals are for the border collie, not the sheep, and Eli is guiding the flock toward the open wooden gate, away from the briars."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "One long, steady blast told the dog to lie flat in the grass and pause.",
-      "childTip": "Remember what one long blast means in Paragraph 3, and see what Pip was about to do in Paragraph 4!",
-      "parentExplanation": "In Paragraph 3, one long blast means 'lie flat in the grass and pause.' When Pip lowers his head to charge the sheep in Paragraph 4, Eli blows that single long note so Pip drops into the clover and the ewes do not bolt."
+      "childTip": "In Paragraph 4, Pip lowers his head to charge straight into the sheep, so Eli blows one long blast (the signal from Paragraph 3 to lie flat and pause) so the ewes do not bolt in fear.",
+      "parentExplanation": "In Paragraph 3, one long blast means 'lie flat in the grass and pause.' When Pip lowers his head to charge the sheep in Paragraph 4, Eli blows that single long note so Pip drops into the clover and the ewes do not bolt.",
+      "retryHint": "Connect what Pip starts doing in Paragraph 4 ('ready to charge straight into the middle of the sheep') with what one long blast means in Paragraph 3."
     },
     {
       "questionId": "w43_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"One long, steady blast told the dog to lie flat in the grass and pause.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 3 directly proves Question 5 by defining the exact meaning of the one long, steady blast that Eli used to stop Pip's fast charge."
         },
         {
           "id": "B",
           "text": "\"Grandfather walked over and handed Eli a flat silver shepherd's whistle strung on a leather cord.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 2 only shows Grandfather handing Eli the silver whistle on a leather cord."
         },
         {
           "id": "C",
           "text": "\"Morning dew still clung to the clover in the north pasture when Eli unlatched the wooden gate.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 just describes the morning dew in the pasture when Eli opened the gate."
         },
         {
           "id": "D",
           "text": "\"Two short, rising notes told the dog to circle wide to the left around the flock.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 3 explains the second signal (two short, rising notes to circle left), rather than why Eli blew the one long blast first."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "One long, steady blast told the dog to lie flat in the grass and pause.",
-      "childTip": "Choose the quote in Paragraph 3 that explains the exact meaning of the single long blast.",
-      "parentExplanation": "Option C directly proves why Eli blew one long, steady note when Pip began to charge—to command the puppy to lie flat in the grass and pause."
+      "childTip": "This sentence from Paragraph 3 directly proves Question 5 by defining the exact meaning of the one long, steady blast that Eli used to stop Pip's fast charge.",
+      "parentExplanation": "Option C directly proves why Eli blew one long, steady note when Pip began to charge—to command the puppy to lie flat in the grass and pause.",
+      "retryHint": "Find the quote from Paragraph 3 that tells what 'One long, steady blast' commands the dog to do."
     }
   ]
 }

@@ -71,31 +71,36 @@
           "id": "A",
           "text": "The hidden electric speakers under the center stone",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 specifically states that the ancient Greek theater 'had no wires or speakers'—the carved stone ridges did the work naturally!"
         },
         {
           "id": "B",
           "text": "The rustling robes worn by the actors on stage",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The rustling robes and breeze create the low rumbles that get trapped; they don't trap and scatter themselves!"
         },
         {
           "id": "C",
           "text": "The gentle hillside breeze blowing up the stone bowl",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The breeze is part of the low background noise ('low rumbles from the breeze'), whereas the tiny ridges on the limestone seats trap and scatter those rumbles."
         },
         {
           "id": "D",
           "text": "The tiny ridges carved onto the limestone seats",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the passive verb 'are trapped and scattered by' shows that 'the tiny ridges on the limestone seats' are what trap and scatter the low background rumbles."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "As sound waves climb the steep stone bowl of Epidaurus, low rumbles from the breeze and rustling robes are trapped and scattered by the tiny ridges on the limestone seats.",
-      "childTip": "Look right after 'are trapped and scattered by' to find what performs the action.",
-      "parentExplanation": "In this passive clause, 'low rumbles from the breeze and rustling robes' is the receiver of 'are trapped and scattered.' The grammatical actor appears after 'by': 'the tiny ridges on the limestone seats' (Option A)."
+      "childTip": "In Paragraph 3, the passive verb 'are trapped and scattered by' shows that 'the tiny ridges on the limestone seats' are what trap and scatter the low background rumbles.",
+      "parentExplanation": "In this passive clause, 'low rumbles from the breeze and rustling robes' is the receiver of 'are trapped and scattered.' The grammatical actor appears after 'by': 'the tiny ridges on the limestone seats' (Option A).",
+      "retryHint": "Look right after 'are trapped and scattered by' in Paragraph 3 to see what traps the low rumbles."
     },
     {
       "questionId": "w68_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Polished until it shines like a flat glass mirror",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Polished flat like a mirror is the exact opposite of 'corrugated'! Paragraph 3 says the stone rows are NOT flat because they have ridges and hollow curves."
         },
         {
           "id": "B",
           "text": "Covered with thick wool carpets to keep guests warm",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The Greek seats are bare carved limestone rock, not covered in wool carpets—and soft carpets would soak up the actors' voices instead of reflecting them!"
         },
         {
           "id": "C",
           "text": "Shaped into a pattern of repeating ridges and grooves",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'corrugated' means shaped into a pattern of repeating ridges and grooves. The sentence explains that instead of being flat, every stone row had a slight lip and hollow curve cut into it."
         },
         {
           "id": "D",
           "text": "Cracked into loose pebbles by centuries of rain",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The stone seats aren't cracked into loose pebbles; builders carefully carved an exact pattern of lips and curves across the hillside."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Instead, the builders cut a slight lip and hollow curve into every tier, creating a corrugated surface across the whole hillside.",
-      "childTip": "Use the contrast with 'not flat' and the clue 'cut a slight lip and hollow curve into every tier.'",
-      "parentExplanation": "Paragraph 3 contrasts the benches with a flat surface and explains that builders carved a lip and hollow curve into every tier. Thus, 'corrugated' means shaped into repeating ridges and grooves (Option B)."
+      "childTip": "In Paragraph 3, 'corrugated' means shaped into a pattern of repeating ridges and grooves. The sentence explains that instead of being flat, every stone row had a slight lip and hollow curve cut into it.",
+      "parentExplanation": "Paragraph 3 contrasts the benches with a flat surface and explains that builders carved a lip and hollow curve into every tier. Thus, 'corrugated' means shaped into repeating ridges and grooves (Option B).",
+      "retryHint": "Contrast 'corrugated' with 'not flat' in Paragraph 3 and look at how builders 'cut a slight lip and hollow curve into every tier.'"
     },
     {
       "questionId": "w68_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "The smooth benches made the actors' voices ten times louder than the stone seats at Epidaurus.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Smooth benches didn't make voices ten times louder—Paragraph 5 says the acoustic magic vanished and wind echoes blurred the actors' lines!"
         },
         {
           "id": "B",
           "text": "Without the carved stone ridges, wind noise echoed across the bowl and blurred the actors' words.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 5 explains that when modern builders copied the theater using smooth wood or flat stone without the carved limestone ridges, wind noise echoed across the bowl and blurred the actors' lines."
         },
         {
           "id": "C",
           "text": "The concrete benches cracked in the hot sun before the first audience arrived.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 5 never says the modern benches cracked in the sun; the problem was that their smooth, flat surfaces let wind noise echo across the bowl."
         },
         {
           "id": "D",
           "text": "Guests in the top row could hear a coin drop but could not see the center stage.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 2 says the steep slope DOES give every guest a clear view of the stage; the problem with smooth benches in Paragraph 5 was blurry sound, not blocked sight."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Without the carved limestone ridges, wind noise echoed across the bowl and blurred the actors' lines.",
-      "childTip": "Click the sentence in Paragraph 5 that tells what happened to the sound without the carved limestone ridges.",
-      "parentExplanation": "Paragraph 5 explains that when modern builders used smooth wood or flat concrete without the carved limestone ridges, 'wind noise echoed across the bowl and blurred the actors' lines' (Option C)."
+      "childTip": "Paragraph 5 explains that when modern builders copied the theater using smooth wood or flat stone without the carved limestone ridges, wind noise echoed across the bowl and blurred the actors' lines.",
+      "parentExplanation": "Paragraph 5 explains that when modern builders used smooth wood or flat concrete without the carved limestone ridges, 'wind noise echoed across the bowl and blurred the actors' lines' (Option C).",
+      "retryHint": "Check the second sentence of Paragraph 5 to see what happened when modern theaters left out the carved limestone ridges."
     },
     {
       "questionId": "w68_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "Paragraph 2 presents older incomplete theories about wind and slope, and Paragraph 3 reveals the true scientific cause found in the ridged seats.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 introduces older guesses about why the theater carried sound so well (breezes and steep slope) and shows why they weren't enough, setting up Paragraph 3 to reveal the real secret in the ridged limestone seats."
         },
         {
           "id": "B",
           "text": "Paragraph 2 lists the prices of ancient Greek theater tickets, and Paragraph 3 compares them to modern stadium prices.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Neither paragraph ever mentions ticket prices for Greek theaters or modern stadiums; both paragraphs focus on how sound travels up the stone hillside."
         },
         {
           "id": "C",
           "text": "Paragraph 2 argues that Epidaurus should be torn down, and Paragraph 3 explains how to build a roof over the stage.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Nobody argues that Epidaurus should be torn down or covered with a roof! It is admired as one of history's smartest open-air sound designs."
         },
         {
           "id": "D",
           "text": "Paragraph 2 describes how coins were minted in Greece, and Paragraph 3 tells where actors bought their robes.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Dropping a coin in Paragraph 1 and rustling robes in Paragraph 3 are just examples of quiet and low sounds—the article never explains how coins or robes were made."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "While the steep pitch does give every guest a clear path to the stage, modern sound tests showed that slope alone cannot explain such clear speech.",
-      "childTip": "Compare what visitors guessed in Paragraph 2 with what engineers measured in Paragraph 3.",
-      "parentExplanation": "Aligned to ELAGSE5RI5, Paragraph 2 introduces early hypotheses (breezes and steep slope) and explains why they fall short, setting up Paragraph 3's explanation of how the corrugated limestone seats actually filter out low-frequency noise (Option A)."
+      "childTip": "Paragraph 2 introduces older guesses about why the theater carried sound so well (breezes and steep slope) and shows why they weren't enough, setting up Paragraph 3 to reveal the real secret in the ridged limestone seats.",
+      "parentExplanation": "Aligned to ELAGSE5RI5, Paragraph 2 introduces early hypotheses (breezes and steep slope) and explains why they fall short, setting up Paragraph 3's explanation of how the corrugated limestone seats actually filter out low-frequency noise (Option A).",
+      "retryHint": "Compare what visitors and builders used to guess in Paragraph 2 with what scientists discovered in Paragraph 3."
     },
     {
       "questionId": "w68_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Ancient Greek actors had to shout at the top of their lungs so fourteen thousand people could hear them over the wind.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 says the exact opposite: an actor could speak in a soft voice—or even drop a coin—and still be heard in the very top row!"
         },
         {
           "id": "B",
           "text": "The theater of Epidaurus delivers clear sound to every row because its ridged limestone seats filter out low background noise while reflecting voices.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across the whole passage, the central idea is that the ancient theater of Epidaurus delivers clear sound to every row because its ridged limestone seats scatter low background noise while reflecting spoken voices."
         },
         {
           "id": "C",
           "text": "Modern builders prefer to use smooth concrete benches because limestone rock is too soft to carve into steps.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 5 mentions modern smooth benches only to show why flat surfaces failed when builders didn't copy Epidaurus's carved limestone ridges."
         },
         {
           "id": "D",
           "text": "Dropping a metal coin on a stone circle is the only way engineers can measure sound waves in an outdoor stadium.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The coin drop in Paragraph 1 is just a famous example showing how well sound carries at Epidaurus, not the only way engineers measure sound waves."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "At the same time, the hard limestone reflects the higher frequencies of spoken words, helping amplify the actor's voice without making the background noise louder.",
-      "childTip": "Pick the choice that explains both how the stone seats quiet background noise and how they boost the actor's voice.",
-      "parentExplanation": "Across all five paragraphs, the central idea is that Epidaurus achieves remarkable clarity because its corrugated limestone rows scatter low-pitched background noise while reflecting the higher frequencies of human speech (Option B)."
+      "childTip": "Across the whole passage, the central idea is that the ancient theater of Epidaurus delivers clear sound to every row because its ridged limestone seats scatter low background noise while reflecting spoken voices.",
+      "parentExplanation": "Across all five paragraphs, the central idea is that Epidaurus achieves remarkable clarity because its corrugated limestone rows scatter low-pitched background noise while reflecting the higher frequencies of human speech (Option B).",
+      "retryHint": "Think about the main point that explains both what the carved stone ridges block (low noise) and what they bounce up to the crowd (voices)."
     },
     {
       "questionId": "w68_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"High on a green hillside in Greece sits the ancient theater of Epidaurus.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 only tells where the theater is located in Greece, without explaining how its stone seats filter sound."
         },
         {
           "id": "B",
           "text": "\"For centuries, visitors guessed that gentle hillside breezes carried the actors' words uphill.\"",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This sentence from Paragraph 2 only states an old guess about hillside breezes that modern sound tests proved was not the real reason."
         },
         {
           "id": "C",
           "text": "\"In most large outdoor stadiums, low background noise from wind and shuffling feet drowns out a single voice.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 2 only describes the noise problem in ordinary stadiums, not how Epidaurus's ridged limestone seats solve it."
         },
         {
           "id": "D",
           "text": "\"At the same time, the hard limestone reflects the higher frequencies of spoken words, helping amplify the actor's voice without making the background noise louder.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 4 directly supports Question 5 by explaining how the limestone seats reflect the higher frequencies of spoken words to boost the actor's voice without boosting background noise."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "At the same time, the hard limestone reflects the higher frequencies of spoken words, helping amplify the actor's voice without making the background noise louder.",
-      "childTip": "Find the quote from Paragraph 4 that explains how the limestone boosts spoken words without boosting background noise.",
-      "parentExplanation": "Option D directly supports the central idea in Part A by summarizing how the limestone benches reflect spoken frequencies to amplify the voice while keeping background noise muffled."
+      "childTip": "This sentence from Paragraph 4 directly supports Question 5 by explaining how the limestone seats reflect the higher frequencies of spoken words to boost the actor's voice without boosting background noise.",
+      "parentExplanation": "Option D directly supports the central idea in Part A by summarizing how the limestone benches reflect spoken frequencies to amplify the voice while keeping background noise muffled.",
+      "retryHint": "Check Paragraph 4 for the sentence explaining how the hard limestone reflects spoken words without making background noise louder."
     }
   ]
 }

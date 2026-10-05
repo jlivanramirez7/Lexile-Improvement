@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Bursts of static from sagging poles interrupted the warning, and Clara pieced it together.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'interrupted by bursts of static from sagging telegraph poles' and 'was patiently pieced together by Clara' show that bursts of static interrupted the warning, and Clara pieced it together."
         },
         {
           "id": "B",
           "text": "Clara interrupted the weather warning with her notepad, and sagging telegraph poles pieced it together.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This reverses the roles! Sagging telegraph poles caused the bursts of static that broke up the signal, while Clara patiently pieced the message together on her notepad."
         },
         {
           "id": "C",
           "text": "A lined notepad interrupted the sagging telegraph poles before the weather warning could start.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A paper notepad cannot interrupt telegraph poles outside! Clara used her lined notepad to write down the message."
         },
         {
           "id": "D",
           "text": "Mr. Henderson cut the telegraph wires outside so the static would stop bothering Clara.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Mr. Henderson was down the platform checking a stalled freight engine in Paragraph 1—he never cut the telegraph wires."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The garbled weather warning, interrupted by bursts of static from sagging telegraph poles, was patiently pieced together by Clara on her lined notepad.",
-      "childTip": "Track both 'by' phrases: bursts of static did the interrupting, while Clara did the piecing together.",
-      "parentExplanation": "This passive sentence includes two 'by' phrases: 'interrupted by bursts of static' identifies what broke up the signal, and 'was patiently pieced together by Clara' names the actor who decoded it."
+      "childTip": "In Paragraph 2, 'interrupted by bursts of static from sagging telegraph poles' and 'was patiently pieced together by Clara' show that bursts of static interrupted the warning, and Clara pieced it together.",
+      "parentExplanation": "This passive sentence includes two 'by' phrases: 'interrupted by bursts of static' identifies what broke up the signal, and 'was patiently pieced together by Clara' names the actor who decoded it.",
+      "retryHint": "Check the two 'by' phrases in Paragraph 2: 'interrupted by...' and 'was patiently pieced together by...'"
     },
     {
       "questionId": "w45_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Written in bright ink on a brand-new sheet of paper",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "A telegraph message arrives as clicking sounds on a brass bar, not written in bright ink, and 'garbled' describes how static broke up the signal."
         },
         {
           "id": "B",
           "text": "Broken up and unclear because parts of the signal were missing",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'garbled' means broken up and unclear because parts of the signal were missing, as shown by the clues 'the incoming signal popped and faded between words' and 'interrupted by bursts of static.'"
         },
         {
           "id": "C",
           "text": "Loud and easy for everyone on the train platform to hear",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Loud and easy to hear is the opposite of 'garbled'—parts of the warning popped and faded out, leaving blank spaces on Clara's page."
         },
         {
           "id": "D",
           "text": "Coated in thick sheets of freezing winter rain",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The high wires outside were coated in sleet and ice, whereas 'garbled' describes the broken, mixed-up weather warning coming through the telegraph."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Because heavy sleet was weighing down the copper wires along the mountain ridge, the incoming signal popped and faded between words.",
-      "childTip": "Use the clue in the sentence before: the signal popped and faded between words, leaving missing letters.",
-      "parentExplanation": "Paragraph 2 explains that the signal 'popped and faded between words' and left missing letters, showing that 'garbled' means distorted or scrambled."
+      "childTip": "In Paragraph 2, 'garbled' means broken up and unclear because parts of the signal were missing, as shown by the clues 'the incoming signal popped and faded between words' and 'interrupted by bursts of static.'",
+      "parentExplanation": "Paragraph 2 explains that the signal 'popped and faded between words' and left missing letters, showing that 'garbled' means distorted or scrambled.",
+      "retryHint": "Look at the clues 'popped and faded between words' and 'interrupted by bursts of static' in Paragraph 2."
     },
     {
       "questionId": "w45_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She runs down the icy platform to ask the freight engineer what the code means.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Clara stays at her desk in the depot office and communicates through the telegraph wire with the northern clerk near Dalton."
         },
         {
           "id": "B",
           "text": "She guesses the missing words quickly so she can warm her hands by the depot stove.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 specifically says 'She would not guess at missing letters while lives were at risk,' and Paragraph 4 notes that guessing could have sent the train to the wrong switch."
         },
         {
           "id": "C",
           "text": "She signals the northern clerk to resend the middle part of the message at half speed.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that instead of guessing or rushing a partial note, Clara tapped a short code asking the northern clerk to repeat the middle section at half speed so she could fill in every letter."
         },
         {
           "id": "D",
           "text": "She climbs the telegraph pole outside to knock the heavy ice off the copper wires.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The sagging wires were miles away along a mountain ridge near Dalton—Clara never climbs a telegraph pole in the sleet storm."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Instead of rushing a partial note to the train dispatcher, Clara tapped a short code asking the northern clerk to repeat the middle section at half speed.",
-      "childTip": "Click the sentence in Paragraph 3 that tells what Clara tapped back to the northern clerk.",
-      "parentExplanation": "In Paragraph 3, Clara refuses to send an incomplete note and instead taps a code asking the northern operator to repeat the middle section at half speed."
+      "childTip": "Paragraph 3 explains that instead of guessing or rushing a partial note, Clara tapped a short code asking the northern clerk to repeat the middle section at half speed so she could fill in every letter.",
+      "parentExplanation": "In Paragraph 3, Clara refuses to send an incomplete note and instead taps a code asking the northern operator to repeat the middle section at half speed.",
+      "retryHint": "Read the first two sentences of Paragraph 3 to see what Clara tapped on the brass key to get the missing letters."
     },
     {
       "questionId": "w45_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It introduces the 1886 setting and explains why Clara took a job at the railroad depot.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The 1886 winter evening setting in the Atlanta rail depot was already introduced back in Paragraph 1."
         },
         {
           "id": "B",
           "text": "It proves that telegraph wires never work during winter storms in Georgia.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Even though heavy ice caused static, the telegraph wire still carried the life-saving warning from Dalton when sent at half speed."
         },
         {
           "id": "C",
           "text": "It describes how the ice slide first broke loose above the track north of Dalton.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The ice slide north of Dalton was the news inside the message in Paragraph 3; Paragraph 4 focuses on Mr. Henderson returning and the express train being stopped in time."
         },
         {
           "id": "D",
           "text": "It shows the positive result of Clara's careful work when the express train is stopped in time.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "After Clara carefully verifies the message in Paragraphs 2 and 3, Paragraph 4 shows the positive result of her careful work when the express train is stopped in time."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Because Clara had verified every syllable before sounding the alarm, the stationmaster was able to flag down the express with ten minutes to spare.",
-      "childTip": "Look at what happens in Paragraph 4 after Clara finishes decoding: her accurate note saves the express train.",
-      "parentExplanation": "Paragraph 4 provides the resolution to the central conflict by showing how Clara's verified message allows the stationmaster to halt the passenger express safely."
+      "childTip": "After Clara carefully verifies the message in Paragraphs 2 and 3, Paragraph 4 shows the crucial payoff: because she checked every syllable instead of guessing, the stationmaster flags down the express train with ten minutes to spare.",
+      "parentExplanation": "Paragraph 4 provides the resolution to the central conflict by showing how Clara's verified message allows the stationmaster to halt the passenger express safely.",
+      "retryHint": "Read the last sentence of Paragraph 4 to see the result of Clara verifying every syllable before sounding the alarm."
     },
     {
       "questionId": "w45_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Staying patient and checking every detail during an emergency protects others far better than rushing.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story shows that by staying calm and verifying every missing letter instead of rushing a guess during the storm, Clara saved a hundred train passengers from a blocked track."
         },
         {
           "id": "B",
           "text": "Young apprentices should never be left alone in a train station after dark.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Clara handled the emergency brilliantly while Mr. Henderson checked the freight engine, showing she was trustworthy and capable."
         },
         {
           "id": "C",
           "text": "Sleet storms in northern Georgia always cause passenger trains to run late.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Stopping the express train was a life-saving safety measure because of an ice slide on the track, not a complaint about trains running late."
         },
         {
           "id": "D",
           "text": "Guessing missing words is the fastest way to win praise from a senior telegraph operator.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 states the exact opposite: a rash clerk who guessed at the blanks might have sent the train to the wrong switch."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Even the faintest voice on the wire could save a hundred travelers if the listener stayed calm and thorough.",
-      "childTip": "Think about the lesson Clara learns in Paragraph 5 about staying calm and thorough instead of guessing.",
-      "parentExplanation": "The story's theme (ELAGSE5RL2) centers on how Clara's calm accuracy under pressure prevents a wreck that hasty guesswork could have caused."
+      "childTip": "The story shows that by staying calm and verifying every missing letter instead of rushing a guess during the storm, Clara saved a hundred train passengers from a blocked track.",
+      "parentExplanation": "The story's theme (ELAGSE5RL2) centers on how Clara's calm accuracy under pressure prevents a wreck that hasty guesswork could have caused.",
+      "retryHint": "Look at the last two sentences of Paragraph 5 to see what Clara realized about clear judgment and staying calm and thorough."
     },
     {
       "questionId": "w45_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Mr. Henderson, the senior clerk, had walked down the platform to check a stalled freight engine.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only explains why Mr. Henderson stepped out of the office before the warning arrived."
         },
         {
           "id": "B",
           "text": "\"Suddenly, the brass bar began to clatter with an uneven, halting beat.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 2 only describes the sound of the telegraph key when the urgent call started."
         },
         {
           "id": "C",
           "text": "\"Even the faintest voice on the wire could save a hundred travelers if the listener stayed calm and thorough.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly proves Question 5 by stating the central lesson: even a faint signal can save a hundred travelers if the listener stays calm and thorough."
         },
         {
           "id": "D",
           "text": "\"Clara wiped the brass key with a soft cloth and listened to the wind rattle the window pane.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 5 just shows Clara cleaning the brass key after the emergency was over."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Even the faintest voice on the wire could save a hundred travelers if the listener stayed calm and thorough.",
-      "childTip": "Pick the final quote in Paragraph 5 that connects staying calm and thorough with saving travelers.",
-      "parentExplanation": "Option D directly states the story's concluding insight about how calm, thorough attention during a crisis protects travelers' lives."
+      "childTip": "This final sentence from Paragraph 5 directly proves Question 5 by stating the central lesson: even a faint signal can save a hundred travelers if the listener stays calm and thorough.",
+      "parentExplanation": "Option D directly states the story's concluding insight about how calm, thorough attention during a crisis protects travelers' lives.",
+      "retryHint": "Choose the quote from Paragraph 5 that connects staying 'calm and thorough' to saving 'a hundred travelers.'"
     }
   ]
 }

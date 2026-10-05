@@ -71,31 +71,36 @@
           "id": "A",
           "text": "White soldiers in New Echota were amazed by the metal printing press inside the cabin.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "White soldiers were mentioned back in Paragraph 1, and the metal printing press in New Echota was not made until 1828 in Paragraph 5."
         },
         {
           "id": "B",
           "text": "Sequoyah and his daughter felt amazed because the council elders played a memory trick on them.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the people around! Sequoyah and his daughter were the ones sharing written messages, and the skeptical council elders were the ones who felt amazed."
         },
         {
           "id": "C",
           "text": "A trick of memory amazed the written marks and stopped the father from speaking to the council.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Written marks cannot feel amazed! At first the elders thought the marks were a memory trick, until the rapid messages amazed them."
         },
         {
           "id": "D",
           "text": "The council elders felt amazed, and the rapid messages shared between Sequoyah and his daughter caused their amazement.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'Skeptical council elders... were soon amazed by the rapid messages shared between father and daughter' shows that the council elders felt amazed, and the rapid messages between Sequoyah and his daughter caused their amazement."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Skeptical council elders, convinced at first that written marks were a trick of memory, were soon amazed by the rapid messages shared between father and daughter.",
-      "childTip": "Look at the subject ('Skeptical council elders') and the 'by' phrase ('by the rapid messages') to see what amazed them.",
-      "parentExplanation": "In this passive sentence, 'Skeptical council elders' is the receiver of the verb 'were soon amazed', and 'the rapid messages shared between father and daughter' is the agent after 'by'."
+      "childTip": "In Paragraph 3, 'Skeptical council elders... were soon amazed by the rapid messages shared between father and daughter' shows that the council elders felt amazed, and the rapid messages between Sequoyah and his daughter caused their amazement.",
+      "parentExplanation": "In this passive sentence, 'Skeptical council elders' is the receiver of the verb 'were soon amazed', and 'the rapid messages shared between father and daughter' is the agent after 'by'.",
+      "retryHint": "Look at the subject ('Skeptical council elders') and the 'by' phrase after 'were soon amazed' in Paragraph 3."
     },
     {
       "questionId": "w40_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Eager to believe any new story without asking for proof",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Being eager to believe without proof is the opposite of thinking the written marks were just a 'trick of memory.'"
         },
         {
           "id": "B",
           "text": "Skilled at working with silver and metal printing type",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Sequoyah was a silversmith in Paragraph 1 and leaders had metal type cast in Paragraph 5, whereas 'skeptical' describes the council elders' doubts in Paragraph 3."
         },
         {
           "id": "C",
           "text": "Doubtful and unsure whether something is truly real",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'skeptical' means doubtful and unsure whether something is truly real, because the council elders thought at first that the written marks were just a trick of memory."
         },
         {
           "id": "D",
           "text": "Tired from walking hundreds of miles along forest trails",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 mentions letters carrying words across hundreds of miles, not that the council elders were tired from walking forest trails."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Skeptical council elders, convinced at first that written marks were a trick of memory, were soon amazed by the rapid messages shared between father and daughter.",
-      "childTip": "Notice the clue right after 'elders': they thought at first that the marks were just a trick of memory.",
-      "parentExplanation": "The phrase 'convinced at first that written marks were a trick of memory' explains why the elders were 'skeptical'—they doubted the writing system until they saw it work."
+      "childTip": "In Paragraph 3, 'skeptical' means doubtful and unsure whether something is truly real, because the council elders thought at first that the written marks were just a trick of memory.",
+      "parentExplanation": "The phrase 'convinced at first that written marks were a trick of memory' explains why the elders were 'skeptical'—they doubted the writing system until they saw it work.",
+      "retryHint": "Look at the clue right after 'Skeptical council elders' in Paragraph 3: 'convinced at first that written marks were a trick of memory.'"
     },
     {
       "questionId": "w40_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "He ran out of birch bark in the woods and could not buy paper from the traders.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 2 never says he ran out of birch bark; he stopped making word pictures because thousands of separate drawings were too many to memorize."
         },
         {
           "id": "B",
           "text": "He realized that making a separate picture for every word would create too many symbols to remember.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that after months of carving separate drawings for each word onto birch bark, Sequoyah realized that thousands of individual word pictures would be impossible for anyone to memorize."
         },
         {
           "id": "C",
           "text": "The tribal council passed a law forbidding anyone from carving marks onto trees.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The tribal council never banned carving marks on bark; in fact, the chiefs backed Sequoyah's finished chart in Paragraph 4."
         },
         {
           "id": "D",
           "text": "He decided that English spelling rules were much easier to learn than Cherokee sounds.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 3 points out that Sequoyah's Cherokee sound chart avoided silent letters and confusing spelling rules."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "After months of carving marks onto thin strips of birch bark, he realized that thousands of individual word pictures would be impossible for anyone to memorize.",
-      "childTip": "Click the second sentence in Paragraph 2 that tells what Sequoyah realized after months of carving word pictures.",
-      "parentExplanation": "Paragraph 2 explains that Sequoyah gave up on word pictures because 'thousands of individual word pictures would be impossible for anyone to memorize.'"
+      "childTip": "Paragraph 2 explains that after months of carving separate drawings for each word onto birch bark, Sequoyah realized that thousands of individual word pictures would be impossible for anyone to memorize.",
+      "parentExplanation": "Paragraph 2 explains that Sequoyah gave up on word pictures because 'thousands of individual word pictures would be impossible for anyone to memorize.'",
+      "retryHint": "Read the second sentence of Paragraph 2 to see what Sequoyah realized after months of carving marks on birch bark."
     },
     {
       "questionId": "w40_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "Each of the eighty-five symbols matched a single spoken syllable that Cherokee speakers already used every day.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 3 and 4 explain that because the eighty-five symbols matched the exact spoken sounds Cherokee speakers already used every day, people did not have to study silent letters or tricky spelling rules and could learn in weeks."
         },
         {
           "id": "B",
           "text": "Every Cherokee town built large brick schoolhouses staffed by teachers from New Echota.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 4 says families painted the symbols on cabin walls and taught neighbors along rural trails, rather than building large brick schoolhouses."
         },
         {
           "id": "C",
           "text": "The syllabary used only five symbols so learners never had to write long sentences.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The chart had eighty-five symbols—not just five—and people learned all eighty-five within a few weeks because they matched spoken syllables."
         },
         {
           "id": "D",
           "text": "Readers only needed to look at the English column of the Cherokee Phoenix to understand the marks.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Most Cherokee speakers learned the eighty-five symbols years before the bilingual Cherokee Phoenix newspaper started in 1828."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because the chart matched the exact sounds that Cherokee speakers already used every day, learners did not have to spend years studying silent letters or confusing spelling rules.",
-      "childTip": "Look at Paragraph 3 to see how the eighty-five symbols matched the sounds speakers already used.",
-      "parentExplanation": "To support the claim that the syllabary was easy to master (ELAGSE5RI8), the author explains that each of the 85 symbols stood for one exact spoken syllable without silent letters or irregular spelling rules."
+      "childTip": "Paragraphs 3 and 4 explain that because the eighty-five symbols matched the exact spoken sounds Cherokee speakers already used every day, people did not have to study silent letters or tricky spelling rules and could learn in weeks.",
+      "parentExplanation": "To support the claim that the syllabary was easy to master (ELAGSE5RI8), the author explains that each of the 85 symbols stood for one exact spoken syllable without silent letters or irregular spelling rules.",
+      "retryHint": "Read the third sentence of Paragraph 3 to see why learners did not have to spend years studying silent letters or spelling rules."
     },
     {
       "questionId": "w40_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Working as a silversmith was the best way to earn money in early nineteenth-century Georgia.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 1 only mentions that Sequoyah was a silversmith to introduce him; the passage never discusses ways to earn money."
         },
         {
           "id": "B",
           "text": "Capturing Cherokee speech on paper would allow the nation to preserve and share its own laws and news.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 1, Sequoyah believed that putting Cherokee speech on paper would let his people preserve their laws and news, and Paragraph 5 proves this came true when the Cherokee Phoenix printed tribal laws, local news, and stories."
         },
         {
           "id": "C",
           "text": "Birch bark strips were stronger and lasted longer than printed newspaper pages.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Birch bark is only mentioned in Paragraph 2 when Sequoyah tested his first drawings; it is never compared to newspaper strength in Paragraph 5."
         },
         {
           "id": "D",
           "text": "No one can invent a useful writing system without attending college first.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The final sentence of Paragraph 5 proves the exact opposite: 'Without ever going to school himself, Sequoyah had given his people a lasting voice in print.'"
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Printed side by side in Cherokee and English, the paper carried tribal laws, local news, and stories to readers across the nation.",
-      "childTip": "Connect Sequoyah's goal in Paragraph 1 (preserving laws and news) with what the Cherokee Phoenix did in Paragraph 5.",
-      "parentExplanation": "In Paragraph 1, Sequoyah believed a writing system would let his people 'preserve their laws and news'; Paragraph 5 proves this came true when the Cherokee Phoenix printed tribal laws and local news across the nation."
+      "childTip": "In Paragraph 1, Sequoyah believed that putting Cherokee speech on paper would let his people preserve their laws and news, and Paragraph 5 proves this came true when the Cherokee Phoenix printed tribal laws, local news, and stories.",
+      "parentExplanation": "In Paragraph 1, Sequoyah believed a writing system would let his people 'preserve their laws and news'; Paragraph 5 proves this came true when the Cherokee Phoenix printed tribal laws and local news across the nation.",
+      "retryHint": "Compare Sequoyah's goal at the end of Paragraph 1 ('preserve their laws and news') with what the Cherokee Phoenix newspaper printed in Paragraph 5."
     },
     {
       "questionId": "w40_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"In the early 1800s, a Cherokee silversmith named Sequoyah watched white soldiers and traders read letters on folded sheets of paper.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line comes from Paragraph 1 and only shows Sequoyah watching soldiers and traders read letters."
         },
         {
           "id": "B",
           "text": "\"Working patiently for twelve years, Sequoyah sorted every sound in his language until he had a complete chart of eighty-five symbols.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence comes from Paragraph 3 and describes the twelve years Sequoyah spent creating his eighty-five-symbol chart."
         },
         {
           "id": "C",
           "text": "\"Families painted the symbols on cabin walls and taught neighbors along rural trails.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 4 shows how neighbors taught one another the symbols, rather than how the newspaper published tribal laws and news in Paragraph 5."
         },
         {
           "id": "D",
           "text": "\"Printed side by side in Cherokee and English, the paper carried tribal laws, local news, and stories to readers across the nation.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 5 directly supports Question 5 by showing how the Cherokee Phoenix newspaper carried tribal laws, local news, and stories to readers across the nation."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Printed side by side in Cherokee and English, the paper carried tribal laws, local news, and stories to readers across the nation.",
-      "childTip": "Select the quote from Paragraph 5 that shows what the Cherokee Phoenix newspaper carried to readers.",
-      "parentExplanation": "Option C directly quotes Paragraph 5, demonstrating how the Cherokee Phoenix fulfilled Sequoyah's vision by printing tribal laws, local news, and stories."
+      "childTip": "This sentence from Paragraph 5 directly supports Question 5 by showing how the Cherokee Phoenix newspaper carried tribal laws, local news, and stories to readers across the nation.",
+      "parentExplanation": "Option C directly quotes Paragraph 5, demonstrating how the Cherokee Phoenix fulfilled Sequoyah's vision by printing tribal laws, local news, and stories.",
+      "retryHint": "Find the quote from Paragraph 5 that specifically mentions 'tribal laws, local news, and stories.'"
     }
   ]
 }

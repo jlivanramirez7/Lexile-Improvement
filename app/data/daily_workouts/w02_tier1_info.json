@@ -71,31 +71,36 @@
           "id": "A",
           "text": "Clustered oyster shells push the waves toward shore, and fierce offshore winds slow the waves down.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This mixes up the two actions! Paragraph 2 says the offshore winds drive the waves forward, while the oyster shells slow them down."
         },
         {
           "id": "B",
           "text": "Fierce offshore winds push the waves toward the mainland, and jagged walls of oyster shells slow them down.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'driven toward the mainland by fierce offshore winds' tells what pushes the waves, and 'slowed by these jagged walls of clustered oyster shells' tells what slows them."
         },
         {
           "id": "C",
           "text": "The mainland pushes the jagged walls of oyster shells into the open ocean during a storm.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The mainland does not push oyster reefs into the ocean; Paragraph 2 says oysters cement their shells to the muddy creek bottom."
         },
         {
           "id": "D",
           "text": "Ferry boats create the incoming storm waves, and sandy bluffs slow the wind down.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Ferry boats are only mentioned in Paragraph 1 for carrying visitors, not for making storm waves in Paragraph 2."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Incoming storm waves, driven toward the mainland by fierce offshore winds, are rapidly slowed by these jagged walls of clustered oyster shells.",
-      "childTip": "Separate the two 'by' phrases: offshore winds drive the waves forward, while oyster shells slow them down.",
-      "parentExplanation": "In this passive sentence with an embedded participial modifier, 'by fierce offshore winds' modifies 'driven' (what pushes the waves), while 'by these jagged walls of clustered oyster shells' is the agent of the main verb 'are rapidly slowed'."
+      "childTip": "In Paragraph 2, 'driven toward the mainland by fierce offshore winds' tells what pushes the waves, and 'slowed by these jagged walls of clustered oyster shells' tells what slows them.",
+      "parentExplanation": "In this passive sentence with an embedded participial modifier, 'by fierce offshore winds' modifies 'driven' (what pushes the waves), while 'by these jagged walls of clustered oyster shells' is the agent of the main verb 'are rapidly slowed'.",
+      "retryHint": "Look closely at the clues 'driven... by' and 'slowed by' in the Paragraph 2 sentence to see which force pushes and which barrier slows."
     },
     {
       "questionId": "w02_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Covered in hard shells like an eastern oyster",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Oysters have hard shells in Paragraph 2, but Paragraph 3 describes smooth cordgrass as a green plant with stems and blades, not shells."
         },
         {
           "id": "B",
           "text": "Delicate and easily crushed by passing boats",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 3 shows that cordgrass is the opposite of delicate—it thrives in harsh salty mud and bends with strong tides without snapping."
         },
         {
           "id": "C",
           "text": "Completely dry and unable to grow near water",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 3 states that smooth cordgrass grows right inside the muddy tidal marsh where ocean water floods twice a day, so it is never completely dry."
         },
         {
           "id": "D",
           "text": "Tough and able to survive harsh conditions",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'resilient' means tough and able to survive harsh conditions, because smooth cordgrass thrives in salty mud that would wilt almost any forest tree."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "This resilient plant thrives in salty mud that would wilt almost any forest tree.",
-      "childTip": "Look at the clue right after the word: the plant thrives in salty mud that would wilt other trees.",
-      "parentExplanation": "Paragraph 3 contrasts smooth cordgrass with forest trees that would wilt in salty mud, showing that 'resilient' means tough and capable of thriving in harsh environments."
+      "childTip": "In Paragraph 3, 'resilient' means tough and able to survive harsh conditions, because smooth cordgrass thrives in salty mud that would wilt almost any forest tree.",
+      "parentExplanation": "Paragraph 3 contrasts smooth cordgrass with forest trees that would wilt in salty mud, showing that 'resilient' means tough and capable of thriving in harsh environments.",
+      "retryHint": "Read the rest of the sentence in Paragraph 3 to see how smooth cordgrass handles salty mud that would wilt other plants."
     },
     {
       "questionId": "w02_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "Their tangled roots lock the soft mud together so the soil does not wash away.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that deep underground, cordgrass roots weave a thick, tangled mat that anchors the soft silt so fast currents cannot wash the soil away."
         },
         {
           "id": "B",
           "text": "Their roots turn into hard limestone rock that bounces waves back into the ocean.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 never says plant roots turn into limestone rock; instead, the living roots weave a tangled mat that holds the soft mud together."
         },
         {
           "id": "C",
           "text": "Their underground stems store recycled oyster shells until volunteers collect them.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Volunteers place bags of recycled shells on creek banks in Paragraph 5, not inside underground plant stems in Paragraph 3."
         },
         {
           "id": "D",
           "text": "Their roots stop the ocean tide from ever entering the coastal creeks.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Cordgrass roots don't block the tide from entering creeks; Paragraph 1 and Paragraph 3 explain that tides still flood the marsh and bend the stems."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Deep underground, cordgrass roots weave a thick, tangled mat that anchors the soft silt in place.",
-      "childTip": "Click the sentence in Paragraph 3 that explains what cordgrass roots do deep underground.",
-      "parentExplanation": "Paragraph 3 explicitly explains that underground cordgrass roots weave a thick mat that anchors the soft silt in place so fast currents cannot wash the soil out to sea."
+      "childTip": "Paragraph 3 explains that deep underground, cordgrass roots weave a thick, tangled mat that anchors the soft silt so fast currents cannot wash the soil away.",
+      "parentExplanation": "Paragraph 3 explicitly explains that underground cordgrass roots weave a thick mat that anchors the soft silt in place so fast currents cannot wash the soil out to sea.",
+      "retryHint": "Check the middle of Paragraph 3 for the sentence starting with 'Deep underground' to see what the cordgrass roots do to the soft silt."
     },
     {
       "questionId": "w02_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "By describing the life cycle of an eastern oyster from larva to adult shell",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 4 focuses on how marsh soil absorbs storm floodwater compared to concrete walls, not on the life cycle of an oyster."
         },
         {
           "id": "B",
           "text": "By listing the daily schedule of ferry boats traveling between Georgia's barrier islands",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 4 never lists a ferry boat schedule; it explains how porous marsh soil acts like a giant sponge during heavy rains."
         },
         {
           "id": "C",
           "text": "By contrasting how concrete seawalls and porous salt marshes handle floodwater during storms",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 uses a contrast structure, signaled by the phrase 'In contrast,' to compare how concrete seawalls bounce waves while porous marsh soil absorbs floodwater like a sponge."
         },
         {
           "id": "D",
           "text": "By arguing that all mainland towns should tear down their homes and move onto boats",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The author never tells townspeople to tear down homes and live on boats; Paragraph 4 explains that wide marshes protect mainland towns from flood damage."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "In contrast, an acre of porous marsh soil can absorb thousands of gallons of rising floodwater.",
-      "childTip": "Spot the signal phrase 'In contrast' in Paragraph 4, which compares concrete seawalls with marsh soil.",
-      "parentExplanation": "Paragraph 4 uses a comparison/contrast structure (signaled by 'In contrast' and 'far less flood damage than') to show why sponge-like marsh soil outperforms concrete seawalls during floods."
+      "childTip": "Paragraph 4 uses a contrast structure, signaled by the phrase 'In contrast,' to compare how concrete seawalls bounce waves while porous marsh soil absorbs floodwater like a sponge.",
+      "parentExplanation": "Paragraph 4 uses a comparison/contrast structure (signaled by 'In contrast' and 'far less flood damage than') to show why sponge-like marsh soil outperforms concrete seawalls during floods.",
+      "retryHint": "Notice the signal phrase 'In contrast' in Paragraph 4 and look at the two things being compared during heavy storm floods."
     },
     {
       "questionId": "w02_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Volunteers must replant every blade of cordgrass each week because oysters crowd out the grass roots.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Oysters do not crowd out cordgrass roots! Paragraph 5 says volunteers place bags of shells to build reefs that actually protect young cordgrass sprouts."
         },
         {
           "id": "B",
           "text": "Cordgrass blades feed on crushed oyster shells, while oysters climb up the grass stems to escape high tide.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This scrambles the science! Cordgrass is a plant that doesn't eat shells, and oysters cement their shells to the muddy bottom rather than climbing grass stems."
         },
         {
           "id": "C",
           "text": "Oyster reefs only grow in fresh mountain rivers, whereas smooth cordgrass only grows on dry sand dunes.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Both eastern oysters and smooth cordgrass live together in the salty coastal marsh of Georgia, not in mountain rivers or dry sand dunes."
         },
         {
           "id": "D",
           "text": "Oyster reefs calm strong waves so young cordgrass can take root, while cordgrass roots hold the creek bank soil in place.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across Paragraphs 3 and 5, the author shows how the two species team up: cordgrass roots hold the muddy bank in place, and tall oyster reefs shelter young cordgrass sprouts from strong waves."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Once a new reef grows tall enough, it shelters young cordgrass sprouts from strong waves until their roots take hold.",
-      "childTip": "Look at Paragraph 5 to see how a growing oyster reef helps young cordgrass sprouts take hold.",
-      "parentExplanation": "Across Paragraphs 3 and 5 (ELAGSE5RI3), the author explains the mutual relationship between the two organisms: cordgrass roots anchor the silt, and oyster reefs shelter young cordgrass sprouts from wave action until their roots take hold."
+      "childTip": "Across Paragraphs 3 and 5, the author shows how the two species team up: cordgrass roots hold the muddy bank in place, and tall oyster reefs shelter young cordgrass sprouts from strong waves.",
+      "parentExplanation": "Across Paragraphs 3 and 5 (ELAGSE5RI3), the author explains the mutual relationship between the two organisms: cordgrass roots anchor the silt, and oyster reefs shelter young cordgrass sprouts from wave action until their roots take hold.",
+      "retryHint": "Read Paragraph 5 to see how a new oyster reef helps young cordgrass sprouts, and remember how cordgrass roots help the creek bank in Paragraph 3."
     },
     {
       "questionId": "w02_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"To a casual visitor on a ferry boat, this muddy plain looks flat and quiet.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only describes how flat the marsh looks from a ferry boat, not how oysters and cordgrass help each other survive."
         },
         {
           "id": "B",
           "text": "\"Concrete seawalls often bounce wave energy back into the channel and worsen flooding nearby.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 4 explains a problem with concrete seawalls, without mentioning oyster reefs or smooth cordgrass working together."
         },
         {
           "id": "C",
           "text": "\"Once a new reef grows tall enough, it shelters young cordgrass sprouts from strong waves until their roots take hold.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 5 directly proves Question 5 by showing how a tall oyster reef shelters young cordgrass sprouts until their roots can anchor in the mud."
         },
         {
           "id": "D",
           "text": "\"Along the coast of Georgia, a chain of sandy barrier islands faces the open sea.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 simply tells where Georgia's barrier islands are located, not how reefs and cordgrass protect one another."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Once a new reef grows tall enough, it shelters young cordgrass sprouts from strong waves until their roots take hold.",
-      "childTip": "Choose the quote in Paragraph 5 that shows how the reef protects young cordgrass sprouts.",
-      "parentExplanation": "Option C directly quotes Paragraph 5, proving how the growing oyster reef shelters young cordgrass sprouts so their roots can anchor into the marsh."
+      "childTip": "This quotation from Paragraph 5 directly proves Question 5 by showing how a tall oyster reef shelters young cordgrass sprouts until their roots can anchor in the mud.",
+      "parentExplanation": "Option C directly quotes Paragraph 5, proving how the growing oyster reef shelters young cordgrass sprouts so their roots can anchor into the marsh.",
+      "retryHint": "Look for the quote from Paragraph 5 that mentions both the reef and the young cordgrass sprouts helping each other."
     }
   ]
 }

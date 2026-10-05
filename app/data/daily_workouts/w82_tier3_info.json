@@ -72,34 +72,39 @@
           "text": "Swirling pockets of warm and cool air high in the sky",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('bent out of shape by swirling pockets...') with the agent that sharpens the starlight."
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('bent out of shape by swirling pockets...') with the agent that sharpens the starlight.",
+          "childFeedback": "Careful—this choice confuses the noun inside the middle describing phrase ('bent out of shape by swirling pockets...') with what actually sharpens the starlight."
         },
         {
           "id": "B",
           "text": "Distant galaxies shining across trillions of miles",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Selects the object of the preposition 'from distant galaxies' rather than the mechanism that sharpens the light."
+          "diagnosticNote": "Selects the object of the preposition 'from distant galaxies' rather than the mechanism that sharpens the light.",
+          "childFeedback": "Watch out—this choice selects the noun after 'from distant galaxies' rather than the mechanism that sharpens the light."
         },
         {
           "id": "C",
           "text": "Tiny pistons pushing behind the flexible glass mirror",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('is instantly sharpened by tiny pistons pushing behind the flexible glass mirror')."
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('is instantly sharpened by tiny pistons pushing behind the flexible glass mirror').",
+          "childFeedback": "Spot on! This answer correctly identifies the doer of the action following the main verb ('is instantly sharpened by tiny pistons pushing behind the flexible glass mirror')."
         },
         {
           "id": "D",
           "text": "Incoming starlight plunging into Earth's atmosphere",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver ('Incoming starlight') with the actor performing the sharpening."
+          "diagnosticNote": "Confuses the grammatical subject/receiver ('Incoming starlight') with the actor performing the sharpening.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action ('Incoming starlight') with the actor performing the sharpening."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Incoming starlight from distant galaxies, bent out of shape by swirling pockets of warm and cool air, is instantly sharpened by tiny pistons pushing behind the flexible glass mirror.",
-      "childTip": "Watch out for two 'by' phrases! Find the main verb 'is instantly sharpened by' to see what fixes the light.",
-      "parentExplanation": "Sentence Surgery (ELAGSE5L1) with a double-'by' passive trap. Swirling pockets of air bent the light out of shape, whereas 'tiny pistons pushing behind the flexible glass mirror' sharpened it."
+      "childTip": "Spot on! This answer correctly identifies the doer of the action following the main verb ('is instantly sharpened by tiny pistons pushing behind the flexible glass mirror').",
+      "parentExplanation": "Sentence Surgery (ELAGSE5L1) with a double-'by' passive trap. Swirling pockets of air bent the light out of shape, whereas 'tiny pistons pushing behind the flexible glass mirror' sharpened it.",
+      "retryHint": "In Paragraph 4, watch out for two 'by' phrases! Find the main verb 'is instantly sharpened by' to see what fixes the light."
     },
     {
       "questionId": "w82_q2",
@@ -117,34 +122,39 @@
           "text": "Keep completely still and razor-sharp",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the effect of the wind pockets; the shifting air blurs and bends the light, while the mirror makes it sharp."
+          "diagnosticNote": "Reverses the effect of the wind pockets; the shifting air blurs and bends the light, while the mirror makes it sharp.",
+          "childFeedback": "Careful—this choice reverses the effect of the wind pockets; the shifting air blurs and bends the light, while the mirror makes it sharp."
         },
         {
           "id": "B",
           "text": "Bend or twist out of its true shape",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the Latin root 'tort' (twist) and Paragraph 4's restatement ('bent out of shape by swirling pockets of warm and cool air')."
+          "diagnosticNote": "Matches the Latin root 'tort' (twist) and Paragraph 4's restatement ('bent out of shape by swirling pockets of warm and cool air').",
+          "childFeedback": "Spot on! This answer matches the Latin root 'tort' (twist) and Paragraph 4's restatement ('bent out of shape by swirling pockets of warm and cool air')."
         },
         {
           "id": "C",
           "text": "Launch high into orbit above the clouds",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows the idea of launching space telescopes from earlier in Paragraph 3."
+          "diagnosticNote": "Borrows the idea of launching space telescopes from earlier in Paragraph 3.",
+          "childFeedback": "Watch out—this choice borrows the idea of launching space telescopes from earlier in Paragraph 3."
         },
         {
           "id": "D",
           "text": "Cool down the temperature of the upper sky",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Misinterprets the optical measurement of light shape as changing air temperature."
+          "diagnosticNote": "Misinterprets the optical measurement of light shape as changing air temperature.",
+          "childFeedback": "Careful—this choice misinterprets the optical measurement of light shape as changing air temperature."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because the computer knows the exact shape a pinpoint star should have, it can measure precisely how the shifting wind pockets distort that glowing spot.",
-      "childTip": "Check the next paragraph for a clue: what do the swirling pockets of air do to the shape of incoming starlight?",
-      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). Paragraph 2 ('bends passing starlight... into fuzzy blobs') and Paragraph 4 ('bent out of shape') confirm that 'distort' means to twist or bend out of shape."
+      "childTip": "Spot on! This answer matches the Latin root 'tort' (twist) and Paragraph 4's restatement ('bent out of shape by swirling pockets of warm and cool air').",
+      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). Paragraph 2 ('bends passing starlight... into fuzzy blobs') and Paragraph 4 ('bent out of shape') confirm that 'distort' means to twist or bend out of shape.",
+      "retryHint": "Check the next paragraph for a clue: what do the swirling pockets of air do to the shape of incoming starlight?"
     },
     {
       "questionId": "w82_q3",
@@ -162,34 +172,39 @@
           "text": "The laser creates a glowing artificial guide star so the computer can measure how wind pockets are bending light at that moment.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately traces the function of the laser guide star explained in Paragraph 3."
+          "diagnosticNote": "Accurately traces the function of the laser guide star explained in Paragraph 3.",
+          "childFeedback": "Spot on! This answer accurately traces the function of the laser guide star explained in Paragraph 3."
         },
         {
           "id": "B",
           "text": "The hot laser beam heats up the cold pockets of air until the wind stops blowing above the mountain.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents the idea that the laser heats the sky to stop the wind, rather than creating a reference spot of light."
+          "diagnosticNote": "Invents the idea that the laser heats the sky to stop the wind, rather than creating a reference spot of light.",
+          "childFeedback": "Watch out—this choice invents the idea that the laser heats the sky to stop the wind, rather than creating a reference spot of light."
         },
         {
           "id": "C",
           "text": "The yellow beam bounces off moons in distant galaxies and brings photographs back to the screen.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the upper-atmosphere sodium layer with distant galaxies trillions of miles away."
+          "diagnosticNote": "Confuses the upper-atmosphere sodium layer with distant galaxies trillions of miles away.",
+          "childFeedback": "Careful—this choice confuses the upper-atmosphere sodium layer with distant galaxies trillions of miles away."
         },
         {
           "id": "D",
           "text": "The laser melts the glass mirror inside the telescope so it can bend more easily.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Misconnects the laser beam in Paragraph 3 with the flexible mirror moved by pistons in Paragraph 4."
+          "diagnosticNote": "Misconnects the laser beam in Paragraph 3 with the flexible mirror moved by pistons in Paragraph 4.",
+          "childFeedback": "Careful—this choice wrongly connects the laser beam in Paragraph 3 with the flexible mirror moved by pistons in Paragraph 4."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "High in the upper air, the laser makes a layer of sodium atoms glow like an artificial guide star.",
-      "childTip": "First click the sentence in Paragraph 3 that tells what the laser creates high in the upper air.",
-      "parentExplanation": "Click-to-Prove Scientific Process (ELAGSE5RI3). Paragraph 3 explains that the laser excites sodium atoms in the upper atmosphere to create an artificial guide star, giving the computer a reference point to measure air ripples."
+      "childTip": "Spot on! This answer accurately traces the function of the laser guide star explained in Paragraph 3.",
+      "parentExplanation": "Click-to-Prove Scientific Process (ELAGSE5RI3). Paragraph 3 explains that the laser excites sodium atoms in the upper atmosphere to create an artificial guide star, giving the computer a reference point to measure air ripples.",
+      "retryHint": "Look in Paragraph 3 for the sentence that tells what the laser creates high in the upper air."
     },
     {
       "questionId": "w82_q4",
@@ -207,34 +222,39 @@
           "text": "To explain how astronomers pay for expensive space telescopes using coins collected at observatories",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Latching onto the word 'coin' and connecting it to 'expensive telescopes' in Paragraph 3."
+          "diagnosticNote": "Latching onto the word 'coin' and connecting it to 'expensive telescopes' in Paragraph 3.",
+          "childFeedback": "Watch out—picking the word 'coin' and connecting it to 'expensive telescopes' in Paragraph 3."
         },
         {
           "id": "B",
           "text": "To prove that Earth's upper atmosphere is filled with liquid water just like a swimming pool",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Takes the figurative analogy literally, confusing air pockets with liquid swimming pool water."
+          "diagnosticNote": "Takes the figurative analogy literally, confusing air pockets with liquid swimming pool water.",
+          "childFeedback": "Watch out—this choice takes the figurative analogy literally, confusing air pockets with liquid swimming pool water."
         },
         {
           "id": "C",
           "text": "To help the reader picture how moving layers of air bend starlight and make clear objects look wavy and blurred",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately explains how the everyday analogy makes the abstract optical concept of atmospheric refraction concrete for readers."
+          "diagnosticNote": "Accurately explains how the everyday analogy makes the abstract optical concept of atmospheric refraction concrete for readers.",
+          "childFeedback": "Spot on! This answer accurately explains how the everyday analogy makes the abstract optical concept of atmospheric refraction concrete for readers."
         },
         {
           "id": "D",
           "text": "To show that telescope mirrors must be kept underwater to stay cool at night",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents an unsupported claim about underwater telescope mirrors."
+          "diagnosticNote": "Invents an unsupported claim about underwater telescope mirrors.",
+          "childFeedback": "Watch out—this choice invents an unsupported claim about underwater telescope mirrors."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "It is much like trying to read a coin lying at the bottom of a rippling swimming pool.",
-      "childTip": "Think about what happens to the look of a coin under rippling water, and compare that to starlight passing through churning air.",
-      "parentExplanation": "Explanatory Analogy & Craft (ELAGSE5RI5/RI4). The author compares looking at stars through turbulent air pockets to reading a coin through rippling pool water so readers can visualize how clear light gets jiggled into a blurry image."
+      "childTip": "Spot on! This answer accurately explains how the everyday analogy makes the abstract optical concept of atmospheric refraction concrete for readers.",
+      "parentExplanation": "Explanatory Analogy & Craft (ELAGSE5RI5/RI4). The author compares looking at stars through turbulent air pockets to reading a coin through rippling pool water so readers can visualize how clear light gets jiggled into a blurry image.",
+      "retryHint": "In Paragraph 2, think about what happens to the look of a coin under rippling water, and compare that to starlight passing through churning air."
     },
     {
       "questionId": "w82_q5",
@@ -253,34 +273,39 @@
           "text": "Stars do not actually flicker in deep space because their light travels in straight lines across trillions of miles of vacuum.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "States only an introductory background fact from Paragraph 1 rather than the passage's central topic of adaptive optics."
+          "diagnosticNote": "States only an introductory background fact from Paragraph 1 rather than the passage's central topic of adaptive optics.",
+          "childFeedback": "Not quite—this choice states only an introductory background fact from Paragraph 1 rather than the passage's central topic of adaptive optics."
         },
         {
           "id": "B",
           "text": "Adaptive optics systems use laser guide stars and fast-bending mirrors to cancel out atmospheric blur, allowing ground telescopes to capture sharp images of space.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes the atmospheric blur problem (Paras 1-2), the laser and flexible mirror mechanism (Paras 3-4), and the resulting clear astronomical views (Para 5)."
+          "diagnosticNote": "Synthesizes the atmospheric blur problem (Paras 1-2), the laser and flexible mirror mechanism (Paras 3-4), and the resulting clear astronomical views (Para 5).",
+          "childFeedback": "Spot on! This answer brings together the atmospheric blur problem (Paragraphs 1 to 2), the laser and flexible mirror mechanism (Paragraphs 3 to 4), and the resulting clear astronomical views (Paragraph 5)."
         },
         {
           "id": "C",
           "text": "Launching telescopes into orbit is the only possible way for astronomers to take clear pictures of distant galaxies.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraphs 3-5, which explain how adaptive optics solved this problem for ground telescopes."
+          "diagnosticNote": "Contradicts Paragraphs 3-5, which explain how adaptive optics solved this problem for ground telescopes.",
+          "childFeedback": "Not quite—this choice contradicts Paragraphs 3-5, which explain how adaptive optics solved this problem for ground telescopes."
         },
         {
           "id": "D",
           "text": "Campers enjoy looking at twinkling stars at night, but astronomers dislike going outside in the cold mountain wind.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Trivializes the opening hook in Paragraph 1 and misses the scientific focus of the text."
+          "diagnosticNote": "Trivializes the opening hook in Paragraph 1 and misses the scientific focus of the text.",
+          "childFeedback": "Not quite—this choice oversimplifies the opening hook in Paragraph 1 and misses the scientific focus of the text."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By learning to compensate for shifting air in real time, astronomers have given Earthbound telescopes a view almost as clear as space itself.",
-      "childTip": "Choose the summary that covers both the problem of blurry air and how adaptive optics fixes it for ground telescopes.",
-      "parentExplanation": "Focus standard ELAGSE5RI2 (Central Idea). Option B integrates the problem (atmospheric distortion), the engineering solution (laser guide stars + flexible mirrors), and the outcome (space-quality views from Earth)."
+      "childTip": "Spot on! This answer brings together the atmospheric blur problem (Paragraphs 1 to 2), the laser and flexible mirror mechanism (Paragraphs 3 to 4), and the resulting clear astronomical views (Paragraph 5).",
+      "parentExplanation": "Focus standard ELAGSE5RI2 (Central Idea). Option B integrates the problem (atmospheric distortion), the engineering solution (laser guide stars + flexible mirrors), and the outcome (space-quality views from Earth).",
+      "retryHint": "In Paragraphs 1 to 5, choose the summary that covers both the problem of blurry air and how adaptive optics fixes it for ground telescopes."
     },
     {
       "questionId": "w82_q6",
@@ -299,34 +324,39 @@
           "text": "\"To a camper looking up at the night sky, a twinkling star is a lovely sight.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Quotes only the opening hook in Paragraph 1 without mentioning telescopes or adaptive optics."
+          "diagnosticNote": "Quotes only the opening hook in Paragraph 1 without mentioning telescopes or adaptive optics.",
+          "childFeedback": "Not quite—this choice quotes only the opening hook in Paragraph 1 without mentioning telescopes or adaptive optics."
         },
         {
           "id": "B",
           "text": "\"Their light travels in steady, straight beams across trillions of miles of empty vacuum.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes starlight in deep space in Paragraph 1 rather than how adaptive optics works on Earth."
+          "diagnosticNote": "Describes starlight in deep space in Paragraph 1 rather than how adaptive optics works on Earth.",
+          "childFeedback": "Not quite—this choice describes starlight in deep space in Paragraph 1 rather than how adaptive optics works on Earth."
         },
         {
           "id": "C",
           "text": "\"For decades, the only way to escape this air blur was to launch expensive telescopes into orbit above the sky.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Describes the old limitation before adaptive optics was invented."
+          "diagnosticNote": "Describes the old limitation before adaptive optics was invented.",
+          "childFeedback": "Not quite—this choice describes the old limitation before adaptive optics was invented."
         },
         {
           "id": "D",
           "text": "\"By learning to compensate for shifting air in real time, astronomers have given Earthbound telescopes a view almost as clear as space itself.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves the central idea in Part A by summarizing how real-time air correction gives ground telescopes space-sharp views."
+          "diagnosticNote": "Directly proves the central idea in Part A by summarizing how real-time air correction gives ground telescopes space-sharp views.",
+          "childFeedback": "Spot on! This answer directly proves the central idea in Question 5 by summarizing how real-time air correction gives ground telescopes space-sharp views."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By learning to compensate for shifting air in real time, astronomers have given Earthbound telescopes a view almost as clear as space itself.",
-      "childTip": "Pick the final sentence in Paragraph 5 that sums up what adaptive optics has done for telescopes on Earth.",
-      "parentExplanation": "Part B requires 100% verbatim textual proof (ELAGSE5RI1) for the central idea in Part A."
+      "childTip": "Spot on! This answer directly proves the central idea in Question 5 by summarizing how real-time air correction gives ground telescopes space-sharp views.",
+      "parentExplanation": "Part B requires 100% verbatim textual proof (ELAGSE5RI1) for the central idea in Part A.",
+      "retryHint": "Pick the final sentence in Paragraph 5 that sums up what adaptive optics has done for telescopes on Earth."
     }
   ]
 }

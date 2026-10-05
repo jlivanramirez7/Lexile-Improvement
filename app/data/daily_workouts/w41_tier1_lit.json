@@ -71,31 +71,36 @@
           "id": "A",
           "text": "A loose canvas banner snagged the curtain near the beam, and the jammed iron pulley held it half-open.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrases 'snagged... by a loose canvas banner' and 'was held half-open... by the jammed iron pulley' show that the canvas banner snagged the curtain and the jammed pulley held it half-open."
         },
         {
           "id": "B",
           "text": "The startled cast snagged the wooden beam, and the heavy velvet curtain held the iron pulley open.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This scrambles the sentence parts! The startled cast stood frozen on the stage floor while the jammed iron pulley held the velvet curtain half-open."
         },
         {
           "id": "C",
           "text": "The jammed iron pulley painted the canvas banner and dropped it onto the pirate actors.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "An iron pulley wheel cannot paint a banner! The painted storm-cloud banner had drifted into the pulley groove and jammed the wheel."
         },
         {
           "id": "D",
           "text": "A spectator in the front row pulled the hemp rope and tied it to a folding chair.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "People in the front row only whispered when the curtain stopped; Nora is the one holding the hemp rope in the dark stage wing."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The heavy velvet curtain, snagged high near the wooden beam by a loose canvas banner, was held half-open above the startled cast by the jammed iron pulley.",
-      "childTip": "Check both 'by' phrases: a loose canvas banner snagged the curtain, and the jammed iron pulley held it half-open.",
-      "parentExplanation": "This passive sentence contains two 'by' phrases: 'snagged... by a loose canvas banner' and 'was held half-open... by the jammed iron pulley'. Option B accurately matches both."
+      "childTip": "In Paragraph 2, the phrases 'snagged... by a loose canvas banner' and 'was held half-open... by the jammed iron pulley' show that the canvas banner snagged the curtain and the jammed pulley held it half-open.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'snagged... by a loose canvas banner' and 'was held half-open... by the jammed iron pulley'. Option B accurately matches both.",
+      "retryHint": "Check the two 'by' phrases in Paragraph 2: 'snagged... by...' and 'was held half-open... by...'"
     },
     {
       "questionId": "w41_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "To show that a real pigeon had flown through the gym doors and landed in the rafters",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "There is no real bird in the gym—'like a trapped bird' is a comparison describing how fast Nora's heart was beating against her ribs."
         },
         {
           "id": "B",
           "text": "To show that Nora felt a sudden rush of nervousness inside even though she acted calm",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Comparing Nora's heart to 'a trapped bird' in Paragraph 3 shows that her heart was beating fast with sudden nervousness inside, even though she kept her voice steady on the headset."
         },
         {
           "id": "C",
           "text": "To show that Nora had forgotten all her stage cues and wanted to run off the stage",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Instead of forgetting her cues or running away, Nora immediately gives a smart lighting cue on her headset and climbs the ladder to fix the jam."
         },
         {
           "id": "D",
           "text": "To show that the pirate actors were carrying a wooden birdcage as a stage prop",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The actors wore pirate hats and stood near a cardboard ship, with no mention of a wooden birdcage prop."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Nora's heart hammered against her ribs like a trapped bird, but she kept her voice steady on the headset.",
-      "childTip": "Think about how fast a trapped bird flutters, and notice how the word 'but' contrasts that feeling with her steady voice.",
-      "parentExplanation": "The simile 'her heart hammered against her ribs like a trapped bird' (ELAGSE5RL4) conveys Nora's sudden internal alarm when the curtain jams, which contrasts with her calm, steady voice on the headset."
+      "childTip": "Comparing Nora's heart to 'a trapped bird' in Paragraph 3 shows that her heart was beating fast with sudden nervousness inside, even though she kept her voice steady on the headset.",
+      "parentExplanation": "The simile 'her heart hammered against her ribs like a trapped bird' (ELAGSE5RL4) conveys Nora's sudden internal alarm when the curtain jams, which contrasts with her calm, steady voice on the headset.",
+      "retryHint": "Notice the contrast in Paragraph 3 between how Nora's heart felt inside and how steady she kept her voice."
     },
     {
       "questionId": "w41_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "The bright spotlights were overheating and causing the hemp rope to melt near the ceiling.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The stage lamps were not melting the hemp rope; the rope stopped moving because a canvas banner got wedged in the iron pulley groove."
         },
         {
           "id": "B",
           "text": "Dark blue light helps the audience read their printed playbills during intermission.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The hall lights for intermission do not blink on until Paragraph 5 after the curtain closes; dark blue light creates shadows on stage to hide the set change."
         },
         {
           "id": "C",
           "text": "Dimming the stage lights lets the crew change the scenery in the shadows even without the closed curtain.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 states that Nora tells the lighting boy to fade the stage lamps to dark blue so the stage crew can switch the cardboard ship for the island set in the shadows while the curtain is stuck."
         },
         {
           "id": "D",
           "text": "The drama teacher ordered her to cancel the second act of the play right away.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The drama teacher never cancels the second act; in Paragraph 5, the teacher gives Nora a quiet smile and a thumbs-up for saving the play."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "She told the lighting boy to fade the stage lamps to dark blue so the crew could switch the cardboard ship for the island set in the shadows.",
-      "childTip": "Click the sentence in Paragraph 3 that tells what Nora asked the lighting boy to do and why.",
-      "parentExplanation": "Paragraph 3 states that Nora had the lighting boy fade the lamps to dark blue 'so the crew could switch the cardboard ship for the island set in the shadows' while she fixed the curtain."
+      "childTip": "Paragraph 3 states that Nora tells the lighting boy to fade the stage lamps to dark blue so the stage crew can switch the cardboard ship for the island set in the shadows while the curtain is stuck.",
+      "parentExplanation": "Paragraph 3 states that Nora had the lighting boy fade the lamps to dark blue 'so the crew could switch the cardboard ship for the island set in the shadows' while she fixed the curtain.",
+      "retryHint": "Read the second sentence of Paragraph 3 to see what the crew needed to do in the shadows."
     },
     {
       "questionId": "w41_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "To shine a bright flashlight beam on",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Nora already shone her flashlight beam at the start of Paragraph 4; turning the wheel backward half an inch is what loosens the tight pinch."
         },
         {
           "id": "B",
           "text": "To tie into a double knot",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Tying a double knot would trap the banner even tighter, whereas Nora is trying to slip the wedged fabric free from the groove."
         },
         {
           "id": "C",
           "text": "To cut with sharp metal scissors",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Nora never cuts the storm-cloud banner with scissors; she turns the wheel backward slightly so the cloth slips out without tearing."
         },
         {
           "id": "D",
           "text": "To loosen or make less tight",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'slacken' means to loosen or make less tight, because turning the pulley wheel backward half an inch loosened the tight pinch so Nora could slip the wedged fabric free."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Gripping the ladder rail with one hand, Nora turned the pulley wheel backward half an inch to slacken the pinch, then slipped the fabric free.",
-      "childTip": "Think about what turning the wheel backward half an inch does so the pinched banner can slip free.",
-      "parentExplanation": "By turning the jammed pulley wheel backward slightly, Nora loosened ('slackened') the tight pinch on the banner so the fabric could slide out without tearing."
+      "childTip": "In Paragraph 4, 'slacken' means to loosen or make less tight, because turning the pulley wheel backward half an inch loosened the tight pinch so Nora could slip the wedged fabric free.",
+      "parentExplanation": "By turning the jammed pulley wheel backward slightly, Nora loosened ('slackened') the tight pinch on the banner so the fabric could slide out without tearing.",
+      "retryHint": "Think about what turning the jammed wheel backward half an inch does to the tight pinch on the cloth in Paragraph 4."
     },
     {
       "questionId": "w41_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "She knows that yanking a jammed rope blindly will tear the banner and wedge the pulley wheel even tighter.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that because a corner of the painted canvas banner was wedged deep in the pulley groove, yanking the main rope from below would tear the canvas and jam the wheel even tighter."
         },
         {
           "id": "B",
           "text": "She wants the audience in the front row to see her climbing the wall during intermission.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "As stage crew leader, Nora works in the dark wing and has the stage faded to dark blue so the audience does not watch the backstage work."
         },
         {
           "id": "C",
           "text": "The hemp rope had snapped in half on the floor and was too short to reach from below.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The thick hemp rope did not snap in half—in Paragraph 5, Nora climbs back down and pulls that same hemp rope to close the drapes."
         },
         {
           "id": "D",
           "text": "She needs to hang a new pirate hat from the wooden beam before Act Two begins.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Pirate hats are worn by the actors on stage in Paragraph 1, not hung from the wooden beam near the ceiling."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter.",
-      "childTip": "Look at Paragraph 4 to see what would have happened if Nora had yanked the main rope from below.",
-      "parentExplanation": "Paragraph 4 explains that yanking the rope from below would have torn the canvas banner and jammed the wheel even tighter, so Nora climbed up to roll the wheel backward gently."
+      "childTip": "Paragraph 4 explains that because a corner of the painted canvas banner was wedged deep in the pulley groove, yanking the main rope from below would tear the canvas and jam the wheel even tighter.",
+      "parentExplanation": "Paragraph 4 explains that yanking the rope from below would have torn the canvas banner and jammed the wheel even tighter, so Nora climbed up to roll the wheel backward gently.",
+      "retryHint": "Read the fourth sentence of Paragraph 4 ('If she yanked the main rope from below...') to see what would happen."
     },
     {
       "questionId": "w41_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"While the audience laughed at the actors in their pirate hats, Nora kept her eyes on the prompt book clipped to her board.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only shows Nora watching her prompt book before the curtain even jammed."
         },
         {
           "id": "B",
           "text": "\"Down in the front row, whispers rippled through the crowd as the actors stood frozen in place.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 2 only shows how the crowd and actors reacted when the curtain stopped halfway."
         },
         {
           "id": "C",
           "text": "\"If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 4 directly proves Question 5 by explaining why pulling harder from the floor would fail: it would tear the canvas and jam the wheel even tighter."
         },
         {
           "id": "D",
           "text": "\"The velvet drapes swept shut just as the hall lights blinked on for intermission.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 5 shows the happy ending after Nora climbed down and pulled the freed rope."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "If she yanked the main rope from below, the canvas would tear and jam the wheel even tighter.",
-      "childTip": "Choose the quote in Paragraph 4 that explains the danger of yanking the rope from below.",
-      "parentExplanation": "Option C directly proves why Nora avoided pulling harder from the floor and instead freed the banner carefully by hand."
+      "childTip": "This sentence from Paragraph 4 directly proves Question 5 by explaining why pulling harder from the floor would fail: it would tear the canvas and jam the wheel even tighter.",
+      "parentExplanation": "Option C directly proves why Nora avoided pulling harder from the floor and instead freed the banner carefully by hand.",
+      "retryHint": "Choose the quote from Paragraph 4 that explains the bad result of yanking the main rope from below."
     }
   ]
 }

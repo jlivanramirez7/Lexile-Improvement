@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The overturned glass beaker spotted the pastel dust on the window.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A glass beaker does not have eyes to spot anything! The overturned beaker was just covering the brass lens to keep chalk dust off it."
         },
         {
           "id": "B",
           "text": "The missing brass eyepiece spotted Jonah beside the drying rack.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the action backward! The brass eyepiece is an object that was found—Jonah is the person who spotted it."
         },
         {
           "id": "C",
           "text": "Jonah spotted the missing brass eyepiece near the window.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, the phrase 'by Jonah' right after 'was quickly spotted' shows that Jonah is the person who spotted the missing brass eyepiece near the window."
         },
         {
           "id": "D",
           "text": "The art teacher spotted the telescope on the soccer field.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The art teacher left a helpful note on the glass beaker earlier, and the telescope was not carried out to the soccer field until Paragraph 5."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The missing brass eyepiece, tucked safely beneath an overturned glass beaker to shield the lens from pastel dust, was quickly spotted by Jonah near the window.",
-      "childTip": "Look past the description of the beaker to the 'by' phrase ('by Jonah') to see who did the spotting.",
-      "parentExplanation": "In this passive-voice sentence, 'The missing brass eyepiece' receives the action, while the prepositional phrase 'by Jonah' identifies Jonah as the actor who spotted it."
+      "childTip": "In Paragraph 4, the phrase 'by Jonah' right after 'was quickly spotted' shows that Jonah is the person who spotted the missing brass eyepiece near the window.",
+      "parentExplanation": "In this passive-voice sentence, 'The missing brass eyepiece' receives the action, while the prepositional phrase 'by Jonah' identifies Jonah as the actor who spotted it.",
+      "retryHint": "Look at the words 'was quickly spotted by Jonah' in Paragraph 4 to see who did the spotting."
     },
     {
       "questionId": "w31_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "To protect something by covering it from harm or dirt",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'shield' means to protect something by covering it from harm or dirt, because the overturned glass beaker kept chalk dust off the clean lens."
         },
         {
           "id": "B",
           "text": "To hide an object so nobody can ever find it",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The art teacher was not trying to hide the lens forever—she placed a clear glass beaker over it with a note saying 'Kept clean for tonight!'"
         },
         {
           "id": "C",
           "text": "To polish glass with a dry paper towel",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "White lens paper sat on the lab table in Paragraph 3, but in Paragraph 4 the overturned glass beaker was used to cover and protect the lens."
         },
         {
           "id": "D",
           "text": "To carry heavy science tools out to a dark field",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Jonah and Tessa carry the telescope stand out to the dark field in Paragraph 5, whereas 'shield' in Paragraph 4 describes what the glass beaker did on the counter."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The missing brass eyepiece, tucked safely beneath an overturned glass beaker to shield the lens from pastel dust, was quickly spotted by Jonah near the window.",
-      "childTip": "Think about why the beaker was placed over the lens: to keep pastel dust off the clean glass.",
-      "parentExplanation": "The context clues 'tucked safely beneath an overturned glass beaker' and 'Kept clean for tonight!' show that 'shield' means to protect from dirt or harm."
+      "childTip": "In Paragraph 4, 'shield' means to protect something by covering it from harm or dirt, because the overturned glass beaker kept chalk dust off the clean lens.",
+      "parentExplanation": "The context clues 'tucked safely beneath an overturned glass beaker' and 'Kept clean for tonight!' show that 'shield' means to protect from dirt or harm.",
+      "retryHint": "Look at the note 'Kept clean for tonight!' in Paragraph 4 to see why the glass beaker was placed over the lens."
     },
     {
       "questionId": "w31_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "Both students immediately run down the hallway to ask Mr. Patel where he put the microscope slides.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Neither student runs to ask Mr. Patel; Jonah stays in the lab and examines the table where Mr. Patel's class had cleaned the glass."
         },
         {
           "id": "B",
           "text": "Jonah wants to cancel astronomy night right away, while Tessa offers to draw a paper lens instead.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "You cannot use a paper drawing as a magnifying telescope lens, and neither student suggests canceling astronomy night."
         },
         {
           "id": "C",
           "text": "Tessa blames the art teacher for breaking the glass, while Jonah hides the empty wooden case.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Neither student blames the art teacher or hides the case; in fact, the art teacher is the one who protected the lens under a clean beaker."
         },
         {
           "id": "D",
           "text": "Tessa wants to rush to the lost-and-found bin, while Jonah stays calm and examines the lab table for clues.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 shows that Tessa wants to run down the hall to search the lost-and-found bin right away, whereas Jonah stays calm and looks closely at the lab table for clues."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "When Jonah showed her the empty slot, Tessa wanted to run down the hall and search the lost-and-found bin right away.",
-      "childTip": "Click the sentence in Paragraph 2 that shows what Tessa wanted to do right away when she saw the empty slot.",
-      "parentExplanation": "In Paragraph 2 (ELAGSE5RL3: comparing two characters' responses to a challenge), Tessa reacts impulsively by wanting to run to the lost-and-found bin, whereas Jonah pauses and carefully checks the lab table for clues."
+      "childTip": "Paragraph 2 shows that Tessa wants to run down the hall to search the lost-and-found bin right away, whereas Jonah stays calm and looks closely at the lab table for clues.",
+      "parentExplanation": "In Paragraph 2 (ELAGSE5RL3: comparing two characters' responses to a challenge), Tessa reacts impulsively by wanting to run to the lost-and-found bin, whereas Jonah pauses and carefully checks the lab table for clues.",
+      "retryHint": "Read Paragraph 2 to compare what Tessa wants to do right away with what Jonah decides to do instead."
     },
     {
       "questionId": "w31_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It proves that Mr. Patel's third-period class forgot to clean the telescope after lunch.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The folded lens paper on the table shows Mr. Patel's class did clean the glass after lunch; the chalk dust came from the three o'clock art club."
         },
         {
           "id": "B",
           "text": "It helps Jonah realize that someone moved the lens during art club to protect it from pastel dust.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Spotting the faint ring of white chalk dust on the black table in Paragraph 3 helps Jonah figure out that someone moved the eyepiece during art club to keep chalk dust off the glass."
         },
         {
           "id": "C",
           "text": "It shows that the brass eyepiece was permanently ruined by wet paint and glue.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The brass eyepiece was not ruined at all—the art teacher tucked it safely under a glass beaker so it stayed clean for astronomy night."
         },
         {
           "id": "D",
           "text": "It explains why Saturn's rings look like a circle of white dust in outer space.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The white ring on the black lab table was left by chalk pastels from art club, not a science lesson about what Saturn's rings are made of."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "If the eyepiece had been sitting on the table during art club, someone must have moved it to keep chalk dust off the glass.",
-      "childTip": "Look at what the chalk ring reminds Jonah of: the art club's pastel posters and keeping the glass clean.",
-      "parentExplanation": "The ring of chalk dust on the table is the key clue in Paragraph 3 that connects the cleaned lens to the afternoon art club, leading Jonah to deduce that someone covered it nearby to protect it."
+      "childTip": "Spotting the faint ring of white chalk dust on the black table in Paragraph 3 helps Jonah figure out that someone moved the eyepiece during art club to keep chalk dust off the glass.",
+      "parentExplanation": "The ring of chalk dust on the table is the key clue in Paragraph 3 that connects the cleaned lens to the afternoon art club, leading Jonah to deduce that someone covered it nearby to protect it.",
+      "retryHint": "Read the last sentence of Paragraph 3 to see what Jonah figures out after noticing the ring of white chalk dust."
     },
     {
       "questionId": "w31_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Art clubs and science classes should never be allowed to share the same room at school.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The art teacher actually helped save astronomy night by keeping the lens clean under a beaker, so sharing the room was not the problem."
         },
         {
           "id": "B",
           "text": "School lost-and-found bins are always the best place to look for missing science equipment.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "In Paragraph 5, Tessa admits that digging through the coat bin in the office would have wasted time and made them late."
         },
         {
           "id": "C",
           "text": "Slowing down to observe clues carefully solves problems faster than rushing around in a panic.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story shows that by staying calm and observing the clues in the room instead of rushing to the office lost-and-found bin, Jonah found the lens in time for astronomy night."
         },
         {
           "id": "D",
           "text": "Telescopes work just as well without an eyepiece lens if the night sky is clear enough.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 states the exact opposite: without that curved magnifying lens, Saturn's rings would look like a blurry smudge."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By slowing down and reading the clues in the room, Jonah had saved the clearest view in the solar system.",
-      "childTip": "Check the final paragraph to see how Jonah's calm thinking compares to Tessa's rushed idea.",
-      "parentExplanation": "The central lesson of the story is that pausing to observe clues and think logically succeeds where panicking and rushing around would have wasted time."
+      "childTip": "The story shows that by staying calm and observing the clues in the room instead of rushing to the office lost-and-found bin, Jonah found the lens in time for astronomy night.",
+      "parentExplanation": "The central lesson of the story is that pausing to observe clues and think logically succeeds where panicking and rushing around would have wasted time.",
+      "retryHint": "Look at the last two sentences of Paragraph 5 to see what Tessa admits and how Jonah solved the problem in time."
     },
     {
       "questionId": "w31_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"By slowing down and reading the clues in the room, Jonah had saved the clearest view in the solar system.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly proves the theme from Question 5 by showing how slowing down and reading the clues in the room solved the mystery."
         },
         {
           "id": "B",
           "text": "\"A folded square of white lens paper lay beside an empty tray of microscope slides.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 3 only describes one item sitting on the lab table, without expressing the overall lesson of the story."
         },
         {
           "id": "C",
           "text": "\"Right beside the rack stood a row of tall glass beakers turned upside down on a clean towel.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 4 only describes where the glass beakers were sitting beside the drying rack."
         },
         {
           "id": "D",
           "text": "\"In thirty minutes, families would gather on the soccer field for the fifth-grade astronomy night.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 1 only tells when families were arriving on the soccer field, not how Jonah solved the problem."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By slowing down and reading the clues in the room, Jonah had saved the clearest view in the solar system.",
-      "childTip": "Pick the quote in Paragraph 5 that shows how slowing down and reading clues solved the mystery.",
-      "parentExplanation": "Option D directly supports Part A by summarizing how Jonah's careful observation of the room's clues solved the mystery in time for astronomy night."
+      "childTip": "This final sentence from Paragraph 5 directly proves the theme from Question 5 by showing how slowing down and reading the clues in the room solved the mystery.",
+      "parentExplanation": "Option D directly supports Part A by summarizing how Jonah's careful observation of the room's clues solved the mystery in time for astronomy night.",
+      "retryHint": "Choose the quote from Paragraph 5 that shows how slowing down and looking at clues saved astronomy night."
     }
   ]
 }

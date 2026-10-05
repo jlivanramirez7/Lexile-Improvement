@@ -72,31 +72,36 @@
           "id": "A",
           "text": "A rival merchant from the mainland",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'was quietly pried open by' shows that 'a rival merchant from the mainland' was the one who broke open the locked cedar chest."
         },
         {
           "id": "B",
           "text": "The master's mineral ledger inside the box",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The mineral ledger is just a book sitting inside the chest—a book cannot pry open its own locked box!"
         },
         {
           "id": "C",
           "text": "The thick evening fog rolling in from the canal",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'Late one foggy evening' only tells WHEN the break-in happened; fog didn't pry open the iron latch."
         },
         {
           "id": "D",
           "text": "A boatman who worked at the Venice dock",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 mentions spies bribing boatmen along the dock, but Paragraph 2 specifically says a rival merchant from the mainland pried open the chest."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Late one foggy evening, the locked cedar chest holding the master's mineral ledger was quietly pried open by a rival merchant from the mainland.",
-      "childTip": "Find the 'by' phrase after 'was quietly pried open' to see who did the prying.",
-      "parentExplanation": "In this passive-voice sentence, 'the locked cedar chest' is the receiver of the action and 'holding the master's mineral ledger' is a modifier. The true actor comes after 'by': 'a rival merchant from the mainland' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'was quietly pried open by' shows that 'a rival merchant from the mainland' was the one who broke open the locked cedar chest.",
+      "parentExplanation": "In this passive-voice sentence, 'the locked cedar chest' is the receiver of the action and 'holding the master's mineral ledger' is a modifier. The true actor comes after 'by': 'a rival merchant from the mainland' (Option B).",
+      "retryHint": "Look right after 'was quietly pried open by' in Paragraph 2 to see who opened the locked chest."
     },
     {
       "questionId": "w57_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "An ancient ledger written in gold ink by a king",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Kings paid gold coins for Master Lorenzo's blue goblets in Paragraph 1, but no king wrote the ledger in the chest! A 'decoy' is a fake item used as a trap."
         },
         {
           "id": "B",
           "text": "A fake item left out to trick a thief and protect the real secret",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'decoy' means a fake item left out to trick a thief and protect the real secret. The next sentences explain that the book held a false recipe that baked into dull mud."
         },
         {
           "id": "C",
           "text": "A heavy iron lock that cannot be broken with tools",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'Decoy' describes the false book placed inside the chest, not the iron lock on the outside (which the thief actually pried open)."
         },
         {
           "id": "D",
           "text": "A complete collection of every glass recipe on Murano Island",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Instead of holding every real glass recipe on Murano, Paragraph 3 says the decoy book held a false recipe that would only make cloudy mud."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Together, they had prepared a clever decoy book and placed it inside the carved cedar chest.",
-      "childTip": "Read the next sentence in Paragraph 3 about the 'false page' to see what kind of book they put in the chest.",
-      "parentExplanation": "Paragraph 3 explains that the book in the chest contained a 'false page' with common river sand while the 'genuine formula' was hidden elsewhere, proving that 'decoy' means a fake item used to trick someone (Option C)."
+      "childTip": "In Paragraph 3, 'decoy' means a fake item left out to trick a thief and protect the real secret. The next sentences explain that the book held a false recipe that baked into dull mud.",
+      "parentExplanation": "Paragraph 3 explains that the book in the chest contained a 'false page' with common river sand while the 'genuine formula' was hidden elsewhere, proving that 'decoy' means a fake item used to trick someone (Option C).",
+      "retryHint": "Read the sentences right after 'decoy book' in Paragraph 3 to see why that book had a false page while the genuine formula was hidden elsewhere."
     },
     {
       "questionId": "w57_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "He realizes that the candle flame burned up the thief's copy before the man reached the dock.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The candle flame didn't burn up the thief's paper—Paragraph 2 says the thief copied the page by candlelight and slipped out to the dock."
         },
         {
           "id": "B",
           "text": "He sees that the cloaked man accidentally dropped a bag of gold coins into the chest.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The cloaked thief didn't drop any gold coins into the chest; Nico felt relieved because the page the thief copied was a fake decoy recipe."
         },
         {
           "id": "C",
           "text": "He knows the thief only copied a fake recipe while the real formula remained hidden in the glass beads.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains why Nico was relieved: he and Master Lorenzo had put a fake decoy book in the chest two weeks earlier, while the real cobalt blue recipe was safely coded in glass beads."
         },
         {
           "id": "D",
           "text": "He wants the mainland merchant to teach everyone in Venice how to make cobalt glass.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Murano glassmakers lived under strict laws to guard their secret recipes from rivals, so Nico definitely didn't want the thief to learn the real formula!"
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Meanwhile, the genuine formula for cobalt blue was not written on paper at all.",
-      "childTip": "Click the sentence in Paragraph 3 that explains why the real cobalt blue formula was safe from paper thieves.",
-      "parentExplanation": "Nico feels relief because he and Master Lorenzo had placed a decoy ledger in the chest two weeks earlier, while the genuine formula was never written on paper at all (Option A)."
+      "childTip": "Paragraph 3 explains why Nico was relieved: he and Master Lorenzo had put a fake decoy book in the chest two weeks earlier, while the real cobalt blue recipe was safely coded in glass beads.",
+      "parentExplanation": "Nico feels relief because he and Master Lorenzo had placed a decoy ledger in the chest two weeks earlier, while the genuine formula was never written on paper at all (Option A).",
+      "retryHint": "Check Paragraph 3 to see what was actually inside the book the thief copied and where the real recipe was kept."
     },
     {
       "questionId": "w57_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "Paragraph 2 introduces Master Lorenzo's childhood, while Paragraph 3 skips ahead fifty years.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Neither paragraph talks about Lorenzo's childhood or skips ahead fifty years; Paragraph 3 only steps back two weeks to explain the decoy plan."
         },
         {
           "id": "B",
           "text": "Paragraph 2 describes how to blow a glass goblet, while Paragraph 3 lists the kings who bought them.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Kings and glass goblets are mentioned in Paragraph 1, whereas Paragraphs 2 and 3 focus on the midnight break-in and the decoy trap."
         },
         {
           "id": "C",
           "text": "Paragraph 2 explains why Venice banned fires, while Paragraph 3 shows the furnace burning down the shop.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "City fires are mentioned in Paragraph 1 as the reason ovens moved to Murano, and the furnace never burns down Lorenzo's shop."
         },
         {
           "id": "D",
           "text": "Paragraph 2 shows a break-in that makes it seem the secret was stolen, while Paragraph 3 flashes back to explain the trap set two weeks earlier.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 builds suspense when a cloaked thief pries open the chest and copies a page, and then Paragraph 3 jumps back 'Two weeks earlier' to reveal that Lorenzo and Nico had planted a fake book."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Two weeks earlier, Master Lorenzo had warned Nico that spies were bribing boatmen along the dock.",
-      "childTip": "Notice how Paragraph 2 ends with a surprising sigh of relief, and Paragraph 3 steps back 'Two weeks earlier' to explain why.",
-      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 2 creates dramatic tension when a spy copies the ledger from the chest, and Paragraph 3 shifts back two weeks earlier to reveal how Lorenzo and Nico had planted a decoy book (Option A)."
+      "childTip": "Paragraph 2 builds suspense when a cloaked thief pries open the chest and copies a page, and then Paragraph 3 jumps back 'Two weeks earlier' to reveal that Lorenzo and Nico had planted a fake book.",
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 2 creates dramatic tension when a spy copies the ledger from the chest, and Paragraph 3 shifts back two weeks earlier to reveal how Lorenzo and Nico had planted a decoy book (Option A).",
+      "retryHint": "Notice how Paragraph 2 ends with Nico letting out a breath of relief, and Paragraph 3 starts with 'Two weeks earlier' to explain why."
     },
     {
       "questionId": "w57_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Clever preparation and shared trust can protect valuable knowledge better than a heavy lock alone.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Even though the rival merchant pried open the chest's iron lock, Lorenzo and Nico kept the cobalt recipe safe through clever planning and shared trust—hiding the real code on a bead wire."
         },
         {
           "id": "B",
           "text": "Apprentices should never be allowed to learn how a master craftsperson mixes materials.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Instead of keeping Nico in the dark, Master Lorenzo trusted his apprentice with the secret bead code and handed him the main blowpipe in Paragraph 5!"
         },
         {
           "id": "C",
           "text": "Every secret formula should be carved into stone walls so nobody can carry it away.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Carving a secret formula onto stone walls would let any spy read it! Lorenzo hid the recipe in colored beads whose scoop sizes only he and Nico knew."
         },
         {
           "id": "D",
           "text": "Common river sand and gray lead ore make the brightest blue glass in Europe.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 3 says common river sand and gray lead ore were the FAKE decoy recipe that would only bake into dull, cloudy mud."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Instead, Lorenzo had taught Nico to read the recipe from a row of colored glass beads strung on a copper wire above the workbench.",
-      "childTip": "Think about how Lorenzo and Nico outsmarted the spy when the iron latch on the chest failed.",
-      "parentExplanation": "Although the spy easily pried open the iron lock on the cedar chest, Lorenzo and Nico protected the formula through foresight—hiding the recipe in plain sight on a bead wire that only they understood (Option A)."
+      "childTip": "Even though the rival merchant pried open the chest's iron lock, Lorenzo and Nico kept the cobalt recipe safe through clever planning and shared trust—hiding the real code on a bead wire.",
+      "parentExplanation": "Although the spy easily pried open the iron lock on the cedar chest, Lorenzo and Nico protected the formula through foresight—hiding the recipe in plain sight on a bead wire that only they understood (Option A).",
+      "retryHint": "Think about what truly protected the glass recipe when the locked chest failed: the decoy plan and the bead code Lorenzo taught Nico."
     },
     {
       "questionId": "w57_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Sparks danced above the brick furnace as Nico turned the long iron blowpipe in his blistered hands.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 only describes Nico turning a blowpipe by the furnace, not how clever planning and trust protected the recipe."
         },
         {
           "id": "B",
           "text": "\"Kings across Europe paid gold coins for a single blue goblet from Lorenzo's shop.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 1 shows that Lorenzo's blue glass was valuable, but not how he and Nico outsmarted the thief."
         },
         {
           "id": "C",
           "text": "\"Instead, Lorenzo had taught Nico to read the recipe from a row of colored glass beads strung on a copper wire above the workbench.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from Paragraph 3 directly supports Question 5 by showing how Master Lorenzo trusted Nico with the clever bead code that kept the recipe safe."
         },
         {
           "id": "D",
           "text": "\"Nico dipped the hot iron tip into the glowing pot and gathered a globe of deep blue glass.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This scene from Paragraph 5 shows Nico blowing blue glass the next morning, rather than how the recipe was protected from the spy."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Instead, Lorenzo had taught Nico to read the recipe from a row of colored glass beads strung on a copper wire above the workbench.",
-      "childTip": "Pick the quote that shows how the master and apprentice hid the real recipe using shared knowledge.",
-      "parentExplanation": "Option C directly proves the theme in Part A by showing how Master Lorenzo trusted Nico with the coded bead system that kept the recipe safe even after the chest was pried open."
+      "childTip": "This quote from Paragraph 3 directly supports Question 5 by showing how Master Lorenzo trusted Nico with the clever bead code that kept the recipe safe.",
+      "parentExplanation": "Option C directly proves the theme in Part A by showing how Master Lorenzo trusted Nico with the coded bead system that kept the recipe safe even after the chest was pried open.",
+      "retryHint": "Check Paragraph 3 for the sentence explaining how Lorenzo taught Nico to read the recipe from colored glass beads on a wire."
     }
   ]
 }

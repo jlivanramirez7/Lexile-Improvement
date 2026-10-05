@@ -72,34 +72,39 @@
           "text": "Priya and Mateo, the two Science Olympiad partners",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('glued... by Priya and Mateo') with the agent of the main verb ('was slowly pulled downward')."
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('glued... by Priya and Mateo') with the agent of the main verb ('was slowly pulled downward').",
+          "childFeedback": "Careful—this choice confuses the noun inside the middle describing phrase ('glued... by Priya and Mateo') with who or what actually did the main action ('was slowly pulled downward')."
         },
         {
           "id": "B",
           "text": "The neat triangles of dried glue along the sides",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Selects a noun phrase inside the descriptive modifier rather than the force pulling the truss down."
+          "diagnosticNote": "Selects a noun phrase inside the descriptive modifier rather than the force pulling the truss down.",
+          "childFeedback": "Watch out—this choice selects a noun phrase inside the middle describing phrase rather than the force pulling the truss down."
         },
         {
           "id": "C",
           "text": "The swinging metal hook attached to the loading block",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('was slowly pulled downward by the swinging metal hook')."
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('was slowly pulled downward by the swinging metal hook').",
+          "childFeedback": "Spot on! This answer correctly identifies the doer of the action following the main verb ('was slowly pulled downward by the swinging metal hook')."
         },
         {
           "id": "D",
           "text": "The light wooden truss resting on the oak blocks",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver of the action ('The light wooden truss') with the actor performing the pulling."
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the action ('The light wooden truss') with the actor performing the pulling.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action of the action ('The light wooden truss') with the actor performing the pulling."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The light wooden truss, glued in neat triangles by Priya and Mateo, was slowly pulled downward by the swinging metal hook.",
-      "childTip": "Watch out for two 'by' phrases! Look right after 'was slowly pulled downward by' to find the real puller.",
-      "parentExplanation": "Sentence Surgery (ELAGSE5L1). This sentence contains two 'by' phrases: 'by Priya and Mateo' modifies 'glued', whereas 'by the swinging metal hook' is the actor of the main passive verb 'was slowly pulled downward.'"
+      "childTip": "Spot on! This answer correctly identifies the doer of the action following the main verb ('was slowly pulled downward by the swinging metal hook').",
+      "parentExplanation": "Sentence Surgery (ELAGSE5L1). This sentence contains two 'by' phrases: 'by Priya and Mateo' modifies 'glued', whereas 'by the swinging metal hook' is the actor of the main passive verb 'was slowly pulled downward.'",
+      "retryHint": "In Paragraph 2, watch out for two 'by' phrases! Look right after 'was slowly pulled downward by' to find the real puller."
     },
     {
       "questionId": "w77_q2",
@@ -117,34 +122,39 @@
           "text": "Spread the weight out across the structure",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the engineering context where the side triangles share and spread the downward weight out toward both oak support blocks."
+          "diagnosticNote": "Matches the engineering context where the side triangles share and spread the downward weight out toward both oak support blocks.",
+          "childFeedback": "Spot on! This answer matches the engineering context where the side triangles share and spread the downward weight out toward both oak support blocks."
         },
         {
           "id": "B",
           "text": "Drop the entire bucket straight onto the gym floor",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the sentence, where the triangles lock tight to hold the five-kilogram load without breaking."
+          "diagnosticNote": "Contradicts the sentence, where the triangles lock tight to hold the five-kilogram load without breaking.",
+          "childFeedback": "Not quite—this choice contradicts the sentence, where the triangles lock tight to hold the five-kilogram load without breaking."
         },
         {
           "id": "C",
           "text": "Weigh the balsa wood on a digital scale",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the action of the side triangles during the sand test with weighing the bridge."
+          "diagnosticNote": "Confuses the action of the side triangles during the sand test with weighing the bridge.",
+          "childFeedback": "Careful—this choice confuses the action of the side triangles during the sand test with weighing the bridge."
         },
         {
           "id": "D",
           "text": "Glue extra strips of wood onto the top beam",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Refers to building the bridge before the contest rather than how the triangles behave during the test."
+          "diagnosticNote": "Refers to building the bridge before the contest rather than how the triangles behave during the test.",
+          "childFeedback": "Not quite—this choice refers to building the bridge before the contest rather than how the triangles behave during the test."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "At five kilograms, the top beam bowed slightly, yet the side triangles locked tight to distribute the load toward the oak blocks.",
-      "childTip": "Think about what triangles in a bridge do with heavy weight so one single spot doesn't snap right away.",
-      "parentExplanation": "Contextual Vocabulary (ELAGSE5RL4). Instead of letting the center beam snap under five kilograms, the side triangles 'locked tight to distribute the load toward the oak blocks,' meaning to spread the weight out."
+      "childTip": "Spot on! This answer matches the engineering context where the side triangles share and spread the downward weight out toward both oak support blocks.",
+      "parentExplanation": "Contextual Vocabulary (ELAGSE5RL4). Instead of letting the center beam snap under five kilograms, the side triangles 'locked tight to distribute the load toward the oak blocks,' meaning to spread the weight out.",
+      "retryHint": "In Paragraph 3, think about what triangles in a bridge do with heavy weight so one single spot doesn't snap right away."
     },
     {
       "questionId": "w77_q3",
@@ -162,34 +172,39 @@
           "text": "Mateo pours the sand as fast as he can, while Priya covers her eyes and refuses to watch the scale.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Swaps the two partners' roles and actions; Priya pours the sand while Mateo squeezes his eyes shut."
+          "diagnosticNote": "Swaps the two partners' roles and actions; Priya pours the sand while Mateo squeezes his eyes shut.",
+          "childFeedback": "Careful—this choice swaps the two partners' roles and actions; Priya pours the sand while Mateo squeezes his eyes shut."
         },
         {
           "id": "B",
           "text": "Mateo flinches and steps back at every pop of glue, while Priya leans in closely to watch how the bridge struts hold their balance.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately contrasts Mateo's nervous flinching with Priya's focused scientific observation in Paragraph 3."
+          "diagnosticNote": "Accurately contrasts Mateo's nervous flinching with Priya's focused scientific observation in Paragraph 3.",
+          "childFeedback": "Spot on! This answer accurately contrasts Mateo's nervous flinching with Priya's focused scientific observation in Paragraph 3."
         },
         {
           "id": "C",
           "text": "Both partners beg the judge to stop the test at five kilograms so their bridge will stay in one piece.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a plea to stop the test that never occurs in the story."
+          "diagnosticNote": "Invents a plea to stop the test that never occurs in the story.",
+          "childFeedback": "Watch out—this choice invents a plea to stop the test that never occurs in the story."
         },
         {
           "id": "D",
           "text": "Priya gets angry at Mateo for using too much glue, while Mateo laughs at the splintered wood.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Fabricates conflict between the partners that contradicts their teamwork."
+          "diagnosticNote": "Fabricates conflict between the partners that contradicts their teamwork.",
+          "childFeedback": "Not quite—this choice makes up conflict between the partners that contradicts their teamwork."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Mateo winced at every sharp pop of dried glue and took half a step back from the table.",
-      "childTip": "Click the sentence in Paragraph 3 that shows what Mateo does when he hears the dried glue pop.",
-      "parentExplanation": "Character Comparison & Explicit Detail with Click-to-Prove (ELAGSE5RL1/RL3). Paragraph 3 pairs Mateo's anxious reaction ('winced... and took half a step back') against Priya's analytical focus ('Priya leaned closer instead')."
+      "childTip": "Spot on! This answer accurately contrasts Mateo's nervous flinching with Priya's focused scientific observation in Paragraph 3.",
+      "parentExplanation": "Character Comparison & Explicit Detail with Click-to-Prove (ELAGSE5RL1/RL3). Paragraph 3 pairs Mateo's anxious reaction ('winced... and took half a step back') against Priya's analytical focus ('Priya leaned closer instead').",
+      "retryHint": "Look in Paragraph 3 for the sentence that shows what Mateo does when he hears the dried glue pop."
     },
     {
       "questionId": "w77_q4",
@@ -207,34 +222,39 @@
           "text": "It explains the exact mathematical formulas the judge used to calculate scores for every other school in the gym.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Refers to scoring math for other schools that is never described in the passage."
+          "diagnosticNote": "Refers to scoring math for other schools that is never described in the passage.",
+          "childFeedback": "Not quite—this choice refers to scoring math for other schools that is never described in the passage."
         },
         {
           "id": "B",
           "text": "It proves that Priya did not help build the bridge during the three weeks of after-school practice.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraphs 1 and 2, which state that both partners glued the fifty-two strips together."
+          "diagnosticNote": "Contradicts Paragraphs 1 and 2, which state that both partners glued the fifty-two strips together.",
+          "childFeedback": "Not quite—this choice contradicts Paragraphs 1 and 2, which state that both partners glued the fifty-two strips together."
         },
         {
           "id": "C",
           "text": "It builds suspense during the test and makes the ending a surprise when the broken bridge wins first place.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Explains how following Mateo's worry (seeing 'spun glass', wincing at creaks, fearing failure when it snaps) creates tension and a rewarding final realization."
+          "diagnosticNote": "Explains how following Mateo's worry (seeing 'spun glass', wincing at creaks, fearing failure when it snaps) creates tension and a rewarding final realization.",
+          "childFeedback": "Spot on! This answer explains how following Mateo's worry (seeing 'spun glass', wincing at creaks, fearing failure when it snaps) creates tension and a rewarding final realization."
         },
         {
           "id": "D",
           "text": "It shows that Mateo dislikes science contests and will never build a balsa-wood bridge again.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('never... again') that misreads Mateo's protective care for his bridge as dislike."
+          "diagnosticNote": "Uses extreme language ('never... again') that misreads Mateo's protective care for his bridge as dislike.",
+          "childFeedback": "Watch out—this choice uses extreme language ('never... again') that misreads Mateo's protective care for his bridge as dislike."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Mateo opened his eyes and stared at the splintered sticks, sure they had failed because the bridge broke.",
-      "childTip": "Think about how Mateo feels when the bridge snaps in Paragraph 5—and what he discovers right after!",
-      "parentExplanation": "Focus standard ELAGSE5RL6 (Point of View & Perspective). By filtering the test largely through Mateo's protective anxiety, the narrator keeps the reader on edge with every creak until Priya's celebration reveals the true goal of the event."
+      "childTip": "Spot on! This answer explains how following Mateo's worry (seeing 'spun glass', wincing at creaks, fearing failure when it snaps) creates tension and a rewarding final realization.",
+      "parentExplanation": "Focus standard ELAGSE5RL6 (Point of View & Perspective). By filtering the test largely through Mateo's protective anxiety, the narrator keeps the reader on edge with every creak until Priya's celebration reveals the true goal of the event.",
+      "retryHint": "Think about how Mateo feels when the bridge snaps in Paragraph 5—and what he discovers right after!"
     },
     {
       "questionId": "w77_q5",
@@ -253,34 +273,39 @@
           "text": "True strength is measured not by staying untouched, but by how much challenge something can endure before reaching its limit.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Captures the thematic realization in Paragraph 5 that success came from testing the sixteen-gram bridge to its highest possible limit."
+          "diagnosticNote": "Captures the thematic realization in Paragraph 5 that success came from testing the sixteen-gram bridge to its highest possible limit.",
+          "childFeedback": "Spot on! This answer captures the big lesson in Paragraph 5 that success came from testing the sixteen-gram bridge to its highest possible limit."
         },
         {
           "id": "B",
           "text": "Heavy oak blocks are always stronger than balsa wood when building full-size highway bridges.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses literally on the test stand blocks rather than the thematic lesson of the story."
+          "diagnosticNote": "Focuses literally on the test stand blocks rather than the thematic lesson of the story.",
+          "childFeedback": "Not quite—this choice focuses literally on the test stand blocks rather than the big lesson of the story."
         },
         {
           "id": "C",
           "text": "Students who close their eyes during a science test will always win first place on the leaderboard.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Turns a minor detail of Mateo's nervousness into a false, extreme rule."
+          "diagnosticNote": "Turns a minor detail of Mateo's nervousness into a false, extreme rule.",
+          "childFeedback": "Watch out—this choice turns a minor detail of Mateo's nervousness into a false, extreme rule."
         },
         {
           "id": "D",
           "text": "Partners who have different attitudes cannot work together successfully on an engineering project.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the story, where Mateo's careful craftsmanship and Priya's bold testing win first place together."
+          "diagnosticNote": "Contradicts the story, where Mateo's careful craftsmanship and Priya's bold testing win first place together.",
+          "childFeedback": "Not quite—this choice contradicts the story, where Mateo's careful craftsmanship and Priya's bold testing win first place together."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "In Bridge Building, the goal was never to keep a bridge unbroken forever; it was to push sixteen grams of brittle wood to its highest possible limit.",
-      "childTip": "Look at the final sentence of Paragraph 5 to see what Mateo realizes the true goal of Bridge Building is.",
-      "parentExplanation": "Part A of the EBSR pair targets Theme (ELAGSE5RL2). Mateo learns that keeping the fragile bridge safe on a shelf is not the point; real achievement means testing what they built to its maximum capacity."
+      "childTip": "Spot on! This answer captures the big lesson in Paragraph 5 that success came from testing the sixteen-gram bridge to its highest possible limit.",
+      "parentExplanation": "Part A of the EBSR pair targets Theme (ELAGSE5RL2). Mateo learns that keeping the fragile bridge safe on a shelf is not the point; real achievement means testing what they built to its maximum capacity.",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see what Mateo realizes the true goal of Bridge Building is."
     },
     {
       "questionId": "w77_q6",
@@ -299,34 +324,39 @@
           "text": "\"The entire frame weighed just sixteen grams, less than a handful of coins.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Gives only the physical weight of the bridge in Paragraph 1 without expressing the theme."
+          "diagnosticNote": "Gives only the physical weight of the bridge in Paragraph 1 without expressing the theme.",
+          "childFeedback": "Not quite—this choice gives only the physical weight of the bridge in Paragraph 1 without expressing the theme."
         },
         {
           "id": "B",
           "text": "\"Scoop by scoop, Priya poured golden sand down the funnel tube into the hanging bucket.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes the procedure of the test in Paragraph 3 rather than the lesson learned."
+          "diagnosticNote": "Describes the procedure of the test in Paragraph 3 rather than the lesson learned.",
+          "childFeedback": "Not quite—this choice describes the procedure of the test in Paragraph 3 rather than the lesson learned."
         },
         {
           "id": "C",
           "text": "\"By the time the digital scale read twelve kilograms, a quiet crowd had gathered around the test stand.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Shows the rising weight during the contest, but not the thematic takeaway."
+          "diagnosticNote": "Shows the rising weight during the contest, but not the thematic takeaway.",
+          "childFeedback": "Not quite—this choice shows the rising weight during the contest, but not the big lesson of the story."
         },
         {
           "id": "D",
           "text": "\"In Bridge Building, the goal was never to keep a bridge unbroken forever; it was to push sixteen grams of brittle wood to its highest possible limit.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves the theme in Part A by stating why pushing the bridge to its limit mattered more than keeping it unbroken."
+          "diagnosticNote": "Directly proves the theme in Part A by stating why pushing the bridge to its limit mattered more than keeping it unbroken.",
+          "childFeedback": "Spot on! This answer directly proves the theme in Question 5 by stating why pushing the bridge to its limit mattered more than keeping it unbroken."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "In Bridge Building, the goal was never to keep a bridge unbroken forever; it was to push sixteen grams of brittle wood to its highest possible limit.",
-      "childTip": "Pick the exact quote from Paragraph 5 that explains why breaking at a high weight was a victory.",
-      "parentExplanation": "Part B requires 100% verbatim textual proof (ELAGSE5RL1) for the theme identified in Part A."
+      "childTip": "Spot on! This answer directly proves the theme in Question 5 by stating why pushing the bridge to its limit mattered more than keeping it unbroken.",
+      "parentExplanation": "Part B requires 100% verbatim textual proof (ELAGSE5RL1) for the theme identified in Part A.",
+      "retryHint": "Pick the exact quote from Paragraph 5 that explains why breaking at a high weight was a victory."
     }
   ]
 }

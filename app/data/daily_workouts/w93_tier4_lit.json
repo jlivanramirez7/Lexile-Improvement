@@ -72,31 +72,36 @@
         {
           "id": "A",
           "text": "Hendrik, who fastened the bead between the plates",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 2, the words 'by Hendrik' right after 'was clamped' show that Hendrik fastened the tiny glass bead between the brass plates."
         },
         {
           "id": "B",
           "text": "The two thin brass plates that cooled on the bench",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—the two thin brass plates are what the bead was clamped between, not the person who did the clamping."
         },
         {
           "id": "C",
           "text": "Antonie van Leeuwenhoek, who melted the glass rod",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Careful—while Uncle Antonie melted the glass rod earlier in Paragraph 2, the sentence says the bead was clamped by Hendrik."
         },
         {
           "id": "D",
           "text": "The tiny glass bead inside the quiet workshop",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice flips the action! The tiny glass bead received the action of being clamped instead of doing it."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "In the quiet workshop beside the canal, the tiny glass bead was clamped between two thin brass plates by Hendrik before the metal cooled.",
-      "childTip": "Look at the passive verb 'was clamped' and find the person named right after the word 'by.'",
-      "parentExplanation": "In this passive construction, 'the tiny glass bead' is the receiver of 'was clamped.' The prepositional phrase 'by Hendrik' identifies the person who performed the action."
+      "childTip": "Spot on! In Paragraph 2, the words 'by Hendrik' right after 'was clamped' show that Hendrik fastened the tiny glass bead between the brass plates.",
+      "parentExplanation": "In this passive construction, 'the tiny glass bead' is the receiver of 'was clamped.' The prepositional phrase 'by Hendrik' identifies the person who performed the action.",
+      "retryHint": "In Paragraph 2, look at the action phrase 'was clamped' and find the person named right after the word 'by.'"
     },
     {
       "questionId": "w93_q2",
@@ -113,30 +118,35 @@
           "id": "A",
           "text": "Cracked and useless for viewing",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—the brass paddle works better than any other microscope in Paragraphs 3 and 4, so it is definitely not cracked or useless."
         },
         {
           "id": "B",
           "text": "Polished with expensive gold leaf",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice gives the opposite meaning! Paragraph 3 says the wealthy scholars had gold-trimmed tubes, whereas Antonie's paddle was plain."
         },
         {
           "id": "C",
           "text": "Plain and modest in appearance",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 3 contrasts the small, plain brass paddle with fancy gold-trimmed tubes from Paris, showing that 'humble' means plain and modest."
         },
         {
           "id": "D",
           "text": "Imported from a famous shop in Paris",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 3 explains that the fancy three-lens tubes came from Paris, while Antonie and Hendrik built this simple brass paddle in Delft."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Hendrik rubbed his cramped thumb and squinted at the humble brass paddle resting on the oak bench.",
-      "childTip": "Compare the simple brass paddle to the grand foot-long tubes that wealthy scholars bragged about in Paragraph 3.",
-      "parentExplanation": "Paragraph 3 contrasts the small, plain brass paddle with the grand foot-long tubes from Paris, showing that 'humble' means simple and unpretentious."
+      "childTip": "Spot on! Paragraph 3 contrasts the small, plain brass paddle with fancy gold-trimmed tubes from Paris, showing that 'humble' means plain and modest.",
+      "parentExplanation": "Paragraph 3 contrasts the small, plain brass paddle with the grand foot-long tubes from Paris, showing that 'humble' means simple and unpretentious.",
+      "retryHint": "Compare the simple brass paddle to the grand foot-long tubes that wealthy scholars bragged about in Paragraph 3."
     },
     {
       "questionId": "w93_q3",
@@ -153,30 +163,35 @@
           "id": "A",
           "text": "The brass paddle uses three wide lenses stacked inside a foot-long tube.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 3 says the wealthy scholars used three wide lenses in a foot-long tube, which blurred the view instead of sharpening it."
         },
         {
           "id": "B",
           "text": "The oak bench keeps the rain barrel water warmer than the air in the guild hall.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 3 never says the oak bench warmed the water; it explains how the curvature of the glass bead bends light."
         },
         {
           "id": "C",
           "text": "Soot from the blue lamp coats the glass bead so it blocks bright sunlight.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 2 specifically states that Antonie held the glass rod above the blue flame so soot would not cloud the bead."
         },
         {
           "id": "D",
           "text": "A smaller glass sphere bends light at a much sharper angle than a wide disk can.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! The final sentence of Paragraph 3 explains that the smaller a glass sphere is, the more sharply its curve bends light rays to magnify tiny things."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Still, Hendrik knew that a smaller sphere bent light at a much sharper angle than any wide disk could manage.",
-      "childTip": "Click the last sentence of Paragraph 3 that explains how a smaller sphere bends light.",
-      "parentExplanation": "In Paragraph 3, Hendrik reflects on the optical principle behind his uncle's design: a tiny glass sphere bends light rays at a far sharper angle than wide lenses, producing stronger magnification."
+      "childTip": "Spot on! The final sentence of Paragraph 3 explains that the smaller a glass sphere is, the more sharply its curve bends light rays to magnify tiny things.",
+      "parentExplanation": "In Paragraph 3, Hendrik reflects on the optical principle behind his uncle's design: a tiny glass sphere bends light rays at a far sharper angle than wide lenses, producing stronger magnification.",
+      "retryHint": "Look at the last sentence of Paragraph 3 that explains how a smaller sphere bends light."
     },
     {
       "questionId": "w93_q4",
@@ -192,31 +207,36 @@
         {
           "id": "A",
           "text": "Looking through the tiny pinhole lens revealed a vast, hidden realm of living creatures.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 5, Hendrik compares the tiny pinhole bead ('the smallest window') to the huge, unseen world of microscopic creatures it revealed ('the widest world')."
         },
         {
           "id": "B",
           "text": "The leaded glass window in the cloth shop was replaced with a wide pane from Paris.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—this choice takes 'window' too literally; nobody replaced the shop's leaded glass window with glass from Paris."
         },
         {
           "id": "C",
           "text": "Dutch merchants could now sail across the ocean using the brass paddle as a compass.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—the brass paddle is a hand microscope used to study water drops, not a compass for sailing across the ocean."
         },
         {
           "id": "D",
           "text": "Every person in Delft would soon abandon cloth making to collect rain barrels.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—this choice uses an extreme claim ('Every person in Delft') that never happens in the story."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Hendrik lowered the brass plate with trembling hands, realizing that the smallest window in Delft had just opened the widest world.",
-      "childTip": "Connect the 'smallest window' (the tiny pinhole bead) to the 'widest world' (the living sea inside the water drop).",
-      "parentExplanation": "The metaphor contrasts the physical smallness of the pinhole lens ('the smallest window') with the immense scientific discovery of microscopic life ('the widest world')."
+      "childTip": "Spot on! In Paragraph 5, Hendrik compares the tiny pinhole bead ('the smallest window') to the huge, unseen world of microscopic creatures it revealed ('the widest world').",
+      "parentExplanation": "The metaphor contrasts the physical smallness of the pinhole lens ('the smallest window') with the immense scientific discovery of microscopic life ('the widest world').",
+      "retryHint": "In Paragraph 5, connect the 'smallest window' (the tiny pinhole bead) to the 'widest world' (the living sea inside the water drop)."
     },
     {
       "questionId": "w93_q5",
@@ -234,30 +254,35 @@
           "id": "A",
           "text": "He refuses to let his nephew touch any of the tools in his workshop.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice contradicts Paragraph 2, where Antonie trusts Hendrik to pump the bellows and clamp the brass plates."
         },
         {
           "id": "B",
           "text": "He buys expensive three-lens tubes from Paris to impress the guild hall scholars.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 3 shows that other wealthy scholars bought fancy tubes from Paris, while Antonie made his own simple brass paddles."
         },
         {
           "id": "C",
           "text": "He is driven by curiosity to explore unseen nature rather than merely inspecting cloth for trade.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 1 explains that while other Delft merchants only used lenses to count cloth threads for trade, Antonie was eager to explore unseen life in canal water."
         },
         {
           "id": "D",
           "text": "He only works when the sun is shining brightly over the canal.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Not quite—Paragraph 1 begins on a rainy day, and in Paragraph 4 Antonie uses the blue lamp flame when daylight fades."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth.",
-      "childTip": "Check Paragraph 1 to see what most merchants used lenses for versus what Antonie cared about most.",
-      "parentExplanation": "Paragraph 1 contrasts ordinary Dutch merchants—who used lenses only to count threads in linen and wool—with Antonie, who was fascinated by what hid inside a drop of canal water."
+      "childTip": "Spot on! Paragraph 1 explains that while other Delft merchants only used lenses to count cloth threads for trade, Antonie was eager to explore unseen life in canal water.",
+      "parentExplanation": "Paragraph 1 contrasts ordinary Dutch merchants—who used lenses only to count threads in linen and wool—with Antonie, who was fascinated by what hid inside a drop of canal water.",
+      "retryHint": "Check Paragraph 1 to see what most merchants used lenses for versus what Antonie cared about most."
     },
     {
       "questionId": "w93_q6",
@@ -275,30 +300,35 @@
           "id": "A",
           "text": "\"Cold rain tapped against the leaded window of the Delft cloth shop as Hendrik pumped the foot bellows beneath the lamp.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this opening sentence from Paragraph 1 only sets the rainy scene in the shop without showing how Antonie differed from other merchants."
         },
         {
           "id": "B",
           "text": "\"Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! This quote from Paragraph 1 directly proves Question 5 by contrasting Antonie's curiosity about canal water with ordinary cloth inspection."
         },
         {
           "id": "C",
           "text": "\"A pinhead hole drilled through both brass sheets let a narrow beam of daylight pass straight through the bead.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this detail from Paragraph 2 only explains how light passed through the brass plates rather than showing what set Antonie's curiosity apart."
         },
         {
           "id": "D",
           "text": "\"For a long minute, only the ticking wall clock broke the silence of the room.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Not quite—this line from Paragraph 4 builds suspense while Hendrik looks through the lens, but it does not compare Antonie to other merchants."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Yet Antonie cared far more about what hid inside a drop of green canal water than about bolts of cloth.",
-      "childTip": "Find the sentence in Paragraph 1 that directly compares canal water drops to bolts of cloth.",
-      "parentExplanation": "Option B directly proves Part A by showing that Antonie valued investigating canal water over inspecting bolts of cloth."
+      "childTip": "Spot on! This quote from Paragraph 1 directly proves Question 5 by contrasting Antonie's curiosity about canal water with ordinary cloth inspection.",
+      "parentExplanation": "Option B directly proves Part A by showing that Antonie valued investigating canal water over inspecting bolts of cloth.",
+      "retryHint": "Find the sentence in Paragraph 1 that directly compares canal water drops to bolts of cloth."
     }
   ]
 }

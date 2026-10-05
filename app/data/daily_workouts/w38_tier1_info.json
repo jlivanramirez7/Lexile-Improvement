@@ -71,31 +71,36 @@
           "id": "A",
           "text": "Fast computers detect the faults underground, and buried seismic sensors send out radio alerts.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This swaps the two roles! The buried seismic sensors are what detect the ground tremors, and the fast computers are what turn them into warning alerts."
         },
         {
           "id": "B",
           "text": "Buried seismic sensors detect the faint ground tremors, and fast computers turn them into warning alerts.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'detected miles from a city by buried seismic sensors' and 'are instantly turned into warning alerts by fast computers' show that buried sensors detect the tremors and fast computers turn them into alerts."
         },
         {
           "id": "C",
           "text": "The early P-wave turns the buried seismic sensors into fast computers near the city.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This scrambles the sentence! An earthquake wave does not turn underground sensors into computers."
         },
         {
           "id": "D",
           "text": "Barking dogs detect the S-wave first, and train drivers phone the fire stations.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Barking dogs are mentioned in Paragraph 2, and trains and fire stations are mentioned in Paragraph 5, not in this sentence from Paragraph 4."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Faint ground tremors from the early P-wave, detected miles from a city by buried seismic sensors, are instantly turned into warning alerts by fast computers.",
-      "childTip": "Look at both 'by' phrases: buried seismic sensors detect the tremors, and fast computers turn them into alerts.",
-      "parentExplanation": "This passive sentence features two 'by' phrases: 'detected... by buried seismic sensors' and 'are instantly turned into warning alerts by fast computers'. Option B correctly identifies both agents."
+      "childTip": "In Paragraph 4, 'detected miles from a city by buried seismic sensors' and 'are instantly turned into warning alerts by fast computers' show that buried sensors detect the tremors and fast computers turn them into alerts.",
+      "parentExplanation": "This passive sentence features two 'by' phrases: 'detected... by buried seismic sensors' and 'are instantly turned into warning alerts by fast computers'. Option B correctly identifies both agents.",
+      "retryHint": "Check the two 'by' phrases in Paragraph 4: 'detected... by...' and 'are instantly turned into warning alerts by...'"
     },
     {
       "questionId": "w38_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Deep underground caves filled with water",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The sensors sit inside a buried station vault in Paragraph 4, not in water-filled caves, and 'tremors' comes from the P-wave shaking the ground."
         },
         {
           "id": "B",
           "text": "Loud sirens mounted on the roofs of fire stations",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Fire stations are mentioned in Paragraph 5, while 'faint ground tremors from the early P-wave' in Paragraph 4 refers to the shaking of the earth."
         },
         {
           "id": "C",
           "text": "Heavy metal weights that never move at all",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The hanging metal weight inside the recorder stays still while the outer frame shakes, so 'ground tremors' means the shaking movements, not the still weight."
         },
         {
           "id": "D",
           "text": "Slight shaking or vibrating movements in the earth",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'tremors' means slight shaking or vibrating movements in the earth, because the buried sensors detect the faint ground shaking caused by the early P-wave."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Faint ground tremors from the early P-wave, detected miles from a city by buried seismic sensors, are instantly turned into warning alerts by fast computers.",
-      "childTip": "Connect 'ground tremors' to what the early P-wave does as it passes through the earth.",
-      "parentExplanation": "In Paragraph 4, 'faint ground tremors from the early P-wave' refers to the mild shaking vibrations detected by buried seismic sensors."
+      "childTip": "In Paragraph 4, 'tremors' means slight shaking or vibrating movements in the earth, because the buried sensors detect the faint ground shaking caused by the early P-wave.",
+      "parentExplanation": "In Paragraph 4, 'faint ground tremors from the early P-wave' refers to the mild shaking vibrations detected by buried seismic sensors.",
+      "retryHint": "Look at how the fast P-wave shakes the outer frame of the buried station in Paragraph 4 to see what 'ground tremors' are."
     },
     {
       "questionId": "w38_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "They shake the ground side to side and up and down, which twists building frames.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that while a P-wave just squeezes rock in a straight line, an S-wave shakes the ground from side to side and up and down like a snapped rope, which twists building frames and shifts bridges."
         },
         {
           "id": "B",
           "text": "They travel twice as fast as P-waves and arrive before sensors can turn on.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 3 states the exact opposite about speed: the S-wave is the slower wave, traveling at roughly half the speed of the P-wave."
         },
         {
           "id": "C",
           "text": "They cut the fiber-optic cables that connect hospitals to fire stations.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Fiber-optic cables are mentioned in Paragraph 4 because they carry light-speed warning alerts, not because S-waves cut them."
         },
         {
           "id": "D",
           "text": "They melt the solid rock deep beneath the fault into hot liquid lava.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Neither paragraph mentions melting rock into liquid lava; earthquakes shake solid rock along faults."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Traveling at roughly half the speed of the first pulse, an S-wave shakes the ground from side to side and up and down like a snapped rope.",
-      "childTip": "Click the sentence in Paragraph 3 that compares the S-wave's movement to a snapped rope.",
-      "parentExplanation": "Paragraph 3 explains that S-waves shake the ground side to side and up and down like a snapped rope, a rolling motion that twists building frames and shifts heavy bridges."
+      "childTip": "Paragraph 3 explains that while a P-wave just squeezes rock in a straight line, an S-wave shakes the ground from side to side and up and down like a snapped rope, which twists building frames and shifts bridges.",
+      "parentExplanation": "Paragraph 3 explains that S-waves shake the ground side to side and up and down like a snapped rope, a rolling motion that twists building frames and shifts heavy bridges.",
+      "retryHint": "Read the second and third sentences of Paragraph 3 to see how an S-wave moves the ground like a snapped rope."
     },
     {
       "questionId": "w38_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "By explaining step by step how engineers pour concrete for highway bridges",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 3 mentions that S-waves shift heavy bridges, but neither paragraph explains how engineers pour concrete to build bridges."
         },
         {
           "id": "B",
           "text": "By listing the dates of the ten largest earthquakes in United States history",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never gives a list of historical earthquake dates; it explains the science of seismic waves and early warning systems."
         },
         {
           "id": "C",
           "text": "By comparing the speed, motion, and impact of P-waves and S-waves",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 describes the fast, straight-line P-wave that causes little damage, and Paragraph 3 contrasts it with the slower, rolling S-wave that causes most earthquake damage."
         },
         {
           "id": "D",
           "text": "By arguing that buried seismic sensors are too expensive for small towns to use",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Seismic sensors are not introduced until Paragraph 4, and the author never argues that they are too expensive for small towns."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Several seconds later, the slower secondary wave, or S-wave, arrives at the same spot.",
-      "childTip": "Look at how Paragraph 2 describes the fast P-wave while Paragraph 3 contrasts it with the slower S-wave.",
-      "parentExplanation": "Paragraphs 2 and 3 use a comparison/contrast and sequence structure to contrast the fast, mild, straight-line P-wave with the slower, destructive, rolling S-wave."
+      "childTip": "Paragraph 2 describes the fast, straight-line P-wave that causes little damage, and Paragraph 3 contrasts it with the slower, rolling S-wave that causes most earthquake damage.",
+      "parentExplanation": "Paragraphs 2 and 3 use a comparison/contrast and sequence structure to contrast the fast, mild, straight-line P-wave with the slower, destructive, rolling S-wave.",
+      "retryHint": "Compare how Paragraph 2 describes the first wave (P-wave) with how Paragraph 3 describes the second wave (S-wave)."
     },
     {
       "questionId": "w38_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Satellites in space can see underground faults glowing red a full week before an earthquake starts.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never mentions space satellites or glowing red faults; Paragraph 5 notes that scientists cannot stop faults from slipping ahead of time."
         },
         {
           "id": "B",
           "text": "Heavy metal weights inside the fault stop the rocks from slipping until trains have come to a full stop.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The hanging metal weight is inside a recording station to measure shaking—it cannot hold giant underground rock faults in place."
         },
         {
           "id": "C",
           "text": "S-waves travel much faster than radio signals, giving computers several hours to predict the storm.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This reverses the speeds! S-waves are slower than P-waves, and light-speed radio signals are much faster than S-waves, giving ten to thirty seconds of warning."
         },
         {
           "id": "D",
           "text": "Sensors detect the harmless P-wave first and send light-speed computer signals that arrive ahead of the slower S-wave.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that buried sensors detect the fast, mostly harmless P-wave first and computers send radio and fiber-optic alerts at the speed of light, outrunning the slower, damaging S-wave."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Because radio and fiber-optic signals travel at the speed of light, the computer message outruns the slower S-wave.",
-      "childTip": "Check Paragraph 4 to see how the computer message wins the race against the slower S-wave.",
-      "parentExplanation": "Paragraph 4 explains that buried sensors detect the fast P-wave first, and because radio and fiber-optic signals move at the speed of light, the warning alert outruns the slower, destructive S-wave."
+      "childTip": "Paragraph 4 explains that buried sensors detect the fast, mostly harmless P-wave first and computers send radio and fiber-optic alerts at the speed of light, outrunning the slower, damaging S-wave.",
+      "parentExplanation": "Paragraph 4 explains that buried sensors detect the fast P-wave first, and because radio and fiber-optic signals move at the speed of light, the warning alert outruns the slower, destructive S-wave.",
+      "retryHint": "Look at the last two sentences of Paragraph 4 to see how the computer alert races ahead of the slower S-wave."
     },
     {
       "questionId": "w38_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"Deep beneath the ground we walk on, giant slabs of rock press tightly against each other along cracks called faults.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 only defines what underground faults are before an earthquake happens."
         },
         {
           "id": "B",
           "text": "\"Because radio and fiber-optic signals travel at the speed of light, the computer message outruns the slower S-wave.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 4 directly proves Question 5 by explaining that light-speed radio and fiber-optic signals allow the computer warning to outrun the slower S-wave."
         },
         {
           "id": "C",
           "text": "\"Dogs often bark and window glass rattles when this first pulse passes under a town.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 2 only describes what people and dogs notice when a P-wave passes under a town."
         },
         {
           "id": "D",
           "text": "\"Automatic switches slow down high-speed trains so they do not derail.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 5 gives one example of how a warning is used (slowing down trains), rather than explaining how the alert outruns the S-wave."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Because radio and fiber-optic signals travel at the speed of light, the computer message outruns the slower S-wave.",
-      "childTip": "Pick the quote in Paragraph 4 that explains why the computer alert arrives before the S-wave.",
-      "parentExplanation": "Option C directly proves how the light-speed computer alert outruns the slower S-wave after the P-wave is detected."
+      "childTip": "This sentence from Paragraph 4 directly proves Question 5 by explaining that light-speed radio and fiber-optic signals allow the computer warning to outrun the slower S-wave.",
+      "parentExplanation": "Option C directly proves how the light-speed computer alert outruns the slower S-wave after the P-wave is detected.",
+      "retryHint": "Find the quote from Paragraph 4 that explains why the computer message arrives before the slower S-wave."
     }
   ]
 }

@@ -72,34 +72,39 @@
           "text": "The steady coastal winds blowing off the ocean",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('by steady coastal winds', which carry the droplets) with the agent that traps them."
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('by steady coastal winds', which carry the droplets) with the agent that traps them.",
+          "childFeedback": "In Paragraph 2, 'by steady coastal winds' tells what carried the droplets inland from the ocean, whereas 'the woven plastic threads of the tall ridge nets' is what trapped them."
         },
         {
           "id": "B",
           "text": "The woven plastic threads of the tall ridge nets",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('are swiftly trapped by the woven plastic threads of the tall ridge nets')."
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('are swiftly trapped by the woven plastic threads of the tall ridge nets').",
+          "childFeedback": "In Paragraph 2, watch out for two 'by' phrases: coastal winds carry the droplets inland, but the main verb 'are swiftly trapped by' shows that 'the woven plastic threads of the tall ridge nets' actually trap the droplets."
         },
         {
           "id": "C",
           "text": "The cold ocean currents along the northern coast",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Selects a location noun inside the embedded modifier rather than the actor of the main verb."
+          "diagnosticNote": "Selects a location noun inside the embedded modifier rather than the actor of the main verb.",
+          "childFeedback": "'From the cold ocean' only tells where the mist started before blowing inland; ocean currents don't trap the droplets on the mountain ridge."
         },
         {
           "id": "D",
           "text": "The tiny water droplets floating inside the gray cloud",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Tiny water droplets') with the actor performing the trapping."
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Tiny water droplets') with the actor performing the trapping.",
+          "childFeedback": "The tiny water droplets are what get caught ('are swiftly trapped')—they receive the action instead of trapping themselves!"
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Tiny water droplets, carried inland from the cold ocean by steady coastal winds, are swiftly trapped by the woven plastic threads of the tall ridge nets.",
-      "childTip": "Watch out for two 'by' phrases! Find the main verb 'are swiftly trapped by' to see what actually catches the drops.",
-      "parentExplanation": "This Sentence Surgery item tests Passive Actor Tracking (ELAGSE5L1) with a double-'by' distractor. While 'by steady coastal winds' modifies 'carried inland', the main passive verb 'are swiftly trapped' is performed 'by the woven plastic threads of the tall ridge nets.'"
+      "childTip": "In Paragraph 2, watch out for two 'by' phrases: coastal winds carry the droplets inland, but the main verb 'are swiftly trapped by' shows that 'the woven plastic threads of the tall ridge nets' actually trap the droplets.",
+      "parentExplanation": "This Sentence Surgery item tests Passive Actor Tracking (ELAGSE5L1) with a double-'by' distractor. While 'by steady coastal winds' modifies 'carried inland', the main passive verb 'are swiftly trapped' is performed 'by the woven plastic threads of the tall ridge nets.'",
+      "retryHint": "Spot the two 'by' phrases in Paragraph 2: which one comes right after the main action 'are swiftly trapped by'?"
     },
     {
       "questionId": "w74_q2",
@@ -117,34 +122,39 @@
           "text": "Tear holes through the vertical plastic screen",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Focuses on the word 'screen' at the end of the sentence rather than the change in the water droplets."
+          "diagnosticNote": "Focuses on the word 'screen' at the end of the sentence rather than the change in the water droplets.",
+          "childFeedback": "Tiny fog droplets clinging to plastic mesh don't tear holes in the screen; they merge together into larger water beads that trickle down into the trough."
         },
         {
           "id": "B",
           "text": "Dry up and vanish into the warm desert air",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the physical process; the mist is turning into liquid water that runs down the screen, not evaporating."
+          "diagnosticNote": "Reverses the physical process; the mist is turning into liquid water that runs down the screen, not evaporating.",
+          "childFeedback": "Drying up and vanishing into the air is evaporation—the exact opposite of 'condense,' where mist droplets join together into heavy liquid beads!"
         },
         {
           "id": "C",
           "text": "Freeze into solid sheets of mountain ice",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Introduces freezing ice, which contradicts 'clear water' flowing down into troughs and pipes."
+          "diagnosticNote": "Introduces freezing ice, which contradicts 'clear water' flowing down into troughs and pipes.",
+          "childFeedback": "Paragraph 3 says the larger beads flow as 'clear water' down the screen and through pipes, not solid sheets of ice."
         },
         {
           "id": "D",
           "text": "Come together to form thicker liquid drops",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the root clue ('con-' together + 'dense' thick) and Paragraph 2's explanation that tiny drops 'merge into heavy beads.'"
+          "diagnosticNote": "Matches the root clue ('con-' together + 'dense' thick) and Paragraph 2's explanation that tiny drops 'merge into heavy beads.'",
+          "childFeedback": "In Paragraph 3, 'condense' means come together to form thicker liquid drops. The end of Paragraph 2 gives the exact clue: the tiny mist drops cling to the mesh and 'merge into heavy beads.'"
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Once the droplets condense into larger beads, gravity pulls the clear water down the vertical screen.",
-      "childTip": "Look at the end of Paragraph 2: the tiny drops cling to the fibers and merge into heavy beads.",
-      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). Paragraph 2 ends with 'merge into heavy beads,' and Paragraph 3 begins with 'Once the droplets condense into larger beads,' confirming that 'condense' means to gather into thicker liquid drops."
+      "childTip": "In Paragraph 3, 'condense' means come together to form thicker liquid drops. The end of Paragraph 2 gives the exact clue: the tiny mist drops cling to the mesh and 'merge into heavy beads.'",
+      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). Paragraph 2 ends with 'merge into heavy beads,' and Paragraph 3 begins with 'Once the droplets condense into larger beads,' confirming that 'condense' means to gather into thicker liquid drops.",
+      "retryHint": "Compare 'Once the droplets condense into larger beads' at the start of Paragraph 3 with the last words of Paragraph 2 ('merge into heavy beads')."
     },
     {
       "questionId": "w74_q3",
@@ -162,34 +172,39 @@
           "text": "Gravity pulls the water down from the ridge through pipes without needing motors, fuel pumps, or power lines.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately identifies the cause-and-effect explanation in Paragraph 3 showing how gravity moves water without costly machines or fuel."
+          "diagnosticNote": "Accurately identifies the cause-and-effect explanation in Paragraph 3 showing how gravity moves water without costly machines or fuel.",
+          "childFeedback": "Paragraph 3 explains that because the nets stand high on the mountain ridge, gravity naturally pulls the water down through buried pipes into village tanks without needing motors, fuel pumps, or power lines."
         },
         {
           "id": "B",
           "text": "Tank trucks deliver free river water to the mountain storage tanks every morning.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the old, expensive method mentioned in Paragraph 1 (buying water from tank trucks) with the new fog net system."
+          "diagnosticNote": "Confuses the old, expensive method mentioned in Paragraph 1 (buying water from tank trucks) with the new fog net system.",
+          "childFeedback": "Paragraph 1 says families used to pay money for water hauled by tank trucks before the fog nets were built—the trucks weren't free or part of the net system!"
         },
         {
           "id": "C",
           "text": "Solar panels attached to the nets heat the clouds so rain falls directly onto the roofs below.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents solar panels and heated clouds that never appear in the passage."
+          "diagnosticNote": "Invents solar panels and heated clouds that never appear in the passage.",
+          "childFeedback": "Paragraph 3 specifically states that no motors or power lines are used, and the plastic nets catch cool mist droplets rather than heating clouds with solar panels."
         },
         {
           "id": "D",
           "text": "The plastic mesh nets last forever and never need to be attached to poles or pipes.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('forever', 'never') that contradicts Paragraph 2 and Paragraph 3."
+          "diagnosticNote": "Uses extreme language ('forever', 'never') that contradicts Paragraph 2 and Paragraph 3.",
+          "childFeedback": "Paragraphs 2 and 3 explicitly state that the mesh nets ARE stretched between tall poles and connected to troughs and buried black pipes!"
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "No motors, fuel pumps, or power lines are needed to move the water from the ridge to the taps below.",
-      "childTip": "Click the last sentence in Paragraph 3 that tells what machines are NOT needed to move the water.",
-      "parentExplanation": "This Click-to-Prove item targets scientific cause and effect (ELAGSE5RI3). Because the nets sit on high ridges above the village, gravity pulls the collected water down the slope through pipes with zero electricity or fuel."
+      "childTip": "Paragraph 3 explains that because the nets stand high on the mountain ridge, gravity naturally pulls the water down through buried pipes into village tanks without needing motors, fuel pumps, or power lines.",
+      "parentExplanation": "This Click-to-Prove item targets scientific cause and effect (ELAGSE5RI3). Because the nets sit on high ridges above the village, gravity pulls the collected water down the slope through pipes with zero electricity or fuel.",
+      "retryHint": "Check the first and last sentences of Paragraph 3 to see what natural force moves the water down the slope and what machines are NOT needed."
     },
     {
       "questionId": "w74_q4",
@@ -207,34 +222,39 @@
           "text": "Paragraph 1 compares two different deserts in South America, while Paragraph 2 lists the dates when each desert received rain.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Mischaracterizes both paragraphs; only the Atacama Desert is discussed, and no timeline of rain dates is listed."
+          "diagnosticNote": "Mischaracterizes both paragraphs; only the Atacama Desert is discussed, and no timeline of rain dates is listed.",
+          "childFeedback": "Paragraph 1 only describes one desert (the Atacama Desert in Chile) and notes that rain gauges stood empty for decades—Paragraph 2 never lists rain dates!"
         },
         {
           "id": "B",
           "text": "Paragraph 1 argues that tank trucks are the best way to haul water, and Paragraph 2 proves that cacti are harmed by coastal mist.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Flips the meaning of both paragraphs: tank trucks were costly, and cacti survived by catching the mist."
+          "diagnosticNote": "Flips the meaning of both paragraphs: tank trucks were costly, and cacti survived by catching the mist.",
+          "childFeedback": "Paragraph 1 says tank trucks were expensive over rough dirt roads, and Paragraph 2 says wild desert cacti SURVIVE by catching mist on their spines, not that mist harms them!"
         },
         {
           "id": "C",
           "text": "Paragraph 1 establishes the problem of severe water scarcity despite daily coastal fog, and Paragraph 2 explains the engineered solution inspired by desert cacti.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately explains the Problem-and-Solution structural relationship linking Paragraph 1 and Paragraph 2."
+          "diagnosticNote": "Accurately explains the Problem-and-Solution structural relationship linking Paragraph 1 and Paragraph 2.",
+          "childFeedback": "Paragraph 1 sets up the puzzling problem—Atacama towns have bone-dry soil even though thick ocean fog rolls over them daily—and Paragraph 2 explains how engineers solved it with cactus-inspired mesh nets."
         },
         {
           "id": "D",
           "text": "Paragraph 1 describes how olive trees are planted, and Paragraph 2 explains how black plastic pipes are buried on slopes.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Pulls details from Paragraphs 3 and 4 instead of analyzing how Paragraphs 1 and 2 connect."
+          "diagnosticNote": "Pulls details from Paragraphs 3 and 4 instead of analyzing how Paragraphs 1 and 2 connect.",
+          "childFeedback": "Olive trees are mentioned in Paragraph 4 and buried black pipes in Paragraph 3—neither one is the focus of Paragraphs 1 and 2."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Inspired by those plants, engineers built tall frames along the high mountain ridges and stretched fine plastic mesh between the poles.",
-      "childTip": "Ask yourself: what big problem does Paragraph 1 introduce, and how do engineers solve it in Paragraph 2?",
-      "parentExplanation": "Focus standard ELAGSE5RI5 (Text Structure). Paragraph 1 sets up the central problem (bone-dry towns beneath thick coastal fog), and Paragraph 2 introduces the biomimetic solution (mesh nets modeled after cactus spines)."
+      "childTip": "Paragraph 1 sets up the puzzling problem—Atacama towns have bone-dry soil even though thick ocean fog rolls over them daily—and Paragraph 2 explains how engineers solved it with cactus-inspired mesh nets.",
+      "parentExplanation": "Focus standard ELAGSE5RI5 (Text Structure). Paragraph 1 sets up the central problem (bone-dry towns beneath thick coastal fog), and Paragraph 2 introduces the biomimetic solution (mesh nets modeled after cactus spines).",
+      "retryHint": "Compare the problem at the end of Paragraph 1 (parched hills under daily fog) with the engineered solution in Paragraph 2."
     },
     {
       "questionId": "w74_q5",
@@ -253,34 +273,39 @@
           "text": "Mountain towns in Chile prefer buying water from tank trucks because coastal fog only appears during the summer.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraphs 1, 4, and 5 by reversing how villagers get water and when the fog appears."
+          "diagnosticNote": "Contradicts Paragraphs 1, 4, and 5 by reversing how villagers get water and when the fog appears.",
+          "childFeedback": "Villagers don't prefer expensive tank trucks, and Paragraph 1 says thick fog rolls over the hills 'almost every morning,' while Paragraph 5 notes that clear summer weeks have less fog."
         },
         {
           "id": "B",
           "text": "Wild desert cacti in northern Chile grow sharp spines because rain gauges have stood empty for decades.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Combines two minor background details from Paragraphs 1 and 2 while leaving out the fog-harvesting nets entirely."
+          "diagnosticNote": "Combines two minor background details from Paragraphs 1 and 2 while leaving out the fog-harvesting nets entirely.",
+          "childFeedback": "Wild cacti in Paragraph 2 are just the nature clue that inspired the engineers' nets, not the central idea of the whole five-paragraph article."
         },
         {
           "id": "C",
           "text": "Fog nets can produce fresh water in every desert on Earth regardless of wind direction or nearby oceans.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Directly contradicts Paragraph 5, which explains that fog harvesting works only where cold ocean currents and steep cliffs meet."
+          "diagnosticNote": "Directly contradicts Paragraph 5, which explains that fog harvesting works only where cold ocean currents and steep cliffs meet.",
+          "childFeedback": "Paragraph 5 directly contradicts this extreme claim: 'fog harvesting works only where the right weather and land meet,' requiring cold ocean currents and steep coastal cliffs."
         },
         {
           "id": "D",
           "text": "In the dry Atacama Desert, ridge-top mesh nets capture water from coastal fog and gravity-feed it to villages for drinking and farming.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes the setting (Atacama), the mechanism (fog-catching mesh and gravity pipes), and the impact on communities."
+          "diagnosticNote": "Synthesizes the setting (Atacama), the mechanism (fog-catching mesh and gravity pipes), and the impact on communities.",
+          "childFeedback": "Across the passage, the central idea is that ridge-top mesh nets in the dry Atacama Desert trap water from coastal fog and use gravity to pipe it down to villages for drinking and farming."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.",
-      "childTip": "Pick the summary that covers where the nets are, how they catch mist, and how that water helps the towns.",
-      "parentExplanation": "Part A of the EBSR pair assesses Central Idea synthesis (ELAGSE5RI2). Option A integrates the problem, the fog-net technology, and the benefit to Atacama towns, while Option C falls for an extreme generalization contradicted by Paragraph 5."
+      "childTip": "Across the passage, the central idea is that ridge-top mesh nets in the dry Atacama Desert trap water from coastal fog and use gravity to pipe it down to villages for drinking and farming.",
+      "parentExplanation": "Part A of the EBSR pair assesses Central Idea synthesis (ELAGSE5RI2). Option A integrates the problem, the fog-net technology, and the benefit to Atacama towns, while Option C falls for an extreme generalization contradicted by Paragraph 5.",
+      "retryHint": "Think about the main point that covers where the fog nets stand, how they catch mist, and how that water helps hill towns."
     },
     {
       "questionId": "w74_q6",
@@ -299,34 +324,39 @@
           "text": "\"In some mountain towns, rain gauges have stood empty for decades at a time.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Shows only the dryness of the desert in Paragraph 1 without mentioning the fog-harvesting nets or water supply."
+          "diagnosticNote": "Shows only the dryness of the desert in Paragraph 1 without mentioning the fog-harvesting nets or water supply.",
+          "childFeedback": "This sentence from Paragraph 1 only shows how dry the Atacama Desert is, without mentioning the fog nets or how they supply villages with water."
         },
         {
           "id": "B",
           "text": "\"When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly supports the central idea in Part A by showing how ridge-top nets harvest enough fog water to sustain a village."
+          "diagnosticNote": "Directly supports the central idea in Part A by showing how ridge-top nets harvest enough fog water to sustain a village.",
+          "childFeedback": "This sentence from Paragraph 4 directly supports Question 5 by showing how rows of nets along a windy ridge collect enough fog water to sustain an entire hill town."
         },
         {
           "id": "C",
           "text": "\"Because the fog droplets are too light to fall as rain, they need a solid surface to strike.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Explains a single physical detail about mist droplets rather than the overall impact of the fog nets."
+          "diagnosticNote": "Explains a single physical detail about mist droplets rather than the overall impact of the fog nets.",
+          "childFeedback": "This detail from Paragraph 2 only explains why light fog droplets don't fall as rain, leaving out how the ridge nets sustain the villages."
         },
         {
           "id": "D",
           "text": "\"During clear summer weeks when the breeze shifts, towns must rely on their saved tank supply until the gray clouds return.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Focuses on a temporary seasonal limitation in Paragraph 5 rather than the main idea of how fog nets supply towns."
+          "diagnosticNote": "Focuses on a temporary seasonal limitation in Paragraph 5 rather than the main idea of how fog nets supply towns.",
+          "childFeedback": "This line from Paragraph 5 only describes what towns do during clear summer weeks when the breeze shifts, not the main idea of how fog nets capture water."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "When thirty or forty nets stand side by side along a windy crest, they collect enough water to sustain an entire hill town.",
-      "childTip": "Find the quote from Paragraph 4 that shows how a row of nets along a ridge supports a whole town.",
-      "parentExplanation": "Part B requires 100% verbatim textual evidence (ELAGSE5RI1) that backs up the central idea in Part A. Option C connects the ridge-top nets directly to sustaining hill towns."
+      "childTip": "This sentence from Paragraph 4 directly supports Question 5 by showing how rows of nets along a windy ridge collect enough fog water to sustain an entire hill town.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence (ELAGSE5RI1) that backs up the central idea in Part A. Option C connects the ridge-top nets directly to sustaining hill towns.",
+      "retryHint": "Check Paragraph 4 for the sentence explaining how thirty or forty nets along a windy crest collect enough water for a whole town."
     }
   ]
 }

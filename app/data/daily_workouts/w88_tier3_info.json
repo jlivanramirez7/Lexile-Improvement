@@ -73,34 +73,39 @@
           "text": "Rising heat from the summer sun outside",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Picks a noun inside the infinitive phrase ('to track rising heat') rather than the grammatical subject."
+          "diagnosticNote": "Picks a noun inside the infinitive phrase ('to track rising heat') rather than the grammatical subject.",
+          "childFeedback": "Watch out—this choice picks a noun inside the phrase ('to track rising heat') rather than the main subject."
         },
         {
           "id": "B",
           "text": "Eunice Foote, the researcher working in New York",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the actor performing the placement ('by Eunice Foote') with the objects being placed."
+          "diagnosticNote": "Confuses the actor performing the placement ('by Eunice Foote') with the objects being placed.",
+          "childFeedback": "Careful—this choice confuses the actor performing the placement ('by Eunice Foote') with the objects being placed."
         },
         {
           "id": "C",
           "text": "Two matched glass cylinders used in the experiment",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly links the grammatical subject/receiver ('Two matched glass cylinders') across the 9-word interrupting phrase to the passive verb 'were placed'."
+          "diagnosticNote": "Correctly links the grammatical subject/receiver ('Two matched glass cylinders') across the 9-word interrupting phrase to the passive verb 'were placed'.",
+          "childFeedback": "Spot on! This answer correctly links the subject receiving the action ('Two matched glass cylinders') across the 9-word middle describing phrase to the action verb 'were placed'."
         },
         {
           "id": "D",
           "text": "The sunny south window of the New York house",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Selects the location prepositional phrase ('beside the sunny south window') instead of the subject."
+          "diagnosticNote": "Selects the location prepositional phrase ('beside the sunny south window') instead of the subject.",
+          "childFeedback": "Watch out—this choice selects the location phrase ('beside the sunny south window') instead of the subject."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Two matched glass cylinders, fitted with thin mercury tubes to track rising heat, were placed by Eunice Foote beside the sunny south window.",
-      "childTip": "Skip over the phrase between the commas to see what plural subject connects to 'were placed.'",
-      "parentExplanation": "This Sentence Surgery question tests Passive Receiver & Interrupting Clause Tracking (ELAGSE5L1). By setting aside the 9-word participial modifier ', fitted with thin mercury tubes to track rising heat,', students see that 'Two matched glass cylinders' were placed."
+      "childTip": "Spot on! This answer correctly links the subject receiving the action ('Two matched glass cylinders') across the 9-word middle describing phrase to the action verb 'were placed'.",
+      "parentExplanation": "This Sentence Surgery question tests Passive Receiver & Interrupting Clause Tracking (ELAGSE5L1). By setting aside the 9-word participial modifier ', fitted with thin mercury tubes to track rising heat,', students see that 'Two matched glass cylinders' were placed.",
+      "retryHint": "In Paragraph 2, skip over the phrase between the commas to see what plural subject connects to 'were placed.'"
     },
     {
       "questionId": "w88_q2",
@@ -118,34 +123,39 @@
           "text": "Proved through careful laboratory testing",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the meaning; the critics ignored her claim rather than proving it."
+          "diagnosticNote": "Reverses the meaning; the critics ignored her claim rather than proving it.",
+          "childFeedback": "Careful—this choice reverses the meaning; the critics ignored her claim rather than proving it."
         },
         {
           "id": "B",
           "text": "Brushed aside as unimportant or not worth serious attention",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the contrast word 'yet' after 'praised her neat glass trials' and the result that they left her work out of major foreign journals."
+          "diagnosticNote": "Matches the contrast word 'yet' after 'praised her neat glass trials' and the result that they left her work out of major foreign journals.",
+          "childFeedback": "Spot on! This answer matches the contrast word 'yet' after 'praised her neat glass trials' and the result that they left her work out of major foreign journals."
         },
         {
           "id": "C",
           "text": "Translated into several European languages",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the next sentence, which states they left her work out of foreign journals."
+          "diagnosticNote": "Contradicts the next sentence, which states they left her work out of foreign journals.",
+          "childFeedback": "Not quite—this choice contradicts the next sentence, which states they left her work out of foreign journals."
         },
         {
           "id": "D",
           "text": "Heated inside a sealed glass cylinder",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows experimental imagery from Paragraphs 2 and 3 rather than decoding the critics' reaction."
+          "diagnosticNote": "Borrows experimental imagery from Paragraphs 2 and 3 rather than decoding the critics' reaction.",
+          "childFeedback": "Watch out—this choice borrows experimental imagery from Paragraphs 2 and 3 rather than decoding the critics' reaction."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Male critics praised her neat glass trials as a quaint home study, yet most dismissed her grand claim about ancient world climates.",
-      "childTip": "Notice the word 'yet' and the clue 'left her work out of major foreign journals.' How did critics treat her claim?",
-      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5RI4). The root 'dis- + miss' (send away) and the context clue 'left her work out of major foreign journals' show that 'dismissed' means brushed aside or rejected as unimportant."
+      "childTip": "Spot on! This answer matches the contrast word 'yet' after 'praised her neat glass trials' and the result that they left her work out of major foreign journals.",
+      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5RI4). The root 'dis- + miss' (send away) and the context clue 'left her work out of major foreign journals' show that 'dismissed' means brushed aside or rejected as unimportant.",
+      "retryHint": "In Paragraph 4, notice the word 'yet' and the clue 'left her work out of major foreign journals.' How did critics treat her claim?"
     },
     {
       "questionId": "w88_q3",
@@ -163,34 +173,39 @@
           "text": "The jar filled with carbon dioxide grew very hot in the sun and stayed warm long after being moved into the shade.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately identifies the specific empirical result in Paragraph 3 that led to Foote's planetary climate conclusion."
+          "diagnosticNote": "Accurately identifies the specific empirical result in Paragraph 3 that led to Foote's planetary climate conclusion.",
+          "childFeedback": "Spot on! This answer accurately identifies the specific empirical result in Paragraph 3 that led to Foote's planetary climate conclusion."
         },
         {
           "id": "B",
           "text": "The tube containing pure oxygen froze solid as soon as it was placed beside the south window.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraph 3, which states that tubes holding common air or pure oxygen warmed slightly."
+          "diagnosticNote": "Contradicts Paragraph 3, which states that tubes holding common air or pure oxygen warmed slightly.",
+          "childFeedback": "Not quite—this choice contradicts Paragraph 3, which states that tubes holding common air or pure oxygen warmed slightly."
         },
         {
           "id": "C",
           "text": "John Tyndall sent her a letter from London explaining how invisible heat rays work.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Contradicts Paragraph 1, which explains that Foote ran her experiments three years before Tyndall."
+          "diagnosticNote": "Contradicts Paragraph 1, which explains that Foote ran her experiments three years before Tyndall.",
+          "childFeedback": "Not quite—this choice contradicts Paragraph 1, which explains that Foote ran her experiments three years before Tyndall."
         },
         {
           "id": "D",
           "text": "Every gas she tested reached the exact same temperature when placed in the shade.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'Every gas' and 'exact same temperature', contradicting the sharp difference between carbon dioxide and oxygen."
+          "diagnosticNote": "Uses 'Every gas' and 'exact same temperature', contradicting the sharp difference between carbon dioxide and oxygen.",
+          "childFeedback": "Watch out—this choice uses 'Every gas' and 'exact same temperature', contradicting the sharp difference between carbon dioxide and oxygen."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "When she filled a jar with carbon gas—what we now call carbon dioxide—the tube grew very hot.",
-      "childTip": "First click the sentence in Paragraph 3 that shows what happened when she filled a jar with carbon gas.",
-      "parentExplanation": "This Click-to-Prove item tests scientific cause-and-effect (ELAGSE5RI3). Students locate the exact observation in Paragraph 3—carbon dioxide heating up and retaining heat in the shade—that supported Foote's conclusion about Earth's climate."
+      "childTip": "Spot on! This answer accurately identifies the specific empirical result in Paragraph 3 that led to Foote's planetary climate conclusion.",
+      "parentExplanation": "This Click-to-Prove item tests scientific cause-and-effect (ELAGSE5RI3). Students locate the exact observation in Paragraph 3—carbon dioxide heating up and retaining heat in the shade—that supported Foote's conclusion about Earth's climate.",
+      "retryHint": "Look in Paragraph 3 for the sentence that shows what happened when she filled a jar with carbon gas."
     },
     {
       "questionId": "w88_q4",
@@ -208,34 +223,39 @@
           "text": "Nineteenth-century critics believed carbon dioxide cooled the planet, whereas modern scientists believe oxygen traps the most heat.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents scientific beliefs for both groups that contradict the passage."
+          "diagnosticNote": "Invents scientific beliefs for both groups that contradict the passage.",
+          "childFeedback": "Watch out—this choice invents scientific beliefs for both groups that contradict the passage."
         },
         {
           "id": "B",
           "text": "Nineteenth-century critics published her paper in every foreign journal, whereas modern scientists refuse to read her work.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Flips the historical record: 1856 critics left her work out of foreign journals, while modern historians and scientists recovered and praised it."
+          "diagnosticNote": "Flips the historical record: 1856 critics left her work out of foreign journals, while modern historians and scientists recovered and praised it.",
+          "childFeedback": "Careful—this choice flips the historical record: 1856 critics left her work out of foreign journals, while modern historians and scientists recovered and praised it."
         },
         {
           "id": "C",
           "text": "Both groups agree that Foote's glass cylinders were completely useless for measuring temperature changes.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('completely useless') that contradicts both groups' recognition that her jars measured real heating differences."
+          "diagnosticNote": "Uses extreme language ('completely useless') that contradicts both groups' recognition that her jars measured real heating differences.",
+          "childFeedback": "Watch out—this choice uses extreme language ('completely useless') that contradicts both groups' recognition that her jars measured real heating differences."
         },
         {
           "id": "D",
           "text": "Critics in 1856 dismissed her climate claim, whereas modern scientists honor her as the pioneer who proved carbon dioxide traps heat.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately contrasts the two historical viewpoints described in Paragraphs 4 and 5."
+          "diagnosticNote": "Accurately contrasts the two historical viewpoints described in Paragraphs 4 and 5.",
+          "childFeedback": "Spot on! This answer accurately contrasts the two historical viewpoints described in Paragraphs 4 and 5."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Still, they honor Foote as a true pioneer who first proved that carbon dioxide traps heat and shapes Earth's climate.",
-      "childTip": "Compare how the 1856 critics treated her claim in Paragraph 4 with how modern scientists view her in Paragraph 5.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RI6 (Multiple Accounts & Perspectives), this item asks students to analyze how two groups of observers—1856 critics vs. modern scientists—interpreted the significance of the exact same 1856 experiment."
+      "childTip": "Spot on! This answer accurately contrasts the two historical viewpoints described in Paragraphs 4 and 5.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RI6 (Multiple Accounts & Perspectives), this item asks students to analyze how two groups of observers—1856 critics vs. modern scientists—interpreted the significance of the exact same 1856 experiment.",
+      "retryHint": "Compare how the 1856 critics treated her claim in Paragraph 4 with how modern scientists view her in Paragraph 5."
     },
     {
       "questionId": "w88_q5",
@@ -254,34 +274,39 @@
           "text": "Mountain peaks stay icy cold in the summer because the air at high altitudes is thinner and drier than valley air.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses only on the opening question in Paragraphs 1 and 2 rather than Foote's landmark carbon dioxide discovery and historical legacy."
+          "diagnosticNote": "Focuses only on the opening question in Paragraphs 1 and 2 rather than Foote's landmark carbon dioxide discovery and historical legacy.",
+          "childFeedback": "Not quite—this choice focuses only on the opening question in Paragraphs 1 and 2 rather than Foote's landmark carbon dioxide discovery and historical legacy."
         },
         {
           "id": "B",
           "text": "Using glass tubes in 1856, Eunice Foote first proved that carbon dioxide traps heat, though her climate breakthrough was long overlooked.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes Foote's 1856 experiments (Paras 1-3), the 1856 social barriers that obscured her work (Para 4), and her modern recognition (Para 5)."
+          "diagnosticNote": "Synthesizes Foote's 1856 experiments (Paras 1-3), the 1856 social barriers that obscured her work (Para 4), and her modern recognition (Para 5).",
+          "childFeedback": "Spot on! This answer brings together Foote's 1856 experiments (Paragraphs 1 to 3), the 1856 social barriers that obscured her work (Paragraph 4), and her modern recognition (Paragraph 5)."
         },
         {
           "id": "C",
           "text": "Professor Joseph Henry was the only scientist in 1856 who knew how to read a mercury thermometer.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'only' and misrepresents why Henry read Foote's paper aloud at the conference."
+          "diagnosticNote": "Uses 'only' and misrepresents why Henry read Foote's paper aloud at the conference.",
+          "childFeedback": "Watch out—this choice uses 'only' and misrepresents why Henry read Foote's paper aloud at the conference."
         },
         {
           "id": "D",
           "text": "John Tyndall copied Eunice Foote's home window experiment after visiting her house in New York.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents an unsupported claim that Tyndall visited New York; Paragraph 4 notes her work was left out of major foreign journals."
+          "diagnosticNote": "Invents an unsupported claim that Tyndall visited New York; Paragraph 4 notes her work was left out of major foreign journals.",
+          "childFeedback": "Watch out—this choice invents an unsupported claim that Tyndall visited New York; Paragraph 4 notes her work was left out of major foreign journals."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "She reasoned that if Earth's air ever held a higher share of carbon dioxide, the whole planet would grow much warmer.",
-      "childTip": "Choose the statement that covers Foote's 1856 carbon dioxide discovery AND why it took so long for her to receive credit.",
-      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option B integrates the experimental discovery with the historical context of how her work was overlooked and later rediscovered."
+      "childTip": "Spot on! This answer brings together Foote's 1856 experiments (Paragraphs 1 to 3), the 1856 social barriers that obscured her work (Paragraph 4), and her modern recognition (Paragraph 5).",
+      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option B integrates the experimental discovery with the historical context of how her work was overlooked and later rediscovered.",
+      "retryHint": "In Paragraphs 1 to 5, choose the statement that covers Foote's 1856 carbon dioxide discovery AND why it took so long for her to receive credit."
     },
     {
       "questionId": "w88_q6",
@@ -300,34 +325,39 @@
           "text": "\"From one tube she pumped out part of the air to mimic thin mountain sky, while into the second tube she pressed extra air.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes only the first air-density trial in Paragraph 2 rather than the carbon dioxide climate discovery and Foote's pioneer status."
+          "diagnosticNote": "Describes only the first air-density trial in Paragraph 2 rather than the carbon dioxide climate discovery and Foote's pioneer status.",
+          "childFeedback": "Not quite—this choice describes only the first air-density trial in Paragraph 2 rather than the carbon dioxide climate discovery and Foote's pioneer status."
         },
         {
           "id": "B",
           "text": "\"Tubes holding common air or pure oxygen warmed only slightly.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Mentions the control gases in Paragraph 3 without stating the central finding about carbon dioxide and climate."
+          "diagnosticNote": "Mentions the control gases in Paragraph 3 without stating the central finding about carbon dioxide and climate.",
+          "childFeedback": "Not quite—this choice mentions the control gases in Paragraph 3 without stating the central finding about carbon dioxide and climate."
         },
         {
           "id": "C",
           "text": "\"Because rules barred Foote from reading her own report on the main stage, Professor Joseph Henry read her short paper aloud to the hall.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Explains only the conference presentation rule in Paragraph 4 without stating what her science proved."
+          "diagnosticNote": "Explains only the conference presentation rule in Paragraph 4 without stating what her science proved.",
+          "childFeedback": "Not quite—this choice explains only the conference presentation rule in Paragraph 4 without stating what her science proved."
         },
         {
           "id": "D",
           "text": "\"Still, they honor Foote as a true pioneer who first proved that carbon dioxide traps heat and shapes Earth's climate.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly supports the central claim in Part A by summarizing Foote's breakthrough as the pioneer who first proved carbon dioxide traps heat and shapes Earth's climate."
+          "diagnosticNote": "Directly supports the central claim in Part A by summarizing Foote's breakthrough as the pioneer who first proved carbon dioxide traps heat and shapes Earth's climate.",
+          "childFeedback": "Spot on! This answer directly supports the central claim in Question 5 by summarizing Foote's breakthrough as the pioneer who first proved carbon dioxide traps heat and shapes Earth's climate."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Still, they honor Foote as a true pioneer who first proved that carbon dioxide traps heat and shapes Earth's climate.",
-      "childTip": "Pick the quote from Paragraph 5 that sums up why Foote is honored as a true pioneer of climate science.",
-      "parentExplanation": "Part B requires 100% verbatim textual evidence for the central idea in Part A. Option D directly confirms Foote's pioneering proof that carbon dioxide traps heat and shapes Earth's climate."
+      "childTip": "Spot on! This answer directly supports the central claim in Question 5 by summarizing Foote's breakthrough as the pioneer who first proved carbon dioxide traps heat and shapes Earth's climate.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence for the central idea in Part A. Option D directly confirms Foote's pioneering proof that carbon dioxide traps heat and shapes Earth's climate.",
+      "retryHint": "Look for the quote from Paragraph 5 that sums up why Foote is honored as a true pioneer of climate science."
     }
   ]
 }

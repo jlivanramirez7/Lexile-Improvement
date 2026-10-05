@@ -72,30 +72,35 @@
           "id": "A",
           "text": "The modern plows that cleared the old hills",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—'before modern plows cleared the old hills' only tells when the seeds were collected in Paragraph 3, not who gathered them."
         },
         {
           "id": "B",
           "text": "The thousands of wild seed packets",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice flips the action! The thousands of wild seed packets were what got gathered, not who did the gathering."
         },
         {
           "id": "C",
           "text": "Vavilov, the Russian plant scientist",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 3, the phrase 'by Vavilov' right after 'were gathered' shows that the Russian scientist Vavilov collected the seed packets."
         },
         {
           "id": "D",
           "text": "The farmers who planted uniform wheat across the plains",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—modern plains farmers appear in Paragraph 1, whereas Paragraph 3 states the wild seeds were gathered by Vavilov."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Across five continents, thousands of wild seed packets were gathered by Vavilov before modern plows cleared the old hills.",
-      "childTip": "Find the passive verb 'were gathered' and check the noun right after 'by' to see who collected the packets.",
-      "parentExplanation": "In this passive construction, 'thousands of wild seed packets' is the receiver of 'were gathered.' The agent phrase 'by Vavilov' identifies who performed the gathering."
+      "childTip": "Spot on! In Paragraph 3, the phrase 'by Vavilov' right after 'were gathered' shows that the Russian scientist Vavilov collected the seed packets.",
+      "parentExplanation": "In this passive construction, 'thousands of wild seed packets' is the receiver of 'were gathered.' The agent phrase 'by Vavilov' identifies who performed the gathering.",
+      "retryHint": "In Paragraph 3, find the action phrase 'were gathered' and check the noun right after 'by' to see who collected the packets."
     },
     {
       "questionId": "w96_q2",
@@ -111,31 +116,36 @@
         {
           "id": "A",
           "text": "Identical and lacking variety from plant to plant",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 1 explains that millions of stalks stand at the exact same height and share the same traits, showing that 'uniform' means identical and lacking variety."
         },
         {
           "id": "B",
           "text": "Grown high on rugged mountain slopes",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 2 contrasts the uniform plains crops with the wild cousins that grow high on rugged mountain slopes."
         },
         {
           "id": "C",
           "text": "Protected against every kind of insect pest",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 1 states the exact opposite: because uniform stalks share the same traits, a single insect pest or fungus can wipe them all out."
         },
         {
           "id": "D",
           "text": "Dressed in heavy winter work clothes",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—while 'uniform' can mean work clothes in other settings, here it describes wheat stalks that all share identical plant traits."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Yet planting a single uniform crop across vast plains carries a hidden risk.",
-      "childTip": "Look at the sentences right before and after: millions of stalks stand at the exact same height and share the same traits.",
-      "parentExplanation": "Paragraph 1 describes stalks standing at the exact same height and sharing the exact same traits, showing that 'uniform' means identical and lacking variation."
+      "childTip": "Spot on! Paragraph 1 explains that millions of stalks stand at the exact same height and share the same traits, showing that 'uniform' means identical and lacking variety.",
+      "parentExplanation": "Paragraph 1 describes stalks standing at the exact same height and sharing the exact same traits, showing that 'uniform' means identical and lacking variation.",
+      "retryHint": "In Paragraph 1, look at the sentences right before and after: millions of stalks stand at the exact same height and share the same traits."
     },
     {
       "questionId": "w96_q3",
@@ -152,30 +162,35 @@
           "id": "A",
           "text": "Farmers buy all the stored seeds from the vault every spring to feed their mules.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 3 mentions Vavilov riding mules on collecting trips, not farmers feeding vault seeds to mules."
         },
         {
           "id": "B",
           "text": "Wild mountain seeds turn into ordinary farm wheat if they stay inside tin boxes.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—staying in foil packets does not turn wild seeds into farm wheat; Paragraph 4 says old seeds simply lose their ability to sprout."
         },
         {
           "id": "C",
           "text": "Arctic ice melts every summer and floods the stone basement of the vault.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 4 explains that cold vaults keep seeds dry and freezing, with no mention of melting ice flooding the underground rooms."
         },
         {
           "id": "D",
           "text": "Stored seeds are living embryos that slowly lose their power to sprout on a shelf.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 4 explains that even in cold storage, living seed embryos slowly lose their power to sprout over decades, so workers must grow fresh replacements."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Seeds are living embryos that slowly lose their power to sprout if they sit on a shelf for decades.",
-      "childTip": "Click the sentence in Paragraph 4 that explains what happens to living seed embryos if they sit on a shelf for decades.",
-      "parentExplanation": "Paragraph 4 explains that because seeds are living embryos that lose viability over decades, workers must periodically grow them out in test plots to harvest fresh seeds."
+      "childTip": "Spot on! Paragraph 4 explains that even in cold storage, living seed embryos slowly lose their power to sprout over decades, so workers must grow fresh replacements.",
+      "parentExplanation": "Paragraph 4 explains that because seeds are living embryos that lose viability over decades, workers must periodically grow them out in test plots to harvest fresh seeds.",
+      "retryHint": "Look in Paragraph 4 for the sentence that explains what happens to living seed embryos if they sit on a shelf for decades."
     },
     {
       "questionId": "w96_q4",
@@ -192,30 +207,35 @@
           "id": "A",
           "text": "Wild mountain weeds produce much larger yields and sweeter grain than modern farm wheat.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraphs 1 and 2 state the opposite: modern farm crops are bred for big yields and sweet taste, while wild weeds have small, bitter grains."
         },
         {
           "id": "B",
           "text": "Wild plants survived drought, frost, and rot, keeping hardy traits breeders can cross into farm crops.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraphs 2 and 3 explain that wild mountain plants survived drought, frost, and rot, preserving tough traits that breeders can cross into modern food crops."
         },
         {
           "id": "C",
           "text": "Modern harvesting machines can only cut stalks that grow in rugged mountain valleys.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 1 explains that farmers grow uniform crops on flat plains specifically so machines can harvest them smoothly."
         },
         {
           "id": "D",
           "text": "A single packet of wild seeds can be ground into enough flour to feed a whole city.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 5 explains that wild seeds hold genetic traits to save future harvests, not that one packet makes enough flour to feed a city."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "If a new blight struck modern farm wheat, breeders could crossbreed that weak crop with a wild mountain cousin that could shrug off the mold.",
-      "childTip": "Connect what wild weeds endured in Paragraph 2 with how breeders use them to fight blight in Paragraph 3.",
-      "parentExplanation": "In Paragraphs 2 and 3, the author supports the claim by showing that wild relatives evolved natural resistance to drought, frost, and rot, which breeders can crossbreed into vulnerable farm crops."
+      "childTip": "Spot on! Paragraphs 2 and 3 explain that wild mountain plants survived drought, frost, and rot, preserving tough traits that breeders can cross into modern food crops.",
+      "parentExplanation": "In Paragraphs 2 and 3, the author supports the claim by showing that wild relatives evolved natural resistance to drought, frost, and rot, which breeders can crossbreed into vulnerable farm crops.",
+      "retryHint": "Connect what wild weeds endured in Paragraph 2 with how breeders use them to fight blight in Paragraph 3."
     },
     {
       "questionId": "w96_q5",
@@ -233,30 +253,35 @@
           "id": "A",
           "text": "Wild mountain valleys are sprayed every week by plant breeders from Arctic seed vaults.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 2 explains that wild mountain plants survive on their own through natural variety, not because breeders spray mountain valleys."
         },
         {
           "id": "B",
           "text": "Modern farmers refuse to water or fertilize their wheat fields once the stalks sprout.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—the passage never claims modern farmers refuse to water their fields; the risk comes from every plant being genetically identical."
         },
         {
           "id": "C",
           "text": "Fungi and insect pests can only survive on flat plains and never enter mountain ranges.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 2 specifically mentions soil rot and harsh conditions in mountain valleys, proving pests and diseases exist there too."
         },
         {
           "id": "D",
           "text": "Every stalk shares identical traits, so a disease that harms one plant can harm them all.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 1 explains that because every stalk in a modern field shares the exact same traits, a single fungus or pest that harms one plant can wipe out the whole crop."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest.",
-      "childTip": "Look at Paragraph 1 for the sentence that explains the danger of every stalk sharing the same traits.",
-      "parentExplanation": "Paragraph 1 explains that genetic uniformity makes modern crops vulnerable: when every plant shares identical traits, one fungus or pest can destroy the entire harvest."
+      "childTip": "Spot on! Paragraph 1 explains that because every stalk in a modern field shares the exact same traits, a single fungus or pest that harms one plant can wipe out the whole crop.",
+      "parentExplanation": "Paragraph 1 explains that genetic uniformity makes modern crops vulnerable: when every plant shares identical traits, one fungus or pest can destroy the entire harvest.",
+      "retryHint": "Look at Paragraph 1 for the sentence that explains the danger of every stalk sharing the same traits."
     },
     {
       "questionId": "w96_q6",
@@ -274,30 +299,35 @@
           "id": "A",
           "text": "\"Farmers breed food crops for big yields, sweet taste, and smooth harvest by machine.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this sentence from Paragraph 1 only explains why farmers like uniform crops, not why those fields are easily wiped out by disease."
         },
         {
           "id": "B",
           "text": "\"Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! This quote from Paragraph 1 directly proves Question 5 by showing how shared traits let a single fungus or pest destroy the entire harvest."
         },
         {
           "id": "C",
           "text": "\"By the 1930s, his vault held more than two hundred thousand distinct samples of grains, beans, and tubers.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this detail from Paragraph 3 only tells how many seed samples Vavilov collected by the 1930s."
         },
         {
           "id": "D",
           "text": "\"Today, global vaults buried in Arctic ice still follow the blueprint that Vavilov drew a hundred years ago.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Not quite—this concluding line from Paragraph 5 praises Vavilov's legacy rather than explaining why uniform farm fields are vulnerable to disease."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Because every stalk shares the same traits, a single new fungus or insect pest can sweep through and wipe out the whole harvest.",
-      "childTip": "Pick the exact sentence from Paragraph 1 that links shared traits to a fungus or pest wiping out the harvest.",
-      "parentExplanation": "Option B directly proves Part A by stating why uniform crops sharing identical traits can be wiped out by a single fungus or pest."
+      "childTip": "Spot on! This quote from Paragraph 1 directly proves Question 5 by showing how shared traits let a single fungus or pest destroy the entire harvest.",
+      "parentExplanation": "Option B directly proves Part A by stating why uniform crops sharing identical traits can be wiped out by a single fungus or pest.",
+      "retryHint": "Pick the exact sentence from Paragraph 1 that links shared traits to a fungus or pest wiping out the harvest."
     }
   ]
 }

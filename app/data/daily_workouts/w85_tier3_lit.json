@@ -73,34 +73,39 @@
           "text": "The oiled canvas sacks that kept the river spray out",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a noun from the middle participial phrase ('wrapped tightly inside oiled canvas sacks') rather than the actor."
+          "diagnosticNote": "Selects a noun from the middle participial phrase ('wrapped tightly inside oiled canvas sacks') rather than the actor.",
+          "childFeedback": "Watch out—this choice selects a noun from the middle describing phrase ('wrapped tightly inside oiled canvas sacks') rather than the actor."
         },
         {
           "id": "B",
           "text": "The brass compass and leather logbooks used for mapping",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the compound subject/receiver of the passive verb with the person performing the action."
+          "diagnosticNote": "Confuses the compound subject/receiver of the passive verb with the person performing the action.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action with the person performing the action."
         },
         {
           "id": "C",
           "text": "Young Thomas, the expedition's mapmaker",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent following 'by' ('by young Thomas') in the passive construction 'were lashed by young Thomas'."
+          "diagnosticNote": "Correctly identifies the agent following 'by' ('by young Thomas') in the passive construction 'were lashed by young Thomas'.",
+          "childFeedback": "Spot on! This answer correctly identifies who or what comes after 'by' ('by young Thomas') in the sentence 'were lashed by young Thomas'."
         },
         {
           "id": "D",
           "text": "The wooden bow deck at the front of the rowboat",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Picks the location phrase at the end of the sentence ('beneath the bow deck') instead of the actor."
+          "diagnosticNote": "Picks the location phrase at the end of the sentence ('beneath the bow deck') instead of the actor.",
+          "childFeedback": "Watch out—this choice picks the location phrase at the end of the sentence ('beneath the bow deck') instead of the actor."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The brass compass and leather logbooks, wrapped tightly inside oiled canvas sacks, were lashed by young Thomas beneath the bow deck.",
-      "childTip": "Spot the passive verb 'were lashed by.' The words right after 'by' tell you who tied the gear down!",
-      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). Because the compound subject ('The brass compass and leather logbooks') comes first and is followed by a 6-word modifier, students must look past the verb 'were lashed' to find the agent 'by young Thomas'."
+      "childTip": "Spot on! This answer correctly identifies who or what comes after 'by' ('by young Thomas') in the sentence 'were lashed by young Thomas'.",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). Because the compound subject ('The brass compass and leather logbooks') comes first and is followed by a 6-word modifier, students must look past the verb 'were lashed' to find the agent 'by young Thomas'.",
+      "retryHint": "In Paragraph 2, spot the action phrase 'were lashed by.' The words right after 'by' tell you who tied the gear down!"
     },
     {
       "questionId": "w85_q2",
@@ -118,34 +123,39 @@
           "text": "A spot that provides a wide, clear view of the surroundings",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the context of climbing two hundred feet high to see 'the canyon rim and the rapids below' and sketch the river bend."
+          "diagnosticNote": "Matches the context of climbing two hundred feet high to see 'the canyon rim and the rapids below' and sketch the river bend.",
+          "childFeedback": "Spot on! This answer matches the context of climbing two hundred feet high to see 'the canyon rim and the rapids below' and sketch the river bend."
         },
         {
           "id": "B",
           "text": "A deep crack filled with crumbling loose shale",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows words from the earlier climbing sentence ('steep fault crack', 'Loose shale') rather than what Thomas gained at the high ledge."
+          "diagnosticNote": "Borrows words from the earlier climbing sentence ('steep fault crack', 'Loose shale') rather than what Thomas gained at the high ledge.",
+          "childFeedback": "Watch out—this choice borrows words from the earlier climbing sentence ('steep fault crack', 'Loose shale') rather than what Thomas gained at the high ledge."
         },
         {
           "id": "C",
           "text": "A thick canvas bag used to keep paper dry in whitewater",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Confuses the oiled canvas sacks in Paragraph 2 with the high observation point in Paragraph 4."
+          "diagnosticNote": "Confuses the oiled canvas sacks in Paragraph 2 with the high observation point in Paragraph 4.",
+          "childFeedback": "Careful—this choice confuses the oiled canvas sacks in Paragraph 2 with the high observation point in Paragraph 4."
         },
         {
           "id": "D",
           "text": "A blind spot where canyon walls block all sunlight",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the meaning of 'a clear vantage' into a blocked view."
+          "diagnosticNote": "Reverses the meaning of 'a clear vantage' into a blocked view.",
+          "childFeedback": "Careful—this choice reverses the meaning of 'a clear vantage' into a blocked view."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Two hundred feet above the river, he reached a wind-carved niche with a clear vantage of the canyon rim and the rapids below.",
-      "childTip": "Why did Thomas climb 200 feet up the cliff? Think about what he needed to see from that high ledge.",
-      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). The surrounding phrases 'Two hundred feet above the river' and 'of the canyon rim and the rapids below' show that a 'vantage' is an elevated viewpoint."
+      "childTip": "Spot on! This answer matches the context of climbing two hundred feet high to see 'the canyon rim and the rapids below' and sketch the river bend.",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). The surrounding phrases 'Two hundred feet above the river' and 'of the canyon rim and the rapids below' show that a 'vantage' is an elevated viewpoint.",
+      "retryHint": "Check Paragraph 4: why did Thomas climb 200 feet up the cliff? Think about what he needed to see from that high ledge."
     },
     {
       "questionId": "w85_q3",
@@ -163,34 +173,39 @@
           "text": "The brass barometer was the only tool that could steer the wooden boats through submerged rocks.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Misinterprets a scientific measuring tube as a boat-steering device."
+          "diagnosticNote": "Misinterprets a scientific measuring tube as a boat-steering device.",
+          "childFeedback": "Careful—this choice misinterprets a scientific measuring tube as a boat-steering device."
         },
         {
           "id": "B",
           "text": "The crew needed a working barometer to measure air pressure and calculate the depth of the canyon walls.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth."
+          "diagnosticNote": "Directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth.",
+          "childFeedback": "Spot on! This answer directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth."
         },
         {
           "id": "C",
           "text": "Major Powell refused to light a driftwood campfire unless both barometers were stored in the stern.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents an unsupported rule about campfires not found in the story."
+          "diagnosticNote": "Invents an unsupported rule about campfires not found in the story.",
+          "childFeedback": "Watch out—this choice invents an unsupported rule about campfires not found in the story."
         },
         {
           "id": "D",
           "text": "Losing the spare barometer meant that every single logbook on the boat had already sunk to the bottom.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('every single logbook') that contradicts Paragraph 2 and Paragraph 5, where the logbooks survive."
+          "diagnosticNote": "Uses extreme language ('every single logbook') that contradicts Paragraph 2 and Paragraph 5, where the logbooks survive.",
+          "childFeedback": "Watch out—this choice uses extreme language ('every single logbook') that contradicts Paragraph 2 and Paragraph 5, where the logbooks survive."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Without a working barometer to measure air pressure at river level, they could not calculate the depth of the canyon walls.",
-      "childTip": "First click the final sentence of Paragraph 3 that explains what a barometer measures inside the canyon.",
-      "parentExplanation": "This Click-to-Prove item tests explicit and inferential cause-and-effect in historical fiction (ELAGSE5RL1). Paragraph 3 explains that expedition mapmakers used barometers to measure air pressure differences and calculate the height of the canyon walls."
+      "childTip": "Spot on! This answer directly connects the barometer's function (measuring air pressure) to calculating canyon wall depth.",
+      "parentExplanation": "This Click-to-Prove item tests explicit and inferential cause-and-effect in historical fiction (ELAGSE5RL1). Paragraph 3 explains that expedition mapmakers used barometers to measure air pressure differences and calculate the height of the canyon walls.",
+      "retryHint": "Check the final sentence of Paragraph 3 that explains what a barometer measures inside the canyon."
     },
     {
       "questionId": "w85_q4",
@@ -208,34 +223,39 @@
           "text": "Paragraph 3 lists the food rations in the crates, and Paragraph 4 explains how the oarsmen cooked dinner over driftwood.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses on minor background props (bacon crates, driftwood) rather than the structural turning point of the plot."
+          "diagnosticNote": "Focuses on minor background props (bacon crates, driftwood) rather than the structural turning point of the plot.",
+          "childFeedback": "Not quite—this choice focuses on minor background props (bacon crates, driftwood) rather than the structural turning point of the plot."
         },
         {
           "id": "B",
           "text": "Paragraph 3 describes the quiet offices in Washington, and Paragraph 4 explains how government printers published the finished map.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Misattributes minor setting references from Paragraphs 1 and 5 to Paragraphs 3 and 4."
+          "diagnosticNote": "Misattributes minor setting references from Paragraphs 1 and 5 to Paragraphs 3 and 4.",
+          "childFeedback": "Careful—this choice mixes up minor setting references from Paragraphs 1 and 5 to Paragraphs 3 and 4."
         },
         {
           "id": "C",
           "text": "Paragraph 3 proves that wooden boats cannot float in the Colorado River, and Paragraph 4 shows the crew walking all the way home.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Distorts the temporary boat accident into a total abandonment of the river expedition."
+          "diagnosticNote": "Distorts the temporary boat accident into a total abandonment of the river expedition.",
+          "childFeedback": "Watch out—this choice distorts the temporary boat accident into a total abandonment of the river expedition."
         },
         {
           "id": "D",
           "text": "Paragraph 3 introduces a crisis when the boat loses a barometer, and Paragraph 4 shows Thomas climbing the cliff with the spare tube.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4."
+          "diagnosticNote": "Accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4.",
+          "childFeedback": "Spot on! This answer accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Refusing to leave a blank gap on his chart, Thomas strapped the remaining glass tube across his chest and began climbing a steep fault crack up the cliff.",
-      "childTip": "Ask yourself: what problem happens in the river in Paragraph 3, and how does Thomas respond in Paragraph 4?",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RL5 (Story Structure), this question examines how individual scenes fit together: Paragraph 3 provides the inciting crisis (losing the spare barometer in the crash), which directly motivates Thomas's daring climb in Paragraph 4."
+      "childTip": "Spot on! This answer accurately traces the problem-and-resolution narrative arc across Paragraphs 3 and 4.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RL5 (Story Structure), this question examines how individual scenes fit together: Paragraph 3 provides the inciting crisis (losing the spare barometer in the crash), which directly motivates Thomas's daring climb in Paragraph 4.",
+      "retryHint": "Ask yourself: what problem happens in the river in Paragraph 3, and how does Thomas respond in Paragraph 4?"
     },
     {
       "questionId": "w85_q5",
@@ -254,34 +274,39 @@
           "text": "Turning the unknown into shared knowledge requires perseverance and courage in the face of real danger.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes Thomas's protection of the logbooks, his cliff climb after the crash, and his final realization by the campfire."
+          "diagnosticNote": "Synthesizes Thomas's protection of the logbooks, his cliff climb after the crash, and his final realization by the campfire.",
+          "childFeedback": "Spot on! This answer brings together Thomas's protection of the logbooks, his cliff climb after the crash, and his final realization by the campfire."
         },
         {
           "id": "B",
           "text": "Glass barometers are too fragile to ever be carried on wooden rowboats.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('too fragile to ever be carried') and ignores that the remaining barometer succeeded."
+          "diagnosticNote": "Uses extreme language ('too fragile to ever be carried') and ignores that the remaining barometer succeeded.",
+          "childFeedback": "Watch out—this choice uses extreme language ('too fragile to ever be carried') and ignores that the remaining barometer succeeded."
         },
         {
           "id": "C",
           "text": "Travelers should avoid canyons that are marked as blank patches on government maps.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the whole purpose of Powell's expedition, which entered the canyon specifically to map the unknown."
+          "diagnosticNote": "Reverses the whole purpose of Powell's expedition, which entered the canyon specifically to map the unknown.",
+          "childFeedback": "Careful—this choice reverses the whole purpose of Powell's expedition, which entered the canyon specifically to map the unknown."
         },
         {
           "id": "D",
           "text": "Sacks of flour and dried apples are more valuable than compasses on a river trip.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses on a minor detail from Paragraph 2 and contradicts the priority Thomas gives to the logbooks and instruments."
+          "diagnosticNote": "Focuses on a minor detail from Paragraph 2 and contradicts the priority Thomas gives to the logbooks and instruments.",
+          "childFeedback": "Not quite—this choice focuses on a minor detail from Paragraph 2 and contradicts the priority Thomas gives to the logbooks and instruments."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.",
-      "childTip": "Look at the final sentence of Paragraph 5 to see what Thomas realizes about how a true map is earned.",
-      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Throughout the passage, Thomas risks whitewater and loose shale so future travelers will not be blind, culminating in the final insight that knowledge is earned through courage and persistence."
+      "childTip": "Spot on! This answer brings together Thomas's protection of the logbooks, his cliff climb after the crash, and his final realization by the campfire.",
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Throughout the passage, Thomas risks whitewater and loose shale so future travelers will not be blind, culminating in the final insight that knowledge is earned through courage and persistence.",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see what Thomas realizes about how a true map is earned."
     },
     {
       "questionId": "w85_q6",
@@ -300,34 +325,39 @@
           "text": "\"On government maps in Washington, this deep gorge was nothing more than a blank white patch marked as unknown territory.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Establishes the initial setting and problem in Paragraph 1, but does not express the theme of earning knowledge through courage."
+          "diagnosticNote": "Establishes the initial setting and problem in Paragraph 1, but does not express the theme of earning knowledge through courage.",
+          "childFeedback": "Not quite—this choice establishes the initial setting and problem in Paragraph 1, but does not express the theme of earning knowledge through courage."
         },
         {
           "id": "B",
           "text": "\"The oarsmen unloaded heavy sacks of flour and dried apples to carry them along the narrow cliff trail.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes routine portage work in Paragraph 2 rather than the thematic takeaway."
+          "diagnosticNote": "Describes routine portage work in Paragraph 2 rather than the thematic takeaway.",
+          "childFeedback": "Not quite—this choice describes routine portage work in Paragraph 2 rather than the big lesson of the story."
         },
         {
           "id": "C",
           "text": "\"Muddy spray drenched the cliff as the stern hatch popped open, spilling two wooden crates of bacon and a brass barometer into the foam.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Shows the physical danger of the river crash, but not the perseverance that turns danger into knowledge."
+          "diagnosticNote": "Shows the physical danger of the river crash, but not the perseverance that turns danger into knowledge.",
+          "childFeedback": "Not quite—this choice shows the physical danger of the river crash, but not the perseverance that turns danger into knowledge."
         },
         {
           "id": "D",
           "text": "\"Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves the theme in Part A by linking accurate mapping to courage and persistence in uncharted terrain."
+          "diagnosticNote": "Directly proves the theme in Part A by linking accurate mapping to courage and persistence in uncharted terrain.",
+          "childFeedback": "Spot on! This answer directly proves the theme in Question 5 by linking accurate mapping to courage and persistence in uncharted terrain."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Thomas realized that a true map was not drawn in quiet city rooms; it was earned yard by yard where courage met uncharted stone.",
-      "childTip": "Pick the quote from Paragraph 5 that connects 'a true map' with 'courage' and 'uncharted stone.'",
-      "parentExplanation": "Part B requires 100% verbatim textual evidence for the theme identified in Part A. Option D encapsulates the story's central message."
+      "childTip": "Spot on! This answer directly proves the theme in Question 5 by linking accurate mapping to courage and persistence in uncharted terrain.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence for the theme identified in Part A. Option D encapsulates the story's central message.",
+      "retryHint": "Look for the quote from Paragraph 5 that connects 'a true map' with 'courage' and 'uncharted stone.'"
     }
   ]
 }

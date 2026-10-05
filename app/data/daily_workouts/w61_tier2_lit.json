@@ -72,31 +72,36 @@
           "id": "A",
           "text": "A sharp question from the opposing captain",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'was quickly challenged by' tells us that 'a sharp question from the opposing captain' is what challenged Clara's point about solar roof panels."
         },
         {
           "id": "B",
           "text": "The solar roof panels on the school buses",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "'About solar roof panels' only describes what Clara's point was about—the solar panels didn't ask a question or challenge her speech!"
         },
         {
           "id": "C",
           "text": "The opening round clock on the library stage",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'During the opening round on the stage' tells when and where Clara spoke, not what challenged her point."
         },
         {
           "id": "D",
           "text": "The timekeeper ringing the small brass bell",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The timekeeper only rang the small brass bell to start the round in Paragraph 2; it was the opposing captain's sharp question that challenged Clara."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "During the opening round on the stage, her best point about solar roof panels was quickly challenged by a sharp question from the opposing captain.",
-      "childTip": "Look right after 'was quickly challenged by' to find what actually did the challenging.",
-      "parentExplanation": "In this passive-voice sentence, 'her best point about solar roof panels' receives the action. The true actor performing 'was challenged' comes after 'by': 'a sharp question from the opposing captain' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'was quickly challenged by' tells us that 'a sharp question from the opposing captain' is what challenged Clara's point about solar roof panels.",
+      "parentExplanation": "In this passive-voice sentence, 'her best point about solar roof panels' receives the action. The true actor performing 'was challenged' comes after 'by': 'a sharp question from the opposing captain' (Option B).",
+      "retryHint": "Look right after 'was quickly challenged by' in Paragraph 2 to see what actually challenged Clara's point."
     },
     {
       "questionId": "w61_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "To shout loudly so the judges cannot hear the other team",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Clara doesn't shout over Marcus; in Paragraph 4, she looks at him, smiles calmly, and admits his point about first-year bus costs is true."
         },
         {
           "id": "B",
           "text": "To admit that an opponent's point is true",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'concede' means to admit that an opponent's point is true. Right after 'concede,' the sentence gives the clue 'and she agreed,' and Paragraph 5 says 'By admitting the high starting price.'"
         },
         {
           "id": "C",
           "text": "To hide a stack of index cards inside a desk drawer",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Clara sets her red card aside on the table in Paragraph 4, but 'concede' refers to what she says at the microphone: admitting that electric buses cost more upfront."
         },
         {
           "id": "D",
           "text": "To prove that an opponent's math chart is completely fake",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Trying to prove Marcus's chart fake is the opposite of 'concede'! Clara realizes the judges trust his budget chart, so she admits his upfront cost point is right."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "She chose to concede that buying electric buses costs more in the first year, and she agreed that the town should not buy twenty new buses at once.",
-      "childTip": "Use the clue 'and she agreed' in the second half of the sentence to understand what 'concede' means.",
-      "parentExplanation": "The parallel phrase 'and she agreed' in Paragraph 4, along with Paragraph 5's 'By admitting the high starting price,' confirms that 'concede' means to admit that an opponent's point is true (Option A)."
+      "childTip": "In Paragraph 4, 'concede' means to admit that an opponent's point is true. Right after 'concede,' the sentence gives the clue 'and she agreed,' and Paragraph 5 says 'By admitting the high starting price.'",
+      "parentExplanation": "The parallel phrase 'and she agreed' in Paragraph 4, along with Paragraph 5's 'By admitting the high starting price,' confirms that 'concede' means to admit that an opponent's point is true (Option A).",
+      "retryHint": "Look at the second half of the sentence in Paragraph 4 ('and she agreed') and the start of Paragraph 5 ('By admitting') for context clues."
     },
     {
       "questionId": "w61_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She runs out of time before the brass bell rings for the second round.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Clara doesn't run out of time during the two-minute break; she sets the red card aside on purpose and writes two fresh lines on a blank white card."
         },
         {
           "id": "B",
           "text": "She notices that the red card has the wrong town name written across the top.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Nothing is wrong with the town name on the red card! Paragraph 3 says the red card brushed off starting costs as a small detail, which would look stubborn."
         },
         {
           "id": "C",
           "text": "She sees the judges nodding at Marcus's chart and realizes that brushing off the high cost will make her lose their trust.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, Clara sees the judges nodding at Marcus's budget chart and realizes that if she uses the red card to brush off the high upfront cost, the judges will stop trusting her numbers."
         },
         {
           "id": "D",
           "text": "She decides that diesel buses are actually cleaner and cheaper than electric buses.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Clara still argues for electric buses in Paragraph 4! She simply switches to a step-by-step plan of buying two electric buses each year."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "If she acted stubborn and pretended the high price tag did not matter, the judges would stop trusting her numbers.",
-      "childTip": "Click the sentence in Paragraph 3 that explains how the judges would react if Clara acted stubborn.",
-      "parentExplanation": "In Paragraph 3, Clara sees the judges nodding at Marcus's budget chart and realizes that 'If she acted stubborn and pretended the high price tag did not matter, the judges would stop trusting her numbers' (Option A)."
+      "childTip": "In Paragraph 3, Clara sees the judges nodding at Marcus's budget chart and realizes that if she uses the red card to brush off the high upfront cost, the judges will stop trusting her numbers.",
+      "parentExplanation": "In Paragraph 3, Clara sees the judges nodding at Marcus's budget chart and realizes that 'If she acted stubborn and pretended the high price tag did not matter, the judges would stop trusting her numbers' (Option A).",
+      "retryHint": "Check Paragraph 3 to see how the judges were reacting to Marcus's budget chart and what would happen if Clara acted stubborn."
     },
     {
       "questionId": "w61_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It shows that Clara never cared about winning debates until she met Marcus.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 shows the exact opposite: Clara was the debate team captain and had spent two weeks preparing because she cared deeply about winning!"
         },
         {
           "id": "B",
           "text": "It explains why the debate team practices pulling ropes in the school gym before every library match.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Nobody is pulling literal ropes in the gym! 'Tug-of-war' is a figure of speech in Paragraph 1 describing how Clara used to argue in debates."
         },
         {
           "id": "C",
           "text": "It proves that Marcus was much stronger than Clara during last year's field day games.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story is about a fifth-grade library debate on school budgets, not a physical field day game between Marcus and Clara."
         },
         {
           "id": "D",
           "text": "It shows how Clara used to think giving an inch meant losing, which contrasts with her winning choice to concede a point later.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Comparing debate to a tug-of-war where 'giving an inch meant losing the whole rope' in Paragraph 1 shows how stubborn Clara used to be, making her choice to concede a point in Paragraph 4 a big change."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "In past matches, Clara treated every debate like a tug-of-war where giving an inch meant losing the whole rope.",
-      "childTip": "Compare Clara's old 'tug-of-war' mindset in Paragraph 1 with her new choice to give ground in Paragraph 4.",
-      "parentExplanation": "Paragraph 1 establishes Clara's initial rigid mindset ('giving an inch meant losing the whole rope'), which highlights her character growth in Paragraph 4 when she yields on upfront cost to win the larger argument (Option A)."
+      "childTip": "Comparing debate to a tug-of-war where 'giving an inch meant losing the whole rope' in Paragraph 1 shows how stubborn Clara used to be, making her choice to concede a point in Paragraph 4 a big change.",
+      "parentExplanation": "Paragraph 1 establishes Clara's initial rigid mindset ('giving an inch meant losing the whole rope'), which highlights her character growth in Paragraph 4 when she yields on upfront cost to win the larger argument (Option A).",
+      "retryHint": "Compare Clara's old 'tug-of-war' rule in Paragraph 1 with what she learns at the end of Paragraph 5 about 'giving ground.'"
     },
     {
       "questionId": "w61_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "By acknowledging the high upfront cost and proposing a gradual two-bus-per-year replacement plan, she makes her savings argument realistic.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "By admitting that electric buses cost more upfront and proposing a gradual two-bus-per-year swap paid for by fuel savings, Clara makes her plan look realistic, fair, and believable to the judges."
         },
         {
           "id": "B",
           "text": "By proving that electric buses actually cost half as much to buy as standard diesel buses, she shows Marcus made a math error.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 says electric buses cost nearly twice as much upfront, and in Paragraph 4 Clara admits that high starting cost is true rather than calling it a math error."
         },
         {
           "id": "C",
           "text": "By promising that students will wash all twenty buses for free every weekend, she saves the town money.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Clara never talks about students washing buses on weekends; her savings come from spending less money on fuel and repairs over four years."
         },
         {
           "id": "D",
           "text": "By reading her red index card louder than Marcus spoke, she keeps the judges from looking at his budget chart.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Clara set the red card aside in Paragraph 4 and never read it! She won by listening to Marcus's cost concern and building a smarter plan."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel.",
-      "childTip": "Look at how Clara blends Marcus's cost concern with a step-by-step bus replacement plan.",
-      "parentExplanation": "Aligned to ELAGSE5RL1, Clara wins over the panel because she admits the high starting price and proposes buying just two buses a year so fuel savings help pay for future buses, making her plan fair and credible (Option A)."
+      "childTip": "By admitting that electric buses cost more upfront and proposing a gradual two-bus-per-year swap paid for by fuel savings, Clara makes her plan look realistic, fair, and believable to the judges.",
+      "parentExplanation": "Aligned to ELAGSE5RL1, Clara wins over the panel because she admits the high starting price and proposes buying just two buses a year so fuel savings help pay for future buses, making her plan fair and credible (Option A).",
+      "retryHint": "Look at Paragraphs 4 and 5 to see how admitting the upfront cost and proposing a two-bus-per-year plan impressed the judges."
     },
     {
       "questionId": "w61_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Clara tapped her stack of blue index cards against the wood podium in the school library.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 only shows Clara getting ready at the podium before the debate even begins."
         },
         {
           "id": "B",
           "text": "\"Across the aisle, Marcus adjusted his glasses and spread out a neat chart of town budget numbers.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 1 only introduces Marcus and his budget chart before either speaker makes an argument."
         },
         {
           "id": "C",
           "text": "\"By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 5 directly proves Question 5 by explaining that admitting the high starting price is what made Clara's long-term savings plan look fair and believable to the judges."
         },
         {
           "id": "D",
           "text": "\"When the timekeeper rang the small brass bell, Clara stepped up to the microphone and read her opening speech.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 2 only describes the start of the first round, before Marcus challenges Clara or she adjusts her plan."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By admitting the high starting price, Clara made her long-term savings plan look fair and credible to the panel.",
-      "childTip": "Pick the quote from Paragraph 5 that explains why the panel found Clara's savings plan believable.",
-      "parentExplanation": "Option C directly proves Part A by showing that conceding the high starting price made Clara's long-term savings plan credible to the judges."
+      "childTip": "This sentence from Paragraph 5 directly proves Question 5 by explaining that admitting the high starting price is what made Clara's long-term savings plan look fair and believable to the judges.",
+      "parentExplanation": "Option C directly proves Part A by showing that conceding the high starting price made Clara's long-term savings plan credible to the judges.",
+      "retryHint": "Check Paragraph 5 for the sentence explaining how admitting the high starting price made Clara's plan look fair and credible."
     }
   ]
 }

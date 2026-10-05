@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The overhead furnace shut the valve off to save fuel during the storm.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The furnace didn't shut the valve to save fuel! In Paragraph 2, the gas valve was feeding the furnace until falling roof ice snapped the valve shut."
         },
         {
           "id": "B",
           "text": "Leo turned the gas valve off right before closing his field notes.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Leo had just closed his notebook in Paragraph 2 when the fan died—he didn't turn off the gas valve; a sheet of falling roof ice snapped it shut."
         },
         {
           "id": "C",
           "text": "A sheet of falling roof ice struck and closed the gas valve.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'was abruptly snapped shut by' points to 'a sheet of falling roof ice' as the real force that struck and closed the main gas valve."
         },
         {
           "id": "D",
           "text": "The midnight storm blew open the glass panels above the furnace.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The storm didn't blow open the glass panels; Paragraph 2 says sleet rattled against the glass and falling roof ice snapped the outside gas valve shut."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Halfway through the midnight storm, the main gas valve feeding the overhead furnace was abruptly snapped shut by a sheet of falling roof ice.",
-      "childTip": "Look right after the verb phrase 'was abruptly snapped shut by' to find what caused the action.",
-      "parentExplanation": "This passive-voice sentence places the receiver ('the main gas valve') before the verb and includes the modifier 'feeding the overhead furnace.' The true actor performing the action appears after 'by': 'a sheet of falling roof ice' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'was abruptly snapped shut by' points to 'a sheet of falling roof ice' as the real force that struck and closed the main gas valve.",
+      "parentExplanation": "This passive-voice sentence places the receiver ('the main gas valve') before the verb and includes the modifier 'feeding the overhead furnace.' The true actor performing the action appears after 'by': 'a sheet of falling roof ice' (Option B).",
+      "retryHint": "Look right after the words 'was abruptly snapped shut by' in Paragraph 2 to see what hit the gas valve."
     },
     {
       "questionId": "w55_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Dropped steeply and quickly toward a lower level",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'plummeted' means dropped steeply and quickly toward a lower level. Once the furnace stopped, frost crept across the glass and the thermometer line fell fast toward thirty-five degrees."
         },
         {
           "id": "B",
           "text": "Stayed locked at the exact same number all night",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Staying locked at the same number is the opposite of 'plummeted'! The greenhouse was cooling fast, making the red thermometer line drop toward freezing."
         },
         {
           "id": "C",
           "text": "Blinked on and off like a warning light",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "A wall thermometer has a red liquid line inside a tube, not a blinking light. 'Plummeted' describes how fast that red line dropped."
         },
         {
           "id": "D",
           "text": "Melted the glass tube on the greenhouse wall",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The greenhouse was freezing cold after the furnace died, so nothing was melting! 'Plummeted' means the temperature dropped sharply."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Leo checked the wall thermometer and felt his stomach drop as the red line plummeted toward thirty-five degrees.",
-      "childTip": "Notice how fast frost creeps across the glass after the heater dies, making the thermometer line drop fast.",
-      "parentExplanation": "In Paragraph 2, the furnace stops during an ice storm and frost forms within ten minutes. The thermometer line 'plummeted toward thirty-five degrees,' meaning it dropped steeply and rapidly (Option C)."
+      "childTip": "In Paragraph 2, 'plummeted' means dropped steeply and quickly toward a lower level. Once the furnace stopped, frost crept across the glass and the thermometer line fell fast toward thirty-five degrees.",
+      "parentExplanation": "In Paragraph 2, the furnace stops during an ice storm and frost forms within ten minutes. The thermometer line 'plummeted toward thirty-five degrees,' meaning it dropped steeply and rapidly (Option C).",
+      "retryHint": "Picture what happens to the red thermometer line in Paragraph 2 when the heater dies during a midnight ice storm."
     },
     {
       "questionId": "w55_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "He wants to keep the plastic jugs from freezing and cracking the sink.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Leo isn't worried about the sink cracking; Paragraph 4 says the dark jugs were already warm from the afternoon sun, so he used them to heat his plant tent."
         },
         {
           "id": "B",
           "text": "He needs heavy weights to hold down the wood benches during the windstorm.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The greenhouse walls blocked the wind, so the benches didn't need weights! Paragraph 4 shows Leo needed a heat source inside the burlap tent."
         },
         {
           "id": "C",
           "text": "He plans to pour all five gallons of water onto the dry tomato roots before dawn.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Pouring five gallons of water on the roots during a freeze wouldn't warm the air! Leo kept the sun-warmed water inside the jugs to radiate heat."
         },
         {
           "id": "D",
           "text": "He knows the dark jugs absorbed heat from the afternoon sun and will help warm the enclosed space.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that the dark five-gallon water jugs had soaked up heat from the sunny afternoon, so sliding them under the burlap tent helped warm the air around the plants."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "During the sunny afternoon, those dark jugs had soaked up heat from the bright winter sun.",
-      "childTip": "Click the sentence in Paragraph 4 that explains what the dark jugs soaked up during the sunny afternoon.",
-      "parentExplanation": "Paragraph 4 explains that the dark five-gallon water jugs 'had soaked up heat from the bright winter sun' during the afternoon, so placing them inside the burlap tent helps release stored warmth around the plants (Option A)."
+      "childTip": "Paragraph 4 explains that the dark five-gallon water jugs had soaked up heat from the sunny afternoon, so sliding them under the burlap tent helped warm the air around the plants.",
+      "parentExplanation": "Paragraph 4 explains that the dark five-gallon water jugs 'had soaked up heat from the bright winter sun' during the afternoon, so placing them inside the burlap tent helps release stored warmth around the plants (Option A).",
+      "retryHint": "Check the second sentence of Paragraph 4 to see what those dark water jugs had done during the sunny afternoon."
     },
     {
       "questionId": "w55_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It explains why the school custodian forgot to repair the greenhouse roof before winter.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 never mentions the custodian or a broken roof! In Paragraph 2, falling roof ice hits the gas valve during a midnight storm."
         },
         {
           "id": "B",
           "text": "It establishes the months of careful work Leo invested in the heirloom tomatoes before the heater crisis strikes.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 shows the four months of careful work Leo spent tending and cross-pollinating his heirloom tomatoes, which helps the reader see why the sudden heater failure in Paragraph 2 is such an emergency."
         },
         {
           "id": "C",
           "text": "It proves that Brandywine tomatoes can survive subzero snowstorms without any shelter.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Heirloom tomatoes cannot survive subzero storms without shelter—Paragraph 2 warns that just one hard freeze would burst their stems and ruin the blossoms."
         },
         {
           "id": "D",
           "text": "It describes the prizes Leo won at last year's county plant show.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 1 says Leo is preparing his twelve tomato pots for the upcoming county plant show, not describing prizes from last year."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "For four months, he had tended twelve pots of Cherokee Purple and Brandywine heirloom tomatoes for the county plant show.",
-      "childTip": "Think about how seeing Leo's four months of careful pollen work makes the sudden heater failure feel urgent.",
-      "parentExplanation": "Paragraph 1 sets the stage and stakes of the story by showing Leo's four months of patient care and delicate cross-pollination, which makes the furnace failure in Paragraph 2 an urgent threat (Option B)."
+      "childTip": "Paragraph 1 shows the four months of careful work Leo spent tending and cross-pollinating his heirloom tomatoes, which helps the reader see why the sudden heater failure in Paragraph 2 is such an emergency.",
+      "parentExplanation": "Paragraph 1 sets the stage and stakes of the story by showing Leo's four months of patient care and delicate cross-pollination, which makes the furnace failure in Paragraph 2 an urgent threat (Option B).",
+      "retryHint": "Think about how seeing Leo's four months of patient pollen work in Paragraph 1 makes the furnace failure in Paragraph 2 feel urgent."
     },
     {
       "questionId": "w55_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Gas furnaces are much less reliable than battery boxes for heating large school buildings.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The story isn't arguing against gas furnaces; the furnace only stopped because roof ice hit the valve, and Leo used battery mats as a temporary emergency fix."
         },
         {
           "id": "B",
           "text": "Heirloom vegetables should only be grown outdoors during the warmest weeks of summer.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Leo's greenhouse tomatoes were thriving in January until ice hit the valve, so the lesson isn't that vegetables can only grow outdoors in summer."
         },
         {
           "id": "C",
           "text": "Resourceful thinking and calm action can protect months of hard work when equipment suddenly fails.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Instead of panicking when the heater breaks, Leo calmly uses benches, burlap blankets, sun-warmed water jugs, and seed mats to save his four-month tomato project."
         },
         {
           "id": "D",
           "text": "Students should always wait for an adult to arrive before touching any greenhouse supplies.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "If Leo had waited an hour for an adult without touching any supplies, Paragraph 2 says the hard freeze would have ruined his blossoms before dawn!"
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "When the custodian arrived with a wrench to clear the ice from the gas valve at sunrise, every single tomato stem stood firm and green.",
-      "childTip": "Consider how Leo saves his four-month project by building an insulated tent with everyday science supplies.",
-      "parentExplanation": "Rather than panicking when the furnace fails, Leo combines benches, burlap blankets, sun-warmed water jugs, and battery-powered seed mats to save his heirloom tomatoes, showing how resourcefulness protects hard work (Option A)."
+      "childTip": "Instead of panicking when the heater breaks, Leo calmly uses benches, burlap blankets, sun-warmed water jugs, and seed mats to save his four-month tomato project.",
+      "parentExplanation": "Rather than panicking when the furnace fails, Leo combines benches, burlap blankets, sun-warmed water jugs, and battery-powered seed mats to save his heirloom tomatoes, showing how resourcefulness protects hard work (Option A).",
+      "retryHint": "Think about how Leo's calm, clever problem-solving in Paragraphs 3 and 4 saves the plants he worked on for months."
     },
     {
       "questionId": "w55_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"He slid the warm mats and the sun-warmed water jugs right under the burlap tent.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from Paragraph 4 directly proves Question 5 by showing the clever action Leo took—tucking warm seed mats and sun-warmed water jugs under the burlap tent—to save his plants."
         },
         {
           "id": "B",
           "text": "\"He tied a tiny white yarn tag around the stem to mark the cross.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 1 shows Leo marking a flower before the heater broke, not how he solved the freezing emergency."
         },
         {
           "id": "C",
           "text": "\"Within ten minutes, frost began creeping like white lace across the lower glass panels.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 2 only shows the frost problem starting on the glass, before Leo takes action to protect his plants."
         },
         {
           "id": "D",
           "text": "\"Sleet rattled against the sloped glass panes of the school greenhouse while Leo held a fine camel-hair brush between his fingers.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 sets the scene before the storm hits the gas valve, so it doesn't show how Leo saved his work when equipment failed."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "He slid the warm mats and the sun-warmed water jugs right under the burlap tent.",
-      "childTip": "Pick the quote that shows Leo using clever supplies to heat the shelter and save his plants.",
-      "parentExplanation": "Option D directly illustrates Leo's resourceful action—combining sun-warmed water jugs and battery-powered seed mats inside a makeshift burlap tent—which proves the theme in Part A."
+      "childTip": "This quote from Paragraph 4 directly proves Question 5 by showing the clever action Leo took—tucking warm seed mats and sun-warmed water jugs under the burlap tent—to save his plants.",
+      "parentExplanation": "Option D directly illustrates Leo's resourceful action—combining sun-warmed water jugs and battery-powered seed mats inside a makeshift burlap tent—which proves the theme in Part A.",
+      "retryHint": "Check Paragraph 4 for the sentence where Leo slides the warm seed mats and sun-warmed water jugs under the burlap tent."
     }
   ]
 }

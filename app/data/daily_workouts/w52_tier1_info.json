@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The ancient harbor walls formed the seawater, and tiny pores grew the volcanic craters.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This scrambles the sentence! Harbor walls didn't form the ocean water, and tiny pores didn't grow volcanoes—seawater and volcanic ash formed crystals inside the walls."
         },
         {
           "id": "B",
           "text": "Roman engineers painted mineral crystals onto steel rods to keep them from rusting.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 says modern piers use steel rods, not ancient Roman ones! In Paragraph 4, crystals grew naturally inside the stone pores without anyone painting rods."
         },
         {
           "id": "C",
           "text": "Microscopic mineral crystals built the ancient harbor walls before the volcano erupted.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Roman builders built the harbor walls in Paragraph 3; the mineral crystals didn't build the walls—they grew inside the walls' tiny pores over time."
         },
         {
           "id": "D",
           "text": "Seawater reacting with volcanic ash formed the crystals, and the ancient harbor walls grew them over hundreds of years.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, the first 'by' phrase tells us that seawater reacting with volcanic ash formed the crystals, and the second 'by' phrase shows that the ancient harbor walls grew them over centuries."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Microscopic mineral crystals, formed inside tiny pores by seawater reacting with volcanic ash, were steadily grown by the ancient harbor walls over hundreds of years.",
-      "childTip": "Spot both 'by' phrases: seawater reacting with ash formed the crystals, while the harbor walls grew them.",
-      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by seawater reacting with volcanic ash') explains the reaction that formed the crystals, and the second ('by the ancient harbor walls') names the structure that grew them over centuries."
+      "childTip": "In Paragraph 4, the first 'by' phrase tells us that seawater reacting with volcanic ash formed the crystals, and the second 'by' phrase shows that the ancient harbor walls grew them over centuries.",
+      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by seawater reacting with volcanic ash') explains the reaction that formed the crystals, and the second ('by the ancient harbor walls') names the structure that grew them over centuries.",
+      "retryHint": "Check both 'by' phrases in Paragraph 4: what reaction formed the crystals inside the pores, and what grew them over hundreds of years?"
     },
     {
       "questionId": "w52_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Built by ancient Roman engineers near the Bay of Naples",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 2 is describing modern concrete piers with steel rods, not Roman piers near Naples. 'Internal' tells where the rust swelling happens: on the inside."
         },
         {
           "id": "B",
           "text": "Floating on top of the ocean waves far from the harbor",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Floating on top of ocean waves is outside the pier, whereas 'internal' describes swelling that pushes the concrete apart from deep inside."
         },
         {
           "id": "C",
           "text": "Happening deep inside the material rather than on the outer surface",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'internal' means happening deep inside a material rather than on the outside. The end of the sentence gives a direct clue: the swelling pushes the concrete apart 'from the inside.'"
         },
         {
           "id": "D",
           "text": "Lasting forever without ever changing shape or size",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Modern concrete in Paragraph 2 cracks and breaks within a few decades instead of lasting forever. 'Internal' means happening on the inside."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Within a few decades, that internal swelling pushes the concrete apart from the inside.",
-      "childTip": "Look at the end of the same sentence: it pushes the concrete apart 'from the inside.'",
-      "parentExplanation": "The phrase 'from the inside' at the end of the sentence directly defines 'internal' as occurring within the interior of the concrete pier."
+      "childTip": "In Paragraph 2, 'internal' means happening deep inside a material rather than on the outside. The end of the sentence gives a direct clue: the swelling pushes the concrete apart 'from the inside.'",
+      "parentExplanation": "The phrase 'from the inside' at the end of the sentence directly defines 'internal' as occurring within the interior of the concrete pier.",
+      "retryHint": "Look at the last three words of that sentence in Paragraph 2 to see where the swelling pushes from."
     },
     {
       "questionId": "w52_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "They melt the surrounding volcanic rock into hot liquid lava whenever a wave hits.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Cold seawater does not melt concrete into hot liquid lava! Paragraph 4 says seawater dissolves tiny bits of ash and lime to grow mineral crystals."
         },
         {
           "id": "B",
           "text": "They grow right across new hairline cracks like tiny splints and seal the gaps shut.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that the interlocking mineral crystals act like tiny stone splints, growing right across new hairline cracks to seal them shut."
         },
         {
           "id": "C",
           "text": "They push all the salty ocean water back out into the middle of the Bay of Naples.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The crystals don't push ocean water back into the bay; Paragraph 4 says seawater actually soaks into tiny pockets in the wall to help the crystals grow."
         },
         {
           "id": "D",
           "text": "They turn the inner steel rods into flexible rubber bands that never rust.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Roman concrete didn't have steel rods or rubber bands inside it. Instead, Paragraph 4 says mineral crystals grew across tiny cracks like stone splints."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Whenever a wave caused a hairline crack, new crystals grew right across the gap and sealed it shut.",
-      "childTip": "Click the last sentence of Paragraph 4 that explains what happens whenever a wave causes a hairline crack.",
-      "parentExplanation": "Paragraph 4 explains that the interlocking crystal plates act like tiny stone splints, growing right across hairline cracks to seal them shut."
+      "childTip": "Paragraph 4 explains that the interlocking mineral crystals act like tiny stone splints, growing right across new hairline cracks to seal them shut.",
+      "parentExplanation": "Paragraph 4 explains that the interlocking crystal plates act like tiny stone splints, growing right across hairline cracks to seal them shut.",
+      "retryHint": "Look at the last two sentences of Paragraph 4 to see what the interlocking crystal plates do when a wave causes a hairline crack."
     },
     {
       "questionId": "w52_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By contrasting how seawater destroys modern steel-reinforced concrete with how seawater reacts with volcanic ash to strengthen Roman concrete",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across Paragraphs 2 through 4, the author contrasts how saltwater rusts and breaks apart modern steel-reinforced concrete with how saltwater reacts with volcanic ash to heal Roman concrete."
         },
         {
           "id": "B",
           "text": "By listing in order every Roman emperor who paid for harbor piers along the coast of Italy",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never names any Roman emperors! Paragraphs 2 to 4 focus on the science of how seawater affects modern cement versus Roman volcanic mortar."
         },
         {
           "id": "C",
           "text": "By arguing that modern engineers should stop building harbors near the ocean",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The author never says engineers should stop building harbors; in fact, Paragraph 5 shows how today's builders are making stronger seawalls."
         },
         {
           "id": "D",
           "text": "By describing how x-ray machines were invented in laboratories fifty years ago",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 3 only mentions x-ray beams in one sentence to show how scientists studied core samples, not how x-ray machines were invented."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Rather than breaking the Roman concrete down, the seawater was actually helping it grow stronger.",
-      "childTip": "Compare what seawater does to modern concrete in Paragraph 2 with what seawater does to Roman concrete in Paragraph 4.",
-      "parentExplanation": "Across Paragraphs 2-4 (ELAGSE5RI5), the author uses a compare-and-contrast structure combined with cause-and-effect: Paragraph 2 shows how saltwater rusts and splits modern concrete, while Paragraphs 3-4 show how saltwater reacts with volcanic ash to heal Roman concrete."
+      "childTip": "Across Paragraphs 2 through 4, the author contrasts how saltwater rusts and breaks apart modern steel-reinforced concrete with how saltwater reacts with volcanic ash to heal Roman concrete.",
+      "parentExplanation": "Across Paragraphs 2-4 (ELAGSE5RI5), the author uses a compare-and-contrast structure combined with cause-and-effect: Paragraph 2 shows how saltwater rusts and splits modern concrete, while Paragraphs 3-4 show how saltwater reacts with volcanic ash to heal Roman concrete.",
+      "retryHint": "Compare what seawater does to modern piers in Paragraph 2 with what seawater does to Roman harbor walls in Paragraph 4."
     },
     {
       "questionId": "w52_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Modern concrete piers crumble quickly because builders forget to put sand and crushed rock into the cement mix.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 2 says modern builders DO mix cement paste with sand and crushed rock; modern piers crumble because saltwater rusts their inner steel rods."
         },
         {
           "id": "B",
           "text": "Ancient Roman sea walls last for centuries because seawater reacts with volcanic ash to grow crack-sealing crystals, a lesson modern engineers now use.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The passage's big idea brings together how seawater and volcanic ash grow crack-sealing crystals in ancient Roman seawalls and how modern engineers now use that discovery to build lasting harbors."
         },
         {
           "id": "C",
           "text": "Volcanic ash can only be found at the bottom of the sea near the Bay of Naples.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 3 says Roman builders scooped dark ash from volcanic hills near the Bay of Naples, not from the bottom of the sea."
         },
         {
           "id": "D",
           "text": "Ocean waves in Italy are much gentler today than they were two thousand years ago.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 says rough surf and salt waves still hit the Italian coast day and night, just as they have for two thousand years."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By replacing part of today's cement with volcanic rock dust or fly ash, builders can craft seawalls that heal their own cracks in salt water.",
-      "childTip": "Pick the choice that covers both why Roman harbor concrete grows stronger and how today's builders use that discovery.",
-      "parentExplanation": "The passage's central idea (ELAGSE5RI2) unites the scientific discovery of how seawater and volcanic ash grow self-healing crystals in Roman concrete with modern efforts to apply that recipe to new seawalls."
+      "childTip": "The passage's big idea brings together how seawater and volcanic ash grow crack-sealing crystals in ancient Roman seawalls and how modern engineers now use that discovery to build lasting harbors.",
+      "parentExplanation": "The passage's central idea (ELAGSE5RI2) unites the scientific discovery of how seawater and volcanic ash grow self-healing crystals in Roman concrete with modern efforts to apply that recipe to new seawalls.",
+      "retryHint": "Think about the big takeaway that connects the Roman concrete secret in Paragraph 4 to today's builders in Paragraph 5."
     },
     {
       "questionId": "w52_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Modern concrete is made by mixing gray cement paste with sand and crushed rock.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 2 only tells what ingredients go into regular modern concrete, not how Roman concrete heals itself or helps modern builders."
         },
         {
           "id": "B",
           "text": "\"For centuries, historians assumed this volcanic mix simply resisted water well.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 3 only shares what historians used to guess before x-ray tests revealed the crystal-growing secret."
         },
         {
           "id": "C",
           "text": "\"Before long, waves wash away the cracked outer chunks.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 2 only describes how modern concrete breaks apart, leaving out the Roman volcanic ash discovery and its modern use."
         },
         {
           "id": "D",
           "text": "\"By replacing part of today's cement with volcanic rock dust or fly ash, builders can craft seawalls that heal their own cracks in salt water.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from Paragraph 5 directly supports Question 5 by showing how modern builders use volcanic rock dust or fly ash to make seawalls that heal their own cracks in salt water."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By replacing part of today's cement with volcanic rock dust or fly ash, builders can craft seawalls that heal their own cracks in salt water.",
-      "childTip": "Choose the quote in Paragraph 5 that connects volcanic ash recipes to seawalls that heal their own cracks.",
-      "parentExplanation": "Option C directly quotes Paragraph 5, tying the self-healing volcanic ash mechanism to modern seawall engineering."
+      "childTip": "This quote from Paragraph 5 directly supports Question 5 by showing how modern builders use volcanic rock dust or fly ash to make seawalls that heal their own cracks in salt water.",
+      "parentExplanation": "Option C directly quotes Paragraph 5, tying the self-healing volcanic ash mechanism to modern seawall engineering.",
+      "retryHint": "Check Paragraph 5 for the sentence that connects volcanic rock dust or fly ash to seawalls that heal their own cracks."
     }
   ]
 }

@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The afternoon sun moving from east to west",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The afternoon sun moves across the sky, creating the shifting angles—it isn't the clock inside the butterfly that adjusts for those angles!"
         },
         {
           "id": "B",
           "text": "A team of scientists watching from a hill in Mexico",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Scientists aren't mentioned in that sentence from Paragraph 2; it is the internal clock hidden in the butterfly's antennae that does the adjusting."
         },
         {
           "id": "C",
           "text": "The long autumn flight across the northern fields",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'Throughout the long autumn flight' only tells WHEN this happens, not what tool adjusts the sun's shifting angles."
         },
         {
           "id": "D",
           "text": "An internal clock hidden in the butterfly's antennae",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'are constantly adjusted by' points to 'an internal clock hidden in the butterfly's antennae' as what adjusts for the sun's shifting angles."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Throughout the long autumn flight, the shifting angles of the afternoon sun are constantly adjusted by an internal clock hidden in the butterfly's antennae.",
-      "childTip": "Look after the passive verb 'are constantly adjusted by' to see what really does the adjusting.",
-      "parentExplanation": "In this passive construction, 'the shifting angles of the afternoon sun' receives the action. The true grammatical actor comes after the preposition 'by': 'an internal clock hidden in the butterfly's antennae' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'are constantly adjusted by' points to 'an internal clock hidden in the butterfly's antennae' as what adjusts for the sun's shifting angles.",
+      "parentExplanation": "In this passive construction, 'the shifting angles of the afternoon sun' receives the action. The true grammatical actor comes after the preposition 'by': 'an internal clock hidden in the butterfly's antennae' (Option B).",
+      "retryHint": "Look right after 'are constantly adjusted by' in Paragraph 2 to see what adjusts the sun's shifting angles."
     },
     {
       "questionId": "w56_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Measured carefully with a laboratory stopwatch",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Heavy clouds in the sky don't measure the sun with a stopwatch! Paragraph 4 says thick gray clouds hide the sun from view."
         },
         {
           "id": "B",
           "text": "Heated to a much brighter glow during the afternoon",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Heavy gray cloud cover blocks sunlight rather than heating the sun to a brighter glow! 'Obscured' means hidden from view."
         },
         {
           "id": "C",
           "text": "Hidden from view or blocked so it cannot be seen",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'obscured' means hidden from view or blocked so it cannot be seen. Earlier in the same paragraph, the author gives the clue that 'thick gray clouds hide the sky.'"
         },
         {
           "id": "D",
           "text": "Painted with a coat of clear enamel polish",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Scientists painted clear enamel onto the butterflies' feelers in Paragraph 3, not onto the sun in Paragraph 4! 'Obscured' means hidden by clouds."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "When the sun is obscured by heavy cloud cover, this magnetic sense acts like an unseen slope map that points the bug south.",
-      "childTip": "Use the clues 'thick gray clouds hide the sky' and 'heavy cloud cover' in Paragraph 4 to figure out the meaning.",
-      "parentExplanation": "Earlier in Paragraph 4, the author notes that 'thick gray clouds hide the sky.' Therefore, when the sun is 'obscured by heavy cloud cover,' it is hidden from view (Option A)."
+      "childTip": "In Paragraph 4, 'obscured' means hidden from view or blocked so it cannot be seen. Earlier in the same paragraph, the author gives the clue that 'thick gray clouds hide the sky.'",
+      "parentExplanation": "Earlier in Paragraph 4, the author notes that 'thick gray clouds hide the sky.' Therefore, when the sun is 'obscured by heavy cloud cover,' it is hidden from view (Option A).",
+      "retryHint": "Connect 'obscured by heavy cloud cover' to the clue earlier in Paragraph 4 about what thick gray clouds do to the sky."
     },
     {
       "questionId": "w56_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "To make the butterflies easier to spot against the dark fir trees in Mexico",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Clear enamel paint is see-through, so it wouldn't make butterflies easier to spot against dark trees! It was used in Paragraph 3 to let sunlight reach their feelers."
         },
         {
           "id": "B",
           "text": "To prove that blocking light, rather than the paint itself, was what threw off the feeler clocks",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, black paint blocked light and threw the monarchs off course, while clear enamel paint let sunlight reach the feeler clocks so they steered southwest again—proving the clocks need light."
         },
         {
           "id": "C",
           "text": "To protect the insects' eyes from strong winds inside the flight box",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The scientists painted the butterflies' feelers (antennae), not their eyes, and they were testing light and time, not blocking wind."
         },
         {
           "id": "D",
           "text": "To permanently stop all monarchs from flying south during the fall",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Clear paint didn't stop the monarchs from flying south—Paragraph 3 says it actually helped them steer southwest again!"
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Clear enamel paint let sunlight reach the feeler clocks and helped the butterflies steer southwest again.",
-      "childTip": "Click the last sentence of Paragraph 3 to see what happened when light could pass through the clear paint.",
-      "parentExplanation": "When black paint blocked light from the feelers, the monarchs drifted off course. Using clear enamel paint let sunlight reach the feeler clocks and restored accurate steering, proving the clocks need light to keep time (Option A)."
+      "childTip": "In Paragraph 3, black paint blocked light and threw the monarchs off course, while clear enamel paint let sunlight reach the feeler clocks so they steered southwest again—proving the clocks need light.",
+      "parentExplanation": "When black paint blocked light from the feelers, the monarchs drifted off course. Using clear enamel paint let sunlight reach the feeler clocks and restored accurate steering, proving the clocks need light to keep time (Option A).",
+      "retryHint": "Compare what happened in Paragraph 3 when black paint blocked light versus when clear paint let sunlight through to the feelers."
     },
     {
       "questionId": "w56_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "The butterflies flying south in fall are the great-grandchildren of the ones that left Mexico in spring.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 proves that monarchs cannot follow an older guide because no single butterfly makes the round trip twice—the fall flyers are the great-grandchildren of the ones that left Mexico in spring."
         },
         {
           "id": "B",
           "text": "Each monarch butterfly weighs less than a dime when it leaves the northern fields.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Weighing less than a dime shows how tiny and fragile each butterfly is, not how it knows the way without an older guide."
         },
         {
           "id": "C",
           "text": "Special cells in the eyes track the spot of the sun in the afternoon sky.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Eye cells that track the sun are explained in Paragraph 2, not Paragraph 1, and they describe the sun compass rather than generations."
         },
         {
           "id": "D",
           "text": "Fir trees grow only on the highest mountain peaks in central Mexico.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 mentions the groves of fir trees in central Mexico, but it never claims fir trees grow only there or that trees explain instinct."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "The monarchs flying south in fall are the great-grandchildren of the ones that left Mexico in the spring.",
-      "childTip": "Look in Paragraph 1 for the detail about which generation of butterflies actually makes the trip south.",
-      "parentExplanation": "The author supports the claim that monarchs have no experienced guide by pointing out that no monarch makes the round trip twice; the fall travelers are the great-grandchildren of those that left Mexico in the spring (Option B)."
+      "childTip": "Paragraph 1 proves that monarchs cannot follow an older guide because no single butterfly makes the round trip twice—the fall flyers are the great-grandchildren of the ones that left Mexico in spring.",
+      "parentExplanation": "The author supports the claim that monarchs have no experienced guide by pointing out that no monarch makes the round trip twice; the fall travelers are the great-grandchildren of those that left Mexico in the spring (Option B).",
+      "retryHint": "Check Paragraph 1 for the detail about how the fall butterflies are related to the butterflies that left Mexico in the spring."
     },
     {
       "questionId": "w56_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "They follow the scent of fir needles blown northward from Mexico by warm autumn winds.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never says monarchs smell fir needles from three thousand miles away; they use sun angles, antennae clocks, and magnetic sensors."
         },
         {
           "id": "B",
           "text": "They combine an eye-based sun tracker, light-sensitive clocks, and a backup magnetic compass to stay on course in any weather.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across the passage, we learn that monarchs steer three thousand miles by combining an eye-based sun tracker, light-sensitive feeler clocks, and a backup magnetic compass for cloudy days."
         },
         {
           "id": "C",
           "text": "They rely solely on Earth's magnetic pull because the sun moves too rapidly across the sky to be useful.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Monarchs don't ignore the sun! Paragraphs 2 and 3 explain that their main guide is a sun compass paired with an internal clock, while magnetic pull is a cloudy-day backup."
         },
         {
           "id": "D",
           "text": "They wait on the ground whenever clouds appear because their feelers stop working without direct sunlight.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 explains that monarchs DO keep flying straight when thick clouds hide the sun because their backup magnetic compass points them south."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By blending sun angles, body clocks, and magnetic sensors, these fragile bugs endure one of the longest journeys on Earth.",
-      "childTip": "Look at the final sentence of the passage to see how all three navigation tools work together.",
-      "parentExplanation": "Across Paragraphs 2–5, the passage explains that monarchs combine their sun tracker, their time-keeping clocks, and a backup magnetic field sensor on cloudy days to navigate three thousand miles (Option A)."
+      "childTip": "Across the passage, we learn that monarchs steer three thousand miles by combining an eye-based sun tracker, light-sensitive feeler clocks, and a backup magnetic compass for cloudy days.",
+      "parentExplanation": "Across Paragraphs 2–5, the passage explains that monarchs combine their sun tracker, their time-keeping clocks, and a backup magnetic field sensor on cloudy days to navigate three thousand miles (Option A).",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see which three navigation tools monarchs combine on their trip."
     },
     {
       "questionId": "w56_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Even more surprising, no single monarch ever makes the round trip twice.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 1 explains that no single butterfly makes the round trip twice, but it doesn't name the tools they use to navigate."
         },
         {
           "id": "B",
           "text": "\"To test this idea, teams placed monarchs in a flight box where indoor lights shifted the day by six hours.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 3 only describes one indoor lab test with shifted lights, leaving out the backup magnetic compass."
         },
         {
           "id": "C",
           "text": "\"Once the monarchs reach the cool peaks of Mexico, a new cue tells them to stop and rest on the fir boughs.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 5 describes what happens after the monarchs arrive in Mexico, not how they steered their way there."
         },
         {
           "id": "D",
           "text": "\"By blending sun angles, body clocks, and magnetic sensors, these fragile bugs endure one of the longest journeys on Earth.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly supports Question 5 by naming all three tools—sun angles, body clocks, and magnetic sensors—that guide the monarchs' journey."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By blending sun angles, body clocks, and magnetic sensors, these fragile bugs endure one of the longest journeys on Earth.",
-      "childTip": "Select the quote from Paragraph 5 that names all three navigation systems working together.",
-      "parentExplanation": "Option C directly proves Part A by summarizing the three biological systems—sun angles, body clocks, and magnetic sensors—that guide the monarch migration."
+      "childTip": "This final sentence from Paragraph 5 directly supports Question 5 by naming all three tools—sun angles, body clocks, and magnetic sensors—that guide the monarchs' journey.",
+      "parentExplanation": "Option C directly proves Part A by summarizing the three biological systems—sun angles, body clocks, and magnetic sensors—that guide the monarch migration.",
+      "retryHint": "Check the final sentence of Paragraph 5 to see how sun angles, body clocks, and magnetic sensors work together."
     }
   ]
 }

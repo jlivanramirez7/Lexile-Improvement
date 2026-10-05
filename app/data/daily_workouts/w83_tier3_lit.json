@@ -73,34 +73,39 @@
           "text": "Julian, the student watchmaker working at the bench",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Julian') in the passive verb phrase 'was carefully lowered by Julian'."
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Julian') in the passive verb phrase 'was carefully lowered by Julian'.",
+          "childFeedback": "Spot on! This answer correctly identifies who or what comes after 'by' ('by Julian') in the action phrase 'was carefully lowered by Julian'."
         },
         {
           "id": "B",
           "text": "The single strand of spider silk inside the brass case",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a noun from the descriptive comparison ('thinner than a single strand of spider silk') instead of the actor."
+          "diagnosticNote": "Selects a noun from the descriptive comparison ('thinner than a single strand of spider silk') instead of the actor.",
+          "childFeedback": "Watch out—this choice selects a noun from the descriptive comparison ('thinner than a single strand of spider silk') instead of the actor."
         },
         {
           "id": "C",
           "text": "The coiled steel hairspring resting on the tray",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('The coiled steel hairspring') with the actor performing the lowering."
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('The coiled steel hairspring') with the actor performing the lowering.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action ('The coiled steel hairspring') with the actor performing the lowering."
         },
         {
           "id": "D",
           "text": "The jeweled balance staff at the center of the clock",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Picks the destination object of the preposition ('onto the jeweled balance staff') rather than who lowered the part."
+          "diagnosticNote": "Picks the destination object of the preposition ('onto the jeweled balance staff') rather than who lowered the part.",
+          "childFeedback": "Watch out—this choice picks the place phrase ('onto the jeweled balance staff') rather than who lowered the part."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The coiled steel hairspring, forged thinner than a single strand of spider silk, was carefully lowered by Julian onto the jeweled balance staff.",
-      "childTip": "Find the passive verb 'was carefully lowered by.' The name right after 'by' tells you who did the action!",
-      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The grammatical subject ('The coiled steel hairspring') is separated from the passive verb by a 9-word participial phrase ('forged thinner than a single strand of spider silk'), tempting readers to miss that 'by Julian' names the true actor."
+      "childTip": "Spot on! This answer correctly identifies who or what comes after 'by' ('by Julian') in the action phrase 'was carefully lowered by Julian'.",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The grammatical subject ('The coiled steel hairspring') is separated from the passive verb by a 9-word participial phrase ('forged thinner than a single strand of spider silk'), tempting readers to miss that 'by Julian' names the true actor.",
+      "retryHint": "In Paragraph 2, find the action phrase 'was carefully lowered by.' The name right after 'by' tells you who did the action!"
     },
     {
       "questionId": "w83_q2",
@@ -118,34 +123,39 @@
           "text": "Measure the exact distance to a coastal reef",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Confuses the purpose of a ship's chronometer in Paragraph 2 with the meaning of 'impede' in Paragraph 5."
+          "diagnosticNote": "Confuses the purpose of a ship's chronometer in Paragraph 2 with the meaning of 'impede' in Paragraph 5.",
+          "childFeedback": "Careful—this choice confuses the purpose of a ship's chronometer in Paragraph 2 with the meaning of 'impede' in Paragraph 5."
         },
         {
           "id": "B",
           "text": "Polish with a clean wooden stick and oil",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows cleaning details from Paragraph 4 instead of defining what stray dust would do to the balance wheel's swing."
+          "diagnosticNote": "Borrows cleaning details from Paragraph 4 instead of defining what stray dust would do to the balance wheel's swing.",
+          "childFeedback": "Watch out—this choice borrows cleaning details from Paragraph 4 instead of defining what stray dust would do to the balance wheel's swing."
         },
         {
           "id": "C",
           "text": "Power the clock gears without needing a spring",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the harmful effect of dust into a helpful power source."
+          "diagnosticNote": "Reverses the harmful effect of dust into a helpful power source.",
+          "childFeedback": "Careful—this choice reverses the harmful effect of dust into a helpful power source."
         },
         {
           "id": "D",
           "text": "Block or get in the way of smooth motion",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short."
+          "diagnosticNote": "Matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short.",
+          "childFeedback": "Spot on! This answer matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Julian closed the glass bezel so no stray dust could drift inside to impede the swing again.",
-      "childTip": "Think about what the speck of lint did in Paragraph 4. Why does Julian want to keep dust out?",
-      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5L4). In Paragraph 4, a speck of lint brushed the inner coil and cut the wheel's swing short; in Paragraph 5, Julian closes the glass cover so dust cannot 'impede' (hinder or obstruct) the swing again."
+      "childTip": "Spot on! This answer matches the root 'ped' (foot/shackle) and the context of keeping dust from brushing the coil and cutting its swing short.",
+      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5L4). In Paragraph 4, a speck of lint brushed the inner coil and cut the wheel's swing short; in Paragraph 5, Julian closes the glass cover so dust cannot 'impede' (hinder or obstruct) the swing again.",
+      "retryHint": "Think about what the speck of lint did in Paragraph 4. Why does Julian want to keep dust out?"
     },
     {
       "questionId": "w83_q3",
@@ -163,34 +173,39 @@
           "text": "The lint added extra weight that made the heavy gold gears spin twice as fast.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents an explanation about heavy gold gears spinning faster from added weight."
+          "diagnosticNote": "Invents an explanation about heavy gold gears spinning faster from added weight.",
+          "childFeedback": "Watch out—this choice invents an explanation about heavy gold gears spinning faster from added weight."
         },
         {
           "id": "B",
           "text": "The lint brushed the inner coil and cut each swing short, making the wheel bounce back early.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately explains the mechanical cause-and-effect in Paragraph 4: a shorter arc causes the wheel to reverse early and beat too fast."
+          "diagnosticNote": "Accurately explains the mechanical cause-and-effect in Paragraph 4: a shorter arc causes the wheel to reverse early and beat too fast.",
+          "childFeedback": "Spot on! This answer accurately explains the mechanical cause-and-effect in Paragraph 4: a shorter arc causes the wheel to reverse early and beat too fast."
         },
         {
           "id": "C",
           "text": "The lint soaked up all the clean solvent and froze the balance wheel in place.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the text; a frozen wheel would stop completely rather than gain four seconds every hour."
+          "diagnosticNote": "Contradicts the text; a frozen wheel would stop completely rather than gain four seconds every hour.",
+          "childFeedback": "Not quite—this choice contradicts the text; a frozen wheel would stop completely rather than gain four seconds every hour."
         },
         {
           "id": "D",
           "text": "Every ship chronometer is built to run fast whenever a bench lamp shines on the ruby.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('Every', 'whenever') and misinterprets Julian tilting his lamp to inspect the ruby."
+          "diagnosticNote": "Uses extreme language ('Every', 'whenever') and misinterprets Julian tilting his lamp to inspect the ruby.",
+          "childFeedback": "Watch out—this choice uses extreme language ('Every', 'whenever') and misinterprets Julian tilting his lamp to inspect the ruby."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Because the wheel could not complete its full, wide arc, it bounced back early and beat too fast.",
-      "childTip": "First click the sentence in Paragraph 4 that explains what happens when the wheel cannot finish its full arc.",
-      "parentExplanation": "This Click-to-Prove item requires students to verify counterintuitive physical causation in the text (ELAGSE5RL1). Rather than slowing the watch down, the speck of lint shortened the hairspring's swing arc so it bounced back early and ticked too rapidly."
+      "childTip": "Spot on! This answer accurately explains the mechanical cause-and-effect in Paragraph 4: a shorter arc causes the wheel to reverse early and beat too fast.",
+      "parentExplanation": "This Click-to-Prove item requires students to verify counterintuitive physical causation in the text (ELAGSE5RL1). Rather than slowing the watch down, the speck of lint shortened the hairspring's swing arc so it bounced back early and ticked too rapidly.",
+      "retryHint": "Look in Paragraph 4 for the sentence that explains what happens when the wheel cannot finish its full arc."
     },
     {
       "questionId": "w83_q4",
@@ -208,34 +223,39 @@
           "text": "It contrasts rough mechanical force with the delicate care needed to keep tiny clock parts clean and accurate.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Explains how the correlative conjunction pair ('not... but...') contrasts brute force with protecting tiny spaces from dust."
+          "diagnosticNote": "Explains how the correlative conjunction pair ('not... but...') contrasts brute force with protecting tiny spaces from dust.",
+          "childFeedback": "Spot on! This answer explains how the connecting words ('not... but...') contrasts brute force with protecting tiny spaces from dust."
         },
         {
           "id": "B",
           "text": "It shows that Julian decided to remove all the heavy gold gears from the brass case.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Misreads the contrast as a literal removal of all gears from the clock."
+          "diagnosticNote": "Misreads the contrast as a literal removal of all gears from the clock.",
+          "childFeedback": "Careful—this choice misreads the contrast as a literal removal of all gears from the clock."
         },
         {
           "id": "C",
           "text": "It proves that Master Lin was angry at Julian for using a steel wrench on the hairspring.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Introduces an unsupported emotional conflict; Julian never used the wrench because Master Lin advised him in time."
+          "diagnosticNote": "Introduces an unsupported emotional conflict; Julian never used the wrench because Master Lin advised him in time.",
+          "childFeedback": "Watch out—this choice brings in an unsupported emotional conflict; Julian never used the wrench because Master Lin advised him in time."
         },
         {
           "id": "D",
           "text": "It lists the exact steps for building a glass bezel inside a nineteenth-century workshop.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Confuses the reflective closing syntax with a step-by-step manufacturing guide."
+          "diagnosticNote": "Confuses the reflective closing syntax with a step-by-step manufacturing guide.",
+          "childFeedback": "Careful—this choice confuses the closing sentence with a step-by-step manufacturing guide."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "He saw that great precision did not come from forcing heavy gears into place, but from guarding the smallest space where motion lived.",
-      "childTip": "Look at the two ideas linked by 'not from... but from...' to see what Julian rejects and what he values.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5L1 (Conjunctions & Syntactic Logic), this item examines how the correlative construction 'not from X, but from Y' sets up a thematic contrast between forceful adjustment and careful attention to microscopic detail."
+      "childTip": "Spot on! This answer explains how the connecting words ('not... but...') contrasts brute force with protecting tiny spaces from dust.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5L1 (Conjunctions & Syntactic Logic), this item examines how the correlative construction 'not from X, but from Y' sets up a thematic contrast between forceful adjustment and careful attention to microscopic detail.",
+      "retryHint": "In Paragraph 5, look at the two ideas linked by 'not from... but from...' to see what Julian rejects and what he values."
     },
     {
       "questionId": "w83_q5",
@@ -254,34 +274,39 @@
           "text": "Old ship clocks should always be replaced with digital screens before sailors leave port.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('always') and contradicts the story's successful restoration of the brass chronometer."
+          "diagnosticNote": "Uses extreme language ('always') and contradicts the story's successful restoration of the brass chronometer.",
+          "childFeedback": "Watch out—this choice uses extreme language ('always') and contradicts the story's successful restoration of the brass chronometer."
         },
         {
           "id": "B",
           "text": "Careful observation before making changes prevents a craftsperson from fixing the wrong problem.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring."
+          "diagnosticNote": "Captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring.",
+          "childFeedback": "Spot on! This answer captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring."
         },
         {
           "id": "C",
           "text": "Shop manuals are completely useless whenever a student repairs a balance wheel.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Overgeneralizes Julian's specific discovery into an extreme claim that manuals are 'completely useless'."
+          "diagnosticNote": "Overgeneralizes Julian's specific discovery into an extreme claim that manuals are 'completely useless'.",
+          "childFeedback": "Watch out—this choice stretches Julian's specific discovery into an extreme claim that manuals are 'completely useless'."
         },
         {
           "id": "D",
           "text": "Pegwood sticks are the most expensive tools on a watchmaker's oak bench.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses on a minor tool mentioned in Paragraph 4 and invents a claim about its price."
+          "diagnosticNote": "Focuses on a minor tool mentioned in Paragraph 4 and invents a claim about its price.",
+          "childFeedback": "Not quite—this choice focuses on a minor tool mentioned in Paragraph 4 and invents a claim about its price."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light.",
-      "childTip": "Think about what would have happened if Julian had loosened the spring before looking closely at the ruby jewel.",
-      "parentExplanation": "Part A of this EBSR pair assesses Theme (ELAGSE5RL2). Julian nearly alters a perfectly good hairspring until Master Lin reminds him to inspect the bearings first, revealing that patient observation must precede action."
+      "childTip": "Spot on! This answer captures the core lesson taught by Master Lin and proved when Julian finds the speck of lint instead of loosening the hairspring.",
+      "parentExplanation": "Part A of this EBSR pair assesses Theme (ELAGSE5RL2). Julian nearly alters a perfectly good hairspring until Master Lin reminds him to inspect the bearings first, revealing that patient observation must precede action.",
+      "retryHint": "In Paragraphs 1 to 5, think about what would have happened if Julian had loosened the spring before looking closely at the ruby jewel."
     },
     {
       "questionId": "w83_q6",
@@ -300,34 +325,39 @@
           "text": "\"Inside the brass case, dozens of tiny gold gears gleamed beneath the bench lamp.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes the appearance of the clock gears in Paragraph 1 without addressing the lesson about careful inspection."
+          "diagnosticNote": "Describes the appearance of the clock gears in Paragraph 1 without addressing the lesson about careful inspection.",
+          "childFeedback": "Not quite—this choice describes the appearance of the clock gears in Paragraph 1 without addressing the lesson about careful inspection."
         },
         {
           "id": "B",
           "text": "\"The restored pocket watch was gaining four seconds every hour, which meant a sailor using it at sea would misjudge a reef by miles.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Explains why the timing error mattered, not the principle of inspecting before altering a part."
+          "diagnosticNote": "Explains why the timing error mattered, not the principle of inspecting before altering a part.",
+          "childFeedback": "Not quite—this choice explains why the timing error mattered, not the principle of inspecting before altering a part."
         },
         {
           "id": "C",
           "text": "\"The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly supports the theme in Part A by stating Master Lin's rule to inspect carefully before altering a delicate part."
+          "diagnosticNote": "Directly supports the theme in Part A by stating Master Lin's rule to inspect carefully before altering a delicate part.",
+          "childFeedback": "Spot on! This answer directly supports the theme in Question 5 by stating Master Lin's rule to inspect carefully before altering a delicate part."
         },
         {
           "id": "D",
           "text": "\"Across the timing screen, the green dots marched in a flat, level line with zero gain or loss.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Shows the final test result in Paragraph 5 rather than the guiding principle of observation before adjustment."
+          "diagnosticNote": "Shows the final test result in Paragraph 5 rather than the guiding principle of observation before adjustment.",
+          "childFeedback": "Not quite—this choice shows the final test result in Paragraph 5 rather than the guiding principle of observation before adjustment."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The old craftsman reminded him never to alter a spring until he had inspected every ruby bearing under side light.",
-      "childTip": "Pick the exact quote in Paragraph 3 where Master Lin gives Julian advice before he touches the spring.",
-      "parentExplanation": "Part B requires 100% verbatim textual evidence supporting the theme from Part A. Option C states the exact rule that saved Julian from altering an undamaged hairspring."
+      "childTip": "Spot on! This answer directly supports the theme in Question 5 by stating Master Lin's rule to inspect carefully before altering a delicate part.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence supporting the theme from Part A. Option C states the exact rule that saved Julian from altering an undamaged hairspring.",
+      "retryHint": "Pick the exact quote in Paragraph 3 where Master Lin gives Julian advice before he touches the spring."
     }
   ]
 }

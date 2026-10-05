@@ -73,34 +73,39 @@
           "text": "The safe salt crystals inside the base tent",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a noun from the middle participial phrase ('mixed from safe salt crystals') rather than the actor."
+          "diagnosticNote": "Selects a noun from the middle participial phrase ('mixed from safe salt crystals') rather than the actor.",
+          "childFeedback": "Watch out—this choice selects a noun from the middle describing phrase ('mixed from safe salt crystals') rather than the actor."
         },
         {
           "id": "B",
           "text": "Ren, one of the young scouts on the glacier",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Ren') in the passive construction 'were poured by Ren'."
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Ren') in the passive construction 'were poured by Ren'.",
+          "childFeedback": "Spot on! This answer correctly identifies who or what comes after 'by' ('by Ren') in the sentence 'were poured by Ren'."
         },
         {
           "id": "C",
           "text": "Two flasks of bright green dye",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Two flasks of bright green dye') with the person who poured them."
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Two flasks of bright green dye') with the person who poured them.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action ('Two flasks of bright green dye') with the person who poured them."
         },
         {
           "id": "D",
           "text": "The plunging ice shaft in the middle of the glacier",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Picks the destination object of the preposition ('into the plunging ice shaft') instead of the actor."
+          "diagnosticNote": "Picks the destination object of the preposition ('into the plunging ice shaft') instead of the actor.",
+          "childFeedback": "Watch out—this choice picks the place phrase ('into the plunging ice shaft') instead of the actor."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Two flasks of bright green dye, mixed from safe salt crystals inside the base tent, were poured by Ren into the plunging ice shaft.",
-      "childTip": "Spot the passive verb 'were poured by.' The name right after 'by' tells you who poured the green dye!",
-      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The subject 'Two flasks of bright green dye' is separated from 'were poured by Ren' by a 9-word modifier describing how the dye was mixed."
+      "childTip": "Spot on! This answer correctly identifies who or what comes after 'by' ('by Ren') in the sentence 'were poured by Ren'.",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The subject 'Two flasks of bright green dye' is separated from 'were poured by Ren' by a 9-word modifier describing how the dye was mixed.",
+      "retryHint": "In Paragraph 2, spot the action phrase 'were poured by.' The name right after 'by' tells you who poured the green dye!"
     },
     {
       "questionId": "w91_q2",
@@ -118,34 +123,39 @@
           "text": "Watered down and made much fainter by mixing into a huge pool",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the cause ('held millions of gallons') and the result in the next sentence ('a faint, five-hour wave of green light')."
+          "diagnosticNote": "Matches the cause ('held millions of gallons') and the result in the next sentence ('a faint, five-hour wave of green light').",
+          "childFeedback": "Spot on! This answer matches the cause ('held millions of gallons') and the result in the next sentence ('a faint, five-hour wave of green light')."
         },
         {
           "id": "B",
           "text": "Boiled into steam using heat from a solar mat",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses geothermal warmth and the solar mat with what millions of gallons of lake water did to the two flasks of dye."
+          "diagnosticNote": "Confuses geothermal warmth and the solar mat with what millions of gallons of lake water did to the two flasks of dye.",
+          "childFeedback": "Careful—this choice confuses geothermal warmth and the solar mat with what millions of gallons of lake water did to the two flasks of dye."
         },
         {
           "id": "C",
           "text": "Turned into solid salt crystals inside a glass vial",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the process back to the dry salt crystals mentioned in Paragraph 2."
+          "diagnosticNote": "Reverses the process back to the dry salt crystals mentioned in Paragraph 2.",
+          "childFeedback": "Careful—this choice reverses the process back to the dry salt crystals mentioned in Paragraph 2."
         },
         {
           "id": "D",
           "text": "Blocked completely so not a single drop ever left the cave",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('not a single drop ever left') that contradicts the dye drifting past the downstream lens at sunset."
+          "diagnosticNote": "Uses extreme language ('not a single drop ever left') that contradicts the dye drifting past the downstream lens at sunset.",
+          "childFeedback": "Watch out—this choice uses extreme language ('not a single drop ever left') that contradicts the dye drifting past the downstream lens at sunset."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Because that hidden lake held millions of gallons, it diluted the dye and slowed the current before releasing it in a steady trickle.",
-      "childTip": "Think about what happens when two small flasks of bright dye mix into millions of gallons of clear water.",
-      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5L4). The cause-and-effect clue ('Because that hidden lake held millions of gallons') and the later result ('a faint, five-hour wave of green light') show that 'diluted' means watered down or made fainter."
+      "childTip": "Spot on! This answer matches the cause ('held millions of gallons') and the result in the next sentence ('a faint, five-hour wave of green light').",
+      "parentExplanation": "Contextual and morphological vocabulary item (ELAGSE5L4). The cause-and-effect clue ('Because that hidden lake held millions of gallons') and the later result ('a faint, five-hour wave of green light') show that 'diluted' means watered down or made fainter.",
+      "retryHint": "In Paragraph 4, think about what happens when two small flasks of bright dye mix into millions of gallons of clear water."
     },
     {
       "questionId": "w91_q3",
@@ -163,34 +173,39 @@
           "text": "Nori forgot to unfold the silver solar mat until the sun had already set behind the peak.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraph 2, where Nori unfolded the solar mat before Ren poured the dye."
+          "diagnosticNote": "Contradicts Paragraph 2, where Nori unfolded the solar mat before Ren poured the dye.",
+          "childFeedback": "Not quite—this choice contradicts Paragraph 2, where Nori unfolded the solar mat before Ren poured the dye."
         },
         {
           "id": "B",
           "text": "The ice walls squeezed shut and trapped all the meltwater at the top of the mountain forever.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows what happened to the grandfather's rope in 1974 and falsely claims no water ever escaped."
+          "diagnosticNote": "Borrows what happened to the grandfather's rope in 1974 and falsely claims no water ever escaped.",
+          "childFeedback": "Watch out—this choice borrows what happened to the grandfather's rope in 1974 and falsely claims no water ever escaped."
         },
         {
           "id": "C",
           "text": "Instead of flowing through a straight tunnel, the stream emptied into a huge underground lake that slowed the current.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately connects the 40-minute straight-tunnel prediction in Paragraph 2 with the subglacial lake discovery in Paragraph 4."
+          "diagnosticNote": "Accurately connects the 40-minute straight-tunnel prediction in Paragraph 2 with the subglacial lake discovery in Paragraph 4.",
+          "childFeedback": "Spot on! This answer accurately connects the 40-minute straight-tunnel prediction in Paragraph 2 with the subglacial lake discovery in Paragraph 4."
         },
         {
           "id": "D",
           "text": "The green dye froze into a solid block of ice inside a shallow surface crack.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Selects Nori's worried guess in Paragraph 3, which Paragraph 4 explicitly disproves ('The meltwater had not frozen')."
+          "diagnosticNote": "Selects Nori's worried guess in Paragraph 3, which Paragraph 4 explicitly disproves ('The meltwater had not frozen').",
+          "childFeedback": "Watch out—this choice selects Nori's worried guess in Paragraph 3, which Paragraph 4 explicitly disproves ('The meltwater had not frozen')."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The meltwater had not frozen; it was pooling inside a vast subglacial vault carved out by geothermal warmth from the rock bed.",
-      "childTip": "First click the sentence in Paragraph 4 that explains where the meltwater was pooling instead of freezing.",
-      "parentExplanation": "This Click-to-Prove item tests inferential cause-and-effect (ELAGSE5RL1). Paragraph 2 notes that a straight tunnel would take forty minutes; Paragraph 4 reveals that the water was pooling inside a vast subglacial vault, slowing and diluting the dye."
+      "childTip": "Spot on! This answer accurately connects the 40-minute straight-tunnel prediction in Paragraph 2 with the subglacial lake discovery in Paragraph 4.",
+      "parentExplanation": "This Click-to-Prove item tests inferential cause-and-effect (ELAGSE5RL1). Paragraph 2 notes that a straight tunnel would take forty minutes; Paragraph 4 reveals that the water was pooling inside a vast subglacial vault, slowing and diluting the dye.",
+      "retryHint": "Look in Paragraph 4 for the sentence that explains where the meltwater was pooling instead of freezing."
     },
     {
       "questionId": "w91_q4",
@@ -208,34 +223,39 @@
           "text": "The 1974 expedition used optical scanners and sound pods, whereas Ren and Nori lowered heavy iron weights on hemp ropes.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Swaps the tools used by the 1974 team and the modern scouts."
+          "diagnosticNote": "Swaps the tools used by the 1974 team and the modern scouts.",
+          "childFeedback": "Careful—this choice swaps the tools used by the 1974 team and the modern scouts."
         },
         {
           "id": "B",
           "text": "While both quests mapped the glacier's hidden water, the 1974 team used ropes and iron weights, whereas Ren and Nori used dye and sensors.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately compares the shared goal/theme and contrasts the two approaches described in Paragraphs 1 and 5."
+          "diagnosticNote": "Accurately compares the shared goal/theme and contrasts the two approaches described in Paragraphs 1 and 5.",
+          "childFeedback": "Spot on! This answer accurately compares the shared goal/theme and contrasts the two approaches described in Paragraphs 1 and 5."
         },
         {
           "id": "C",
           "text": "The 1974 team wanted to melt the entire Whitehorn Glacier, whereas Ren and Nori wanted to freeze the valley river.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents destructive goals for both teams that never appear in the passage."
+          "diagnosticNote": "Invents destructive goals for both teams that never appear in the passage.",
+          "childFeedback": "Watch out—this choice invents destructive goals for both teams that never appear in the passage."
         },
         {
           "id": "D",
           "text": "Only the 1974 team cared about the mountain's secrets, while Ren and Nori were forced to hike up the glacier against their will.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'Only' and contradicts Ren's 'quiet thrill' at continuing her granddad's quest."
+          "diagnosticNote": "Uses 'Only' and contradicts Ren's 'quiet thrill' at continuing her granddad's quest.",
+          "childFeedback": "Watch out—this choice uses 'Only' and contradicts Ren's 'quiet thrill' at continuing her granddad's quest."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Where that older adventure relied on muscle and heavy iron to fight the ice, Ren and Nori planned to let the flowing water itself carry their message through the dark.",
-      "childTip": "Look at the last sentence of Paragraph 1 and the last sentence of Paragraph 5 to compare the two quests.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RL9 (Comparing Approaches to Similar Themes and Topics in Adventure Stories), this question examines how the classic 1974 expedition account and the modern scientific adventure approach the same subglacial mystery."
+      "childTip": "Spot on! This answer accurately compares the shared goal/theme and contrasts the two approaches described in Paragraphs 1 and 5.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RL9 (Comparing Approaches to Similar Themes and Topics in Adventure Stories), this question examines how the classic 1974 expedition account and the modern scientific adventure approach the same subglacial mystery.",
+      "retryHint": "Look at the last sentence of Paragraph 1 and the last sentence of Paragraph 5 to compare the two quests."
     },
     {
       "questionId": "w91_q5",
@@ -254,34 +274,39 @@
           "text": "Glacier streams always flow in straight tunnels that reach the valley floor in forty minutes.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Mistakes the initial 'if' hypothesis in Paragraph 2 for a universal fact, which the story disproves."
+          "diagnosticNote": "Mistakes the initial 'if' hypothesis in Paragraph 2 for a universal fact, which the story disproves.",
+          "childFeedback": "Careful—this choice mistakes the starting 'if' idea in Paragraph 2 for a universal fact, which the story disproves."
         },
         {
           "id": "B",
           "text": "Old paper field journals are completely useless once scientists invent solar-powered wrist screens.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'completely useless' and contradicts Paragraph 5, where Ren compares the 1974 sketches with the new screen with pride."
+          "diagnosticNote": "Uses 'completely useless' and contradicts Paragraph 5, where Ren compares the 1974 sketches with the new screen with pride.",
+          "childFeedback": "Watch out—this choice uses 'completely useless' and contradicts Paragraph 5, where Ren compares the 1974 sketches with the new screen with pride."
         },
         {
           "id": "C",
           "text": "Nature reveals its hidden mysteries when explorers work with natural forces and listen patiently rather than trying to overpower them.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes the failure of forcing iron weights into the ice (Para 1), the success of letting water carry the dye and listening to the seismic pod (Paras 2-4), and the final reflection (Para 5)."
+          "diagnosticNote": "Synthesizes the failure of forcing iron weights into the ice (Para 1), the success of letting water carry the dye and listening to the seismic pod (Paras 2-4), and the final reflection (Para 5).",
+          "childFeedback": "Spot on! This answer brings together how forcing iron weights failed in Paragraph 1, while letting water carry the dye and listening to the glacier succeeded in Paragraphs 2 to 5."
         },
         {
           "id": "D",
           "text": "Salt crystals are the only materials that can survive inside a freezing mountain tent.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses on a minor detail from Paragraph 2 and adds the extreme word 'only'."
+          "diagnosticNote": "Focuses on a minor detail from Paragraph 2 and adds the extreme word 'only'.",
+          "childFeedback": "Not quite—this choice focuses on a minor detail from Paragraph 2 and adds the extreme word 'only'."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Though their tools had changed from hemp rope to laser light, both quests proved that nature reveals its deepest chambers only when explorers listen to the mountain's own rhythm.",
-      "childTip": "Read the final sentence of Paragraph 5 to see what both glacier quests proved about how nature reveals its secrets.",
-      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Option C captures the story's central insight: instead of fighting the ice with brute force, Ren and Nori succeed by letting the stream carry the dye and listening to the glacier's seismic rhythm."
+      "childTip": "Spot on! This answer brings together how forcing iron weights failed in Paragraph 1, while letting water carry the dye and listening to the glacier succeeded in Paragraphs 2 to 5.",
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Option C captures the story's central insight: instead of fighting the ice with brute force, Ren and Nori succeed by letting the stream carry the dye and listening to the glacier's seismic rhythm.",
+      "retryHint": "Read the final sentence of Paragraph 5 to see what both glacier quests proved about how nature reveals its secrets."
     },
     {
       "questionId": "w91_q6",
@@ -300,34 +325,39 @@
           "text": "\"Nori unfolded a silver solar mat to power their optical scanner at the foot of the mountain two miles below.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes setting up equipment in Paragraph 2 without expressing the theme about listening to nature."
+          "diagnosticNote": "Describes setting up equipment in Paragraph 2 without expressing the theme about listening to nature.",
+          "childFeedback": "Not quite—this choice describes setting up equipment in Paragraph 2 without expressing the theme about listening to nature."
         },
         {
           "id": "B",
           "text": "\"Within seconds, the neon swirl vanished beneath the blue ice crust.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Shows a single plot moment in Paragraph 2 rather than the overarching thematic message."
+          "diagnosticNote": "Shows a single plot moment in Paragraph 2 rather than the overarching thematic message.",
+          "childFeedback": "Not quite—this choice shows a single plot moment in Paragraph 2 rather than the overall big lesson of the story."
         },
         {
           "id": "C",
           "text": "\"Nori frowned and wondered if the green dye had frozen solid inside a dead-end crack.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Quotes Nori's temporary doubt in Paragraph 3 rather than the lesson learned."
+          "diagnosticNote": "Quotes Nori's temporary doubt in Paragraph 3 rather than the lesson learned.",
+          "childFeedback": "Not quite—this choice quotes Nori's temporary doubt in Paragraph 3 rather than the lesson learned."
         },
         {
           "id": "D",
           "text": "\"Though their tools had changed from hemp rope to laser light, both quests proved that nature reveals its deepest chambers only when explorers listen to the mountain's own rhythm.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves the theme in Part A by stating that nature reveals its deepest chambers when explorers listen to its rhythm."
+          "diagnosticNote": "Directly proves the theme in Part A by stating that nature reveals its deepest chambers when explorers listen to its rhythm.",
+          "childFeedback": "Spot on! This answer directly proves the theme in Question 5 by stating that nature reveals its deepest chambers when explorers listen to its rhythm."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Though their tools had changed from hemp rope to laser light, both quests proved that nature reveals its deepest chambers only when explorers listen to the mountain's own rhythm.",
-      "childTip": "Pick the exact quote in Paragraph 5 that explains when 'nature reveals its deepest chambers.'",
-      "parentExplanation": "Part B requires 100% verbatim textual evidence supporting the theme from Part A. Option D states the explicit thematic conclusion of the narrative."
+      "childTip": "Spot on! This answer directly proves the theme in Question 5 by stating that nature reveals its deepest chambers when explorers listen to its rhythm.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence supporting the theme from Part A. Option D states the explicit thematic conclusion of the narrative.",
+      "retryHint": "Pick the exact quote in Paragraph 5 that explains when 'nature reveals its deepest chambers.'"
     }
   ]
 }

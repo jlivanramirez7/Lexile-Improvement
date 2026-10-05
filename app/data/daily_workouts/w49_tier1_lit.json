@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Tightly packed brown contour lines marked the bluff on the map, and the cousins avoided it.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'marked on the paper map by tightly packed brown contour lines' and 'was wisely avoided by the cousins' show that brown contour lines marked the bluff and the cousins avoided it."
         },
         {
           "id": "B",
           "text": "The cousins drew brown contour lines on the granite bluff, and the saddle trail avoided the paper map.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This mixes up the sentence! The brown contour lines were already printed on the paper trail map—the cousins did not draw lines on the rock cliff."
         },
         {
           "id": "C",
           "text": "A gentle saddle trail marked the cousins with brown contour lines so they would not fall.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A trail cannot mark hikers with brown lines! The brown contour lines were on Maya's paper map."
         },
         {
           "id": "D",
           "text": "Park rangers painted brown lines across the granite ledge after Maya dropped her compass.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Contour lines are printed on a paper trail map to show how steep a hill is, not painted onto real mountain rocks by park rangers."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The steep granite bluff, marked on the paper map by tightly packed brown contour lines, was wisely avoided by the cousins in favor of a gentle saddle trail.",
-      "childTip": "Separate the two 'by' phrases: contour lines marked the bluff, while the cousins did the avoiding.",
-      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by tightly packed brown contour lines') explains how the bluff is represented on the map, and the second ('by the cousins') names the actors who avoided it."
+      "childTip": "In Paragraph 3, 'marked on the paper map by tightly packed brown contour lines' and 'was wisely avoided by the cousins' show that brown contour lines marked the bluff and the cousins avoided it.",
+      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by tightly packed brown contour lines') explains how the bluff is represented on the map, and the second ('by the cousins') names the actors who avoided it.",
+      "retryHint": "Check the two 'by' phrases in Paragraph 3: 'marked on the paper map by...' and 'was wisely avoided by...'"
     },
     {
       "questionId": "w49_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Tore into small strips to mark the trees along the path",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Maya needs her paper trail map to read the brown contour lines all the way to the shelter—she never tears it into strips."
         },
         {
           "id": "B",
           "text": "Turned and matched up so both pointed the same way",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'aligned' means turned and matched up so both pointed the same way, because Maya lined up the east border of her paper map with the east-pointing line between her two pebbles."
         },
         {
           "id": "C",
           "text": "Folded shut and tucked deep inside a hiking pack",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "She just 'unfolded her paper trail map' in that same sentence so she could read it, which is the opposite of folding it shut inside her pack."
         },
         {
           "id": "D",
           "text": "Covered with damp green moss from a hemlock trunk",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "In Paragraph 2, Maya refused to rely on hemlock moss and knelt on a sunny patch of flat rock instead."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Next, Maya unfolded her paper trail map and aligned its east border with her two pebbles on the ground.",
-      "childTip": "Think about why Maya matches the east edge of her map with the east-pointing line of pebbles.",
-      "parentExplanation": "After finding due east with her two pebbles, Maya oriented the east border of her trail map to match that line, showing that 'aligned' means placed in the same line or direction."
+      "childTip": "In Paragraph 3, 'aligned' means turned and matched up so both pointed the same way, because Maya lined up the east border of her paper map with the east-pointing line between her two pebbles.",
+      "parentExplanation": "After finding due east with her two pebbles, Maya oriented the east border of her trail map to match that line, showing that 'aligned' means placed in the same line or direction.",
+      "retryHint": "Picture what Maya is doing with the east border of her unfolded paper map and the east line of pebbles on the ground in Paragraph 3."
     },
     {
       "questionId": "w49_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She knows that hemlock trees only grow on the southern side of Tray Mountain.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Hemlock trees grow along the east ridge too (as seen in Paragraph 5); the issue is that damp mountain mist makes moss grow on all sides of the bark."
         },
         {
           "id": "B",
           "text": "She cannot see the tree bark clearly because the sun has already set behind the ridge.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The sun has not set yet—in Paragraph 2 Maya kneels on a sunny patch of flat rock and uses the sun's shadow to find east."
         },
         {
           "id": "C",
           "text": "She explains that mountain mist blows from all sides, causing moss to grow all around a trunk.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that in the damp Blue Ridge Mountains, mist blows through the gaps from every side, causing moss to grow all around a tree trunk instead of only on the north side."
         },
         {
           "id": "D",
           "text": "She thinks that white pebbles are easier to carry than strips of green tree moss.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Maya does not carry tree moss or pebbles down the trail; she uses two pebbles on the ground for fifteen minutes to track the moving shadow tip."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "In the damp Blue Ridge Mountains, mist blew through the gaps from every side, so moss often grew all around a tree trunk.",
-      "childTip": "Click the sentence in Paragraph 2 that explains why moss grows all around trees in the Blue Ridge Mountains.",
-      "parentExplanation": "Paragraph 2 explains that because damp mountain mist blows from every direction in the Blue Ridge Mountains, moss grows all around tree trunks rather than only on the north side."
+      "childTip": "Paragraph 2 explains that in the damp Blue Ridge Mountains, mist blows through the gaps from every side, causing moss to grow all around a tree trunk instead of only on the north side.",
+      "parentExplanation": "Paragraph 2 explains that because damp mountain mist blows from every direction in the Blue Ridge Mountains, moss grows all around tree trunks rather than only on the north side.",
+      "retryHint": "Read the second and third sentences of Paragraph 2 to see why moss grows all around a tree trunk on Tray Mountain."
     },
     {
       "questionId": "w49_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It explains how the cousins lost their compass in the briar ravine at the start of the hike.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Losing the plastic compass in the briar ravine happened at the very beginning of the story in Paragraph 1, not in Paragraph 4."
         },
         {
           "id": "B",
           "text": "It describes how park rangers built the stone shelter out of hemlock logs.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 5 mentions the tin roof of the stone shelter, and Paragraph 4 never describes how rangers built it."
         },
         {
           "id": "C",
           "text": "It proves that paper trail maps are useless unless a hiker also carries a plastic compass.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 proves the exact opposite: 'Without the compass needle, Maya's two pebbles and the contour map guided every turn.'"
         },
         {
           "id": "D",
           "text": "It shows the cousins putting the map clues into action as they compare the contour lines to the real mountain slopes.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "After Maya sets up the shadow stick and aligns the map in Paragraphs 2 and 3, Paragraph 4 shows the cousins hiking along the ridge as Devon matches the map's contour lines to the real slopes."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "As they hiked along the gentler curve of the ridge, Devon matched the map lines to the real hills around them.",
-      "childTip": "Look at what Devon and Maya do in Paragraph 4 as they hike along the ridge toward the shelter.",
-      "parentExplanation": "Paragraph 4 moves the plot from planning to successful navigation as Devon matches the bunched and wide-spaced contour lines on the page to the real cliffs and meadows around them."
+      "childTip": "After Maya sets up the shadow stick and aligns the map in Paragraphs 2 and 3, Paragraph 4 shows the cousins hiking along the ridge as Devon matches the map's contour lines to the real slopes.",
+      "parentExplanation": "Paragraph 4 moves the plot from planning to successful navigation as Devon matches the bunched and wide-spaced contour lines on the page to the real cliffs and meadows around them.",
+      "retryHint": "Read Paragraph 4 to see what Devon and Maya are doing with the map lines as they hike toward the shelter."
     },
     {
       "questionId": "w49_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Testing reliable clues in nature is much safer than relying on a quick guess when you lose your way.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story shows that when the cousins lose their compass, testing reliable clues in nature (the sun's shadow and contour lines) guides them safely, whereas guessing at tree moss could lead them astray."
         },
         {
           "id": "B",
           "text": "Hikers should always climb down into thorny ravines to rescue dropped equipment.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 specifically states that climbing down into the deep, thorny briar ravine to fetch the dropped compass would be unsafe."
         },
         {
           "id": "C",
           "text": "Tree moss is the only tool needed to cross the Blue Ridge Mountains in winter.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 2 explains that relying on bark moss alone in the damp mountains could easily lead hikers into the wrong hollow."
         },
         {
           "id": "D",
           "text": "A shadow stick only works on cloudy nights when the moon is hidden behind pine trees.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "A shadow stick needs daytime sunlight to cast a moving shadow from west to east—it would not work on a cloudy night."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day.",
-      "childTip": "Look at Paragraph 5 to see what Devon admits about checking the sun and slope lines versus guessing.",
-      "parentExplanation": "The story contrasts Devon's initial guess about tree moss with Maya's careful, methodical use of a shadow stick and contour lines, showing that tested observation beats guesswork."
+      "childTip": "The story shows that when the cousins lose their compass, testing reliable clues in nature (the sun's shadow and contour lines) guides them safely, whereas guessing at tree moss could lead them astray.",
+      "parentExplanation": "The story contrasts Devon's initial guess about tree moss with Maya's careful, methodical use of a shadow stick and contour lines, showing that tested observation beats guesswork.",
+      "retryHint": "Look at what Devon admits in Paragraph 5 about checking the sun's path and slope lines versus guessing at tree moss."
     },
     {
       "questionId": "w49_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Halfway up Tray Mountain, a sudden gust of wind knocked Maya's plastic compass from a granite ledge into a deep briar ravine.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 only tells how the wind knocked Maya's compass into the ravine."
         },
         {
           "id": "B",
           "text": "\"After waiting fifteen minutes, she placed a second pebble where the shadow tip had moved.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 2 describes one step of the shadow-stick test, without stating the overall theme of the story."
         },
         {
           "id": "C",
           "text": "\"He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 5 directly proves Question 5 by contrasting careful observation ('checking the sun's path and reading the slope lines') with a careless guess ('guessing at tree moss')."
         },
         {
           "id": "D",
           "text": "\"An hour before sunset, the tin roof of the stone shelter glinted through the hemlocks dead ahead.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 5 only shows the moment the cousins spotted the shelter roof before sunset."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "He admitted that checking the sun's path and reading the slope lines beat guessing at tree moss any day.",
-      "childTip": "Pick the quote in Paragraph 5 that directly contrasts reading the sun and map lines with guessing at moss.",
-      "parentExplanation": "Option C directly quotes Paragraph 5, confirming the theme that careful observation of the sun and map contours is far more dependable than guessing at moss."
+      "childTip": "This sentence from Paragraph 5 directly proves Question 5 by contrasting careful observation ('checking the sun's path and reading the slope lines') with a careless guess ('guessing at tree moss').",
+      "parentExplanation": "Option C directly quotes Paragraph 5, confirming the theme that careful observation of the sun and map contours is far more dependable than guessing at moss.",
+      "retryHint": "Find the quote from Paragraph 5 where Devon compares Maya's method with his earlier guess about tree moss."
     }
   ]
 }

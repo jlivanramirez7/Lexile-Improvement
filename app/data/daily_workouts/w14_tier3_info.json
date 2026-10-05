@@ -73,34 +73,39 @@
           "text": "Narrow rock pores located deep inside the clay",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Picks the object of the preposition 'from narrow rock pores' inside the middle modifier instead of the grammatical subject."
+          "diagnosticNote": "Picks the object of the preposition 'from narrow rock pores' inside the middle modifier instead of the grammatical subject.",
+          "childFeedback": "Narrow rock pores are the tiny spaces inside the clay where the minerals were hiding, not the items traded to the trees."
         },
         {
           "id": "B",
           "text": "Silky fungal threads that grow into tall tree trunks",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the agent collecting the minerals ('by silky fungal threads') with the item traded to the trees."
+          "diagnosticNote": "Confuses the agent collecting the minerals ('by silky fungal threads') with the item traded to the trees.",
+          "childFeedback": "Silky fungal threads are the underground partners that gather the minerals, and fungal threads never grow into tall tree trunks."
         },
         {
           "id": "C",
           "text": "Liquid sugar made from sunlight in the green canopy",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the trade: the fir trees give liquid sugar to the fungi, while receiving dissolved soil minerals."
+          "diagnosticNote": "Reverses the trade: the fir trees give liquid sugar to the fungi, while receiving dissolved soil minerals.",
+          "childFeedback": "Liquid sugar is what the towering fir trees give back ('in exchange for liquid sugar'), whereas dissolved soil minerals are what get traded TO the fir trees."
         },
         {
           "id": "D",
           "text": "Dissolved soil minerals collected by the fungi",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly links the grammatical subject 'Dissolved soil minerals' across the 9-word participial clause to the verb 'are steadily traded'."
+          "diagnosticNote": "Correctly links the grammatical subject 'Dissolved soil minerals' across the 9-word participial clause to the verb 'are steadily traded'.",
+          "childFeedback": "In Paragraph 2, the subject 'Dissolved soil minerals... are steadily traded to towering fir trees' tells us that dissolved soil minerals collected by the fungi are what the fir trees receive."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Dissolved soil minerals, gathered from narrow rock pores by silky fungal threads, are steadily traded to towering fir trees in exchange for liquid sugar.",
-      "childTip": "Cross out the middle phrase between the commas to see what subject connects directly to 'are steadily traded.'",
-      "parentExplanation": "This Sentence Surgery question tests Nested Clauses & Passive Tracking (ELAGSE5L1). When students strip out the embedded modifier ', gathered from narrow rock pores by silky fungal threads,', the core clause reads: 'Dissolved soil minerals... are steadily traded to towering fir trees.'"
+      "childTip": "In Paragraph 2, the subject 'Dissolved soil minerals... are steadily traded to towering fir trees' tells us that dissolved soil minerals collected by the fungi are what the fir trees receive.",
+      "parentExplanation": "This Sentence Surgery question tests Nested Clauses & Passive Tracking (ELAGSE5L1). When students strip out the embedded modifier ', gathered from narrow rock pores by silky fungal threads,', the core clause reads: 'Dissolved soil minerals... are steadily traded to towering fir trees.'",
+      "retryHint": "Find the main subject right before the comma and matching verb 'are steadily traded to towering fir trees' in Paragraph 2."
     },
     {
       "questionId": "w14_q2",
@@ -118,34 +123,39 @@
           "text": "A connecting pathway or channel",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Uses the root 'duct' (to lead) and context clues ('pump extra carbon through... directly into the roots') to identify a pathway."
+          "diagnosticNote": "Uses the root 'duct' (to lead) and context clues ('pump extra carbon through... directly into the roots') to identify a pathway.",
+          "childFeedback": "In Paragraph 3, 'conduit' means a connecting pathway or channel, because older hub trees pump extra carbon through the fungal threads directly into the roots of shaded seedlings."
         },
         {
           "id": "B",
           "text": "A poisonous chemical that blocks root growth",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the sentence context, where extra carbon is pumped through the conduit to help shaded seedlings survive."
+          "diagnosticNote": "Contradicts the sentence context, where extra carbon is pumped through the conduit to help shaded seedlings survive.",
+          "childFeedback": "Instead of blocking growth with poison, the fungal conduit delivers life-saving carbon to help shaded seedlings survive."
         },
         {
           "id": "C",
           "text": "A dense shadow cast by tall branches",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows the nearby concept of 'shaded seedlings' rather than decoding the noun through which carbon is pumped."
+          "diagnosticNote": "Borrows the nearby concept of 'shaded seedlings' rather than decoding the noun through which carbon is pumped.",
+          "childFeedback": "The dense shadow in Paragraph 3 is caused by thick branches overhead, whereas the fungal conduit is underground connecting the tree roots."
         },
         {
           "id": "D",
           "text": "A metal tool used by forest researchers",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Assumes 'conduit' refers to human laboratory equipment rather than the natural 'fungal conduit' described."
+          "diagnosticNote": "Assumes 'conduit' refers to human laboratory equipment rather than the natural 'fungal conduit' described.",
+          "childFeedback": "The fungal conduit is a natural living pathway made of fungal threads in the soil, not a metal tool carried by human researchers."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Older hub trees, which scientists sometimes call mother trees, pump extra carbon through the fungal conduit directly into the roots of shaded seedlings.",
-      "childTip": "Notice the words 'pump extra carbon through.' What kind of thing do you pump nutrients through?",
-      "parentExplanation": "Contextual vocabulary item (ELAGSE5RI4). The preposition 'through' paired with the verb 'pump... directly into the roots' signals that a 'fungal conduit' is a connecting tube, channel, or pathway."
+      "childTip": "In Paragraph 3, 'conduit' means a connecting pathway or channel, because older hub trees pump extra carbon through the fungal threads directly into the roots of shaded seedlings.",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5RI4). The preposition 'through' paired with the verb 'pump... directly into the roots' signals that a 'fungal conduit' is a connecting tube, channel, or pathway.",
+      "retryHint": "Picture how carbon travels 'through the fungal conduit directly into the roots' in Paragraph 3, like water flowing through a pipe or channel."
     },
     {
       "questionId": "w14_q3",
@@ -163,34 +173,39 @@
           "text": "The fungal threads wrap around the beetles on the bark and trap them before they can fly.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents an unsupported physical attack by underground fungi on tree-dwelling beetles."
+          "diagnosticNote": "Invents an unsupported physical attack by underground fungi on tree-dwelling beetles.",
+          "childFeedback": "Fungal threads grow underground beneath the leaf litter (Paragraph 1); they do not climb tree bark to trap flying beetles."
         },
         {
           "id": "B",
           "text": "Injured pine trees drain all the water from nearby trees so the beetles have nothing left to eat.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the cooperative relationship described in Paragraph 4 into a harmful one."
+          "diagnosticNote": "Reverses the cooperative relationship described in Paragraph 4 into a harmful one.",
+          "childFeedback": "Injured pines do not drain water from their neighbors; instead, they send helpful chemical warning signals through the root web."
         },
         {
           "id": "C",
           "text": "Chemical warning signals travel through the root web so neighboring pines can produce bitter resins before the insects arrive.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately traces the cause-and-effect chain in Paragraph 4 from root distress signals to defensive bitter resins."
+          "diagnosticNote": "Accurately traces the cause-and-effect chain in Paragraph 4 from root distress signals to defensive bitter resins.",
+          "childFeedback": "Paragraph 4 explains that when bark beetles bite one pine tree, chemical warning signals travel through the fungal root web so neighboring pines can brew bitter resins before the beetles arrive."
         },
         {
           "id": "D",
           "text": "The network guarantees that no insect can ever bite a single pine needle in the forest.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('guarantees', 'no insect can ever') that contradicts the first pine being chewed by beetles."
+          "diagnosticNote": "Uses extreme language ('guarantees', 'no insect can ever') that contradicts the first pine being chewed by beetles.",
+          "childFeedback": "Paragraph 4 starts with bark beetles chewing on the needles of a pine tree, so the network does not stop every single bite—it helps neighboring trees prepare defenses."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Upon receiving the warning, the untouched pines begin brewing bitter resins in their bark before the beetles even arrive.",
-      "childTip": "First click the sentence in Paragraph 4 that shows what untouched pines do after they get the warning signal.",
-      "parentExplanation": "This Click-to-Prove item tests scientific cause-and-effect relationships (ELAGSE5RI3). Paragraph 4 explains that injured pines send chemical signals through fungal threads, prompting neighboring pines to brew bitter defensive resins in advance."
+      "childTip": "Paragraph 4 explains that when bark beetles bite one pine tree, chemical warning signals travel through the fungal root web so neighboring pines can brew bitter resins before the beetles arrive.",
+      "parentExplanation": "This Click-to-Prove item tests scientific cause-and-effect relationships (ELAGSE5RI3). Paragraph 4 explains that injured pines send chemical signals through fungal threads, prompting neighboring pines to brew bitter defensive resins in advance.",
+      "retryHint": "Read the last three sentences of Paragraph 4 to trace what happens after an injured pine sends chemical signals into its root tips."
     },
     {
       "questionId": "w14_q4",
@@ -208,34 +223,39 @@
           "text": "Thick branches high in the canopy block sunlight from reaching small saplings on the ground.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Explains why young seedlings need help in summer, but does not show a two-way exchange."
+          "diagnosticNote": "Explains why young seedlings need help in summer, but does not show a two-way exchange.",
+          "childFeedback": "Branches blocking sunlight explains why young seedlings need help in summer, not how young trees give back to older trees."
         },
         {
           "id": "B",
           "text": "Scientists sometimes refer to older hub trees in the forest as mother trees.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Repeats a true detail from Paragraph 3 that does not prove that nutrients flow in both directions."
+          "diagnosticNote": "Repeats a true detail from Paragraph 3 that does not prove that nutrients flow in both directions.",
+          "childFeedback": "Calling older trees 'mother trees' only highlights how older trees care for young ones, without proving that young trees send nutrients back."
         },
         {
           "id": "C",
           "text": "Young saplings always produce more carbon than towering hub trees during every season of the year.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme words ('always', 'every season') and contradicts the passage."
+          "diagnosticNote": "Uses extreme words ('always', 'every season') and contradicts the passage.",
+          "childFeedback": "Paragraph 3 states that shaded saplings struggle to make enough sugar in summer, so they certainly do not make more carbon than tall trees in every season."
         },
         {
           "id": "D",
           "text": "When autumn arrived and the birch leaves fell, the young firs sent small amounts of sugar back to the bare birch roots.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves a two-way seasonal exchange by showing young firs returning sugar to leafless birch trees in autumn."
+          "diagnosticNote": "Directly proves a two-way seasonal exchange by showing young firs returning sugar to leafless birch trees in autumn.",
+          "childFeedback": "The last sentence of Paragraph 3 proves the trade goes both ways: once autumn arrived and the tall birch trees lost their leaves, the young firs sent sugar back to the bare birch roots."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Once autumn arrived and the birch leaves fell, the young firs sent small amounts of sugar back to the bare birch roots.",
-      "childTip": "Look for the sentence in Paragraph 3 where the young fir trees give something back to the older birch trees.",
-      "parentExplanation": "Focus standard ELAGSE5RI8 (Author's Claims & Supporting Evidence). To prove that the exchange is two-way rather than one-way, the reader must select the final sentence of Paragraph 3 showing young firs sending sugar back to bare birch roots in autumn."
+      "childTip": "The last sentence of Paragraph 3 proves the trade goes both ways: once autumn arrived and the tall birch trees lost their leaves, the young firs sent sugar back to the bare birch roots.",
+      "parentExplanation": "Focus standard ELAGSE5RI8 (Author's Claims & Supporting Evidence). To prove that the exchange is two-way rather than one-way, the reader must select the final sentence of Paragraph 3 showing young firs sending sugar back to bare birch roots in autumn.",
+      "retryHint": "Check the very last sentence of Paragraph 3 to see what the young fir trees did for the birch trees when autumn arrived."
     },
     {
       "questionId": "w14_q5",
@@ -254,34 +274,39 @@
           "text": "Underground fungal networks connect forest trees into a cooperative community that shares nutrients, supports young saplings, and spreads defense warnings.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes all major sections of the text: the fungal web (Para 1-2), sapling support (Para 3), defense signals (Para 4), and forest stewardship (Para 5)."
+          "diagnosticNote": "Synthesizes all major sections of the text: the fungal web (Para 1-2), sapling support (Para 3), defense signals (Para 4), and forest stewardship (Para 5).",
+          "childFeedback": "Across all five paragraphs, the central idea is that underground mycorrhizal fungal networks link forest trees together to trade nutrients, feed shaded saplings, and send pest warnings."
         },
         {
           "id": "B",
           "text": "Bark beetles are the most destructive pests in pine forests because they chew through green needles every summer.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses only on an example from Paragraph 4 rather than the central idea of the entire passage."
+          "diagnosticNote": "Focuses only on an example from Paragraph 4 rather than the central idea of the entire passage.",
+          "childFeedback": "Bark beetles are only one example in Paragraph 4 showing how the root web carries warning signals, not the main idea of the whole passage."
         },
         {
           "id": "C",
           "text": "Fungal threads cannot make their own food from sunlight because they grow beneath dark leaf litter.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "States a single supporting fact from Paragraph 2 instead of the overarching central claim."
+          "diagnosticNote": "States a single supporting fact from Paragraph 2 instead of the overarching central claim.",
+          "childFeedback": "Why fungi cannot make food from sunlight is just one detail in Paragraph 2 explaining why fungi trade minerals for tree sugar."
         },
         {
           "id": "D",
           "text": "Foresters have completely stopped harvesting timber from hills so that fungal threads are never disturbed.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme qualifiers ('completely stopped', 'never') that distort Paragraph 5's point about keeping hub trees intact."
+          "diagnosticNote": "Uses extreme qualifiers ('completely stopped', 'never') that distort Paragraph 5's point about keeping hub trees intact.",
+          "childFeedback": "Paragraph 5 says foresters now keep older hub trees intact to protect the fungal web when caring for woods, not that all timber harvesting has stopped completely."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Far from standing alone, forest trees use this living web to share food, water, and warning signals across long distances.",
-      "childTip": "Choose the big idea that covers food trading, sapling help, AND beetle warnings—not just one single paragraph!",
-      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Options B and C are classic 'Tiny Detail Traps' (`TRAP_TOO_NARROW`) from single paragraphs, while Option A integrates the entire passage."
+      "childTip": "Across all five paragraphs, the central idea is that underground mycorrhizal fungal networks link forest trees together to trade nutrients, feed shaded saplings, and send pest warnings.",
+      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Options B and C are classic 'Tiny Detail Traps' (`TRAP_TOO_NARROW`) from single paragraphs, while Option A integrates the entire passage.",
+      "retryHint": "Look at the last sentence of Paragraph 1, which previews all the ways forest trees use the living underground web across the article."
     },
     {
       "questionId": "w14_q6",
@@ -300,34 +325,39 @@
           "text": "\"Each trunk rises toward the sun as if competing against its neighbors for light and space.\"",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Quotes the opening surface appearance that the author immediately disproves in the rest of Paragraph 1."
+          "diagnosticNote": "Quotes the opening surface appearance that the author immediately disproves in the rest of Paragraph 1.",
+          "childFeedback": "This sentence from Paragraph 1 describes how trees look from above as if they are competing alone, which is the mistaken impression the author corrects."
         },
         {
           "id": "B",
           "text": "\"Far from standing alone, forest trees use this living web to share food, water, and warning signals across long distances.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves the central claim in Part A by summarizing how the underground web connects trees to share resources and warnings."
+          "diagnosticNote": "Directly proves the central claim in Part A by summarizing how the underground web connects trees to share resources and warnings.",
+          "childFeedback": "This quotation from Paragraph 1 directly states the passage's central idea by summing up how forest trees use the living underground web to share food, water, and warning signals."
         },
         {
           "id": "C",
           "text": "\"Because thick branches block the sun, a small seedling on the forest floor often struggles to make enough sugar to survive.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes only the problem faced by shaded seedlings in Paragraph 3 rather than the overall function of the network."
+          "diagnosticNote": "Describes only the problem faced by shaded seedlings in Paragraph 3 rather than the overall function of the network.",
+          "childFeedback": "This detail from Paragraph 3 only explains why shaded seedlings struggle in summer, leaving out mineral trading and pest warning signals."
         },
         {
           "id": "D",
           "text": "\"In the past, loggers often cleared every old tree from a hillside and left young seedlings to grow in bare soil.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Describes outdated logging practices in Paragraph 5 rather than supporting the central claim about the fungal network."
+          "diagnosticNote": "Describes outdated logging practices in Paragraph 5 rather than supporting the central claim about the fungal network.",
+          "childFeedback": "This sentence from Paragraph 5 describes how loggers used to clear hillsides in the past, rather than how the underground fungal network connects the forest."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Far from standing alone, forest trees use this living web to share food, water, and warning signals across long distances.",
-      "childTip": "Find the sentence in Paragraph 1 that sums up all the ways trees use the living underground web.",
-      "parentExplanation": "Part B requires selecting the verbatim thesis statement from Paragraph 1 that encapsulates resource sharing and warning signals across the forest network."
+      "childTip": "This quotation from Paragraph 1 directly states the passage's central idea by summing up how forest trees use the living underground web to share food, water, and warning signals.",
+      "parentExplanation": "Part B requires selecting the verbatim thesis statement from Paragraph 1 that encapsulates resource sharing and warning signals across the forest network.",
+      "retryHint": "Find the quote from Paragraph 1 that lists the three things forest trees share through the living underground web."
     }
   ]
 }

@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The bright red towel braced Nora against the ocean wind.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This mixes up the sentence parts! The bright red towel was tied to the top of the branch as a flag; it did not brace Nora."
         },
         {
           "id": "B",
           "text": "The lighthouse flag braced the upright posts in the wet sand.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The red towel only fluttered like a lighthouse flag on top of the branch—Nora is the one who braced the wood between the posts."
         },
         {
           "id": "C",
           "text": "Nora braced the longest cedar branch between the upright posts.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, the phrase 'by Nora' right after 'was firmly braced' tells us that Nora is the person who braced the longest cedar branch between the upright posts."
         },
         {
           "id": "D",
           "text": "Uncle Devon braced the cedar branch using his yellow kayak paddle.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Uncle Devon was still paddling his kayak out on the water in Paragraph 4 and did not help build the driftwood tower on shore."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The longest cedar branch, crowned with a bright red towel that fluttered like a lighthouse flag, was firmly braced by Nora between the upright posts.",
-      "childTip": "Skip the middle description about the red towel and look for 'by Nora' to find who did the bracing.",
-      "parentExplanation": "In this passive construction, 'The longest cedar branch' is the subject receiving the action, while the prepositional phrase 'by Nora' identifies Nora as the person who braced it."
+      "childTip": "In Paragraph 4, the phrase 'by Nora' right after 'was firmly braced' tells us that Nora is the person who braced the longest cedar branch between the upright posts.",
+      "parentExplanation": "In this passive construction, 'The longest cedar branch' is the subject receiving the action, while the prepositional phrase 'by Nora' identifies Nora as the person who braced it.",
+      "retryHint": "Look at the words 'was firmly braced by Nora' in Paragraph 4 to see who is doing the bracing."
     },
     {
       "questionId": "w27_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "A guiding signal that can be seen from far away",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 5, 'beacon' means a guiding signal that can be seen from far away, because the tall red-flagged tower helped the kayakers spot the camp from half a mile out."
         },
         {
           "id": "B",
           "text": "A sharp shell used for digging deep holes in sand",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Caleb used a curved clam shell to dig holes back in Paragraph 3, but in Paragraph 5 the 'tall beacon on the shell mound' refers to the signal tower."
         },
         {
           "id": "C",
           "text": "A strong ocean current that pushes boats toward a marsh",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "A current pushes boats in the water, whereas the tall beacon stood on top of the shell mound to keep the paddlers from drifting past the camp."
         },
         {
           "id": "D",
           "text": "A wooden kayak paddle painted bright yellow",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Uncle Devon waved his yellow paddle when he saw the red flag, so the beacon on the shell mound was the tower on shore, not his paddle."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Without that tall beacon on the shell mound, the paddlers might have drifted past the camp toward the marsh.",
-      "childTip": "Think about what the tall tower with the red flag does: it guides the kayakers to shore.",
-      "parentExplanation": "In Paragraph 5, 'that tall beacon' refers back to the five-foot driftwood tower topped with a red flag that guided the kayakers to their landing spot from half a mile away."
+      "childTip": "In Paragraph 5, 'beacon' means a guiding signal that can be seen from far away, because the tall red-flagged tower helped the kayakers spot the camp from half a mile out.",
+      "parentExplanation": "In Paragraph 5, 'that tall beacon' refers back to the five-foot driftwood tower topped with a red flag that guided the kayakers to their landing spot from half a mile away.",
+      "retryHint": "Think about how the tall tower with the red towel helped Uncle Devon find the camp from half a mile away in Paragraph 5."
     },
     {
       "questionId": "w27_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "The sand near the water is too hard to dig with a clam shell.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 never says the wet sand near the water was too hard to dig; the real danger near the water was the rising surf."
         },
         {
           "id": "B",
           "text": "All of the dried marsh vines grow only on top of the rocky jetty.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "In Paragraph 4, the cousins find dried marsh vines along the wrack line on the beach, not growing on the rocky jetty."
         },
         {
           "id": "C",
           "text": "They are not allowed to walk near the foamy waves without their aunt and uncle.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story never mentions a rule against walking near the waves; Caleb and Nora chose the high mound to protect their tower from the tide."
         },
         {
           "id": "D",
           "text": "They want to keep the rising tide from knocking their driftwood frame down.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that the afternoon tide was creeping up the beach, so building high on the shell mound kept the rising waves from knocking their driftwood tower down."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "If the cousins built their tower too low on the beach, the rising surf would knock the whole frame down.",
-      "childTip": "Click the sentence in Paragraph 2 that tells what would happen if they built the tower too low on the beach.",
-      "parentExplanation": "Paragraph 2 explains that the afternoon tide was creeping up the slope, so building too low on the beach would allow the rising surf to knock the tower down."
+      "childTip": "Paragraph 2 explains that the afternoon tide was creeping up the beach, so building high on the shell mound kept the rising waves from knocking their driftwood tower down.",
+      "parentExplanation": "Paragraph 2 explains that the afternoon tide was creeping up the slope, so building too low on the beach would allow the rising surf to knock the tower down.",
+      "retryHint": "Read the third sentence of Paragraph 2 to see what would happen if the cousins built their tower too low on the beach."
     },
     {
       "questionId": "w27_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It causes the cousins to give up on building and swim out to meet the kayaks instead.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Caleb and Nora never give up or swim out to the kayaks; instead, they fix the design by digging deep holes and tying the joints with vines."
         },
         {
           "id": "B",
           "text": "It leads Caleb to dig deep anchor holes so the poles can stand firm against the wind.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "When the ocean gust blows down the loosely propped poles in Paragraph 3, Caleb realizes the tower needs deep anchor holes and strong ties, leading him to bury the posts two feet deep."
         },
         {
           "id": "C",
           "text": "It shows that the wind is too strong for anyone to paddle a kayak around Tybee Point.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Although the coastal breeze knocks over the loose poles at first, the aunt and uncle still paddle their kayaks safely around the point in Paragraph 5."
         },
         {
           "id": "D",
           "text": "It explains why the cedar limbs had turned white from lying in the bright sun.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The sun-bleached cedar limbs were already mentioned in Paragraph 2; the collapse in Paragraph 3 shows why the poles needed deep anchors in the sand."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "He realized that smooth driftwood needed a deep anchor and strong ties to survive the coastal breeze.",
-      "childTip": "Look at what Caleb learns right after the wind blows the loose poles flat into the sand.",
-      "parentExplanation": "When the wind knocks down the loosely propped poles in Paragraph 3, Caleb realizes the tower needs deep anchor holes and strong ties, leading to the sturdy design that succeeds."
+      "childTip": "When the ocean gust blows down the loosely propped poles in Paragraph 3, Caleb realizes the tower needs deep anchor holes and strong ties, leading him to bury the posts two feet deep.",
+      "parentExplanation": "When the wind knocks down the loosely propped poles in Paragraph 3, Caleb realizes the tower needs deep anchor holes and strong ties, leading to the sturdy design that succeeds.",
+      "retryHint": "Look at Paragraph 3 right after the wind blows the loose wood flat into the sand—what does Caleb realize and do next?"
     },
     {
       "questionId": "w27_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Kayakers should always carry a radio instead of looking for landmarks on the shore.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Radios are never mentioned in the passage, and the driftwood landmark on the shore worked well to guide the kayakers home."
         },
         {
           "id": "B",
           "text": "Ocean beaches are too windy for building anything out of natural driftwood.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The cousins successfully build a sturdy five-foot driftwood tower that holds its ground against the gusts, proving beaches are not too windy to build on."
         },
         {
           "id": "C",
           "text": "Careful planning and teamwork can overcome natural challenges when a first attempt fails.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story shows how Caleb and Nora overcome the rising tide and strong wind after their first tower falls by working together and planning a stronger anchored design."
         },
         {
           "id": "D",
           "text": "Clam shells are better digging tools than metal shovels on a sandy island.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Metal shovels are never compared to clam shells in the story, and using a shell to dig is just one small detail rather than the central theme."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Working together with smart planning had beaten both the wind and the rising tide.",
-      "childTip": "Check the very last sentence of the story to see what helped Caleb and Nora succeed.",
-      "parentExplanation": "Throughout the story, Caleb and Nora adapt their plan (choosing high ground, digging anchor holes, lashing with vines) and work together to beat the wind and tide."
+      "childTip": "The story shows how Caleb and Nora overcome the rising tide and strong wind after their first tower falls by working together and planning a stronger anchored design.",
+      "parentExplanation": "Throughout the story, Caleb and Nora adapt their plan (choosing high ground, digging anchor holes, lashing with vines) and work together to beat the wind and tide.",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see what lesson Caleb and Nora's success teaches about teamwork and planning."
     },
     {
       "questionId": "w27_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Working together with smart planning had beaten both the wind and the rising tide.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This closing sentence from Paragraph 5 directly states the story's theme from Question 5: working together with smart planning helped the cousins beat the wind and rising tide."
         },
         {
           "id": "B",
           "text": "\"Foamy waves hissed across the flat shells and crept closer to the dry sand every minute.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 2 only describes the rising tide on the beach, without showing how teamwork and planning solved the problem."
         },
         {
           "id": "C",
           "text": "\"Using a curved clam shell, he dug three deep holes into the damp sand at the base of the mound.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 3 describes one step Caleb took while digging, rather than summing up the overall theme of teamwork and planning."
         },
         {
           "id": "D",
           "text": "\"Salt wind whipped across the wide sandbar at the north end of Tybee Island.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 just sets the windy beach scene and does not show how the cousins succeeded."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Working together with smart planning had beaten both the wind and the rising tide.",
-      "childTip": "Pick the quote from Paragraph 5 that directly connects teamwork and planning to beating the wind and tide.",
-      "parentExplanation": "Option D provides the direct textual evidence from the story's conclusion confirming how teamwork and smart planning overcame the environmental obstacles."
+      "childTip": "This closing sentence from Paragraph 5 directly states the story's theme from Question 5: working together with smart planning helped the cousins beat the wind and rising tide.",
+      "parentExplanation": "Option D provides the direct textual evidence from the story's conclusion confirming how teamwork and smart planning overcame the environmental obstacles.",
+      "retryHint": "Choose the quote from Paragraph 5 that directly connects teamwork and smart planning to overcoming nature's challenges."
     }
   ]
 }

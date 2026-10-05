@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The upper steel frame bending in the wind",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "In Paragraph 2, the upper steel frame is what sways in the storm and receives the action—the massive sphere hanging near the roof is what counters that sway."
         },
         {
           "id": "B",
           "text": "A massive sphere hanging near the roof",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'is smoothly countered by' shows that 'a massive sphere hanging near the roof' is what pushes back against the tower's sideways sway."
         },
         {
           "id": "C",
           "text": "A fierce coastal storm blowing from the sea",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The fierce coastal storm CAUSES the violent sway in Paragraph 2; the massive sphere hanging near the roof is what counters the sway."
         },
         {
           "id": "D",
           "text": "Office workers standing on the top floors",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Office workers are mentioned in Paragraph 1 as feeling dizzy when a tower sways; they don't counter the sway of the steel frame!"
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "During a fierce coastal storm, the violent sideways sway of the upper steel frame is smoothly countered by a massive sphere hanging near the roof.",
-      "childTip": "Look right after the passive verb 'is smoothly countered by' to spot what pushes back against the sway.",
-      "parentExplanation": "In this passive-voice sentence, 'the violent sideways sway of the upper steel frame' receives the action. The true actor performing the action comes after 'by': 'a massive sphere hanging near the roof' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'is smoothly countered by' shows that 'a massive sphere hanging near the roof' is what pushes back against the tower's sideways sway.",
+      "parentExplanation": "In this passive-voice sentence, 'the violent sideways sway of the upper steel frame' receives the action. The true actor performing the action comes after 'by': 'a massive sphere hanging near the roof' (Option B).",
+      "retryHint": "Look right after 'is smoothly countered by' in Paragraph 2 to see what actually counters the sway of the frame."
     },
     {
       "questionId": "w58_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Melted down into liquid gold inside a furnace",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The golden steel ball isn't melted in a furnace; Paragraph 2 says it hangs from thick steel cables near the top of the tower."
         },
         {
           "id": "B",
           "text": "Sent home from school for breaking a rule",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "'Suspended' can mean sent home from school in other stories, but here it describes a seven-hundred-ton steel ball hanging from cables!"
         },
         {
           "id": "C",
           "text": "Bolted flat against the concrete basement floor",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Bolted flat to the basement floor is the opposite of 'suspended'! The ball hangs from steel cables between the 87th and 92nd floors so it can swing."
         },
         {
           "id": "D",
           "text": "Held up from above so it can hang and swing",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'suspended' means held up from above so it can hang and swing. The words right around it—'hangs... from thick steel cables'—give away its meaning."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "It hangs suspended from thick steel cables spanning five stories between the eighty-seventh and ninety-second floors.",
-      "childTip": "Use the clue words 'hangs' and 'from thick steel cables' right next to 'suspended' in the sentence.",
-      "parentExplanation": "The root 'pend' means to hang. Combined with the context clue 'hangs... from thick steel cables,' 'suspended' clearly means held up from above so it can hang and swing (Option A)."
+      "childTip": "In Paragraph 2, 'suspended' means held up from above so it can hang and swing. The words right around it—'hangs... from thick steel cables'—give away its meaning.",
+      "parentExplanation": "The root 'pend' means to hang. Combined with the context clue 'hangs... from thick steel cables,' 'suspended' clearly means held up from above so it can hang and swing (Option A).",
+      "retryHint": "Use the clue words 'hangs' and 'from thick steel cables' right next to 'suspended' in Paragraph 2."
     },
     {
       "questionId": "w58_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "To slow down the swinging ball and turn the wind's force into harmless warmth",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that without bumpers, the heavy sphere could swing too fast, so the oil-filled pistons slow it down by absorbing the wind's force and turning that motion into harmless warmth."
         },
         {
           "id": "B",
           "text": "To pump fresh oil up to the roof water tanks during a dry summer",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The oil stays inside the bumper tubes around the steel ball in Paragraph 4—it is never pumped into the roof water tanks mentioned in Paragraph 5!"
         },
         {
           "id": "C",
           "text": "To make the golden sphere spin in circles like a giant ceiling fan",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The steel ball swings back and forth like a pendulum to counter the wind; it doesn't spin in circles like a ceiling fan."
         },
         {
           "id": "D",
           "text": "To push the skyscraper further in the same direction that the wind is blowing",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 3 says the ball swings in the OPPOSITE direction of the building's sway, and Paragraph 4 says the bumpers slow the ball down rather than pushing the tower further."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The pistons absorb the raw force of the wind and turn that motion into harmless warmth inside the oil.",
-      "childTip": "Click the sentence in Paragraph 4 that explains what the pistons do with the raw force of the wind.",
-      "parentExplanation": "Paragraph 4 explains that without bumpers, the seven-hundred-ton sphere could swing too fast; the oil-filled pistons 'absorb the raw force of the wind and turn that motion into harmless warmth inside the oil' (Option A)."
+      "childTip": "Paragraph 4 explains that without bumpers, the heavy sphere could swing too fast, so the oil-filled pistons slow it down by absorbing the wind's force and turning that motion into harmless warmth.",
+      "parentExplanation": "Paragraph 4 explains that without bumpers, the seven-hundred-ton sphere could swing too fast; the oil-filled pistons 'absorb the raw force of the wind and turn that motion into harmless warmth inside the oil' (Option A).",
+      "retryHint": "Check the fourth sentence of Paragraph 4 to see what the pistons inside the oil-filled bumpers do with the force of the wind."
     },
     {
       "questionId": "w58_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It compares the cost of steel cables in Taiwan to the cost of water tanks in other countries.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The passage never mentions the dollar cost of steel cables or water tanks; it explains how heavy counterweights stop skyscrapers from swaying."
         },
         {
           "id": "B",
           "text": "It lists famous skyscrapers in chronological order from the oldest brick tower to the newest glass building.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The article doesn't list skyscrapers by age from brick to glass; Taipei 101 is the only specific tower named as an example of a tuned mass damper."
         },
         {
           "id": "C",
           "text": "It presents the problem of swaying skyscrapers and explains the engineering solution of tuned mass dampers step by step.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 introduces the problem of tall skyscrapers swaying in strong winds and earthquakes, and Paragraphs 2 through 5 explain step by step how tuned mass dampers solve that problem."
         },
         {
           "id": "D",
           "text": "It argues that people should stop building tall towers near windy coastlines or earthquake zones.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Instead of arguing against tall towers, Paragraph 5 celebrates how tuned mass dampers make skyscrapers safe in windy and earthquake-prone cities."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "To solve this problem, civil engineers place a hidden device called a tuned mass damper near the top of the tower.",
-      "childTip": "Look at how Paragraph 1 introduces a problem and Paragraph 2 begins with 'To solve this problem.'",
-      "parentExplanation": "Aligned to ELAGSE5RI5, the text uses a problem-and-solution combined with cause-and-effect structure: Paragraph 1 introduces the problem of wind and earthquake sway, and Paragraphs 2–5 explain how tuned mass dampers solve it (Option A)."
+      "childTip": "Paragraph 1 introduces the problem of tall skyscrapers swaying in strong winds and earthquakes, and Paragraphs 2 through 5 explain step by step how tuned mass dampers solve that problem.",
+      "parentExplanation": "Aligned to ELAGSE5RI5, the text uses a problem-and-solution combined with cause-and-effect structure: Paragraph 1 introduces the problem of wind and earthquake sway, and Paragraphs 2–5 explain how tuned mass dampers solve it (Option A).",
+      "retryHint": "Notice how Paragraph 1 sets up the problem of swaying towers and Paragraph 2 begins with 'To solve this problem.'"
     },
     {
       "questionId": "w58_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Oil-filled bumpers heat up oil so that skyscrapers stay warm during cold winter storms.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The oil-filled bumpers in Paragraph 4 only turn motion into harmless warmth inside the cylinders—they aren't furnaces meant to heat the building in winter!"
         },
         {
           "id": "B",
           "text": "Taipei 101 is the only skyscraper in the world that can survive a coastal storm without snapping.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 explains that many skyscrapers stay steady using steel balls or rooftop water tanks, so Taipei 101 is definitely not the only one."
         },
         {
           "id": "C",
           "text": "Steel frames must be made completely stiff and unbending so that office workers never feel dizzy.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 states the exact opposite: every tall tower MUST be slightly flexible so it does not snap when fierce winds slam into its walls."
         },
         {
           "id": "D",
           "text": "Tuned mass dampers protect tall buildings from wind and tremors by swinging in the opposite direction of the sway and absorbing motion.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across all five paragraphs, the central idea is that tuned mass dampers keep tall skyscrapers steady during storms and earthquakes by swinging opposite to the sway and absorbing motion."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "As the tower begins to spring back, the suspended ball swings in the opposite direction of the building's motion.",
-      "childTip": "Pick the answer that explains how the giant counterweight keeps tall buildings steady during storms.",
-      "parentExplanation": "The central idea across all five paragraphs is that tuned mass dampers stabilize skyscrapers by swinging opposite to the tower's sway and absorbing wind and earthquake energy (Option A)."
+      "childTip": "Across all five paragraphs, the central idea is that tuned mass dampers keep tall skyscrapers steady during storms and earthquakes by swinging opposite to the sway and absorbing motion.",
+      "parentExplanation": "The central idea across all five paragraphs is that tuned mass dampers stabilize skyscrapers by swinging opposite to the tower's sway and absorbing wind and earthquake energy (Option A).",
+      "retryHint": "Think about the big idea that covers why skyscrapers sway (Paragraph 1) and how dampers keep them steady (Paragraphs 2–5)."
     },
     {
       "questionId": "w58_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"When people look up at a hundred-story skyscraper, the tower of steel and glass appears stiff and unmoving.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 only describes how a skyscraper looks from the ground, before explaining why it sways or how a damper works."
         },
         {
           "id": "B",
           "text": "\"As the tower begins to spring back, the suspended ball swings in the opposite direction of the building's motion.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from Paragraph 3 directly supports Question 5 by explaining how the suspended ball swings in the opposite direction of the tower's motion to cancel out the sway."
         },
         {
           "id": "C",
           "text": "\"In the Taipei 101 skyscraper in Taiwan, this golden steel ball weighs more than seven hundred tons.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 2 only gives the weight of the ball in Taipei 101, without explaining how the ball moves to protect the building."
         },
         {
           "id": "D",
           "text": "\"Not every skyscraper uses a round steel ball to stay steady.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This transition line from Paragraph 5 only introduces rooftop water tanks, without explaining how dampers swing opposite the sway to steady a tower."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "As the tower begins to spring back, the suspended ball swings in the opposite direction of the building's motion.",
-      "childTip": "Choose the quote from Paragraph 3 that shows how the suspended ball moves to cancel out the sway.",
-      "parentExplanation": "Option C directly proves Part A by explaining the core mechanism: the suspended sphere swings in the opposite direction of the building's motion to cancel out the sway."
+      "childTip": "This quote from Paragraph 3 directly supports Question 5 by explaining how the suspended ball swings in the opposite direction of the tower's motion to cancel out the sway.",
+      "parentExplanation": "Option C directly proves Part A by explaining the core mechanism: the suspended sphere swings in the opposite direction of the building's motion to cancel out the sway.",
+      "retryHint": "Check Paragraph 3 for the sentence showing which direction the suspended ball swings when the tower springs back."
     }
   ]
 }

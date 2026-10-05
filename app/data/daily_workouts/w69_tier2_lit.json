@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Kenji, using a single diagonal motion",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'was smoothly unfolded by' points to 'Kenji' as the person who pulled open the wide grid of linked paper parallelograms."
         },
         {
           "id": "B",
           "text": "The linked paper parallelograms pushing against the desk",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The linked paper parallelograms are the folded paper shapes that got opened ('was smoothly unfolded')—they didn't unfold themselves!"
         },
         {
           "id": "C",
           "text": "The clear plastic rocket tube on Kenji's desk",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The clear plastic rocket tube was back on Kenji's desk in Paragraph 1; in Paragraph 2, Kenji is in his aunt's art room unfolding gold grid paper."
         },
         {
           "id": "D",
           "text": "The diagonal motion pulling the wooden bone folder",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'In a single diagonal motion' only describes HOW Kenji pulled the corners, and his aunt had already finished using the wooden bone folder."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "When the corners of the patterned sheet were pulled apart, a wide grid of linked paper parallelograms was smoothly unfolded by Kenji in a single diagonal motion.",
-      "childTip": "Look right after 'was smoothly unfolded by' to find who performed the action.",
-      "parentExplanation": "In the main passive clause, 'a wide grid of linked paper parallelograms' is the receiver of 'was smoothly unfolded.' The true actor appears after the preposition 'by': 'Kenji' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'was smoothly unfolded by' points to 'Kenji' as the person who pulled open the wide grid of linked paper parallelograms.",
+      "parentExplanation": "In the main passive clause, 'a wide grid of linked paper parallelograms' is the receiver of 'was smoothly unfolded.' The true actor appears after the preposition 'by': 'Kenji' (Option B).",
+      "retryHint": "Look right after 'was smoothly unfolded by' in Paragraph 2 to see who unfolded the patterned paper grid."
     },
     {
       "questionId": "w69_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Torn into dozens of loose scraps that cannot be fixed",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The paper isn't torn into scraps! Paragraph 3 says its angled creases worked like linked hinges so it folded and unfolded smoothly."
         },
         {
           "id": "B",
           "text": "Neatly and tightly packed into a very small space",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'compact' means neatly and tightly packed into a very small space. The sentence gives a vivid clue: the whole two-foot sheet collapsed into a flat packet 'smaller than a deck of cards.'"
         },
         {
           "id": "C",
           "text": "Heavy enough to break through a plastic rocket tube",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "A folded sheet of paper or thin mylar film is super light, not heavy enough to break plastic! 'Compact' describes its small, tightly folded size."
         },
         {
           "id": "D",
           "text": "Stretched out across the entire length of the art room",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Stretched across the whole art room is the opposite of 'compact'! In Paragraph 3, the sheet shrank down to a packet smaller than a deck of cards."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Kenji blinked in surprise as the whole sheet collapsed back into a flat, compact packet smaller than a deck of cards.",
-      "childTip": "Use the clues 'collapsed back' and 'smaller than a deck of cards' to picture the folded packet.",
-      "parentExplanation": "Because the wide sheet collapsed into a flat packet 'smaller than a deck of cards,' the word 'compact' means neatly and tightly packed into a very small space (Option C)."
+      "childTip": "In Paragraph 3, 'compact' means neatly and tightly packed into a very small space. The sentence gives a vivid clue: the whole two-foot sheet collapsed into a flat packet 'smaller than a deck of cards.'",
+      "parentExplanation": "Because the wide sheet collapsed into a flat packet 'smaller than a deck of cards,' the word 'compact' means neatly and tightly packed into a very small space (Option C).",
+      "retryHint": "Use the clues 'collapsed back into a flat... packet' and 'smaller than a deck of cards' in Paragraph 3."
     },
     {
       "questionId": "w69_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "It requires four students to pull every row one by one during the design fair.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 3 says the exact opposite: 'Because the angled creases worked like linked hinges, he did not need to tug each row one by one.'"
         },
         {
           "id": "B",
           "text": "It uses thick wooden boards that stay rolled in a tight tube even after leaving the nose cone.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Rolled poster board that stayed curled in a tube was one of Kenji's failed models in Paragraph 1, not the flat-opening origami fold!"
         },
         {
           "id": "C",
           "text": "Its angled creases act like linked hinges so the entire sheet opens or closes from just two corners without jamming.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that the origami pattern's angled creases act like linked hinges and don't stack straight on top of each other, so pulling just two corners opens or closes the whole sheet without jamming."
         },
         {
           "id": "D",
           "text": "It melts the plastic rocket sleeve so the solar wing does not have to slide out the top.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Nothing melts the plastic rocket tube! In Paragraph 4, the folded mylar wing slides smoothly into the tube with room to spare."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because the angled creases worked like linked hinges, he did not need to tug each row one by one.",
-      "childTip": "Click the sentence in Paragraph 3 that explains how the angled creases act like linked hinges.",
-      "parentExplanation": "Paragraph 3 explains that because the angled creases act like linked hinges and do not stack straight on top of each other, pushing or pulling just two opposite corners makes the entire sheet expand or shrink smoothly without jamming (Option A)."
+      "childTip": "Paragraph 3 explains that the origami pattern's angled creases act like linked hinges and don't stack straight on top of each other, so pulling just two corners opens or closes the whole sheet without jamming.",
+      "parentExplanation": "Paragraph 3 explains that because the angled creases act like linked hinges and do not stack straight on top of each other, pushing or pulling just two opposite corners makes the entire sheet expand or shrink smoothly without jamming (Option A).",
+      "retryHint": "Check the second and third sentences of Paragraph 3 to see how the angled creases work like linked hinges when two corners are pushed or pulled."
     },
     {
       "questionId": "w69_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "To show that Kenji painted green tree bark across the outside of his plastic rocket tube",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Kenji never painted green tree bark on his plastic tube; 'metal leaf' is a comparison describing how his shiny mylar wing unfolded."
         },
         {
           "id": "B",
           "text": "To explain why the judges decided to move the space design fair outdoors under a beech tree",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The Friday judging takes place indoors with his desk tube and nose cone, not outdoors under a beech tree!"
         },
         {
           "id": "C",
           "text": "To prove that real leaves are made of thin metallic mylar film and steel spring rods",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Real tree leaves are living plant parts, not made of metallic mylar and steel springs! The author is comparing the solar model to a leaf."
         },
         {
           "id": "D",
           "text": "To connect the smooth unfolding of the shiny solar model back to his aunt's clue about how a beech leaf unfolds from a tiny bud",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Comparing the opening solar wing to 'a metal leaf waking in the sun' connects back to his aunt's clue in Paragraph 2 about a young beech leaf unfolding from a tiny winter bud."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Like a metal leaf waking in the sun, the mylar array glided open into a wide, shimmering square without a single snag.",
-      "childTip": "Remember what Kenji's aunt told him in Paragraph 2 about how a young beech leaf waits inside a winter bud.",
-      "parentExplanation": "Aligned to ELAGSE5RL4, this simile echoes the aunt's natural example in Paragraph 2 ('how a young beech leaf waits inside a tiny winter bud') and helps the reader visualize the shiny mylar wing unfolding smoothly from its tight tube (Option B)."
+      "childTip": "Comparing the opening solar wing to 'a metal leaf waking in the sun' connects back to his aunt's clue in Paragraph 2 about a young beech leaf unfolding from a tiny winter bud.",
+      "parentExplanation": "Aligned to ELAGSE5RL4, this simile echoes the aunt's natural example in Paragraph 2 ('how a young beech leaf waits inside a tiny winter bud') and helps the reader visualize the shiny mylar wing unfolding smoothly from its tight tube (Option B).",
+      "retryHint": "Connect 'Like a metal leaf waking in the sun' in Paragraph 5 back to what Kenji's aunt told him in Paragraph 2 about a young beech leaf."
     },
     {
       "questionId": "w69_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Engineering challenges can often be solved by looking to patterns found in nature and traditional art.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "When Kenji's first three models fail, he solves his space-design challenge by learning a leaf-inspired origami fold from his aunt, showing how patterns from nature and traditional art can solve modern engineering problems."
         },
         {
           "id": "B",
           "text": "Cardboard and tape are always the strongest materials to use when building a rocket model.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 shows that stiff poster board and taped cardboard squares actually FAILED by curling or jamming inside the narrow tube!"
         },
         {
           "id": "C",
           "text": "Students should never ask family members for advice when preparing for a school science fair.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Asking his aunt in the art room for advice is what helped Kenji succeed, so the story definitely encourages learning from family members!"
         },
         {
           "id": "D",
           "text": "A dull butter knife is the only tool that can cut shiny metallic mylar film into squares.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 4 says Kenji used a dull butter knife to score fold lines without cutting the mylar—not to cut the film into squares."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "The judges leaned forward in amazement, seeing how an ancient paper art could solve a modern space problem.",
-      "childTip": "Look at the final sentence of the story to see what big lesson Kenji's project teaches.",
-      "parentExplanation": "Kenji overcomes his engineering roadblock by learning a leaf-inspired origami fold from his aunt in the art room, illustrating the theme that patterns from nature and traditional art can solve modern engineering problems (Option A)."
+      "childTip": "When Kenji's first three models fail, he solves his space-design challenge by learning a leaf-inspired origami fold from his aunt, showing how patterns from nature and traditional art can solve modern engineering problems.",
+      "parentExplanation": "Kenji overcomes his engineering roadblock by learning a leaf-inspired origami fold from his aunt in the art room, illustrating the theme that patterns from nature and traditional art can solve modern engineering problems (Option A).",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see what amazed the judges about how Kenji solved his space problem."
     },
     {
       "questionId": "w69_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"When he rolled stiff poster board into a cylinder, the curled edges refused to lie flat.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only describes why Kenji's first poster-board model failed, before he learned the origami fold."
         },
         {
           "id": "B",
           "text": "\"He used a dull butter knife and a steel ruler to score every line with care.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 4 only tells which tools Kenji used to crease the mylar, without stating the theme about traditional art and nature."
         },
         {
           "id": "C",
           "text": "\"The judges leaned forward in amazement, seeing how an ancient paper art could solve a modern space problem.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly proves Question 5 by stating how an ancient paper art (origami) solved Kenji's modern space design problem."
         },
         {
           "id": "D",
           "text": "\"At the Friday afternoon judging, Kenji attached two light spring rods to the opposite corners of his folded wing.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 5 only explains how Kenji attached spring rods to the corners, not the larger lesson that amazed the judges."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "The judges leaned forward in amazement, seeing how an ancient paper art could solve a modern space problem.",
-      "childTip": "Choose the quote from Paragraph 5 that directly connects ancient paper folding to a modern space problem.",
-      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 showing how traditional origami solved Kenji's spacecraft engineering challenge, directly supporting Part A."
+      "childTip": "This final sentence from Paragraph 5 directly proves Question 5 by stating how an ancient paper art (origami) solved Kenji's modern space design problem.",
+      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 showing how traditional origami solved Kenji's spacecraft engineering challenge, directly supporting Part A.",
+      "retryHint": "Check the last sentence of Paragraph 5 showing how the judges reacted to an ancient paper art solving a modern space problem."
     }
   ]
 }

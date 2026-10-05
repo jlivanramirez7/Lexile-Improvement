@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The head judge sampled the golden peach cobbler with a silver spoon.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the phrase 'by the head judge' right after 'was eagerly sampled' shows that the head judge is the person who tasted the golden peach cobbler with a silver spoon."
         },
         {
           "id": "B",
           "text": "The golden peach cobbler sampled the silver spoon on Table Four.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the action in a silly way! A peach cobbler is a dessert in a baking dish—it cannot taste a silver spoon."
         },
         {
           "id": "C",
           "text": "A pinch of grated nutmeg sampled the fresh lemon peel.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Nutmeg and fresh lemon peel are just the spices used to season the cobbler; the head judge is the one who sampled the dish."
         },
         {
           "id": "D",
           "text": "Aunt Delia sampled the three-layer cake behind the rope.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Aunt Delia is only mentioned because the narrator used her family recipe and old blue dish; the head judge is the one tasting the entries."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The golden peach cobbler, seasoned with a pinch of grated nutmeg and fresh lemon peel, was eagerly sampled by the head judge with a silver spoon.",
-      "childTip": "Look for the 'by' phrase right after 'was eagerly sampled' to see who tasted the cobbler.",
-      "parentExplanation": "In this passive-voice sentence, 'The golden peach cobbler' receives the action, while 'by the head judge' identifies the actor who sampled it."
+      "childTip": "In Paragraph 3, the phrase 'by the head judge' right after 'was eagerly sampled' shows that the head judge is the person who tasted the golden peach cobbler with a silver spoon.",
+      "parentExplanation": "In this passive-voice sentence, 'The golden peach cobbler' receives the action, while 'by the head judge' identifies the actor who sampled it.",
+      "retryHint": "Look at the words 'was eagerly sampled by the head judge' in Paragraph 3 to see who did the tasting."
     },
     {
       "questionId": "w33_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Burned black and impossible to eat",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The cobbler is not burned black—Paragraph 2 describes its 'bumpy golden top where sweet peach juice bubbled through the cracks.'"
         },
         {
           "id": "B",
           "text": "Simple and homemade rather than fancy",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'rustic' means simple and homemade rather than fancy, because the narrator contrasts her bumpy golden cobbler crust with the smooth frosting on tall bakery cakes."
         },
         {
           "id": "C",
           "text": "Covered in tall spun sugar curls",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The other bakers' three-layer cakes had spun sugar curls in Paragraph 1, whereas the narrator's rustic cobbler had a plain, bumpy golden crust."
         },
         {
           "id": "D",
           "text": "Frozen solid inside an ice chest",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 says the narrator held the warm ceramic baking dish with oven mitts, so the cobbler was warm, not frozen solid."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Unlike those tall bakery cakes with their smooth frosting, my cobbler had a bumpy golden top where sweet peach juice bubbled through the cracks.",
-      "childTip": "Notice the contrast word 'Unlike' in the next sentence: the crust is bumpy and simple compared to smooth bakery cakes.",
-      "parentExplanation": "Paragraph 2 contrasts the 'rustic crust' with 'those tall bakery cakes with their smooth frosting,' showing that 'rustic' means simple, natural, and homemade."
+      "childTip": "In Paragraph 2, 'rustic' means simple and homemade rather than fancy, because the narrator contrasts her bumpy golden cobbler crust with the smooth frosting on tall bakery cakes.",
+      "parentExplanation": "Paragraph 2 contrasts the 'rustic crust' with 'those tall bakery cakes with their smooth frosting,' showing that 'rustic' means simple, natural, and homemade.",
+      "retryHint": "Look at the contrast in Paragraph 2 between 'those tall bakery cakes with their smooth frosting' and the narrator's bumpy golden crust."
     },
     {
       "questionId": "w33_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She realizes she forgot to add nutmeg and lemon peel to her peach cobbler.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 3 confirms that her cobbler was seasoned with grated nutmeg and fresh lemon peel, so she did not forget those ingredients."
         },
         {
           "id": "B",
           "text": "She drops the warm ceramic dish on the floor before reaching Table Four.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "She carries the warm dish safely with both oven mitts and sets it on Table Four in Paragraph 2 without dropping it."
         },
         {
           "id": "C",
           "text": "She sees fancy cakes and tarts that make her family's cobbler look plain by comparison.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 explains that the narrator's stomach does a nervous flip when she sees the other bakers' towering three-layer cakes and glossy tarts that make her cobbler in a scratched dish look plain."
         },
         {
           "id": "D",
           "text": "She learns that youth bakers are only allowed to enter chocolate pies in the contest.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The table has three-layer cakes, fruit tarts, a chocolate pie, and her peach cobbler—there is no rule allowing only chocolate pies."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "The other bakers had brought towering three-layer cakes topped with spun sugar curls and glossy fruit tarts that looked like museum art.",
-      "childTip": "Click the sentence in Paragraph 1 that describes what the other bakers had brought to the tables.",
-      "parentExplanation": "In Paragraph 1, the narrator's stomach does a nervous flip because the other entries are fancy three-layer cakes and glossy tarts that look like museum art compared to her cobbler in a scratched dish."
+      "childTip": "Paragraph 1 explains that the narrator's stomach does a nervous flip when she sees the other bakers' towering three-layer cakes and glossy tarts that make her cobbler in a scratched dish look plain.",
+      "parentExplanation": "In Paragraph 1, the narrator's stomach does a nervous flip because the other entries are fancy three-layer cakes and glossy tarts that look like museum art compared to her cobbler in a scratched dish.",
+      "retryHint": "Read the sentences right after 'my stomach did a nervous flip' in Paragraph 1 to see what the other bakers brought."
     },
     {
       "questionId": "w33_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It proves that the narrator does not care at all about winning a ribbon at the county fair.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Her nervous stomach flip in Paragraph 1 and her wish for whipped cream roses in Paragraph 2 show she cares deeply about how her cobbler will be judged."
         },
         {
           "id": "B",
           "text": "It reveals the exact scores that each of the three judges writes down on their private clipboards.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Because the story is told from the narrator's point of view behind the rope, she only sees the judges write short notes—not their private clipboard scores."
         },
         {
           "id": "C",
           "text": "It explains the step-by-step history of how the county fair pavilion was built twenty summers ago.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The twenty summers in Paragraph 1 describe how old Aunt Delia's scratched blue baking dish is, not the building history of the fair pavilion."
         },
         {
           "id": "D",
           "text": "It lets the reader experience the narrator's secret doubts about her plain dish before she discovers how much the judges love its taste.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Because the narrator tells the story in the first person ('I wished,' 'my stomach did a nervous flip'), we get to feel her private doubts about her plain dish before the judges surprise her with praise."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "As I walked to Table Four, I wished I had piped whipped cream roses around the edge to hide the rustic crust.",
-      "childTip": "Think about what 'I' lets us know: we hear the baker's worried thoughts inside her head before the judges taste her dish.",
-      "parentExplanation": "Because the story is told from the baker's first-person ('I') perspective (ELAGSE5RL6), readers directly share her initial insecurity about her cobbler's appearance and her surprise when its flavor wins first place."
+      "childTip": "Because the narrator tells the story in the first person ('I wished,' 'my stomach did a nervous flip'), we get to feel her private doubts about her plain dish before the judges surprise her with praise.",
+      "parentExplanation": "Because the story is told from the baker's first-person ('I') perspective (ELAGSE5RL6), readers directly share her initial insecurity about her cobbler's appearance and her surprise when its flavor wins first place.",
+      "retryHint": "Think about what the narrator shares in Paragraphs 1 and 2 ('my stomach did a nervous flip,' 'I wished...') that only she would know."
     },
     {
       "questionId": "w33_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "True quality and honest family traditions matter more than flashy outward appearances.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story teaches that honest homemade quality matters more than flashy looks: even without spun sugar curls or a new pan, the fresh peach cobbler wins first place for its delicious flavor."
         },
         {
           "id": "B",
           "text": "Three-layer cakes with spun sugar curls never taste good at a summer fair.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The head judge says fancy frosting looks pretty under bright lights, not that three-layer cakes never taste good."
         },
         {
           "id": "C",
           "text": "Bakers must always buy brand-new ceramic dishes if they want to impress county fair judges.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The narrator wins First Place Youth Baking using Aunt Delia's scratched twenty-year-old dish, proving a baker does not need a brand-new pan to win."
         },
         {
           "id": "D",
           "text": "Whipped cream roses are the easiest way to fix a dessert that has a bumpy crust.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "In Paragraph 5, the narrator feels silly for ever wishing she had hidden her crust, realizing her plain cobbler did not need fancy decorations."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "She said that fancy frosting looks pretty under bright lights, but nothing beats fresh Georgia peaches baked until the crust sings.",
-      "childTip": "Look at what the head judge says in Paragraph 4 and what the narrator realizes in Paragraph 5.",
-      "parentExplanation": "Both the head judge's remark in Paragraph 4 and the narrator's reflection in Paragraph 5 highlight the theme that genuine quality ('honest flavor of home') outshines flashy surface decoration."
+      "childTip": "The story teaches that honest homemade quality matters more than flashy looks: even without spun sugar curls or a new pan, the fresh peach cobbler wins first place for its delicious flavor.",
+      "parentExplanation": "Both the head judge's remark in Paragraph 4 and the narrator's reflection in Paragraph 5 highlight the theme that genuine quality ('honest flavor of home') outshines flashy surface decoration.",
+      "retryHint": "Look at what the head judge says in Paragraph 4 and what the narrator realizes in Paragraph 5 about fancy looks versus honest flavor."
     },
     {
       "questionId": "w33_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"I held the warm ceramic baking dish with both oven mitts as Mom opened the screen door of the county fair pavilion.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 simply shows the narrator walking into the pavilion with her mom."
         },
         {
           "id": "B",
           "text": "\"I set my dish beside a tall chocolate pie and quickly stepped back behind the rope.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This action in Paragraph 2 only shows where the narrator placed her dish on the table before the judging started."
         },
         {
           "id": "C",
           "text": "\"She said that fancy frosting looks pretty under bright lights, but nothing beats fresh Georgia peaches baked until the crust sings.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from Paragraph 4 directly supports the theme in Question 5 by contrasting pretty, flashy frosting with the unbeatable taste of fresh peaches and a crisp crust."
         },
         {
           "id": "D",
           "text": "\"First, the head judge in the red apron tasted the tall cakes at the end of the row.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 3 only tells which desserts the head judge tasted first at the end of the row."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "She said that fancy frosting looks pretty under bright lights, but nothing beats fresh Georgia peaches baked until the crust sings.",
-      "childTip": "Pick the quote from Paragraph 4 where the judge compares fancy frosting with fresh baked peaches.",
-      "parentExplanation": "Option D directly supports the theme in Part A by contrasting pretty surface frosting with the superior taste of well-baked fresh peaches."
+      "childTip": "This quote from Paragraph 4 directly supports the theme in Question 5 by contrasting pretty, flashy frosting with the unbeatable taste of fresh peaches and a crisp crust.",
+      "parentExplanation": "Option D directly supports the theme in Part A by contrasting pretty surface frosting with the superior taste of well-baked fresh peaches.",
+      "retryHint": "Find the quote from Paragraph 4 where the head judge explains why the plain peach cobbler beat the fancy frosted cakes."
     }
   ]
 }

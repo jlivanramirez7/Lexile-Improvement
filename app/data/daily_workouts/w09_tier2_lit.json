@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The reversed lead letters for the warning headline",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The reversed lead letters are the metal blocks being checked; inanimate metal letters cannot scrutinize (examine) anything!"
         },
         {
           "id": "B",
           "text": "The British patrol sergeant inspecting the shop",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The British patrol sergeant is outside on the street in Paragraph 1 and upstairs in Paragraph 3—he never sees the lead letters in the cellar."
         },
         {
           "id": "C",
           "text": "The dim flame flickering next to the wooden type case",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The dim candle flame only provides light beside the wooden type case; the young apprentice is the person examining the letters."
         },
         {
           "id": "D",
           "text": "The young apprentice working beside the candle",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'were carefully scrutinized by the young apprentice' shows that the young apprentice (Thomas) is the one closely examining the reversed lead letters."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Working with ink-stained thumbs beside the dim flame, the reversed lead letters for the warning headline were carefully scrutinized by the young apprentice.",
-      "childTip": "Look right after 'were carefully scrutinized' to the 'by' phrase at the end of the sentence to find the actor.",
-      "parentExplanation": "Because this sentence is written in passive voice ('were carefully scrutinized by the young apprentice'), the grammatical subject ('the reversed lead letters') receives the action. The true actor performing the inspection is 'the young apprentice' (Option D)."
+      "childTip": "In Paragraph 2, the phrase 'were carefully scrutinized by the young apprentice' shows that the young apprentice (Thomas) is the one closely examining the reversed lead letters.",
+      "parentExplanation": "Because this sentence is written in passive voice ('were carefully scrutinized by the young apprentice'), the grammatical subject ('the reversed lead letters') receives the action. The true actor performing the inspection is 'the young apprentice' (Option D).",
+      "retryHint": "Check the words 'scrutinized by' at the end of the Paragraph 2 sentence to see who is doing the careful checking."
     },
     {
       "questionId": "w09_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "To keep something hidden from view",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'conceal' means to keep something hidden from view, because Thomas puts a canvas sack over the blank paper so the British sergeant won't see it."
         },
         {
           "id": "B",
           "text": "To dry wet sheets of paper near a candle",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Colonial printers actually damped paper on purpose so it would take ink well (as seen in Paragraph 5); Thomas was hiding the stack under a sack, not drying it."
         },
         {
           "id": "C",
           "text": "To fold a printed broadside into a neat square",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The paper in Paragraph 3 is still a stack of blank sheets before printing, and Thomas is covering it under a canvas sack to hide it."
         },
         {
           "id": "D",
           "text": "To destroy all the paper in the print shop forever",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Thomas needs that paper to print the urgent broadside in Paragraph 5, so he is hiding the stack temporarily, not destroying it."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Down in the cellar, Thomas froze beside the iron press and tried to conceal the damp stack of blank paper beneath a canvas sack.",
-      "childTip": "Notice where Thomas puts the paper—'beneath a canvas sack'—when the soldier knocks upstairs.",
-      "parentExplanation": "The phrase 'beneath a canvas sack' while hiding in the cellar from the patrol sergeant provides a clear context clue that 'conceal' means to hide from view (Option A)."
+      "childTip": "In Paragraph 3, 'conceal' means to keep something hidden from view, because Thomas puts a canvas sack over the blank paper so the British sergeant won't see it.",
+      "parentExplanation": "The phrase 'beneath a canvas sack' while hiding in the cellar from the patrol sergeant provides a clear context clue that 'conceal' means to hide from view (Option A).",
+      "retryHint": "Picture why Thomas puts the damp stack of paper 'beneath a canvas sack' right when the patrol soldier knocks on the shop door."
     },
     {
       "questionId": "w09_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "Master Edes asks the patrol sergeant to help print shipping forms for the harbor at noon.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Master Edes only mentions printing shipping forms at noon as part of his cover story for soaking his wrist; he never asks the British sergeant to help print."
         },
         {
           "id": "B",
           "text": "Master Edes carries the heavy crate of lead bars down the cellar stairs so Thomas can work faster.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Master Edes had sprained his wrist that afternoon and had his arm in a sling upstairs, so he could not carry heavy lead crates down the stairs."
         },
         {
           "id": "C",
           "text": "Master Edes gives a calm excuse about his injured wrist that convinces the sergeant to leave without searching the cellar.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, Master Edes calmly tells the sergeant that the light is on because he is soaking his swollen wrist, which satisfies the soldier so he leaves without checking the cellar."
         },
         {
           "id": "D",
           "text": "Master Edes locks the patrol soldiers inside the front room until the morning riders arrive.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Master Edes does not lock the soldiers in the room; Paragraph 4 states that the patrol latched the street door shut and marched away down the lane."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Master Edes calmly replied that he was soaking his swollen wrist in warm salt water so he could print shipping forms at noon.",
-      "childTip": "Click the sentence in Paragraph 3 that tells what Master Edes says to explain why the light is still on.",
-      "parentExplanation": "Aligned to ELAGSE5RL3 (how characters interact and respond to challenges), Master Edes protects Thomas's secret work below by using his real wrist injury as a believable excuse for why a light is burning past curfew (Option C)."
+      "childTip": "In Paragraph 3, Master Edes calmly tells the sergeant that the light is on because he is soaking his swollen wrist, which satisfies the soldier so he leaves without checking the cellar.",
+      "parentExplanation": "Aligned to ELAGSE5RL3 (how characters interact and respond to challenges), Master Edes protects Thomas's secret work below by using his real wrist injury as a believable excuse for why a light is burning past curfew (Option C).",
+      "retryHint": "Read the last two sentences of Paragraph 3 to see what Master Edes says to explain why a light is still burning in the shop."
     },
     {
       "questionId": "w09_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It proves that Thomas was too frightened to ever touch the printing press again.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 shows the exact opposite: as soon as the soldiers leave, Thomas works twice as fast to ink the type and pull the press lever."
         },
         {
           "id": "B",
           "text": "It explains the historical rules for how apprentices were hired in colonial Boston.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 4 describes the ten tense seconds of the patrol pacing above the trapdoor, not historical hiring rules for Boston apprentices."
         },
         {
           "id": "C",
           "text": "It introduces the main conflict by showing how Master Edes sprained his wrist on the cart.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Master Edes's sprained wrist and the main problem of printing the notice before dawn are introduced back in Paragraph 1, not Paragraph 4."
         },
         {
           "id": "D",
           "text": "It builds the story's highest moment of suspense as the patrol boots pace right above Thomas's hiding spot before leaving.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 creates the story's peak moment of suspense as the soldier's heavy boots pace right above the cellar trapdoor while Thomas holds his breath beside the silent press."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "For ten tense seconds, the heavy boots paced right above Thomas's head near the cellar trapdoor.",
-      "childTip": "Think about how Paragraph 4 makes the reader feel while the soldier walks right over the trapdoor.",
-      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 4 serves as the climax of tension between the sergeant's arrival in Paragraph 3 and the triumphant printing resolution in Paragraph 5 (Option D)."
+      "childTip": "Paragraph 4 creates the story's peak moment of suspense as the soldier's heavy boots pace right above the cellar trapdoor while Thomas holds his breath beside the silent press.",
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraph 4 serves as the climax of tension between the sergeant's arrival in Paragraph 3 and the triumphant printing resolution in Paragraph 5 (Option D).",
+      "retryHint": "Notice how Paragraph 4 counts 'ten tense seconds' while the patrol boots pace right above Thomas's head before finally marching away."
     },
     {
       "questionId": "w09_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "It required intense focus and patience because letters had to be placed backward and checked one by one.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 shows that setting type demanded intense focus and patience because the metal letters printed backward, forcing Thomas to build each word upside down and right to left."
         },
         {
           "id": "B",
           "text": "It could only be done in total darkness because candle heat melted the lead letters.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Thomas works right beside a burning tallow candle in Paragraph 2; a small candle flame does not melt lead type."
         },
         {
           "id": "C",
           "text": "It was the easiest job in the print shop and required no training to master.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Setting backward metal type in dim light was so tricky that a single swapped letter could turn the notice into a confusing jumble, so it was far from easy."
         },
         {
           "id": "D",
           "text": "It used brass composing sticks that automatically corrected spelling mistakes.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The brass composing stick was just a hand tool that held the metal letters; Thomas had to check every capital letter himself with the tip of his fingernail."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick.",
-      "childTip": "Look at Paragraph 2 to see why Thomas had to build words upside down and check every letter.",
-      "parentExplanation": "Paragraph 2 describes how metal type prints in reverse, requiring the printer to assemble words upside down and right-to-left while checking every character so a swapped letter wouldn't garble the message (Option A)."
+      "childTip": "Paragraph 2 shows that setting type demanded intense focus and patience because the metal letters printed backward, forcing Thomas to build each word upside down and right to left.",
+      "parentExplanation": "Paragraph 2 describes how metal type prints in reverse, requiring the printer to assemble words upside down and right-to-left while checking every character so a swapped letter wouldn't garble the message (Option A).",
+      "retryHint": "Reread Paragraph 2 to see how each word had to be arranged in the brass composing stick and why one swapped letter would cause trouble."
     },
     {
       "questionId": "w09_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Outside on Queen Street, the boots of British patrol soldiers clicked against the wet cobblestones in the April chill.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 sets the midnight scene on Queen Street, without explaining the careful skill needed to set metal type."
         },
         {
           "id": "B",
           "text": "\"Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 2 directly proves Question 5 by explaining why setting type was so demanding: every word had to be built upside down and from right to left."
         },
         {
           "id": "C",
           "text": "\"Upstairs, a loud knock rattled the oak street door and made the candle flame jump.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 3 describes the soldier knocking on the door upstairs, not the process of arranging metal letters in the composing stick."
         },
         {
           "id": "D",
           "text": "\"He rolled the leather ink balls across the metal letters until they shone like black glass.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 5 describes rolling ink across the finished frame, after all the difficult backward letter-setting in Paragraph 2 was already done."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Because metal blocks print backward on paper, each word had to be built upside down and from right to left in the brass composing stick.",
-      "childTip": "Pick the quote from Paragraph 2 that explains how each word had to be built in the brass composing stick.",
-      "parentExplanation": "Option B directly proves the inference in Part A by detailing the backward, upside-down, right-to-left precision required to set metal type."
+      "childTip": "This quotation from Paragraph 2 directly proves Question 5 by explaining why setting type was so demanding: every word had to be built upside down and from right to left.",
+      "parentExplanation": "Option B directly proves the inference in Part A by detailing the backward, upside-down, right-to-left precision required to set metal type.",
+      "retryHint": "Look for the quote from Paragraph 2 that explains how the backward metal blocks had to be arranged in the composing stick."
     }
   ]
 }

@@ -71,31 +71,36 @@
           "id": "A",
           "text": "Rising steam weakened the wet clay on the wheel, and Ms. Lin split it apart with a wire tool.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This mixes up the causes and characters! Rising steam split the bowl inside the hot kiln, while Ms. Lin only used a wire tool later in Paragraph 5."
         },
         {
           "id": "B",
           "text": "The thin clay wall split the hot chamber apart because the electric kiln grew too cold.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The electric kiln was hot all night—not cold—and rising steam split the thin clay wall, rather than the bowl splitting the metal oven."
         },
         {
           "id": "C",
           "text": "A hidden pocket of trapped air and moisture weakened the wall, and rising steam split it apart.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'weakened by a hidden pocket of trapped air and trace moisture' and 'was split apart by rising steam' show that the hidden air and moisture weakened the clay wall, and rising steam split it apart."
         },
         {
           "id": "D",
           "text": "Another student dropped a heavy metal shelf onto Maya's bowl while unloading the kiln.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Nobody dropped a metal shelf on the bowl; Paragraph 2 explains that expanding steam inside a hidden air pocket split the clay wall from within."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The thin clay wall, weakened by a hidden pocket of trapped air and trace moisture, was split apart by rising steam inside the hot chamber.",
-      "childTip": "Track both 'by' phrases: trapped air and moisture weakened the wall, while rising steam split it apart.",
-      "parentExplanation": "This passive sentence contains two 'by' phrases: 'weakened by a hidden pocket of trapped air and trace moisture' and 'was split apart by rising steam'. Option B accurately identifies both causes."
+      "childTip": "In Paragraph 2, 'weakened by a hidden pocket of trapped air and trace moisture' and 'was split apart by rising steam' show that the hidden air and moisture weakened the clay wall, and rising steam split it apart.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'weakened by a hidden pocket of trapped air and trace moisture' and 'was split apart by rising steam'. Option B accurately identifies both causes.",
+      "retryHint": "Check the two 'by' phrases in the sentence from Paragraph 2: 'weakened by...' and 'was split apart by...'"
     },
     {
       "questionId": "w35_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Careful and orderly, following clear steps one by one",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'methodical' means careful and orderly, following clear steps one by one, because instead of rushing, Maya presses, folds, and turns the clay in a steady routine."
         },
         {
           "id": "B",
           "text": "Careless and hurried in order to finish before class ends",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careless and hurried is the exact opposite of 'a slow, methodical routine' that Maya uses instead of rushing to the wheel."
         },
         {
           "id": "C",
           "text": "Loud and noisy enough to disturb other art students",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Pressing and folding wet clay with the heels of her hands is quiet work; nothing in Paragraph 4 says the routine was loud or noisy."
         },
         {
           "id": "D",
           "text": "Decorated with carved leaves around the bottom edge",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Maya carved tiny leaves on her first bowl in Paragraph 1, whereas 'methodical' in Paragraph 4 describes how she wedges the fresh block of clay."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Instead of rushing straight to the wheel, she followed a slow, methodical routine called spiral wedging.",
-      "childTip": "Contrast 'methodical' with 'rushing' and look at the repeated steps Maya follows in the next sentence.",
-      "parentExplanation": "Paragraph 4 contrasts 'rushing' with a 'slow, methodical routine' and then describes the exact sequence of pressing, folding, and rotating the clay."
+      "childTip": "In Paragraph 4, 'methodical' means careful and orderly, following clear steps one by one, because instead of rushing, Maya presses, folds, and turns the clay in a steady routine.",
+      "parentExplanation": "Paragraph 4 contrasts 'rushing' with a 'slow, methodical routine' and then describes the exact sequence of pressing, folding, and rotating the clay.",
+      "retryHint": "Look at the contrast 'Instead of rushing straight to the wheel' and the step-by-step actions Maya repeats in Paragraph 4."
     },
     {
       "questionId": "w35_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "She wants to dry the clay completely before shaping it on the spinning wheel.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Clay must stay damp and soft to be shaped on the spinning potter's wheel—slicing it in half is to check for air holes, not to dry it out."
         },
         {
           "id": "B",
           "text": "She needs two small pieces of clay so Ms. Lin can make a matching cup beside her.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Ms. Lin is not making a matching cup; Maya slices the clay to inspect the flat inside surfaces and then centers the clay on the wheel for her own bowl."
         },
         {
           "id": "C",
           "text": "She is trying to carve a leaf pattern into the center of the gray clay block.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Maya only checks that the flat inside surfaces are completely smooth with no pinholes—she does not carve leaves inside the raw block."
         },
         {
           "id": "D",
           "text": "She wants to make sure no tiny air pockets remain inside the clay after wedging it.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 5 explains that Maya slices the wedged clay in half with a wire tool to check her work on the inside and make sure not a single pinhole of trapped air remains."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "When Maya sliced the lump in half with a wire tool to check her work, the flat inside surfaces looked completely smooth.",
-      "childTip": "Click the first sentence in Paragraph 5 that explains why Maya sliced the lump in half.",
-      "parentExplanation": "Paragraph 5 states that Maya sliced the clay with a wire tool 'to check her work' and saw that 'not a single pinhole remained' inside."
+      "childTip": "Paragraph 5 explains that Maya slices the wedged clay in half with a wire tool to check her work on the inside and make sure not a single pinhole of trapped air remains.",
+      "parentExplanation": "Paragraph 5 states that Maya sliced the clay with a wire tool 'to check her work' and saw that 'not a single pinhole remained' inside.",
+      "retryHint": "Read the first two sentences of Paragraph 5 to see what Maya is checking for on the flat inside surfaces of the clay."
     },
     {
       "questionId": "w35_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "It introduces the setting of the Elm Street studio and describes the smell of pine shelves.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The Elm Street studio setting and the smell of pine shelves were already introduced back in Paragraph 1, not in Paragraph 3."
         },
         {
           "id": "B",
           "text": "It explains the scientific cause of Maya's broken bowl so she knows how to solve the problem in Paragraph 4.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "After Maya's first bowl cracks in Paragraph 2, Paragraph 3 has Ms. Lin explain how trapped air pockets and steam caused the break, which prepares Maya to wedge the clay in Paragraph 4."
         },
         {
           "id": "C",
           "text": "It shows that Maya decides to quit pottery class and take up painting instead.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Maya does not quit pottery class! In Paragraph 4, she is 'Determined to make a stronger bowl' and carries fresh clay to the wedging table."
         },
         {
           "id": "D",
           "text": "It describes how the finished gray bowl looks after its second night in the kiln.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The story ends in Paragraph 5 as Maya shapes her second bowl on the wheel before it even goes into the kiln for firing."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because the stiff clay cannot stretch, the trapped steam pushes outward until the wall cracks open.",
-      "childTip": "Look at what Ms. Lin explains in Paragraph 3: why the bowl cracked and what caused the pressure.",
-      "parentExplanation": "Paragraph 3 bridges the problem in Paragraph 2 (the cracked bowl) and the solution in Paragraph 4 (spiral wedging) by explaining how expanding steam inside an air bubble splits stiff clay."
+      "childTip": "After Maya's first bowl cracks in Paragraph 2, Paragraph 3 has Ms. Lin explain how trapped air pockets and steam caused the break, which prepares Maya to wedge the clay in Paragraph 4.",
+      "parentExplanation": "Paragraph 3 bridges the problem in Paragraph 2 (the cracked bowl) and the solution in Paragraph 4 (spiral wedging) by explaining how expanding steam inside an air bubble splits stiff clay.",
+      "retryHint": "Look at how Ms. Lin's explanation in Paragraph 3 answers Maya's question from Paragraph 2 and leads into Maya's actions in Paragraph 4."
     },
     {
       "questionId": "w35_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Gray clay is always stronger than red clay when heated inside an electric kiln.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The color of the clay is not what makes it strong—any clay will crack in the kiln if hidden pockets of air and moisture are left inside."
         },
         {
           "id": "B",
           "text": "Pottery wheels should never be used by beginners because they trap air inside the clay.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Maya uses the spinning potter's wheel again in Paragraph 5; the problem was skipping careful wedging at the table before using the wheel."
         },
         {
           "id": "C",
           "text": "Careful unseen preparation is just as important as outer decoration for creating lasting work.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story shows that while Maya decorated the outside of her first bowl, it took careful preparation at the wedging table to squeeze out hidden air bubbles so her art would survive the kiln."
         },
         {
           "id": "D",
           "text": "Carving leaves into a bowl's base causes the rim to crack during firing.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Carving leaves on the outside base did not cause the crack; Paragraph 3 explains that an air bubble hidden deep inside the clay expanded into steam."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "This time, Maya knew her careful preparation at the table would protect her art inside the fire.",
-      "childTip": "Think about the lesson Maya learns by the end: why wedging the clay before shaping matters.",
-      "parentExplanation": "Maya's first bowl looked smooth and decorated on the outside but broke due to hidden air pockets; by wedging the clay first, she learns that thorough preparation protects the finished piece."
+      "childTip": "The story shows that while Maya decorated the outside of her first bowl, it took careful preparation at the wedging table to squeeze out hidden air bubbles so her art would survive the kiln.",
+      "parentExplanation": "Maya's first bowl looked smooth and decorated on the outside but broke due to hidden air pockets; by wedging the clay first, she learns that thorough preparation protects the finished piece.",
+      "retryHint": "Read the final sentence of Paragraph 5 to see what lesson Maya learned about careful preparation before shaping her art."
     },
     {
       "questionId": "w35_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"This time, Maya knew her careful preparation at the table would protect her art inside the fire.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This closing sentence from Paragraph 5 directly supports Question 5 by showing Maya's realization that careful preparation at the wedging table is what protects her art inside the hot kiln."
         },
         {
           "id": "B",
           "text": "\"She had smoothed the rim with a damp sponge and carved a ring of tiny leaves around the base.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 1 only describes how Maya decorated the outside of her first bowl before it broke."
         },
         {
           "id": "C",
           "text": "\"Maya stood on her tiptoes beside the heavy metal oven, hoping to see her bowl gleaming on the top shelf.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This moment in Paragraph 2 only shows Maya hoping to see her first bowl before she discovers it cracked."
         },
         {
           "id": "D",
           "text": "\"Every Tuesday afternoon, Maya hurried to the community art studio at the end of Elm Street.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 just tells when and where Maya went for pottery class."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "This time, Maya knew her careful preparation at the table would protect her art inside the fire.",
-      "childTip": "Select the quote from Paragraph 5 that connects Maya's careful preparation to protecting her art.",
-      "parentExplanation": "Option D directly states the takeaway of the story: Maya's careful preparation at the wedging table will protect her bowl during firing."
+      "childTip": "This closing sentence from Paragraph 5 directly supports Question 5 by showing Maya's realization that careful preparation at the wedging table is what protects her art inside the hot kiln.",
+      "parentExplanation": "Option D directly states the takeaway of the story: Maya's careful preparation at the wedging table will protect her bowl during firing.",
+      "retryHint": "Find the quote from Paragraph 5 that connects 'careful preparation' to protecting her artwork in the fire."
     }
   ]
 }

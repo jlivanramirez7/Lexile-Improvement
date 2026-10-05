@@ -73,30 +73,35 @@
           "id": "A",
           "text": "The glass plates inside the wooden crate",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—the glass plates held the tiny star dots in Paragraph 2, so they did not perform the action of measuring."
         },
         {
           "id": "B",
           "text": "The faint star dots from the southern sky",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice flips the action! The faint star dots were what got measured in Paragraph 2, not who did the measuring."
         },
         {
           "id": "C",
           "text": "Miss Leavitt, working at the long oak desk",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 2, the phrase 'by Miss Leavitt' right after 'were measured' shows that Miss Leavitt measured the faint star dots."
         },
         {
           "id": "D",
           "text": "The male astronomers inside the great brass dome",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 1 mentions that the male astronomers worked in the brass dome across the lawn, not at the oak desk in Paragraph 2."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "At the long oak desk by the window, the faint star dots on the glass plates were measured by Miss Leavitt before the winter sun set.",
-      "childTip": "Find the passive verb 'were measured' and look right after 'by' to see who did the measuring.",
-      "parentExplanation": "In this passive sentence, 'the faint star dots on the glass plates' receives the verb 'were measured.' The phrase 'by Miss Leavitt' names the person who performed the action."
+      "childTip": "Spot on! In Paragraph 2, the phrase 'by Miss Leavitt' right after 'were measured' shows that Miss Leavitt measured the faint star dots.",
+      "parentExplanation": "In this passive sentence, 'the faint star dots on the glass plates' receives the verb 'were measured.' The phrase 'by Miss Leavitt' names the person who performed the action.",
+      "retryHint": "In Paragraph 2, find the action phrase 'were measured' and look right after 'by' to see who did the measuring."
     },
     {
       "questionId": "w99_q2",
@@ -113,30 +118,35 @@
           "id": "A",
           "text": "Praised as the most famous lab in the world",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice gives the opposite meaning! If people thought it was just a dull clerk's office, they were not praising it."
         },
         {
           "id": "B",
           "text": "Brushed off as unimportant or ordinary",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! The contrast word 'yet' in Paragraph 1 shows that while most people brushed off the room as an ordinary clerk's office, Nora knew real science lived there."
         },
         {
           "id": "C",
           "text": "Locked up permanently before sunset",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Miss Leavitt and Nora continue working in the room through Paragraph 5, so it was never locked up permanently."
         },
         {
           "id": "D",
           "text": "Filled with expensive brass telescopes",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 1 states that the women were never allowed to touch the great brass telescope in the dome across the lawn."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Most folks dismissed the cramped room as a clerk's office, yet Nora knew true science lived on these tables.",
-      "childTip": "Notice the contrast word 'yet'—others saw just a dull clerk's office, yet Nora knew real science happened there.",
-      "parentExplanation": "The contrast between 'a clerk's office' and 'true science lived on these tables' shows that 'dismissed' means underestimated or treated as unimportant."
+      "childTip": "Spot on! The contrast word 'yet' in Paragraph 1 shows that while most people brushed off the room as an ordinary clerk's office, Nora knew real science lived there.",
+      "parentExplanation": "The contrast between 'a clerk's office' and 'true science lived on these tables' shows that 'dismissed' means underestimated or treated as unimportant.",
+      "retryHint": "In Paragraph 1, notice the contrast word 'yet'—others saw just a dull clerk's office, yet Nora knew real science happened there."
     },
     {
       "questionId": "w99_q3",
@@ -153,30 +163,35 @@
           "id": "A",
           "text": "Because none of the stars inside the Small Magellanic Cloud ever changed their dot size from October to November.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 3 states the exact opposite: Miss Leavitt found twenty-five pulsing stars in that cloud whose dots grew and shrank."
         },
         {
           "id": "B",
           "text": "Because the Small Magellanic Cloud was the closest star cluster to the roof of the Harvard brick workroom.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 2 explains that the Small Magellanic Cloud is in the southern sky and was photographed in Peru, far from Harvard."
         },
         {
           "id": "C",
           "text": "Because all the stars in that cloud sat at roughly the same distance from Earth, any difference in their dot size was real.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 4 explains that because all the stars inside the Small Magellanic Cloud sit at nearly the same distance from Earth, a bigger dot had to mean a truly brighter star."
         },
         {
           "id": "D",
           "text": "Because thick fog around the Harvard dome blocked every other star in the northern sky.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—the fog mentioned in Paragraph 3 is part of a comparison about a lighthouse beam, not real weather blocking the Harvard dome."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Because those stars sat side by side in the same far cloud, any difference in their dot size had to be real.",
-      "childTip": "Click the first sentence of Paragraph 4 that explains why differences in dot size inside that cloud had to be real.",
-      "parentExplanation": "Paragraphs 3 and 4 explain that because all stars in the Small Magellanic Cloud lie at nearly the same distance from Earth, larger-looking dots truly represent brighter stars rather than closer ones."
+      "childTip": "Spot on! Paragraph 4 explains that because all the stars inside the Small Magellanic Cloud sit at nearly the same distance from Earth, a bigger dot had to mean a truly brighter star.",
+      "parentExplanation": "Paragraphs 3 and 4 explain that because all stars in the Small Magellanic Cloud lie at nearly the same distance from Earth, larger-looking dots truly represent brighter stars rather than closer ones.",
+      "retryHint": "Look at the first sentence of Paragraph 4 that explains why differences in dot size inside that cloud had to be real."
     },
     {
       "questionId": "w99_q4",
@@ -192,31 +207,36 @@
         {
           "id": "A",
           "text": "To illustrate why star watchers could not tell whether a star looked bright because it was huge or because it was close",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 3, the lighthouse comparison explains why astronomers could not tell if a star looked bright because it was a giant star far away or a dim star close by."
         },
         {
           "id": "B",
           "text": "To show that ships in Boston Harbor relied on the Harvard workroom to guide them through coastal fog",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—this choice takes the lighthouse comparison literally; the Harvard workroom studied glass star plates, not ships in Boston Harbor."
         },
         {
           "id": "C",
           "text": "To prove that glass sky plates were ruined whenever damp ocean fog entered the workroom",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—no ocean fog ever enters the workroom or ruins the glass plates in Paragraph 3; the fog is just part of the lighthouse comparison."
         },
         {
           "id": "D",
           "text": "To explain why Miss Leavitt preferred using a brass lens instead of a bone scale",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—Paragraph 2 says Miss Leavitt used both a magnifying lens and a bone scale together, and the lighthouse comparison is about star distance."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Looking at a single random star in the dark sky was like seeing a lighthouse beam through thick fog without knowing the lamp's size.",
-      "childTip": "Connect the lighthouse simile to the question right before it in Paragraph 3: is a bright star huge, or just close?",
-      "parentExplanation": "The lighthouse analogy clarifies the classic astronomical problem: without knowing a light source's true power, an observer cannot tell how far away it is just from how bright it looks."
+      "childTip": "Spot on! In Paragraph 3, the lighthouse comparison explains why astronomers could not tell if a star looked bright because it was a giant star far away or a dim star close by.",
+      "parentExplanation": "The lighthouse analogy clarifies the classic astronomical problem: without knowing a light source's true power, an observer cannot tell how far away it is just from how bright it looks.",
+      "retryHint": "Connect the lighthouse simile to the question right before it in Paragraph 3: is a bright star huge, or just close?"
     },
     {
       "questionId": "w99_q5",
@@ -234,30 +254,35 @@
           "id": "A",
           "text": "Scientific discoveries can only be made by researchers who have access to the largest brass domes.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice reverses the whole story! Miss Leavitt was never allowed near the brass dome, yet she made the breakthrough from her desk."
         },
         {
           "id": "B",
           "text": "Patient, careful study of small details can unlock answers to the largest mysteries, even when others overlook the work.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Across the story, others brush off the women's workroom as simple speck-counting, yet Miss Leavitt's patient measurements unlock a yardstick for measuring the universe."
         },
         {
           "id": "C",
           "text": "Working alone in silence is far more effective than sharing data with a partner.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraphs 4 and 5 show Miss Leavitt and Nora working closely together as partners to plot the curve and celebrate the discovery."
         },
         {
           "id": "D",
           "text": "Charts and graphs are less reliable than gazing directly at the night sky.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—it was precisely the glass plates and Nora's ruled graph paper in Paragraphs 2 and 4 that revealed the law of the pulsing stars."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "In a quiet room where women were only paid to count specks, patient care had forged a yardstick for the cosmos.",
-      "childTip": "Look at the final sentence of Paragraph 5 to see how counting tiny specks led to a yardstick for the cosmos.",
-      "parentExplanation": "Throughout the story, others dismiss the women's workroom as mere clerical speck-counting, yet Miss Leavitt and Nora's meticulous measurements yield the cosmic distance scale ('a yardstick for the cosmos')."
+      "childTip": "Spot on! Across the story, others brush off the women's workroom as simple speck-counting, yet Miss Leavitt's patient measurements unlock a yardstick for measuring the universe.",
+      "parentExplanation": "Throughout the story, others dismiss the women's workroom as mere clerical speck-counting, yet Miss Leavitt and Nora's meticulous measurements yield the cosmic distance scale ('a yardstick for the cosmos').",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see how counting tiny specks led to a yardstick for the cosmos."
     },
     {
       "questionId": "w99_q6",
@@ -275,30 +300,35 @@
           "id": "A",
           "text": "\"Because the night sky shone white on black in real life, the glass plates showed stars as tiny black ink dots on clear glass.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this detail from Paragraph 2 only explains why stars looked like black ink dots on the photographic glass plates."
         },
         {
           "id": "B",
           "text": "\"She laid one glass plate from October right on top of a second plate taken in November.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this line from Paragraph 2 only describes one step of Miss Leavitt's process rather than the big lesson of the story."
         },
         {
           "id": "C",
           "text": "\"A star that pulsed every forty days burned far brighter than one that blinked every four days.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Not quite—this sentence from Paragraph 4 states the scientific rule about pulsing stars, but leaves out the theme of patient, overlooked work."
         },
         {
           "id": "D",
           "text": "\"In a quiet room where women were only paid to count specks, patient care had forged a yardstick for the cosmos.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! This final sentence from Paragraph 5 directly proves Question 5 by showing how patient care in an overlooked room created a yardstick for the cosmos."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "In a quiet room where women were only paid to count specks, patient care had forged a yardstick for the cosmos.",
-      "childTip": "Choose the concluding sentence from Paragraph 5 that connects patient care in a humble room to measuring the cosmos.",
-      "parentExplanation": "Option D directly encapsulates the theme in Part A: overlooked speck-counting, carried out with patient care, produced a yardstick for measuring the universe."
+      "childTip": "Spot on! This final sentence from Paragraph 5 directly proves Question 5 by showing how patient care in an overlooked room created a yardstick for the cosmos.",
+      "parentExplanation": "Option D directly encapsulates the theme in Part A: overlooked speck-counting, carried out with patient care, produced a yardstick for measuring the universe.",
+      "retryHint": "Choose the concluding sentence from Paragraph 5 that connects patient care in a humble room to measuring the cosmos."
     }
   ]
 }

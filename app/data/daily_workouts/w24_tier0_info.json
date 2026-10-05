@@ -73,31 +73,36 @@
           "id": "A",
           "text": "The sea floor along the rocky coast",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The sea floor is just the bottom of the ocean where the shells were gathered; the ocean floor cannot crack shells."
         },
         {
           "id": "B",
           "text": "The purple shells that were gathered during the dive",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The hard purple shells are what get cracked open ('the hard purple shells... are cracked'), not the animals doing the cracking."
         },
         {
           "id": "C",
           "text": "The hungry otters using flat anvil stones",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'are cracked by hungry otters using flat anvil stones' shows that the hungry otters perform the action of cracking the hard purple shells."
         },
         {
           "id": "D",
           "text": "The seals and whales swimming through the kelp",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Seals and whales are mentioned only in Paragraph 1 and Paragraph 5; Paragraph 2 states that hungry otters crack the shells with stones."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Along the rocky coast, the hard purple shells gathered from the sea floor are cracked by hungry otters using flat anvil stones.",
-      "childTip": "Find the passive verb 'are cracked by'—the noun right after 'by' is the real actor doing the cracking.",
-      "parentExplanation": "In this passive sentence, 'the hard purple shells' receive the action of being cracked. The true actors are 'hungry otters,' introduced after the preposition 'by.'"
+      "childTip": "In Paragraph 2, the phrase 'are cracked by hungry otters using flat anvil stones' shows that the hungry otters perform the action of cracking the hard purple shells.",
+      "parentExplanation": "In this passive sentence, 'the hard purple shells' receive the action of being cracked. The true actors are 'hungry otters,' introduced after the preposition 'by.'",
+      "retryHint": "Look at the words right after 'cracked by' in the Paragraph 2 sentence to see who breaks open the purple shells."
     },
     {
       "questionId": "w24_q2",
@@ -114,31 +119,36 @@
           "id": "A",
           "text": "Hold firmly in one place",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'anchor' means to hold firmly in one place, because wrapping in floating kelp blades keeps sleeping otters from being swept out to sea by strong currents."
         },
         {
           "id": "B",
           "text": "Pull deep under the water",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 says the kelp ribbons float and hold the sleeping animals 'above the reef,' not pull them deep underwater."
         },
         {
           "id": "C",
           "text": "Feed snacks to during the night",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The otters have already finished their afternoon of diving for food and are sleeping until morning, not eating snacks."
         },
         {
           "id": "D",
           "text": "Hide from every wave forever",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Floating on the water wrapped in kelp holds the otter in one spot above the reef, rather than hiding it from every ocean wave forever."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "These tough green blades anchor the sleeping animals above the reef until morning.",
-      "childTip": "Look at the sentence right before it—otters wrap kelp around their bellies like seat belts to stay in one spot.",
-      "parentExplanation": "Paragraph 4 explains that otters wrap themselves in floating kelp like seat belts so ocean currents cannot sweep them out to sea. Thus, 'anchor' means to hold firmly in place."
+      "childTip": "In Paragraph 4, 'anchor' means to hold firmly in one place, because wrapping in floating kelp blades keeps sleeping otters from being swept out to sea by strong currents.",
+      "parentExplanation": "Paragraph 4 explains that otters wrap themselves in floating kelp like seat belts so ocean currents cannot sweep them out to sea. Thus, 'anchor' means to hold firmly in place.",
+      "retryHint": "Read the two sentences right before this one in Paragraph 4 to see how wrapping in kelp like a seat belt helps a sleeping otter stay in one spot."
     },
     {
       "questionId": "w24_q3",
@@ -155,31 +165,36 @@
           "id": "A",
           "text": "It acts like a thick blubber layer that warms the otter's whole body.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 1 states that sea otters do not have blubber at all and rely on thick fur for warmth; the armpit fold in Paragraph 3 is a carrying pocket."
         },
         {
           "id": "B",
           "text": "It forms a pouch where the otter can store its favorite rock and carry extra clams to the surface.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that loose folds of skin under the sea otter's left armpit form a deep pocket that holds its favorite rock and extra clams from dive to dive."
         },
         {
           "id": "C",
           "text": "It works like a fin that lets the otter swim faster than seals and whales.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 calls the loose skin a 'built-in tool bag' and 'deep pocket' for holding rocks and clams, not a swimming fin."
         },
         {
           "id": "D",
           "text": "It ties the otter to giant kelp blades while the animal sleeps at night.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Otters drape long kelp ribbons across their bellies in Paragraph 4 when they sleep; they don't tie kelp with their armpit pouch."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Loose folds of skin under the left armpit form a deep pocket that can hold a favorite rock from dive to dive.",
-      "childTip": "Click the sentence in Paragraph 3 that explains what the deep pocket under the left armpit holds.",
-      "parentExplanation": "Paragraph 3 explains that loose folds of skin under the left armpit form a deep pocket used to store a favorite rock tool and carry extra clams to the surface."
+      "childTip": "Paragraph 3 explains that loose folds of skin under the sea otter's left armpit form a deep pocket that holds its favorite rock and extra clams from dive to dive.",
+      "parentExplanation": "Paragraph 3 explains that loose folds of skin under the left armpit form a deep pocket used to store a favorite rock tool and carry extra clams to the surface.",
+      "retryHint": "Read the second and third sentences of Paragraph 3 to see the two things a sea otter tucks into its armpit pocket."
     },
     {
       "questionId": "w24_q4",
@@ -196,31 +211,36 @@
           "id": "A",
           "text": "It compares the weight of a flat anvil stone with the weight of a purple sea urchin.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Anvil stones and sea urchins are discussed in Paragraph 2, whereas Paragraph 4 is all about how sea otters rest safely on the water."
         },
         {
           "id": "B",
           "text": "It lists every kind of fish and crab that lives inside the Pacific kelp forest in alphabetical order.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 4 never lists types of fish or crabs; it describes how sleeping otters wrap themselves in giant kelp and hold paws."
         },
         {
           "id": "C",
           "text": "It describes the problem of ocean currents sweeping sleeping otters away and explains how otters solve it by wrapping in kelp.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 uses a problem-and-solution structure: it explains the danger of strong currents sweeping a sleeping otter out to sea, and then shows how otters solve it by wrapping in kelp ribbons."
         },
         {
           "id": "D",
           "text": "It argues that people should stop visiting rocky beaches along the Pacific coast.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never mentions human visitors on beaches or argues against visiting the coast."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "To stay in one spot, otters drape long ribbons of floating giant kelp across their bellies like seat belts.",
-      "childTip": "Notice how Paragraph 4 first states a danger for sleeping otters and then shows how kelp solves that danger.",
-      "parentExplanation": "Paragraph 4 uses a Problem/Solution structure: it introduces the risk of ocean currents sweeping sleeping otters out to sea, and explains how otters solve this by wrapping themselves in giant kelp."
+      "childTip": "Paragraph 4 uses a problem-and-solution structure: it explains the danger of strong currents sweeping a sleeping otter out to sea, and then shows how otters solve it by wrapping in kelp ribbons.",
+      "parentExplanation": "Paragraph 4 uses a Problem/Solution structure: it introduces the risk of ocean currents sweeping sleeping otters out to sea, and explains how otters solve this by wrapping themselves in giant kelp.",
+      "retryHint": "Compare the problem described in the second sentence of Paragraph 4 with what otters do in the third and fourth sentences."
     },
     {
       "questionId": "w24_q5",
@@ -238,31 +258,36 @@
           "id": "A",
           "text": "They plant new kelp seeds in the mud whenever they dive to the bottom.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Sea otters dive to the bottom to hunt crabs, clams, and urchins (Paragraph 2); they do not plant kelp seeds in the mud."
         },
         {
           "id": "B",
           "text": "They eat large numbers of sea urchins that would otherwise chew through the kelp stems and destroy the forest.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 5 explains that hungry sea urchins chew through the bottom stems of giant kelp and can wipe out whole underwater forests, so otters protect the kelp by eating thousands of urchins every week."
         },
         {
           "id": "C",
           "text": "They use flat stones to build rock walls that block cold waves from hitting the kelp.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Otters carry a single flat stone on their chests to crack shells (Paragraph 2), not to build underwater rock walls against waves."
         },
         {
           "id": "D",
           "text": "They shed thick fur that feeds all the crabs and seals living near the reef.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Crabs and seals do not eat sea otter fur; Paragraph 5 says otters protect the green kelp canopy that shelters fish, crabs, and seals."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By eating thousands of urchins every week, sea otters play a vital role in protecting the green kelp canopy for fish, crabs, and seals.",
-      "childTip": "Read Paragraph 5 to see what sea urchins do to kelp stems and how sea otters stop them.",
-      "parentExplanation": "Paragraph 5 explains that sea urchins chew through the bottom stems of giant kelp, and by eating thousands of urchins each week, sea otters protect the kelp canopy."
+      "childTip": "Paragraph 5 explains that hungry sea urchins chew through the bottom stems of giant kelp and can wipe out whole underwater forests, so otters protect the kelp by eating thousands of urchins every week.",
+      "parentExplanation": "Paragraph 5 explains that sea urchins chew through the bottom stems of giant kelp, and by eating thousands of urchins each week, sea otters protect the kelp canopy.",
+      "retryHint": "Read the second, third, and fourth sentences of Paragraph 5 to see what sea urchins do to giant kelp and how sea otters stop them."
     },
     {
       "questionId": "w24_q6",
@@ -280,31 +305,36 @@
           "id": "A",
           "text": "\"This dense fur traps a layer of dry air right against their skin as they swim.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only explains how dense fur keeps an otter's skin dry and warm, not how otters protect the kelp forest."
         },
         {
           "id": "B",
           "text": "\"Most ocean hunters cannot bite through the tough armor of a clam or urchin without breaking their teeth.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 2 explains why clams and urchins are hard to bite open, without showing how eating urchins saves the kelp."
         },
         {
           "id": "C",
           "text": "\"The otter also tucks extra clams into this pouch so it can carry several snacks to the surface at once.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 3 describes how an otter carries extra clams in its armpit pouch, rather than how otters help the kelp forest survive."
         },
         {
           "id": "D",
           "text": "\"By eating thousands of urchins every week, sea otters play a vital role in protecting the green kelp canopy for fish, crabs, and seals.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 5 directly supports Question 5 by stating that eating thousands of urchins every week is how sea otters protect the green kelp canopy."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By eating thousands of urchins every week, sea otters play a vital role in protecting the green kelp canopy for fish, crabs, and seals.",
-      "childTip": "Select the quote from Paragraph 5 that shows how eating thousands of urchins protects the green kelp canopy.",
-      "parentExplanation": "Option D directly proves Part A by showing that sea otters protect the kelp canopy by eating thousands of kelp-destroying urchins each week."
+      "childTip": "This quotation from Paragraph 5 directly supports Question 5 by stating that eating thousands of urchins every week is how sea otters protect the green kelp canopy.",
+      "parentExplanation": "Option D directly proves Part A by showing that sea otters protect the kelp canopy by eating thousands of kelp-destroying urchins each week.",
+      "retryHint": "Find the quote from Paragraph 5 that connects eating thousands of urchins to protecting the green kelp canopy."
     }
   ]
 }

@@ -73,34 +73,39 @@
           "text": "Clara, the apprentice stonecutter on the roof",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Clara') in the passive construction 'was hoisted by Clara'."
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by Clara') in the passive construction 'was hoisted by Clara'.",
+          "childFeedback": "Spot on! This answer correctly identifies who or what comes after 'by' ('by Clara') in the sentence 'was hoisted by Clara'."
         },
         {
           "id": "B",
           "text": "The fresh block of pale limestone",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb with the person who hoisted it."
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb with the person who hoisted it.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action with the person who hoisted it."
         },
         {
           "id": "C",
           "text": "The flat chisel used on the ground below",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a tool inside the middle participial phrase ('shaped with a flat chisel') rather than the actor."
+          "diagnosticNote": "Selects a tool inside the middle participial phrase ('shaped with a flat chisel') rather than the actor.",
+          "childFeedback": "Watch out—this choice selects a tool inside the middle describing phrase ('shaped with a flat chisel') rather than the actor."
         },
         {
           "id": "D",
           "text": "The high timber scaffold along the north roof",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Picks the destination object of the preposition ('onto the high scaffold') instead of the actor."
+          "diagnosticNote": "Picks the destination object of the preposition ('onto the high scaffold') instead of the actor.",
+          "childFeedback": "Watch out—this choice picks the place phrase ('onto the high scaffold') instead of the actor."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The fresh block of pale limestone, shaped with a flat chisel on the ground below, was hoisted by Clara onto the high scaffold.",
-      "childTip": "Find the passive verb 'was hoisted by.' The name right after 'by' tells you who lifted the stone!",
-      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The subject 'The fresh block of pale limestone' is separated from 'was hoisted by Clara' by a 9-word modifier, requiring students to trace the agent after 'by'."
+      "childTip": "Spot on! This answer correctly identifies who or what comes after 'by' ('by Clara') in the sentence 'was hoisted by Clara'.",
+      "parentExplanation": "This Sentence Surgery item targets Passive Voice Actor Tracking (ELAGSE5L1). The subject 'The fresh block of pale limestone' is separated from 'was hoisted by Clara' by a 9-word modifier, requiring students to trace the agent after 'by'.",
+      "retryHint": "In Paragraph 2, find the action phrase 'was hoisted by.' The name right after 'by' tells you who lifted the stone!"
     },
     {
       "questionId": "w89_q2",
@@ -118,34 +123,39 @@
           "text": "Carve a decorative wing with a steel chisel",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows stone-carving details from the passage instead of defining how water enters soft mortar."
+          "diagnosticNote": "Borrows stone-carving details from the passage instead of defining how water enters soft mortar.",
+          "childFeedback": "Watch out—this choice borrows stone-carving details from the passage instead of defining how water enters soft mortar."
         },
         {
           "id": "B",
           "text": "Leap three yards outward in a bright silver arc",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses what the gargoyle spout does ('shot the water clear') with what it prevents the water from doing ('seep into the soft mortar')."
+          "diagnosticNote": "Confuses what the gargoyle spout does ('shot the water clear') with what it prevents the water from doing ('seep into the soft mortar').",
+          "childFeedback": "Careful—this choice confuses what the gargoyle spout does ('shot the water clear') with what it prevents the water from doing ('seep into the soft mortar')."
         },
         {
           "id": "C",
           "text": "Soak or trickle slowly into small cracks",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the contrast with shooting water 'clear into the street' so that moisture does not soak into the soft mortar and crumble the wall."
+          "diagnosticNote": "Matches the contrast with shooting water 'clear into the street' so that moisture does not soak into the soft mortar and crumble the wall.",
+          "childFeedback": "Spot on! This answer matches the contrast with shooting water 'clear into the street' so that moisture does not soak into the soft mortar and crumble the wall."
         },
         {
           "id": "D",
           "text": "Shine brightly through a stained-glass window",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Uses window imagery from Paragraph 2 rather than the context of rainwater and mortar in Paragraph 1."
+          "diagnosticNote": "Uses window imagery from Paragraph 2 rather than the context of rainwater and mortar in Paragraph 1.",
+          "childFeedback": "Watch out—this choice uses window imagery from Paragraph 2 rather than the context of rainwater and mortar in Paragraph 1."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "When heavy rain or melting snow poured off the slate roof, the stone hound shot the water clear into the street so it would not seep into the soft mortar of the lower walls.",
-      "childTip": "Why does the gargoyle shoot water away from the building? What would water do to 'soft mortar' if it dripped down the wall?",
-      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). By contrasting 'shot the water clear into the street' with 'so it would not seep into the soft mortar,' students infer that 'seep' means to soak or trickle slowly into a material."
+      "childTip": "Spot on! This answer matches the contrast with shooting water 'clear into the street' so that moisture does not soak into the soft mortar and crumble the wall.",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). By contrasting 'shot the water clear into the street' with 'so it would not seep into the soft mortar,' students infer that 'seep' means to soak or trickle slowly into a material.",
+      "retryHint": "Check Paragraph 1: why does the gargoyle shoot water away from the building? What would water do to 'soft mortar' if it dripped down the wall?"
     },
     {
       "questionId": "w89_q3",
@@ -163,34 +173,39 @@
           "text": "She knew that tourists in the courtyard could only see the gargoyle if its mouth pointed straight down.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows 'tourists in the courtyard' from Paragraph 1 and misapplies it to the internal throat channel."
+          "diagnosticNote": "Borrows 'tourists in the courtyard' from Paragraph 1 and misapplies it to the internal throat channel.",
+          "childFeedback": "Watch out—this choice borrows 'tourists in the courtyard' from Paragraph 1 and misapplies it to the internal throat channel."
         },
         {
           "id": "B",
           "text": "She wanted the rainwater to flow backward onto the slate roof tiles above the nave.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the direction of water flow; the spout drains water off the roof, not backward onto it."
+          "diagnosticNote": "Reverses the direction of water flow; the spout drains water off the roof, not backward onto it.",
+          "childFeedback": "Careful—this choice reverses the direction of water flow; the spout drains water off the roof, not backward onto it."
         },
         {
           "id": "C",
           "text": "She ran out of pale limestone and had to make the new jaw shorter than the old one.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a material shortage not mentioned anywhere in the text."
+          "diagnosticNote": "Invents a material shortage not mentioned anywhere in the text.",
+          "childFeedback": "Watch out—this choice invents a material shortage not mentioned anywhere in the text."
         },
         {
           "id": "D",
           "text": "She wanted to make sure no puddle could stay inside the spout and freeze during the next winter.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly matches the explanation in Paragraph 4: angling the channel downward prevents standing water from freezing and splitting the jaw again."
+          "diagnosticNote": "Directly matches the explanation in Paragraph 4: angling the channel downward prevents standing water from freezing and splitting the jaw again.",
+          "childFeedback": "Spot on! This answer directly matches the explanation in Paragraph 4: angling the channel downward prevents standing water from freezing and splitting the jaw again."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "She angled the stone channel inside the hound's throat slightly downward so no puddle could linger and freeze next winter.",
-      "childTip": "First click the sentence in Paragraph 4 that explains why Clara angled the throat channel downward.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RL1 (Explicit & Inferential Evidence), this Click-to-Prove item requires students to locate the exact preventive design detail in Paragraph 4 that keeps ice from cracking the replacement jaw."
+      "childTip": "Spot on! This answer directly matches the explanation in Paragraph 4: angling the channel downward prevents standing water from freezing and splitting the jaw again.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RL1 (Explicit & Inferential Evidence), this Click-to-Prove item requires students to locate the exact preventive design detail in Paragraph 4 that keeps ice from cracking the replacement jaw.",
+      "retryHint": "Look in Paragraph 4 for the sentence that explains why Clara angled the throat channel downward."
     },
     {
       "questionId": "w89_q4",
@@ -208,34 +223,39 @@
           "text": "Paragraph 1 introduces an argument between Clara and the tourists, and Paragraph 2 shows Master Borel closing the courtyard gates.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a conflict with tourists that never happens in the passage."
+          "diagnosticNote": "Invents a conflict with tourists that never happens in the passage.",
+          "childFeedback": "Watch out—this choice invents a conflict with tourists that never happens in the passage."
         },
         {
           "id": "B",
           "text": "Paragraph 1 explains that gargoyles drain water off the walls, showing why the cracked jaw in Paragraph 2 threatens the abbey.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately explains how Paragraph 1 establishes the gargoyle's protective engineering role so the reader understands the stakes of the broken jaw in Paragraph 2."
+          "diagnosticNote": "Accurately explains how Paragraph 1 establishes the gargoyle's protective engineering role so the reader understands the stakes of the broken jaw in Paragraph 2.",
+          "childFeedback": "Spot on! This answer accurately explains how Paragraph 1 establishes the gargoyle's protective engineering role so the reader understands the stakes of the broken jaw in Paragraph 2."
         },
         {
           "id": "C",
           "text": "Paragraph 1 proves that medieval masons used weak stone, and Paragraph 2 shows Clara replacing every gargoyle on the roof.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('every gargoyle') and ignores that the medieval stone lasted six hundred years."
+          "diagnosticNote": "Uses extreme language ('every gargoyle') and ignores that the medieval stone lasted six hundred years.",
+          "childFeedback": "Watch out—this choice uses extreme language ('every gargoyle') and ignores that the medieval stone lasted six hundred years."
         },
         {
           "id": "D",
           "text": "Paragraph 1 describes the warm March wind melting the snow, and Paragraph 2 flashes back to the winter storm.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Misstates the sequence; the approaching March thaw and winter freeze are introduced in Paragraph 2."
+          "diagnosticNote": "Misstates the sequence; the approaching March thaw and winter freeze are introduced in Paragraph 2.",
+          "childFeedback": "Careful—this choice misstates the sequence; the approaching March thaw and winter freeze are introduced in Paragraph 2."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Although tourists in the courtyard below thought the winged hounds were only spooky ornaments, Clara knew their true job.",
-      "childTip": "Ask yourself: why do we need to know the gargoyle's 'true job' in Paragraph 1 to understand the danger in Paragraph 2?",
-      "parentExplanation": "Under ELAGSE5RL5 (Story Structure), Paragraph 1 overturns the misconception that gargoyles are mere ornaments and explains their drainage function, which directly establishes why a cracked jaw in Paragraph 2 endangers the wall."
+      "childTip": "Spot on! This answer accurately explains how Paragraph 1 establishes the gargoyle's protective engineering role so the reader understands the stakes of the broken jaw in Paragraph 2.",
+      "parentExplanation": "Under ELAGSE5RL5 (Story Structure), Paragraph 1 overturns the misconception that gargoyles are mere ornaments and explains their drainage function, which directly establishes why a cracked jaw in Paragraph 2 endangers the wall.",
+      "retryHint": "Ask yourself: why do we need to know the gargoyle's 'true job' in Paragraph 1 to understand the danger in Paragraph 2?"
     },
     {
       "questionId": "w89_q5",
@@ -254,34 +274,39 @@
           "text": "Lime mortar is strong enough by itself to hold heavy limestone blocks without any carved joints.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Directly contradicts Paragraph 3, where Master Borel warns that lime paste alone would snap under floodwater."
+          "diagnosticNote": "Directly contradicts Paragraph 3, where Master Borel warns that lime paste alone would snap under floodwater.",
+          "childFeedback": "Not quite—this choice directly contradicts Paragraph 3, where Master Borel warns that lime paste alone would snap under floodwater."
         },
         {
           "id": "B",
           "text": "Ancient buildings should replace all carved stone spouts with modern plastic drainpipes.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Introduces modern plastic drainpipes not mentioned anywhere in the story."
+          "diagnosticNote": "Introduces modern plastic drainpipes not mentioned anywhere in the story.",
+          "childFeedback": "Watch out—this choice brings in modern plastic drainpipes not mentioned anywhere in the story."
         },
         {
           "id": "C",
           "text": "Lasting craftsmanship relies on unseen structural care that protects a work through future storms.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes the gargoyle's hidden drainage role, the dovetail joint and angled throat channel, and the concluding reflection."
+          "diagnosticNote": "Synthesizes the gargoyle's hidden drainage role, the dovetail joint and angled throat channel, and the concluding reflection.",
+          "childFeedback": "Spot on! This answer brings together the gargoyle's hidden drainage role, the dovetail joint and angled throat channel, and the concluding reflection."
         },
         {
           "id": "D",
           "text": "Apprentices should never work on high timber scaffolds during the month of March.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('never') that contradicts Clara's successful repair before the March thaw."
+          "diagnosticNote": "Uses extreme language ('never') that contradicts Clara's successful repair before the March thaw.",
+          "childFeedback": "Watch out—this choice uses extreme language ('never') that contradicts Clara's successful repair before the March thaw."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "High above the dry wall and glowing glass, her hidden joint held firm, proving that honest craft protects a building long after the scaffold comes down.",
-      "childTip": "Look at the final sentence of Paragraph 5 to see what Clara's 'hidden joint' proves about 'honest craft.'",
-      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Both the gargoyle itself (an ornament that is secretly a drain) and Clara's dovetail slot show that unseen structural integrity is what makes a building endure."
+      "childTip": "Spot on! This answer brings together the gargoyle's hidden drainage role, the dovetail joint and angled throat channel, and the concluding reflection.",
+      "parentExplanation": "Part A of this EBSR pair tests Theme (ELAGSE5RL2). Both the gargoyle itself (an ornament that is secretly a drain) and Clara's dovetail slot show that unseen structural integrity is what makes a building endure.",
+      "retryHint": "Look at the final sentence of Paragraph 5 to see what Clara's 'hidden joint' proves about 'honest craft.'"
     },
     {
       "questionId": "w89_q6",
@@ -300,34 +325,39 @@
           "text": "\"High on the timber scaffold along the north roof of Saint Jude Abbey, apprentice stonecutter Clara brushed frost from a carved hound.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Introduces the character and setting in Paragraph 1 without stating the theme about lasting craftsmanship."
+          "diagnosticNote": "Introduces the character and setting in Paragraph 1 without stating the theme about lasting craftsmanship.",
+          "childFeedback": "Watch out—this choice brings in the character and setting in Paragraph 1 without stating the theme about lasting craftsmanship."
         },
         {
           "id": "B",
           "text": "\"This winter, though, a hard freeze had split the hound's lower jaw cleanly in two.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes the initial damage in Paragraph 2 rather than the lesson about honest craft."
+          "diagnosticNote": "Describes the initial damage in Paragraph 2 rather than the lesson about honest craft.",
+          "childFeedback": "Not quite—this choice describes the initial damage in Paragraph 2 rather than the lesson about honest craft."
         },
         {
           "id": "C",
           "text": "\"Master Borel climbed up the ladder and checked the broken neck joint with his steel square.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Mentions the neck joint in Paragraph 3, but does not express the overarching theme."
+          "diagnosticNote": "Mentions the neck joint in Paragraph 3, but does not express the overarching theme.",
+          "childFeedback": "Not quite—this choice mentions the neck joint in Paragraph 3, but does not express the overall theme."
         },
         {
           "id": "D",
           "text": "\"High above the dry wall and glowing glass, her hidden joint held firm, proving that honest craft protects a building long after the scaffold comes down.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves the theme in Part A by connecting the unseen dovetail joint to lasting protection."
+          "diagnosticNote": "Directly proves the theme in Part A by connecting the unseen dovetail joint to lasting protection.",
+          "childFeedback": "Spot on! This answer directly proves the theme in Question 5 by connecting the unseen dovetail joint to lasting protection."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "High above the dry wall and glowing glass, her hidden joint held firm, proving that honest craft protects a building long after the scaffold comes down.",
-      "childTip": "Pick the exact quote in Paragraph 5 that connects 'her hidden joint' to what 'honest craft' does.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RL1, Part B requires 100% verbatim textual proof for the theme identified in Part A."
+      "childTip": "Spot on! This answer directly proves the theme in Question 5 by connecting the unseen dovetail joint to lasting protection.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RL1, Part B requires 100% verbatim textual proof for the theme identified in Part A.",
+      "retryHint": "Pick the exact quote in Paragraph 5 that connects 'her hidden joint' to what 'honest craft' does."
     }
   ]
 }

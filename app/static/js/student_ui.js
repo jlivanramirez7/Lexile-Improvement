@@ -1310,23 +1310,66 @@
     },
 
     /**
+     * Helper to generate a kid-friendly trap explanation if opt.childFeedback is not present
+     */
+    getOptionChildFeedback(opt, q) {
+      if (!opt) return '';
+      if (opt.childFeedback) return sanitizeChildText(opt.childFeedback);
+      const paraNum = (q && q.provingParagraph) || 1;
+      const trap = opt.trapType || '';
+      if (trap === 'TRAP_SYNTACTIC_REVERSAL') {
+        return `This choice flips who did the action! Check Paragraph ${paraNum} to see who really performed the action.`;
+      }
+      if (trap === 'TRAP_WORD_MATCH') {
+        return `This choice uses familiar words from the passage, but mixes up what they actually mean in Paragraph ${paraNum}.`;
+      }
+      if (trap === 'TRAP_TOO_NARROW') {
+        return `This is just one small detail, not the main point that Paragraph ${paraNum} is showing.`;
+      }
+      if (trap === 'TRAP_EXTREME') {
+        return `Watch out for extreme words like "always," "never," or "only" that go too far beyond what Paragraph ${paraNum} says!`;
+      }
+      if (trap === 'TRAP_OUTSIDE_INFO') {
+        return `This might sound possible in real life, but Paragraph ${paraNum} never says this happened!`;
+      }
+      return `That choice doesn't match the clues in Paragraph ${paraNum}.`;
+    },
+
+    /**
      * Render 2-Attempt Micro-Feedback Card
+     * Clearly explains in child-friendly language WHY the chosen answer is wrong or right!
      */
     renderMicroFeedbackCard(q, qState) {
       if (!qState || qState.status === 'unanswered') return '';
 
       const paraNum = q.provingParagraph || 1;
+      const options = Array.isArray(q.options) ? q.options : [];
+      const firstOpt = options.find((o) => (o.id || o.letter) === qState.firstChoice) || null;
+      const finalOpt = options.find((o) => (o.id || o.letter) === qState.finalChoice) || null;
+      const correctOpt = options.find((o) => o.isCorrect) || { id: 'A', text: '' };
+      const correctId = correctOpt.id || correctOpt.letter || 'A';
 
       if (qState.status === 'retry_pending') {
+        const whyWrongText = this.getOptionChildFeedback(firstOpt, q);
+        const retryHintText = sanitizeChildText(
+          q.retryHint || `Re-read Paragraph ${paraNum} on the left and try one of the remaining choices!`
+        );
+
         return `
-          <div class="rounded-2xl bg-amber-50 border-2 border-amber-300 p-4 space-y-1.5 animate-fadeIn">
-            <div class="flex items-center gap-2">
+          <div class="rounded-2xl bg-amber-50 border-2 border-amber-300 p-4 space-y-2 animate-fadeIn">
+            <div class="flex items-center justify-between gap-2">
               <span class="badge px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 text-xs font-extrabold">
-                🟡 Try Again!
+                🟡 Almost! Try One More Time
+              </span>
+              <span class="text-xs font-extrabold text-amber-900">
+                Paragraph ${paraNum}
               </span>
             </div>
-            <p class="text-sm font-extrabold text-amber-950">
-              🟡 Try One More Time! Look closely at Paragraph ${paraNum}!
+            <div class="text-xs sm:text-sm font-bold text-rose-900 bg-white/80 rounded-xl p-2.5 border border-amber-200">
+              ❌ <strong>Why Choice ${escapeHtml(qState.firstChoice || '')} Isn't Right:</strong> ${escapeHtml(whyWrongText)}
+            </div>
+            <p class="text-xs sm:text-sm font-extrabold text-amber-950">
+              🔎 <strong>Clue for Try #2:</strong> ${escapeHtml(retryHintText)}
             </p>
           </div>
         `;
@@ -1334,7 +1377,19 @@
 
       if (qState.status === 'resolved') {
         const isCorrect = qState.finalCorrect;
-        const headerBadge = isCorrect ? '🟢 Nice Job!' : '💡 Key Clue';
+        const usedRetry = !qState.firstTryCorrect;
+        const whyRightText = sanitizeChildText(
+          (correctOpt && correctOpt.childFeedback) ||
+            q.childTip ||
+            'Great reading! Check the highlighted green sentence in the passage.'
+        );
+
+        const headerBadge = isCorrect
+          ? usedRetry
+            ? `🟢 Nice Recovery! Choice ${correctId} Is Right`
+            : `🟢 Spot On! Choice ${correctId} Is Right`
+          : `💡 Good Try! Correct Answer: Choice ${correctId}`;
+
         const boxClasses = isCorrect
           ? 'bg-emerald-50 border-2 border-emerald-400 text-emerald-950'
           : 'bg-indigo-50 border-2 border-indigo-300 text-indigo-950';
@@ -1342,19 +1397,40 @@
           ? 'bg-emerald-600 text-white'
           : 'bg-indigo-600 text-white';
 
+        // If student missed on Try 1 or Try 2, show why their wrong choice wasn't right
+        let wrongChoiceBoxHtml = '';
+        if (!isCorrect && finalOpt && !finalOpt.isCorrect) {
+          const secondWrongReason = this.getOptionChildFeedback(finalOpt, q);
+          wrongChoiceBoxHtml = `
+            <div class="text-xs sm:text-sm font-semibold text-rose-900 bg-rose-50/90 rounded-xl p-2.5 border border-rose-200">
+              ❌ <strong>Why Choice ${escapeHtml(qState.finalChoice || '')} Wasn't Right:</strong> ${escapeHtml(secondWrongReason)}
+            </div>
+          `;
+        } else if (isCorrect && usedRetry && firstOpt && !firstOpt.isCorrect) {
+          const firstWrongReason = this.getOptionChildFeedback(firstOpt, q);
+          wrongChoiceBoxHtml = `
+            <div class="text-xs font-semibold text-slate-700 bg-white/80 rounded-xl p-2 border border-emerald-200">
+              🪤 <strong>Trap Dodged (Choice ${escapeHtml(qState.firstChoice || '')}):</strong> ${escapeHtml(firstWrongReason)}
+            </div>
+          `;
+        }
+
         return `
-          <div class="rounded-2xl ${boxClasses} p-4 space-y-1.5 animate-fadeIn">
+          <div class="rounded-2xl ${boxClasses} p-4 space-y-2 animate-fadeIn">
             <div class="flex items-center justify-between gap-2">
               <span class="badge px-2.5 py-0.5 rounded-full ${pillClasses} text-xs font-extrabold">
-                ${headerBadge}
+                ${escapeHtml(headerBadge)}
               </span>
               <span class="text-xs font-bold opacity-80">
                 Paragraph ${paraNum}
               </span>
             </div>
-            <p class="text-sm font-bold leading-snug">
-              ${escapeHtml(sanitizeChildText(q.childTip || 'Great reading! Check the highlighted sentence in the passage.'))}
-            </p>
+            ${wrongChoiceBoxHtml}
+            <div class="text-xs sm:text-sm font-bold leading-snug bg-white/85 rounded-xl p-3 border ${
+              isCorrect ? 'border-emerald-200 text-emerald-950' : 'border-indigo-200 text-indigo-950'
+            }">
+              ✅ <strong>Why Choice ${escapeHtml(correctId)} Is Right:</strong> ${escapeHtml(whyRightText)}
+            </div>
           </div>
         `;
       }
@@ -1619,7 +1695,15 @@
           provingParagraph: q.provingParagraph || 1,
           provingSentenceText: q.provingSentenceText || '',
           childTip: q.childTip || '',
+          retryHint: q.retryHint || '',
           parentExplanation: q.parentExplanation || '',
+          options: (q.options || []).map((o) => ({
+            id: o.id || o.letter || 'A',
+            text: o.text || '',
+            isCorrect: Boolean(o.isCorrect),
+            trapType: o.trapType || null,
+            childFeedback: o.childFeedback || '',
+          })),
           eliminatedOptions: Array.from(st.eliminated || []),
         };
       });

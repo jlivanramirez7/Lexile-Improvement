@@ -73,34 +73,39 @@
           "text": "Twin coiled springs inside a wooden case carefully designed John Harrison to beat at a steady rate.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Mistakes 'by twin coiled springs' inside the participial phrase for the grammatical actor of the main verb."
+          "diagnosticNote": "Mistakes 'by twin coiled springs' inside the participial phrase for the grammatical actor of the main verb.",
+          "childFeedback": "Twin coiled springs are metal clock parts—they cannot design a human carpenter like John Harrison!"
         },
         {
           "id": "B",
           "text": "The brass balance wheels carefully designed John Harrison inside a wooden case.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Flips the actor and receiver so the wheels design the inventor."
+          "diagnosticNote": "Flips the actor and receiver so the wheels design the inventor.",
+          "childFeedback": "This flips the builder and his invention backward: John Harrison designed the brass balance wheels, not the other way around."
         },
         {
           "id": "C",
           "text": "John Harrison carefully designed the brass balance wheels to beat at a steady rate.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly flips the passive verb ('were carefully designed by John Harrison') into active voice with John Harrison as the subject and the brass balance wheels as the receiver."
+          "diagnosticNote": "Correctly flips the passive verb ('were carefully designed by John Harrison') into active voice with John Harrison as the subject and the brass balance wheels as the receiver.",
+          "childFeedback": "In Paragraph 2, the passive phrase 'were carefully designed by John Harrison to beat at a steady rate' means John Harrison performed the action of designing the brass balance wheels."
         },
         {
           "id": "D",
           "text": "A wooden case carefully designed the twin coiled springs to link the brass balance wheels.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Scrambles nouns from the embedded modifier into a false subject-verb-object statement."
+          "diagnosticNote": "Scrambles nouns from the embedded modifier into a false subject-verb-object statement.",
+          "childFeedback": "A wooden case is just the outer box holding the clock parts; it cannot design coiled springs."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The brass balance wheels, linked by twin coiled springs inside a wooden case, were carefully designed by John Harrison to beat at a steady rate.",
-      "childTip": "Find the main verb 'were carefully designed by.' Put the person right after 'by' at the front of the sentence!",
-      "parentExplanation": "This Sentence Surgery item (ELAGSE5L1) tests whether the student can distinguish between the modifier's 'by' phrase ('linked by twin coiled springs') and the main clause's passive agent ('were carefully designed by John Harrison')."
+      "childTip": "In Paragraph 2, the passive phrase 'were carefully designed by John Harrison to beat at a steady rate' means John Harrison performed the action of designing the brass balance wheels.",
+      "parentExplanation": "This Sentence Surgery item (ELAGSE5L1) tests whether the student can distinguish between the modifier's 'by' phrase ('linked by twin coiled springs') and the main clause's passive agent ('were carefully designed by John Harrison').",
+      "retryHint": "Look at the words right after 'designed by' in the Paragraph 2 sentence to see who created the brass balance wheels."
     },
     {
       "questionId": "w16_q2",
@@ -118,34 +123,39 @@
           "text": "Pay a large sum of prize money to a sailor",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Uses a common financial meaning of 'compensate' (linked to the cash prize in Paragraph 2) that does not fit the mechanical context of Paragraph 3."
+          "diagnosticNote": "Uses a common financial meaning of 'compensate' (linked to the cash prize in Paragraph 2) that does not fit the mechanical context of Paragraph 3.",
+          "childFeedback": "While 'compensate' can mean paying money in other situations, here the subject is a metal strip inside a clock balancing out lost spring tension."
         },
         {
           "id": "B",
           "text": "Make up for or balance out an unwanted change",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly uses the context clue: shortening a weakened spring offsets 'the lost tension' caused by warm air."
+          "diagnosticNote": "Correctly uses the context clue: shortening a weakened spring offsets 'the lost tension' caused by warm air.",
+          "childFeedback": "In Paragraph 3, 'compensate' means to make up for or balance out an unwanted change, because the twin-metal strip bent slightly to shorten the spring when warm air weakened it."
         },
         {
           "id": "C",
           "text": "Snap a metal gear into two separate pieces",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Describes breaking the clock rather than keeping its tension steady."
+          "diagnosticNote": "Describes breaking the clock rather than keeping its tension steady.",
+          "childFeedback": "Harrison fused brass and steel together so the clock would keep steady time, not snap its own gears in two."
         },
         {
           "id": "D",
           "text": "Measure the height of the noon sun above the sea",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Borrows the latitude-measuring procedure from Paragraph 1."
+          "diagnosticNote": "Borrows the latitude-measuring procedure from Paragraph 1.",
+          "childFeedback": "Sailors measured the noon sun in Paragraph 1 to find latitude, whereas the twin-metal strip in Paragraph 3 adjusted the spring for temperature changes."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "When warm air made the main spring weaker, this twin-metal strip bent slightly to shorten the spring and compensate for the lost tension.",
-      "childTip": "Warm air made the spring weaker, so the metal strip shortened the spring to fix that problem. What word means 'balance out'?",
-      "parentExplanation": "Contextual Tier 2 vocabulary item (ELAGSE5RI4). Notice how Option A tests polysemy (financial payment vs. mechanical counterbalancing). In Paragraph 3, the strip bends to offset or balance out the lost spring tension."
+      "childTip": "In Paragraph 3, 'compensate' means to make up for or balance out an unwanted change, because the twin-metal strip bent slightly to shorten the spring when warm air weakened it.",
+      "parentExplanation": "Contextual Tier 2 vocabulary item (ELAGSE5RI4). Notice how Option A tests polysemy (financial payment vs. mechanical counterbalancing). In Paragraph 3, the strip bends to offset or balance out the lost spring tension.",
+      "retryHint": "Read the first half of the sentence in Paragraph 3 ('When warm air made the main spring weaker') to see what problem the twin-metal strip balanced out."
     },
     {
       "questionId": "w16_q3",
@@ -163,34 +173,39 @@
           "text": "Because Earth rotates fifteen degrees every hour, comparing local ship time with home-port time revealed how far east or west they had traveled.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately synthesizes the two scientific facts in Paragraph 1: Earth spins 15 degrees per hour, so time difference equals east-west distance."
+          "diagnosticNote": "Accurately synthesizes the two scientific facts in Paragraph 1: Earth spins 15 degrees per hour, so time difference equals east-west distance.",
+          "childFeedback": "Paragraph 1 explains that because Earth spins fifteen degrees every hour, comparing local noon on the ship with the exact time back at home port showed how far east or west the ship had sailed."
         },
         {
           "id": "B",
           "text": "Because the height of the noon sun above the horizon could only be measured when a clock chimed twelve times.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses latitude (measured by the height of the noon sun) with longitude."
+          "diagnosticNote": "Confuses latitude (measured by the height of the noon sun) with longitude.",
+          "childFeedback": "Captains checked the height of the noon sun to find their north-south latitude easily without needing a chiming clock."
         },
         {
           "id": "C",
           "text": "Because British Navy rules required every captain to drop anchor at the exact same minute every afternoon.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a naval rule that does not exist in the text."
+          "diagnosticNote": "Invents a naval rule that does not exist in the text.",
+          "childFeedback": "The passage never mentions a rule about dropping anchor every afternoon; ships needed home-port time to calculate their east-west longitude."
         },
         {
           "id": "D",
           "text": "Because hidden ocean reefs only rose to the surface during certain hours of the morning.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Combines 'hour' and 'hidden reefs' from Paragraph 1 into an illogical statement."
+          "diagnosticNote": "Combines 'hour' and 'hidden reefs' from Paragraph 1 into an illogical statement.",
+          "childFeedback": "Sharp ocean reefs stay fixed in the water—ships wrecked on them only because navigators couldn't tell their east-west position without an accurate clock."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "To know how far east or west a ship had sailed, navigators needed to compare local noon on the ship with the exact time back at their home port.",
-      "childTip": "First click the sentence in Paragraph 1 that explains what navigators compared to find how far east or west they had sailed.",
-      "parentExplanation": "Click-to-Prove item (ELAGSE5RI3). Paragraph 1 explains that because Earth spins 15 degrees every hour, comparing local noon on the ship with home-port time tells navigators their east-west longitude."
+      "childTip": "Paragraph 1 explains that because Earth spins fifteen degrees every hour, comparing local noon on the ship with the exact time back at home port showed how far east or west the ship had sailed.",
+      "parentExplanation": "Click-to-Prove item (ELAGSE5RI3). Paragraph 1 explains that because Earth spins 15 degrees every hour, comparing local noon on the ship with home-port time tells navigators their east-west longitude.",
+      "retryHint": "Reread the fourth and fifth sentences of Paragraph 1 to connect Earth spinning fifteen degrees each hour with comparing ship time and home-port time."
     },
     {
       "questionId": "w16_q4",
@@ -208,34 +223,39 @@
           "text": "By comparing the speed of British navy ships with the speed of Jamaican trading vessels",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Mentions ships and Jamaica (from Paragraph 4), which are not compared in Paragraphs 2 and 3."
+          "diagnosticNote": "Mentions ships and Jamaica (from Paragraph 4), which are not compared in Paragraphs 2 and 3.",
+          "childFeedback": "Paragraphs 2 and 3 focus on how waves and weather affect clock gears and springs, never comparing the speed of different ships."
         },
         {
           "id": "B",
           "text": "By listing every member of the British Parliament in the order they voted on the cash prize",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Fabricates a chronological list based on the brief mention of Parliament in Paragraph 2."
+          "diagnosticNote": "Fabricates a chronological list based on the brief mention of Parliament in Paragraph 2.",
+          "childFeedback": "Paragraph 2 only mentions that the British Parliament offered a cash prize in 1714, without listing the names or votes of its members."
         },
         {
           "id": "C",
           "text": "By explaining the two physical problems that ruined clocks at sea and describing the mechanical inventions Harrison built to solve each one",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately identifies the Problem-and-Solution structure addressing wave motion (twin coiled springs) and temperature swings (twin-metal strip)."
+          "diagnosticNote": "Accurately identifies the Problem-and-Solution structure addressing wave motion (twin coiled springs) and temperature swings (twin-metal strip).",
+          "childFeedback": "Paragraphs 2 and 3 explain the two main problems at sea—rolling waves and temperature swings—and show how Harrison solved waves with twin spring-linked balance wheels and heat with a brass-and-steel strip."
         },
         {
           "id": "D",
           "text": "By arguing that tall pendulum clocks were always more accurate at sea than silver pocket watches",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the passage's point that pendulum clocks failed on pitching decks."
+          "diagnosticNote": "Reverses the passage's point that pendulum clocks failed on pitching decks.",
+          "childFeedback": "Paragraph 2 states the exact opposite: tall pendulum clocks became erratic on pitching ships, whereas Harrison's silver watch H4 succeeded."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Whenever a wave tilted the ship one way, the twin springs pulled the two wheels in opposite directions so the motion canceled out.",
-      "childTip": "Notice how Paragraph 2 names two big problems for sea clocks (waves and weather) and Paragraph 3 shows how Harrison fixed both.",
-      "parentExplanation": "Text Structure item (ELAGSE5RI5). Paragraph 2 introduces the two physical obstacles at sea (pitching waves and temperature changes), and Paragraph 3 details Harrison's two mechanical solutions (counter-balanced springs and the bimetallic strip)."
+      "childTip": "Paragraphs 2 and 3 explain the two main problems at sea—rolling waves and temperature swings—and show how Harrison solved waves with twin spring-linked balance wheels and heat with a brass-and-steel strip.",
+      "parentExplanation": "Text Structure item (ELAGSE5RI5). Paragraph 2 introduces the two physical obstacles at sea (pitching waves and temperature changes), and Paragraph 3 details Harrison's two mechanical solutions (counter-balanced springs and the bimetallic strip).",
+      "retryHint": "Look at the two problems named in Paragraph 2 (waves and weather) and the two mechanical fixes Harrison built in Paragraphs 2 and 3."
     },
     {
       "questionId": "w16_q5",
@@ -254,34 +274,39 @@
           "text": "The H4 pocket watch was lost overboard during the stormy eighty-one-day voyage to Jamaica.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraph 4, which states that H4 arrived in Jamaica having lost only five seconds."
+          "diagnosticNote": "Contradicts Paragraph 4, which states that H4 arrived in Jamaica having lost only five seconds.",
+          "childFeedback": "The H4 watch was not lost overboard; Paragraph 4 states it reached Jamaica having lost only five seconds and pinpointed the island within a mile."
         },
         {
           "id": "B",
           "text": "Astronomers on the prize board favored star-and-moon charts and doubted that a mechanical watch had truly solved the problem.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes Paragraph 2 (astronomers favored lunar mapping) and Paragraph 5 (skeptical astronomers dismissed H4's voyage as a lucky fluke)."
+          "diagnosticNote": "Synthesizes Paragraph 2 (astronomers favored lunar mapping) and Paragraph 5 (skeptical astronomers dismissed H4's voyage as a lucky fluke).",
+          "childFeedback": "Paragraphs 2 and 5 explain that royal astronomers believed the answer lay in moon charts, so even after H4 lost only five seconds on the voyage to Jamaica, skeptical astronomers claimed it was a fluke."
         },
         {
           "id": "C",
           "text": "King George III opposed mechanical clocks and forbade Parliament from paying carpenters.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Flips the role of King George III, who actually tested the watch and helped Harrison win his prize."
+          "diagnosticNote": "Flips the role of King George III, who actually tested the watch and helped Harrison win his prize.",
+          "childFeedback": "Paragraph 5 shows that King George III actually helped Harrison by testing a copy of the watch himself, which led the board to grant the full prize."
         },
         {
           "id": "D",
           "text": "Harrison refused to let his son William test the silver pocket watch on a real navy ship.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Directly contradicts Paragraph 4, where William carried the watch aboard a ship bound for Jamaica."
+          "diagnosticNote": "Directly contradicts Paragraph 4, where William carried the watch aboard a ship bound for Jamaica.",
+          "childFeedback": "Paragraph 4 explicitly says Harrison's son William took the H4 watch on a navy ship bound for Jamaica in 1761."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Even then, skeptical astronomers on the prize board insisted that the result might have been a lucky fluke.",
-      "childTip": "Check Paragraph 5 to see how the astronomers on the prize board reacted after the trip to Jamaica.",
-      "parentExplanation": "Focus standard ELAGSE5RI1 / D5_EBSR. Part A asks students to infer the cause of the delayed reward from Paragraphs 2 and 5: the astronomers on the board were skeptical and dismissed the successful sea trial as a fluke."
+      "childTip": "Paragraphs 2 and 5 explain that royal astronomers believed the answer lay in moon charts, so even after H4 lost only five seconds on the voyage to Jamaica, skeptical astronomers claimed it was a fluke.",
+      "parentExplanation": "Focus standard ELAGSE5RI1 / D5_EBSR. Part A asks students to infer the cause of the delayed reward from Paragraphs 2 and 5: the astronomers on the board were skeptical and dismissed the successful sea trial as a fluke.",
+      "retryHint": "Check Paragraph 2 for what 'royal star scholars' believed and Paragraph 5 for how 'skeptical astronomers on the prize board' reacted to H4's test."
     },
     {
       "questionId": "w16_q6",
@@ -300,34 +325,39 @@
           "text": "\"In 1714, the British Parliament offered a massive cash prize to anyone who could solve the longitude problem.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "States when the prize was created, not why the board delayed paying Harrison after 1761."
+          "diagnosticNote": "States when the prize was created, not why the board delayed paying Harrison after 1761.",
+          "childFeedback": "This sentence from Paragraph 2 only tells when the prize was first offered in 1714, not why the board hesitated to pay Harrison after his watch succeeded."
         },
         {
           "id": "B",
           "text": "\"Measuring just five inches across, H4 used tiny diamond and ruby bearings to cut friction without needing sticky oil.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes the internal parts of H4 rather than the prize board's reaction."
+          "diagnosticNote": "Describes the internal parts of H4 rather than the prize board's reaction.",
+          "childFeedback": "This detail from Paragraph 4 describes the diamond and ruby bearings inside H4, rather than why the prize board doubted the results."
         },
         {
           "id": "C",
           "text": "\"After eighty-one days on rough seas, the watch had lost only five seconds, pinpointing the island within a single mile.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Proves that the watch worked accurately, not why the board still withheld the prize afterward."
+          "diagnosticNote": "Proves that the watch worked accurately, not why the board still withheld the prize afterward.",
+          "childFeedback": "This sentence from Paragraph 4 proves how accurate the watch was on the trip to Jamaica, not why the astronomers still refused to pay right away."
         },
         {
           "id": "D",
           "text": "\"Even then, skeptical astronomers on the prize board insisted that the result might have been a lucky fluke.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves Part A by showing that the astronomers doubted the sea trial and called it a fluke."
+          "diagnosticNote": "Directly proves Part A by showing that the astronomers doubted the sea trial and called it a fluke.",
+          "childFeedback": "This quotation from Paragraph 5 directly supports Question 5 by showing that skeptical astronomers on the prize board doubted the watch and called its success a lucky fluke."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Even then, skeptical astronomers on the prize board insisted that the result might have been a lucky fluke.",
-      "childTip": "Pick the exact sentence from Paragraph 5 that shows the astronomers doubting the Jamaica sea test.",
-      "parentExplanation": "Part B requires selecting the verbatim quote in Paragraph 5 that proves why the prize was delayed despite H4's success in Paragraph 4. Option C is a classic Part B distractor: it is a true statement about the watch's success, but it does not explain the board's refusal."
+      "childTip": "This quotation from Paragraph 5 directly supports Question 5 by showing that skeptical astronomers on the prize board doubted the watch and called its success a lucky fluke.",
+      "parentExplanation": "Part B requires selecting the verbatim quote in Paragraph 5 that proves why the prize was delayed despite H4's success in Paragraph 4. Option C is a classic Part B distractor: it is a true statement about the watch's success, but it does not explain the board's refusal.",
+      "retryHint": "Find the quote from Paragraph 5 that shows why the astronomers on the prize board delayed giving Harrison his reward."
     }
   ]
 }

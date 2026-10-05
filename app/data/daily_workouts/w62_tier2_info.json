@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The sea floor pulling on the edges of Greenland",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The sea floor is the destination where the heavy salt water lands ('down to the sea floor'), not the force that pushes the water down!"
         },
         {
           "id": "B",
           "text": "The freezing winter air",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'are steadily pushed down to the sea floor by' shows that 'the freezing winter air' is what drives the heavy salt water downward."
         },
         {
           "id": "C",
           "text": "Surface waves racing across the Gulf Stream",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Surface waves and the Gulf Stream are mentioned in Paragraphs 1 and 5, not in this sentence from Paragraph 2 about freezing winter air."
         },
         {
           "id": "D",
           "text": "Large ships breaking through the northern ice",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Ships breaking through ice are never mentioned in the passage; it is the freezing winter air near Greenland that cools and pushes the salty water down."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Near the frozen edges of Greenland, vast sheets of heavy salt water are steadily pushed down to the sea floor by the freezing winter air.",
-      "childTip": "Look right after 'are steadily pushed down to the sea floor by' to find the real actor.",
-      "parentExplanation": "In this passive-voice construction, 'vast sheets of heavy salt water' receives the action. The true actor performing the pushing appears after 'by': 'the freezing winter air' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'are steadily pushed down to the sea floor by' shows that 'the freezing winter air' is what drives the heavy salt water downward.",
+      "parentExplanation": "In this passive-voice construction, 'vast sheets of heavy salt water' receives the action. The true actor performing the pushing appears after 'by': 'the freezing winter air' (Option B).",
+      "retryHint": "Look right after 'are steadily pushed down to the sea floor by' in Paragraph 2 to see what pushes the water."
     },
     {
       "questionId": "w62_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Spinning fast like a surface whirlpool",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 says this deep ocean current creeps along at a few inches per second, not spinning fast like a surface whirlpool!"
         },
         {
           "id": "B",
           "text": "Warm and full of bright sunlight",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Warm and full of sunlight describes shallow surface water near the equator, which is the opposite of the icy-cold, heavy polar water in Paragraph 3."
         },
         {
           "id": "C",
           "text": "Completely free of any salt or minerals",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 3 states that the polar water is 'loaded with extra salt,' not free of salt! That extra salt and cold make the water heavy and tightly packed."
         },
         {
           "id": "D",
           "text": "Heavy and tightly packed together",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'dense' means heavy and tightly packed together. Paragraph 2 explains that cold makes water's tiny parts 'pack tightly together,' and Paragraph 3 says this heavy water plunges like a stone."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because this polar water is both icy cold and loaded with extra salt, it becomes much more dense than the water around it.",
-      "childTip": "Connect 'dense' to Paragraph 2 ('tiny parts pack tightly together') and the next sentence ('heavy water plunges').",
-      "parentExplanation": "Paragraph 2 explains that cold temperatures make tiny parts 'pack tightly together,' and Paragraph 3 states that this 'heavy water plunges two miles straight down,' proving 'dense' means heavy and tightly packed (Option A)."
+      "childTip": "In Paragraph 3, 'dense' means heavy and tightly packed together. Paragraph 2 explains that cold makes water's tiny parts 'pack tightly together,' and Paragraph 3 says this heavy water plunges like a stone.",
+      "parentExplanation": "Paragraph 2 explains that cold temperatures make tiny parts 'pack tightly together,' and Paragraph 3 states that this 'heavy water plunges two miles straight down,' proving 'dense' means heavy and tightly packed (Option A).",
+      "retryHint": "Connect 'dense' in Paragraph 3 to 'tiny parts pack tightly together' in Paragraph 2 and 'heavy water plunges' in the next sentence."
     },
     {
       "questionId": "w62_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "As surface water freezes into ice crystals, the salt is left behind in the unfrozen water below.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that when sea ice forms on the ocean surface in winter, the growing ice crystals leave their salt behind in the unfrozen liquid water below."
         },
         {
           "id": "B",
           "text": "Strong winds blow dry salt dust from the land of Greenland out across the ocean waves.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Bitter winter winds in Paragraph 2 cool the ocean surface and form sea ice; they don't blow dry salt dust off the land of Greenland."
         },
         {
           "id": "C",
           "text": "The Gulf Stream dumps millions of tons of salt into the North Pole every winter.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The Gulf Stream is a warm surface current mentioned in Paragraph 5 that carries water back north—it doesn't dump extra salt at the North Pole."
         },
         {
           "id": "D",
           "text": "Underwater volcanoes melt salt rocks on the sea floor and shoot them up into the ice.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Underwater volcanoes are never mentioned in this article! The extra salt comes from surface ice crystals leaving their salt behind in the liquid water."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Second, as sea ice forms on the surface, the growing ice crystals leave their salt behind in the liquid water below.",
-      "childTip": "Click the last sentence of Paragraph 2 to see what happens to the salt when ice crystals form.",
-      "parentExplanation": "Aligned to ELAGSE5RI3, Paragraph 2 explains the cause-and-effect relationship: when seawater freezes at the surface, 'the growing ice crystals leave their salt behind in the liquid water below' (Option A)."
+      "childTip": "Paragraph 2 explains that when sea ice forms on the ocean surface in winter, the growing ice crystals leave their salt behind in the unfrozen liquid water below.",
+      "parentExplanation": "Aligned to ELAGSE5RI3, Paragraph 2 explains the cause-and-effect relationship: when seawater freezes at the surface, 'the growing ice crystals leave their salt behind in the liquid water below' (Option A).",
+      "retryHint": "Check the last sentence of Paragraph 2 to see what happens to the salt when sea ice crystals form on top of the water."
     },
     {
       "questionId": "w62_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By listing all the fish species that live in the Pacific Ocean from smallest to largest",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 4 only mentions once that rising minerals feed fish and sea plants—it never lists fish species from smallest to largest."
         },
         {
           "id": "B",
           "text": "By comparing the speed of modern cargo ships to the speed of ancient sailing boats on the Gulf Stream",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never mentions cargo ships or sailing boats; it tracks how seawater itself travels around the globe over a thousand years."
         },
         {
           "id": "C",
           "text": "By tracing the continuous path of the water as it sinks at the poles, flows along the seabed, rises in warmer seas, and returns north",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 2 through 5 trace the continuous loop of the water step by step: sinking near Greenland (Paragraphs 2–3), flowing south and rising in warm oceans (Paragraph 4), and returning north (Paragraph 5)."
         },
         {
           "id": "D",
           "text": "By arguing that surface winds are much more important to Earth's climate than deep ocean currents",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Instead of saying surface winds are more important, the passage explains why the deep underwater conveyor belt is vital for Earth's climate and sea life."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Once back at the surface, warm currents like the Gulf Stream carry the water back north toward Greenland to start the cycle all over again.",
-      "childTip": "Follow the journey of the water from Greenland in Paragraph 2 all the way back to Greenland in Paragraph 5.",
-      "parentExplanation": "Paragraphs 2–5 follow a sequential cause-and-effect cycle: cold salty water sinks near Greenland (P2–3), travels south and branches into the Indian and Pacific Oceans where it warms and rises (P4), and returns north to complete the loop (P5) (Option A)."
+      "childTip": "Paragraphs 2 through 5 trace the continuous loop of the water step by step: sinking near Greenland (Paragraphs 2–3), flowing south and rising in warm oceans (Paragraph 4), and returning north (Paragraph 5).",
+      "parentExplanation": "Paragraphs 2–5 follow a sequential cause-and-effect cycle: cold salty water sinks near Greenland (P2–3), travels south and branches into the Indian and Pacific Oceans where it warms and rises (P4), and returns north to complete the loop (P5) (Option A).",
+      "retryHint": "Follow the path of the water from Greenland in Paragraph 2 all the way back to Greenland in Paragraph 5."
     },
     {
       "questionId": "w62_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "The word thermohaline comes from two ancient Greek words that mean heat and salt.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 1 shares the Greek roots 'thermo' and 'haline' as a quick background detail, not the central idea of the whole five-paragraph article."
         },
         {
           "id": "B",
           "text": "The global conveyor belt moves much faster than wind-driven waves on the surface of the ocean.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 says the exact opposite: unlike surface waves that race across the sea, the deep conveyor belt creeps along at just a few inches per second."
         },
         {
           "id": "C",
           "text": "Sea ice near Greenland will soon freeze the entire Atlantic Ocean from the surface to the bottom.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The passage never says the entire Atlantic Ocean will freeze solid; sea ice at the surface simply leaves salt behind to drive the steady current."
         },
         {
           "id": "D",
           "text": "Driven by sinking cold, salty water at the poles, the global ocean conveyor belt circulates heat and nutrients around the planet.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across the whole passage, the central idea is that cold, salty water sinking near the poles drives a deep global ocean belt that moves heat and rich nutrients around the planet."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.",
-      "childTip": "Pick the choice that combines what drives the deep current and why it matters for the whole planet.",
-      "parentExplanation": "The central idea of the passage is that temperature and salt differences near the poles drive a global underwater current that distributes heat and marine nutrients across the Earth (Option A)."
+      "childTip": "Across the whole passage, the central idea is that cold, salty water sinking near the poles drives a deep global ocean belt that moves heat and rich nutrients around the planet.",
+      "parentExplanation": "The central idea of the passage is that temperature and salt differences near the poles drive a global underwater current that distributes heat and marine nutrients across the Earth (Option A).",
+      "retryHint": "Think about the main point that combines what powers the global conveyor belt (Paragraphs 2–3) and how it helps the planet (Paragraphs 4–5)."
     },
     {
       "questionId": "w62_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"The name comes from two Greek words: thermo for heat and haline for salt.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only explains the Greek word roots for heat and salt, not how the ocean belt circulates water to help the planet."
         },
         {
           "id": "B",
           "text": "\"By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This closing sentence from Paragraph 5 directly supports Question 5 by summing up how the ocean conveyor belt moves heat and deep-sea nutrients to keep Earth's climate mild and seas full of life."
         },
         {
           "id": "C",
           "text": "\"A single drop of seawater takes nearly a thousand years to circulate through the whole loop.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 5 only tells how long one drop of water takes to finish the loop, without explaining what drives the belt or why it matters."
         },
         {
           "id": "D",
           "text": "\"Unlike surface waves that race across the sea, this deep current creeps along at a few inches per second.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 1 only compares the slow speed of the deep current to fast surface waves, not the central idea of the passage."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By moving heat from the equator toward the poles and stirring up food from the deep, this vital ocean belt keeps Earth's climate mild and its seas full of life.",
-      "childTip": "Select the quote from Paragraph 5 that shows how the ocean belt helps Earth's climate and sea life.",
-      "parentExplanation": "Option D directly supports the central idea in Part A by summarizing the global impact of the thermohaline conveyor belt on climate and marine food webs."
+      "childTip": "This closing sentence from Paragraph 5 directly supports Question 5 by summing up how the ocean conveyor belt moves heat and deep-sea nutrients to keep Earth's climate mild and seas full of life.",
+      "parentExplanation": "Option D directly supports the central idea in Part A by summarizing the global impact of the thermohaline conveyor belt on climate and marine food webs.",
+      "retryHint": "Check the final sentence of Paragraph 5 to see how moving heat and deep-sea food helps Earth's climate and sea life."
     }
   ]
 }

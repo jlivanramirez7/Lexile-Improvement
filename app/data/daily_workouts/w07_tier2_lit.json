@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The main computer board sent a new turn command during the third test run.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 says the main computer board's normal commands were overridden, and Maya saw that her code had not asked the rover to turn at all."
         },
         {
           "id": "B",
           "text": "The third test run erased the steering program stored on Maya's laptop.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The third test run didn't erase Maya's laptop program; she was looking right at the live sensor log on her laptop during the run."
         },
         {
           "id": "C",
           "text": "A sudden spike from the nose compass pushed aside the normal steering commands.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'were stubbornly overridden by a sudden spike from the nose compass' shows that the sudden spike from the nose compass forced the rover off course."
         },
         {
           "id": "D",
           "text": "A low battery on the computer board stopped all signals from reaching the wheels.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never mentions a low battery on the computer board; the wheels were turning sharply toward the bleachers because of the compass spike."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "During the third test run, the steering commands sent by the main computer board were stubbornly overridden by a sudden spike from the nose compass.",
-      "childTip": "Find the 'by' phrase after 'were stubbornly overridden' to spot what truly caused the action.",
-      "parentExplanation": "This passive-voice sentence places the receiver ('the steering commands') first and embeds a participial phrase ('sent by the main computer board') right before the main verb. The true actor performing 'were overridden' is at the end: 'by a sudden spike from the nose compass' (Option C). Option A is a Syntactic Reversal trap that confuses the modifier with the main action."
+      "childTip": "In Paragraph 2, the passive verb 'were stubbornly overridden by a sudden spike from the nose compass' shows that the sudden spike from the nose compass forced the rover off course.",
+      "parentExplanation": "This passive-voice sentence places the receiver ('the steering commands') first and embeds a participial phrase ('sent by the main computer board') right before the main verb. The true actor performing 'were overridden' is at the end: 'by a sudden spike from the nose compass' (Option C). Option A is a Syntactic Reversal trap that confuses the modifier with the main action.",
+      "retryHint": "Look closely at the phrase 'overridden by' in the Paragraph 2 sentence to see what pushed aside the normal steering commands."
     },
     {
       "questionId": "w07_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Stubbornly holding on to an idea even when other clues point elsewhere",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'obstinate' means stubbornly holding on to an idea, because Julian insisted a loose wheel hub caused the drift and tightened every axle nut twice despite Maya's sensor log."
         },
         {
           "id": "B",
           "text": "Frightened that the judges would disqualify the team before the trial",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Julian isn't talking about the judges disqualifying them in Paragraph 3; he is stubbornly insisting that a loose wheel hub is causing the turn."
         },
         {
           "id": "C",
           "text": "Careful to oil the metal axle nuts so the wheels spin faster",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Julian tightens the axle nuts with his wrench because he thinks a hub is loose, not oiling them to make the wheels spin faster."
         },
         {
           "id": "D",
           "text": "Completely unwilling to touch any mechanical tools during the contest",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Julian is using his wrench to tighten every axle nut twice in Paragraph 3, which is the opposite of refusing to touch mechanical tools."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Julian remained obstinate that a loose wheel hub caused the drift, so he tightened every axle nut twice.",
-      "childTip": "Look at what Julian does next: he tightens every axle nut twice because he refuses to let go of his wheel theory.",
-      "parentExplanation": "The root 'obstin-' means to stand firmly against. Even after Maya inspects the sensor log in Paragraph 2, Julian refuses to budge from his mechanical explanation and tightens every axle nut twice, proving 'obstinate' means stubbornly holding on to an idea (Option A)."
+      "childTip": "In Paragraph 3, 'obstinate' means stubbornly holding on to an idea, because Julian insisted a loose wheel hub caused the drift and tightened every axle nut twice despite Maya's sensor log.",
+      "parentExplanation": "The root 'obstin-' means to stand firmly against. Even after Maya inspects the sensor log in Paragraph 2, Julian refuses to budge from his mechanical explanation and tightens every axle nut twice, proving 'obstinate' means stubbornly holding on to an idea (Option A).",
+      "retryHint": "See how Julian reacts in Paragraph 3 after Maya checks the sensor log—he still insists it's a wheel hub and tightens every nut twice."
     },
     {
       "questionId": "w07_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She is trying to prove that every compass in the school gym is permanently broken.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Maya's hand compass works properly—its red needle swings toward the brass plate because of the electric current underneath, not because every compass is broken."
         },
         {
           "id": "B",
           "text": "She needs to find out which direction is north so she can turn the blue gym mat around.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Maya is not trying to move the blue gym mat; she slides the compass near the foul line to see why the rover keeps jerking at that exact spot."
         },
         {
           "id": "C",
           "text": "She hopes the brass compass will scratch the wood boards and mark the center foul line.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "She slides the compass gently across the boards to watch the red magnetic needle, not to scratch the gym floor."
         },
         {
           "id": "D",
           "text": "She wants to test whether an outside magnetic force in the floor is pulling the rover's sensor off course.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraphs 2 and 3, after seeing that her code didn't tell Scout to turn, Maya slides her hand compass across the floor to test if something magnetic in the floor is pulling the sensor."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Almost at once, the red needle swung sideways and locked onto a narrow brass plate set into the wood.",
-      "childTip": "Click the sentence in Paragraph 3 that shows how the compass needle reacts to the metal plate in the floor.",
-      "parentExplanation": "At the end of Paragraph 2, Maya infers that 'something near the floor was tricking the sensor.' In Paragraph 3, she slides her simple brass compass across the boards and watches the needle swing toward the brass floor plate, proving she is testing for an external magnetic disturbance (Option D)."
+      "childTip": "In Paragraphs 2 and 3, after seeing that her code didn't tell Scout to turn, Maya slides her hand compass across the floor to test if something magnetic in the floor is pulling the sensor.",
+      "parentExplanation": "At the end of Paragraph 2, Maya infers that 'something near the floor was tricking the sensor.' In Paragraph 3, she slides her simple brass compass across the boards and watches the needle swing toward the brass floor plate, proving she is testing for an external magnetic disturbance (Option D).",
+      "retryHint": "Connect the last sentence of Paragraph 2 ('something near the floor was tricking the sensor') to what Maya does with her hand compass in Paragraph 3."
     },
     {
       "questionId": "w07_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By speaking only from the judges' perspective, it hides the rover's steering problem until the final race.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story is told from close beside Maya and Julian on the gym floor, and the judges don't even call their team name until the end of Paragraph 5."
         },
         {
           "id": "B",
           "text": "By revealing Maya's focus on software and Julian's focus on hardware, it shows how each teammate initially blames the other's specialty.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "By showing us both Maya's trust in software logic and Julian's preference for heavy hardware in Paragraphs 1–3, the narrator helps us see why each partner blames the other's work first."
         },
         {
           "id": "C",
           "text": "By describing only the blue gym mat and bleachers, it proves neither student cares about winning the regional trial.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Both Maya and Julian care deeply about the trial—they spent three weeks building Scout and race against the clock to fix the steering in time."
         },
         {
           "id": "D",
           "text": "By listing the exact price of the aluminum brackets, it explains why the robotics club ran out of money.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The narrator never mentions the price of aluminum brackets or club money; the conflict is about software versus hardware and fixing the rover's drift."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Maya trusted clean software logic, whereas Julian preferred heavy aluminum brackets and thick rubber treads.",
-      "childTip": "Notice how the narrator shows Maya trusting software while Julian trusts metal hardware, causing them to clash at first.",
-      "parentExplanation": "Aligned to ELAGSE5RL6, the narrator contrasts Maya's preference for software logic with Julian's reliance on physical hardware in Paragraph 1. This perspective helps the reader see why Julian initially blames Maya's code while Maya checks her sensor logs before they unite in Paragraph 5 (Option B)."
+      "childTip": "By showing us both Maya's trust in software logic and Julian's preference for heavy hardware in Paragraphs 1–3, the narrator helps us see why each partner blames the other's work first.",
+      "parentExplanation": "Aligned to ELAGSE5RL6, the narrator contrasts Maya's preference for software logic with Julian's reliance on physical hardware in Paragraph 1. This perspective helps the reader see why Julian initially blames Maya's code while Maya checks her sensor logs before they unite in Paragraph 5 (Option B).",
+      "retryHint": "Look at how Paragraph 1 contrasts what Maya trusts with what Julian prefers, and how they blame each other in Paragraphs 2 and 3."
     },
     {
       "questionId": "w07_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "School gymnasiums should never use electric scoreboards during a robotics contest.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The story isn't a rule about school gym scoreboards; it's a lesson about how two teammates overcome a surprise obstacle by working together."
         },
         {
           "id": "B",
           "text": "Computer programs are always more reliable than metal tools when building a robot.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Neither software alone nor hardware alone solved the problem—Julian had to raise the compass on a plastic mast AND Maya had to update the code."
         },
         {
           "id": "C",
           "text": "Complex problems are solved fastest when teammates stop trading blame and combine their different strengths.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 5, once Maya and Julian stop blaming each other and combine Julian's high plastic mast with Maya's updated steering code, Scout glides straight across the line."
         },
         {
           "id": "D",
           "text": "Working alone is the safest way to avoid arguments before an important competition.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Working alone would not have fixed Scout in twelve minutes; they succeeded only when they teamed up and combined both of their strengths."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "With twelve minutes left before the judges called their team name, the two rivals stopped blaming each other and worked as one.",
-      "childTip": "Think about what changes in Paragraph 5 when Maya and Julian stop arguing and use both hardware and code fixes.",
-      "parentExplanation": "The central theme emerges in Paragraph 5: once Maya and Julian stop blaming each other's specialty and combine Julian's physical mast adjustment with Maya's software calibration, they solve the magnetic interference problem together (Option C)."
+      "childTip": "In Paragraph 5, once Maya and Julian stop blaming each other and combine Julian's high plastic mast with Maya's updated steering code, Scout glides straight across the line.",
+      "parentExplanation": "The central theme emerges in Paragraph 5: once Maya and Julian stop blaming each other's specialty and combine Julian's physical mast adjustment with Maya's software calibration, they solve the magnetic interference problem together (Option C).",
+      "retryHint": "Read Paragraph 5 to see what changes between Maya and Julian with twelve minutes left and how both of their skills are needed to fix Scout."
     },
     {
       "questionId": "w07_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Every time the rover passed the center foul line, its front axle jerked sharply toward the bleachers.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only describes the rover's steering problem, before the teammates learn to stop blaming each other."
         },
         {
           "id": "B",
           "text": "\"Julian knelt on the floorboards with a wrench and muttered that Maya's steering loop contained a math error.\"",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This quote from Paragraph 2 shows Julian blaming Maya's math, which is the early conflict rather than the lesson about working together."
         },
         {
           "id": "C",
           "text": "\"Beneath that floor plate ran the main power conduit for the gym's giant scoreboard and folding bleachers.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 4 explains the electrical wire under the floor, without showing how the teammates combined their strengths to solve it."
         },
         {
           "id": "D",
           "text": "\"With twelve minutes left before the judges called their team name, the two rivals stopped blaming each other and worked as one.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 5 directly proves the theme in Question 5 by showing the exact moment the two rivals stopped blaming each other and worked together as one team."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "With twelve minutes left before the judges called their team name, the two rivals stopped blaming each other and worked as one.",
-      "childTip": "Pick the quote that directly proves the two teammates stopped arguing and teamed up to fix the rover.",
-      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 showing how abandoning blame and uniting their skills resolved the conflict, directly supporting the theme in Part A."
+      "childTip": "This quotation from Paragraph 5 directly proves the theme in Question 5 by showing the exact moment the two rivals stopped blaming each other and worked together as one team.",
+      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 showing how abandoning blame and uniting their skills resolved the conflict, directly supporting the theme in Part A.",
+      "retryHint": "Find the quote from Paragraph 5 that shows Maya and Julian ending their argument and uniting as teammates."
     }
   ]
 }

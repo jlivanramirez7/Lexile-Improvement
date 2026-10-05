@@ -73,34 +73,39 @@
           "text": "The warehouse crews working in New Jersey",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('packed... by warehouse crews') with the agent of the main verb ('were smoothly hoisted')."
+          "diagnosticNote": "Confuses the agent inside the middle participial phrase ('packed... by warehouse crews') with the agent of the main verb ('were smoothly hoisted').",
+          "childFeedback": "Careful—this choice confuses the noun inside the middle describing phrase ('packed... by warehouse crews') with who or what actually did the main action ('were smoothly hoisted')."
         },
         {
           "id": "B",
           "text": "A giant dock crane at the port",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('were smoothly hoisted onto the ship deck by a giant dock crane')."
+          "diagnosticNote": "Correctly identifies the passive agent following the main verb ('were smoothly hoisted onto the ship deck by a giant dock crane').",
+          "childFeedback": "Spot on! This answer correctly identifies the doer of the action following the main verb ('were smoothly hoisted onto the ship deck by a giant dock crane')."
         },
         {
           "id": "C",
           "text": "The loose factory goods inside the containers",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Selects a noun phrase inside the embedded modifier rather than the machine that lifted the boxes."
+          "diagnosticNote": "Selects a noun phrase inside the embedded modifier rather than the machine that lifted the boxes.",
+          "childFeedback": "Watch out—this choice selects a noun phrase inside the middle describing phrase rather than the machine that lifted the boxes."
         },
         {
           "id": "D",
           "text": "The fifty-eight large metal boxes on the pier",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Fifty-eight large metal boxes') with the actor performing the lifting."
+          "diagnosticNote": "Confuses the grammatical subject/receiver of the passive verb ('Fifty-eight large metal boxes') with the actor performing the lifting.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action ('Fifty-eight large metal boxes') with the actor performing the lifting."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Fifty-eight large metal boxes, packed with loose factory goods by warehouse crews in New Jersey, were smoothly hoisted onto the ship deck by a giant dock crane.",
-      "childTip": "Look for the main verb 'were smoothly hoisted.' Which 'by' phrase comes after that verb to tell what lifted the boxes?",
-      "parentExplanation": "Sentence Surgery (ELAGSE5L1) with a double-'by' passive trap. Warehouse crews packed the goods, but 'a giant dock crane' performed the main action ('were smoothly hoisted')."
+      "childTip": "Spot on! This answer correctly identifies the doer of the action following the main verb ('were smoothly hoisted onto the ship deck by a giant dock crane').",
+      "parentExplanation": "Sentence Surgery (ELAGSE5L1) with a double-'by' passive trap. Warehouse crews packed the goods, but 'a giant dock crane' performed the main action ('were smoothly hoisted').",
+      "retryHint": "In Paragraph 3, look for the main verb 'were smoothly hoisted.' Which 'by' phrase comes after that verb to tell what lifted the boxes?"
     },
     {
       "questionId": "w78_q2",
@@ -118,34 +123,39 @@
           "text": "Odd-shaped and different at every single port",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Gives the exact opposite meaning; different hook and box sizes prevented cranes from lifting foreign containers."
+          "diagnosticNote": "Gives the exact opposite meaning; different hook and box sizes prevented cranes from lifting foreign containers.",
+          "childFeedback": "Not quite—this choice gives the exact opposite meaning; different hook and box sizes prevented cranes from lifting foreign containers."
         },
         {
           "id": "B",
           "text": "Special work clothes worn by ship captains",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects the common noun meaning of 'uniform' (clothing) instead of the adjective meaning ('uniform box sizes')."
+          "diagnosticNote": "Selects the common noun meaning of 'uniform' (clothing) instead of the adjective meaning ('uniform box sizes').",
+          "childFeedback": "Watch out—this choice selects the common noun meaning of 'uniform' (clothing) instead of the adjective meaning ('uniform box sizes')."
         },
         {
           "id": "C",
           "text": "Standard and matching in size and shape",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Uses the root 'uni- + form' (one shape) and the surrounding context of matching twenty-foot and forty-foot sizes with matching corner locks."
+          "diagnosticNote": "Uses the root 'uni- + form' (one shape) and the surrounding context of matching twenty-foot and forty-foot sizes with matching corner locks.",
+          "childFeedback": "Spot on! This answer uses the root 'uni- + form' (one shape) and the surrounding context of matching twenty-foot and forty-foot sizes with matching corner locks."
         },
         {
           "id": "D",
           "text": "Built out of lightweight wooden barrels and cloth sacks",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Confuses modern standardized steel containers with the old break-bulk barrels and sacks in Paragraph 1."
+          "diagnosticNote": "Confuses modern standardized steel containers with the old break-bulk barrels and sacks in Paragraph 1.",
+          "childFeedback": "Careful—this choice confuses modern standardized steel containers with the old break-bulk barrels and sacks in Paragraph 1."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "For this system to work across the globe, however, every shipping company had to agree on uniform box sizes and corner locks.",
-      "childTip": "Look at the word parts 'uni-' (one) and 'form' (shape), and check why cranes in Tokyo and Savannah needed boxes to match.",
-      "parentExplanation": "Multiple-Meaning & Morphological Vocabulary (ELAGSE5RI4/L4). Here 'uniform' is an adjective modifying 'box sizes and corner locks,' meaning having one standard, matching form."
+      "childTip": "Spot on! This answer uses the root 'uni- + form' (one shape) and the surrounding context of matching twenty-foot and forty-foot sizes with matching corner locks.",
+      "parentExplanation": "Multiple-Meaning & Morphological Vocabulary (ELAGSE5RI4/L4). Here 'uniform' is an adjective modifying 'box sizes and corner locks,' meaning having one standard, matching form.",
+      "retryHint": "In Paragraph 4, look at the word parts 'uni-' (one) and 'form' (shape), and check why cranes in Tokyo and Savannah needed boxes to match."
     },
     {
       "questionId": "w78_q3",
@@ -163,34 +173,39 @@
           "text": "Workers had to carry loose barrels, sacks, and crates aboard one by one and wedge each odd-shaped bundle tight by hand.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately traces the cause-and-effect chain in Paragraph 1 explaining why manual loading and stowing took so long."
+          "diagnosticNote": "Accurately traces the cause-and-effect chain in Paragraph 1 explaining why manual loading and stowing took so long.",
+          "childFeedback": "Spot on! This answer accurately traces the cause-and-effect chain in Paragraph 1 explaining why manual loading and stowing took so long."
         },
         {
           "id": "B",
           "text": "Giant dock cranes broke down every day because twenty-foot steel containers were too heavy to lift.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Anachronistically mixes 1960s steel containers into the pre-1950s era described in Paragraph 1."
+          "diagnosticNote": "Anachronistically mixes 1960s steel containers into the pre-1950s era described in Paragraph 1.",
+          "childFeedback": "Watch out—this choice mistakenly mixes 1960s steel containers into the pre-1950s era described in Paragraph 1."
         },
         {
           "id": "C",
           "text": "Ships had to wait for ocean storms to pass because wooden barrels floated away in rough seas.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Misuses the phrase 'rough seas' from Paragraph 1; workers wedged bundles tight inside the hold for rough seas."
+          "diagnosticNote": "Misuses the phrase 'rough seas' from Paragraph 1; workers wedged bundles tight inside the hold for rough seas.",
+          "childFeedback": "Careful—this choice misuses the phrase 'rough seas' from Paragraph 1; workers wedged bundles tight inside the hold for rough seas."
         },
         {
           "id": "D",
           "text": "Port laws banned any ship from leaving harbor until its crew had rested for thirty days.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a port law about thirty-day rests not mentioned in the text."
+          "diagnosticNote": "Invents a port law about thirty-day rests not mentioned in the text.",
+          "childFeedback": "Watch out—this choice invents a port law about thirty-day rests not mentioned in the text."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Once inside the dark ship hold, workers spent days wedging every odd-shaped bundle tight so the load would not shift in rough seas.",
-      "childTip": "First click the sentence in Paragraph 1 that explains what workers spent days doing inside the dark ship hold.",
-      "parentExplanation": "Click-to-Prove Cause and Effect (ELAGSE5RI3). Paragraph 1 shows that carrying loose items up gangplanks and wedging odd-shaped bundles by hand caused ships to sit in port for weeks."
+      "childTip": "Spot on! This answer accurately traces the cause-and-effect chain in Paragraph 1 explaining why manual loading and stowing took so long.",
+      "parentExplanation": "Click-to-Prove Cause and Effect (ELAGSE5RI3). Paragraph 1 shows that carrying loose items up gangplanks and wedging odd-shaped bundles by hand caused ships to sit in port for weeks.",
+      "retryHint": "Look in Paragraph 1 for the sentence that explains what workers spent days doing inside the dark ship hold."
     },
     {
       "questionId": "w78_q4",
@@ -208,34 +223,39 @@
           "text": "The Ideal X was a refitted oil tanker that sailed from New Jersey to Houston, Texas, on April 26, 1956.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "States background facts about the ship's name, route, and date, but does not prove time or money savings."
+          "diagnosticNote": "States background facts about the ship's name, route, and date, but does not prove time or money savings.",
+          "childFeedback": "Not quite—this choice states background facts about the ship's name, route, and date, but does not prove time or money savings."
         },
         {
           "id": "B",
           "text": "Cranes loaded the ship in eight hours instead of a week, and loading costs fell to sixteen cents a ton.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves both parts of the claim with specific time data (eight hours vs. a week) and cost data ($6.00 vs. $0.16 per ton)."
+          "diagnosticNote": "Directly proves both parts of the claim with specific time data (eight hours vs. a week) and cost data ($6.00 vs. $0.16 per ton).",
+          "childFeedback": "Spot on! This answer directly proves both parts of the claim with specific time data (eight hours vs. a week) and cost data ($6.00 vs. $0.16 per ton)."
         },
         {
           "id": "C",
           "text": "Warehouse crews in New Jersey packed loose factory goods inside the fifty-eight large metal boxes.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Describes what was inside the boxes rather than providing evidence of faster loading or lower costs."
+          "diagnosticNote": "Describes what was inside the boxes rather than providing evidence of faster loading or lower costs.",
+          "childFeedback": "Not quite—this choice describes what was inside the boxes rather than providing evidence of faster loading or lower costs."
         },
         {
           "id": "D",
           "text": "Every ship in the world immediately stopped carrying cotton bales on April 26, 1956.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('Every ship in the world immediately stopped') unsupported by the text."
+          "diagnosticNote": "Uses extreme language ('Every ship in the world immediately stopped') unsupported by the text.",
+          "childFeedback": "Watch out—this choice uses extreme language ('Every ship in the world immediately stopped') unsupported by the text."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The cost of loading freight dropped from nearly six dollars a ton to just sixteen cents a ton.",
-      "childTip": "Look for the exact numbers in Paragraph 3 that prove how much time and money the Ideal X saved.",
-      "parentExplanation": "Focus standard ELAGSE5RI8 (Author's Claims & Supporting Evidence). To support the claim that containerization saved both time and money, the author provides concrete before-and-after metrics in Paragraph 3: loading time fell from a week to under 8 hours, and cost per ton fell from ~$6.00 to 16 cents."
+      "childTip": "Spot on! This answer directly proves both parts of the claim with specific time data (eight hours vs. a week) and cost data ($6.00 vs. $0.16 per ton).",
+      "parentExplanation": "Focus standard ELAGSE5RI8 (Author's Claims & Supporting Evidence). To support the claim that containerization saved both time and money, the author provides concrete before-and-after metrics in Paragraph 3: loading time fell from a week to under 8 hours, and cost per ton fell from ~$6.00 to 16 cents.",
+      "retryHint": "Look for the exact numbers in Paragraph 3 that prove how much time and money the Ideal X saved."
     },
     {
       "questionId": "w78_q5",
@@ -254,34 +274,39 @@
           "text": "Malcom McLean bought an old oil tanker named the Ideal X because he wanted to ship oil from New Jersey to Texas.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Misinterprets why McLean used a refitted oil tanker in Paragraph 3."
+          "diagnosticNote": "Misinterprets why McLean used a refitted oil tanker in Paragraph 3.",
+          "childFeedback": "Careful—this choice misinterprets why McLean used a refitted oil tanker in Paragraph 3."
         },
         {
           "id": "B",
           "text": "Dockworkers in the 1800s preferred carrying cloth sacks of coffee up narrow gangplanks because cranes had not been invented yet.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses only on a minor historical detail from Paragraph 1."
+          "diagnosticNote": "Focuses only on a minor historical detail from Paragraph 1.",
+          "childFeedback": "Not quite—this choice focuses only on a minor historical detail from Paragraph 1."
         },
         {
           "id": "C",
           "text": "Standardized steel shipping containers transformed global trade by allowing cargo to move quickly and cheaply between ships, trains, and trucks without being unpacked.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes the problem (slow manual ports), McLean's intermodal invention, global standardization, and modern trade impact."
+          "diagnosticNote": "Synthesizes the problem (slow manual ports), McLean's intermodal invention, global standardization, and modern trade impact.",
+          "childFeedback": "Spot on! This answer brings together the problem (slow manual ports), McLean's intermodal invention, global standardization, and modern trade impact."
         },
         {
           "id": "D",
           "text": "Ports in Tokyo, Rotterdam, and Savannah are the only harbors in the world deep enough to hold container ships.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Turns three example ports from Paragraph 4 into an extreme, inaccurate restriction ('the only harbors')."
+          "diagnosticNote": "Turns three example ports from Paragraph 4 into an extreme, inaccurate restriction ('the only harbors').",
+          "childFeedback": "Watch out—this choice turns three example ports from Paragraph 4 into an extreme, inaccurate restriction ('the only harbors')."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By turning messy piles of freight into neat building blocks, the simple shipping container reshaped how the modern world buys and sells almost everything.",
-      "childTip": "Choose the big idea that explains how standard steel containers changed shipping across the whole world.",
-      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option C integrates McLean's innovation, global standardization, and the transformation of world trade."
+      "childTip": "Spot on! This answer brings together the problem (slow manual ports), McLean's intermodal invention, global standardization, and modern trade impact.",
+      "parentExplanation": "Part A of the EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option C integrates McLean's innovation, global standardization, and the transformation of world trade.",
+      "retryHint": "In Paragraphs 1 to 5, choose the big idea that explains how standard steel containers changed shipping across the whole world."
     },
     {
       "questionId": "w78_q6",
@@ -300,34 +325,39 @@
           "text": "\"Dock crews had to carry wooden barrels, cloth sacks of coffee, and loose crates up narrow gangplanks one piece at a time.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes only the old manual loading method in Paragraph 1."
+          "diagnosticNote": "Describes only the old manual loading method in Paragraph 1.",
+          "childFeedback": "Not quite—this choice describes only the old manual loading method in Paragraph 1."
         },
         {
           "id": "B",
           "text": "\"In the 1950s, a former trucking owner named Malcom McLean watched dockworkers hoist single cotton bales onto a ship in New York.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Gives only the moment McLean observed dockworkers in Paragraph 2."
+          "diagnosticNote": "Gives only the moment McLean observed dockworkers in Paragraph 2.",
+          "childFeedback": "Not quite—this choice gives only the moment McLean observed dockworkers in Paragraph 2."
         },
         {
           "id": "C",
           "text": "\"If one port used ten-foot hooks while another used twelve-foot clamps, cranes could not lift boxes from foreign ships.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Describes the problem before standardization in Paragraph 4 rather than the overall transformation of global trade."
+          "diagnosticNote": "Describes the problem before standardization in Paragraph 4 rather than the overall transformation of global trade.",
+          "childFeedback": "Not quite—this choice describes the problem before standardization in Paragraph 4 rather than the overall transformation of global trade."
         },
         {
           "id": "D",
           "text": "\"By turning messy piles of freight into neat building blocks, the simple shipping container reshaped how the modern world buys and sells almost everything.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly supports the central idea in Part A by summarizing how standardized containers transformed global trade."
+          "diagnosticNote": "Directly supports the central idea in Part A by summarizing how standardized containers transformed global trade.",
+          "childFeedback": "Spot on! This answer directly supports the central idea in Question 5 by summarizing how standardized containers transformed global trade."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By turning messy piles of freight into neat building blocks, the simple shipping container reshaped how the modern world buys and sells almost everything.",
-      "childTip": "Pick the concluding sentence in Paragraph 5 that sums up how the shipping container changed the modern world.",
-      "parentExplanation": "Part B requires 100% verbatim textual evidence (ELAGSE5RI1) supporting the central idea in Part A."
+      "childTip": "Spot on! This answer directly supports the central idea in Question 5 by summarizing how standardized containers transformed global trade.",
+      "parentExplanation": "Part B requires 100% verbatim textual evidence (ELAGSE5RI1) supporting the central idea in Part A.",
+      "retryHint": "Pick the concluding sentence in Paragraph 5 that sums up how the shipping container changed the modern world."
     }
   ]
 }

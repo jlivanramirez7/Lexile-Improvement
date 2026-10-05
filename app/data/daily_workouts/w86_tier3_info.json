@@ -73,34 +73,39 @@
           "text": "Mild lichen acids produced by the growing partnership",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies the agent after 'by' ('by mild lichen acids') in the passive verb construction 'are slowly etched by mild lichen acids'."
+          "diagnosticNote": "Correctly identifies the agent after 'by' ('by mild lichen acids') in the passive verb construction 'are slowly etched by mild lichen acids'.",
+          "childFeedback": "Spot on! This answer correctly identifies who or what comes after 'by' ('by mild lichen acids') in the action phrase 'are slowly etched by mild lichen acids'."
         },
         {
           "id": "B",
           "text": "The molten lava streams that flowed across the valley",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects a noun from the middle participial modifier ('cooled from molten lava streams') rather than the grammatical actor."
+          "diagnosticNote": "Selects a noun from the middle participial modifier ('cooled from molten lava streams') rather than the grammatical actor.",
+          "childFeedback": "Watch out—this choice selects a noun from the middle describing phrase ('cooled from molten lava streams') rather than the doer of the action."
         },
         {
           "id": "C",
           "text": "Stubborn slabs of dark basalt resting on the ground",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the grammatical subject/receiver ('Stubborn slabs of dark basalt') with the agent performing the etching."
+          "diagnosticNote": "Confuses the grammatical subject/receiver ('Stubborn slabs of dark basalt') with the agent performing the etching.",
+          "childFeedback": "Careful—this choice confuses the subject receiving the action ('Stubborn slabs of dark basalt') with what actually performs the etching."
         },
         {
           "id": "D",
           "text": "Fine mineral grains blown across the volcanic hill",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Picks the end result inside the final prepositional phrase ('into fine mineral grains') instead of the actor."
+          "diagnosticNote": "Picks the end result inside the final prepositional phrase ('into fine mineral grains') instead of the actor.",
+          "childFeedback": "Watch out—this choice picks the end result inside the ending phrase ('into fine mineral grains') instead of the actor."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Stubborn slabs of dark basalt, cooled from molten lava streams years before, are slowly etched by mild lichen acids into fine mineral grains.",
-      "childTip": "Look for the passive verb 'are slowly etched by.' The words right after 'by' name what breaks the rock down!",
-      "parentExplanation": "This Sentence Surgery question tests Passive Voice Actor Tracking (ELAGSE5L1). Because 'Stubborn slabs of dark basalt' appears at the start of the sentence and is followed by a 7-word modifier, students must track the passive verb 'are slowly etched by' to find the true actor: 'mild lichen acids'."
+      "childTip": "Spot on! This answer correctly identifies who or what comes after 'by' ('by mild lichen acids') in the action phrase 'are slowly etched by mild lichen acids'.",
+      "parentExplanation": "This Sentence Surgery question tests Passive Voice Actor Tracking (ELAGSE5L1). Because 'Stubborn slabs of dark basalt' appears at the start of the sentence and is followed by a 7-word modifier, students must track the passive verb 'are slowly etched by' to find the true actor: 'mild lichen acids'.",
+      "retryHint": "In Paragraph 2, look for the action phrase 'are slowly etched by.' The words right after 'by' name what breaks the rock down!"
     },
     {
       "questionId": "w86_q2",
@@ -118,34 +123,39 @@
           "text": "A fierce battle over scarce rainwater",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the cooperative relationship between the fungus and algae into a conflict."
+          "diagnosticNote": "Reverses the cooperative relationship between the fungus and algae into a conflict.",
+          "childFeedback": "Careful—this choice reverses the cooperative relationship between the fungus and algae into a conflict."
         },
         {
           "id": "B",
           "text": "A deep crack formed by freezing winter ice",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Borrows a detail from Paragraph 3 about winter ice wedges rather than defining the relationship in Paragraph 2."
+          "diagnosticNote": "Borrows a detail from Paragraph 3 about winter ice wedges rather than defining the relationship in Paragraph 2.",
+          "childFeedback": "Watch out—this choice borrows a detail from Paragraph 3 about winter ice wedges rather than defining the relationship in Paragraph 2."
         },
         {
           "id": "C",
           "text": "A helpful partnership between two sides working together",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Matches the context of Paragraph 2, where the fungus provides shelter and water while the algae brew sugars to feed both partners."
+          "diagnosticNote": "Matches the context of Paragraph 2, where the fungus provides shelter and water while the algae brew sugars to feed both partners.",
+          "childFeedback": "Spot on! This answer matches the context of Paragraph 2, where the fungus provides shelter and water while the algae brew sugars to feed both partners."
         },
         {
           "id": "D",
           "text": "A microscope used by biologists to study cells",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Introduces an outside laboratory tool not mentioned anywhere in the passage."
+          "diagnosticNote": "Introduces an outside laboratory tool not mentioned anywhere in the passage.",
+          "childFeedback": "Watch out—this choice brings in an outside laboratory tool not mentioned anywhere in the passage."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Although a lichen looks like a single mossy plant, it is really a close alliance between two very different life forms.",
-      "childTip": "Read the rest of Paragraph 2 to see how the fungal threads and green algae help each other survive.",
-      "parentExplanation": "Contextual vocabulary item (ELAGSE5RI4). Paragraph 2 explains that the fungal coat holds rainwater and protects the algae, while the algae make sweet sugars that 'feed both partners,' proving that an 'alliance' is a cooperative partnership."
+      "childTip": "Spot on! This answer matches the context of Paragraph 2, where the fungus provides shelter and water while the algae brew sugars to feed both partners.",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5RI4). Paragraph 2 explains that the fungal coat holds rainwater and protects the algae, while the algae make sweet sugars that 'feed both partners,' proving that an 'alliance' is a cooperative partnership.",
+      "retryHint": "Read the rest of Paragraph 2 to see how the fungal threads and green algae help each other survive."
     },
     {
       "questionId": "w86_q3",
@@ -163,34 +173,39 @@
           "text": "They send long wooden roots twenty feet down through solid basalt to reach underground rivers.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents deep wooden roots and underground rivers that contradict the shallow rock surface described in the text."
+          "diagnosticNote": "Invents deep wooden roots and underground rivers that contradict the shallow rock surface described in the text.",
+          "childFeedback": "Watch out—this choice invents deep wooden roots and underground rivers that contradict the shallow rock surface described in the text."
         },
         {
           "id": "B",
           "text": "They dry into a resting state and stop using food until a rain shower wets the fungal sponge again.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately summarizes the drought survival mechanism explained in Paragraph 4."
+          "diagnosticNote": "Accurately summarizes the drought survival mechanism explained in Paragraph 4.",
+          "childFeedback": "Spot on! This answer accurately summarizes the drought survival mechanism explained in Paragraph 4."
         },
         {
           "id": "C",
           "text": "They melt the surrounding volcanic rock to create fresh liquid water during every heat wave.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Fabricates an impossible chemical process of melting basalt to make water."
+          "diagnosticNote": "Fabricates an impossible chemical process of melting basalt to make water.",
+          "childFeedback": "Not quite—this choice makes up an impossible chemical process of melting basalt to make water."
         },
         {
           "id": "D",
           "text": "They never experience dry weather because volcanic valleys receive heavy rain every single afternoon.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('never', 'every single afternoon') that directly contradicts 'During dry summer weeks'."
+          "diagnosticNote": "Uses extreme language ('never', 'every single afternoon') that directly contradicts 'During dry summer weeks'.",
+          "childFeedback": "Watch out—this choice uses extreme language ('never', 'every single afternoon') that directly contradicts 'During dry summer weeks'."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Instead of dying when water runs out, the whole patch dries into a crisp, resting state.",
-      "childTip": "First click the sentence in Paragraph 4 that explains what the lichen patch does instead of dying when water runs out.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RI1 (Explicit & Inferential Textual Evidence), this Click-to-Prove item asks students to locate and verify the exact biological adaptation that allows lichens to endure summer droughts on bare rock."
+      "childTip": "Spot on! This answer accurately summarizes the drought survival mechanism explained in Paragraph 4.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RI1 (Explicit & Inferential Textual Evidence), this Click-to-Prove item asks students to locate and verify the exact biological adaptation that allows lichens to endure summer droughts on bare rock.",
+      "retryHint": "Look in Paragraph 4 for the sentence that explains what the lichen patch does instead of dying when water runs out."
     },
     {
       "questionId": "w86_q4",
@@ -208,34 +223,39 @@
           "text": "It compares the height of different volcanoes around the world and ranks them by how often they erupt.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Describes a volcano-ranking structure that does not exist in the text."
+          "diagnosticNote": "Describes a volcano-ranking structure that does not exist in the text.",
+          "childFeedback": "Not quite—this choice describes a volcano-ranking structure that does not exist in the text."
         },
         {
           "id": "B",
           "text": "It presents a debate between two scientists who disagree about whether algae can use sunlight.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a scientific controversy not present anywhere in the passage."
+          "diagnosticNote": "Invents a scientific controversy not present anywhere in the passage.",
+          "childFeedback": "Watch out—this choice invents a scientific controversy not present anywhere in the passage."
         },
         {
           "id": "C",
           "text": "It traces a step-by-step sequence from bare volcanic rock, to lichens breaking stone into soil, to larger plants and forests taking root.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately captures the chronological/process progression from Paragraph 1 (bare lava) through Paragraphs 2-4 (lichen soil-building) to Paragraph 5 (mosses, grasses, and forests)."
+          "diagnosticNote": "Accurately captures the chronological/process progression from Paragraph 1 (bare lava) through Paragraphs 2-4 (lichen soil-building) to Paragraph 5 (mosses, grasses, and forests).",
+          "childFeedback": "Spot on! This answer accurately captures the chronological/process progression from Paragraph 1 (bare lava) through Paragraphs 2-4 (lichen soil-building) to Paragraph 5 (mosses, grasses, and forests)."
         },
         {
           "id": "D",
           "text": "It lists the names of pine saplings and berry shrubs before explaining how lava cools into basalt.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the actual order of the passage, which starts with cooling lava in Paragraph 1 and ends with pine saplings in Paragraph 5."
+          "diagnosticNote": "Reverses the actual order of the passage, which starts with cooling lava in Paragraph 1 and ends with pine saplings in Paragraph 5.",
+          "childFeedback": "Careful—this choice reverses the actual order of the passage, which starts with cooling lava in Paragraph 1 and ends with pine saplings in Paragraph 5."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Every tall forest growing on ancient volcanic hills owes its start to the tiny partners that first unlocked the bare stone.",
-      "childTip": "Look at how the passage begins in Paragraph 1 (bare lava stone) and where it ends in Paragraph 5 (tall forests).",
-      "parentExplanation": "Under ELAGSE5RI5 (Text Structure), students recognize that the passage follows a chronological ecological succession sequence: cooling lava -> pioneer lichens -> first soil pockets -> mosses and grasses -> pine saplings and forests."
+      "childTip": "Spot on! This answer accurately captures the chronological/process progression from Paragraph 1 (bare lava) through Paragraphs 2-4 (lichen soil-building) to Paragraph 5 (mosses, grasses, and forests).",
+      "parentExplanation": "Under ELAGSE5RI5 (Text Structure), students recognize that the passage follows a chronological ecological succession sequence: cooling lava -> pioneer lichens -> first soil pockets -> mosses and grasses -> pine saplings and forests.",
+      "retryHint": "Look at how the passage begins in Paragraph 1 (bare lava stone) and where it ends in Paragraph 5 (tall forests)."
     },
     {
       "questionId": "w86_q5",
@@ -254,34 +274,39 @@
           "text": "Freezing winter ice wedges are the only force in nature strong enough to crack dark volcanic basalt.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses 'only' and ignores the mild lichen acids that first widen the hairline cracks."
+          "diagnosticNote": "Uses 'only' and ignores the mild lichen acids that first widen the hairline cracks.",
+          "childFeedback": "Watch out—this choice uses 'only' and ignores the mild lichen acids that first widen the hairline cracks."
         },
         {
           "id": "B",
           "text": "As a partnership of fungus and algae, lichens survive on bare rock and break it into fertile soil for forests.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Integrates the symbiotic partnership (Para 2), the rock-to-soil process (Para 3), drought resilience (Para 4), and forest succession (Para 5)."
+          "diagnosticNote": "Integrates the symbiotic partnership (Para 2), the rock-to-soil process (Para 3), drought resilience (Para 4), and forest succession (Para 5).",
+          "childFeedback": "Spot on! This answer integrates the symbiotic partnership (Paragraph 2), the rock-to-soil process (Paragraph 3), drought resilience (Paragraph 4), and forest succession (Paragraph 5)."
         },
         {
           "id": "C",
           "text": "Green algae cells cannot survive on land unless they grow near tall pine saplings and berry shrubs.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the ecological sequence: algae inside lichens arrive decades before pine saplings can grow."
+          "diagnosticNote": "Reverses the ecological sequence: algae inside lichens arrive decades before pine saplings can grow.",
+          "childFeedback": "Careful—this choice reverses the ecological sequence: algae inside lichens arrive decades before pine saplings can grow."
         },
         {
           "id": "D",
           "text": "Volcanic valleys remain barren forever because hot lava destroys all worms and tree seeds.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the entire passage by claiming lava fields stay barren forever."
+          "diagnosticNote": "Contradicts the entire passage by claiming lava fields stay barren forever.",
+          "childFeedback": "Not quite—this choice contradicts the entire passage by claiming lava fields stay barren forever."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Every tall forest growing on ancient volcanic hills owes its start to the tiny partners that first unlocked the bare stone.",
-      "childTip": "Pick the big idea that explains BOTH how lichens survive as partners AND how they prepare the ground for forests.",
-      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option B combines the fungal-algal partnership with its long-term role in building fertile soil for entire ecosystems."
+      "childTip": "Spot on! This answer integrates the symbiotic partnership (Paragraph 2), the rock-to-soil process (Paragraph 3), drought resilience (Paragraph 4), and forest succession (Paragraph 5).",
+      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option B combines the fungal-algal partnership with its long-term role in building fertile soil for entire ecosystems.",
+      "retryHint": "In Paragraphs 1 to 5, pick the big idea that explains BOTH how lichens survive as partners AND how they prepare the ground for forests."
     },
     {
       "questionId": "w86_q6",
@@ -300,34 +325,39 @@
           "text": "\"When a volcano erupts and pours hot lava across a valley, it leaves behind a flat sheet of black stone.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes only the initial lava eruption in Paragraph 1 without mentioning lichens or soil creation."
+          "diagnosticNote": "Describes only the initial lava eruption in Paragraph 1 without mentioning lichens or soil creation.",
+          "childFeedback": "Not quite—this choice describes only the initial lava eruption in Paragraph 1 without mentioning lichens or soil creation."
         },
         {
           "id": "B",
           "text": "\"Baking sun and howling winds make this naked ledge too hostile for ferns or wildflowers.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Explains why ferns cannot grow on bare lava first, but does not state how lichens transform the stone."
+          "diagnosticNote": "Explains why ferns cannot grow on bare lava first, but does not state how lichens transform the stone.",
+          "childFeedback": "Not quite—this choice explains why ferns cannot grow on bare lava first, but does not state how lichens transform the stone."
         },
         {
           "id": "C",
           "text": "\"While dry, it stops using food and waits out the drought.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Gives a single detail about summer drought rest rather than supporting the central claim about unlocking bare stone for forests."
+          "diagnosticNote": "Gives a single detail about summer drought rest rather than supporting the central claim about unlocking bare stone for forests.",
+          "childFeedback": "Not quite—this choice gives a single detail about summer drought rest rather than supporting the central claim about unlocking bare stone for forests."
         },
         {
           "id": "D",
           "text": "\"Every tall forest growing on ancient volcanic hills owes its start to the tiny partners that first unlocked the bare stone.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves Part A by linking the 'tiny partners' (fungus and algae) to unlocking bare volcanic rock for tall forests."
+          "diagnosticNote": "Directly proves Part A by linking the 'tiny partners' (fungus and algae) to unlocking bare volcanic rock for tall forests.",
+          "childFeedback": "Spot on! This answer directly proves Question 5 by linking the 'tiny partners' (fungus and algae) to unlocking bare volcanic rock for tall forests."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Every tall forest growing on ancient volcanic hills owes its start to the tiny partners that first unlocked the bare stone.",
-      "childTip": "Find the sentence in Paragraph 5 that sums up how 'the tiny partners' make tall forests possible.",
-      "parentExplanation": "Aligned with focus standard ELAGSE5RI1, Part B requires selecting the verbatim concluding sentence that ties the lichen partnership directly to the birth of volcanic forests."
+      "childTip": "Spot on! This answer directly proves Question 5 by linking the 'tiny partners' (fungus and algae) to unlocking bare volcanic rock for tall forests.",
+      "parentExplanation": "Aligned with focus standard ELAGSE5RI1, Part B requires selecting the verbatim concluding sentence that ties the lichen partnership directly to the birth of volcanic forests.",
+      "retryHint": "Find the sentence in Paragraph 5 that sums up how 'the tiny partners' make tall forests possible."
     }
   ]
 }

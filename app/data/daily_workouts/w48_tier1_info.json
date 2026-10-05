@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Centuries of grass and river silt map the radar team onto a digital screen.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the action backward! Grass and river silt are just the dirt layers covering the old town; the radar team is who maps the buried buildings."
         },
         {
           "id": "B",
           "text": "Park guests draw maps of the Etowah River on clay tablets with metal spades.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 explains that modern teams stopped digging with metal spades, and park guests only walk the trail above the grass."
         },
         {
           "id": "C",
           "text": "Buried council houses map the river silt using a push mower.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Buried council houses are underground ruins—they cannot push a radar cart or map the river silt!"
         },
         {
           "id": "D",
           "text": "The radar team maps the buried council houses and wide clay plazas.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the phrase 'by the radar team' right after 'are clearly mapped' shows that the radar team performs the mapping, and the buried council houses and wide clay plazas are what get mapped."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Buried council houses and wide clay plazas, hidden beneath centuries of grass and river silt, are clearly mapped by the radar team on a digital screen.",
-      "childTip": "Look for the 'by' phrase after the verb: 'by the radar team' tells who does the mapping.",
-      "parentExplanation": "In this passive sentence, 'Buried council houses and wide clay plazas' receive the action 'are clearly mapped,' while 'by the radar team' identifies the actor performing the mapping."
+      "childTip": "In Paragraph 3, the phrase 'by the radar team' right after 'are clearly mapped' shows that the radar team performs the mapping, and the buried council houses and wide clay plazas are what get mapped.",
+      "parentExplanation": "In this passive sentence, 'Buried council houses and wide clay plazas' receive the action 'are clearly mapped,' while 'by the radar team' identifies the actor performing the mapping.",
+      "retryHint": "Look at the 'by' phrase right after 'are clearly mapped' in Paragraph 3 to see who does the mapping."
     },
     {
       "questionId": "w48_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Dug up into deep open trenches across the lawn",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Digging open trenches with spades is the old damaging method from Paragraph 2 that ground radar replaced so the earth stays 'intact.'"
         },
         {
           "id": "B",
           "text": "Paved over with modern concrete parking lots",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Park rangers even keep heavy mowers and new paths away from fragile buried walls in Paragraph 5, so nothing is paved over with concrete."
         },
         {
           "id": "C",
           "text": "Undamaged, whole, and left in its natural state",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 5, 'intact' means undamaged, whole, and left in its natural state, because ground radar lets scientists map buried walls without digging trenches and keeps the sacred ground whole."
         },
         {
           "id": "D",
           "text": "Flooded by water from the nearby Etowah River",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The mounds sit above the north bank of the Etowah River, and radar waves do not flood the grassy lawn with water."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Because ground radar leaves the earth intact, future guests will be able to see Etowah just as it stands today.",
-      "childTip": "Use the clue in the second half of the sentence: guests will see Etowah 'just as it stands today.'",
-      "parentExplanation": "Paragraph 5 contrasts radar scanning with shovel digging and notes that the site remains 'just as it stands today' and 'whole,' proving that 'intact' means undisturbed and undamaged."
+      "childTip": "In Paragraph 5, 'intact' means undamaged, whole, and left in its natural state, because ground radar lets scientists map buried walls without digging trenches and keeps the sacred ground whole.",
+      "parentExplanation": "Paragraph 5 contrasts radar scanning with shovel digging and notes that the site remains 'just as it stands today' and 'whole,' proving that 'intact' means undisturbed and undamaged.",
+      "retryHint": "Look at the clues 'without turning a single spade of dirt' (Paragraph 2) and 'keeping its sacred ground whole' (Paragraph 5)."
     },
     {
       "questionId": "w48_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "Park rangers buried sheets of shiny copper foil beneath the grass every spring.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Park rangers never bury copper foil at Etowah—digging into the lawn would damage the fragile soil layers they are trying to protect."
         },
         {
           "id": "B",
           "text": "The ancient builders leveled and packed the red clay so tightly that it remains dense underground.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The last sentence of Paragraph 4 explains that the ancient builders leveled and packed the red clay of the plaza so tightly that it remains dense enough to reflect radio waves after nine hundred years."
         },
         {
           "id": "C",
           "text": "The Etowah River freezes into solid ice underneath the six mounds all year long.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The Etowah River in Georgia never freezes into solid underground ice all year long; the radio waves bounce off packed clay, post holes, and stone hearths."
         },
         {
           "id": "D",
           "text": "Radio waves only bounce off loose green grass blades on top of the lawn.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 3 explains that the radio waves travel down into the dirt and bounce off packed clay, post holes, and stone hearths beneath centuries of grass."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The builders had leveled and packed the red clay so tightly that it still reflects radio waves after nine hundred years.",
-      "childTip": "Click the last sentence in Paragraph 4 that explains why the red clay still reflects radio waves.",
-      "parentExplanation": "Paragraph 4 explicitly states that the ancient builders leveled and packed the red clay so tightly that it still reflects radio waves nine hundred years later."
+      "childTip": "The last sentence of Paragraph 4 explains that the ancient builders leveled and packed the red clay of the plaza so tightly that it remains dense enough to reflect radio waves after nine hundred years.",
+      "parentExplanation": "Paragraph 4 explicitly states that the ancient builders leveled and packed the red clay so tightly that it still reflects radio waves nine hundred years later.",
+      "retryHint": "Read the last sentence of Paragraph 4 to see what the ancient builders did to the red clay."
     },
     {
       "questionId": "w48_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By explaining the problem of how spade digging damaged fragile soil layers and introducing radar as the solution",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 uses a problem-and-solution structure: it explains that digging trenches with metal spades sliced through delicate dirt floors that could never be fixed, and then shows how researchers turned to ground radar to peer underground without digging."
         },
         {
           "id": "B",
           "text": "By listing the names and ages of every scientist who has worked near Cartersville",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 never lists the personal names or ages of individual scientists."
         },
         {
           "id": "C",
           "text": "By comparing the height of the Etowah mounds to modern skyscrapers in Atlanta",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Neither Paragraph 2 nor the rest of the passage compares the Etowah earth mounds to Atlanta skyscrapers."
         },
         {
           "id": "D",
           "text": "By arguing that clay pots and stone tools have no value to historians",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 2 notes that digging could find clay pots or stone tools, but researchers wanted to stop slicing through fragile dirt floors—not because pots and tools had no value."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Out of respect for native history and fragile soil layers, modern researchers needed a way to peer underground without turning a single spade of dirt.",
-      "childTip": "Notice how Paragraph 2 first shows the damage caused by spades and then introduces a tool that solves that problem.",
-      "parentExplanation": "Paragraph 2 uses a problem-and-solution structure: digging trenches sliced through delicate floors (problem), so researchers turned to ground radar to look underground without digging (solution)."
+      "childTip": "Paragraph 2 uses a problem-and-solution structure: it explains that digging trenches with metal spades sliced through delicate dirt floors that could never be fixed, and then shows how researchers turned to ground radar to peer underground without digging.",
+      "parentExplanation": "Paragraph 2 uses a problem-and-solution structure: digging trenches sliced through delicate floors (problem), so researchers turned to ground radar to look underground without digging (solution).",
+      "retryHint": "Compare the problem with metal spades in the first half of Paragraph 2 with the new tool introduced at the end of Paragraph 2."
     },
     {
       "questionId": "w48_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "The fields between the mounds were never used by the ancient residents because the soil was too soft.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 shows the exact opposite: ancient builders packed the red clay tightly to make a vast central plaza where citizens gathered for games and council meetings."
         },
         {
           "id": "B",
           "text": "Although the fields look empty from above, they hold the buried layout of an organized town center.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 1 and 4 show that although the grassy fields between the mounds look empty from above today, radar scans revealed a vast buried central plaza surrounded by wood halls, walls, and food pits."
         },
         {
           "id": "C",
           "text": "All ancient buildings at Etowah were built on rafts floating in the middle of the river.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The town sat on the land above the north bank of the Etowah River, with post holes and clay plazas in the soil—not on floating river rafts."
         },
         {
           "id": "D",
           "text": "Park rangers must dig up the entire central plaza every winter to protect it from frost.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraphs 2 and 5 emphasize that researchers and rangers leave the earth untouched and never dig up the central plaza."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.",
-      "childTip": "Compare how the lawn looks to a casual visitor in Paragraph 1 with what the radar scans found in Paragraph 4.",
-      "parentExplanation": "Paragraphs 1 and 4 show that while the grassy fields between the mounds appear empty to a casual walker, radar scans beneath the lawn revealed a vast central plaza surrounded by council buildings and walls."
+      "childTip": "Paragraphs 1 and 4 show that although the grassy fields between the mounds look empty from above today, radar scans revealed a vast buried central plaza surrounded by wood halls, walls, and food pits.",
+      "parentExplanation": "Paragraphs 1 and 4 show that while the grassy fields between the mounds appear empty to a casual walker, radar scans beneath the lawn revealed a vast central plaza surrounded by council buildings and walls.",
+      "retryHint": "Compare how the grassy lawn looks to a park guest in Paragraph 1 with what the radar scans found under that lawn in Paragraph 4."
     },
     {
       "questionId": "w48_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Near Cartersville, Georgia, six flat-topped earth mounds rise above the north bank of the Etowah River.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 only describes the six tall earth mounds rising above the riverbank."
         },
         {
           "id": "B",
           "text": "\"A radar cart looks much like a push mower rolled across the grass in straight, even rows.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 3 only describes what the radar cart looks like on the outside."
         },
         {
           "id": "C",
           "text": "\"As the wheels roll forward, a small box sends safe radio waves down into the dirt.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 3 explains how the radar box sends radio waves into the dirt, rather than what town layout was found under the fields."
         },
         {
           "id": "D",
           "text": "\"Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 4 directly proves Question 5 by showing that beneath the quiet grassy lawn lies a vast central plaza where citizens once gathered."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Beneath the quiet lawn, the scans traced a vast central plaza where citizens once gathered for games and council meetings.",
-      "childTip": "Choose the quote in Paragraph 4 that tells what the radar scans traced beneath the quiet lawn.",
-      "parentExplanation": "Option C directly quotes Paragraph 4, proving that the seemingly empty lawn conceals a vast central plaza where citizens once gathered."
+      "childTip": "This sentence from Paragraph 4 directly proves Question 5 by showing that beneath the quiet grassy lawn lies a vast central plaza where citizens once gathered.",
+      "parentExplanation": "Option C directly quotes Paragraph 4, proving that the seemingly empty lawn conceals a vast central plaza where citizens once gathered.",
+      "retryHint": "Choose the quote from Paragraph 4 that tells what the radar scans traced 'Beneath the quiet lawn.'"
     }
   ]
 }

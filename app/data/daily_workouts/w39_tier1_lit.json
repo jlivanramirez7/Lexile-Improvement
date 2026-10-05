@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Churning surface foam avoided the local paddlers and hid the broken mill weir during high water.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the action around! Surface foam is just bubbly water on the river—local paddlers are the people who avoided the hidden granite blocks."
         },
         {
           "id": "B",
           "text": "Submerged granite blocks chased local paddlers across the broken mill weir during high water.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Heavy granite blocks sitting on the river bottom cannot chase paddlers! Instead, local paddlers avoided the submerged blocks."
         },
         {
           "id": "C",
           "text": "Local paddlers still avoided the submerged granite blocks from the broken mill weir, which sat hidden beneath the foam.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'by local paddlers' right after 'were still avoided' shows that local paddlers are the ones who avoided the submerged granite blocks hidden beneath the foam."
         },
         {
           "id": "D",
           "text": "Workers from the old brick textile mills rebuilt the granite blocks to block kayaks.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 says the stone weir was built back in the nineteenth century for old brick textile mills; no mill workers are rebuilding it today."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Submerged granite blocks from the broken mill weir, hidden just inches beneath the churning surface foam, were still avoided by local paddlers during high water.",
-      "childTip": "Find the 'by' phrase to spot the actor: 'local paddlers' are the ones doing the avoiding!",
-      "parentExplanation": "In the passive clause 'Submerged granite blocks... were still avoided by local paddlers', the actor is 'local paddlers' and the receiver is 'Submerged granite blocks'. Option B restores active voice accurately."
+      "childTip": "In Paragraph 2, the phrase 'by local paddlers' right after 'were still avoided' shows that local paddlers are the ones who avoided the submerged granite blocks hidden beneath the foam.",
+      "parentExplanation": "In the passive clause 'Submerged granite blocks... were still avoided by local paddlers', the actor is 'local paddlers' and the receiver is 'Submerged granite blocks'. Option B restores active voice accurately.",
+      "retryHint": "Look at the 'by' phrase right after 'were still avoided' in Paragraph 2 to see who did the avoiding."
     },
     {
       "questionId": "w39_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Covered by water below the surface",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'submerged' means covered by water below the surface, as shown by the clue 'hidden just inches beneath the churning surface foam.'"
         },
         {
           "id": "B",
           "text": "Stacked high on the dry gravel bank",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Sitting on the dry gravel bank is the opposite of being 'hidden just inches beneath the churning surface foam' in the middle of the river."
         },
         {
           "id": "C",
           "text": "Carved into smooth wooden paddles",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Granite is hard gray rock from the broken dam, not wood carved into kayak paddles."
         },
         {
           "id": "D",
           "text": "Painted bright yellow like a kayak",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The cousins' kayaks were yellow in Paragraph 1, whereas the submerged granite blocks were hidden underwater beneath white foam."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Submerged granite blocks from the broken mill weir, hidden just inches beneath the churning surface foam, were still avoided by local paddlers during high water.",
-      "childTip": "Use the clue right after the comma: 'hidden just inches beneath the churning surface foam.'",
-      "parentExplanation": "The phrase 'hidden just inches beneath the churning surface foam' provides a direct context clue that 'submerged' means underwater."
+      "childTip": "In Paragraph 2, 'submerged' means covered by water below the surface, as shown by the clue 'hidden just inches beneath the churning surface foam.'",
+      "parentExplanation": "The phrase 'hidden just inches beneath the churning surface foam' provides a direct context clue that 'submerged' means underwater.",
+      "retryHint": "Look at the clue right after ' broken mill weir' in Paragraph 2: 'hidden just inches beneath the churning surface foam.'"
     },
     {
       "questionId": "w39_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "The river stops flowing completely whenever the morning mist rises from the channel.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The main river keeps roaring downstream—only the small pocket of water behind the wide rock curls backward to hold the boats still."
         },
         {
           "id": "B",
           "text": "They tie their yellow kayaks to an iron ring bolted into the old brick textile mill.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The cousins never tie their boats to an iron ring on the old mill; they float in the calm eddy behind a wide rock while Devon stands up in his foot pegs."
         },
         {
           "id": "C",
           "text": "They drag their boats onto the dry pine bluffs high above the Chattahoochee River.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "They stay on the water inside the quiet eddy rather than dragging their kayaks up onto the high pine bluffs."
         },
         {
           "id": "D",
           "text": "The water inside the eddy curls backward against the main flow, holding their kayaks in place.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that inside the quiet eddy behind the wide rock, the water curls backward against the main river flow, holding their kayaks steady like a natural parking spot."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Inside this quiet eddy, the water actually curled backward against the main flow, holding their boats steady like a natural parking spot.",
-      "childTip": "Click the sentence in Paragraph 3 that compares the quiet eddy to a natural parking spot.",
-      "parentExplanation": "Paragraph 3 explains that inside the eddy behind the rock, the water curls backward against the main flow, holding their kayaks steady so they can scout the drop."
+      "childTip": "Paragraph 3 explains that inside the quiet eddy behind the wide rock, the water curls backward against the main river flow, holding their kayaks steady like a natural parking spot.",
+      "parentExplanation": "Paragraph 3 explains that inside the eddy behind the rock, the water curls backward against the main flow, holding their kayaks steady so they can scout the drop.",
+      "retryHint": "Read the third sentence of Paragraph 3 to see how the water moves inside the quiet eddy."
     },
     {
       "questionId": "w39_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "Jalen wants to turn around and paddle back to the gravel bank, while Devon wants to jump over the dam.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Neither boy wants to turn back to the gravel bank; Jalen wants to paddle straight down the middle, while Devon guides him to scout a safe chute."
         },
         {
           "id": "B",
           "text": "Jalen wants to rush straight down the center, while Devon insists on stopping to check for hidden hazards first.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 contrasts Jalen's impulse to paddle straight down the middle to save time with Devon's careful choice to stop and point out the hidden granite blocks under the foam."
         },
         {
           "id": "C",
           "text": "Both boys refuse to wear life vests until they reach the deep pool below the stone weir.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 4 mentions spray splashing across Jalen's life vest, proving he is already wearing his life vest on the river."
         },
         {
           "id": "D",
           "text": "Devon wants to paddle through the white upstream V, while Jalen chooses the left bank on his own.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "In Paragraph 3, Devon explains that an upstream-pointing white V is a warning for hidden rocks, while the smooth downstream V near the left bank is the safe path."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "While Jalen wanted to paddle straight down the middle of the river to save time, Devon tapped the deck of his boat and shook his head.",
-      "childTip": "Look at the first sentence of Paragraph 2 to contrast what Jalen wanted to do with how Devon reacted.",
-      "parentExplanation": "In Paragraph 2 (ELAGSE5RL3), Jalen initially wants to take the fast shortcut straight down the middle, whereas Devon cautiously warns him about the submerged granite blocks and leads him into an eddy to scout."
+      "childTip": "Paragraph 2 contrasts Jalen's impulse to paddle straight down the middle to save time with Devon's careful choice to stop and point out the hidden granite blocks under the foam.",
+      "parentExplanation": "In Paragraph 2 (ELAGSE5RL3), Jalen initially wants to take the fast shortcut straight down the middle, whereas Devon cautiously warns him about the submerged granite blocks and leads him into an eddy to scout.",
+      "retryHint": "Read the first two sentences of Paragraph 2 to compare what Jalen wants to do with how Devon responds."
     },
     {
       "questionId": "w39_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "He learns that paddling as hard and fast as possible is the only way to cross a stone weir.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 says the exact opposite: instead of fighting the river with frantic strokes, Jalen uses short, smooth sweeps to line up with the chute."
         },
         {
           "id": "B",
           "text": "He decides that kayaking on moving rivers is too dangerous and plans to stick to flat lakes.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Jalen grins in Paragraph 5 after gliding cleanly into the deep pool below—he feels confident about reading the river, not afraid of kayaking."
         },
         {
           "id": "C",
           "text": "He shifts from seeing the rapids as confusing foam to understanding how to read surface clues for a safe path.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "At first the roaring ledge looks like a wall of random foam to Jalen, but after Devon shows him the upstream and downstream V shapes, Jalen understands how to pause and read the river's surface signs."
         },
         {
           "id": "D",
           "text": "He discovers how nineteenth-century mill workers cut granite blocks from the river bluffs.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The nineteenth-century stone weir is just the obstacle in the river; Jalen learns how to read whitewater currents, not how historical workers cut stone."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Now Jalen saw that the river wrote clear signs on its surface for anyone patient enough to pause and read them.",
-      "childTip": "Compare how the roaring ledge looked to Jalen five minutes ago with what he understands in Paragraph 5.",
-      "parentExplanation": "At first Jalen wants to charge down the middle and sees the ledge as a wall of random foam, but after Devon teaches him to spot eddies and the downstream V, Jalen learns to read the river's surface clues."
+      "childTip": "At first the roaring ledge looks like a wall of random foam to Jalen, but after Devon shows him the upstream and downstream V shapes, Jalen understands how to pause and read the river's surface signs.",
+      "parentExplanation": "At first Jalen wants to charge down the middle and sees the ledge as a wall of random foam, but after Devon teaches him to spot eddies and the downstream V, Jalen learns to read the river's surface clues.",
+      "retryHint": "Compare the last two sentences of Paragraph 5 ('Five minutes ago...' vs. 'Now Jalen saw...') to see how Jalen's view of the river changed."
     },
     {
       "questionId": "w39_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Now Jalen saw that the river wrote clear signs on its surface for anyone patient enough to pause and read them.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly proves Question 5 by showing that Jalen now sees the clear signs written on the river's surface when he pauses to read them."
         },
         {
           "id": "B",
           "text": "\"Half a mile ahead lay the remains of a nineteenth-century stone weir, an angled rock dam once built to guide water toward old brick textile mills.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 1 only gives background information on what the old stone weir was once used for."
         },
         {
           "id": "C",
           "text": "\"Spray splashed across his life vest as the bow bounced once and glided into the deep pool below.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This action line from Paragraph 4 shows Jalen gliding into the pool, without explaining the inner change in how he understands the river."
         },
         {
           "id": "D",
           "text": "\"Cold mist rose from the Chattahoochee River as Jalen and his older cousin Devon pushed their yellow kayaks off the gravel bank.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 just shows the boys launching their kayaks at the start of the trip."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Now Jalen saw that the river wrote clear signs on its surface for anyone patient enough to pause and read them.",
-      "childTip": "Pick the final sentence in Paragraph 5 that shows what Jalen now understands about the river.",
-      "parentExplanation": "Option D directly states Jalen's growth at the end of the story—recognizing that the river writes clear signs on its surface for paddlers who pause to read them."
+      "childTip": "This final sentence from Paragraph 5 directly proves Question 5 by showing that Jalen now sees the clear signs written on the river's surface when he pauses to read them.",
+      "parentExplanation": "Option D directly states Jalen's growth at the end of the story—recognizing that the river writes clear signs on its surface for paddlers who pause to read them.",
+      "retryHint": "Choose the quote from Paragraph 5 that shows what Jalen 'Now... saw' after learning from his cousin."
     }
   ]
 }

@@ -73,34 +73,39 @@
           "text": "The cut granite blocks were lowered by the muddy harbor bed.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the noun inside the middle participial phrase ('cut granite blocks') and the destination ('muddy harbor bed') with the main subject and actor."
+          "diagnosticNote": "Confuses the noun inside the middle participial phrase ('cut granite blocks') and the destination ('muddy harbor bed') with the main subject and actor.",
+          "childFeedback": "The cut granite blocks were stacked on the roof to press the box down, and a muddy harbor bed is the river bottom—it cannot lower anything!"
         },
         {
           "id": "B",
           "text": "The massive timber caisson was lowered by the river crew.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly identifies 'The massive timber caisson' as the receiver/subject of 'was slowly lowered' and 'the river crew' as the true actor."
+          "diagnosticNote": "Correctly identifies 'The massive timber caisson' as the receiver/subject of 'was slowly lowered' and 'the river crew' as the true actor.",
+          "childFeedback": "In Paragraph 2, the main subject and verb 'The massive timber caisson... was slowly lowered by the river crew' show that the timber caisson was lowered and the river crew lowered it."
         },
         {
           "id": "C",
           "text": "The river crew was lowered by the massive timber caisson.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Flips the actor and receiver in the passive-voice construction."
+          "diagnosticNote": "Flips the actor and receiver in the passive-voice construction.",
+          "childFeedback": "This flips the action backward: the river crew lowered the massive timber caisson onto the mud, not the other way around."
         },
         {
           "id": "D",
           "text": "The muddy harbor bed was lowered by courses of cut granite blocks.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Scrambles the prepositional phrases at the middle and end of the sentence."
+          "diagnosticNote": "Scrambles the prepositional phrases at the middle and end of the sentence.",
+          "childFeedback": "The muddy harbor bed is the floor of the river where the caisson landed; it was not lowered by granite blocks."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The massive timber caisson, pressed down by courses of cut granite blocks, was slowly lowered by the river crew onto the muddy harbor bed.",
-      "childTip": "Watch out for two 'by' phrases! Find the main verb 'was slowly lowered' and check who comes right after 'by.'",
-      "parentExplanation": "This Sentence Surgery item (ELAGSE5L1) is a classic Tier 3 syntactic challenge because it contains TWO 'by' phrases: one inside the participial modifier ('pressed down by courses of cut granite blocks') and one attached to the main passive verb ('was slowly lowered by the river crew')."
+      "childTip": "In Paragraph 2, the main subject and verb 'The massive timber caisson... was slowly lowered by the river crew' show that the timber caisson was lowered and the river crew lowered it.",
+      "parentExplanation": "This Sentence Surgery item (ELAGSE5L1) is a classic Tier 3 syntactic challenge because it contains TWO 'by' phrases: one inside the participial modifier ('pressed down by courses of cut granite blocks') and one attached to the main passive verb ('was slowly lowered by the river crew').",
+      "retryHint": "Find the subject at the start of the Paragraph 2 sentence and the 'lowered by' phrase to see what went down and who lowered it."
     },
     {
       "questionId": "w15_q2",
@@ -118,34 +123,39 @@
           "text": "Tending to float upward in water",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Uses the cause-and-effect contrast: builders had to stack heavy stone on top 'to sink it straight' because the wooden box naturally floated."
+          "diagnosticNote": "Uses the cause-and-effect contrast: builders had to stack heavy stone on top 'to sink it straight' because the wooden box naturally floated.",
+          "childFeedback": "In Paragraph 2, 'buoyant' means tending to float upward in water, which is why builders had to stack heavy granite blocks on the wooden box's roof to sink it straight down."
         },
         {
           "id": "B",
           "text": "Rotted and crumbling from river mud",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Guesses a negative trait of wet wood that does not fit the reason for stacking heavy stones on the roof."
+          "diagnosticNote": "Guesses a negative trait of wet wood that does not fit the reason for stacking heavy stones on the roof.",
+          "childFeedback": "The timber caisson was a brand-new, sturdy pine chamber holding back the river, not rotted and crumbling."
         },
         {
           "id": "C",
           "text": "Already resting flat on the solid bedrock",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "If the box were already resting on the bottom, builders would not need heavy stones to sink it."
+          "diagnosticNote": "If the box were already resting on the bottom, builders would not need heavy stones to sink it.",
+          "childFeedback": "The caisson was still being lowered through the deep current and had not yet reached the solid bedrock beneath the mud."
         },
         {
           "id": "D",
           "text": "Carved entirely out of solid gray granite",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the pine box with the 'stone courses' stacked on its roof."
+          "diagnosticNote": "Confuses the pine box with the 'stone courses' stacked on its roof.",
+          "childFeedback": "The sentence explicitly says 'the pine box was buoyant,' so the box was built of pine wood while granite blocks were stacked on its roof."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Because the pine box was buoyant in the deep current, builders stacked heavy stone courses on its roof to sink it straight.",
-      "childTip": "Ask yourself: why would builders need to stack heavy stones on top of a wooden box to make it sink?",
-      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). The cause-and-effect structure ('Because the pine box was buoyant..., builders stacked heavy stone courses on its roof to sink it') proves that 'buoyant' means tending to float."
+      "childTip": "In Paragraph 2, 'buoyant' means tending to float upward in water, which is why builders had to stack heavy granite blocks on the wooden box's roof to sink it straight down.",
+      "parentExplanation": "Contextual vocabulary item (ELAGSE5L4). The cause-and-effect structure ('Because the pine box was buoyant..., builders stacked heavy stone courses on its roof to sink it') proves that 'buoyant' means tending to float.",
+      "retryHint": "Ask yourself why builders had to stack heavy stone blocks on top of a hollow pine box filled with air in order 'to sink it straight.'"
     },
     {
       "questionId": "w15_q3",
@@ -163,34 +173,39 @@
           "text": "Her plan used river water instead of black powder to dissolve the traprock boulder.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Misreads the text; Clara still used a tiny charge, not river water."
+          "diagnosticNote": "Misreads the text; Clara still used a tiny charge, not river water.",
+          "childFeedback": "Clara's plan still used a 'tiny charge' of explosive in shallow drill holes; river water does not dissolve solid traprock boulders."
         },
         {
           "id": "B",
           "text": "It guaranteed that no worker would ever feel ear pressure inside the iron airlock again.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('guaranteed', 'never... again') unrelated to the rock-splitting problem."
+          "diagnosticNote": "Uses extreme language ('guaranteed', 'never... again') unrelated to the rock-splitting problem.",
+          "childFeedback": "Climbers and diggers always felt ear pressure inside the compressed-air airlock (Paragraph 3); drilling a boulder did not change the airlock pressure."
         },
         {
           "id": "C",
           "text": "Her plan allowed the crew to leave the boulder untouched and build the bridge tower in a different spot.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Contradicts the passage, where the boulder is split and hauled away so the rim settles level."
+          "diagnosticNote": "Contradicts the passage, where the boulder is split and hauled away so the rim settles level.",
+          "childFeedback": "They could not leave the boulder in place because Paragraph 2 warns that if one side rested on stone while the other sank in silt, the tower base would tilt and crack."
         },
         {
           "id": "D",
           "text": "Drilling along the boulder's natural seam directed the force inward toward the center pit instead of damaging the wooden wall.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately identifies how drilling along the grain directed the blast away from the timber caisson wall."
+          "diagnosticNote": "Accurately identifies how drilling along the grain directed the blast away from the timber caisson wall.",
+          "childFeedback": "Paragraph 4 explains that drilling three shallow holes along the boulder's natural seam let a tiny charge split the rock inward toward the center pit instead of blowing out the wooden wall."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "That way, the blast would push gravel toward the center pit instead of blowing out the wooden wall.",
-      "childTip": "First click the sentence in Paragraph 4 that explains which direction the gravel would move during the blast.",
-      "parentExplanation": "This Click-to-Prove item (ELAGSE5RL1) requires students to locate the exact mechanical explanation in Paragraph 4: drilling along the natural seam directed the blast inward toward the center pit rather than blowing out the wooden wall."
+      "childTip": "Paragraph 4 explains that drilling three shallow holes along the boulder's natural seam let a tiny charge split the rock inward toward the center pit instead of blowing out the wooden wall.",
+      "parentExplanation": "This Click-to-Prove item (ELAGSE5RL1) requires students to locate the exact mechanical explanation in Paragraph 4: drilling along the natural seam directed the blast inward toward the center pit rather than blowing out the wooden wall.",
+      "retryHint": "Read the second and third sentences of Paragraph 4 to see which direction Clara's blast pushed the rock and what it protected."
     },
     {
       "questionId": "w15_q4",
@@ -208,34 +223,39 @@
           "text": "Paragraph 2 introduces the threat of the boulder under the caisson, and Paragraph 3 heightens the tension by showing why hand tools and normal blasting are failing or dangerous.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Captures the structural progression from identifying the obstacle on the dock (Para 2) to experiencing the dangerous stalemate inside the chamber (Para 3)."
+          "diagnosticNote": "Captures the structural progression from identifying the obstacle on the dock (Para 2) to experiencing the dangerous stalemate inside the chamber (Para 3).",
+          "childFeedback": "Paragraph 2 introduces the dangerous boulder wedged under the caisson rim, and Paragraph 3 raises the stakes by showing that hand sledges are too slow while dropping pressure or heavy blasting could be fatal."
         },
         {
           "id": "B",
           "text": "Paragraph 2 explains how the bridge was finished in 1883, and Paragraph 3 flashes back to Clara's childhood in Brooklyn.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents a flashback and completion date that do not exist in the text."
+          "diagnosticNote": "Invents a flashback and completion date that do not exist in the text.",
+          "childFeedback": "Neither paragraph mentions the year 1883 or Clara's childhood; both stay right in the 1870 river construction site."
         },
         {
           "id": "C",
           "text": "Paragraph 2 compares steam tugs to sailboats, and Paragraph 3 explains how oil lamps are manufactured.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Fixates on minor background nouns ('steam tugs', 'oil lamps') and misstates the purpose of both paragraphs."
+          "diagnosticNote": "Fixates on minor background nouns ('steam tugs', 'oil lamps') and misstates the purpose of both paragraphs.",
+          "childFeedback": "Steam tugs are only mentioned in Paragraph 1, and Paragraph 3 merely notes that oil lamps flickered in the dark chamber without explaining how they are made."
         },
         {
           "id": "D",
           "text": "Paragraph 2 proves that Washington Roebling opposed using caissons, and Paragraph 3 shows him abandoning the bridge.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts the characterization of Roebling working inside the caisson to solve the problem."
+          "diagnosticNote": "Contradicts the characterization of Roebling working inside the caisson to solve the problem.",
+          "childFeedback": "Roebling never opposes using caissons or abandons the bridge; he descends into the caisson with Clara and approves her smart drilling plan."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Yet blasting the rock with black powder inside the sealed room seemed just as risky.",
-      "childTip": "Trace how the problem grows from Paragraph 2 (finding the boulder) to Paragraph 3 (going down inside the chamber).",
-      "parentExplanation": "Focus standard ELAGSE5RL5 (how chapters/scenes/paragraphs fit together to provide overall plot structure). Paragraph 2 introduces the engineering obstacle (the boulder tilting the caisson), and Paragraph 3 escalates the conflict inside the pressurized chamber before Clara's breakthrough in Paragraph 4."
+      "childTip": "Paragraph 2 introduces the dangerous boulder wedged under the caisson rim, and Paragraph 3 raises the stakes by showing that hand sledges are too slow while dropping pressure or heavy blasting could be fatal.",
+      "parentExplanation": "Focus standard ELAGSE5RL5 (how chapters/scenes/paragraphs fit together to provide overall plot structure). Paragraph 2 introduces the engineering obstacle (the boulder tilting the caisson), and Paragraph 3 escalates the conflict inside the pressurized chamber before Clara's breakthrough in Paragraph 4.",
+      "retryHint": "Compare the new danger discovered at the end of Paragraph 2 with the risky choices Clara observes inside the chamber in Paragraph 3."
     },
     {
       "questionId": "w15_q5",
@@ -254,34 +274,39 @@
           "text": "Chief engineers should always let foremen guess where to drill without looking at blueprints.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Directly reverses the lesson of the story, where studying the chalk sketch solved the crisis."
+          "diagnosticNote": "Directly reverses the lesson of the story, where studying the chalk sketch solved the crisis.",
+          "childFeedback": "Clara did the exact opposite of guessing: she carefully measured the angle of the boulder's grain and sketched precise chalk lines for the foreman to follow."
         },
         {
           "id": "B",
           "text": "Wooden caissons should never be used in deep rivers because granite blocks are too heavy to stack.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('never') and misinterprets how the caisson successfully settled level."
+          "diagnosticNote": "Uses extreme language ('never') and misinterprets how the caisson successfully settled level.",
+          "childFeedback": "The wooden caisson worked just as planned once the boulder was split and the timber rim settled level across the trench in Paragraph 5."
         },
         {
           "id": "C",
           "text": "Linen charts and slate pads are the most expensive supplies on a nineteenth-century dock.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses on minor drafting props from Paragraphs 1 and 4 rather than the story's theme."
+          "diagnosticNote": "Focuses on minor drafting props from Paragraphs 1 and 4 rather than the story's theme.",
+          "childFeedback": "The cost of linen charts and slate pads is never mentioned in the story; they are simply the tools Clara uses to do her engineering work."
         },
         {
           "id": "D",
           "text": "Careful observation and precise engineering can overcome obstacles that brute force alone cannot solve.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes the contrast between the exhausting iron sledges failing to break the rock and Clara's precise seam-angle sketch splitting it safely."
+          "diagnosticNote": "Synthesizes the contrast between the exhausting iron sledges failing to break the rock and Clara's precise seam-angle sketch splitting it safely.",
+          "childFeedback": "Across the story, when heavy iron sledges fail and big blasts are too dangerous, Clara's close study of the boulder's grain and precise drill placement safely split the rock."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "She showed Roebling how drilling three shallow holes along a natural seam would let a tiny charge split the rock inward.",
-      "childTip": "Compare the men swinging heavy sledges in Paragraph 3 with how Clara actually splits the boulder in Paragraph 4.",
-      "parentExplanation": "Part A of the EBSR pair evaluates Theme (ELAGSE5RL2). The narrative contrasts brute physical force (swinging iron sledges in grueling heat) with careful observation of the rock's natural grain."
+      "childTip": "Across the story, when heavy iron sledges fail and big blasts are too dangerous, Clara's close study of the boulder's grain and precise drill placement safely split the rock.",
+      "parentExplanation": "Part A of the EBSR pair evaluates Theme (ELAGSE5RL2). The narrative contrasts brute physical force (swinging iron sledges in grueling heat) with careful observation of the rock's natural grain.",
+      "retryHint": "Contrast the men swinging iron sledges by hand in Paragraph 3 with how Clara solves the boulder problem using her slate pad in Paragraph 4."
     },
     {
       "questionId": "w15_q6",
@@ -300,34 +325,39 @@
           "text": "\"On a foggy spring morning in 1870, young draftsperson Clara Vance unrolled her linen chart on the noisy Brooklyn dock.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Establishes the historical setting in Paragraph 1 but does not demonstrate overcoming an obstacle through careful observation."
+          "diagnosticNote": "Establishes the historical setting in Paragraph 1 but does not demonstrate overcoming an obstacle through careful observation.",
+          "childFeedback": "This opening line from Paragraph 1 only sets the scene on the noisy Brooklyn dock before the boulder problem even appears."
         },
         {
           "id": "B",
           "text": "\"Descending through the iron airlock with Roebling, Clara felt her ears pop under the heavy air pressure.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes a sensory detail of entering the caisson rather than the thematic solution."
+          "diagnosticNote": "Describes a sensory detail of entering the caisson rather than the thematic solution.",
+          "childFeedback": "This detail from Paragraph 3 describes how the heavy air pressure felt on Clara's ears, not how she solved the engineering problem."
         },
         {
           "id": "C",
           "text": "\"She showed Roebling how drilling three shallow holes along a natural seam would let a tiny charge split the rock inward.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly proves Part A by showing how Clara's precise observation of the rock's natural seam allowed a tiny charge to do what brute sledges could not."
+          "diagnosticNote": "Directly proves Part A by showing how Clara's precise observation of the rock's natural seam allowed a tiny charge to do what brute sledges could not.",
+          "childFeedback": "This quotation from Paragraph 4 directly proves the theme in Question 5 by showing how Clara used careful observation of a natural seam and a tiny precise charge instead of brute force."
         },
         {
           "id": "D",
           "text": "\"Inside the dim timber chamber, oil lamps smoked and flickered against wet yellow pine walls.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Provides atmosphere inside the chamber but does not support the theme about problem solving."
+          "diagnosticNote": "Provides atmosphere inside the chamber but does not support the theme about problem solving.",
+          "childFeedback": "This sentence from Paragraph 3 describes the smoky lighting inside the wooden chamber rather than Clara's smart engineering solution."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "She showed Roebling how drilling three shallow holes along a natural seam would let a tiny charge split the rock inward.",
-      "childTip": "Select the exact quote from Paragraph 4 that shows Clara using the rock's natural seam to solve the problem.",
-      "parentExplanation": "Part B verifies the Part A theme with a 100% verbatim quotation from Paragraph 4 illustrating how precision engineering defeated the obstacle."
+      "childTip": "This quotation from Paragraph 4 directly proves the theme in Question 5 by showing how Clara used careful observation of a natural seam and a tiny precise charge instead of brute force.",
+      "parentExplanation": "Part B verifies the Part A theme with a 100% verbatim quotation from Paragraph 4 illustrating how precision engineering defeated the obstacle.",
+      "retryHint": "Find the quote from Paragraph 4 that shows how Clara used the rock's natural seam and a tiny charge to split the boulder safely."
     }
   ]
 }

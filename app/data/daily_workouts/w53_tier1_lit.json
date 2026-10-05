@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Every merchant in the valley wanted the golden thread, and Talia passed it over for the iron needles.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'by every merchant in the valley' tells who coveted the golden thread for years, while 'was gladly passed over by Talia' shows that Talia chose to trade it away for iron needles."
         },
         {
           "id": "B",
           "text": "Talia coveted the iron needles for years, and every merchant in the valley passed over the golden thread.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This switches the two characters' actions! In Paragraph 3, the valley merchants coveted the golden thread, while Talia was the one who passed it over for iron needles."
         },
         {
           "id": "C",
           "text": "The pouch of iron needles wanted the prized spool of golden thread for the palace.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A leather pouch of iron needles isn't a person and cannot want golden thread! It was the valley merchants who coveted the golden spool."
         },
         {
           "id": "D",
           "text": "The village blacksmith traded forty sheep to the merchant for a new stone forge.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never says the blacksmith traded forty sheep for a forge; in Paragraph 3, Talia traded her saved coins for forty iron needles."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The prized spool of golden thread, coveted for years by every merchant in the valley, was gladly passed over by Talia in exchange for the pouch of iron needles.",
-      "childTip": "Follow both 'by' phrases: every merchant coveted the spool, while Talia passed it over.",
-      "parentExplanation": "In this passive sentence, 'by every merchant in the valley' tells who desired ('coveted') the spool, while 'was gladly passed over by Talia' identifies the actor who turned it down."
+      "childTip": "In Paragraph 3, 'by every merchant in the valley' tells who coveted the golden thread for years, while 'was gladly passed over by Talia' shows that Talia chose to trade it away for iron needles.",
+      "parentExplanation": "In this passive sentence, 'by every merchant in the valley' tells who desired ('coveted') the spool, while 'was gladly passed over by Talia' identifies the actor who turned it down.",
+      "retryHint": "Check both 'by' phrases in Paragraph 3: who coveted the golden spool for years, and who gladly passed it over?"
     },
     {
       "questionId": "w53_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Thrown away into the mud because it was worthless",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Throwing something into the mud is the opposite of 'coveted'! The spool was a 'prized' treasure that merchants had wanted for years."
         },
         {
           "id": "B",
           "text": "Greatly desired and wished for as a valuable prize",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'coveted' means greatly desired and wished for as a valuable prize. Paragraph 1 explains why everyone wanted the golden spool: a cloak woven from it could fetch a royal sum."
         },
         {
           "id": "C",
           "text": "Ripped apart by freezing sleet during a mountain gale",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "It was the shepherds' wool cloaks in Paragraph 2 that were ripped by freezing sleet, not the trader's golden spool. 'Coveted' means strongly desired."
         },
         {
           "id": "D",
           "text": "Melted down in a stone forge to make horseshoes",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The golden thread was meant for weaving royal banners, not melting into horseshoes! 'Coveted' describes how badly every merchant wanted the spool."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The prized spool of golden thread, coveted for years by every merchant in the valley, was gladly passed over by Talia in exchange for the pouch of iron needles.",
-      "childTip": "Connect 'coveted' to the word 'prized' right before it and the royal fortune mentioned in Paragraph 1.",
-      "parentExplanation": "The adjective 'prized' and Paragraph 1's detail that the golden thread could 'fetch a royal fortune' show that 'coveted' means strongly desired or wished for."
+      "childTip": "In Paragraph 3, 'coveted' means greatly desired and wished for as a valuable prize. Paragraph 1 explains why everyone wanted the golden spool: a cloak woven from it could fetch a royal sum.",
+      "parentExplanation": "The adjective 'prized' and Paragraph 1's detail that the golden thread could 'fetch a royal fortune' show that 'coveted' means strongly desired or wished for.",
+      "retryHint": "Connect 'coveted' to the word 'prized' right before it and the royal sum mentioned in Paragraph 1."
     },
     {
       "questionId": "w53_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "The village blacksmith had moved down to the valley markets the winter before.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 never says the blacksmith moved away to the valley; instead, a falling pine branch smashed his stone forge during the storm."
         },
         {
           "id": "B",
           "text": "The shepherds traded all of the town's iron ore for royal banners.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The shepherds never traded away iron ore for banners. In Paragraph 2, they couldn't mend their cloaks because a falling branch smashed the forge and broke the last needles."
         },
         {
           "id": "C",
           "text": "A falling pine branch smashed the blacksmith's stone forge and snapped the town's last needles.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that a falling pine branch smashed the blacksmith's stone forge during the gale and snapped the town's last sewing needles in the rubble."
         },
         {
           "id": "D",
           "text": "No one in Oakhaven knew how to spin wool yarn from mountain sheep.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 says the neighbors brought thick yarn spun from their own mountain sheep, so they knew how to spin yarn—they just lacked intact needles."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Worse still, a falling pine branch smashed the blacksmith's stone forge, snapping the town's last sewing needles in the rubble.",
-      "childTip": "Click the sentence in Paragraph 2 that explains what happened to the blacksmith's stone forge.",
-      "parentExplanation": "Paragraph 2 explicitly states that a falling pine branch smashed the blacksmith's stone forge and snapped the town's last sewing needles in the rubble."
+      "childTip": "Paragraph 2 explains that a falling pine branch smashed the blacksmith's stone forge during the gale and snapped the town's last sewing needles in the rubble.",
+      "parentExplanation": "Paragraph 2 explicitly states that a falling pine branch smashed the blacksmith's stone forge and snapped the town's last sewing needles in the rubble.",
+      "retryHint": "Check the third sentence of Paragraph 2 to see what the falling pine branch did to the blacksmith's forge and the town's needles."
     },
     {
       "questionId": "w53_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It describes how the pine trees grew above the glaciers around Oakhaven.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 4 doesn't describe pine trees or glaciers; it takes place inside around Talia's hearth as neighbors mend their torn wool cloaks."
         },
         {
           "id": "B",
           "text": "It explains how the merchant first found the spool of golden thread in a distant kingdom.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 4 never mentions where the trader got the golden spool; it focuses on how Talia and her neighbors used the forty iron needles."
         },
         {
           "id": "C",
           "text": "It shows that Talia regretted her trade and tried to buy back her silver coins.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Talia never regrets her trade! Both Paragraph 4 and Paragraph 5 show she was glad she chose the iron needles that saved her neighbors."
         },
         {
           "id": "D",
           "text": "It contrasts the uselessness of a palace banner in a storm with the life-saving warmth of mended wool cloaks.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 shows why Talia's choice was so wise: while golden thread would have hung uselessly on a castle wall, the strong iron needles and rough wool kept every family warm through the storm."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "While golden thread would have hung uselessly on a castle wall, rough wool and strong iron kept the wind from every door.",
-      "childTip": "Read the last sentence of Paragraph 4 comparing golden thread on a castle wall to rough wool and strong iron.",
-      "parentExplanation": "Paragraph 4 demonstrates the wisdom of Talia's sacrifice by contrasting decorative castle gold with practical iron needles and wool that protected every family from the winter wind."
+      "childTip": "Paragraph 4 shows why Talia's choice was so wise: while golden thread would have hung uselessly on a castle wall, the strong iron needles and rough wool kept every family warm through the storm.",
+      "parentExplanation": "Paragraph 4 demonstrates the wisdom of Talia's sacrifice by contrasting decorative castle gold with practical iron needles and wool that protected every family from the winter wind.",
+      "retryHint": "Read the last sentence of Paragraph 4 comparing golden thread on a castle wall to rough wool and strong iron."
     },
     {
       "questionId": "w53_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "She cares far more about protecting her neighbors' lives than winning personal wealth or fame.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "By giving up nine years of savings and her dream of royal gold to buy iron needles for her neighbors, Talia shows she cares far more about her community's safety than personal wealth."
         },
         {
           "id": "B",
           "text": "She dislikes weaving with wool and hopes to become a lowland blacksmith instead.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Talia loves weaving! In Paragraph 5, she joyfully weaves a warm village cloth from lamb fleece and celebrates the craft that kept her people whole."
         },
         {
           "id": "C",
           "text": "She only helps the shepherds because they promise to pay her double in gold coins.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The shepherds never promised to pay Talia gold coins; in Paragraph 4 she freely handed a needle to every home, and in Paragraph 5 they thanked her with soft lamb fleece."
         },
         {
           "id": "D",
           "text": "She is afraid to let anyone else in Oakhaven touch her new iron needles.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Instead of hiding the needles, Paragraph 4 says Talia handed a sturdy iron needle to every home in Oakhaven before noon."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "She knew that the richest treasure in any mountain town was the craft that kept its people whole.",
-      "childTip": "Think about why Talia gave up nine years of savings for needles she shared with every household.",
-      "parentExplanation": "Talia gives up her nine-year dream of palace wealth to buy iron needles for her neighbors, proving she values community survival over personal fortune (ELAGSE5RL1)."
+      "childTip": "By giving up nine years of savings and her dream of royal gold to buy iron needles for her neighbors, Talia shows she cares far more about her community's safety than personal wealth.",
+      "parentExplanation": "Talia gives up her nine-year dream of palace wealth to buy iron needles for her neighbors, proving she values community survival over personal fortune (ELAGSE5RL1).",
+      "retryHint": "Think about why Talia gave up the golden spool she had saved nine winters for and handed out the iron needles to every home."
     },
     {
       "questionId": "w53_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Once every ten years, a trader climbed the steep pass with a single spool of sun-gold thread.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only introduces the trader's ten-year visit, before Talia faces the storm and chooses her neighbors over gold."
         },
         {
           "id": "B",
           "text": "\"Two days before the trader arrived, an early gale howled down from the ice peaks.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 2 only sets up the bad weather, without showing Talia's unselfish choice or what she valued most."
         },
         {
           "id": "C",
           "text": "\"She knew that the richest treasure in any mountain town was the craft that kept its people whole.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from the end of Paragraph 5 proves Question 5 by showing that Talia valued the practical craft that protected her neighbors as the richest treasure of all."
         },
         {
           "id": "D",
           "text": "\"When the trader rode into the square at dawn, he held up the bright spool of golden thread in one hand.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 3 only describes the trader holding up the gold spool in the square, not Talia's decision to pass it up for her town."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "She knew that the richest treasure in any mountain town was the craft that kept its people whole.",
-      "childTip": "Choose the quote in Paragraph 5 that shows what Talia considered the richest treasure of all.",
-      "parentExplanation": "Option C directly quotes Paragraph 5, confirming that Talia valued the craft that protected her community above royal gold."
+      "childTip": "This quote from the end of Paragraph 5 proves Question 5 by showing that Talia valued the practical craft that protected her neighbors as the richest treasure of all.",
+      "parentExplanation": "Option C directly quotes Paragraph 5, confirming that Talia valued the craft that protected her community above royal gold.",
+      "retryHint": "Look at the quotes to see which one explains what Talia considered the true treasure of a mountain town."
     }
   ]
 }

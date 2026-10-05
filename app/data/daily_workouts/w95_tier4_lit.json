@@ -73,30 +73,35 @@
           "id": "A",
           "text": "The duke wearing the heavy black cloak",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—the duke's cloak is part of the painting being examined in Paragraph 2, not the person operating the camera."
         },
         {
           "id": "B",
           "text": "Dr. Vance, who mixed the mild solvent",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Dr. Vance joins Clara later in Paragraph 3, whereas Paragraph 2 says the cracked varnish was filmed by Clara."
         },
         {
           "id": "C",
           "text": "The violet lamp shining above the easel",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—the violet lamp provided the light in Paragraph 2, but the words 'by Clara' name who actually filmed the varnish."
         },
         {
           "id": "D",
           "text": "Clara, working in the quiet studio",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 2, the phrase 'by Clara' right after 'was filmed' shows that Clara performed the action of filming the cracked varnish."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Under the beam of the violet lamp, the cracked varnish on the duke's cloak was filmed by Clara before a cotton swab touched the canvas.",
-      "childTip": "Find the passive verb 'was filmed' and look right after 'by' to see who did the filming.",
-      "parentExplanation": "In this passive sentence, 'the cracked varnish on the duke's cloak' receives the action ('was filmed'). The agent following 'by' is 'Clara.'"
+      "childTip": "Spot on! In Paragraph 2, the phrase 'by Clara' right after 'was filmed' shows that Clara performed the action of filming the cracked varnish.",
+      "parentExplanation": "In this passive sentence, 'the cracked varnish on the duke's cloak' receives the action ('was filmed'). The agent following 'by' is 'Clara.'",
+      "retryHint": "In Paragraph 2, find the action phrase 'was filmed' and look right after 'by' to see who did the filming."
     },
     {
       "questionId": "w95_q2",
@@ -113,30 +118,35 @@
           "id": "A",
           "text": "Sell to a wealthy duke",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 5 states that the portrait already belonged to the city museum, and Clara was restoring it, not selling it."
         },
         {
           "id": "B",
           "text": "Paint over with bright green varnish",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—this choice mixes up the milky green glow of old varnish in Paragraph 2 with what Clara decides to do in Paragraph 5."
         },
         {
           "id": "C",
           "text": "Keep hidden from view",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 5, Clara refuses to 'conceal' the lost valley again and instead hangs a full-size print of it beside the portrait so everyone can see it."
         },
         {
           "id": "D",
           "text": "Display in the center of the hall",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice gives the exact opposite meaning! Clara displays the print so that she will NOT conceal (hide) the valley anymore."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "She could not erase the historic portrait, which belonged to the city museum, nor would she conceal the lost valley again.",
-      "childTip": "Notice what Clara does next: she puts a print of the valley on display so it will not be hidden anymore.",
-      "parentExplanation": "Because the valley had been buried beneath the duke's portrait for four hundred years, Clara refuses to 'conceal' (hide) it again and instead exhibits a print beside the painting."
+      "childTip": "Spot on! In Paragraph 5, Clara refuses to 'conceal' the lost valley again and instead hangs a full-size print of it beside the portrait so everyone can see it.",
+      "parentExplanation": "Because the valley had been buried beneath the duke's portrait for four hundred years, Clara refuses to 'conceal' (hide) it again and instead exhibits a print beside the painting.",
+      "retryHint": "In Paragraph 5, notice what Clara does next: she puts a print of the valley on display so it will not be hidden anymore."
     },
     {
       "questionId": "w95_q3",
@@ -152,31 +162,36 @@
         {
           "id": "A",
           "text": "The dark blue patch refuses to glow with the milky green haze of old varnish.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 2 explains that old tree-resin varnish glows milky green under the purple lamp, so the dark blue patch that refused to glow had to be a newer repair."
         },
         {
           "id": "B",
           "text": "The later artist signed his name in charcoal strokes across the stone bridge.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—the stone bridge is part of the hidden charcoal sketch underneath in Paragraph 4, and no signature is mentioned."
         },
         {
           "id": "C",
           "text": "A cotton swab dipped in cedar oil immediately dissolved the black cloak.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 2 states that Clara filmed the varnish under the violet lamp BEFORE a cotton swab ever touched the canvas."
         },
         {
           "id": "D",
           "text": "The walnut easel tilted forward when the heat camera touched the corner.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—the walnut easel never tilts in the story, and the heat camera in Paragraph 3 does not touch the canvas."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Near the bottom corner, a jagged patch of dark blue paint refused to glow at all, proving it came from a later brush.",
-      "childTip": "Click the sentence in Paragraph 2 that explains what the dark blue patch did under the purple beam.",
-      "parentExplanation": "Paragraph 2 explains that genuine old tree-resin varnish glows with a milky green haze under the beam; because the dark blue patch refused to glow at all, Clara knew it was a newer repair."
+      "childTip": "Spot on! Paragraph 2 explains that old tree-resin varnish glows milky green under the purple lamp, so the dark blue patch that refused to glow had to be a newer repair.",
+      "parentExplanation": "Paragraph 2 explains that genuine old tree-resin varnish glows with a milky green haze under the beam; because the dark blue patch refused to glow at all, Clara knew it was a newer repair.",
+      "retryHint": "Look in Paragraph 2 for the sentence that explains what the dark blue patch did under the purple beam."
     },
     {
       "questionId": "w95_q4",
@@ -193,30 +208,35 @@
           "id": "A",
           "text": "To criticize Clara for using mild cedar oil on the duke's velvet sleeve",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Dr. Vance never criticizes Clara; in Paragraph 4 they work together with excitement as the hidden sketch appears."
         },
         {
           "id": "B",
           "text": "To show that the city museum could not afford to buy new frames for the spring show",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 4 explains that the young artist four hundred years ago was too poor to buy fresh linen, not that the modern museum lacked frames."
         },
         {
           "id": "C",
           "text": "To prove that cypress trees only grew near wealthy towns in Italy",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—cypress trees are simply part of the hidden valley drawing in Paragraph 4, not proof of where trees grew in Italy."
         },
         {
           "id": "D",
           "text": "To explain why the young artist painted the duke's portrait over an earlier valley scene",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! The last sentence of Paragraph 4 explains that when a wealthy duke paid for a portrait, a poor young artist had to paint right over his own earlier valley canvas."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Back then, fine linen cost so much gold that poor painters often scraped down unsold scenes to paint rich patrons.",
-      "childTip": "Read the last sentence of Paragraph 4 to see why poor artists reused linen they had already painted.",
-      "parentExplanation": "The detail about the cost of fine linen explains the mystery at the heart of the story: why a sunlit Tuscan valley was painted over with a wealthy duke's portrait."
+      "childTip": "Spot on! The last sentence of Paragraph 4 explains that when a wealthy duke paid for a portrait, a poor young artist had to paint right over his own earlier valley canvas.",
+      "parentExplanation": "The detail about the cost of fine linen explains the mystery at the heart of the story: why a sunlit Tuscan valley was painted over with a wealthy duke's portrait.",
+      "retryHint": "Read the last sentence of Paragraph 4 to see why poor artists reused linen they had already painted."
     },
     {
       "questionId": "w95_q5",
@@ -234,30 +254,35 @@
           "id": "A",
           "text": "The ceiling lamps in the studio are broken after the museum halls close at dusk.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—Paragraph 1 mentions that Clara turned off the ceiling lamps on purpose so she could see how the violet beam reacted with the varnish."
         },
         {
           "id": "B",
           "text": "Violet light melts away candle smoke, while infrared waves dry the wet cedar oil on the sleeve.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—neither light melts smoke or dries oil; Paragraph 2 says Clara used a cotton swab with mild cedar oil to clean the grime."
         },
         {
           "id": "C",
           "text": "Violet light reveals surface repairs in the top varnish, while infrared waves pass through oil paint to show the sketch underneath.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraphs 2 and 3 explain that violet light bounces off the top varnish to show surface repairs, while infrared waves pass through oil paint to reveal the charcoal sketch underneath."
         },
         {
           "id": "D",
           "text": "Both lights are needed to burn off the dark velvet cloak so only the river remains.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 5 states that Clara could not erase the historic portrait, and the gentle light beams never burn the canvas."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Unlike violet light, which bounces off the top varnish, gentle infrared waves slip right through thin layers of oil paint.",
-      "childTip": "Look at Paragraph 3 for the sentence that contrasts what violet light does with what infrared waves do.",
-      "parentExplanation": "Paragraphs 2 and 3 explain that violet light reflects off the top varnish to expose surface patches, whereas infrared waves penetrate thin layers of oil paint to reveal the hidden sketch."
+      "childTip": "Spot on! Paragraphs 2 and 3 explain that violet light bounces off the top varnish to show surface repairs, while infrared waves pass through oil paint to reveal the charcoal sketch underneath.",
+      "parentExplanation": "Paragraphs 2 and 3 explain that violet light reflects off the top varnish to expose surface patches, whereas infrared waves penetrate thin layers of oil paint to reveal the hidden sketch.",
+      "retryHint": "Look at Paragraph 3 for the sentence that contrasts what violet light does with what infrared waves do."
     },
     {
       "questionId": "w95_q6",
@@ -275,30 +300,35 @@
           "id": "A",
           "text": "\"Over four hundred winters, candle smoke and yellow varnish had dimmed the canvas into a murky shadow.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this sentence from Paragraph 1 only explains why the painting looked dark and murky before Clara examined it."
         },
         {
           "id": "B",
           "text": "\"Unlike violet light, which bounces off the top varnish, gentle infrared waves slip right through thin layers of oil paint.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! This quote from Paragraph 3 directly proves Question 5 by contrasting how violet light bounces off top varnish while infrared waves slip through oil paint."
         },
         {
           "id": "C",
           "text": "\"A stone bridge arched over a winding river where a shepherd leaned on his staff beside three grazing sheep.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this detail from Paragraph 4 describes what the hidden valley sketch looked like rather than how the two lights worked."
         },
         {
           "id": "D",
           "text": "\"Clara rolled a tiny cotton swab in mild cedar oil and touched the edge of the duke's sleeve.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Not quite—this line from Paragraph 2 describes Clara testing a cotton swab with cedar oil, not how the violet and infrared lights worked."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Unlike violet light, which bounces off the top varnish, gentle infrared waves slip right through thin layers of oil paint.",
-      "childTip": "Pick the exact quote from Paragraph 3 that compares violet light on the top varnish to infrared waves slipping through paint.",
-      "parentExplanation": "Option B directly proves Part A by contrasting how violet light bounces off the top varnish while infrared waves penetrate oil paint."
+      "childTip": "Spot on! This quote from Paragraph 3 directly proves Question 5 by contrasting how violet light bounces off top varnish while infrared waves slip through oil paint.",
+      "parentExplanation": "Option B directly proves Part A by contrasting how violet light bounces off the top varnish while infrared waves penetrate oil paint.",
+      "retryHint": "Pick the exact quote from Paragraph 3 that compares violet light on the top varnish to infrared waves slipping through paint."
     }
   ]
 }

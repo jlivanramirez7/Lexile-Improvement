@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Park rangers build the mineral rings using special cave tools.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Park rangers are only mentioned in Paragraph 5 asking visitors not to touch cave walls; human builders never make the mineral rings."
         },
         {
           "id": "B",
           "text": "The stone ceiling builds thousands of water drops before they fall.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the action around! The stone ceiling simply holds the mineral ring while thousands of water drops slowly build it up."
         },
         {
           "id": "C",
           "text": "A hanging stalactite builds the stone ceiling out of rainwater.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "A stalactite is the icicle-shaped rock that gets built over time—it does not build the stone ceiling out of rainwater."
         },
         {
           "id": "D",
           "text": "Thousands of drops build the tiny ring of mineral into a stalactite.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the phrase 'by thousands of drops' right after 'is slowly built up' shows that thousands of dripping water drops build the mineral ring into a hanging stalactite."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "A tiny ring of solid mineral, left behind on the stone ceiling before the water falls, is slowly built up by thousands of drops into a hanging stalactite.",
-      "childTip": "Look for the 'by' phrase right after 'is slowly built up' to find what does the building.",
-      "parentExplanation": "In this passive-voice sentence, 'A tiny ring of solid mineral' receives the action, while the prepositional phrase 'by thousands of drops' identifies the agent that builds the stalactite."
+      "childTip": "In Paragraph 3, the phrase 'by thousands of drops' right after 'is slowly built up' shows that thousands of dripping water drops build the mineral ring into a hanging stalactite.",
+      "parentExplanation": "In this passive-voice sentence, 'A tiny ring of solid mineral' receives the action, while the prepositional phrase 'by thousands of drops' identifies the agent that builds the stalactite.",
+      "retryHint": "Look for the 'by' phrase after 'is slowly built up' in Paragraph 3 to see what builds the mineral ring."
     },
     {
       "questionId": "w28_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Crack apart into tiny grains of gray sand",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Cracking apart into sand is the opposite of what happens in Paragraph 5, where the two cones join together into one solid stone column."
         },
         {
           "id": "B",
           "text": "Drip quickly from a high stone roof",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Water drops drip from the roof earlier in the passage, but in Paragraph 5 'fuse together' describes what the two rock cones do when they meet."
         },
         {
           "id": "C",
           "text": "Join and bond into one solid piece",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 5, 'fuse' means to join and bond into one solid piece, because the hanging cone and rising cone meet in the middle to form one solid stone column from floor to ceiling."
         },
         {
           "id": "D",
           "text": "Shine brightly in a dark underground room",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 says underground limestone caves sit in total darkness, so the stone cones do not shine brightly when they meet."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "When they fuse together, they form a solid stone pillar from floor to ceiling.",
-      "childTip": "When the hanging and rising rock shapes meet in the middle, they join into one solid column.",
-      "parentExplanation": "Paragraph 5 explains that a stalactite and stalagmite grow until they meet in the middle and form a single solid stone pillar, showing that 'fuse' means to join or bond into one piece."
+      "childTip": "In Paragraph 5, 'fuse' means to join and bond into one solid piece, because the hanging cone and rising cone meet in the middle to form one solid stone column from floor to ceiling.",
+      "parentExplanation": "Paragraph 5 explains that a stalactite and stalagmite grow until they meet in the middle and form a single solid stone pillar, showing that 'fuse' means to join or bond into one piece.",
+      "retryHint": "Look at what happens in Paragraph 5 when the hanging cone and rising cone meet in the middle to form a single solid stone column."
     },
     {
       "questionId": "w28_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "It heats up to a boiling temperature as it flows past deep underground rivers.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 never mentions boiling temperatures or hot underground rivers; a gas from the air and dead leaves is what turns the rainwater acidic."
         },
         {
           "id": "B",
           "text": "It picks up carbon dioxide gas from the air and dead leaves, turning into a weak acid.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 explains that as rainwater falls through the air and soaks through dead leaves on the ground, it picks up carbon dioxide gas, which turns it into a weak acid that dissolves limestone."
         },
         {
           "id": "C",
           "text": "It mixes with skin oils left behind by visitors walking on the forest floor.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Human skin oils are mentioned in Paragraph 5 because they stop mineral rings from sticking to cave walls, not because they help rainwater dissolve rock."
         },
         {
           "id": "D",
           "text": "It carries sharp pebbles that scrape the cave walls during heavy summer floods.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 states that carbon dioxide gas turns rainwater into a weak acid that dissolves soft rock, not that sharp pebbles scrape the walls."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "As rain falls through the sky and soaks into dead leaves on the ground, it picks up carbon dioxide gas.",
-      "childTip": "Click the sentence in Paragraph 1 that tells what rainwater picks up as it falls and soaks into dead leaves.",
-      "parentExplanation": "Paragraph 1 states that rainwater picks up carbon dioxide gas from the sky and dead leaves on the ground, which turns the water into a weak acid capable of dissolving limestone."
+      "childTip": "Paragraph 1 explains that as rainwater falls through the air and soaks through dead leaves on the ground, it picks up carbon dioxide gas, which turns it into a weak acid that dissolves limestone.",
+      "parentExplanation": "Paragraph 1 states that rainwater picks up carbon dioxide gas from the sky and dead leaves on the ground, which turns the water into a weak acid capable of dissolving limestone.",
+      "retryHint": "Check the last two sentences of Paragraph 1 to see what rainwater picks up from the sky and dead leaves."
     },
     {
       "questionId": "w28_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "To support the point that cave visitors should never touch cave formations",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 5, the author explains that oils from human fingers stop new mineral rings from sticking to wet stone in order to show why park rangers ask visitors never to touch cave walls."
         },
         {
           "id": "B",
           "text": "To prove that human skin is stronger than weakly acidic rainwater",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 1 mentions that the weak acid does not burn skin, while Paragraph 5 focuses on how finger oils harm growing cave rocks."
         },
         {
           "id": "C",
           "text": "To show how park rangers polish stalactites so they look like stone icicles",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Park rangers do not polish stalactites; they ask people not to touch the wet stone so minerals can keep sticking and growing naturally."
         },
         {
           "id": "D",
           "text": "To argue that all underground caves should be closed to every scientist",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 only says visitors are asked not to touch the cave walls, not that every underground cave should be closed to scientists."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Because skin oils from human fingers stop mineral rings from sticking to the wet stone, park rangers ask visitors to never touch a cave wall.",
-      "childTip": "Read the last sentence of Paragraph 5 to see why park rangers ask visitors not to touch the rock.",
-      "parentExplanation": "In alignment with ELAGSE5RI8 (author's reasons and evidence), the author gives the scientific reason—skin oils prevent mineral rings from sticking—to support the rule that visitors must not touch cave walls."
+      "childTip": "In Paragraph 5, the author explains that oils from human fingers stop new mineral rings from sticking to wet stone in order to show why park rangers ask visitors never to touch cave walls.",
+      "parentExplanation": "In alignment with ELAGSE5RI8 (author's reasons and evidence), the author gives the scientific reason—skin oils prevent mineral rings from sticking—to support the rule that visitors must not touch cave walls.",
+      "retryHint": "Read the last sentence of Paragraph 5 to see how the fact about skin oils connects to the park rangers' rule for visitors."
     },
     {
       "questionId": "w28_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Once air enters a cave, rainwater loses all of its minerals and can no longer drip from the roof.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 3 says each drop loses a tiny bit of gas when it meets the air, which causes it to leave solid mineral behind—not lose its ability to drip."
         },
         {
           "id": "B",
           "text": "Once air fills an empty cave, dripping water switches from carving away rock to building new rock shapes.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 states that once the cave drains and fills with air, dripping water changes jobs—instead of carving rock away, it leaves tiny mineral rings behind to build new rock shapes."
         },
         {
           "id": "C",
           "text": "Water can only form stalactites when the entire cave chamber is completely flooded from floor to ceiling.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraphs 2 and 3 explain the opposite: water carves out the cave while it is flooded, and stalactites only start forming after the water drains and air fills the space."
         },
         {
           "id": "D",
           "text": "Dripping water builds a full-sized stone pillar from floor to ceiling in less than one week.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 says cave rocks grow so slowly that just one inch of new stone can take more than a hundred years, never less than a week."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Once air fills the cave, the same dripping water begins to build new rock shapes instead of carving them away.",
-      "childTip": "Look at the first sentence of Paragraph 3 to see how dripping water changes its job once air fills the cave.",
-      "parentExplanation": "Paragraph 3 opens with the key claim that once water drains and air fills the cave, the dripping water shifts from dissolving/carving limestone to depositing calcite minerals that build new formations."
+      "childTip": "Paragraph 3 states that once the cave drains and fills with air, dripping water changes jobs—instead of carving rock away, it leaves tiny mineral rings behind to build new rock shapes.",
+      "parentExplanation": "Paragraph 3 opens with the key claim that once water drains and air fills the cave, the dripping water shifts from dissolving/carving limestone to depositing calcite minerals that build new formations.",
+      "retryHint": "Read the first sentence of Paragraph 3 to see what dripping water begins to do once air fills the cave."
     },
     {
       "questionId": "w28_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"No human builders ever swung a pickaxe or shovel to dig them out.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only explains that humans did not dig the cave, without showing how water switches from carving rock to building it."
         },
         {
           "id": "B",
           "text": "\"At first, groundwater fills the entire space from floor to ceiling.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 2 only describes the early flooded stage of the cave before the water drains out and air enters."
         },
         {
           "id": "C",
           "text": "\"The falling drop splashes onto the cave floor directly below the tip of the stalactite.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 4 describes where a falling drop lands on the floor, rather than explaining the big switch in water's role once air fills the cave."
         },
         {
           "id": "D",
           "text": "\"Once air fills the cave, the same dripping water begins to build new rock shapes instead of carving them away.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This opening sentence from Paragraph 3 directly proves Question 5 by stating that once air fills the cave, dripping water starts building new rock shapes instead of carving them away."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Once air fills the cave, the same dripping water begins to build new rock shapes instead of carving them away.",
-      "childTip": "Pick the quote from Paragraph 3 that directly contrasts building new rock shapes with carving them away.",
-      "parentExplanation": "Option C is the exact sentence in Paragraph 3 that states how water transitions from carving rock to building new rock shapes once air fills the cave."
+      "childTip": "This opening sentence from Paragraph 3 directly proves Question 5 by stating that once air fills the cave, dripping water starts building new rock shapes instead of carving them away.",
+      "parentExplanation": "Option C is the exact sentence in Paragraph 3 that states how water transitions from carving rock to building new rock shapes once air fills the cave.",
+      "retryHint": "Look for the quote from Paragraph 3 that directly contrasts 'building new rock shapes' with 'carving them away.'"
     }
   ]
 }

@@ -71,31 +71,36 @@
         {
           "id": "A",
           "text": "The sonar beam sent out by the sub",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 2, the words 'by the sonar beam' right after 'was struck' show that the sub's sonar beam hit the stone chimneys."
         },
         {
           "id": "B",
           "text": "The row of tall stone chimneys in the canyon",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice flips the action! The row of tall stone chimneys received the strike from the sonar beam instead of doing it."
         },
         {
           "id": "C",
           "text": "The robotic claw on the front of the craft",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—the robotic claw appears later in Paragraph 4 to scoop vent water, not in Paragraph 2's sentence about the sonar beam."
         },
         {
           "id": "D",
           "text": "The dark canyon three miles down",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—'Three miles down in the dark canyon' only tells where the chimneys stood in Paragraph 2, not what struck them."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Three miles down in the dark canyon, a row of tall stone chimneys was struck by the sonar beam before the sub turned north.",
-      "childTip": "Find the passive verb 'was struck' and look right after 'by' to see what hit the chimneys.",
-      "parentExplanation": "In this passive sentence, 'a row of tall stone chimneys' receives the action ('was struck'). The agent following 'by' is 'the sonar beam.'"
+      "childTip": "Spot on! In Paragraph 2, the words 'by the sonar beam' right after 'was struck' show that the sub's sonar beam hit the stone chimneys.",
+      "parentExplanation": "In this passive sentence, 'a row of tall stone chimneys' receives the action ('was struck'). The agent following 'by' is 'the sonar beam.'",
+      "retryHint": "In Paragraph 2, find the action phrase 'was struck' and look right after 'by' to see what hit the chimneys."
     },
     {
       "questionId": "w97_q2",
@@ -112,30 +117,35 @@
           "id": "A",
           "text": "A freezing layer of mud where nothing can survive",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice describes the barren mud from Paragraph 1, which is the exact opposite of the thriving oasis in Paragraph 5."
         },
         {
           "id": "B",
           "text": "A sandy island floating on top of the ocean waves",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 5 clearly states that this oasis is 'down in the trench' in total darkness, not floating on the ocean waves."
         },
         {
           "id": "C",
           "text": "A broken cable that sends false static to a screen",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Chief Lin briefly suspected a loose cable in Paragraph 2, which has nothing to do with the word 'oasis' in Paragraph 5."
         },
         {
           "id": "D",
           "text": "A sheltered pocket teeming with life inside a barren environment",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Just like a desert oasis is a lush spot surrounded by dry sand, Paragraph 5 uses 'oasis' to describe the thriving vent community on the barren sea floor."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Up on deck, storm waves still hammered our ship, yet down in the trench an ancient oasis thrived in total darkness.",
-      "childTip": "Contrast the 'dead desert of gray mud' in Paragraph 1 with the thriving vent community in Paragraphs 4 and 5.",
-      "parentExplanation": "Just as a desert oasis supports life amid dry sand, the hydrothermal vent field serves as a thriving hub of crabs and tube worms amid the barren ocean floor."
+      "childTip": "Spot on! Just like a desert oasis is a lush spot surrounded by dry sand, Paragraph 5 uses 'oasis' to describe the thriving vent community on the barren sea floor.",
+      "parentExplanation": "Just as a desert oasis supports life amid dry sand, the hydrothermal vent field serves as a thriving hub of crabs and tube worms amid the barren ocean floor.",
+      "retryHint": "Contrast the 'dead desert of gray mud' in Paragraph 1 with the thriving vent community in Paragraphs 4 and 5."
     },
     {
       "questionId": "w97_q3",
@@ -152,30 +162,35 @@
           "id": "A",
           "text": "They absorb electrical energy from the sub's white LED nose lamps.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—the sub's white LED lamps only lit up the dark water for a few minutes during the visit in Paragraphs 3 and 4."
         },
         {
           "id": "B",
           "text": "They swim up to the ocean surface each night to feed on green plants.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 4 states that the crabs and tube worms cluster around the warm vents seven miles down, never swimming to the surface."
         },
         {
           "id": "C",
           "text": "Their food web runs on minerals pouring from Earth's crust rather than sunlight.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! The final sentence of Paragraph 4 explains that with no sunlight for green plants, the entire vent community runs on minerals pouring from Earth's crust."
         },
         {
           "id": "D",
           "text": "They freeze solid in the brine until a research ship drops food into the trench.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 3 explains that hot mineral water gushes from the chimneys at four hundred degrees, keeping the vent zone warm."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "With no sunlight to grow green plants, this whole hidden community fed on minerals pouring from Earth's crust.",
-      "childTip": "Click the last sentence of Paragraph 4 that explains what the hidden community feeds on without sunlight.",
-      "parentExplanation": "Paragraph 4 states that in the absence of sunlight for plants, the vent community relies on mineral-rich water pouring from Earth's crust."
+      "childTip": "Spot on! The final sentence of Paragraph 4 explains that with no sunlight for green plants, the entire vent community runs on minerals pouring from Earth's crust.",
+      "parentExplanation": "Paragraph 4 states that in the absence of sunlight for plants, the vent community relies on mineral-rich water pouring from Earth's crust.",
+      "retryHint": "Look at the last sentence of Paragraph 4 that explains what the hidden community feeds on without sunlight."
     },
     {
       "questionId": "w97_q4",
@@ -191,31 +206,36 @@
         {
           "id": "A",
           "text": "It lets the reader share the intern's curiosity and suspense while waiting for the sonar echoes and camera feed from the deep trench.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Because the story is told by the eager intern in the control room, the reader shares the narrator's wonder at the sonar pings and suspense as the camera lights turn on."
         },
         {
           "id": "B",
           "text": "It shows that the narrator is terrified of riding inside the tiny yellow sub seven miles below the ship.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 1 explains that the yellow sub is an uncrewed robot controlled by glass fiber from the ship deck above."
         },
         {
           "id": "C",
           "text": "It proves that Chief Lin wanted to abandon the mission before the sub reached the canyon wall.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Chief Lin only suspected static from a loose cable in Paragraph 2; she never tried to abandon the mission."
         },
         {
           "id": "D",
           "text": "It explains how the ship's captain repaired the storm damage on the upper deck.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—the narrator stays inside the dim control room watching the screens and never describes anyone repairing storm damage on deck."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "To me, every sound ping bouncing back from the abyss felt like a tap on a locked door.",
-      "childTip": "Consider how the narrator's personal thoughts—like comparing sonar pings to 'a tap on a locked door'—build excitement.",
-      "parentExplanation": "Told from the intern's first-person perspective in the control room, the narrative contrasts other interns' view of a 'dead desert' with the narrator's sense of wonder ('a tap on a locked door'), building suspense until the LED cameras reveal the vents."
+      "childTip": "Spot on! Because the story is told by the eager intern in the control room, the reader shares the narrator's wonder at the sonar pings and suspense as the camera lights turn on.",
+      "parentExplanation": "Told from the intern's first-person perspective in the control room, the narrative contrasts other interns' view of a 'dead desert' with the narrator's sense of wonder ('a tap on a locked door'), building suspense until the LED cameras reveal the vents.",
+      "retryHint": "In Paragraphs 1 to 5, consider how the narrator's personal thoughts—like comparing sonar pings to 'a tap on a locked door'—build excitement."
     },
     {
       "questionId": "w97_q5",
@@ -233,30 +253,35 @@
           "id": "A",
           "text": "She realizes that the battery pack has completely run out of charge in the cold water.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 1 mentions the battery pack holding its charge, and the sub continues hovering and sampling through Paragraph 4."
         },
         {
           "id": "B",
           "text": "She is angry that the narrator slowed the thrusters without asking permission first.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Chief Lin herself ordered the narrator to slow the thrusters and switch on the nose lamps in Paragraph 3."
         },
         {
           "id": "C",
           "text": "She worries that the hair-thin glass fiber will snap if the sub hovers near the vents.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 3 mentions the glass fiber carrying commands, but Chief Lin never worries about it snapping."
         },
         {
           "id": "D",
           "text": "She first thinks the sonar spikes are cable static until the camera reveals real stone chimneys.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 2 Chief Lin frowns and blames the sonar spikes on a loose cable, but in Paragraph 3 her doubt vanishes when the camera reveals real stone chimneys."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers.",
-      "childTip": "Compare what Chief Lin suspects in Paragraph 2 with what happens when the LED lights turn on in Paragraph 3.",
-      "parentExplanation": "In Paragraph 2, Chief Lin doubts the sonar reading and blames a loose cable; in Paragraph 3, when the white LED lights illuminate the stone towers on the screen, 'her doubt vanishing in a single breath' marks her shift to awe."
+      "childTip": "Spot on! In Paragraph 2 Chief Lin frowns and blames the sonar spikes on a loose cable, but in Paragraph 3 her doubt vanishes when the camera reveals real stone chimneys.",
+      "parentExplanation": "In Paragraph 2, Chief Lin doubts the sonar reading and blames a loose cable; in Paragraph 3, when the white LED lights illuminate the stone towers on the screen, 'her doubt vanishing in a single breath' marks her shift to awe.",
+      "retryHint": "Compare what Chief Lin suspects in Paragraph 2 with what happens when the LED lights turn on in Paragraph 3."
     },
     {
       "questionId": "w97_q6",
@@ -274,30 +299,35 @@
           "id": "A",
           "text": "\"If our battery pack held its charge in the freezing brine, we would map three miles of the Mariana ridge before midnight.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this sentence from Paragraph 1 only states the mapping goal for the night, not Chief Lin's change in attitude."
         },
         {
           "id": "B",
           "text": "\"Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! This quote from Paragraph 2 directly supports Question 5 by showing why Chief Lin first doubted the sonar spikes before seeing the vents."
         },
         {
           "id": "C",
           "text": "\"Because radio waves die fast in deep salt water, our commands traveled through a hair-thin glass fiber spooling behind the craft.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this technical detail from Paragraph 3 only explains how commands traveled down the glass fiber to the sub."
         },
         {
           "id": "D",
           "text": "\"While the sub hovered ten yards from the tallest spire, I triggered the robotic claw to scoop a vial of vent fluid.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Not quite—this action from Paragraph 4 shows the narrator collecting a water sample after the vents were already found."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Chief Lin frowned and tapped the glass dial, sure that a loose cable was feeding false static into the hull receivers.",
-      "childTip": "Select the sentence from Paragraph 2 that shows why Chief Lin first doubted the jagged sonar spikes.",
-      "parentExplanation": "Option B directly proves Part A by showing Chief Lin's initial skepticism that a loose cable was causing false static."
+      "childTip": "Spot on! This quote from Paragraph 2 directly supports Question 5 by showing why Chief Lin first doubted the sonar spikes before seeing the vents.",
+      "parentExplanation": "Option B directly proves Part A by showing Chief Lin's initial skepticism that a loose cable was causing false static.",
+      "retryHint": "Look for the quote from Paragraph 2 that shows why Chief Lin first doubted the jagged sonar spikes."
     }
   ]
 }

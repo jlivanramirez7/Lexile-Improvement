@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The steep limestone bluff halfway up the mountain",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "'Halfway up the steep limestone bluff' tells WHERE the cable cars were on the mountain, not what pulled them up the slope!"
         },
         {
           "id": "B",
           "text": "The passengers sitting on the inner wooden benches",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Passengers like Thomas were riding inside the wooden car on benches—they certainly weren't pulling the cable cars up the cliff!"
         },
         {
           "id": "C",
           "text": "A steam drum at the summit",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'were smoothly pulled past each other by' points to 'a steam drum at the summit' as the machine that pulled the two wooden cable cars."
         },
         {
           "id": "D",
           "text": "A team of horses walking beside the iron tracks",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "No horses are mentioned in the story; Paragraph 2 says a wire cable and a steam drum at the summit pulled the cars up the iron tracks."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Halfway up the steep limestone bluff, the two slanted wooden cable cars were smoothly pulled past each other by a steam drum at the summit.",
-      "childTip": "Look after the passive verb 'were smoothly pulled past each other by' to find the real actor.",
-      "parentExplanation": "In this passive-voice sentence, 'the two slanted wooden cable cars' is the receiver of the action. The true actor performing the pulling appears after 'by': 'a steam drum at the summit' (Option B)."
+      "childTip": "In Paragraph 2, the passive verb 'were smoothly pulled past each other by' points to 'a steam drum at the summit' as the machine that pulled the two wooden cable cars.",
+      "parentExplanation": "In this passive-voice sentence, 'the two slanted wooden cable cars' is the receiver of the action. The true actor performing the pulling appears after 'by': 'a steam drum at the summit' (Option B).",
+      "retryHint": "Look right after 'were smoothly pulled past each other by' in Paragraph 2 to see what pulled the cable cars."
     },
     {
       "questionId": "w63_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Very steep and rising almost straight up",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 1, 'sheer' means very steep and rising almost straight up. The very next sentence gives a clear clue: 'Near the top, the grade tilted sharper than a church roof.'"
         },
         {
           "id": "B",
           "text": "Thin and easy to see through like glass",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'Sheer' can mean thin, see-through cloth when describing curtains, but here it describes a solid limestone mountain slope tilting sharper than a roof!"
         },
         {
           "id": "C",
           "text": "Smooth and flat like a valley meadow",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Smooth and flat like a valley meadow is the exact opposite of a 'sheer slope' that climbs straight into the mist and makes riders clutch their hats."
         },
         {
           "id": "D",
           "text": "Used for cutting wool off farm sheep",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Tools for cutting wool off sheep are spelled 'shears' and have nothing to do with a steep railway slope on Lookout Mountain!"
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Most passengers boarding the new Incline Railway in Chattanooga clutched their hats and whispered about the sheer slope.",
-      "childTip": "Read the very next sentence in Paragraph 1 about the grade tilting 'sharper than a church roof.'",
-      "parentExplanation": "Although 'sheer' can mean thin fabric in other contexts, the clue in the next sentence ('the grade tilted sharper than a church roof') proves that 'sheer slope' means a very steep incline (Option A)."
+      "childTip": "In Paragraph 1, 'sheer' means very steep and rising almost straight up. The very next sentence gives a clear clue: 'Near the top, the grade tilted sharper than a church roof.'",
+      "parentExplanation": "Although 'sheer' can mean thin fabric in other contexts, the clue in the next sentence ('the grade tilted sharper than a church roof') proves that 'sheer slope' means a very steep incline (Option A).",
+      "retryHint": "Read the sentence right after 'sheer slope' in Paragraph 1 about how the grade tilted 'sharper than a church roof.'"
     },
     {
       "questionId": "w63_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She tastes salt water dripping from the steam drum at the summit.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Steam drums run on fresh boiler water at the top of the mountain, not ocean water, and Clara never tastes anything dripping from the machine!"
         },
         {
           "id": "B",
           "text": "She sees ocean waves still crashing against the bottom station in Chattanooga.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Chattanooga, Tennessee, is far inland in the mountains—Paragraph 3 says the shallow sea covered that spot millions of years ago, not in 1895."
         },
         {
           "id": "C",
           "text": "She reads a bronze plaque nailed to the wooden platform at the top station.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Clara doesn't read a bronze plaque at the station; she discovers the ancient sea herself by spotting crinoid stems and seashell prints in the rock trench."
         },
         {
           "id": "D",
           "text": "She spots fossilized crinoid stems and seashell prints locked inside the lower limestone bands.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, Clara spots small white crinoid stems and seashell prints locked inside the gray limestone bands, which proves that a warm, shallow sea once covered the spot."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "In the margin, she noted small white crinoid stems and seashell prints locked inside the stone.",
-      "childTip": "Click the sentence in Paragraph 3 that tells what small prints Clara noted inside the gray stone.",
-      "parentExplanation": "In Paragraph 3, Clara observes 'small white crinoid stems and seashell prints locked inside the stone,' which provides geological proof that a warm, shallow sea once covered the area (Option A)."
+      "childTip": "In Paragraph 3, Clara spots small white crinoid stems and seashell prints locked inside the gray limestone bands, which proves that a warm, shallow sea once covered the spot.",
+      "parentExplanation": "In Paragraph 3, Clara observes 'small white crinoid stems and seashell prints locked inside the stone,' which provides geological proof that a warm, shallow sea once covered the area (Option A).",
+      "retryHint": "Check the third sentence of Paragraph 3 to see what small fossil prints Clara noticed inside the limestone rock."
     },
     {
       "questionId": "w63_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By telling the story in first person from the steam engineer's view, it focuses only on how much coal the boiler burns.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story is told by an outside narrator watching Clara and Thomas, not in first person ('I') by a steam engineer shoveling coal."
         },
         {
           "id": "B",
           "text": "By contrasting Thomas's fear of the steep drop with Clara's scientific excitement, it shows how the same climb looks different to two riders.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The third-person narrator contrasts Thomas's fear (shutting his eyes and gripping his cane) with Clara's scientific excitement (leaning out the window to sketch fossils and rock layers)."
         },
         {
           "id": "C",
           "text": "By showing that both Clara and Thomas keep their eyes shut the entire trip, it hides what the mountain looks like.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Only Thomas keeps his eyes shut tight! Clara sits by the open window the whole way up and sketches every layer of limestone, coal shale, and sandstone."
         },
         {
           "id": "D",
           "text": "By focusing only on the price of train tickets in 1895, it proves the railway was built for tourists.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Ticket prices are never mentioned in the story; the narrator focuses on the contrast between Thomas's fear of the cliff and Clara's love of geology."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.",
-      "childTip": "Notice how the narrator compares Thomas shutting his eyes with Clara leaning out the window to sketch rocks.",
-      "parentExplanation": "Aligned to ELAGSE5RL6, the third-person narrator contrasts Thomas's fearful perspective (white knuckles, closed eyes) with Clara's curious perspective (seeing the rock trench as 'an open book of Earth's past') (Option A)."
+      "childTip": "The third-person narrator contrasts Thomas's fear (shutting his eyes and gripping his cane) with Clara's scientific excitement (leaning out the window to sketch fossils and rock layers).",
+      "parentExplanation": "Aligned to ELAGSE5RL6, the third-person narrator contrasts Thomas's fearful perspective (white knuckles, closed eyes) with Clara's curious perspective (seeing the rock trench as 'an open book of Earth's past') (Option A).",
+      "retryHint": "Notice how every paragraph compares Thomas hiding his eyes in fear with Clara eagerly sketching the rock walls."
     },
     {
       "questionId": "w63_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Charcoal sticks are much better for drawing rock layers than ink pens.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Clara uses a charcoal stick to sketch in Paragraph 3, but the big life lesson of the story is about curiosity overcoming fear, not art supplies."
         },
         {
           "id": "B",
           "text": "Steep mountain railways are too dangerous for anyone to ride without a guide.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The cable car glides safely into the top station in Paragraph 5, so the story isn't warning people that mountain railways are too dangerous to ride."
         },
         {
           "id": "C",
           "text": "Curiosity can turn an intimidating experience into a rare chance to discover something new.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "While Thomas only sees a scary drop and hides his face, Clara's curiosity turns the steep railway trench into 'an open book of Earth's past' that lets her map the mountain's rock layers."
         },
         {
           "id": "D",
           "text": "Older cousins always know more about mountain history than younger relatives.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Thomas is Clara's older cousin, yet he shuts his eyes the whole ride while younger Clara studies the fossils and rock layers!"
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "To her eyes, the deep trench blasted through the mountain rock was not a scary drop at all.",
-      "childTip": "Think about how Clara's curiosity transforms a scary cliff ride into a scientific discovery.",
-      "parentExplanation": "While Thomas is paralyzed by fear of the steep slope, Clara's scientific curiosity allows her to see the blasted rock cut as an opportunity to map millions of years of Earth's history (Option A)."
+      "childTip": "While Thomas only sees a scary drop and hides his face, Clara's curiosity turns the steep railway trench into 'an open book of Earth's past' that lets her map the mountain's rock layers.",
+      "parentExplanation": "While Thomas is paralyzed by fear of the steep slope, Clara's scientific curiosity allows her to see the blasted rock cut as an opportunity to map millions of years of Earth's history (Option A).",
+      "retryHint": "Compare how Thomas reacts to the steep cliff ride with what Clara's scientific curiosity allows her to discover."
     },
     {
       "questionId": "w63_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly supports Question 5 by showing how the same ride that terrified her cousin gave curious Clara the clearest rock chart in the state."
         },
         {
           "id": "B",
           "text": "\"Millions of years ago, a warm, shallow sea had covered this exact spot in Tennessee.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This fact from Paragraph 3 only tells about Tennessee's ancient sea, without showing how curiosity turns a scary moment into a discovery."
         },
         {
           "id": "C",
           "text": "\"When the car glided into the top station above the clouds, Thomas leaped onto the wood platform and vowed to walk all the way down.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 5 only shows how scared Thomas was at the top station, leaving out what Clara discovered through her curiosity."
         },
         {
           "id": "D",
           "text": "\"As the bell clanged, the cable beneath the floor pulled taut and the car began its slow climb.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 2 only describes the mechanical start of the cable car ride, not the theme of curiosity versus fear."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "The terrifying ride that made her cousin tremble had given Clara the clearest rock chart in the state.",
-      "childTip": "Choose the quote from Paragraph 5 that shows how the scary ride rewarded Clara's curiosity.",
-      "parentExplanation": "Option D directly proves the theme in Part A by contrasting Thomas's fear with the scientific reward Clara gained from her curiosity."
+      "childTip": "This final sentence from Paragraph 5 directly supports Question 5 by showing how the same ride that terrified her cousin gave curious Clara the clearest rock chart in the state.",
+      "parentExplanation": "Option D directly proves the theme in Part A by contrasting Thomas's fear with the scientific reward Clara gained from her curiosity.",
+      "retryHint": "Check the final sentence of Paragraph 5 contrasting the ride that made her cousin tremble with Clara's clear rock chart."
     }
   ]
 }

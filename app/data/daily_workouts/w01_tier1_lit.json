@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Leo jammed the balance wheel with a horsehair brush, and Uncle Mateo freed it using dried oil.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the actions backward! Paragraph 2 says Leo used the soft horsehair brush to free the wheel, not jam it, and Uncle Mateo did not use dried oil."
         },
         {
           "id": "B",
           "text": "Dried oil and marsh sand jammed the balance wheel, and Leo freed it using a horsehair brush.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'jammed by decades of dried oil and tiny grains of marsh sand' shows what stopped the wheel, and 'freed by Leo' shows who fixed it."
         },
         {
           "id": "C",
           "text": "A soft horsehair brush jammed the tiny grains of sand until the balance wheel freed itself.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A brush cannot jam sand so a wheel frees itself! Paragraph 2 says Leo used the horsehair brush to gently brush the grit away and free the wheel."
         },
         {
           "id": "D",
           "text": "Salt water from a hurricane flooded the entire clock shop and rusted the silver chime lever.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 2 never mentions a hurricane flooding the clock shop; it says the clock sat in a coastal attic for thirty years where salt air and sand jammed it."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The rusted balance wheel, jammed by decades of dried oil and tiny grains of marsh sand, was gently freed by Leo with a soft horsehair brush.",
-      "childTip": "Watch for two 'by' phrases! Dried oil and sand jammed the wheel, while Leo did the freeing.",
-      "parentExplanation": "This passive-voice sentence contains two 'by' prepositional phrases: 'jammed by decades of dried oil and tiny grains of marsh sand' (the cause of the jam) and 'was gently freed by Leo' (the actor who fixed it). Option B accurately tracks both agents, while Option A reverses the actors."
+      "childTip": "In Paragraph 2, the phrase 'jammed by decades of dried oil and tiny grains of marsh sand' shows what stopped the wheel, and 'freed by Leo' shows who fixed it.",
+      "parentExplanation": "This passive-voice sentence contains two 'by' prepositional phrases: 'jammed by decades of dried oil and tiny grains of marsh sand' (the cause of the jam) and 'was gently freed by Leo' (the actor who fixed it). Option B accurately tracks both agents, while Option A reverses the actors.",
+      "retryHint": "Reread the long sentence in Paragraph 2 and look for the words 'jammed by' and 'freed by' to see who did each action."
     },
     {
       "questionId": "w01_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Excited and eager to test a new tool right away",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This is the opposite of what happened! Paragraph 3 says Leo held back from pressing the lever right away because a careless push could break a gear."
         },
         {
           "id": "B",
           "text": "Completely unable to see inside the dark clock case",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Leo could see inside the clock just fine with his flashlight beam; he paused because he didn't want to break a fragile part by pushing too fast."
         },
         {
           "id": "C",
           "text": "Hesitant and cautious about acting too quickly",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'reluctant' means hesitant and cautious, because Leo worried that a careless push on the lever might snap a fragile gear tooth."
         },
         {
           "id": "D",
           "text": "Angry that his uncle gave him a broken antique clock",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Leo was not angry at his uncle at all! Paragraph 1 and Paragraph 3 show he loved fixing clocks and wanted to protect his careful repair work."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "At first, Leo felt reluctant to press the strange lever without asking his uncle for help.",
-      "childTip": "Look at the next sentence: Leo worried a careless push could snap a gear, so he hesitated before pressing.",
-      "parentExplanation": "In Paragraph 3, the sentence immediately following 'reluctant' explains Leo's caution ('A careless push could snap a fragile tooth'). Option C captures this careful hesitation."
+      "childTip": "In Paragraph 3, 'reluctant' means hesitant and cautious, because Leo worried that a careless push on the lever might snap a fragile gear tooth.",
+      "parentExplanation": "In Paragraph 3, the sentence immediately following 'reluctant' explains Leo's caution ('A careless push could snap a fragile tooth'). Option C captures this careful hesitation.",
+      "retryHint": "Read the very next sentence in Paragraph 3 to see what Leo worried might happen if he pushed the lever too carelessly."
     },
     {
       "questionId": "w01_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "He wants to understand how the hidden parts connect so he does not damage the clock.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that Leo traced the lever's path with his flashlight to see how the rods connected before nudging it, protecting the fragile gears."
         },
         {
           "id": "B",
           "text": "He is looking for a place to install a modern battery box inside the heron's neck.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Leo wasn't installing a battery box! Paragraph 5 explains that impatient workers used cheap battery boxes, while Leo carefully cleaned the original gears."
         },
         {
           "id": "C",
           "text": "He never touches any clock in the shop unless Uncle Mateo holds the flashlight for him.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 3 shows Leo using the flashlight and nudging the catch by himself while Uncle Mateo was working across the room at his own bench."
         },
         {
           "id": "D",
           "text": "He hopes to find gold coins that the original owner hid behind the clock numerals.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story never says anything about hidden gold coins; Leo was tracing how the silver lever connected to the hinged joint in the heron's neck."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Instead of forcing the part, he traced the lever's path with his flashlight beam until he understood how the rods connected.",
-      "childTip": "Click the sentence in Paragraph 3 that shows what Leo did with his flashlight instead of forcing the part.",
-      "parentExplanation": "Paragraph 3 states that instead of forcing the lever and risking a broken gear tooth, Leo traced its path with his flashlight until he understood how the rods connected (Option A)."
+      "childTip": "Paragraph 3 explains that Leo traced the lever's path with his flashlight to see how the rods connected before nudging it, protecting the fragile gears.",
+      "parentExplanation": "Paragraph 3 states that instead of forcing the lever and risking a broken gear tooth, Leo traced its path with his flashlight until he understood how the rods connected (Option A).",
+      "retryHint": "Check Paragraph 3 right after Leo worries about snapping a tooth to see what he uses his flashlight beam to figure out."
     },
     {
       "questionId": "w01_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "It introduces the setting of the Savannah clock shop and explains why Leo dislikes soccer.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The Savannah clock shop setting and Leo's preference for gears over soccer are introduced back in Paragraph 1, not Paragraph 4."
         },
         {
           "id": "B",
           "text": "It proves that modern clocks in store windows are always more reliable than antique clocks.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 4 actually says the opposite: none of the modern clocks in the front window held such a clever artistic surprise inside their cases."
         },
         {
           "id": "C",
           "text": "It explains how salt air along the Georgia coast causes brass springs to freeze over time.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "How salt air froze the springs in a coastal attic is background information explained in Paragraph 2, whereas Paragraph 4 shows the bird coming alive."
         },
         {
           "id": "D",
           "text": "It reveals the climax of Leo's discovery by showing what the hidden mechanism does when triggered.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 is the exciting turning point of the story where the brass heron dips its head and opens its wings to reveal the glowing Tybee Lighthouse scene."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Then its wings spread an inch apart, revealing a miniature painted scene of Tybee Lighthouse glowing behind glass.",
-      "childTip": "Ask what happens for the first time in Paragraph 4: the heron moves and reveals its secret scene!",
-      "parentExplanation": "Paragraph 4 serves as the story's turning point/climax where Leo's careful cleaning and observation pay off as the heron dips its head and spreads its wings to reveal the miniature Tybee Lighthouse scene."
+      "childTip": "Paragraph 4 is the exciting turning point of the story where the brass heron dips its head and opens its wings to reveal the glowing Tybee Lighthouse scene.",
+      "parentExplanation": "Paragraph 4 serves as the story's turning point/climax where Leo's careful cleaning and observation pay off as the heron dips its head and spreads its wings to reveal the miniature Tybee Lighthouse scene.",
+      "retryHint": "Read Paragraph 4 to see the surprising moment that happens right after Leo nudges the hidden silver catch."
     },
     {
       "questionId": "w01_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Ten-year-old apprentices cannot repair delicate machines without constant help from an adult.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Leo actually repairs the clock and unlocks the hidden mechanism on his own while Uncle Mateo watches proudly from across the shop."
         },
         {
           "id": "B",
           "text": "Antique clocks kept near the ocean should always be converted to battery power so they do not rust.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 5 says the exact opposite: swapping old gears for cheap battery boxes would have destroyed the clock's rarest hidden feature forever."
         },
         {
           "id": "C",
           "text": "Patient care and close observation can uncover hidden beauty that rushed shortcuts would destroy.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across the story, Leo's patient cleaning and careful observation unlock the heron's hidden lighthouse scene, which a rushed battery swap would have ruined."
         },
         {
           "id": "D",
           "text": "A horsehair brush is the most important tool on a clockmaker's workbench.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The horsehair brush is just one small tool Leo uses in Paragraph 2, not the big life lesson of the whole story."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By respecting the old craft and looking closely before acting, Leo had saved the clock's rarest feature from being lost forever.",
-      "childTip": "A theme is a big life lesson shown across the whole story, especially in the final paragraph.",
-      "parentExplanation": "The central theme (ELAGSE5RL2) contrasts impatient shortcuts (replacing movements with battery boxes or forcing levers) with Leo's patient cleaning and close observation, which preserved the clock's hidden artwork."
+      "childTip": "Across the story, Leo's patient cleaning and careful observation unlock the heron's hidden lighthouse scene, which a rushed battery swap would have ruined.",
+      "parentExplanation": "The central theme (ELAGSE5RL2) contrasts impatient shortcuts (replacing movements with battery boxes or forcing levers) with Leo's patient cleaning and close observation, which preserved the clock's hidden artwork.",
+      "retryHint": "Look at Paragraph 5 to see what Uncle Mateo says Leo's patience saved compared to what impatient workers usually do."
     },
     {
       "questionId": "w01_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Every Saturday morning, Leo climbed the narrow wooden stairs to his Uncle Mateo's clock shop near the Savannah riverfront.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening line from Paragraph 1 only tells us when and where Leo visits the shop, without explaining the lesson about patience and careful work."
         },
         {
           "id": "B",
           "text": "\"Using slender brass tweezers, Leo lifted the faceplate to inspect the dark space behind the numerals.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 2 just shows Leo lifting the faceplate with tweezers, before he even discovers or saves the hidden mechanism."
         },
         {
           "id": "C",
           "text": "\"The bird slowly dipped its slender head toward the base as if plucking a minnow from shallow water.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 4 describes how the brass bird moved, but it doesn't explain the lesson about why Leo's careful patience mattered."
         },
         {
           "id": "D",
           "text": "\"By respecting the old craft and looking closely before acting, Leo had saved the clock's rarest feature from being lost forever.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quote from Paragraph 5 directly proves the theme by stating that Leo's respect for the craft and close observation saved the clock's rarest feature."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By respecting the old craft and looking closely before acting, Leo had saved the clock's rarest feature from being lost forever.",
-      "childTip": "Pick the quote in Paragraph 5 that directly connects Leo's careful patience to saving the clock's secret.",
-      "parentExplanation": "Option D provides the direct textual proof in Paragraph 5 showing how Leo's respect for the craft and careful observation preserved the hidden feature."
+      "childTip": "This quote from Paragraph 5 directly proves the theme by stating that Leo's respect for the craft and close observation saved the clock's rarest feature.",
+      "parentExplanation": "Option D provides the direct textual proof in Paragraph 5 showing how Leo's respect for the craft and careful observation preserved the hidden feature.",
+      "retryHint": "Find the sentence in Paragraph 5 that sums up how looking closely before acting helped Leo save the clock's special surprise."
     }
   ]
 }

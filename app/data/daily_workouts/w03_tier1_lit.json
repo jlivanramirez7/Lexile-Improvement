@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Wet pine needles and fallen oak limbs traced the brass compass across the ridge.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Pine needles and oak limbs were just covering the ground! The sentence says the path was hidden beneath them, while Clara did the tracing."
         },
         {
           "id": "B",
           "text": "The steep logging path traced Clara until she reached the valley road.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the subject and object backward: a dirt logging path cannot trace a person! Clara traced the path on the map."
         },
         {
           "id": "C",
           "text": "Clara traced the steep logging path using her brass compass.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'was carefully traced by Clara with her brass compass' shows that Clara is the one who performed the action of tracing the logging path."
         },
         {
           "id": "D",
           "text": "Grandpa Arthur walked ahead of the children to clear the fallen oak limbs.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Grandpa Arthur drew the map back in 1938, so he was not walking ahead of the children on the trail that day."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The steep logging path, hidden beneath a thick carpet of wet pine needles and fallen oak limbs, was carefully traced by Clara with her brass compass.",
-      "childTip": "Skip the comma phrase about pine needles and oak limbs! Look after 'was carefully traced by' to find the real actor.",
-      "parentExplanation": "In this passive construction, 'The steep logging path' is the receiver of the action, separated from the verb by an 11-word participial phrase ('hidden beneath...'). 'Clara' (after 'by') is the true grammatical actor."
+      "childTip": "In Paragraph 2, the phrase 'was carefully traced by Clara with her brass compass' shows that Clara is the one who performed the action of tracing the logging path.",
+      "parentExplanation": "In this passive construction, 'The steep logging path' is the receiver of the action, separated from the verb by an 11-word participial phrase ('hidden beneath...'). 'Clara' (after 'by') is the true grammatical actor.",
+      "retryHint": "Look for the words 'traced by' near the end of the sentence in Paragraph 2 to see who actually used the brass compass."
     },
     {
       "questionId": "w03_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "To show that the tall trees stood upright in a row as if standing guard over the mountain trail",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Sentries are guards who stand watch; in Paragraph 3, the author compares the three tall hemlocks to 'silent sentries' to show how they stood upright in a row watching over the misty trail."
         },
         {
           "id": "B",
           "text": "To suggest that the trees were shouting loud warnings to hikers lost in the valley",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The phrase explicitly calls the trees 'silent sentries,' which is the exact opposite of shouting loud warnings in the valley."
         },
         {
           "id": "C",
           "text": "To prove that park rangers had chopped down all the trees along Cohutta Ridge",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The three tall hemlock trees were still standing hundred yards ahead on the ridge, so park rangers had not chopped them down."
         },
         {
           "id": "D",
           "text": "To explain how hemlock needles turn bright yellow during dry summer weather",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The scene takes place in cold mountain fog with wool coats, and the comparison describes the tall shapes of the trees in the mist, not summer needle colors."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "A hundred yards ahead, the dim shapes of three tall hemlocks loomed like silent sentries in the mist.",
-      "childTip": "A sentry is a watchful guard. The simile compares the tall, quiet trees to guards marking the trail.",
-      "parentExplanation": "This item targets ELAGSE5RL4 (figurative language/simile). Comparing the notched hemlocks to 'silent sentries' emphasizes how they stood tall and watchful at a key checkpoint along the foggy trail."
+      "childTip": "Sentries are guards who stand watch; in Paragraph 3, the author compares the three tall hemlocks to 'silent sentries' to show how they stood upright in a row watching over the misty trail.",
+      "parentExplanation": "This item targets ELAGSE5RL4 (figurative language/simile). Comparing the notched hemlocks to 'silent sentries' emphasizes how they stood tall and watchful at a key checkpoint along the foggy trail.",
+      "retryHint": "Picture what a 'sentry' (or guard) looks like standing at a post, and connect that image to the three tall hemlock trees in Paragraph 3."
     },
     {
       "questionId": "w03_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "She wants to turn around and spend the night inside the hollow trunk of a hemlock tree.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Clara never suggests sleeping inside a hollow tree; in Paragraph 3 they only check the axe marks on the hemlock trunk before continuing toward the cabin."
         },
         {
           "id": "B",
           "text": "The stones are slick with moss in high water, and Grandpa's map points to a safer log bridge upstream.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that the stepping stones are slick with wet moss over foaming water, and Grandpa's map warns hikers to walk upstream to a sturdy log bridge during high water."
         },
         {
           "id": "C",
           "text": "Sam does not know how to swim across deep lakes during the winter.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 4 describes a rushing mountain stream with stepping stones, not a deep lake, and the text never mentions whether Sam knows how to swim."
         },
         {
           "id": "D",
           "text": "The ranger cabin is located on the same side of the stream where they are already standing.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 states that the warm hearth of the cabin is on the 'far bank' across the foaming stream, so they still have to cross the water."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The note warned hikers to walk upstream fifty paces to a sturdy locust log bridge during high water.",
-      "childTip": "Click the sentence in Paragraph 4 that tells what Grandpa's penciled note warned hikers to do.",
-      "parentExplanation": "Paragraph 4 explains that the stepping stones were slick with moss and foaming water, and Clara noticed Grandpa's penciled warning to use the locust log bridge fifty paces upstream instead."
+      "childTip": "Paragraph 4 explains that the stepping stones are slick with wet moss over foaming water, and Grandpa's map warns hikers to walk upstream to a sturdy log bridge during high water.",
+      "parentExplanation": "Paragraph 4 explains that the stepping stones were slick with moss and foaming water, and Clara noticed Grandpa's penciled warning to use the locust log bridge fifty paces upstream instead.",
+      "retryHint": "Read the last two sentences of Paragraph 4 to see what Clara points to at the bottom of Grandpa's map."
     },
     {
       "questionId": "w03_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "Both siblings ignore their grandfather's map and follow a park ranger down the valley road.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Neither sibling ignores the map or follows a park ranger; Clara uses Grandpa's 1938 map at every step to guide them to the ranger station."
         },
         {
           "id": "B",
           "text": "Clara wants to race across the mossy stones, while Sam insists on reading the 1938 map with the compass.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This swaps the two characters! Sam is the one who tries to jump onto the mossy stone in Paragraph 4, while Clara is the one who reads the map and compass."
         },
         {
           "id": "C",
           "text": "Sam looks for quick shortcuts and leaps ahead, while Clara checks landmarks and reads every detail on the map.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across Paragraphs 2 and 4, Sam eagerly looks for quick shortcuts and tries to leap onto slick stones, whereas Clara patiently checks the compass, landmarks, and map notes."
         },
         {
           "id": "D",
           "text": "Sam draws a brand-new map in waterproof ink while Clara builds a wooden bridge over the creek.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Grandpa Arthur drew the waterproof ink map and the locust log bridge was already built upstream; the children didn't make a new map or bridge."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Sam started to leap onto the first wet rock, eager to reach the warm hearth on the far bank.",
-      "childTip": "Compare how Sam acts (hoping for a shortcut, leaping onto wet rocks) with how Clara checks the map first.",
-      "parentExplanation": "Across Paragraphs 2 and 4 (ELAGSE5RL3), Sam is impulsive—hoping for a quick shortcut and starting to leap onto slick rocks—whereas Clara methodically verifies compass bearings, tree notches, and margin notes."
+      "childTip": "Across Paragraphs 2 and 4, Sam eagerly looks for quick shortcuts and tries to leap onto slick stones, whereas Clara patiently checks the compass, landmarks, and map notes.",
+      "parentExplanation": "Across Paragraphs 2 and 4 (ELAGSE5RL3), Sam is impulsive—hoping for a quick shortcut and starting to leap onto slick rocks—whereas Clara methodically verifies compass bearings, tree notches, and margin notes.",
+      "retryHint": "Compare what Sam wants to do in Paragraphs 2 and 4 with how Clara uses the map and compass in those same moments."
     },
     {
       "questionId": "w03_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Careful preparation and wisdom passed down from the past can guide people safely through sudden dangers.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story shows that Clara's careful attention and Grandpa Arthur's 1938 map landmarks and notes keep the children safe from the rocky gorge and freezing creek."
         },
         {
           "id": "B",
           "text": "Hand-drawn paper maps are completely useless whenever fog covers a mountain trail.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The story proves the exact opposite: when wooden trail signs vanished in the fog, Grandpa's hand-drawn paper map was the very thing that guided them home."
         },
         {
           "id": "C",
           "text": "Hikers should always cross mountain streams by jumping across mossy stepping stones.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "In Paragraph 5, Sam admits that jumping across the mossy stepping stones would have ended in a 'freezing soak,' proving the log bridge was the smart choice."
         },
         {
           "id": "D",
           "text": "Hemlock trees grow taller in North Georgia than anywhere else in the United States.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story never compares the height of North Georgia hemlock trees to trees in the rest of the United States."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Grandpa's patient eye had guided them home across eighty years of mountain weather.",
-      "childTip": "Look at how Grandpa's 1938 map and Clara's careful reading work together to bring them safely to the station.",
-      "parentExplanation": "The story's central message highlights how Grandpa Arthur's careful 1938 surveyor notes and Clara's disciplined navigation worked together to bring the siblings safely through the fog."
+      "childTip": "The story shows that Clara's careful attention and Grandpa Arthur's 1938 map landmarks and notes keep the children safe from the rocky gorge and freezing creek.",
+      "parentExplanation": "The story's central message highlights how Grandpa Arthur's careful 1938 surveyor notes and Clara's disciplined navigation worked together to bring the siblings safely through the fog.",
+      "retryHint": "Think about what saved Clara and Sam from getting lost in the fog or falling into the cold stream in Paragraphs 4 and 5."
     },
     {
       "questionId": "w03_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Her younger brother, Sam, stopped beside a mossy boulder and pulled his wool coat tight.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only shows that Sam felt cold in the mountain mist, without explaining how preparation or wisdom from the past saved them."
         },
         {
           "id": "B",
           "text": "\"The wooden trail signs from the forestry camp had vanished into the swirling haze.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 1 sets up the problem of the fog hiding the trail signs, but it doesn't show how Grandpa's map solved that problem."
         },
         {
           "id": "C",
           "text": "\"Beyond the hemlock trees, the ground dropped sharply toward a rushing mountain stream that blocked the faint path.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 4 describes the rushing stream blocking the trail, rather than showing the lesson about how they crossed it safely."
         },
         {
           "id": "D",
           "text": "\"Grandpa's patient eye had guided them home across eighty years of mountain weather.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This closing sentence from Paragraph 5 directly captures the central message by showing how Grandpa's careful work from eighty years ago guided the children safely through the mountain fog."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Grandpa's patient eye had guided them home across eighty years of mountain weather.",
-      "childTip": "Pick the final sentence in Paragraph 5 that sums up how Grandpa's careful work led them to safety.",
-      "parentExplanation": "Option D is the concluding sentence of the passage and directly encapsulates the theme selected in Part A."
+      "childTip": "This closing sentence from Paragraph 5 directly captures the central message by showing how Grandpa's careful work from eighty years ago guided the children safely through the mountain fog.",
+      "parentExplanation": "Option D is the concluding sentence of the passage and directly encapsulates the theme selected in Part A.",
+      "retryHint": "Find the quote from Paragraph 5 that connects Grandpa's wisdom from the past to the children reaching safety."
     }
   ]
 }

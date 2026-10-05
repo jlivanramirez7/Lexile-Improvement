@@ -73,31 +73,36 @@
           "id": "A",
           "text": "Captain Conti, who drew the gilded chart in his logbook",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Captain Conti is the one who drew the gilded chart ('drawn by Captain Conti'), while the wealthy merchants are the ones who praised it."
         },
         {
           "id": "B",
           "text": "The wealthy merchants who admired the map before checking the reef depths",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive verb 'was praised by wealthy merchants' shows that the wealthy merchants performed the action of praising Captain Conti's gilded chart."
         },
         {
           "id": "C",
           "text": "The sailors who measured the reef depths along the canal",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The sentence says the chart was praised 'before any reef depths were checked,' so no sailors had checked those depths for the merchants yet."
         },
         {
           "id": "D",
           "text": "Master Bellini, who owned the dim studio above the canal",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Master Bellini owned the map shop, but the sentence states that the wealthy merchants praised the gilded chart."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Inside the dim studio above the canal, the gilded chart drawn by Captain Conti was praised by wealthy merchants before any reef depths were checked.",
-      "childTip": "Spot the passive verb 'was praised by'—the noun right after 'by' tells you who really did the praising.",
-      "parentExplanation": "This passive sentence places 'the gilded chart drawn by Captain Conti' before the main verb 'was praised.' Option A falls for the syntactic reversal trap by picking 'Captain Conti' from the modifying phrase 'drawn by Captain Conti.' The true actor of 'was praised' is 'wealthy merchants.'"
+      "childTip": "In Paragraph 2, the passive verb 'was praised by wealthy merchants' shows that the wealthy merchants performed the action of praising Captain Conti's gilded chart.",
+      "parentExplanation": "This passive sentence places 'the gilded chart drawn by Captain Conti' before the main verb 'was praised.' Option A falls for the syntactic reversal trap by picking 'Captain Conti' from the modifying phrase 'drawn by Captain Conti.' The true actor of 'was praised' is 'wealthy merchants.'",
+      "retryHint": "Look at the words right after 'praised by' in the Paragraph 2 sentence to see who admired the gilded chart."
     },
     {
       "questionId": "w19_q2",
@@ -114,31 +119,36 @@
           "id": "A",
           "text": "Decorated with bright colors and neat lettering",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The sentence starts by saying 'Moretti's pages lacked fine paint,' which shows his chart was plain rather than decorated with bright colors."
         },
         {
           "id": "B",
           "text": "Kept secret from rival merchant ships",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Moretti brought his logbook to Master Bellini's map shop to be engraved into the public Venice atlas, not to keep it secret."
         },
         {
           "id": "C",
           "text": "Truthful and direct about real dangers",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'candid' means truthful and direct about real dangers, because Captain Moretti's plain journal recorded honest warnings about jagged rocks and fierce crosswinds."
         },
         {
           "id": "D",
           "text": "Written in an ancient foreign code",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Marco could read Moretti's notes and depth numbers directly to compare them with Conti's, so they were not written in a foreign code."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Moretti's pages lacked fine paint, yet every league of his chart held candid notes about jagged rocks and fierce crosswinds.",
-      "childTip": "Use the contrast word 'yet'—Moretti's book had no fancy paint, yet it gave honest, plain facts about hazards.",
-      "parentExplanation": "The sentence contrasts 'lacked fine paint' (unlike Conti's gilded pages) with 'candid notes about jagged rocks and fierce crosswinds.' In context, 'candid' means straightforward, honest, and unvarnished."
+      "childTip": "In Paragraph 3, 'candid' means truthful and direct about real dangers, because Captain Moretti's plain journal recorded honest warnings about jagged rocks and fierce crosswinds.",
+      "parentExplanation": "The sentence contrasts 'lacked fine paint' (unlike Conti's gilded pages) with 'candid notes about jagged rocks and fierce crosswinds.' In context, 'candid' means straightforward, honest, and unvarnished.",
+      "retryHint": "Contrast Conti's flashy, copied logbook in Paragraph 2 with Moretti's plain notes about 'jagged rocks and fierce crosswinds' in Paragraph 3."
     },
     {
       "questionId": "w19_q3",
@@ -155,31 +165,36 @@
           "id": "A",
           "text": "Six days of Conti's wind records are identical, suggesting he copied them instead of observing the sea.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that when Marco inspected Captain Conti's tide table with a brass lens, he saw that the wind notes for six straight days were copied word for word."
         },
         {
           "id": "B",
           "text": "Conti's logbook pages were ruined by salt water when his ship sailed near the coral shoals.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "It was Captain Moretti's journal in Paragraph 3 that was salt-stained from real sailing, while Conti's book in Paragraph 2 was neat and gilded."
         },
         {
           "id": "C",
           "text": "Conti used a brass lens that distorted the size of the eastern spice islands.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Marco (not Conti) used the brass lens on his workbench to examine the ink closely, and the lens helped him spot the flaw clearly."
         },
         {
           "id": "D",
           "text": "Conti admitted to the guild lords that he never sailed near the coral shoals.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Captain Conti never admitted to copying his notes—he claimed to the court and merchants that a wide, calm strait cut straight through the shoals."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The wind notes for six straight days were copied word for word, as if Conti had stayed in his cabin.",
-      "childTip": "Click the sentence in Paragraph 2 that shows what Marco found wrong with the six days of wind notes.",
-      "parentExplanation": "In Paragraph 2, Marco examines Conti's tide table under a brass lens and discovers that six consecutive days of wind notes were copied word for word, indicating Conti fabricated observations while staying in his cabin."
+      "childTip": "Paragraph 2 explains that when Marco inspected Captain Conti's tide table with a brass lens, he saw that the wind notes for six straight days were copied word for word.",
+      "parentExplanation": "In Paragraph 2, Marco examines Conti's tide table under a brass lens and discovers that six consecutive days of wind notes were copied word for word, indicating Conti fabricated observations while staying in his cabin.",
+      "retryHint": "Read the last two sentences of Paragraph 2 to see the strange flaw Marco spotted when he held his brass lens over Conti's tide table."
     },
     {
       "questionId": "w19_q4",
@@ -196,31 +211,36 @@
           "id": "A",
           "text": "It explains how copper plates are heated over charcoal before an engraver begins carving.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Warming the copper plate is mentioned briefly in the opening line of Paragraph 1, not in Paragraph 4."
         },
         {
           "id": "B",
           "text": "It shows Master Bellini scolding Marco for taking too long to finish the Venice atlas.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Master Bellini does not enter the room until Paragraph 5, and when he does, he nods in quiet approval rather than scolding Marco."
         },
         {
           "id": "C",
           "text": "It confirms Moretti's scientific proof while highlighting the moral choice Marco faces against the guild lords' wishes.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 first confirms that Moretti's depth numbers match the moon tides and mud samples, and then shows Marco's tough moral choice to put sailors' lives ahead of angry trade backers."
         },
         {
           "id": "D",
           "text": "It proves that every merchant in Venice knew Captain Conti had lied about the spice route.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraphs 2 and 4 show that the wealthy merchants and trade backers believed and praised Conti's fast route; only Marco uncovered the lie by checking the soundings."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Still, a prudent mapmaker could not trade sailors' lives for a handsome lie that looked pleasant on a wall.",
-      "childTip": "Look at both parts of Paragraph 4: first the moon and mud evidence, then Marco's tough choice to protect sailors.",
-      "parentExplanation": "Paragraph 4 serves as the turning point of the narrative: it validates Moretti's depth measurements via lunar tides and mud samples, and frames Marco's ethical dilemma between pleasing wealthy trade backers and saving sailors' lives."
+      "childTip": "Paragraph 4 first confirms that Moretti's depth numbers match the moon tides and mud samples, and then shows Marco's tough moral choice to put sailors' lives ahead of angry trade backers.",
+      "parentExplanation": "Paragraph 4 serves as the turning point of the narrative: it validates Moretti's depth measurements via lunar tides and mud samples, and frames Marco's ethical dilemma between pleasing wealthy trade backers and saving sailors' lives.",
+      "retryHint": "Look at how the first half of Paragraph 4 checks the depth numbers and mud samples, while the second half shows why the guild lords might get angry."
     },
     {
       "questionId": "w19_q5",
@@ -238,31 +258,36 @@
           "id": "A",
           "text": "He is too startled by the ruined copper plate to speak to his young apprentice.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The copper plate was not ruined—Marco etched it with slow, firm strokes, and Master Bellini handed him the ink roller to print it."
         },
         {
           "id": "B",
           "text": "He silently respects Marco's decision to engrave the truthful reef warnings ready for printing.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 5, when Master Bellini sees the blocked strait and reef warnings etched into the copper, he nods once and hands Marco the heavy ink roller so the honest map can be printed."
         },
         {
           "id": "C",
           "text": "He plans to melt the copper plate down before the guild lords arrive at noon.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Handing an engraver the heavy ink roller is the step for printing copies onto paper (Paragraph 1), not melting the copper plate down."
         },
         {
           "id": "D",
           "text": "He has always refused to print any map brought back by Venetian sea captains.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Master Bellini runs a map shop that prints sea charts for the Venice atlas using captains' logbooks, so he certainly does not refuse to print maps."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "He said nothing at first, then nodded once and handed Marco the heavy ink roller.",
-      "childTip": "Watch what Master Bellini does after seeing the blocked strait—handing over the ink roller means the plate will be printed.",
-      "parentExplanation": "In Paragraph 5, Master Bellini inspects the newly engraved reef barrier, nods in quiet approval, and hands Marco the heavy ink roller—signaling that the shop will print the honest map."
+      "childTip": "In Paragraph 5, when Master Bellini sees the blocked strait and reef warnings etched into the copper, he nods once and hands Marco the heavy ink roller so the honest map can be printed.",
+      "parentExplanation": "In Paragraph 5, Master Bellini inspects the newly engraved reef barrier, nods in quiet approval, and hands Marco the heavy ink roller—signaling that the shop will print the honest map.",
+      "retryHint": "Read the last two sentences of Paragraph 5 to see what Master Bellini does after looking at the blocked strait on Marco's copper plate."
     },
     {
       "questionId": "w19_q6",
@@ -280,31 +305,36 @@
           "id": "A",
           "text": "\"By noon, the guild lords expected Marco to finish carving the coastline of the spice islands for the Venice atlas.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only mentions the noon deadline from the guild lords, before Master Bellini sees Marco's finished engraving."
         },
         {
           "id": "B",
           "text": "\"Where Conti drew an open blue highway, Moretti marked a crescent of submerged stone teeth beneath the low tide.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 3 contrasts the two captains' charts, without showing how Master Bellini reacted at the end of the story."
         },
         {
           "id": "C",
           "text": "\"Marco dipped his steel point in oil, steadied his wrist, and began to verify each sounding against Moretti's compass bearings.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 5 describes Marco starting to carve the copper plate, before Master Bellini walks into the studio."
         },
         {
           "id": "D",
           "text": "\"He said nothing at first, then nodded once and handed Marco the heavy ink roller.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly proves Question 5 by showing Master Bellini nodding in quiet approval and handing Marco the ink roller to print the truthful map."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "He said nothing at first, then nodded once and handed Marco the heavy ink roller.",
-      "childTip": "Pick the exact sentence from Paragraph 5 that shows Master Bellini's silent nod and action with the ink roller.",
-      "parentExplanation": "Option D directly proves Part A by showing Master Bellini nodding once in approval and handing Marco the heavy ink roller to print the plate."
+      "childTip": "This final sentence from Paragraph 5 directly proves Question 5 by showing Master Bellini nodding in quiet approval and handing Marco the ink roller to print the truthful map.",
+      "parentExplanation": "Option D directly proves Part A by showing Master Bellini nodding once in approval and handing Marco the heavy ink roller to print the plate.",
+      "retryHint": "Find the quote from Paragraph 5 that shows Master Bellini's silent gesture of approval after inspecting the copper plate."
     }
   ]
 }

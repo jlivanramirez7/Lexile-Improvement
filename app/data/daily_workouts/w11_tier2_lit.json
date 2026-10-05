@@ -72,31 +72,36 @@
           "id": "A",
           "text": "A pale glow shining behind the sea oats",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'were strangely disoriented by a pale glow behind the sea oats' tells us that the pale glow behind the sea oats caused the hatchlings' confusion."
         },
         {
           "id": "B",
           "text": "The warm sand pit beneath the wire screen",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The warm sand pit is simply where the hatchlings emerged from; it did not confuse their sense of direction."
         },
         {
           "id": "C",
           "text": "The tiny loggerhead hatchlings climbing the dune",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The tiny loggerhead hatchlings are the ones who felt disoriented, not the thing that caused the confusion."
         },
         {
           "id": "D",
           "text": "Elena's red flashlight beam on the beach",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 explains that Elena used a red flashlight specifically so the beam would not startle or confuse the baby turtles."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Emerging from the warm sand pit beneath the foggy sky, the tiny loggerhead hatchlings were strangely disoriented by a pale glow behind the sea oats.",
-      "childTip": "Look right after 'were strangely disoriented by' to find what confused the baby turtles.",
-      "parentExplanation": "In this passive construction, 'the tiny loggerhead hatchlings' receive the action of being disoriented. The true cause/actor follows the preposition 'by': 'a pale glow behind the sea oats' (Option A)."
+      "childTip": "In Paragraph 2, the phrase 'were strangely disoriented by a pale glow behind the sea oats' tells us that the pale glow behind the sea oats caused the hatchlings' confusion.",
+      "parentExplanation": "In this passive construction, 'the tiny loggerhead hatchlings' receive the action of being disoriented. The true cause/actor follows the preposition 'by': 'a pale glow behind the sea oats' (Option A).",
+      "retryHint": "Look at the words right after 'disoriented by' in the Paragraph 2 sentence to see what confused the baby turtles."
     },
     {
       "questionId": "w11_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Protected from hungry birds by a wire screen",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The wire screen guarded the nest in Paragraph 2, whereas in Paragraph 4 the hatchlings are being pulled away from the surf into danger."
         },
         {
           "id": "B",
           "text": "Washed out to sea by a high wave",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The turtles hadn't reached the ocean waves yet—they were crawling uphill away from the surf toward the reflection in the dune puddle."
         },
         {
           "id": "C",
           "text": "Drawn or pulled toward something",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'lured' means drawn or pulled toward something, because the bright reflection in the rainwater puddle was tricking the baby turtles into crawling toward the woods."
         },
         {
           "id": "D",
           "text": "Hidden permanently beneath the wet sand",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The hatchlings had already boiled up out of the sand pit in Paragraph 2 and were crawling across the dunes, not hidden under the sand."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The hatchlings were being lured away from the surf by a trick of fog and water.",
-      "childTip": "Think about how the bright puddle tricked the baby turtles into crawling toward the woods instead of the ocean.",
-      "parentExplanation": "In Paragraph 4, the reflected glare of the boat lantern acts as a false beacon that pulls ('lured') the hatchlings uphill away from the ocean surf (Option C)."
+      "childTip": "In Paragraph 4, 'lured' means drawn or pulled toward something, because the bright reflection in the rainwater puddle was tricking the baby turtles into crawling toward the woods.",
+      "parentExplanation": "In Paragraph 4, the reflected glare of the boat lantern acts as a false beacon that pulls ('lured') the hatchlings uphill away from the ocean surf (Option C).",
+      "retryHint": "Think about how the reflected white glare in Paragraph 4 was pulling the hatchlings away from the ocean surf and toward the trees."
     },
     {
       "questionId": "w11_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "The shrimp boat had sailed right onto the dry sand of the high dune near Nest 14.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The shrimp boat was floating in the water of the back sound behind the live oaks, not sitting on the dry sand of the high dune."
         },
         {
           "id": "B",
           "text": "Thick fog covered the ocean to the east, making the single white lamp in the western marsh stand out more brightly.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that because thick fog covered the ocean to the east, the single white lantern on the shrimp boat in the western marsh shone brighter than the sea."
         },
         {
           "id": "C",
           "text": "Aunt Rosa pointed her white flashlight beam at the live oak trees to see the forest path.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 explains that Elena and Aunt Rosa carefully used red light instead of white flashlight beams so they wouldn't confuse the turtles."
         },
         {
           "id": "D",
           "text": "The moon never rises over the Atlantic Ocean during the summer hatching season.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 1 says that on most summer nights the moonlit ocean surf is the brightest horizon; tonight was different only because of the thick coastal fog."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea.",
-      "childTip": "Click the last sentence in Paragraph 3 that explains why the boat lamp shone brighter than the sea.",
-      "parentExplanation": "Paragraph 3 directly explains the environmental cause: 'Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea' (Option B)."
+      "childTip": "Paragraph 3 explains that because thick fog covered the ocean to the east, the single white lantern on the shrimp boat in the western marsh shone brighter than the sea.",
+      "parentExplanation": "Paragraph 3 directly explains the environmental cause: 'Because thick fog covered the ocean to the east, that single boat lamp in the western marsh shone brighter than the sea' (Option B).",
+      "retryHint": "Read the last sentence of Paragraph 3 to see how the eastern fog affected the brightness of the ocean compared to the boat lamp."
     },
     {
       "questionId": "w11_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "They explain why Cumberland Island should ban all visitors from walking on the beach at night.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The story never calls for banning visitors from Cumberland Island; in fact, Elena and Aunt Rosa's night patrol saves Nest 14."
         },
         {
           "id": "B",
           "text": "They compare the diet of loggerhead sea turtles with the diet of fish living in the western marsh.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage focuses on guiding newborn hatchlings safely to the surf, never mentioning what adult turtles or marsh fish eat."
         },
         {
           "id": "C",
           "text": "They present a sudden mystery when the hatchlings crawl the wrong way, uncover the hidden cause, and show Elena's quick solution.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 2 through 5 trace a clear problem-and-solution arc: the hatchlings crawl the wrong way (Paragraph 2), Elena spots the boat lamp and puddle reflection (Paragraphs 3–4), and her poncho blocks the glare (Paragraph 5)."
         },
         {
           "id": "D",
           "text": "They list the tools Aunt Rosa packed inside her canvas clipboard before leaving home.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Aunt Rosa only uses her canvas clipboard in Paragraph 2 to block the baby turtles' uphill path, not to unpack a list of tools."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "As soon as the tarp blocked the boat's reflection, the dune trough fell dark again.",
-      "childTip": "Trace the story arc: the turtles go the wrong way (problem), Elena spots the lamp and puddle (cause), and she uses her poncho (solution).",
-      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraphs 2–5 follow a classic problem-investigation-resolution narrative structure: Paragraph 2 introduces the disoriented hatchlings, Paragraphs 3–4 uncover the lantern and puddle reflection, and Paragraph 5 resolves the crisis with the poncho barrier (Option C)."
+      "childTip": "Paragraphs 2 through 5 trace a clear problem-and-solution arc: the hatchlings crawl the wrong way (Paragraph 2), Elena spots the boat lamp and puddle reflection (Paragraphs 3–4), and her poncho blocks the glare (Paragraph 5).",
+      "parentExplanation": "Aligned to ELAGSE5RL5, Paragraphs 2–5 follow a classic problem-investigation-resolution narrative structure: Paragraph 2 introduces the disoriented hatchlings, Paragraphs 3–4 uncover the lantern and puddle reflection, and Paragraph 5 resolves the crisis with the poncho barrier (Option C).",
+      "retryHint": "Trace the sequence from the confused hatchlings in Paragraph 2, to what Elena spots in Paragraphs 3–4, to her poncho solution in Paragraph 5."
     },
     {
       "questionId": "w11_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "By blocking the artificial glare from the marsh, the poncho allowed the faint natural glow of the ocean foam to become the brightest horizon again.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Because hatchlings instinctively crawl toward the brightest horizon (Paragraph 1), blocking the boat's reflection with the dark poncho let the faint white ocean foam become the brightest light again."
         },
         {
           "id": "B",
           "text": "The loud flapping sound of the nylon poncho scared the hatchlings down the slope into the water.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 5 never says the poncho made a loud flapping sound to scare the turtles; it worked like a dark curtain that blocked the light."
         },
         {
           "id": "C",
           "text": "The poncho acted like a giant slide that carried the baby turtles over the sea oats into the waves.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Elena and Aunt Rosa held the poncho upright along the ridge like a curtain to block the reflection, not flat on the ground like a slide."
         },
         {
           "id": "D",
           "text": "The dark tarp made the coastal fog disappear completely from the sky above Cumberland Island.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Stretching a rain poncho along a sand dune only shaded the puddle trough—it could not make coastal fog vanish from the sky."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.",
-      "childTip": "Connect the rule in Paragraph 1 (turtles follow the brightest horizon) with what happens when the poncho blocks the boat light in Paragraph 5.",
-      "parentExplanation": "Synthesizing Paragraph 1 (hatchlings instinctively head toward the brightest low horizon) with Paragraph 5 shows that once the poncho blocked the artificial boat reflection, the faint white foam of the ocean rollers became the brightest light source again (Option A)."
+      "childTip": "Because hatchlings instinctively crawl toward the brightest horizon (Paragraph 1), blocking the boat's reflection with the dark poncho let the faint white ocean foam become the brightest light again.",
+      "parentExplanation": "Synthesizing Paragraph 1 (hatchlings instinctively head toward the brightest low horizon) with Paragraph 5 shows that once the poncho blocked the artificial boat reflection, the faint white foam of the ocean rollers became the brightest light source again (Option A).",
+      "retryHint": "Connect the turtle instinct described at the end of Paragraph 1 with what happened to the dune trough in Paragraph 5 once the poncho blocked the boat's glare."
     },
     {
       "questionId": "w11_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"On this wild Georgia barrier island, loggerhead sea turtles crawled ashore every summer to bury their eggs in the warm sand.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This background sentence from Paragraph 1 only tells when mother turtles lay eggs, not how Elena's poncho helped the hatchlings find the ocean."
         },
         {
           "id": "B",
           "text": "\"Aunt Rosa whispered that no houses or streetlamps stood within two miles of this north beach sector.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 3 only explains that there were no houses or streetlights nearby, before Elena even spotted the shrimp boat."
         },
         {
           "id": "C",
           "text": "\"Even worse, a puddle of rainwater in the low trough between the dunes acted like a mirror.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 4 describes the puddle problem that tricked the turtles, rather than showing how blocking the light solved it."
         },
         {
           "id": "D",
           "text": "\"Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 5 directly supports Question 5 by showing the hatchlings turning around, spotting the faint white foam of the ocean rollers, and paddling into the surf."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Within seconds, the hatchlings pivoted in the sand, spotted the faint white foam of the ocean rollers, and paddled safely into the surf.",
-      "childTip": "Choose the quote from Paragraph 5 that shows what the hatchlings spotted right after the tarp blocked the reflection.",
-      "parentExplanation": "Option D provides the exact verbatim proof from Paragraph 5 showing that once the false light was blocked, the hatchlings spotted the faint white foam of the ocean rollers and oriented toward the surf."
+      "childTip": "This quotation from Paragraph 5 directly supports Question 5 by showing the hatchlings turning around, spotting the faint white foam of the ocean rollers, and paddling into the surf.",
+      "parentExplanation": "Option D provides the exact verbatim proof from Paragraph 5 showing that once the false light was blocked, the hatchlings spotted the faint white foam of the ocean rollers and oriented toward the surf.",
+      "retryHint": "Find the quote from Paragraph 5 that shows what the hatchlings spotted and did right after the poncho blocked the boat's glare."
     }
   ]
 }

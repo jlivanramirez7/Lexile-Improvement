@@ -71,31 +71,36 @@
           "id": "A",
           "text": "The plant's twin lobes attract the insects with bright light, and glistening nectar snaps them shut.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This swaps the two jobs! The sweet ring of glistening nectar is what attracts the insects, and the twin lobes are what snap shut."
         },
         {
           "id": "B",
           "text": "Falling raindrops push the flies into the bog mud beneath the plant's roots.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Raindrops are mentioned in the next sentence only to explain why a single bump does not close the trap; raindrops do not push flies into the mud."
         },
         {
           "id": "C",
           "text": "Careless beetles snap the twin lobes apart in order to reach the sweet nectar.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This flips the action around! The careless beetles and flies do not snap the lobes apart—the plant's twin lobes snap the bugs inside."
         },
         {
           "id": "D",
           "text": "A sweet ring of glistening nectar attracts the insects, and the plant's twin lobes snap them inside.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'lured toward the hinged leaves by a sweet ring of glistening nectar' and 'are swiftly snapped inside by the plant's twin lobes' show that nectar attracts the insects and the twin lobes snap them inside."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Careless beetles and flies, lured toward the hinged leaves by a sweet ring of glistening nectar, are swiftly snapped inside by the plant's twin lobes.",
-      "childTip": "Check both 'by' phrases: glistening nectar lures the bugs, and the twin lobes snap them inside.",
-      "parentExplanation": "This passive construction includes two 'by' phrases: 'lured... by a sweet ring of glistening nectar' and 'are swiftly snapped inside by the plant's twin lobes'. Option B correctly matches both."
+      "childTip": "In Paragraph 2, 'lured toward the hinged leaves by a sweet ring of glistening nectar' and 'are swiftly snapped inside by the plant's twin lobes' show that nectar attracts the insects and the twin lobes snap them inside.",
+      "parentExplanation": "This passive construction includes two 'by' phrases: 'lured... by a sweet ring of glistening nectar' and 'are swiftly snapped inside by the plant's twin lobes'. Option B correctly matches both.",
+      "retryHint": "Check the two 'by' phrases in Paragraph 2: 'lured... by...' and 'are swiftly snapped inside by...'"
     },
     {
       "questionId": "w36_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Frightened away by a sudden loud noise",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Being frightened away by a noise is the opposite of being 'lured toward the hinged leaves' by sweet nectar."
         },
         {
           "id": "B",
           "text": "Washed underground by heavy summer rain",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Heavy rains wash minerals out of the sandy soil in Paragraph 1, whereas in Paragraph 2 insects are drawn toward the leaves by sweet nectar."
         },
         {
           "id": "C",
           "text": "Drawn in or tempted by a sweet treat",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'lured' means drawn in or tempted by a sweet treat, because the sweet ring of glistening nectar attracts careless beetles and flies toward the hinged leaves."
         },
         {
           "id": "D",
           "text": "Hidden beneath a thick hood of green leaves",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The yellow pitcher plant in Paragraph 3 has a leafy hood over its tube, while 'lured' in Paragraph 2 describes how nectar tempts bugs into the Venus flytrap."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Careless beetles and flies, lured toward the hinged leaves by a sweet ring of glistening nectar, are swiftly snapped inside by the plant's twin lobes.",
-      "childTip": "Think about what a 'sweet ring of glistening nectar' would do to passing beetles and flies.",
-      "parentExplanation": "Because the insects are drawn toward the leaves 'by a sweet ring of glistening nectar', 'lured' means tempted or attracted by bait."
+      "childTip": "In Paragraph 2, 'lured' means drawn in or tempted by a sweet treat, because the sweet ring of glistening nectar attracts careless beetles and flies toward the hinged leaves.",
+      "parentExplanation": "Because the insects are drawn toward the leaves 'by a sweet ring of glistening nectar', 'lured' means tempted or attracted by bait.",
+      "retryHint": "Think about what a 'sweet ring of glistening nectar' would make hungry beetles and flies want to do in Paragraph 2."
     },
     {
       "questionId": "w36_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "It grows a tall leafy hood that blocks all rainwater from touching its lobes.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 3 says the yellow pitcher plant has a leafy hood to keep rain out of its tube, not the Venus flytrap in Paragraph 2."
         },
         {
           "id": "B",
           "text": "It waits until two trigger hairs are touched within twenty seconds before clamping shut.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that a single brush against one trigger hair (such as a falling raindrop) will not close the trap; the lobes only clamp shut when two hairs are touched within twenty seconds."
         },
         {
           "id": "C",
           "text": "It folds its leaves underground whenever dark storm clouds gather over the bog.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Venus flytraps never fold their leaves underground during storms; they rely on their twenty-second trigger hair timer to ignore raindrops."
         },
         {
           "id": "D",
           "text": "It never closes its lobes during the daytime when rainstorms usually happen.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Flytraps can close at any time of day whenever a live insect touches two trigger hairs within twenty seconds."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Only when an insect touches two hairs within twenty seconds do the lobes clamp shut.",
-      "childTip": "Click the last sentence in Paragraph 2 that explains the twenty-second rule for closing the trap.",
-      "parentExplanation": "Paragraph 2 explains that a single brush (like a falling raindrop) does not close the trap; the lobes clamp shut only when two trigger hairs are touched within twenty seconds."
+      "childTip": "Paragraph 2 explains that a single brush against one trigger hair (such as a falling raindrop) will not close the trap; the lobes only clamp shut when two hairs are touched within twenty seconds.",
+      "parentExplanation": "Paragraph 2 explains that a single brush (like a falling raindrop) does not close the trap; the lobes clamp shut only when two trigger hairs are touched within twenty seconds.",
+      "retryHint": "Read the last two sentences of Paragraph 2 to see how the six trigger hairs work like a timer."
     },
     {
       "questionId": "w36_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "They compare two different trapping methods used by bog plants to catch insect prey.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains how the Venus flytrap uses an active snap trap with trigger hairs, while Paragraph 3 compares it with the yellow pitcher plant's quiet pitfall trap made of a slick hollow tube."
         },
         {
           "id": "B",
           "text": "They explain why yellow pitcher plants are much more dangerous to humans than Venus flytraps.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Neither plant is dangerous to humans—both paragraphs explain how these small bog plants trap beetles, flies, and other small insects."
         },
         {
           "id": "C",
           "text": "They argue that farmers should plant Venus flytraps in vegetable gardens to replace fertilizer.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Neither paragraph mentions vegetable gardens or farmers; these plants grow wild in soggy pine flats and peat bogs."
         },
         {
           "id": "D",
           "text": "They describe how brush fires destroy all insect life in Georgia and Carolina wetlands.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Brush fires are only mentioned in Paragraph 5, which explains that low summer fires actually help bog plants by clearing away tall shrubs."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Farther south in Georgia's coastal plain, yellow pitcher plants use a quieter method called a pitfall trap.",
-      "childTip": "Notice how Paragraph 2 describes snapping lobes while Paragraph 3 describes a hollow pitfall tube.",
-      "parentExplanation": "Paragraph 2 details the active snap-trap mechanism of the Venus flytrap, while Paragraph 3 contrasts it with the passive pitfall trap of the yellow pitcher plant."
+      "childTip": "Paragraph 2 explains how the Venus flytrap uses an active snap trap with trigger hairs, while Paragraph 3 compares it with the yellow pitcher plant's quiet pitfall trap made of a slick hollow tube.",
+      "parentExplanation": "Paragraph 2 details the active snap-trap mechanism of the Venus flytrap, while Paragraph 3 contrasts it with the passive pitfall trap of the yellow pitcher plant.",
+      "retryHint": "Look at the first sentence of Paragraph 3 ('use a quieter method called a pitfall trap') to see how it compares with Paragraph 2."
     },
     {
       "questionId": "w36_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Venus flytraps and pitcher plants have no roots and must eat insects because they cannot use sunlight.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 4 states the exact opposite: flytraps and pitcher plants still make their own sugar from sunlight, water, and air just like oak trees and grass."
         },
         {
           "id": "B",
           "text": "Carnivorous bog plants make sugar from sunlight like other plants, but they digest insects to replace missing soil minerals.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 explains that carnivorous bog plants still make their own sugar from sunlight, water, and air like other green plants, but they digest insects to replace the nitrogen missing from poor bog soil."
         },
         {
           "id": "C",
           "text": "Insects in Georgia bogs have learned how to chew through pitcher plant walls to escape the liquid.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 says downward-pointing stiff hairs block trapped bugs from escaping the pitcher plant, and it never says bugs chew through the walls."
         },
         {
           "id": "D",
           "text": "Heavy rainfall in the Carolinas adds too much nitrogen to the pine flat soil.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 1 says frequent rains wash nitrogen OUT of the sandy soil, leaving the wet bog ground poor in minerals."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Instead, the dissolved bodies of insects act like tiny vitamin pills that replace the nitrogen missing from the bog mud.",
-      "childTip": "Look at Paragraph 4 to see why these plants still need sunlight and what they actually get from bugs.",
-      "parentExplanation": "The central idea of the passage (ELAGSE5RI2) is that bog plants still rely on sunlight for sugar, but trap insects to obtain essential minerals like nitrogen that have been washed out of the acidic bog soil."
+      "childTip": "Paragraph 4 explains that carnivorous bog plants still make their own sugar from sunlight, water, and air like other green plants, but they digest insects to replace the nitrogen missing from poor bog soil.",
+      "parentExplanation": "The central idea of the passage (ELAGSE5RI2) is that bog plants still rely on sunlight for sugar, but trap insects to obtain essential minerals like nitrogen that have been washed out of the acidic bog soil.",
+      "retryHint": "Check Paragraph 4 to see how bog plants get their food energy versus why they need to digest insects."
     },
     {
       "questionId": "w36_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"Each leaf ends in two hinged halves rimmed with stiff spines.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 2 only describes the shape of a Venus flytrap leaf, without explaining why the plant needs insects."
         },
         {
           "id": "B",
           "text": "\"A leafy hood keeps heavy rain from filling the tube.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 3 only tells how a pitcher plant's hood keeps rain out of its tube."
         },
         {
           "id": "C",
           "text": "\"Today, both plants face threats when wetlands are drained or when summer brush fires are blocked completely.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 5 describes habitat threats to wetlands, rather than explaining why bog plants digest insects."
         },
         {
           "id": "D",
           "text": "\"Instead, the dissolved bodies of insects act like tiny vitamin pills that replace the nitrogen missing from the bog mud.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 4 directly supports Question 5 by explaining that dissolved insects act like vitamin pills to replace the nitrogen missing from the bog mud."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Instead, the dissolved bodies of insects act like tiny vitamin pills that replace the nitrogen missing from the bog mud.",
-      "childTip": "Pick the quote in Paragraph 4 that compares digested insects to vitamin pills that replace nitrogen.",
-      "parentExplanation": "Option C directly proves why carnivorous bog plants digest insects—to replace the missing nitrogen in the nutrient-poor bog mud."
+      "childTip": "This sentence from Paragraph 4 directly supports Question 5 by explaining that dissolved insects act like vitamin pills to replace the nitrogen missing from the bog mud.",
+      "parentExplanation": "Option C directly proves why carnivorous bog plants digest insects—to replace the missing nitrogen in the nutrient-poor bog mud.",
+      "retryHint": "Find the quote from Paragraph 4 that compares dissolved insects to vitamin pills that replace missing soil nitrogen."
     }
   ]
 }

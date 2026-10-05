@@ -73,34 +73,39 @@
           "text": "The massive whale bones lying on the muddy plain",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Selects the object of the preposition 'inside the massive whale bones' rather than the core grammatical subject."
+          "diagnosticNote": "Selects the object of the preposition 'inside the massive whale bones' rather than the core grammatical subject.",
+          "childFeedback": "Watch out—this choice selects the noun after 'inside the massive whale bones' rather than the main subject."
         },
         {
           "id": "B",
           "text": "The dense oils that were locked inside the whale bones",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Correctly connects the head noun subject ('Dense oils') across the embedded participial phrase to the main verb ('are steadily absorbed')."
+          "diagnosticNote": "Correctly connects the head noun subject ('Dense oils') across the embedded participial phrase to the main verb ('are steadily absorbed').",
+          "childFeedback": "Spot on! This answer correctly connects the main subject ('Dense oils') across the embedded describing phrase to the main verb ('are steadily absorbed')."
         },
         {
           "id": "C",
           "text": "The green roots of the bone-eating worms",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Picks a location noun at the end of the middle clause ('inside the worms' green roots') instead of the subject being absorbed."
+          "diagnosticNote": "Picks a location noun at the end of the middle clause ('inside the worms' green roots') instead of the subject being absorbed.",
+          "childFeedback": "Watch out—this choice picks a location noun at the end of the middle phrase ('inside the worms' green roots') instead of the subject being absorbed."
         },
         {
           "id": "D",
           "text": "The partner bacteria that break down the bone fats",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Confuses the agent inside the participial modifier ('by partner bacteria') with the substance absorbed by the colony."
+          "diagnosticNote": "Confuses the agent inside the participial modifier ('by partner bacteria') with the substance absorbed by the colony.",
+          "childFeedback": "Careful—this choice confuses the noun inside the describing phrase ('by partner bacteria') with the substance absorbed by the colony."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Dense oils locked inside the massive whale bones, broken down by partner bacteria living inside the worms' green roots, are steadily absorbed to fuel the growing colony.",
-      "childTip": "Skip over the middle clause between the commas. What subject links directly to 'are steadily absorbed'?",
-      "parentExplanation": "Focus domain D4_SYNTAX (ELAGSE5L1). The 11-word participial clause ', broken down by partner bacteria living inside the worms' green roots,' separates the subject ('Dense oils locked inside the massive whale bones') from its passive verb ('are steadily absorbed')."
+      "childTip": "Spot on! This answer correctly connects the main subject ('Dense oils') across the embedded describing phrase to the main verb ('are steadily absorbed').",
+      "parentExplanation": "Focus domain D4_SYNTAX (ELAGSE5L1). The 11-word participial clause ', broken down by partner bacteria living inside the worms' green roots,' separates the subject ('Dense oils locked inside the massive whale bones') from its passive verb ('are steadily absorbed').",
+      "retryHint": "In Paragraph 3, skip over the middle description between the commas. What subject links directly to 'are steadily absorbed'?"
     },
     {
       "questionId": "w76_q2",
@@ -118,34 +123,39 @@
           "text": "Made completely out of hollow whale ribs",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Borrows 'rib' from earlier in the sentence instead of defining the surrounding seabed plain."
+          "diagnosticNote": "Borrows 'rib' from earlier in the sentence instead of defining the surrounding seabed plain.",
+          "childFeedback": "Watch out—this choice borrows 'rib' from earlier in the sentence instead of defining the surrounding seabed plain."
         },
         {
           "id": "B",
           "text": "Warm and brightly lit by filtered sunlight",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Directly contradicts Paragraph 1 ('sunlight vanishes completely and the water stays near freezing')."
+          "diagnosticNote": "Directly contradicts Paragraph 1 ('sunlight vanishes completely and the water stays near freezing').",
+          "childFeedback": "Not quite—this choice directly contradicts Paragraph 1 ('sunlight vanishes completely and the water stays near freezing')."
         },
         {
           "id": "C",
           "text": "Crowded with green ocean plants and coral reefs",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Contradicts Paragraph 1, which explains that green plants cannot grow two miles down without light."
+          "diagnosticNote": "Contradicts Paragraph 1, which explains that green plants cannot grow two miles down without light.",
+          "childFeedback": "Not quite—this choice contradicts Paragraph 1, which explains that green plants cannot grow two miles down without light."
         },
         {
           "id": "D",
           "text": "Empty and lacking food to support much life",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Aligns with Paragraph 1's description that food is scarce on the dark muddy plain and Paragraph 5's contrast with a 'thriving oasis.'"
+          "diagnosticNote": "Aligns with Paragraph 1's description that food is scarce on the dark muddy plain and Paragraph 5's contrast with a 'thriving oasis.'",
+          "childFeedback": "Spot on! This answer aligns with Paragraph 1's description that food is scarce on the dark muddy plain and Paragraph 5's contrast with a 'thriving oasis.'"
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By the time the last rib crumbles into silt, hundreds of deep-sea species have used the whale fall as a stepping-stone across the barren plain.",
-      "childTip": "Contrast 'barren plain' with 'thriving oasis' in the very next sentence. How is the surrounding seabed different from the whale fall?",
-      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). By contrasting the surrounding 'barren plain' with the whale fall as a 'thriving oasis' and recalling Paragraph 1 ('Food is scarce on this dark, muddy plain'), students deduce that 'barren' means empty and lifeless."
+      "childTip": "Spot on! This answer aligns with Paragraph 1's description that food is scarce on the dark muddy plain and Paragraph 5's contrast with a 'thriving oasis.'",
+      "parentExplanation": "Vocabulary in Context (ELAGSE5RI4). By contrasting the surrounding 'barren plain' with the whale fall as a 'thriving oasis' and recalling Paragraph 1 ('Food is scarce on this dark, muddy plain'), students deduce that 'barren' means empty and lifeless.",
+      "retryHint": "In Paragraph 5, contrast 'barren plain' with 'thriving oasis' in the very next sentence. How is the surrounding seabed different from the whale fall?"
     },
     {
       "questionId": "w76_q3",
@@ -163,34 +173,39 @@
           "text": "By stripping away the thick meat, the sharks and hagfish uncover the bare bones so bone-eating worms can settle directly onto the skeleton.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Accurately links Paragraph 2 (large scavengers strip the carcass down to bare bones) with Paragraph 3 (Osedax worms settle onto the ribs and spine)."
+          "diagnosticNote": "Accurately links Paragraph 2 (large scavengers strip the carcass down to bare bones) with Paragraph 3 (Osedax worms settle onto the ribs and spine).",
+          "childFeedback": "Spot on! This answer accurately links Paragraph 2 (large scavengers strip the carcass down to bare bones) with Paragraph 3 (Osedax worms settle onto the ribs and spine)."
         },
         {
           "id": "B",
           "text": "The sleeper sharks carry clams and tube worms inside their mouths and drop them onto the whale's tail.",
           "isCorrect": false,
           "trapType": "TRAP_OUTSIDE_INFO",
-          "diagnosticNote": "Invents an unsupported detail about sharks transporting clams and tube worms."
+          "diagnosticNote": "Invents an unsupported detail about sharks transporting clams and tube worms.",
+          "childFeedback": "Watch out—this choice invents an unsupported detail about sharks transporting clams and tube worms."
         },
         {
           "id": "C",
           "text": "The giant isopods pump oxygen into the whale bones so green plants can sprout on the seabed.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts both Paragraph 1 (no green plants grow without light) and Paragraph 4 (microbes work without oxygen)."
+          "diagnosticNote": "Contradicts both Paragraph 1 (no green plants grow without light) and Paragraph 4 (microbes work without oxygen).",
+          "childFeedback": "Not quite—this choice contradicts both Paragraph 1 (no green plants grow without light) and Paragraph 4 (microbes work without oxygen)."
         },
         {
           "id": "D",
           "text": "The mobile scavengers eat every single bone until nothing is left on the ocean floor after one year.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Uses extreme language ('every single bone', 'nothing is left') that contradicts the bare skeleton remaining for decades."
+          "diagnosticNote": "Uses extreme language ('every single bone', 'nothing is left') that contradicts the bare skeleton remaining for decades.",
+          "childFeedback": "Watch out—this choice uses extreme language ('every single bone', 'nothing is left') that contradicts the bare skeleton remaining for decades."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Within a year or two, these large feeders strip the carcass down to a bare pile of pale bones.",
-      "childTip": "First click the last sentence of Paragraph 2 that shows what the large feeders leave behind after eating the soft meat.",
-      "parentExplanation": "Focus standard ELAGSE5RI3 (Scientific Relationships & Interactions). The mobile scavenger stage clears away up to 90 pounds of soft flesh per day, exposing the bare skeleton so Osedax worms can anchor their roots into the bone during Stage 2."
+      "childTip": "Spot on! This answer accurately links Paragraph 2 (large scavengers strip the carcass down to bare bones) with Paragraph 3 (Osedax worms settle onto the ribs and spine).",
+      "parentExplanation": "Focus standard ELAGSE5RI3 (Scientific Relationships & Interactions). The mobile scavenger stage clears away up to 90 pounds of soft flesh per day, exposing the bare skeleton so Osedax worms can anchor their roots into the bone during Stage 2.",
+      "retryHint": "Check the last sentence of Paragraph 2 that shows what the large feeders leave behind after eating the soft meat."
     },
     {
       "questionId": "w76_q4",
@@ -208,34 +223,39 @@
           "text": "Both swim up to the sunlit ocean surface to catch live plankton and gray whales.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Reverses the habitat and feeding behavior of deep-sea bottom dwellers that stay anchored around the sunken skeleton."
+          "diagnosticNote": "Reverses the habitat and feeding behavior of deep-sea bottom dwellers that stay anchored around the sunken skeleton.",
+          "childFeedback": "Careful—this choice reverses the habitat and feeding behavior of deep-sea bottom dwellers that stay anchored around the sunken skeleton."
         },
         {
           "id": "B",
           "text": "Both use sharp teeth to tear ninety pounds of blubber off the whale every day.",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Confuses the worms and clams of Stages 2 and 3 with the sleeper sharks and hagfish of Stage 1."
+          "diagnosticNote": "Confuses the worms and clams of Stages 2 and 3 with the sleeper sharks and hagfish of Stage 1.",
+          "childFeedback": "Careful—this choice confuses the worms and clams of Stages 2 and 3 with the sleeper sharks and hagfish of Stage 1."
         },
         {
           "id": "C",
           "text": "Both rely on partner bacteria to turn substances from the whale bones into usable food.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Synthesizes Paragraph 3 (partner bacteria in Osedax roots break down bone oils) and Paragraph 4 (bacteria in clams and tube worms turn sulfur gas from bones into food)."
+          "diagnosticNote": "Synthesizes Paragraph 3 (partner bacteria in Osedax roots break down bone oils) and Paragraph 4 (bacteria in clams and tube worms turn sulfur gas from bones into food).",
+          "childFeedback": "Spot on! This answer brings together Paragraph 3 (partner bacteria in Osedax roots break down bone oils) and Paragraph 4 (bacteria in clams and tube worms turn sulfur gas from bones into food)."
         },
         {
           "id": "D",
           "text": "Both can survive only for a few hours before the whale skeleton dissolves completely.",
           "isCorrect": false,
           "trapType": "TRAP_EXTREME",
-          "diagnosticNote": "Contradicts Paragraph 5, which explains that the final stage lasts for fifty years or more."
+          "diagnosticNote": "Contradicts Paragraph 5, which explains that the final stage lasts for fifty years or more.",
+          "childFeedback": "Not quite—this choice contradicts Paragraph 5, which explains that the final stage lasts for fifty years or more."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Clams, mussels, and tube worms gather around the bones because their own body bacteria can turn that sulfur gas into food.",
-      "childTip": "Compare how the worms in Paragraph 3 and the clams in Paragraph 4 both use tiny bacteria to eat.",
-      "parentExplanation": "Focus standard ELAGSE5RI3 (Comparing Relationships Between Scientific Concepts). Neither the mouthless Osedax worms (Paragraph 3) nor the sulfur-loving clams and tube worms (Paragraph 4) eat meat directly; both depend on symbiotic bacteria to convert bone chemicals into nourishment."
+      "childTip": "Spot on! This answer brings together Paragraph 3 (partner bacteria in Osedax roots break down bone oils) and Paragraph 4 (bacteria in clams and tube worms turn sulfur gas from bones into food).",
+      "parentExplanation": "Focus standard ELAGSE5RI3 (Comparing Relationships Between Scientific Concepts). Neither the mouthless Osedax worms (Paragraph 3) nor the sulfur-loving clams and tube worms (Paragraph 4) eat meat directly; both depend on symbiotic bacteria to convert bone chemicals into nourishment.",
+      "retryHint": "Compare how the worms in Paragraph 3 and the clams in Paragraph 4 both use tiny bacteria to eat."
     },
     {
       "questionId": "w76_q5",
@@ -254,34 +274,39 @@
           "text": "When a sunken whale reaches the deep ocean floor, its body supports a series of changing animal and microbe communities for decades.",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Captures the overarching ecological succession of a whale fall across all five paragraphs."
+          "diagnosticNote": "Captures the overarching ecological succession of a whale fall across all five paragraphs.",
+          "childFeedback": "Spot on! This answer captures the overall step-by-step life cycle of a whale fall across all five paragraphs."
         },
         {
           "id": "B",
           "text": "Marine snow is made of tiny flakes of dead plankton that drift down from the sunlit surface of the Pacific Ocean.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Repeats a background detail from Paragraph 1 rather than the main topic of whale falls."
+          "diagnosticNote": "Repeats a background detail from Paragraph 1 rather than the main topic of whale falls.",
+          "childFeedback": "Watch out—this choice repeats a background detail from Paragraph 1 rather than the main topic of whale falls."
         },
         {
           "id": "C",
           "text": "Bone-eating worms have no mouths or stomachs, so they use green roots to soak up oils from whale ribs.",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Focuses only on Stage 2 in Paragraph 3 instead of the whole multi-stage ecosystem."
+          "diagnosticNote": "Focuses only on Stage 2 in Paragraph 3 instead of the whole multi-stage ecosystem.",
+          "childFeedback": "Not quite—this choice focuses only on Stage 2 in Paragraph 3 instead of the whole multi-stage ecosystem."
         },
         {
           "id": "D",
           "text": "Sleeper sharks and hagfish eat every part of a sunken whale within a few hours so nothing is left for smaller creatures.",
           "isCorrect": false,
           "trapType": "TRAP_SYNTACTIC_REVERSAL",
-          "diagnosticNote": "Contradicts Paragraphs 2-5 by claiming scavengers leave nothing behind."
+          "diagnosticNote": "Contradicts Paragraphs 2-5 by claiming scavengers leave nothing behind.",
+          "childFeedback": "Not quite—this choice contradicts Paragraphs 2-5 by claiming scavengers leave nothing behind."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The arrival of a whale fall triggers a chain of life that unfolds in distinct stages.",
-      "childTip": "Pick the big idea that covers all the stages of life a sunken whale supports over many years.",
-      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option A encompasses the entire ecological succession from mobile scavengers to bone worms and sulfur microbes over fifty years."
+      "childTip": "Spot on! This answer captures the overall step-by-step life cycle of a whale fall across all five paragraphs.",
+      "parentExplanation": "Part A of this EBSR pair tests Central Idea synthesis (ELAGSE5RI2). Option A encompasses the entire ecological succession from mobile scavengers to bone worms and sulfur microbes over fifty years.",
+      "retryHint": "In Paragraphs 1 to 5, pick the big idea that covers all the stages of life a sunken whale supports over many years."
     },
     {
       "questionId": "w76_q6",
@@ -300,34 +325,39 @@
           "text": "\"Two miles beneath the surface of the Pacific Ocean, sunlight vanishes completely and the water stays near freezing.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Describes only the cold, dark setting of the deep ocean in Paragraph 1."
+          "diagnosticNote": "Describes only the cold, dark setting of the deep ocean in Paragraph 1.",
+          "childFeedback": "Not quite—this choice describes only the cold, dark setting of the deep ocean in Paragraph 1."
         },
         {
           "id": "B",
           "text": "\"The arrival of a whale fall triggers a chain of life that unfolds in distinct stages.\"",
           "isCorrect": true,
           "trapType": null,
-          "diagnosticNote": "Directly supports Part A by stating the thesis that a whale fall drives a multi-stage chain of deep-sea life."
+          "diagnosticNote": "Directly supports Part A by stating the thesis that a whale fall drives a multi-stage chain of deep-sea life.",
+          "childFeedback": "Spot on! This answer directly supports Question 5 by showing that a whale fall drives a multi-stage chain of deep-sea life."
         },
         {
           "id": "C",
           "text": "\"These root-like worms have no mouths or stomachs of their own.\"",
           "isCorrect": false,
           "trapType": "TRAP_TOO_NARROW",
-          "diagnosticNote": "Gives an anatomical detail about Osedax worms rather than proving the central idea of the passage."
+          "diagnosticNote": "Gives an anatomical detail about Osedax worms rather than proving the central idea of the passage.",
+          "childFeedback": "Not quite—this choice gives an body detail about Osedax worms rather than proving the central idea of the passage."
         },
         {
           "id": "D",
           "text": "\"As they work, these microbes release sulfur gas into the water above the skeleton.\"",
           "isCorrect": false,
           "trapType": "TRAP_WORD_MATCH",
-          "diagnosticNote": "Describes only a single chemical step in Paragraph 4."
+          "diagnosticNote": "Describes only a single chemical step in Paragraph 4.",
+          "childFeedback": "Not quite—this choice describes only a single chemical step in Paragraph 4."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The arrival of a whale fall triggers a chain of life that unfolds in distinct stages.",
-      "childTip": "Select the sentence from Paragraph 2 that introduces the multi-stage chain of life at a whale fall.",
-      "parentExplanation": "Part B requires 100% verbatim proof (ELAGSE5RI1) for the central idea in Part A. Option B is the topic sentence that frames the entire multi-stage ecological process."
+      "childTip": "Spot on! This answer directly supports Question 5 by showing that a whale fall drives a multi-stage chain of deep-sea life.",
+      "parentExplanation": "Part B requires 100% verbatim proof (ELAGSE5RI1) for the central idea in Part A. Option B is the topic sentence that frames the entire multi-stage ecological process.",
+      "retryHint": "Look for the quote from Paragraph 2 that introduces the multi-stage chain of life at a whale fall."
     }
   ]
 }

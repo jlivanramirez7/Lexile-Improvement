@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The six-foot wooden box in the Dayton shop",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "'Inside the six-foot wooden box in their Dayton shop' only tells WHERE the test happened—the wooden box didn't test the wings by itself!"
         },
         {
           "id": "B",
           "text": "Famous flight experts visiting from North Carolina",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "No flight experts visited from North Carolina; Paragraph 1 says the brothers had just returned to Dayton from Kitty Hawk because the experts' printed tables were wrong."
         },
         {
           "id": "C",
           "text": "The sheet steel cutting into the fan blades",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "'Cut from sheet steel' describes what the miniature wing models were made of—the steel wasn't cutting into the fan blades!"
         },
         {
           "id": "D",
           "text": "Wilbur and Orville",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the passive verb 'were tested by' shows that 'Wilbur and Orville' are the ones who tested the miniature sheet-steel wing models inside the wooden wind tunnel."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Inside the six-foot wooden box in their Dayton shop, miniature wing models cut from sheet steel were tested by Wilbur and Orville against a steady blast of fan air.",
-      "childTip": "Find the passive verb 'were tested by' to see who conducted the experiment.",
-      "parentExplanation": "In this passive sentence, 'miniature wing models cut from sheet steel' is the receiver of the verb 'were tested.' The true actors appear right after the preposition 'by': 'Wilbur and Orville' (Option B)."
+      "childTip": "In Paragraph 3, the passive verb 'were tested by' shows that 'Wilbur and Orville' are the ones who tested the miniature sheet-steel wing models inside the wooden wind tunnel.",
+      "parentExplanation": "In this passive sentence, 'miniature wing models cut from sheet steel' is the receiver of the verb 'were tested.' The true actors appear right after the preposition 'by': 'Wilbur and Orville' (Option B).",
+      "retryHint": "Look right after 'were tested by' in Paragraph 3 to see who tested the miniature wing models."
     },
     {
       "questionId": "w72_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Completely proven by every glider flight at Kitty Hawk",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Completely proven is the exact opposite of 'flawed'! The Kitty Hawk flights rose only a third as high as promised, showing the tables had mistakes."
         },
         {
           "id": "B",
           "text": "Written in a secret code that only pilots could read",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The air tables were published math charts printed by flight experts for builders to use, not a secret code!"
         },
         {
           "id": "C",
           "text": "Inaccurate and containing serious mistakes",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 1, 'flawed' means inaccurate and containing serious mistakes. Because the 1901 glider rose only a third as high as the printed charts promised, Wilbur realized the old math tables were wrong."
         },
         {
           "id": "D",
           "text": "Printed on heavy steel sheets instead of paper",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The miniature test wings in Paragraph 3 were cut from sheet steel, not the printed math tables in Paragraph 1! 'Flawed' means full of errors."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Wilbur began to suspect that the published air tables were flawed.",
-      "childTip": "Look at why Wilbur doubted the charts: the glider rose only a third as high as the charts promised.",
-      "parentExplanation": "Because the glider produced far less lift than the printed tables predicted—and Paragraph 2 confirms 'the old math charts were wrong'—'flawed' means inaccurate and containing mistakes (Option A)."
+      "childTip": "In Paragraph 1, 'flawed' means inaccurate and containing serious mistakes. Because the 1901 glider rose only a third as high as the printed charts promised, Wilbur realized the old math tables were wrong.",
+      "parentExplanation": "Because the glider produced far less lift than the printed tables predicted—and Paragraph 2 confirms 'the old math charts were wrong'—'flawed' means inaccurate and containing mistakes (Option A).",
+      "retryHint": "Look at why Wilbur doubted the printed tables in Paragraph 1 (the glider rose only a third as high as promised) and how Paragraph 2 calls them 'wrong.'"
     },
     {
       "questionId": "w72_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "To keep the sheet-steel wings from flying out of the box and hitting the glass window",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The miniature wings were held in place by balances made of hacksaw blades and bicycle spokes (Paragraph 4), while the honeycomb grid at the front smoothed the incoming fan air."
         },
         {
           "id": "B",
           "text": "To smooth out rough, swirling air from the fan so the wind flowed evenly past the models",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 explains that the belt-driven fan pushed air through a metal honeycomb grid to smooth out rough, swirling air ('turbulent swirls') so a steady, even stream of wind hit the model wings."
         },
         {
           "id": "C",
           "text": "To heat the air inside the bicycle shop during the cold Ohio winter months",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The honeycomb grid smoothed out swirling fan air inside the six-foot trough; it wasn't a heater for the Dayton bicycle shop!"
         },
         {
           "id": "D",
           "text": "To block all air from entering the wooden trough while Orville drew in his notebook",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Blocking all air from entering the trough would defeat the whole purpose of a wind tunnel! The grid let a fast, steady stream of air pass through."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "At one end, a belt-driven fan pushed a fast stream of air through a metal honeycomb grid that smoothed out turbulent swirls.",
-      "childTip": "Click the sentence in Paragraph 3 that tells what the metal honeycomb grid did to the fan air.",
-      "parentExplanation": "Paragraph 3 states that 'a belt-driven fan pushed a fast stream of air through a metal honeycomb grid that smoothed out turbulent swirls,' ensuring a steady, even airflow for accurate testing (Option B)."
+      "childTip": "Paragraph 3 explains that the belt-driven fan pushed air through a metal honeycomb grid to smooth out rough, swirling air ('turbulent swirls') so a steady, even stream of wind hit the model wings.",
+      "parentExplanation": "Paragraph 3 states that 'a belt-driven fan pushed a fast stream of air through a metal honeycomb grid that smoothed out turbulent swirls,' ensuring a steady, even airflow for accurate testing (Option B).",
+      "retryHint": "Check the second sentence of Paragraph 3 to see what the metal honeycomb grid did to the 'turbulent swirls' from the fan."
     },
     {
       "questionId": "w72_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By presenting the problem of inaccurate flight tables and tracing how the brothers invented and used a wind tunnel to solve it",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The passage follows a problem-and-solution structure in time order: Paragraph 1 introduces inaccurate lift tables, Paragraphs 2 through 4 show how the brothers built a wind tunnel, and Paragraph 5 shows how their data solved the problem."
         },
         {
           "id": "B",
           "text": "By comparing the price of bicycles in Dayton to the cost of train tickets to North Carolina",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The author never mentions bicycle prices or train ticket costs; the passage focuses on how the Wright brothers tested wing shapes."
         },
         {
           "id": "C",
           "text": "By listing two hundred wing shapes in alphabetical order from the worst design to the best design",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 says they tested more than two hundred miniature wings of different curves and widths, not that the article lists two hundred wings in alphabetical order!"
         },
         {
           "id": "D",
           "text": "By arguing that bicycle wheels are much easier to build than wooden boxes with glass windows",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Paragraph 2 shows that testing a wing on a bicycle wheel outdoors was actually too gusty and uneven, which is why they built the indoor wooden wind tunnel instead."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "The brothers needed a way to test dozens of wing shapes right inside their bicycle workshop without waiting for good weather.",
-      "childTip": "Follow the sequence from the glider problem in Paragraph 1 to the wind-tunnel solution and success in Paragraphs 3–5.",
-      "parentExplanation": "The passage follows a clear problem-and-solution chronological structure: Paragraph 1 introduces the problem of flawed lift tables; Paragraphs 2–4 show how the brothers designed their wind tunnel and balances; Paragraph 5 shows how their data solved the problem (Option B)."
+      "childTip": "The passage follows a problem-and-solution structure in time order: Paragraph 1 introduces inaccurate lift tables, Paragraphs 2 through 4 show how the brothers built a wind tunnel, and Paragraph 5 shows how their data solved the problem.",
+      "parentExplanation": "The passage follows a clear problem-and-solution chronological structure: Paragraph 1 introduces the problem of flawed lift tables; Paragraphs 2–4 show how the brothers designed their wind tunnel and balances; Paragraph 5 shows how their data solved the problem (Option B).",
+      "retryHint": "Follow the steps from the glider problem in Paragraph 1 to the wind-tunnel invention in Paragraphs 2–4 and the successful 1902 glider in Paragraph 5."
     },
     {
       "questionId": "w72_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "Thick, stubby wings made of cloth rose three times higher than thin steel wings.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This is the exact opposite of what they found! Paragraph 5 says long, narrow wings with a gentle curve worked far better than stubby, thick ones."
         },
         {
           "id": "B",
           "text": "Long, narrow wings with a gentle curve performed much better in the air than thick, stubby wings.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 5 states that the Wright brothers' wind-tunnel notes proved that long, narrow wings with a gentle curve sliced through the air far better than thick, stubby ones."
         },
         {
           "id": "C",
           "text": "Famous flight experts had already tested every possible wing shape on a bicycle wheel.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "It was Wilbur and Orville who tested a small wing on a bicycle wheel in Paragraph 2 after realizing the flight experts' published tables were wrong."
         },
         {
           "id": "D",
           "text": "Gliders could fly without any wings at all if a belt-driven fan was bolted to the front.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The belt-driven fan stayed inside the Dayton shop wind tunnel (Paragraph 3); gliders fly over sand dunes using wings and ocean breezes, not without wings!"
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Their precise notes proved that long, narrow wings with a gentle curve sliced through the air far better than stubby, thick ones.",
-      "childTip": "Look in Paragraph 5 to see what their precise notes proved about the best wing shape.",
-      "parentExplanation": "Aligned to ELAGSE5RI1, Paragraph 5 explicitly states what their wind-tunnel notes proved: 'long, narrow wings with a gentle curve sliced through the air far better than stubby, thick ones' (Option C)."
+      "childTip": "Paragraph 5 states that the Wright brothers' wind-tunnel notes proved that long, narrow wings with a gentle curve sliced through the air far better than thick, stubby ones.",
+      "parentExplanation": "Aligned to ELAGSE5RI1, Paragraph 5 explicitly states what their wind-tunnel notes proved: 'long, narrow wings with a gentle curve sliced through the air far better than stubby, thick ones' (Option C).",
+      "retryHint": "Check the second sentence of Paragraph 5 to see what the brothers' precise notes proved about the best wing shape."
     },
     {
       "questionId": "w72_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"They had just spent weeks flying a full-sized glider on the sandy dunes of Kitty Hawk, North Carolina.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only tells where they flew their 1901 glider before they built the wind tunnel in Dayton."
         },
         {
           "id": "B",
           "text": "\"Still, street gusts were too uneven for exact measurements.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 2 only explains why their outdoor bicycle test wasn't steady enough, not what wing shape won in the wind tunnel."
         },
         {
           "id": "C",
           "text": "\"To measure how each wing behaved, the brothers crafted two delicate balances out of old hacksaw blades and bicycle spokes.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 4 explains how they built the measuring balances, without stating what those balances proved about wing shapes."
         },
         {
           "id": "D",
           "text": "\"Their precise notes proved that long, narrow wings with a gentle curve sliced through the air far better than stubby, thick ones.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 5 directly supports Question 5 by stating the exact wing-shape discovery—long, narrow wings with a gentle curve beat stubby, thick ones—that came from their wind-tunnel notes."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Their precise notes proved that long, narrow wings with a gentle curve sliced through the air far better than stubby, thick ones.",
-      "childTip": "Pick the quote from Paragraph 5 that compares long, narrow wings with stubby, thick ones.",
-      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 stating the wing-shape discovery that made the 1902 glider a success, directly supporting Part A."
+      "childTip": "This sentence from Paragraph 5 directly supports Question 5 by stating the exact wing-shape discovery—long, narrow wings with a gentle curve beat stubby, thick ones—that came from their wind-tunnel notes.",
+      "parentExplanation": "Option D provides the exact textual proof from Paragraph 5 stating the wing-shape discovery that made the 1902 glider a success, directly supporting Part A.",
+      "retryHint": "Check Paragraph 5 for the sentence showing what the brothers' precise notes proved about long, narrow wings versus stubby, thick ones."
     }
   ]
 }

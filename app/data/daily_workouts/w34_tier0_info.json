@@ -72,31 +72,36 @@
           "id": "A",
           "text": "The two short columns felt the reader's fingertip in the dark.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This flips the action around! The two short columns of dots are part of the paper page being touched, not a finger that can feel."
         },
         {
           "id": "B",
           "text": "A reader's fingertip felt the new six-dot reading cell in a single touch.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the phrase 'by a reader's fingertip' right after 'was easily felt' shows that a reader's fingertip is what felt the new six-dot reading cell in a single touch."
         },
         {
           "id": "C",
           "text": "The three tiny bumps felt the blunt awl on the thick paper.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paper bumps cannot feel anything! Louis used the blunt awl to press the test dots, and a reader's fingertip is what felt them."
         },
         {
           "id": "D",
           "text": "Charles Barbier felt the fourteen heavy wax books in the library.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 is explaining how any reader's fingertip could feel Louis's new six-dot cell, not saying Charles Barbier felt the wax books."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The new six-dot reading cell, arranged in two short columns of three tiny bumps, was easily felt by a reader's fingertip in a single touch.",
-      "childTip": "Find the 'by' phrase right after 'was easily felt' to see what performed the action.",
-      "parentExplanation": "In this passive-voice sentence, 'The new six-dot reading cell' receives the action, while 'by a reader's fingertip' identifies what felt the cell."
+      "childTip": "In Paragraph 3, the phrase 'by a reader's fingertip' right after 'was easily felt' shows that a reader's fingertip is what felt the new six-dot reading cell in a single touch.",
+      "parentExplanation": "In this passive-voice sentence, 'The new six-dot reading cell' receives the action, while 'by a reader's fingertip' identifies what felt the cell.",
+      "retryHint": "Look for the 'by' phrase right after 'was easily felt' in Paragraph 3 to see what felt the six-dot cell."
     },
     {
       "questionId": "w34_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "A clever secret shared only with French soldiers",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Charles Barbier openly shared his code with the school in Paragraph 2, and 'flaw' refers to the problem that twelve dots were too tall for one finger."
         },
         {
           "id": "B",
           "text": "A perfect solution that works right away",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "A perfect solution is the opposite of a 'flaw'—the army code was too tall for one finger, so Louis spent three years fixing it."
         },
         {
           "id": "C",
           "text": "A heavy wooden shelf inside a school library",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The school library was mentioned back in Paragraph 1; in Paragraph 2, 'a major flaw' describes what was wrong with the twelve-dot army code."
         },
         {
           "id": "D",
           "text": "A design weakness that causes a problem",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'flaw' means a design weakness that causes a problem, because the next sentences explain that twelve dots were too tall to fit under one fingertip at once."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "While the idea excited Louis right away, the army code had a major flaw.",
-      "childTip": "Read the next sentence to see what was wrong with the twelve-dot code: it was too tall for one finger.",
-      "parentExplanation": "The sentence following 'flaw' explains the problem with the twelve-dot code (it was too tall to fit under one finger at once), showing that 'flaw' means a weakness or design problem."
+      "childTip": "In Paragraph 2, 'flaw' means a design weakness that causes a problem, because the next sentences explain that twelve dots were too tall to fit under one fingertip at once.",
+      "parentExplanation": "The sentence following 'flaw' explains the problem with the twelve-dot code (it was too tall to fit under one finger at once), showing that 'flaw' means a weakness or design problem.",
+      "retryHint": "Read the sentence right after 'major flaw' in Paragraph 2 to see what problem the twelve-dot code had."
     },
     {
       "questionId": "w34_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "Each book weighed twenty pounds and took minutes to trace a single sentence of giant raised letters.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 explains that the fourteen books in the school library had giant raised letters on wax-coated paper, making each book weigh twenty pounds and take minutes to trace a single sentence."
         },
         {
           "id": "B",
           "text": "The books were written in a secret army code that only Charles Barbier knew how to read.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The fourteen library books in Paragraph 1 used giant raised letters of the regular alphabet; Charles Barbier's army dot code is not introduced until Paragraph 2."
         },
         {
           "id": "C",
           "text": "The pages were made of thin tissue paper that tore whenever a student touched them.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 1 says the pages were made of thick paper coated with wax and weighed twenty pounds, not thin tissue paper."
         },
         {
           "id": "D",
           "text": "The school principal kept all fourteen books locked inside a workshop across town.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 1 never says the books were locked in a workshop across town; they were in the school library, just huge and slow to read."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Each book weighed twenty pounds and took minutes to trace just one sentence with a finger.",
-      "childTip": "Click the sentence in Paragraph 1 that tells how much each book weighed and how long it took to trace one sentence.",
-      "parentExplanation": "Paragraph 1 explicitly states that the wax-coated books weighed twenty pounds each and took minutes just to trace a single sentence with a finger."
+      "childTip": "Paragraph 1 explains that the fourteen books in the school library had giant raised letters on wax-coated paper, making each book weigh twenty pounds and take minutes to trace a single sentence.",
+      "parentExplanation": "Paragraph 1 explicitly states that the wax-coated books weighed twenty pounds each and took minutes just to trace a single sentence with a finger.",
+      "retryHint": "Check the fourth and fifth sentences of Paragraph 1 to see how heavy the books were and how long it took to read one sentence."
     },
     {
       "questionId": "w34_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By comparing the cost of French books in 1821 with the cost of modern computers",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Neither paragraph mentions book prices or modern computers; they focus on how Louis improved the raised-dot reading code."
         },
         {
           "id": "B",
           "text": "By listing every book that Louis Braille read during his first year in Paris",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never lists titles of library books; it explains how Louis turned a twelve-dot army code into a faster six-dot system."
         },
         {
           "id": "C",
           "text": "By describing the problem with Charles Barbier's twelve-dot code and then showing how Louis solved it with a six-dot cell",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 introduces the problem that Charles Barbier's twelve-dot code was too tall for one finger, and Paragraph 3 shows how Louis Braille solved that problem by cutting the cell in half to six dots."
         },
         {
           "id": "D",
           "text": "By arguing that soldiers should use wax letters instead of night writing during battles",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The author never argues that soldiers should use twenty-pound wax books in battle; the passage shows how Louis made a compact six-dot code for blind readers."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "At age fifteen, he found the answer by cutting the tall twelve-dot cell in half.",
-      "childTip": "Look at how Paragraph 2 shows the flaw in the twelve-dot code and Paragraph 3 shows how Louis fixed it.",
-      "parentExplanation": "Paragraphs 2 and 3 use a problem-and-solution structure: Paragraph 2 explains why the twelve-dot night writing code was too tall for a single fingertip, and Paragraph 3 shows how Louis solved this by cutting the cell in half to six dots."
+      "childTip": "Paragraph 2 introduces the problem that Charles Barbier's twelve-dot code was too tall for one finger, and Paragraph 3 shows how Louis Braille solved that problem by cutting the cell in half to six dots.",
+      "parentExplanation": "Paragraphs 2 and 3 use a problem-and-solution structure: Paragraph 2 explains why the twelve-dot night writing code was too tall for a single fingertip, and Paragraph 3 shows how Louis solved this by cutting the cell in half to six dots.",
+      "retryHint": "Compare the problem at the end of Paragraph 2 (twelve tall dots) with Louis's breakthrough in Paragraph 3 (six dots)."
     },
     {
       "questionId": "w34_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "The six-dot cell only had enough patterns for the first ten letters of the French alphabet.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 4 explains that the six-dot cell could actually make sixty-three different dot shapes—covering the whole alphabet, numbers, punctuation, and music notes."
         },
         {
           "id": "B",
           "text": "The six-dot cell was printed on twenty-pound wax pages that never wore down.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The twenty-pound wax books were the old, slow library books from Paragraph 1, not Louis Braille's new six-dot system."
         },
         {
           "id": "C",
           "text": "The six-dot bumps glowed in the dark so soldiers could see them from across a room.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Braille dots are read by touch with a fingertip, not by glowing in the dark for people to see with their eyes."
         },
         {
           "id": "D",
           "text": "The smaller six-dot cell fit under one fingertip at once, so readers could glide smoothly across the page.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 2 and 3 explain that while twelve dots were too tall for one finger, Louis's smaller six-dot cell fit under a single fingertip so readers could glide smoothly across a page."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "A reader could now glide smoothly across a page without stopping.",
-      "childTip": "Check the end of Paragraph 3 to see what happened once the whole six-dot cell fit under a fingertip in one touch.",
-      "parentExplanation": "Paragraphs 2 and 3 explain that Barbier's twelve-dot cell required moving the finger up and down on every symbol, whereas Braille's six-dot cell could be felt in a single touch, letting readers glide smoothly across the page."
+      "childTip": "Paragraphs 2 and 3 explain that while twelve dots were too tall for one finger, Louis's smaller six-dot cell fit under a single fingertip so readers could glide smoothly across a page.",
+      "parentExplanation": "Paragraphs 2 and 3 explain that Barbier's twelve-dot cell required moving the finger up and down on every symbol, whereas Braille's six-dot cell could be felt in a single touch, letting readers glide smoothly across the page.",
+      "retryHint": "Look at the last two sentences of Paragraph 3 to see how a reader's fingertip moves across the new six-dot cells."
     },
     {
       "questionId": "w34_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"However, the school library held only fourteen books in the entire building.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only tells how few books were in the school library before Louis invented his code."
         },
         {
           "id": "B",
           "text": "\"A reader could now glide smoothly across a page without stopping.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 3 directly supports Question 5 by showing the result of the six-dot cell fitting under one fingertip: a reader could glide smoothly across a page without stopping."
         },
         {
           "id": "C",
           "text": "\"Soldiers had tried using this system of raised bumps to read battle messages in the dark without striking a match.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 2 only explains why French soldiers first tried Charles Barbier's night writing in the dark."
         },
         {
           "id": "D",
           "text": "\"The first ten letters of the alphabet used only the top four dots in the cell.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 4 explains how the dot patterns were organized for the alphabet, rather than why reading became faster."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "A reader could now glide smoothly across a page without stopping.",
-      "childTip": "Pick the quote from Paragraph 3 that explains how a reader's finger moves across a page of six-dot cells.",
-      "parentExplanation": "Option C directly proves Part A by showing that the single-touch six-dot cell allowed readers to glide smoothly across a page without stopping."
+      "childTip": "This sentence from Paragraph 3 directly supports Question 5 by showing the result of the six-dot cell fitting under one fingertip: a reader could glide smoothly across a page without stopping.",
+      "parentExplanation": "Option C directly proves Part A by showing that the single-touch six-dot cell allowed readers to glide smoothly across a page without stopping.",
+      "retryHint": "Choose the quote from Paragraph 3 that shows how smoothly and quickly a person could read with the new six-dot code."
     }
   ]
 }

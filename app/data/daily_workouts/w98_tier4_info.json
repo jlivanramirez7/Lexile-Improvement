@@ -72,30 +72,35 @@
           "id": "A",
           "text": "The drifting cesium atoms inside the chamber",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—this choice flips the action! The drifting cesium atoms receive the strike in Paragraph 4 instead of doing the striking."
         },
         {
           "id": "B",
           "text": "A tuned wave beam inside the clock",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 4, the words 'by a tuned wave beam' right after 'are struck' show that the wave beam strikes the cesium atoms."
         },
         {
           "id": "C",
           "text": "The far sensor at the end of the vacuum tube",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—'before they reach the far sensor' tells where the atoms are heading in Paragraph 4, not what strikes them."
         },
         {
           "id": "D",
           "text": "A brass weight swinging inside the space craft",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 3 mentions brass pendulums in old wall clocks on Earth, not inside space clocks."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Inside the shielded chamber of the clock, the drifting cesium atoms are struck by a tuned wave beam before they reach the far sensor.",
-      "childTip": "Find the passive verb 'are struck' and look right after 'by' to see what hits the cesium atoms.",
-      "parentExplanation": "In this passive construction, 'the drifting cesium atoms' receives the action ('are struck'). The agent phrase 'by a tuned wave beam' names what performs the action."
+      "childTip": "Spot on! In Paragraph 4, the words 'by a tuned wave beam' right after 'are struck' show that the wave beam strikes the cesium atoms.",
+      "parentExplanation": "In this passive construction, 'the drifting cesium atoms' receives the action ('are struck'). The agent phrase 'by a tuned wave beam' names what performs the action.",
+      "retryHint": "In Paragraph 4, find the action phrase 'are struck' and look right after 'by' to see what hits the cesium atoms."
     },
     {
       "questionId": "w98_q2",
@@ -112,30 +117,35 @@
           "id": "A",
           "text": "Fasten with a sharp metal needle",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—this choice takes the word part 'pin' too literally; space satellites use radio signals, not metal needles."
         },
         {
           "id": "B",
           "text": "Broadcast a loud warning to",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 1 explains that GPS clocks help a phone map a user's location on a street, not broadcast warnings."
         },
         {
           "id": "C",
           "text": "Miss by nearly two hundred miles",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—missing by two hundred miles is the error described in Paragraph 2 when a clock is off, which is the opposite of pinpointing a spot."
         },
         {
           "id": "D",
           "text": "Find the exact location of",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! In Paragraph 1, 'pinpoint a spot on the globe within a few feet' means to find the exact location of a place with high accuracy."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "To pinpoint a spot on the globe within a few feet, space clocks must never waver.",
-      "childTip": "Notice the clue 'within a few feet'—space clocks must locate a spot on Earth with extreme accuracy.",
-      "parentExplanation": "In context, 'pinpoint a spot on the globe within a few feet' means to locate or determine a position with extreme precision."
+      "childTip": "Spot on! In Paragraph 1, 'pinpoint a spot on the globe within a few feet' means to find the exact location of a place with high accuracy.",
+      "parentExplanation": "In context, 'pinpoint a spot on the globe within a few feet' means to locate or determine a position with extreme precision.",
+      "retryHint": "In Paragraph 1, notice the clue 'within a few feet'—space clocks must locate a spot on Earth with extreme accuracy."
     },
     {
       "questionId": "w98_q3",
@@ -151,31 +161,36 @@
         {
           "id": "A",
           "text": "Radio waves move at the speed of light, covering roughly one foot every billionth of a second.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 2 explains that because radio waves travel at the speed of light—about one foot every billionth of a second—even a tiny timing error adds up to nearly two hundred miles."
         },
         {
           "id": "B",
           "text": "Clouds and rain slow the radio time stamps down as they pass through the lower sky.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Watch out—Paragraph 2 never blames clouds or rain; the huge distance error comes from how fast light and radio waves travel."
         },
         {
           "id": "C",
           "text": "Space craft stop sending signals whenever a phone user walks down a narrow street.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 1 states that space clocks help a phone locate a user on a narrow street, not that satellites stop sending signals there."
         },
         {
           "id": "D",
           "text": "Phones must bounce their signals off the moon before comparing time stamps.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 1 states that GPS signals travel straight from satellites twelve thousand miles up to your phone, never bouncing off the moon."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Because radio waves move at the speed of light, they cross roughly one foot in a single billionth of a second.",
-      "childTip": "Click the sentence in Paragraph 2 that explains how fast radio waves move in a billionth of a second.",
-      "parentExplanation": "Paragraph 2 explains the cause-and-effect link: because radio signals move at the speed of light (about one foot per nanosecond), even a one-millisecond timing error translates into nearly two hundred miles of distance error."
+      "childTip": "Spot on! Paragraph 2 explains that because radio waves travel at the speed of light—about one foot every billionth of a second—even a tiny timing error adds up to nearly two hundred miles.",
+      "parentExplanation": "Paragraph 2 explains the cause-and-effect link: because radio signals move at the speed of light (about one foot per nanosecond), even a one-millisecond timing error translates into nearly two hundred miles of distance error.",
+      "retryHint": "Look in Paragraph 2 for the sentence that explains how fast radio waves move in a billionth of a second."
     },
     {
       "questionId": "w98_q4",
@@ -192,30 +207,35 @@
           "id": "A",
           "text": "To argue that brass rods work better than cesium clocks during cold winter months",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 3 explains that brass rods change length with temperature and lose time, making them much less reliable than cesium clocks."
         },
         {
           "id": "B",
           "text": "To show that every cesium atom flips at an unchanging rate regardless of outside conditions",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 3 contrasts a heat-sensitive brass rod with cesium atoms to show that every cesium atom in the universe flips at the exact same unchanging rate."
         },
         {
           "id": "C",
           "text": "To explain why space craft must carry heavy brass rods alongside their four atomic clocks",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—GPS satellites carry atomic clocks in Paragraph 5, not old-fashioned brass pendulum rods."
         },
         {
           "id": "D",
           "text": "To prove that summer heat melts the soft gray metal inside watch batteries",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 4 mentions gentle heating inside the clock chamber to turn cesium into gas, not summer heat melting watch batteries."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Unlike a brass rod that swells in summer heat, every cesium atom in the cosmos flips at the exact same rate.",
-      "childTip": "Look at the last sentence of Paragraph 3 to see how cesium atoms differ from a brass rod.",
-      "parentExplanation": "Mechanical rods change length with temperature and thus change speed, whereas every cesium atom in the cosmos transitions at an identical, invariant rate."
+      "childTip": "Spot on! Paragraph 3 contrasts a heat-sensitive brass rod with cesium atoms to show that every cesium atom in the universe flips at the exact same unchanging rate.",
+      "parentExplanation": "Mechanical rods change length with temperature and thus change speed, whereas every cesium atom in the cosmos transitions at an identical, invariant rate.",
+      "retryHint": "Look at the last sentence of Paragraph 3 to see how cesium atoms differ from a brass rod."
     },
     {
       "questionId": "w98_q5",
@@ -233,30 +253,35 @@
           "id": "A",
           "text": "The outer charges stop spinning completely and fall into the center of the atom.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Watch out—Paragraph 4 explains that the wave beam makes the outer charges flip their spin state, not stop spinning or fall into the core."
         },
         {
           "id": "B",
           "text": "The gray cesium gas freezes into a solid crystal block inside the vacuum tube.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Careful—Paragraph 4 says a heater warms soft cesium metal into a faint gas stream, never freezing it into a block."
         },
         {
           "id": "C",
           "text": "A ground crew sends a laser flash twelve thousand miles up to reset the chamber.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Watch out—Paragraph 4 explains that the clock's own detector counts the flipped atoms and locks the wave beam on target automatically."
         },
         {
           "id": "D",
           "text": "The greatest number of cesium atoms flip their spin state and light up the sensor.",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! Paragraph 4 explains that when the wave pitch hits exactly 9,192,631,770 cycles per second, the greatest number of cesium atoms flip state and light up the sensor."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "When the wave pitch hits precisely 9,192,631,770 cycles per second, the most atoms flip state and light up the sensor.",
-      "childTip": "Check Paragraph 4 to see what happens at the sensor when the wave beam hits 9,192,631,770 cycles per second.",
-      "parentExplanation": "Paragraph 4 explains that when the wave pitch matches 9,192,631,770 cycles per second, the maximum number of cesium atoms flip state and light up the sensor."
+      "childTip": "Spot on! Paragraph 4 explains that when the wave pitch hits exactly 9,192,631,770 cycles per second, the greatest number of cesium atoms flip state and light up the sensor.",
+      "parentExplanation": "Paragraph 4 explains that when the wave pitch matches 9,192,631,770 cycles per second, the maximum number of cesium atoms flip state and light up the sensor.",
+      "retryHint": "Check Paragraph 4 to see what happens at the sensor when the wave beam hits 9,192,631,770 cycles per second."
     },
     {
       "questionId": "w98_q6",
@@ -274,30 +299,35 @@
           "id": "A",
           "text": "\"Yet even the finest quartz watch drifts off by a tiny fraction of a second each day.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this line from Paragraph 2 only explains why ordinary quartz wristwatches are not accurate enough for GPS."
         },
         {
           "id": "B",
           "text": "\"Every atom of this metal has a single outer charge that spins like a tiny magnet around the core.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Not quite—this detail from Paragraph 3 describes the structure of a cesium atom, not how the sensor detects the right wave pitch."
         },
         {
           "id": "C",
           "text": "\"When the wave pitch hits precisely 9,192,631,770 cycles per second, the most atoms flip state and light up the sensor.\"",
-          "isCorrect": true
+          "isCorrect": true,
+          "childFeedback": "Spot on! This quote from Paragraph 4 directly proves Question 5 by showing that the sensor lights up with the most flipped atoms at 9,192,631,770 cycles per second."
         },
         {
           "id": "D",
           "text": "\"High in space, four atomic clocks ride aboard each GPS craft so the fleet always has a spare.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Not quite—this sentence from Paragraph 5 only tells how many spare atomic clocks ride aboard each GPS satellite."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "When the wave pitch hits precisely 9,192,631,770 cycles per second, the most atoms flip state and light up the sensor.",
-      "childTip": "Pick the sentence in Paragraph 4 that shows how the sensor responds when the exact wave count is reached.",
-      "parentExplanation": "Option C directly proves Part A by describing how the peak number of flipped atoms lights up the sensor at 9,192,631,770 cycles per second."
+      "childTip": "Spot on! This quote from Paragraph 4 directly proves Question 5 by showing that the sensor lights up with the most flipped atoms at 9,192,631,770 cycles per second.",
+      "parentExplanation": "Option C directly proves Part A by describing how the peak number of flipped atoms lights up the sensor at 9,192,631,770 cycles per second.",
+      "retryHint": "Look for the quote from Paragraph 4 that shows how the sensor responds when the exact wave count is reached."
     }
   ]
 }

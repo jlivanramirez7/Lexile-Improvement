@@ -73,31 +73,36 @@
           "id": "A",
           "text": "Jonah weakened the cedar rib with a flat chisel, and winter moisture pried it from the hull.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This swaps the two causes! Trapped winter moisture is what weakened the split cedar rib, and Jonah is the person who pried it out with a chisel."
         },
         {
           "id": "B",
           "text": "A flat chisel trapped the winter moisture until the patched coat of paint pried itself loose.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A metal chisel did not trap winter moisture, and a coat of paint cannot pry itself loose from a canoe!"
         },
         {
           "id": "C",
           "text": "Winter moisture trapped under paint weakened the rib, and Jonah pried it out using a flat chisel.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'weakened by winter moisture' and 'was carefully pried from the hull by Jonah with a flat chisel' show that trapped winter moisture weakened the cedar rib and Jonah pried it out."
         },
         {
           "id": "D",
           "text": "Marcus broke the cedar rib by dropping the iron kettle inside the wooden hull.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 3 says the old rib failed after a rocky landing last autumn and rotted from trapped moisture—not because Marcus dropped the steamer kettle."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The split cedar rib, weakened by winter moisture trapped beneath a patched coat of paint, was carefully pried from the hull by Jonah with a flat chisel.",
-      "childTip": "Look at both 'by' phrases: winter moisture weakened the rib, while Jonah pried it from the hull.",
-      "parentExplanation": "This passive sentence contains two 'by' phrases: 'weakened by winter moisture' explains what damaged the wood, and 'was carefully pried from the hull by Jonah' identifies who removed it."
+      "childTip": "In Paragraph 3, 'weakened by winter moisture' and 'was carefully pried from the hull by Jonah with a flat chisel' show that trapped winter moisture weakened the cedar rib and Jonah pried it out.",
+      "parentExplanation": "This passive sentence contains two 'by' phrases: 'weakened by winter moisture' explains what damaged the wood, and 'was carefully pried from the hull by Jonah' identifies who removed it.",
+      "retryHint": "Check the two 'by' phrases in Paragraph 3: 'weakened by...' and 'was carefully pried from the hull by...'"
     },
     {
       "questionId": "w47_q2",
@@ -114,31 +119,36 @@
           "id": "A",
           "text": "Softened and easy to bend into a smooth curve",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'pliable' means softened and easy to bend into a smooth curve, because steaming the white cedar strip in hot mist made it flexible enough to clamp smoothly against the curved hull."
         },
         {
           "id": "B",
           "text": "Brittle and likely to snap into sharp splinters",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Brittle and likely to snap is the opposite of 'pliable'—the brothers steamed the cedar specifically so it would bend smoothly without snapping."
         },
         {
           "id": "C",
           "text": "Covered in thick gray paste from a metal can",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Marcus already set his can of gray paste back on the shelf at the start of Paragraph 4 before they steamed the fresh white cedar strip."
         },
         {
           "id": "D",
           "text": "Heavy enough to sink the canoe to the lake bottom",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 5 says the repaired canoe hull felt light, tight, and balanced on their shoulders and floated out on the glassy water."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "When the wood grew pliable, Marcus helped Jonah clamp the curve smoothly against the hull.",
-      "childTip": "Think about what hot steam does to wood so the brothers can clamp it into a smooth curve.",
-      "parentExplanation": "After being steamed in hot mist, the cedar strip could be clamped smoothly into a curve against the hull, showing that 'pliable' means bendable and supple."
+      "childTip": "In Paragraph 4, 'pliable' means softened and easy to bend into a smooth curve, because steaming the white cedar strip in hot mist made it flexible enough to clamp smoothly against the curved hull.",
+      "parentExplanation": "After being steamed in hot mist, the cedar strip could be clamped smoothly into a curve against the hull, showing that 'pliable' means bendable and supple.",
+      "retryHint": "Think about what hot steam does to a strip of wood so the brothers can 'clamp the curve smoothly against the hull' in Paragraph 4."
     },
     {
       "questionId": "w47_q3",
@@ -155,31 +165,36 @@
           "id": "A",
           "text": "He discovers that the hardware store is completely sold out of gray paste.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Marcus already has a can of quick-setting gray paste in his hand in Paragraph 2, and he puts it back on the shelf in Paragraph 4."
         },
         {
           "id": "B",
           "text": "He worries that brass tacks will rust if they ever touch clear marine varnish.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Brass tacks and clear marine varnish work fine together on the canoe; what changes Marcus's mind is seeing the dark, softened wood under the old putty patch."
         },
         {
           "id": "C",
           "text": "He realizes that steaming white cedar takes only five minutes instead of three nights.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Steaming, clamping, and varnishing the new cedar rib still takes until Friday night; Marcus simply realizes the slow way is worth the time."
         },
         {
           "id": "D",
           "text": "He sees that an older putty shortcut had pulled away from the planks and trapped water against the wood.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraphs 3 and 4, when Jonah pries up the broken rib, Marcus sees that an old hard-putty shortcut had pulled away from the planks, trapped lake water, and rotted the wood underneath."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Instead of bonding with the cedar, the stiff lump had pulled away from the planks and trapped lake water against the grain.",
-      "childTip": "Click the sentence in Paragraph 3 that shows what the old lump of stiff putty did to the planks.",
-      "parentExplanation": "In Paragraph 3, Jonah pries off the broken rib and reveals that an old putty patch had pulled away from the cedar and trapped water, which convinces Marcus in Paragraph 4 to put his can away."
+      "childTip": "In Paragraphs 3 and 4, when Jonah pries up the broken rib, Marcus sees that an old hard-putty shortcut had pulled away from the planks, trapped lake water, and rotted the wood underneath.",
+      "parentExplanation": "In Paragraph 3, Jonah pries off the broken rib and reveals that an old putty patch had pulled away from the cedar and trapped water, which convinces Marcus in Paragraph 4 to put his can away.",
+      "retryHint": "Look at the end of Paragraph 3 and the first sentence of Paragraph 4 to see what Jonah uncovered under the old patch."
     },
     {
       "questionId": "w47_q4",
@@ -196,31 +211,36 @@
           "id": "A",
           "text": "By showing that neither brother cares about their granddad's canoe anymore",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Both brothers want to take the canoe out on Lake Rabun on Saturday, and Jonah cares deeply about matching their grandfather's careful craftsmanship."
         },
         {
           "id": "B",
           "text": "By contrasting Marcus's desire for a quick fix with Jonah's knowledge of how a wood hull moves on the water",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the third-person narrator shows both brothers' thoughts—contrasting Marcus's impatience for a twenty-minute paste fix with Jonah's understanding that stiff paste would crack when the flexible wood hull bends."
         },
         {
           "id": "C",
           "text": "By telling the entire story in the first person through the granddad's journal entries",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The story is told in the third person ('Jonah,' 'Marcus,' 'he'), not through first-person journal entries written by their grandfather."
         },
         {
           "id": "D",
           "text": "By explaining that Jonah wants to sell the canoe as soon as the paint dries",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Neither brother wants to sell the canoe; they are repairing it for Saturday's trip on Lake Rabun and want to protect their grandfather's boat."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "From Marcus's viewpoint, spending three nights steaming and bending a fresh strip of white cedar was a waste of time when no one would look under the rim.",
-      "childTip": "Compare how Marcus views the repair in Paragraph 2 with how Jonah explains the flexing hull.",
-      "parentExplanation": "The third-person narrator reveals both brothers' perspectives in Paragraph 2 (ELAGSE5RL6): Marcus focuses on saving time with a hidden patch, while Jonah focuses on structural integrity."
+      "childTip": "In Paragraph 2, the third-person narrator shows both brothers' thoughts—contrasting Marcus's impatience for a twenty-minute paste fix with Jonah's understanding that stiff paste would crack when the flexible wood hull bends.",
+      "parentExplanation": "The third-person narrator reveals both brothers' perspectives in Paragraph 2 (ELAGSE5RL6): Marcus focuses on saving time with a hidden patch, while Jonah focuses on structural integrity.",
+      "retryHint": "Compare 'From Marcus's viewpoint...' in the first half of Paragraph 2 with Jonah's response at the end of Paragraph 2."
     },
     {
       "questionId": "w47_q5",
@@ -238,31 +258,36 @@
           "id": "A",
           "text": "Wooden canoes cannot float on Lake Rabun unless they are painted every Saturday.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The canoe had carried them for ten summers and only needed a new cedar rib and varnish after a rocky landing—not paint every single Saturday."
         },
         {
           "id": "B",
           "text": "Older brothers should always let younger brothers do all the heavy work in a barn.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "In Paragraph 4, both brothers work together to fill the steamer kettle and clamp the new cedar strip into place."
         },
         {
           "id": "C",
           "text": "Doing a job the right way takes patience, whereas careless shortcuts often create worse damage later.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The story teaches that taking the time to do a repair the right way (steaming and bending real cedar) protects what matters, whereas quick shortcuts (like hard putty) cause worse damage over time."
         },
         {
           "id": "D",
           "text": "Quick-setting paste is stronger and more flexible than steamed white cedar.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraphs 2 and 3 prove the exact opposite: stiff paste pulls away from flexible wood planks and traps water that rots the hull."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "He admitted that a fast patch today would only rot two more planks by next spring.",
-      "childTip": "Look at what Marcus realizes in Paragraph 4 about the true cost of a fast shortcut.",
-      "parentExplanation": "The central theme contrasts patient craftsmanship with hasty shortcuts, highlighted when Marcus recognizes that a quick patch today would cause worse rot by next spring."
+      "childTip": "The story teaches that taking the time to do a repair the right way (steaming and bending real cedar) protects what matters, whereas quick shortcuts (like hard putty) cause worse damage over time.",
+      "parentExplanation": "The central theme contrasts patient craftsmanship with hasty shortcuts, highlighted when Marcus recognizes that a quick patch today would cause worse rot by next spring.",
+      "retryHint": "Look at what Marcus admits in Paragraph 4 about a 'fast patch today' versus why he thanks Jonah in Paragraph 5."
     },
     {
       "questionId": "w47_q6",
@@ -280,31 +305,36 @@
           "id": "A",
           "text": "\"He admitted that a fast patch today would only rot two more planks by next spring.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 4 directly proves Question 5 by showing Marcus's realization that taking a quick shortcut today would only cause worse damage ('rot two more planks') by next spring."
         },
         {
           "id": "B",
           "text": "\"For ten summers, the sixteen-foot craft had carried them across Lake Rabun.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 1 only tells how many summers the family had used the canoe on Lake Rabun."
         },
         {
           "id": "C",
           "text": "\"By Friday night, a coat of clear marine varnish gleamed over the new rib.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 5 only describes the shiny varnish on Friday night after the repair was finished."
         },
         {
           "id": "D",
           "text": "\"Out on the glassy water, the cedar planks flexed gently with every stroke of their paddles.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This closing line from Paragraph 5 describes the canoe gliding on the lake, without stating the lesson about why shortcuts fail."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "He admitted that a fast patch today would only rot two more planks by next spring.",
-      "childTip": "Pick the quote in Paragraph 4 where Marcus admits what a fast patch would cause by next spring.",
-      "parentExplanation": "Option B directly supports the theme in Part A by showing how a hasty shortcut leads to greater damage over time."
+      "childTip": "This sentence from Paragraph 4 directly proves Question 5 by showing Marcus's realization that taking a quick shortcut today would only cause worse damage ('rot two more planks') by next spring.",
+      "parentExplanation": "Option B directly supports the theme in Part A by showing how a hasty shortcut leads to greater damage over time.",
+      "retryHint": "Find the quote from Paragraph 4 where Marcus admits what a 'fast patch today' would do by next spring."
     }
   ]
 }

@@ -71,31 +71,36 @@
           "id": "A",
           "text": "The expanding outer band loses energy because the inner eyewall blocks the warm ocean moisture.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This reverses the two cloud rings! The inner eyewall is the one that loses energy because the outer band cuts off its warm ocean moisture."
         },
         {
           "id": "B",
           "text": "The inner eyewall loses energy because the expanding outer band cuts off its warm ocean moisture.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, the phrases 'cut off from warm ocean moisture by this outer ring' and 'starved of energy by the expanding outer band' show that the inner eyewall loses energy because the outer band blocks its moisture."
         },
         {
           "id": "C",
           "text": "Warm ocean moisture loses energy because weather satellites block the outer ring of storms.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Weather satellites high in space only track the cloud bands in Paragraph 1—they never block a storm's ocean moisture."
         },
         {
           "id": "D",
           "text": "Coastal forecasters starve the Gulf Stream of energy by dropping small sensor tubes into the waves.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The small tubes dropped by flight crews in Paragraph 5 only measure water heat and wind speed; they do not starve the Gulf Stream of energy."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "The inner eyewall, cut off from warm ocean moisture by this outer ring of storms, is gradually starved of energy by the expanding outer band.",
-      "childTip": "Find the subject receiving the action: the inner eyewall is starved of energy by the expanding outer band.",
-      "parentExplanation": "In this passive construction, 'The inner eyewall' is the receiver of the passive verb 'is gradually starved of energy,' while 'by the expanding outer band' names the actor causing the energy loss."
+      "childTip": "In Paragraph 3, the phrases 'cut off from warm ocean moisture by this outer ring' and 'starved of energy by the expanding outer band' show that the inner eyewall loses energy because the outer band blocks its moisture.",
+      "parentExplanation": "In this passive construction, 'The inner eyewall' is the receiver of the passive verb 'is gradually starved of energy,' while 'by the expanding outer band' names the actor causing the energy loss.",
+      "retryHint": "Look at the subject ('The inner eyewall') and the 'by' phrases in Paragraph 3 to see what gets starved of energy and why."
     },
     {
       "questionId": "w46_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Signs a written agreement with weather forecasters",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "A 'contract' can be a written paper agreement in other settings, but a ring of storm clouds cannot sign a paper agreement!"
         },
         {
           "id": "B",
           "text": "Splits apart into dozens of tiny rain showers",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The inner ring is the one that weakens and falls apart in Paragraph 3, while the outer ring pulls inward to become the new eyewall."
         },
         {
           "id": "C",
           "text": "Spreads outward until it covers the whole ocean",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Spreading outward across the ocean is the opposite of 'contracts inward' and 'tightens' in Paragraph 4."
         },
         {
           "id": "D",
           "text": "Tightens and pulls closer toward the center",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'contracts' means tightens and pulls closer toward the center, as shown by the clue 'contracts inward to take the place of the old eye' and 'when the new eyewall tightens.'"
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "The outer ring slowly contracts inward to take the place of the old eye.",
-      "childTip": "Look at the words right after 'contracts': it moves 'inward to take the place of the old eye.'",
-      "parentExplanation": "The context clues 'inward to take the place of the old eye' and the subsequent phrase 'when the new eyewall tightens' show that 'contracts' means tightens or draws inward."
+      "childTip": "In Paragraph 4, 'contracts' means tightens and pulls closer toward the center, as shown by the clue 'contracts inward to take the place of the old eye' and 'when the new eyewall tightens.'",
+      "parentExplanation": "The context clues 'inward to take the place of the old eye' and the subsequent phrase 'when the new eyewall tightens' show that 'contracts' means tightens or draws inward.",
+      "retryHint": "Look at the words 'contracts inward to take the place of the old eye' and 'when the new eyewall tightens' in Paragraph 4."
     },
     {
       "questionId": "w46_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "It releases heat that makes air rise faster and lowers surface pressure, pulling more air inward.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that when rising mist turns to rain high in the sky, it releases heat that makes air rise faster and lowers surface pressure, pulling more outside air rushing in."
         },
         {
           "id": "B",
           "text": "It pushes warm Gulf Stream water back south toward the tropics.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 1 says the Gulf Stream flows north from the tropics, and rain inside a storm does not push the ocean current backward."
         },
         {
           "id": "C",
           "text": "It freezes the ocean waves into solid ice so the wind can slide across them without friction.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Hurricanes feed on warm ocean water—the ocean waves never freeze into solid ice beneath a tropical storm."
         },
         {
           "id": "D",
           "text": "It stops all evaporation from happening anywhere inside the storm's calm eye.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 2 begins by explaining that warm water feeds a storm through rapid evaporation, not by stopping evaporation."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "That released heat warms the surrounding air and makes it rise even faster, dropping the air pressure near the waves.",
-      "childTip": "Click the sentence in Paragraph 2 that explains what the released heat does to the air and pressure.",
-      "parentExplanation": "Paragraph 2 explains the cause-and-effect chain: rising mist turns to rain and releases heat, which makes air rise faster and drops air pressure near the waves, drawing more outside air inward."
+      "childTip": "Paragraph 2 explains that when rising mist turns to rain high in the sky, it releases heat that makes air rise faster and lowers surface pressure, pulling more outside air rushing in.",
+      "parentExplanation": "Paragraph 2 explains the cause-and-effect chain: rising mist turns to rain and releases heat, which makes air rise faster and drops air pressure near the waves, drawing more outside air inward.",
+      "retryHint": "Read the third, fourth, and fifth sentences of Paragraph 2 to trace the chain reaction after the rising mist turns to rain."
     },
     {
       "questionId": "w46_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "By listing every hurricane that has struck the southeastern coast over the past century",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Paragraph 4 never lists historical hurricane names or dates; it explains the science of an eyewall replacement cycle."
         },
         {
           "id": "B",
           "text": "By describing how pilots build airplanes strong enough to fly through heavy rain",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Flight crews are mentioned in Paragraph 5, and neither paragraph explains how engineers build airplanes."
         },
         {
           "id": "C",
           "text": "By contrasting what happens to the new eyewall over warm Gulf Stream water versus cooler shelf water",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The last two sentences of Paragraph 4 use an 'If... If...' contrast to compare what happens when the new eyewall tightens over deep, warm Gulf Stream water (winds surge) versus cooler shelf water (the storm stays weaker)."
         },
         {
           "id": "D",
           "text": "By arguing that satellites are no longer useful for tracking summer storms",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The author never claims satellites are useless; satellites track the cloud bands from above while flight crews check wind and heat inside the storm."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "If the hurricane is still floating over deep, warm Gulf Stream water when the new eyewall tightens, its winds can surge back to dangerous levels.",
-      "childTip": "Notice the two 'If' sentences at the end of Paragraph 4 comparing warm water and cooler water.",
-      "parentExplanation": "The end of Paragraph 4 uses parallel conditional ('If...') sentences to contrast two outcomes: re-strengthening over warm Gulf Stream water versus staying weaker over cooler shelf water."
+      "childTip": "The last two sentences of Paragraph 4 use an 'If... If...' contrast to compare what happens when the new eyewall tightens over deep, warm Gulf Stream water (winds surge) versus cooler shelf water (the storm stays weaker).",
+      "parentExplanation": "The end of Paragraph 4 uses parallel conditional ('If...') sentences to contrast two outcomes: re-strengthening over warm Gulf Stream water versus staying weaker over cooler shelf water.",
+      "retryHint": "Look at the two 'If' sentences at the end of Paragraph 4 to see the two different ocean conditions being compared."
     },
     {
       "questionId": "w46_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "Because flight crews cannot fly above the clouds when the sun is shining.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Flight crews fly right through tall storm cloud rings in Paragraph 5; sunshine never stops their weather planes."
         },
         {
           "id": "B",
           "text": "Because sensor tubes can only measure wind speed if they land on a dry sandy beach.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 says crews drop small tubes 'from the sky down to the sea' to check water heat and wind speed, not onto a dry beach."
         },
         {
           "id": "C",
           "text": "Because an outer eyewall always causes the Gulf Stream to reverse direction and flow south.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "An outer eyewall only blocks moisture from reaching the inner eyewall—it never reverses the flow of the Gulf Stream."
         },
         {
           "id": "D",
           "text": "Because the interaction between shifting eyewalls above and water heat below determines how strong the storm will be.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 4 and 5 explain that whether a storm hits land during a weak phase or surges back to a dangerous phase depends on both the shifting eyewalls above and the ocean water heat below."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By tracking both the ocean heat below and the shifting eyewalls above, forecasters give coastal families clearer warnings before the wind arrives.",
-      "childTip": "Check Paragraph 5 to see why forecasters track both ocean heat below and shifting eyewalls above.",
-      "parentExplanation": "Across Paragraphs 3-5 (ELAGSE5RI3), the author explains that a hurricane's strength depends on both the stage of its eyewall replacement cycle and the warmth of the water beneath it."
+      "childTip": "Paragraphs 4 and 5 explain that whether a storm hits land during a weak phase or surges back to a dangerous phase depends on both the shifting eyewalls above and the ocean water heat below.",
+      "parentExplanation": "Across Paragraphs 3-5 (ELAGSE5RI3), the author explains that a hurricane's strength depends on both the stage of its eyewall replacement cycle and the warmth of the water beneath it.",
+      "retryHint": "Read Paragraph 5 to see why flight crews drop tubes from the cloud rings down to the sea and what two things forecasters track."
     },
     {
       "questionId": "w46_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"Every late summer, weather satellites track spinning cloud bands across the Atlantic Ocean.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 only mentions weather satellites tracking cloud bands, without connecting eyewalls and ocean heat."
         },
         {
           "id": "B",
           "text": "\"By tracking both the ocean heat below and the shifting eyewalls above, forecasters give coastal families clearer warnings before the wind arrives.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This final sentence from Paragraph 5 directly supports Question 5 by stating that tracking both the ocean heat below and the shifting eyewalls above lets forecasters give clearer warnings."
         },
         {
           "id": "C",
           "text": "\"Most tropical storms weaken before they ever reach the southeastern coast.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This general fact from Paragraph 1 does not explain why meteorologists must study both ocean heat and shifting eyewalls."
         },
         {
           "id": "D",
           "text": "\"After churning for days, a mature storm often builds a second, wider ring of rain clouds outside its first eye.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This sentence from Paragraph 3 only describes the outer ring of rain clouds, without mentioning the ocean heat below."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "By tracking both the ocean heat below and the shifting eyewalls above, forecasters give coastal families clearer warnings before the wind arrives.",
-      "childTip": "Select the quote from Paragraph 5 that mentions both the ocean heat below and the shifting eyewalls above.",
-      "parentExplanation": "Option C directly quotes Paragraph 5, confirming that combining measurements of ocean heat and eyewall shifts enables accurate coastal warnings."
+      "childTip": "This final sentence from Paragraph 5 directly supports Question 5 by stating that tracking both the ocean heat below and the shifting eyewalls above lets forecasters give clearer warnings.",
+      "parentExplanation": "Option C directly quotes Paragraph 5, confirming that combining measurements of ocean heat and eyewall shifts enables accurate coastal warnings.",
+      "retryHint": "Choose the quote from Paragraph 5 that mentions both 'ocean heat below' and 'shifting eyewalls above.'"
     }
   ]
 }

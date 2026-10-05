@@ -73,31 +73,36 @@
           "id": "A",
           "text": "The oval rings that sealed the royal names on the stone",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The oval rings were just the carved borders around the royal names on the stone; stone carvings cannot match things by themselves."
         },
         {
           "id": "B",
           "text": "The Greek letters carved at the bottom of the dark slab",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The Greek letters at the bottom were what Thomas Young matched the royal rings to, not the scholar doing the matching."
         },
         {
           "id": "C",
           "text": "Thomas Young, who compared the rings with the Greek letters",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the passive phrase 'were matched by Thomas Young to Greek letters at the bottom' shows that Thomas Young performed the action of matching the royal names."
         },
         {
           "id": "D",
           "text": "The priests and clerks who carved the three scripts",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Ancient priests and clerks read the decree thousands of years ago, whereas Thomas Young was the modern scholar who matched the rings to the Greek text."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "On the dark slab of stone, the royal names sealed inside oval rings were matched by Thomas Young to Greek letters at the bottom.",
-      "childTip": "Locate the passive verb 'were matched by'—the name right after 'by' is the true actor.",
-      "parentExplanation": "The subject 'the royal names' receives the action 'were matched.' The agent performing the matching is introduced by 'by Thomas Young.'"
+      "childTip": "In Paragraph 2, the passive phrase 'were matched by Thomas Young to Greek letters at the bottom' shows that Thomas Young performed the action of matching the royal names.",
+      "parentExplanation": "The subject 'the royal names' receives the action 'were matched.' The agent performing the matching is introduced by 'by Thomas Young.'",
+      "retryHint": "Check the words right after 'matched by' in the Paragraph 2 sentence to see who compared the oval rings with the Greek letters."
     },
     {
       "questionId": "w22_q2",
@@ -114,31 +119,36 @@
           "id": "A",
           "text": "A blend that combines two different methods",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 4, 'hybrid' means a blend that combines two different methods, because Egyptian hieroglyphs combined spoken sound letters with symbolic meaning signs."
         },
         {
           "id": "B",
           "text": "A mistake carved by an untrained scribe",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The sentence calls the script 'a clever hybrid,' showing it was a smart, purposeful system rather than a scribe's mistake."
         },
         {
           "id": "C",
           "text": "A royal law written only for foreign kings",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "In Paragraph 4, Champollion is reading the native Egyptian pharaoh's name 'Ramses,' proving the system was not just for foreign kings."
         },
         {
           "id": "D",
           "text": "A secret language that can never be spoken aloud",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Champollion used spoken Coptic sounds like 'Ra' along with 'm' and 's' to read the words aloud, so it was definitely a spoken language."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "At once, he saw that the script was a clever hybrid of sound letters and meaning signs.",
-      "childTip": "Look at the words right after 'hybrid of'—it joins 'sound letters' and 'meaning signs' together.",
-      "parentExplanation": "In Paragraph 4, Champollion combines the solar symbol ('Ra') with phonetic consonant signs ('m' and 's'), proving that hieroglyphs are a 'hybrid' (combination) of ideograms and phonetic letters."
+      "childTip": "In Paragraph 4, 'hybrid' means a blend that combines two different methods, because Egyptian hieroglyphs combined spoken sound letters with symbolic meaning signs.",
+      "parentExplanation": "In Paragraph 4, Champollion combines the solar symbol ('Ra') with phonetic consonant signs ('m' and 's'), proving that hieroglyphs are a 'hybrid' (combination) of ideograms and phonetic letters.",
+      "retryHint": "Look at the words right after 'hybrid' in Paragraph 4 ('of sound letters and meaning signs') to see the two things being combined."
     },
     {
       "questionId": "w22_q3",
@@ -155,31 +165,36 @@
           "id": "A",
           "text": "He could not read any of the ancient Greek letters carved at the bottom of the Rosetta Stone.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 states that scholars already knew the ancient Greek letters in the bottom band, which is how Young matched Ptolemy's name."
         },
         {
           "id": "B",
           "text": "He assumed that Egyptians used phonetic sound signs only when spelling foreign rulers' names.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that after spelling out foreign names like Ptolemy, Thomas Young stopped short because he mistakenly believed Egyptians used sound signs only for foreign names."
         },
         {
           "id": "C",
           "text": "The oval rings containing Ptolemy's name had been completely chipped off the stone slab.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Ptolemy's name was still on the stone—Paragraph 2 says Young proved Ptolemy was spelled out by sound using bird and lion signs."
         },
         {
           "id": "D",
           "text": "He refused to study the bird and lion signs inside the royal rings.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Young specifically studied the bird and lion signs inside the oval rings to prove how Ptolemy's name was spelled by sound."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Yet Young soon stopped short, believing that Egyptians used sound signs only when writing foreign names.",
-      "childTip": "Click the final sentence of Paragraph 2 that explains why Thomas Young stopped short.",
-      "parentExplanation": "Paragraph 2 states that although Young proved foreign names like Ptolemy were spelled phonetically, he 'stopped short, believing that Egyptians used sound signs only when writing foreign names.'"
+      "childTip": "Paragraph 2 explains that after spelling out foreign names like Ptolemy, Thomas Young stopped short because he mistakenly believed Egyptians used sound signs only for foreign names.",
+      "parentExplanation": "Paragraph 2 states that although Young proved foreign names like Ptolemy were spelled phonetically, he 'stopped short, believing that Egyptians used sound signs only when writing foreign names.'",
+      "retryHint": "Read the last sentence of Paragraph 2 to see the mistaken belief that made Thomas Young stop short."
     },
     {
       "questionId": "w22_q4",
@@ -196,31 +211,36 @@
           "id": "A",
           "text": "Champollion had dug up the Rosetta Stone himself while serving as a soldier in 1799.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Soldiers near the port of Rosetta dug up the stone in 1799 (Paragraph 1), whereas Champollion was a scholar in France studying copies of inscriptions."
         },
         {
           "id": "B",
           "text": "He proved that every hieroglyph on Egyptian temple walls was a silent picture with zero spoken sounds.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Champollion proved the exact opposite: native Egyptian hieroglyphs included spoken phonetic sounds alongside meaning pictures."
         },
         {
           "id": "C",
           "text": "His knowledge of Coptic allowed him to connect the sun symbol's spoken sound ('Ra') with Young's phonetic 'm' and 's' signs to read native Egyptian words.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraphs 3 and 4 explain that because Champollion knew Coptic, he knew the Egyptian word for the sun symbol was pronounced 'Ra,' letting him combine it with Young's 'm' and 's' sounds to read 'Ramses.'"
         },
         {
           "id": "D",
           "text": "He translated the Greek band at the bottom of the stone before Thomas Young ever saw it.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Scholars already knew the Greek letters from the start, and Champollion built on Thomas Young's earlier sound chart rather than working before Young."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "Putting the idea of the sun together with those two sound signs, Champollion read the famous native pharaoh's name: Ramses.",
-      "childTip": "Trace how Paragraph 3's Coptic clue ('Ra') combines with Young's 'm' and 's' sounds in Paragraph 4.",
-      "parentExplanation": "Synthesizing Paragraphs 3 and 4 shows that Champollion's mastery of Coptic gave him the spoken word for the sun ('Ra'), which he combined with Young's phonetic 'm' and 's' signs to decode the native name 'Ramses.'"
+      "childTip": "Paragraphs 3 and 4 explain that because Champollion knew Coptic, he knew the Egyptian word for the sun symbol was pronounced 'Ra,' letting him combine it with Young's 'm' and 's' sounds to read 'Ramses.'",
+      "parentExplanation": "Synthesizing Paragraphs 3 and 4 shows that Champollion's mastery of Coptic gave him the spoken word for the sun ('Ra'), which he combined with Young's phonetic 'm' and 's' signs to decode the native name 'Ramses.'",
+      "retryHint": "Connect what Champollion had spent years learning in Paragraph 3 with how he read the first sign ('Ra') inside the ring in Paragraph 4."
     },
     {
       "questionId": "w22_q5",
@@ -238,31 +258,36 @@
           "id": "A",
           "text": "Ancient Egyptian scribes used walking legs at the end of every word to confuse foreign soldiers.",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "The tiny pair of walking legs in Paragraph 5 was added only to action words to show motion—and it helped readers understand the word rather than confuse soldiers."
         },
         {
           "id": "B",
           "text": "Cracking the Rosetta Stone required realizing that hieroglyphs blend spoken sound signs with symbolic meaning pictures.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across the passage, the central idea is that scholars finally decoded Egyptian hieroglyphs when Champollion realized the script blends spoken sound signs with silent meaning pictures."
         },
         {
           "id": "C",
           "text": "The Rosetta Stone was the only stone slab ever discovered near a port in Egypt.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "The passage never claims the Rosetta Stone was the only stone slab ever found in Egypt; in fact, Paragraph 3 mentions carvings from an older temple up the Nile."
         },
         {
           "id": "D",
           "text": "Coptic was much easier for European scholars to read than ancient Greek.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 states that scholars already knew ancient Greek easily, whereas Champollion had to spend years studying Coptic."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "To decipher a full line, a reader had to blend spoken syllables with silent clue pictures placed at the ends of words.",
-      "childTip": "Look for the choice that covers the main breakthrough about how both sounds and symbols work together.",
-      "parentExplanation": "The central idea across all five paragraphs is that scholars failed when looking only for pure symbols, and succeeded once Young and Champollion proved hieroglyphs combine phonetic syllables with ideographic clue pictures."
+      "childTip": "Across the passage, the central idea is that scholars finally decoded Egyptian hieroglyphs when Champollion realized the script blends spoken sound signs with silent meaning pictures.",
+      "parentExplanation": "The central idea across all five paragraphs is that scholars failed when looking only for pure symbols, and succeeded once Young and Champollion proved hieroglyphs combine phonetic syllables with ideographic clue pictures.",
+      "retryHint": "Look at the last sentence of Paragraph 4 and the first sentence of Paragraph 5 to see the key discovery that unlocked hieroglyphs."
     },
     {
       "questionId": "w22_q6",
@@ -280,31 +305,36 @@
           "id": "A",
           "text": "\"That long silence began to break in 1799 when soldiers near the port of Rosetta dug up a heavy slab of dark rock.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 1 only tells when and where the Rosetta Stone was dug up, not how the hieroglyphic writing system actually worked."
         },
         {
           "id": "B",
           "text": "\"Unlike Young, Champollion had spent years learning Coptic, the late church language passed down from ancient Egyptian speech.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 3 explains that Champollion studied Coptic, without stating how hieroglyphs combine spoken sounds and meaning pictures."
         },
         {
           "id": "C",
           "text": "\"In 1822, he received fresh copies of oval name rings carved at an older temple far up the Nile.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This line from Paragraph 3 tells when Champollion received copies of temple rings in 1822, rather than summing up the central discovery."
         },
         {
           "id": "D",
           "text": "\"To decipher a full line, a reader had to blend spoken syllables with silent clue pictures placed at the ends of words.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 5 directly supports Question 5 by explaining that reading a full line of hieroglyphs required blending spoken syllables with silent clue pictures."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "To decipher a full line, a reader had to blend spoken syllables with silent clue pictures placed at the ends of words.",
-      "childTip": "Choose the quote from Paragraph 5 that directly states how spoken syllables and silent clue pictures work together.",
-      "parentExplanation": "Option D directly proves Part A by summarizing how reading hieroglyphs requires blending spoken phonetic syllables with silent ideographic clue pictures."
+      "childTip": "This quotation from Paragraph 5 directly supports Question 5 by explaining that reading a full line of hieroglyphs required blending spoken syllables with silent clue pictures.",
+      "parentExplanation": "Option D directly proves Part A by summarizing how reading hieroglyphs requires blending spoken phonetic syllables with silent ideographic clue pictures.",
+      "retryHint": "Find the quote from Paragraph 5 that explains the two things a reader had to blend to decipher a full line of hieroglyphs."
     }
   ]
 }

@@ -71,31 +71,36 @@
           "id": "A",
           "text": "Hunting wolf packs chewed the willow groves down to the mud, and lingering elk herds helped the trees recover.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This reverses the two animals! Wolves are carnivores that hunt elk—they do not chew willow trees down to the mud."
         },
         {
           "id": "B",
           "text": "Lingering elk herds had chewed the groves down, and the return of hunting wolf packs gave the trees room to recover.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 3, 'browsed down... by lingering elk herds' and 'were finally given room to recover by the return of hunting wolf packs' show that elk herds chewed the groves down and returning wolves let them recover."
         },
         {
           "id": "C",
           "text": "Cottonwood groves chased the hunting wolf packs away from the muddy river bottoms for decades.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Cottonwood groves are trees rooted in the soil—they cannot chase wolf packs!"
         },
         {
           "id": "D",
           "text": "Park rangers planted plastic fences around every single willow tree in Canada.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Scientists brought gray wolves from Canada to Yellowstone in Paragraph 3; rangers did not put plastic fences around every willow tree in Canada."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Young willow and cottonwood groves, browsed down to the mud for decades by lingering elk herds, were finally given room to recover by the return of hunting wolf packs.",
-      "childTip": "Check both 'by' phrases: elk herds did the browsing down, while the return of wolf packs gave room to recover.",
-      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by lingering elk herds') names the agent that damaged the trees, and the second ('by the return of hunting wolf packs') names what enabled their recovery."
+      "childTip": "In Paragraph 3, 'browsed down... by lingering elk herds' and 'were finally given room to recover by the return of hunting wolf packs' show that elk herds chewed the groves down and returning wolves let them recover.",
+      "parentExplanation": "In this passive sentence, the first 'by' phrase ('by lingering elk herds') names the agent that damaged the trees, and the second ('by the return of hunting wolf packs') names what enabled their recovery.",
+      "retryHint": "Look at the two 'by' phrases in Paragraph 3: 'browsed down... by...' and 'were finally given room to recover by...'"
     },
     {
       "questionId": "w50_q2",
@@ -112,31 +117,36 @@
           "id": "A",
           "text": "Migrated hundreds of miles north into Canada every autumn",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Staying in the Yellowstone creek bottoms all winter is the opposite of migrating hundreds of miles away to Canada."
         },
         {
           "id": "B",
           "text": "Sprinted across the icy creeks as fast as possible",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Sprinting across creeks is the opposite of 'lingered'—Paragraph 3 confirms that lingering meant 'standing for hours in open river bottoms.'"
         },
         {
           "id": "C",
           "text": "Built tall wooden lodges out of woven willow branches",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Beavers are the animals that weave willow branches into lodges and dams in Paragraph 2, whereas elk chewed the young willow shoots down to stubs."
         },
         {
           "id": "D",
           "text": "Stayed in one area for a long time without moving away",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 1, 'lingered' means stayed in one area for a long time without moving away, because without wolves to chase them, the large elk herds stood all winter along the flat creek bottoms chewing the young shoots."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Instead, the elk herds grew so large that they lingered all winter along the flat creek bottoms.",
-      "childTip": "Compare Paragraph 1 with Paragraph 3, where elk later 'stopped standing for hours in open river bottoms.'",
-      "parentExplanation": "Paragraph 1 notes that elk stayed 'all winter along the flat creek bottoms,' and Paragraph 3 contrasts this by stating they later 'stopped standing for hours' there, confirming 'lingered' means remained or hung around."
+      "childTip": "In Paragraph 1, 'lingered' means stayed in one area for a long time without moving away, because without wolves to chase them, the large elk herds stood all winter along the flat creek bottoms chewing the young shoots.",
+      "parentExplanation": "Paragraph 1 notes that elk stayed 'all winter along the flat creek bottoms,' and Paragraph 3 contrasts this by stating they later 'stopped standing for hours' there, confirming 'lingered' means remained or hung around.",
+      "retryHint": "Compare how elk behaved in Paragraph 1 ('lingered all winter along the flat creek bottoms') with Paragraph 3 ('stopped standing for hours in open river bottoms')."
     },
     {
       "questionId": "w50_q3",
@@ -153,31 +163,36 @@
           "id": "A",
           "text": "They lacked tall willow branches to eat and use for building their lodges and dams.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "The last sentence of Paragraph 2 states that beavers vanished from several valleys because hungry elk had chewed down the young trees, leaving no tall willow branches for beavers to eat or weave into lodges and dams."
         },
         {
           "id": "B",
           "text": "The creeks froze solid from top to bottom during the hot summer months.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 2 says the streams grew 'wide, shallow, and warm under the summer sun'—they did not freeze solid in summer!"
         },
         {
           "id": "C",
           "text": "Gray wolves hunted all the beavers along the northern range in the 1920s.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The last wolf packs were removed in the 1920s, and when wolves returned in 1995, beaver colonies actually grew from one to nine."
         },
         {
           "id": "D",
           "text": "Native trout ate all the underwater plants that beavers needed for winter food.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Native trout are mentioned in Paragraph 5 because deep, cool beaver ponds helped trout thrive, not because trout ate beaver food."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Beavers vanished from several valleys because they had no tall willow branches to eat or weave into lodges and dams.",
-      "childTip": "Click the last sentence of Paragraph 2 that gives the exact reason beavers vanished from the valleys.",
-      "parentExplanation": "Paragraph 2 directly explains that beavers vanished from several valleys because overgrazing by elk left no tall willow branches for beavers to eat or weave into lodges and dams."
+      "childTip": "The last sentence of Paragraph 2 states that beavers vanished from several valleys because hungry elk had chewed down the young trees, leaving no tall willow branches for beavers to eat or weave into lodges and dams.",
+      "parentExplanation": "Paragraph 2 directly explains that beavers vanished from several valleys because overgrazing by elk left no tall willow branches for beavers to eat or weave into lodges and dams.",
+      "retryHint": "Read the last sentence of Paragraph 2 to see what beavers needed for food and building material."
     },
     {
       "questionId": "w50_q4",
@@ -194,31 +209,36 @@
           "id": "A",
           "text": "Elk herds learned to weave willow branches into shelters to hide from Canadian wolves.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Beavers—not elk herds—weave willow branches into lodges and dams; elk simply kept moving to avoid wolf packs."
         },
         {
           "id": "B",
           "text": "Park rangers dug nine artificial lakes with bulldozers to hold the spring snowmelt.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Beavers built the sturdy wood dams that formed deep ponds in Paragraph 4, not park rangers using bulldozers."
         },
         {
           "id": "C",
           "text": "The number of beaver colonies on the northern range grew from one to nine, and songbirds nested in the shady branches.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 4 supports the claim that taller willow thickets sparked new life by noting that songbirds returned to nest in the shady branches and beaver colonies across the northern range grew from one colony to nine."
         },
         {
           "id": "D",
           "text": "Every single creek in Yellowstone dried up completely within a few summers.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Instead of drying up, the creeks formed deep, cool ponds behind the beaver dams and narrower, deeper channels in Paragraph 5."
         }
       ],
       "provingParagraph": 4,
       "provingSentenceText": "One beaver colony grew to nine colonies across the northern range.",
-      "childTip": "Look in Paragraph 4 for the specific facts and numbers showing which animals returned to the willows.",
-      "parentExplanation": "In Paragraph 4 (ELAGSE5RI8), the author supports the claim that taller willows triggered new life by citing returning songbirds and the jump from one beaver colony to nine colonies."
+      "childTip": "Paragraph 4 supports the claim that taller willow thickets sparked new life by noting that songbirds returned to nest in the shady branches and beaver colonies across the northern range grew from one colony to nine.",
+      "parentExplanation": "In Paragraph 4 (ELAGSE5RI8), the author supports the claim that taller willows triggered new life by citing returning songbirds and the jump from one beaver colony to nine colonies.",
+      "retryHint": "Check Paragraph 4 for the specific animals and numbers that returned once the willow branches grew tall."
     },
     {
       "questionId": "w50_q5",
@@ -236,31 +256,36 @@
           "id": "A",
           "text": "By explaining that native trout pushed mud onto the riverbanks to shade the water",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Trout live in the cool water created by the narrower channels and beaver ponds—fish do not push mud onto riverbanks."
         },
         {
           "id": "B",
           "text": "By showing that wolf packs dug new river channels with their paws during the spring snowmelt",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Wolves reshaped the rivers indirectly by changing where elk grazed, not by digging river channels with their paws!"
         },
         {
           "id": "C",
           "text": "By proving that beavers only build dams in rivers where no willow trees or cottonwoods grow",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraphs 2 and 4 show the exact opposite: beavers need tall willow stems to eat and weave into their sturdy wood dams."
         },
         {
           "id": "D",
           "text": "By tracing how wolves kept elk moving, which let willow roots and beaver dams trap silt and narrow the creek banks",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Across Paragraphs 3 through 5, the author traces the step-by-step chain reaction: wolves kept elk moving, willow trees grew back, beavers built dams that trapped silt, and thick willow roots locked the crumbling banks into narrow, deep channels."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Silt settled to the bottom of the pools instead of washing downstream, and thick willow roots locked the banks into firm soil.",
-      "childTip": "Follow the chain from Paragraph 3 to Paragraph 5: wolves moved elk, willows grew, beavers built dams, and roots locked the soil.",
-      "parentExplanation": "Across Paragraphs 3-5, the author connects the return of wolves to elk movement, willow recovery, beaver dams trapping silt, and roots stabilizing the banks into narrower, deeper channels."
+      "childTip": "Across Paragraphs 3 through 5, the author traces the step-by-step chain reaction: wolves kept elk moving, willow trees grew back, beavers built dams that trapped silt, and thick willow roots locked the crumbling banks into narrow, deep channels.",
+      "parentExplanation": "Across Paragraphs 3-5, the author connects the return of wolves to elk movement, willow recovery, beaver dams trapping silt, and roots stabilizing the banks into narrower, deeper channels.",
+      "retryHint": "Look at Paragraph 5 to see how beaver ponds and thick willow roots physically changed the creek bottoms and banks."
     },
     {
       "questionId": "w50_q6",
@@ -278,31 +303,36 @@
           "id": "A",
           "text": "\"For nearly seventy years, not a single gray wolf howled in the valleys of Yellowstone National Park.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This opening sentence from Paragraph 1 only tells how long wolves were absent from Yellowstone before 1995."
         },
         {
           "id": "B",
           "text": "\"Silt settled to the bottom of the pools instead of washing downstream, and thick willow roots locked the banks into firm soil.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This sentence from Paragraph 5 directly proves Question 5 by explaining how trapped silt and thick willow roots physically healed and firmed up the worn-out riverbanks."
         },
         {
           "id": "C",
           "text": "\"In 1995, park scientists brought gray wolves from Canada back into Yellowstone.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This sentence from Paragraph 3 only states the year scientists brought wolves back from Canada, without showing how the riverbanks healed."
         },
         {
           "id": "D",
           "text": "\"The streams grew wide, shallow, and warm under the summer sun.\"",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "This detail from Paragraph 2 describes the damaged, crumbling streams before wolves returned, rather than how the rivers were healed."
         }
       ],
       "provingParagraph": 5,
       "provingSentenceText": "Silt settled to the bottom of the pools instead of washing downstream, and thick willow roots locked the banks into firm soil.",
-      "childTip": "Pick the quote in Paragraph 5 that shows how beaver pools and willow roots physically healed the banks.",
-      "parentExplanation": "Option D directly quotes Paragraph 5, showing the physical mechanism (trapped silt in beaver pools and thick willow roots locking the soil) that reshaped the riverbanks."
+      "childTip": "This sentence from Paragraph 5 directly proves Question 5 by explaining how trapped silt and thick willow roots physically healed and firmed up the worn-out riverbanks.",
+      "parentExplanation": "Option D directly quotes Paragraph 5, showing the physical mechanism (trapped silt in beaver pools and thick willow roots locking the soil) that reshaped the riverbanks.",
+      "retryHint": "Choose the quote from Paragraph 5 that shows how silt and willow roots changed the physical banks and pools of the creek."
     }
   ]
 }

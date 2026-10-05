@@ -72,31 +72,36 @@
           "id": "A",
           "text": "Layers of coarse river gravel and packed sand",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The layers of coarse river gravel and packed sand are the materials being put in place, not the workers doing the arranging."
         },
         {
           "id": "B",
           "text": "The rich topsoil at the top of every terrace",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The rich topsoil sat above the gravel and sand layers; soil cannot arrange stones beneath itself."
         },
         {
           "id": "C",
           "text": "Inca masons building the mountain terraces",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, the phrase 'were carefully arranged by Inca masons' tells us that the Inca masons performed the action of arranging the gravel and sand layers."
         },
         {
           "id": "D",
           "text": "Fierce summer storms drenching the mountain peaks",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "Fierce summer storms drenched the peaks later on, while the underground gravel filter had already been built by Inca masons."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Beneath the rich topsoil of every terrace, layers of coarse river gravel and packed sand were carefully arranged by Inca masons.",
-      "childTip": "Look right after 'were carefully arranged' to find the 'by' phrase naming the real builders.",
-      "parentExplanation": "In this passive sentence, 'layers of coarse river gravel and packed sand' is the grammatical subject receiving the action. The true actor performing the arranging is in the final 'by' phrase: 'Inca masons' (Option C)."
+      "childTip": "In Paragraph 2, the phrase 'were carefully arranged by Inca masons' tells us that the Inca masons performed the action of arranging the gravel and sand layers.",
+      "parentExplanation": "In this passive sentence, 'layers of coarse river gravel and packed sand' is the grammatical subject receiving the action. The true actor performing the arranging is in the final 'by' phrase: 'Inca masons' (Option C).",
+      "retryHint": "Look at the end of the sentence in Paragraph 2 after 'arranged by' to see who put the gravel and sand layers in place."
     },
     {
       "questionId": "w12_q2",
@@ -113,31 +118,36 @@
           "id": "A",
           "text": "Held on to and kept inside",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "In Paragraph 2, 'retained' means held on to and kept inside, because the dark stone walls soaked up warm sunlight all afternoon and held that heat through the freezing night."
         },
         {
           "id": "B",
           "text": "Blocked sunlight from reaching the stone walls",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 says the dark stone walls soaked up warm sunlight all afternoon rather than blocking it, and then held that warmth at night."
         },
         {
           "id": "C",
           "text": "Cracked into small pieces of river gravel",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "The tightly fitted granite walls stayed solid to hold the terrace steps in place; they did not crack into gravel at night."
         },
         {
           "id": "D",
           "text": "Melted the granite blocks into liquid rock",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Afternoon sunshine only warmed the granite stones enough to keep crop roots from freezing; it could never melt rock into liquid."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "Throughout the freezing night, the rocks retained that stored heat and kept potato and corn roots from turning to ice.",
-      "childTip": "Notice how the previous sentence says the walls soaked up warm sunlight all afternoon, and then kept roots from freezing at night.",
-      "parentExplanation": "The root 'tenere' means to hold ('re-' + 'tain' = hold back/keep). Because the stone walls soaked up afternoon sun and kept crop roots from freezing overnight, 'retained' means held on to that stored heat (Option A)."
+      "childTip": "In Paragraph 2, 'retained' means held on to and kept inside, because the dark stone walls soaked up warm sunlight all afternoon and held that heat through the freezing night.",
+      "parentExplanation": "The root 'tenere' means to hold ('re-' + 'tain' = hold back/keep). Because the stone walls soaked up afternoon sun and kept crop roots from freezing overnight, 'retained' means held on to that stored heat (Option A).",
+      "retryHint": "Read the sentence right before this one in Paragraph 2 to see what the dark stone walls soaked up all afternoon and kept at night."
     },
     {
       "questionId": "w12_q3",
@@ -154,31 +164,36 @@
           "id": "A",
           "text": "Wooden bridges attracted herds of wild animals that ate the corn and potato crops.",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never mentions wooden bridges attracting wild animals to eat crops; the problem was a lack of tall, straight timber trees."
         },
         {
           "id": "B",
           "text": "Inca masons did not know how to carve or fit granite blocks together on steep cliffs.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "Paragraph 2 proves that Inca masons were experts at carving and fitting granite blocks together on steep mountain cliffs."
         },
         {
           "id": "C",
           "text": "Wild mountain grass never rotted in the rain and lasted for hundreds of years without repairs.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Paragraph 5 actually states the opposite: grass rots over time in rain and wind, so villagers wove fresh bridge cables every spring."
         },
         {
           "id": "D",
           "text": "The high Andes lacked tall, straight trees for wooden beams, and stone arches were too heavy to cross such wide canyons.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 3 states that the high Andes lacked tall, straight timber trees for wooden beams and that stone arches were too heavy to stretch across such wide canyons."
         }
       ],
       "provingParagraph": 3,
       "provingSentenceText": "Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps.",
-      "childTip": "Click the sentence in Paragraph 3 that begins with 'Because the Andes lacked' to prove why wood and stone were not used.",
-      "parentExplanation": "Paragraph 3 directly explains the material constraint: 'Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps,' leading engineers to use wild golden grass (Option D)."
+      "childTip": "Paragraph 3 states that the high Andes lacked tall, straight timber trees for wooden beams and that stone arches were too heavy to stretch across such wide canyons.",
+      "parentExplanation": "Paragraph 3 directly explains the material constraint: 'Because the Andes lacked tall, straight timber trees for wooden beams, stone arches were too heavy to cross such wide gaps,' leading engineers to use wild golden grass (Option D).",
+      "retryHint": "Check the third sentence of Paragraph 3 for the two reasons why wooden beams and stone arches wouldn't work across deep Andean canyons."
     },
     {
       "questionId": "w12_q4",
@@ -195,31 +210,36 @@
           "id": "A",
           "text": "By focusing only on how villagers braided three or four grass cables together to form a single bridge floor",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "Braiding grass cables for bridges is only covered in Paragraphs 4 and 5, leaving out the stone farming terraces in Paragraph 2."
         },
         {
           "id": "B",
           "text": "By comparing the height of the Andes Mountains to other mountain ranges in North America and Europe",
           "isCorrect": false,
-          "trapType": "TRAP_OUTSIDE_INFO"
+          "trapType": "TRAP_OUTSIDE_INFO",
+          "childFeedback": "The passage never compares the Andes Mountains to ranges in North America or Europe; it stays focused on Inca engineering in South America."
         },
         {
           "id": "C",
           "text": "By introducing the harsh mountain challenges of the Andes and then explaining the engineering solutions the Inca created for farming and travel",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 1 introduces the steep cliffs, heavy rains, and freezing nights of the Andes, and Paragraphs 2–5 explain how Inca engineers solved farming with stone terraces and travel with grass bridges."
         },
         {
           "id": "D",
           "text": "By arguing that woven grass bridges were much more important to the Inca Empire than stone farming terraces",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "The author presents both stone terraces and grass bridges as equally vital partners ('Growing food was only half the battle'), not one as more important."
         }
       ],
       "provingParagraph": 1,
       "provingSentenceText": "Yet Inca engineers solved both farming and travel challenges using local stone and wild mountain grass.",
-      "childTip": "Look at the last sentence of Paragraph 1 to see the two big problems and solutions that organize the rest of the passage.",
-      "parentExplanation": "Aligned to ELAGSE5RI5, the passage uses a clear Problem/Solution structure forecast in Paragraph 1 ('solved both farming and travel challenges'): Paragraph 2 details the terrace solution for farming, and Paragraphs 3–5 detail the suspension bridge solution for travel (Option C)."
+      "childTip": "Paragraph 1 introduces the steep cliffs, heavy rains, and freezing nights of the Andes, and Paragraphs 2–5 explain how Inca engineers solved farming with stone terraces and travel with grass bridges.",
+      "parentExplanation": "Aligned to ELAGSE5RI5, the passage uses a clear Problem/Solution structure forecast in Paragraph 1 ('solved both farming and travel challenges'): Paragraph 2 details the terrace solution for farming, and Paragraphs 3–5 detail the suspension bridge solution for travel (Option C).",
+      "retryHint": "Look at the last sentence of Paragraph 1 and the last sentence of Paragraph 5 to see how the author pairs farming and travel challenges with Inca solutions."
     },
     {
       "questionId": "w12_q5",
@@ -237,31 +257,36 @@
           "id": "A",
           "text": "They allowed heavy storm water to drain safely to lower steps so the rich topsoil would not wash down the mountain.",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "Paragraph 2 explains that the underground layers of gravel and sand acted as a filter during fierce storms, letting extra water drain safely to lower steps so the topsoil would not wash away."
         },
         {
           "id": "B",
           "text": "They absorbed afternoon sunlight and warmed the potato roots during freezing mountain nights.",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "It was the dark granite walls on the outside of the terraces—not the buried gravel underneath—that soaked up afternoon sunlight and held heat at night."
         },
         {
           "id": "C",
           "text": "They provided a soft place for villagers to anchor the ends of their woven grass bridge cables.",
           "isCorrect": false,
-          "trapType": "TRAP_WORD_MATCH"
+          "trapType": "TRAP_WORD_MATCH",
+          "childFeedback": "Paragraph 4 says villagers anchored grass bridge cables around heavy stone piers on cliff edges, not in the gravel under farming topsoil."
         },
         {
           "id": "D",
           "text": "They stopped all rain clouds from forming above the peaks of the Andes Mountains.",
           "isCorrect": false,
-          "trapType": "TRAP_EXTREME"
+          "trapType": "TRAP_EXTREME",
+          "childFeedback": "Layers of gravel buried beneath the dirt helped drain rainwater after storms hit, but they could not stop rain clouds from forming in the sky."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode.",
-      "childTip": "Be careful not to mix up what the underground gravel filter did (drain water) with what the dark stone walls did (store heat).",
-      "parentExplanation": "Paragraph 2 describes two distinct features of the terraces: the underground gravel/sand filter drained storm water so soil would not erode (Option A), whereas the dark granite walls stored solar heat (Option B, a Syntactic/Concept Reversal trap)."
+      "childTip": "Paragraph 2 explains that the underground layers of gravel and sand acted as a filter during fierce storms, letting extra water drain safely to lower steps so the topsoil would not wash away.",
+      "parentExplanation": "Paragraph 2 describes two distinct features of the terraces: the underground gravel/sand filter drained storm water so soil would not erode (Option A), whereas the dark granite walls stored solar heat (Option B, a Syntactic/Concept Reversal trap).",
+      "retryHint": "Read the fourth sentence of Paragraph 2 to see what the 'underground filter' of gravel and sand did when fierce storms drenched the peaks."
     },
     {
       "questionId": "w12_q6",
@@ -279,31 +304,36 @@
           "id": "A",
           "text": "\"Flat farmland barely existed on the steep cliffs.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This detail from Paragraph 1 only states the problem of steep cliffs having little flat land, not how the underground gravel layers worked."
         },
         {
           "id": "B",
           "text": "\"When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode.\"",
           "isCorrect": true,
-          "trapType": null
+          "trapType": null,
+          "childFeedback": "This quotation from Paragraph 2 directly supports Question 5 by explaining how the underground filter of gravel and sand let storm water drain safely so the soil could not erode."
         },
         {
           "id": "C",
           "text": "\"Even better, the dark stone walls soaked up warm sunlight all afternoon.\"",
           "isCorrect": false,
-          "trapType": "TRAP_SYNTACTIC_REVERSAL"
+          "trapType": "TRAP_SYNTACTIC_REVERSAL",
+          "childFeedback": "This sentence from Paragraph 2 explains how the outer stone walls absorbed heat, rather than how the buried gravel and sand drained storm water."
         },
         {
           "id": "D",
           "text": "\"Each spring, local communities wove fresh cables and replaced the old bridge in just three days.\"",
           "isCorrect": false,
-          "trapType": "TRAP_TOO_NARROW"
+          "trapType": "TRAP_TOO_NARROW",
+          "childFeedback": "This line from Paragraph 5 describes replacing woven grass bridges each spring, which has nothing to do with terrace drainage in Paragraph 2."
         }
       ],
       "provingParagraph": 2,
       "provingSentenceText": "When fierce storms drenched the peaks, this underground filter let extra water drain safely to the step below so the soil could not erode.",
-      "childTip": "Pick the quote from Paragraph 2 that explains how the underground filter kept the soil from eroding during storms.",
-      "parentExplanation": "Option B directly proves the claim in Part A by quoting how the underground gravel and sand filter drained storm water safely so the topsoil could not erode."
+      "childTip": "This quotation from Paragraph 2 directly supports Question 5 by explaining how the underground filter of gravel and sand let storm water drain safely so the soil could not erode.",
+      "parentExplanation": "Option B directly proves the claim in Part A by quoting how the underground gravel and sand filter drained storm water safely so the topsoil could not erode.",
+      "retryHint": "Look for the quote from Paragraph 2 that mentions the 'underground filter' and what it prevented during storms."
     }
   ]
 }

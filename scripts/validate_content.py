@@ -235,15 +235,40 @@ def validate_workout_file(filepath: str, fix_metrics: bool = False) -> Tuple[boo
                 f"{q_id}: provingSentenceText must be >=20 chars and exist 100% verbatim in passage.text. Got: '{prov[:60]}'"
             )
 
-        # Child Tip check (<= 28 words, no jargon)
+        # Child Tip check (6 to 45 words, no jargon, no pre-answer "Click the sentence / Pick the quote" imperatives)
         tip = q.get("childTip", "")
         tip_words = re.findall(r"[A-Za-z0-9'-]+", tip)
-        if not (3 <= len(tip_words) <= 28):
-            errors.append(f"{q_id}: childTip has {len(tip_words)} words (must be 3-28 words): '{tip}'")
-        tip_lower = tip.lower()
+        if not (5 <= len(tip_words) <= 45):
+            errors.append(f"{q_id}: childTip has {len(tip_words)} words (must be 5-45 words): '{tip}'")
+        tip_lower = tip.lower().strip()
         for banned in BANNED_CHILD_JARGON:
             if re.search(rf"\b{re.escape(banned)}\b", tip_lower):
                 errors.append(f"{q_id}: childTip contains banned psychometric jargon '{banned}': '{tip}'")
+        if re.match(r"^(click the|first click|pick the quote|select the quote|choose the quote|pick the sentence)\b", tip_lower):
+            errors.append(f"{q_id}: childTip sounds like a pre-answer instruction instead of explaining WHY the answer is right: '{tip}'")
+
+        # Retry Hint check (4 to 36 words, no jargon)
+        retry_hint = q.get("retryHint", "")
+        if retry_hint:
+            rh_words = re.findall(r"[A-Za-z0-9'-]+", retry_hint)
+            if not (4 <= len(rh_words) <= 38):
+                errors.append(f"{q_id}: retryHint has {len(rh_words)} words (must be 4-38 words): '{retry_hint}'")
+            for banned in BANNED_CHILD_JARGON:
+                if re.search(rf"\b{re.escape(banned)}\b", retry_hint.lower()):
+                    errors.append(f"{q_id}: retryHint contains banned psychometric jargon '{banned}': '{retry_hint}'")
+
+        # Option-level childFeedback check
+        for o in opts:
+            cfb = o.get("childFeedback", "")
+            if not cfb:
+                errors.append(f"{q_id} Option {o.get('id')}: missing 'childFeedback' explanation")
+            else:
+                cfb_words = re.findall(r"[A-Za-z0-9'-]+", cfb)
+                if not (4 <= len(cfb_words) <= 45):
+                    errors.append(f"{q_id} Option {o.get('id')}: childFeedback has {len(cfb_words)} words (must be 4-45 words): '{cfb}'")
+                for banned in BANNED_CHILD_JARGON:
+                    if re.search(rf"\b{re.escape(banned)}\b", cfb.lower()):
+                        errors.append(f"{q_id} Option {o.get('id')}: childFeedback contains banned jargon '{banned}': '{cfb}'")
 
         # EBSR Part B verbatim quote check on all 4 options
         if q.get("itemType") == "EBSR_PART_B" or q_num == 6:
