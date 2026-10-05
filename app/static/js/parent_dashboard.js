@@ -1537,13 +1537,6 @@
                         <td class="py-3 px-4 text-right space-x-1.5 whitespace-nowrap">
                           <button
                             type="button"
-                            onclick="window.ParentUI.openTrialReading('${escapeHtml(tid)}')"
-                            class="px-2.5 py-1 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 font-extrabold text-xs transition cursor-pointer"
-                          >
-                            📖 Open Reading
-                          </button>
-                          <button
-                            type="button"
                             onclick="window.ParentUI.openTrialInspector('${escapeHtml(tid)}')"
                             class="px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 font-extrabold text-xs transition cursor-pointer"
                           >
@@ -1638,9 +1631,9 @@
         trapLookup[t.code] = t;
       });
 
-      // Render collapsible Reading Passage Panel (or compact Open Reading Banner when collapsed)
+      // Render collapsible Reading Passage Panel when toggled open via header button
       let passagePanelHtml = '';
-      if (passage && passage.text) {
+      if (this.inspectorPassageOpen && passage && passage.text) {
         const rawParas = String(passage.text)
           .split(/\n\s*\n/)
           .map((p) => p.trim())
@@ -1648,31 +1641,8 @@
         const ms = passage.monsterSentence || null;
         const tier2 = Array.isArray(passage.tier2Words) ? passage.tier2Words : [];
 
-        if (!this.inspectorPassageOpen) {
-          passagePanelHtml = `
-            <div class="bg-indigo-50/80 border-b border-indigo-200 px-5 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <div class="text-[11px] font-extrabold uppercase tracking-wider text-indigo-700">
-                  📖 Assessment Reading Passage (${rawParas.length} Paragraphs &bull; ${
-                    workoutObj ? workoutObj.genre || 'Reading' : trial.genre || 'Reading'
-                  } &bull; ${trial.targetLexile || (workoutObj && workoutObj.targetLexile) || 960}L)
-                </div>
-                <div class="text-sm sm:text-base font-extrabold text-slate-900">
-                  ${escapeHtml(passage.title || trial.title || 'Reading Passage')}
-                </div>
-              </div>
-              <button
-                type="button"
-                onclick="window.ParentUI.toggleInspectorPassage()"
-                class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-extrabold shadow-xs transition cursor-pointer flex items-center gap-1.5"
-              >
-                <span>📖 Open Full Reading Passage</span>
-              </button>
-            </div>
-          `;
-        } else {
-          // Map proving sentences to question numbers so parents can spot them in the passage
-          const proofSentences = items
+        // Map proving sentences to question numbers so parents can spot them in the passage
+        const proofSentences = items
             .map((it, idx) => {
               const qDef = questions[idx] || {};
               return {
@@ -1784,7 +1754,6 @@
               }
             </div>
           `;
-        }
       }
 
       return `
