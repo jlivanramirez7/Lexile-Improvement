@@ -543,6 +543,7 @@
       this.session = {
         sessionId: `trial_${now}_${studentId}`,
         isSubmitting: false,
+        confirmingSubmit: false,
         workout: workout,
         startedAtMs: now,
         questionStartedAtMs: now,
@@ -827,7 +828,7 @@
                     : `
                     <button
                       type="button"
-                      onclick="window.StudentUI.finishWorkout()"
+                      onclick="window.StudentUI.requestFinishWorkout()"
                       class="px-6 py-2.5 rounded-xl ${
                         qState.status === 'resolved'
                           ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-sm'
@@ -843,6 +844,7 @@
 
           </div>
         </div>
+        ${this.session.confirmingSubmit ? this.renderSubmitConfirmModal() : ''}
       `;
 
       // If there is an active proof sentence to scroll to & pulse, scroll smoothly
@@ -1589,11 +1591,195 @@
     },
 
     /**
+     * Open the "Are you sure you want to submit?" confirmation modal before final submission
+     */
+    requestFinishWorkout() {
+      if (!this.session || this.session.isSubmitting) return;
+      this.recordActiveQuestionTime();
+      this.session.confirmingSubmit = true;
+      this.renderWorkspace();
+    },
+
+    closeSubmitConfirmModal() {
+      if (!this.session) return;
+      this.session.confirmingSubmit = false;
+      this.renderWorkspace();
+    },
+
+    jumpToQuestionFromModal(idx) {
+      if (!this.session) return;
+      this.session.confirmingSubmit = false;
+      this.goToQuestion(idx);
+    },
+
+    confirmFinishWorkout() {
+      if (!this.session || this.session.isSubmitting) return;
+      this.session.confirmingSubmit = false;
+      this.finishWorkout();
+    },
+
+    renderSubmitConfirmModal() {
+      if (!this.session) return '';
+      const itemStates = this.session.itemStates || [];
+      const totalQuestions = itemStates.length || 6;
+
+      const unresolved = itemStates
+        .map((st, idx) => ({ st, idx, qNum: idx + 1 }))
+        .filter(({ st }) => st.status !== 'resolved');
+
+      const uncheckedSelections = unresolved.filter(({ st }) => Boolean(st.selectedOptionId));
+      const hasUnresolved = unresolved.length > 0;
+
+      let statusBannerHtml = '';
+      if (uncheckedSelections.length > 0) {
+        const qList = uncheckedSelections.map((u) => u.qNum).join(', ');
+        statusBannerHtml = `
+          <div class="rounded-2xl bg-amber-50 border border-amber-200 p-4 text-left space-y-1.5">
+            <p class="text-sm sm:text-base font-extrabold text-amber-950">
+              ⚠️ Wait! You picked an answer on Question ${qList}, but haven't clicked <span class="inline-block px-2 py-0.5 rounded-lg bg-emerald-600 text-white text-xs">✓ Check</span> yet!
+            </p>
+            <p class="text-xs sm:text-sm font-medium text-amber-900">
+              Tap <strong>◀ Go Back</strong> or tap a question below to check your answer first.
+            </p>
+          </div>
+        `;
+      } else if (hasUnresolved) {
+        const qList = unresolved.map((u) => u.qNum).join(', ');
+        statusBannerHtml = `
+          <div class="rounded-2xl bg-amber-50 border border-amber-200 p-4 text-left space-y-1.5">
+            <p class="text-sm sm:text-base font-extrabold text-amber-950">
+              ⚠️ Hold on! Question ${qList} ${unresolved.length === 1 ? 'is' : 'are'} not finished yet.
+            </p>
+            <p class="text-xs sm:text-sm font-medium text-amber-900">
+              Tap a question number below to go back and finish it, or submit now if you are ready.
+            </p>
+          </div>
+        `;
+      } else {
+        statusBannerHtml = `
+          <div class="rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-left space-y-1">
+            <p class="text-sm sm:text-base font-extrabold text-emerald-950">
+              🎉 All ${totalQuestions} questions are checked and complete!
+            </p>
+            <p class="text-xs sm:text-sm font-medium text-emerald-800">
+              Ready to turn in your daily practice and see your score?
+            </p>
+          </div>
+        `;
+      }
+
+      const pillsHtml = itemStates
+        .map((st, idx) => {
+          let pillClasses = 'bg-slate-100 text-slate-700 border-slate-300 hover:bg-slate-200';
+          let icon = '○';
+          if (st.status === 'resolved') {
+            pillClasses = 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100';
+            icon = '✓';
+          } else if (st.selectedOptionId) {
+            pillClasses = 'bg-amber-100 text-amber-950 border-amber-400 ring-2 ring-amber-300 hover:bg-amber-200';
+            icon = '⏳';
+          } else if (st.status === 'retry_pending') {
+            pillClasses = 'bg-amber-50 text-amber-900 border-amber-300 hover:bg-amber-100';
+            icon = '🔄';
+          }
+
+          return `
+            <button
+              type="button"
+              onclick="window.StudentUI.jumpToQuestionFromModal(${idx})"
+              class="px-3 py-2 rounded-xl border text-xs font-extrabold transition cursor-pointer flex items-center justify-center gap-1 ${pillClasses}"
+            >
+              <span>${icon}</span>
+              <span>Q${idx + 1}</span>
+            </button>
+          `;
+        })
+        .join('');
+
+      const goBackBtnClass = hasUnresolved
+        ? 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm'
+        : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200';
+
+      const submitBtnClass = hasUnresolved
+        ? 'bg-white hover:bg-amber-50 text-amber-900 border-2 border-amber-300'
+        : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm';
+
+      return `
+        <div
+          id="student-submit-confirm-modal"
+          onclick="window.StudentUI.closeSubmitConfirmModal()"
+          class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 backdrop-blur-xs p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="submit-confirm-title"
+        >
+          <div
+            onclick="event.stopPropagation()"
+            class="w-full max-w-md bg-white rounded-3xl border border-slate-200 shadow-2xl p-6 sm:p-7 space-y-5 text-center relative"
+          >
+            <button
+              type="button"
+              onclick="window.StudentUI.closeSubmitConfirmModal()"
+              aria-label="Close"
+              class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 font-extrabold text-sm flex items-center justify-center transition cursor-pointer"
+            >
+              ✕
+            </button>
+
+            <div class="mx-auto w-14 h-14 rounded-2xl ${
+              hasUnresolved ? 'bg-amber-100 text-amber-600' : 'bg-emerald-100 text-emerald-600'
+            } flex items-center justify-center text-3xl shadow-2xs">
+              ${hasUnresolved ? '🤔' : '🏁'}
+            </div>
+
+            <div class="space-y-1.5">
+              <h3 id="submit-confirm-title" class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                Are you sure you want to submit?
+              </h3>
+              <p class="text-xs sm:text-sm font-semibold text-slate-500">
+                Once you submit, your daily practice answers are locked in.
+              </p>
+            </div>
+
+            ${statusBannerHtml}
+
+            <div class="space-y-2">
+              <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">
+                Question Check-In
+              </div>
+              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                ${pillsHtml}
+              </div>
+            </div>
+
+            <div class="pt-2 flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-end gap-3">
+              <button
+                type="button"
+                onclick="window.StudentUI.closeSubmitConfirmModal()"
+                class="flex-1 px-5 py-3 rounded-2xl font-extrabold text-sm transition cursor-pointer ${goBackBtnClass}"
+              >
+                ◀ Go Back
+              </button>
+              <button
+                type="button"
+                onclick="window.StudentUI.confirmFinishWorkout()"
+                class="flex-1 px-5 py-3 rounded-2xl font-extrabold text-sm transition cursor-pointer ${submitBtnClass}"
+              >
+                ✅ Yes, Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    },
+
+    /**
      * Finish the workout, build the telemetry trial payload, call V2Engine.recordCompletedTrial(),
      * and show Screen 3 (Celebration Card)
      */
     finishWorkout() {
       if (!this.session || this.session.isSubmitting) return;
+      this.session.confirmingSubmit = false;
       this.session.isSubmitting = true;
       this.recordActiveQuestionTime();
 
@@ -1848,6 +2034,12 @@
     StudentUI.refreshHeader();
     if (StudentUI.currentScreen === 'launchpad') {
       StudentUI.renderLaunchpad();
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && StudentUI.session && StudentUI.session.confirmingSubmit) {
+      StudentUI.closeSubmitConfirmModal();
     }
   });
 
