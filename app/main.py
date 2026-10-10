@@ -1364,6 +1364,34 @@ if HAS_FASTAPI:
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
+@app.get("/manifest.json")
+@app.get("/manifest.webmanifest")
+def read_manifest():
+    return FileResponse(
+        os.path.join(STATIC_DIR, "manifest.json"),
+        media_type="application/manifest+json",
+    )
+
+
+@app.get("/sw.js")
+def read_service_worker():
+    resp = FileResponse(
+        os.path.join(STATIC_DIR, "sw.js"),
+        media_type="application/javascript",
+    )
+    if hasattr(resp, "headers") and isinstance(resp.headers, dict):
+        resp.headers["Service-Worker-Allowed"] = "/"
+    return resp
+
+
+@app.get("/favicon.ico")
+def read_favicon():
+    return FileResponse(
+        os.path.join(STATIC_DIR, "icons", "icon-192.png"),
+        media_type="image/png",
+    )
+
+
 @app.get("/")
 def read_root():
     return FileResponse(os.path.join(STATIC_DIR, "index.html"))
@@ -1391,11 +1419,13 @@ def run_stdlib_http_server(host: str = "0.0.0.0", port: int = 8000):
             self.end_headers()
             self.wfile.write(raw)
 
-        def _send_file(self, filepath: str):
+        def _send_file(self, filepath: str, media_type: Optional[str] = None, extra_headers: Optional[Dict[str, str]] = None):
             if not os.path.isfile(filepath):
                 self._send_json(404, {"detail": "File not found"})
                 return
-            ctype, _ = mimetypes.guess_type(filepath)
+            ctype = media_type
+            if not ctype:
+                ctype, _ = mimetypes.guess_type(filepath)
             ctype = ctype or "application/octet-stream"
             with open(filepath, "rb") as f:
                 data = f.read()
@@ -1404,6 +1434,9 @@ def run_stdlib_http_server(host: str = "0.0.0.0", port: int = 8000):
             self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
             self.send_header("Pragma", "no-cache")
             self.send_header("Expires", "0")
+            if extra_headers:
+                for hk, hv in extra_headers.items():
+                    self.send_header(hk, hv)
             self.send_header("Content-Length", str(len(data)))
             self.end_headers()
             self.wfile.write(data)
@@ -1416,6 +1449,22 @@ def run_stdlib_http_server(host: str = "0.0.0.0", port: int = 8000):
 
             if path == "/":
                 return self._send_file(os.path.join(STATIC_DIR, "index.html"))
+            if path in ("/manifest.json", "/manifest.webmanifest"):
+                return self._send_file(
+                    os.path.join(STATIC_DIR, "manifest.json"),
+                    media_type="application/manifest+json; charset=utf-8",
+                )
+            if path == "/sw.js":
+                return self._send_file(
+                    os.path.join(STATIC_DIR, "sw.js"),
+                    media_type="application/javascript; charset=utf-8",
+                    extra_headers={"Service-Worker-Allowed": "/"},
+                )
+            if path == "/favicon.ico":
+                return self._send_file(
+                    os.path.join(STATIC_DIR, "icons", "icon-192.png"),
+                    media_type="image/png",
+                )
             if path == "/v1":
                 v1_p = os.path.join(STATIC_DIR, "v1_index.html")
                 return self._send_file(v1_p if os.path.exists(v1_p) else os.path.join(STATIC_DIR, "index.html"))

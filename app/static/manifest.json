@@ -1,0 +1,69 @@
+{
+  "id": "/",
+  "name": "BEACON Quest — Reading & Math Adventure",
+  "short_name": "BEACON Quest",
+  "description": "5th Grade DRC BEACON Reading & Math Adventure Simulator & Parent Executive Telemetry",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f8fafc",
+  "theme_color": "#4f46e5",
+  "categories": ["education", "kids", "books"],
+  "icons": [
+    {
+      "src": "/static/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/static/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/static/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Reading Practice",
+      "short_name": "Reading",
+      "description": "Launch today's DRC BEACON Reading Adventure",
+      "url": "/?subject=reading&mode=student",
+      "icons": [{ "src": "/static/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Math Practice",
+      "short_name": "Math",
+      "description": "Launch today's Math Adventure",
+      "url": "/?subject=math&mode=student",
+      "icons": [{ "src": "/static/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Parent Dashboard",
+      "short_name": "Parent",
+      "description": "Open Executive Telemetry & Dickerson AC Readiness",
+      "url": "/?mode=parent",
+      "icons": [{ "src": "/static/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

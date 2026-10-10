@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="BEACON Quest" />
+  <meta name="application-name" content="BEACON Quest" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="/static/icons/icon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/icons/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />
   <title>BEACON Quest — V2 Reading Adventure &amp; Executive Telemetry</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -30,26 +40,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/static/css/v2_styles.css?v=20261005v5" />
+  <link rel="stylesheet" href="/static/css/v2_styles.css?v=20261010v1" />
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans antialiased selection:bg-amber-200 selection:text-slate-900">
 
   <!-- TOP NAVIGATION BAR -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 min-h-16 py-2 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3">
       
       <!-- Left: App Icon + BEACON Quest Title + Subject Switcher (📚 Reading | 📐 Math) -->
-      <div class="flex items-center gap-3 sm:gap-4">
+      <div class="flex items-center gap-2.5 sm:gap-4">
         <div
           onclick="if (window.StudentUI && window.StudentUI.exitToHome) window.StudentUI.exitToHome();"
-          class="flex items-center gap-2.5 cursor-pointer group select-none"
+          class="flex items-center gap-2 cursor-pointer group select-none"
           title="Return Home"
         >
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center text-white text-xl shadow-sm group-hover:scale-105 transition-transform">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center text-white text-lg sm:text-xl shadow-sm group-hover:scale-105 transition-transform">
             🧭
           </div>
           <div>
-            <span class="text-lg sm:text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-950 via-indigo-800 to-violet-700 bg-clip-text text-transparent">
+            <span class="text-base sm:text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-950 via-indigo-800 to-violet-700 bg-clip-text text-transparent">
               BEACON Quest
             </span>
           </div>
@@ -61,7 +71,7 @@
             id="subject-btn-reading"
             type="button"
             onclick="window.switchSubject('reading')"
-            class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer"
+            class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer"
           >
             📚 Reading
           </button>
@@ -69,7 +79,7 @@
             id="subject-btn-math"
             type="button"
             onclick="window.switchSubject('math')"
-            class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer"
+            class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer"
           >
             📐 Math
           </button>
@@ -77,9 +87,9 @@
       </div>
 
       <!-- Center (Visible in Student View): Streak Counter, Level Bar, & Student Selector -->
-      <div id="nav-student-center" class="flex items-center gap-2.5 sm:gap-4">
+      <div id="nav-student-center" class="flex items-center gap-2 sm:gap-4">
         <!-- Streak Pill -->
-        <div id="nav-streak-badge" class="flex items-center gap-1.5 bg-amber-50 border border-amber-200/80 text-amber-800 px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-2xs">
+        <div id="nav-streak-badge" class="flex items-center gap-1.5 bg-amber-50 border border-amber-200/80 text-amber-800 px-2.5 sm:px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-2xs">
           <span>🔥</span>
           <span id="nav-streak-text">3 Days</span>
         </div>
@@ -102,33 +112,46 @@
             id="nav-student-select"
             aria-label="Select Student"
             onchange="if (window.V2Engine && window.V2Engine.switchStudent) window.V2Engine.switchStudent(this.value);"
-            class="appearance-none bg-slate-100 hover:bg-slate-200/70 text-slate-800 font-bold text-xs sm:text-sm rounded-xl pl-3 pr-8 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition cursor-pointer"
+            class="appearance-none bg-slate-100 hover:bg-slate-200/70 text-slate-800 font-bold text-xs sm:text-sm rounded-xl pl-2.5 pr-7 py-1.5 sm:py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition cursor-pointer"
           >
             <option value="lucas">👦 Lucas Ramirez</option>
             <option value="evelyn_mietling">👧 Evelyn Mietling</option>
           </select>
-          <span class="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs">▼</span>
+          <span class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-slate-500 text-xs">▼</span>
         </div>
       </div>
 
-      <!-- Right: Mode Toggle Buttons (🎮 Practice & 📊 Parent) -->
-      <div class="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl border border-slate-200">
+      <!-- Right: Install App Button + Mode Toggle Buttons (🎮 Practice & 📊 Parent) -->
+      <div class="flex items-center gap-2">
         <button
-          id="mode-btn-student"
+          id="pwa-install-btn"
           type="button"
-          onclick="window.switchAppMode('student')"
-          class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs"
+          onclick="window.handlePwaInstallClick()"
+          title="Install BEACON Quest App on Android"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-extrabold shadow-xs transition cursor-pointer"
         >
-          🎮 Practice
+          <span>📲</span>
+          <span>Install App</span>
         </button>
-        <button
-          id="mode-btn-parent"
-          type="button"
-          onclick="window.switchAppMode('parent')"
-          class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900"
-        >
-          📊 Parent
-        </button>
+
+        <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200">
+          <button
+            id="mode-btn-student"
+            type="button"
+            onclick="window.switchAppMode('student')"
+            class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer"
+          >
+            🎮 Practice
+          </button>
+          <button
+            id="mode-btn-parent"
+            type="button"
+            onclick="window.switchAppMode('parent')"
+            class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer"
+          >
+            📊 Parent
+          </button>
+        </div>
       </div>
 
     </div>
@@ -195,8 +218,148 @@
   <!-- FLOATING TOAST NOTIFICATION -->
   <div id="v2-toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
+  <!-- ANDROID / MOBILE APP INSTALL GUIDE MODAL -->
+  <div
+    id="pwa-install-modal"
+    onclick="window.closePwaInstallModal()"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 backdrop-blur-xs p-4"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="pwa-install-title"
+  >
+    <div
+      onclick="event.stopPropagation()"
+      class="w-full max-w-md bg-white rounded-3xl border border-slate-200 shadow-2xl p-6 sm:p-7 space-y-5 relative"
+    >
+      <button
+        type="button"
+        onclick="window.closePwaInstallModal()"
+        aria-label="Close"
+        class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 font-extrabold text-sm flex items-center justify-center transition cursor-pointer"
+      >
+        ✕
+      </button>
+
+      <div class="flex items-center gap-3.5">
+        <img
+          src="/static/icons/icon-192.png"
+          alt="BEACON Quest App Icon"
+          class="w-14 h-14 rounded-2xl shadow-sm border border-indigo-200"
+        />
+        <div>
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-extrabold">
+            🤖 Android App Ready
+          </span>
+          <h3 id="pwa-install-title" class="text-xl font-black text-slate-900 tracking-tight mt-0.5">
+            Install BEACON Quest
+          </h3>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm font-medium text-slate-600 leading-relaxed">
+        Install <strong>BEACON Quest</strong> directly onto your Android phone or tablet so it opens full-screen from your Home Screen and App Drawer just like a native app:
+      </p>
+
+      <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4 space-y-3 text-xs sm:text-sm text-slate-800">
+        <div class="flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-indigo-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
+          <div>
+            Tap the <strong>⋮ Menu</strong> button in the top-right corner of Chrome (or your Android browser).
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-indigo-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
+          <div>
+            Tap <strong>📲 Install app</strong> (or <strong>Add to Home screen</strong> &rarr; <strong>Install</strong>).
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
+          <div>
+            Launch <strong>BEACON Quest</strong> anytime from your Android Home Screen!
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-1 flex justify-end">
+        <button
+          type="button"
+          onclick="window.closePwaInstallModal()"
+          class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm shadow-xs transition cursor-pointer"
+        >
+          Got It!
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- APPLICATION SCRIPTS -->
   <script>
+    window._deferredInstallPrompt = null;
+
+    window.isStandaloneApp = function() {
+      return (
+        window.matchMedia('(display-mode: standalone)').matches ||
+        window.matchMedia('(display-mode: fullscreen)').matches ||
+        window.navigator.standalone === true
+      );
+    };
+
+    window.updateInstallButtonVisibility = function() {
+      const btn = document.getElementById('pwa-install-btn');
+      if (!btn) return;
+      if (window.isStandaloneApp()) {
+        btn.classList.add('hidden');
+      } else {
+        btn.classList.remove('hidden');
+      }
+    };
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      window._deferredInstallPrompt = e;
+      window.updateInstallButtonVisibility();
+    });
+
+    window.addEventListener('appinstalled', () => {
+      window._deferredInstallPrompt = null;
+      window.updateInstallButtonVisibility();
+      window.closePwaInstallModal();
+      if (typeof window.showV2Toast === 'function') {
+        window.showV2Toast('BEACON Quest installed on your device!', 'emerald');
+      }
+    });
+
+    window.handlePwaInstallClick = async function() {
+      if (window._deferredInstallPrompt) {
+        try {
+          window._deferredInstallPrompt.prompt();
+          const choice = await window._deferredInstallPrompt.userChoice;
+          if (choice && choice.outcome === 'accepted') {
+            window._deferredInstallPrompt = null;
+          }
+          return;
+        } catch (err) {
+          console.warn('Install prompt error:', err);
+        }
+      }
+      const modal = document.getElementById('pwa-install-modal');
+      if (modal) modal.classList.remove('hidden');
+    };
+
+    window.closePwaInstallModal = function() {
+      const modal = document.getElementById('pwa-install-modal');
+      if (modal) modal.classList.add('hidden');
+    };
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch((err) => {
+          console.warn('ServiceWorker registration failed:', err);
+        });
+      });
+    }
+
     window.switchSubject = function(subject) {
       const cleanSubj = subject === 'math' ? 'math' : 'reading';
       const btnReading = document.getElementById('subject-btn-reading');
@@ -204,11 +367,11 @@
 
       if (btnReading && btnMath) {
         if (cleanSubj === 'math') {
-          btnMath.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-emerald-600 text-white shadow-xs cursor-pointer';
-          btnReading.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer';
+          btnMath.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-emerald-600 text-white shadow-xs cursor-pointer';
+          btnReading.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer';
         } else {
-          btnReading.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer';
-          btnMath.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer';
+          btnReading.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer';
+          btnMath.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer';
         }
       }
 
@@ -232,16 +395,16 @@
       if (mode === 'parent') {
         studentView.classList.add('hidden');
         parentView.classList.remove('hidden');
-        btnParent.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs';
-        btnStudent.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900';
+        btnParent.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer';
+        btnStudent.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer';
         if (window.ParentUI && typeof window.ParentUI.renderDashboard === 'function') {
           window.ParentUI.renderDashboard();
         }
       } else {
         parentView.classList.add('hidden');
         studentView.classList.remove('hidden');
-        btnStudent.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs';
-        btnParent.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900';
+        btnStudent.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer';
+        btnParent.className = 'px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 cursor-pointer';
         if (window.StudentUI && typeof window.StudentUI.refreshHeader === 'function') {
           window.StudentUI.refreshHeader();
         }
@@ -271,14 +434,25 @@
       }, 3200);
     };
   </script>
-  <script src="/static/js/state_and_telemetry.js?v=20261005v5"></script>
-  <script src="/static/js/v1_math_bank.js?v=20261005v5"></script>
-  <script src="/static/js/student_ui.js?v=20261008v1"></script>
-  <script src="/static/js/parent_dashboard.js?v=20261005v5"></script>
+  <script src="/static/js/state_and_telemetry.js?v=20261010v1"></script>
+  <script src="/static/js/v1_math_bank.js?v=20261010v1"></script>
+  <script src="/static/js/student_ui.js?v=20261010v1"></script>
+  <script src="/static/js/parent_dashboard.js?v=20261010v1"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('DOMContentLoaded', async () => {
+      window.updateInstallButtonVisibility();
       if (window.V2Engine && typeof window.V2Engine.init === 'function') {
-        window.V2Engine.init();
+        await window.V2Engine.init();
+      }
+      // Support Android Home Screen App Shortcuts (?subject=math&mode=parent)
+      const params = new URLSearchParams(window.location.search);
+      const qSubj = params.get('subject');
+      const qMode = params.get('mode');
+      if (qSubj === 'math' || qSubj === 'reading') {
+        window.switchSubject(qSubj);
+      }
+      if (qMode === 'parent' || qMode === 'student') {
+        window.switchAppMode(qMode);
       }
     });
   </script>
